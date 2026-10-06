@@ -61,7 +61,7 @@ pnpm build
 
 GitHub Pages 的 Source 已设为 GitHub Actions。`.github/workflows/pages.yml` 在推送 `main` 时执行检查、构建和发布；PR 仅检查与构建。它使用 Node.js 24、pnpm 11.19.0、Python 3.13，以及 `reading-source/requirements-publish.txt` 固定的 `pypdf==6.10.0`。本地保存不会自动上线；每次修改完成后提交并推送到 `main`，且工作流发布成功，才会更新网站。必须核对 Actions 和站点结果。
 
-预定线上入口如下，首次部署目前待验证；不要把配置完成当作网站已经可用：
+线上入口如下；首次部署已于 2026-10-06 通过 GitHub Actions，并验证阅读、3D 和下载入口返回 HTTP 200。以后每次部署仍需检查运行结果：
 
 - 学习首页：`https://guiguisqwd.github.io/shoulder-study/study.html`
 - 标准阅读：`https://guiguisqwd.github.io/shoulder-study/reading.html`

@@ -55,7 +55,7 @@ python3 -m http.server 5178 --bind 127.0.0.1 --directory dist
 
 GitHub Pages 的发布来源已设置为 **GitHub Actions**。[发布工作流](./.github/workflows/pages.yml) 在推送到 `main` 后依次检查阅读内容、几何参照及 TypeScript，构建并发布网站；PR 只检查和构建。**本地保存不会更新网站；提交并推送到 `main`，且发布任务成功后，网站才会更新。**
 
-预定线上入口（首次部署目前待验证）：
+线上入口（2026-10-06 首次部署已验证）：
 
 - [学习首页](https://guiguisqwd.github.io/shoulder-study/study.html)
 - [标准阅读](https://guiguisqwd.github.io/shoulder-study/reading.html)
