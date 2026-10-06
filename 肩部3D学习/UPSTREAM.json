@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/vixotic/Vanatome",
+  "commit": "8185b3fa46a1dbefdd907390918c57954fd9b816",
+  "files": [
+    "packages/react/src/VanatomeViewer.tsx",
+    "packages/react/src/composition.ts",
+    "packages/react/src/hierarchy.ts",
+    "packages/react/src/index.ts",
+    "packages/react/src/sceneBehavior.ts",
+    "packages/react/src/types.ts",
+    "packages/react/src/useVanatomeController.ts",
+    "public/models/z-anatomy-1.4.0-muscular.glb",
+    "public/models/z-anatomy-1.4.0-skeletal.glb",
+    "public/models/z-anatomy-1.4.0-registry.json",
+    "LICENSE",
+    "ASSET-LICENSE.md",
+    "public/ATTRIBUTION.txt",
+    "public/atlas/demo-1.4.0/muscular.metadata.json",
+    "public/atlas/demo-1.4.0/skeletal.metadata.json"
+  ]
+}
