@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "new-topic",
+  "title": {
+    "en": "Topic title",
+    "zh": "主题名称"
+  },
+  "summary": {
+    "en": "Content is being prepared and has not been reviewed.",
+    "zh": "内容正在整理，尚未完成核验。"
+  },
+  "region": {
+    "en": "Topic title",
+    "zh": "主题名称"
+  },
+  "status": "draft",
+  "adapter": "standard",
+  "viewer": {
+    "enabled": false,
+    "defaultTerm": null,
+    "terms": []
+  }
+}

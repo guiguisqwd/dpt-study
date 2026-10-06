@@ -1,12 +1,9 @@
-import type { VanatomeAtlas, VanatomeVector3 } from './vendor/types';
+export { loadAtlases, modelPosition, modelScale, modelVersion } from './model';
 
 export type PointKind = 'unconfirmed' | 'surface-reference' | 'deep-reference';
 export type Placement = { position: [number, number, number]; anatomyId: string; kind: PointKind; note: string };
 export type Placements = Record<string, Placement>;
 export const storageKey = 'shoulder-spatial-study-v1';
-export const modelVersion = 'vanatome-1.4.0-994e6cc8ffbb212e';
-export const modelScale = 7;
-export const modelPosition: VanatomeVector3 = [0, -6.1, 0];
 
 export const points = [
   { id: 'SI11', name: '天宗', english: 'Tianzong', color: '#e6b96b', anatomy: 'rotator-cuff-muscles-infraspinatus-muscle', location: '肩胛冈中点至肩胛下角连线，上 1/3 与下 2/3 交界的凹陷。', cue: '先在模型中辨认肩胛冈与下角，再核对位置。', related: '冈下窝、冈下肌、肩胛骨', page: '93' },
@@ -72,20 +69,4 @@ export function validatePlacements(value: unknown): Placements {
     result[id] = { position: [...point.position], anatomyId: point.anatomyId, kind: point.kind, note: point.note.slice(0, 3000) };
   }
   return result;
-}
-export async function loadAtlases(): Promise<VanatomeAtlas[]> {
-  return Promise.all(['muscular', 'skeletal'].map(async system => {
-    const res = await fetch(`./models/${system}.metadata.json`);
-    if (!res.ok) throw new Error('无法读取模型结构清单');
-    const meta = await res.json();
-    return {
-      id: 'vanatome-human-' + system,
-      name: 'Vanatome ' + system,
-      version: meta.atlasVersion,
-      buildId: meta.buildId,
-      modelUrl: `./models/z-anatomy-1.4.0-${system}.glb`,
-      structures: meta.structures,
-      attribution: 'Z-Anatomy / BodyParts3D · CC BY-SA 4.0 · Vanatome',
-    };
-  }));
 }

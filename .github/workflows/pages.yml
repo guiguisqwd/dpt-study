@@ -1,4 +1,4 @@
-name: Check and publish shoulder study
+name: Check and publish anatomy study
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: shoulder-pages-${{ github.ref }}
+  group: anatomy-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -49,11 +49,14 @@ jobs:
       - name: Rebuild and validate reading content and model links
         run: python reading-source/build-reading.py
 
+      - name: Test topic scaffolding and publication requirements
+        run: python -m unittest discover -s tests -v
+
       - name: Check geometric reference containment
         working-directory: 肩部3D学习
         run: pnpm test:geometry
 
-      - name: Type-check and build the 3D application
+      - name: Build the topic library, type-check and build the 3D application
         working-directory: 肩部3D学习
         run: pnpm build
 

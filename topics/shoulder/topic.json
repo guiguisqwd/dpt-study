@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "shoulder",
+  "title": {
+    "en": "Rotator cuff",
+    "zh": "肩袖"
+  },
+  "summary": {
+    "en": "Six-part bilingual reading, annotated anatomy diagrams, three-dimensional models and reviewed offline materials.",
+    "zh": "六部分双语阅读、解剖标注图、三维模型与已核验的离线资料。"
+  },
+  "region": {
+    "en": "Shoulder",
+    "zh": "肩部"
+  },
+  "status": "published",
+  "adapter": "shoulder",
+  "viewer": {
+    "enabled": true,
+    "defaultTerm": "humerus",
+    "terms": [
+      {
+        "id": "humerus",
+        "name": {
+          "en": "Humerus",
+          "zh": "肱骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "appendicular-skeleton-humerus-right",
+          "left": "appendicular-skeleton-humerus-left"
+        }
+      },
+      {
+        "id": "scapula",
+        "name": {
+          "en": "Scapula",
+          "zh": "肩胛骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "appendicular-skeleton-scapula-right",
+          "left": "appendicular-skeleton-scapula-left"
+        }
+      },
+      {
+        "id": "clavicle",
+        "name": {
+          "en": "Clavicle",
+          "zh": "锁骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "appendicular-skeleton-clavicle-right",
+          "left": "appendicular-skeleton-clavicle-left"
+        }
+      },
+      {
+        "id": "supraspinatus",
+        "name": {
+          "en": "Supraspinatus",
+          "zh": "冈上肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "left": "rotator-cuff-muscles-supraspinatus-muscle-left"
+        }
+      },
+      {
+        "id": "infraspinatus",
+        "name": {
+          "en": "Infraspinatus",
+          "zh": "冈下肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "left": "rotator-cuff-muscles-infraspinatus-muscle-left"
+        }
+      },
+      {
+        "id": "teres-minor",
+        "name": {
+          "en": "Teres minor",
+          "zh": "小圆肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "rotator-cuff-muscles-teres-minor-muscle-right",
+          "left": "rotator-cuff-muscles-teres-minor-muscle-left"
+        }
+      },
+      {
+        "id": "subscapularis",
+        "name": {
+          "en": "Subscapularis",
+          "zh": "肩胛下肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "left": "rotator-cuff-muscles-subscapularis-muscle-left"
+        }
+      }
+    ]
+  }
+}

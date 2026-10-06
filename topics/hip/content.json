@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "anatomy",
+      "title": {
+        "en": "Anatomy",
+        "zh": "解剖基础"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    },
+    {
+      "id": "innervation",
+      "title": {
+        "en": "Innervation and nerve course",
+        "zh": "神经支配与走行"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    },
+    {
+      "id": "movement",
+      "title": {
+        "en": "Movement and coordination",
+        "zh": "动作与配合"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    },
+    {
+      "id": "clinical",
+      "title": {
+        "en": "Clinical and regional anatomy",
+        "zh": "临床与局部解剖"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    },
+    {
+      "id": "review",
+      "title": {
+        "en": "Review and complete answers",
+        "zh": "复习与完整答案"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    },
+    {
+      "id": "papers",
+      "title": {
+        "en": "Critical reading",
+        "zh": "论文阅读"
+      },
+      "overview": {
+        "en": "",
+        "zh": ""
+      },
+      "blocks": [],
+      "diagramIds": []
+    }
+  ],
+  "muscles": [],
+  "landmarks": [],
+  "diagrams": [],
+  "review": [],
+  "papers": [],
+  "sources": [],
+  "qa": {
+    "reviewedBy": "",
+    "reviewedOn": "",
+    "checks": {
+      "medicalSources": false,
+      "bilingual": false,
+      "originInsertionLabels": false,
+      "modelLinks": false,
+      "layoutDesktop": false,
+      "layoutMobile": false,
+      "fullAnswers": false,
+      "paperAppraisal": false
+    }
+  },
+  "nerveNotation": {
+    "cervical": {
+      "en": "C denotes cervical levels.",
+      "zh": "C 表示颈部节段。"
+    },
+    "thoracic": {
+      "en": "T denotes thoracic levels.",
+      "zh": "T 表示胸部节段。"
+    },
+    "lumbar": {
+      "en": "L denotes lumbar levels.",
+      "zh": "L 表示腰部节段。"
+    },
+    "sacral": {
+      "en": "S denotes sacral levels.",
+      "zh": "S 表示骶部节段。"
+    },
+    "spinalNerveVsVertebra": {
+      "en": "A spinal nerve level identifies a nerve, whereas a vertebral level identifies a bone. Specify which is being described.",
+      "zh": "脊神经节段表示神经，椎骨节段表示骨骼；描述时应明确区分。"
+    }
+  }
+}

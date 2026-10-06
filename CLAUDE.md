@@ -1,6 +1,17 @@
-# Shoulder study — Claude collaboration rules
+# Anatomy study · 解剖学习 — Claude collaboration rules
 
 本文件记录用户对本项目的长期协作要求。Claude 在开始工作前应读取本文件；用户在当前对话中的明确指示优先于本文件。
+
+## 0. 多主题产品，肩袖是第一个主题
+
+用户要求这个软件覆盖多个解剖主题；后续加入 Hip joint（髋关节）等内容时，应沿用已经确认的内容、图示、英语表达、模型联动与质量检查规范，避免重复修正同一类问题。
+
+- 产品名为 **Anatomy study（解剖学习）**。`shoulder-study` 是现有 GitHub 仓库及站点路径，保留以兼容书签、文章及 PDF 链接；本地“肩袖”和“肩部3D学习”目录也是兼容路径，不表示产品只能有一个主题。未经明确迁移安排，不要重命名这些路径。
+- 新主题放在 `topics/<slug>/`，由 `topic.json` 注册；用共享脚本发现、校验并构建。先读 [docs/ADDING_A_TOPIC.md](./docs/ADDING_A_TOPIC.md)，不要复制整个应用另建一套。
+- 保持“共享界面与渲染逻辑”和“主题内容与模型映射”分离。一般新增关节应修改主题数据、图示和资料；如果确需扩展共享能力，扩展一次并检查已有主题。
+- 肩袖使用兼容适配方式保留现有成熟阅读稿、3D 行为、语音和 Claude 独立版。不要为统一目录破坏已经完成的内容。
+- `draft` 表示内容未完成，`published` 表示主题已完成相应核验。Hip joint 的起始目录是结构化草稿，不等于已完成的髋关节课程。不得把占位数据、未核对图示或未知模型当作已就绪学习材料。
+- 自动检查可以发现结构和链接问题，不能证明解剖事实正确；发布前仍须核验资料和实际图文显示。
 
 ## 1. GitHub 是共同维护的项目来源
 
@@ -12,7 +23,7 @@
 
 共同仓库：[guiguisqwd/shoulder-study](https://github.com/guiguisqwd/shoulder-study)；远端地址：`https://github.com/guiguisqwd/shoulder-study.git`。该仓库为公开仓库，只放本项目可公开的学习内容、代码及必要资源。
 
-- 本仓库根目录是“肩袖”项目，包含阅读源稿、配图、3D 应用和维护文档。不要把上级“知识工作台”中的其他项目一起加入版本控制。
+- 本仓库根目录是解剖学习项目，包含主题数据、阅读源稿、配图、3D 应用和维护文档；本地目录仍沿用“肩袖”这一历史名称。不要把上级“知识工作台”中的其他项目一起加入版本控制。
 - 用 `git remote get-url origin` 确认实际 GitHub 地址；用当前分支及其 upstream 确认推送目标。不要猜测仓库名称、分支或部署地址。
 - 多台电脑、Codex 和 Claude 使用同一仓库；开始新工作前先同步远端，完成后推送。不要长期保留互不关联的“最终版”副本。
 - 生成文件用于阅读和发布；可维护的源文件也必须进入仓库，不能只上传 `dist/`。
@@ -31,21 +42,32 @@
 
 | 需要修改的内容 | 应编辑的位置 |
 | --- | --- |
-| 六章阅读正文 | `reading-source/sections/` 中对应的 `.html` 与 `.md`，两者同步维护 |
-| 阅读版式与目录 | `reading-source/reading.css`、`reading-source/templates/` |
-| 可编辑解剖配图 | `2026-10-06-肩袖-阅读优化版-资源/` 中的 SVG |
-| 肌肉、模型跳转及资料依据 | `reading-source/data/` |
-| 3D 页面、状态与交互 | `肩部3D学习/src/` |
+| 主题目录、状态、标题与入口 | `topics/<slug>/topic.json` |
+| 新主题内容、资料及模型映射 | 对应 `topics/<slug>/`；创建方式与校验见 `docs/ADDING_A_TOPIC.md` |
+| 主题生成与校验规则 | 根目录 `scripts/` 中共享脚本 |
+| 共享主题内容规范、页面渲染和主题库样式 | `platform/` |
+| 肩袖六章阅读正文 | `reading-source/sections/` 中对应的 `.html` 与 `.md`，两者同步维护 |
+| 肩袖阅读版式与目录 | `reading-source/reading.css`、`reading-source/templates/` |
+| 肩袖可编辑解剖配图 | `2026-10-06-肩袖-阅读优化版-资源/` 中的 SVG |
+| 肩袖肌肉、模型跳转及资料依据 | `reading-source/data/` |
+| 共享 3D 页面、状态与交互 | `肩部3D学习/src/` |
 | 模型、音频、许可等公开资源 | `肩部3D学习/public/` |
 | Claude 独立阅读版 | `肩部3D学习/public/reading-claude.html` |
 
 `reading-claude.html` 是独立维护的版本，必须保留。标准阅读构建不得覆盖它；修改该版时以 `public/reading-claude.html` 为源，不要只改 `dist/` 中的副本。
 
-在仓库根目录重新生成标准阅读页及 Markdown：
+新主题正文只维护一份 `content.json`，共同生成 HTML 和 Markdown。主题校验与生成在仓库根目录运行：
 
 ```sh
-python3 reading-source/build-reading.py
+python3 scripts/validate-topics.py
+python3 scripts/build-platform.py
 ```
+
+`肩部3D学习/public/topics.json` 和 `public/topics/` 是主题构建输出，不能只在其中修改正文。新主题先保持 `draft`，按 `docs/ADDING_A_TOPIC.md` 完成内容与验证后再改为 `published`。
+
+`python3 scripts/build-platform.py` 生成主题页和自动发现主题的 `study.html` 学习首页；应用的 `prebuild` / `predev` 会调用它，因此正常的 `pnpm build` / `pnpm dev` 会同步主题库。
+
+仅在修改肩袖标准阅读源稿时运行 `python3 reading-source/build-reading.py`，更新原有 HTML / Markdown 输出，再构建应用；这项兼容流程不需要复制到新主题。
 
 3D 应用构建：
 
@@ -70,18 +92,19 @@ GitHub Pages 的 Source 已设为 GitHub Actions。`.github/workflows/pages.yml`
 
 PDF 和 Markdown 离线输出位于 `output/pdf/`。目前发布使用已核验的 38 页 PDF，仅用 `pypdf` 更新其中的线上链接，不重新排版。PDF 重新导出目前依赖 Mac 字体和本地渲染环境；正文或配图变化后，按 `制作流程-肩袖双语学习.md` 重新导出并检查，再提交更新。不要把旧 PDF 标为已同步，也不要假设 Ubuntu 发布工作流会自动重建 PDF。
 
-## 4. 用户确定的内容与界面规则
+## 4. 所有主题共同遵守的内容与界面规则
 
 - 所有解剖专业词汇、骨性结构、神经、动作、图标及答案：**英文在前，中文在后**。完整英文描述后给出完整中文翻译。
-- 肌肉需描述 Origin（起点）、Insertion（止点）、走行及相关解剖关系。使用完整句式，例如：`The [muscle] originates from [origin], passes [direction or relation], and inserts onto [insertion].`
-- 区分 `C = Cervical（颈部）` 与 `T = Thoracic（胸部）`，区分椎骨和神经节段。图示与说明应能直接对应，避免只给抽象流程让读者记忆。
-- 保持先解剖、后文章阅读的六章顺序；正文不放 AI 提示词、制作过程或空泛学习引导。维护记录放文档。
-- 05 节保留简记，也保留完整专业英文叙述、中文翻译和完整答案；06 节论文方法学术语采用英文在前的双语说明。
-- 结构链接必须匹配实际 `?term=` / `?point=`。不存在的模型应说明缺项，不能链接到另一块肌肉代替。
-- 保持旋转、缩放、切换结构时的连续性，检查窄屏下的字图遮挡和重叠。
+- 肌肉需提供 Origin（起点）、Insertion（止点）、走行及相关解剖关系；图上标出起止点，并与正文对应。使用完整句式，例如：`The [muscle] originates from [origin], passes [direction or relation], and inserts onto [insertion].` 句式是表达模板，填入的解剖内容仍须核验，不能按肩袖数据套用其他关节。
+- 神经需要实际解剖位置图，并标出起源、走行及支配对象；流程图只能作为补充。区分 `C = Cervical（颈部）`、`T = Thoracic（胸部）`、`L = Lumbar（腰部）`、`S = Sacral（骶部）`，明确数字指神经节段还是椎骨，不能混写。
+- 沿用六阶段顺序：Anatomy（解剖）→ Innervation（神经支配）→ Movement（动作）→ Clinical anatomy（临床解剖）→ Review（复习）→ Paper reading（论文阅读）。动作部分也需关联参与肌肉的起止点及具体走行。正文不放 AI 提示词、制作过程或空泛学习引导，维护记录放文档。
+- Review 保留简记，同时提供完整专业英文描述、中文翻译和完整问答；不能只给压缩口诀。Paper reading 采用英文在前的双语方法学术语，说明研究问题、设计、人群、干预/比较、结局、结果与局限，区分原文结论和解读。
+- 结构链接必须带正确的主题和实际存在的 `?term=` / `?point=`，并与模型映射中的真实 ID 核对。不存在的模型要明确缺项，不能猜 ID 或链接到另一块肌肉代替；旧肩袖链接仍需可用。
+- 保持旋转、缩放、切换结构和主题时的连续性；检查宽屏、分屏与窄屏下的字图遮挡、标签换行及重叠。图示可读性和交互要在浏览器中手动验证，不能仅靠构建通过。
 - **保留现有语音、音频文件、读音操作与来源记录。未经用户新指示，不更换声音或重新生成语音。**
 - 穴位是模型中的解剖学习参照；保留其校准状态和证据范围，不把任意深部坐标称为标准穴位或进针路径。
 - 保留研究来源、证据不足与模型许可说明，不虚构验证结果。
+- 创建新主题时即按以上要求收集、编排和核验内容，不等用户再次指出英文顺序、缺图、起止点或答案不完整才补。
 
 ## 5. Claude 的权限与协作方式
 

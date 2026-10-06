@@ -1,0 +1,201 @@
+{
+  "_note": "Field shapes only. Copy into content.json and fill evidence-backed text. Empty fields must not be published.",
+  "muscle": {
+    "id": "muscle-id",
+    "name": {
+      "en": "",
+      "zh": ""
+    },
+    "origin": {
+      "en": "",
+      "zh": ""
+    },
+    "insertion": {
+      "en": "",
+      "zh": ""
+    },
+    "course": {
+      "en": "",
+      "zh": ""
+    },
+    "actions": {
+      "en": "",
+      "zh": ""
+    },
+    "innervation": {
+      "en": "",
+      "zh": ""
+    },
+    "modelTermId": null,
+    "modelUnavailableReason": {
+      "en": "",
+      "zh": ""
+    },
+    "diagramIds": [
+      "attachment-diagram"
+    ],
+    "sources": [
+      "source-id"
+    ]
+  },
+  "diagram": {
+    "id": "attachment-diagram",
+    "file": "assets/attachment-diagram.svg",
+    "alt": {
+      "en": "",
+      "zh": ""
+    },
+    "caption": {
+      "en": "",
+      "zh": ""
+    },
+    "labels": [
+      {
+        "kind": "origin",
+        "muscleId": "muscle-id",
+        "text": {
+          "en": "Origin: [site]",
+          "zh": "起点：[部位]"
+        }
+      },
+      {
+        "kind": "insertion",
+        "muscleId": "muscle-id",
+        "text": {
+          "en": "Insertion: [site]",
+          "zh": "止点：[部位]"
+        }
+      }
+    ],
+    "sources": [
+      "source-id"
+    ]
+  },
+  "review": {
+    "id": "question-id",
+    "question": {
+      "en": "",
+      "zh": ""
+    },
+    "answer": {
+      "en": "",
+      "zh": ""
+    },
+    "mnemonic": {
+      "en": "",
+      "zh": ""
+    },
+    "sources": [
+      "source-id"
+    ]
+  },
+  "paper": {
+    "id": "paper-id",
+    "citation": "",
+    "question": {
+      "en": "",
+      "zh": ""
+    },
+    "design": {
+      "en": "",
+      "zh": ""
+    },
+    "population": {
+      "en": "",
+      "zh": ""
+    },
+    "methods": {
+      "en": "",
+      "zh": ""
+    },
+    "results": {
+      "en": "",
+      "zh": ""
+    },
+    "limitations": {
+      "en": "",
+      "zh": ""
+    },
+    "applicability": {
+      "en": "",
+      "zh": ""
+    },
+    "terms": [
+      {
+        "term": {
+          "en": "",
+          "zh": ""
+        },
+        "explanation": {
+          "en": "",
+          "zh": ""
+        }
+      }
+    ],
+    "sources": [
+      "source-id"
+    ]
+  },
+  "block": {
+    "heading": {
+      "en": "",
+      "zh": ""
+    },
+    "body": {
+      "en": "",
+      "zh": ""
+    },
+    "termIds": []
+  },
+  "source": {
+    "id": "source-id",
+    "title": "",
+    "url": ""
+  },
+  "landmark": {
+    "id": "landmark-id",
+    "name": {
+      "en": "",
+      "zh": ""
+    },
+    "description": {
+      "en": "",
+      "zh": ""
+    },
+    "sources": [
+      "source-id"
+    ],
+    "modelTermId": null,
+    "viewerLandmarkId": null,
+    "modelUnavailableReason": {
+      "en": "",
+      "zh": ""
+    },
+    "diagramIds": [
+      "attachment-diagram"
+    ]
+  },
+  "viewerLandmark": {
+    "id": "landmark-id",
+    "name": {
+      "en": "",
+      "zh": ""
+    },
+    "structures": {
+      "right": "",
+      "left": ""
+    },
+    "reviewStatus": "pending"
+  },
+  "reviewedViewerLandmarkAdditionalFields": {
+    "positions": {
+      "right": null,
+      "left": null
+    },
+    "review": {
+      "reviewedBy": "",
+      "reviewedOn": "",
+      "sourceUrls": []
+    }
+  }
+}

@@ -8,7 +8,10 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test:geometry": "node scripts/validate-reference-geometry.mjs"
+    "test:geometry": "node scripts/validate-reference-geometry.mjs",
+    "prepare:topics": "python3 ../scripts/build-platform.py",
+    "prebuild": "python3 ../scripts/build-platform.py",
+    "predev": "python3 ../scripts/build-platform.py"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

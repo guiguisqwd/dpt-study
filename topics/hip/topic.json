@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "hip",
+  "title": {
+    "en": "Hip joint",
+    "zh": "髋关节"
+  },
+  "summary": {
+    "en": "A draft topic with a verified bone-model preview. The learning course is not yet written.",
+    "zh": "已接入骨骼模型预览的草稿主题，完整学习课程尚未编写。"
+  },
+  "region": {
+    "en": "Hip and pelvis",
+    "zh": "髋部与骨盆"
+  },
+  "status": "draft",
+  "adapter": "standard",
+  "viewer": {
+    "enabled": true,
+    "defaultTerm": "femur",
+    "terms": [
+      {
+        "id": "hip-bone",
+        "name": {
+          "en": "Hip bone",
+          "zh": "髋骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-hip-bone-right",
+          "left": "skeleton-hip-bone-left"
+        }
+      },
+      {
+        "id": "femur",
+        "name": {
+          "en": "Femur",
+          "zh": "股骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "appendicular-skeleton-femur-right",
+          "left": "appendicular-skeleton-femur-left"
+        }
+      }
+    ],
+    "landmarks": []
+  }
+}

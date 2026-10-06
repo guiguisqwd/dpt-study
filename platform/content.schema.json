@@ -1,0 +1,952 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "enum": [
+              "anatomy",
+              "innervation",
+              "movement",
+              "clinical",
+              "review",
+              "papers"
+            ]
+          },
+          "title": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "overview": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "heading": {
+                  "type": "object",
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "properties": {
+                    "en": {
+                      "type": "string"
+                    },
+                    "zh": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "body": {
+                  "type": "object",
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "properties": {
+                    "en": {
+                      "type": "string"
+                    },
+                    "zh": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "termIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "heading",
+                "body",
+                "termIds"
+              ]
+            }
+          },
+          "diagramIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "overview",
+          "blocks",
+          "diagramIds"
+        ]
+      }
+    },
+    "nerveNotation": {
+      "type": "object",
+      "properties": {
+        "cervical": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "thoracic": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "lumbar": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "sacral": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "spinalNerveVsVertebra": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "cervical",
+        "thoracic",
+        "lumbar",
+        "sacral",
+        "spinalNerveVsVertebra"
+      ]
+    },
+    "muscles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "origin": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "insertion": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "course": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "actions": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "innervation": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "modelTermId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "modelUnavailableReason": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "diagramIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "origin",
+          "insertion",
+          "course",
+          "actions",
+          "innervation",
+          "modelTermId",
+          "modelUnavailableReason",
+          "diagramIds",
+          "sources"
+        ]
+      }
+    },
+    "landmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          },
+          "modelTermId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "viewerLandmarkId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "modelUnavailableReason": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "diagramIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "sources",
+          "modelTermId",
+          "viewerLandmarkId",
+          "modelUnavailableReason",
+          "diagramIds"
+        ]
+      }
+    },
+    "diagrams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "file": {
+            "type": "string",
+            "pattern": "^assets/.*\\.svg$"
+          },
+          "alt": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "caption": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "origin",
+                    "insertion",
+                    "structure"
+                  ]
+                },
+                "text": {
+                  "type": "object",
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "properties": {
+                    "en": {
+                      "type": "string"
+                    },
+                    "zh": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "muscleId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                }
+              },
+              "required": [
+                "kind",
+                "text"
+              ]
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "file",
+          "alt",
+          "caption",
+          "labels",
+          "sources"
+        ]
+      }
+    },
+    "review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "question": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "answer": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "mnemonic": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "question",
+          "answer",
+          "mnemonic",
+          "sources"
+        ]
+      }
+    },
+    "papers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "citation": {
+            "type": "string"
+          },
+          "question": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "design": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "population": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "methods": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "results": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "limitations": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "applicability": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "term": {
+                  "type": "object",
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "properties": {
+                    "en": {
+                      "type": "string"
+                    },
+                    "zh": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "explanation": {
+                  "type": "object",
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "properties": {
+                    "en": {
+                      "type": "string"
+                    },
+                    "zh": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "term",
+                "explanation"
+              ]
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "citation",
+          "question",
+          "design",
+          "population",
+          "methods",
+          "results",
+          "limitations",
+          "applicability",
+          "terms",
+          "sources"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url"
+        ]
+      }
+    },
+    "qa": {
+      "type": "object",
+      "properties": {
+        "reviewedBy": {
+          "type": "string"
+        },
+        "reviewedOn": {
+          "type": "string"
+        },
+        "checks": {
+          "type": "object",
+          "properties": {
+            "medicalSources": {
+              "type": "boolean"
+            },
+            "bilingual": {
+              "type": "boolean"
+            },
+            "originInsertionLabels": {
+              "type": "boolean"
+            },
+            "modelLinks": {
+              "type": "boolean"
+            },
+            "layoutDesktop": {
+              "type": "boolean"
+            },
+            "layoutMobile": {
+              "type": "boolean"
+            },
+            "fullAnswers": {
+              "type": "boolean"
+            },
+            "paperAppraisal": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "medicalSources",
+            "bilingual",
+            "originInsertionLabels",
+            "modelLinks",
+            "layoutDesktop",
+            "layoutMobile",
+            "fullAnswers",
+            "paperAppraisal"
+          ]
+        }
+      },
+      "required": [
+        "reviewedBy",
+        "reviewedOn",
+        "checks"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "sections",
+    "nerveNotation",
+    "muscles",
+    "landmarks",
+    "diagrams",
+    "review",
+    "papers",
+    "sources",
+    "qa"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "content.schema.json",
+  "title": "English-first bilingual learning content",
+  "description": "Empty draft fields are allowed. Published topics require complete content, sources, actual SVG labels, model matches, and QA signoff. The Python validator is the publication gate."
+}

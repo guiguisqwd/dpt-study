@@ -1,0 +1,292 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "zh": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "zh": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "region": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "zh": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "adapter": {
+      "enum": [
+        "standard",
+        "shoulder"
+      ]
+    },
+    "viewer": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "defaultTerm": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "terms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "name": {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "kind": {
+                "enum": [
+                  "bone",
+                  "muscle"
+                ]
+              },
+              "structures": {
+                "type": "object",
+                "properties": {
+                  "right": {
+                    "type": "string"
+                  },
+                  "left": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "right",
+                  "left"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "kind",
+              "structures"
+            ]
+          }
+        },
+        "landmarks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "name": {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "structures": {
+                "type": "object",
+                "properties": {
+                  "right": {
+                    "type": "string"
+                  },
+                  "left": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "right",
+                  "left"
+                ]
+              },
+              "positions": {
+                "type": "object",
+                "properties": {
+                  "right": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "minimum": -20,
+                      "maximum": 20
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                  },
+                  "left": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "minimum": -20,
+                      "maximum": 20
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                },
+                "required": [
+                  "right",
+                  "left"
+                ]
+              },
+              "reviewStatus": {
+                "enum": [
+                  "reviewed",
+                  "pending"
+                ]
+              },
+              "review": {
+                "type": "object",
+                "properties": {
+                  "reviewedBy": {
+                    "type": "string"
+                  },
+                  "reviewedOn": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "sourceUrls": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  }
+                },
+                "required": [
+                  "reviewedBy",
+                  "reviewedOn",
+                  "sourceUrls"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "structures",
+              "reviewStatus"
+            ]
+          }
+        }
+      },
+      "required": [
+        "enabled",
+        "defaultTerm",
+        "terms"
+      ]
+    },
+    "pdf": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "contentDigest": {
+          "type": "string"
+        },
+        "reviewedBy": {
+          "type": "string"
+        },
+        "reviewedOn": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "file",
+        "contentDigest",
+        "reviewedBy",
+        "reviewedOn"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "summary",
+    "region",
+    "status",
+    "adapter",
+    "viewer"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "topic.schema.json",
+  "title": "Topic manifest contract",
+  "description": "Structural reference. Run scripts/validate-topics.py for anatomical model mapping and publication gates."
+}
