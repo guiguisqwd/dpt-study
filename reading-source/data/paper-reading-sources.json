@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-06",
+  "outputs": [
+    "section-review.html",
+    "section-review.md",
+    "section-reading.html",
+    "section-reading.md"
+  ],
+  "skill": {
+    "name": "scientific-critical-thinking",
+    "version": "1.5",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-critical-thinking/SKILL.md",
+    "status": "Same previously used skill re-read remotely; no retained /tmp copy found; not installed",
+    "attribution": "Kassis T, Agarwal V, He Y, Patel D, Brueckner AM. Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. 2026. https://doi.org/10.48550/arXiv.2609.00065",
+    "checked_version": "v2 (2026-09-02); no journal reference shown",
+    "attribution_destination": "Parent to retain in process documentation; not inserted as anatomy lesson prose"
+  },
+  "sources": {
+    "results_abstract": "https://pubmed.ncbi.nlm.nih.gov/41476428/",
+    "protocol": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871",
+    "registration": "https://clinicaltrials.gov/study/NCT03442894"
+  },
+  "verified": "PubMed numerical results and protocol pp. 355, 358, 361 rechecked",
+  "not_verified": [
+    "Results full text",
+    "Actual trial implementation",
+    "Current registry contents and amendment history",
+    "Actual missing-data handling",
+    "Multiplicity adjustment",
+    "Adverse events",
+    "OR reference group"
+  ],
+  "new_clarification": "130 planned minus 121 reported is not an attrition count; no new missingness counts were inferred.",
+  "html_classes": [
+    "bilingual-pair",
+    "translation",
+    "mnemonic-original",
+    "question-pair",
+    "quiz-toggle"
+  ],
+  "integration": "Each HTML file contains exactly its section, including opening/closing section tags; no script/CSS. Markdown snippets begin at their corresponding ## heading."
+}

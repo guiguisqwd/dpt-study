@@ -1,0 +1,650 @@
+{
+  "passed": true,
+  "scope": "Geometric containment only; this does not establish clinical acupoint accuracy.",
+  "referenceFile": "src/model-references.json",
+  "method": "Shared GLB coordinates; 7 skew-ray parity checks plus signed solid-angle winding number; double-sided triangles; 1e-6 m boundary tolerance.",
+  "passedCount": 10,
+  "totalCount": 10,
+  "results": [
+    {
+      "id": "SI11-right",
+      "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+      "position": [
+        -0.1057287,
+        1.3402285,
+        -0.09684569
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.011078914,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.011022073,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -2.653e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.078939028,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "SI11-left",
+      "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+      "position": [
+        0.10572871,
+        1.34022852,
+        -0.09684561
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.011078897,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          0,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.011022013,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 2.653e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.078938971,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "SI12-right",
+      "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+      "position": [
+        -0.11183215,
+        1.39360804,
+        -0.07039017
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.008661953,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          2,
+          0,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.011625354,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -2.622e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.048887813,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "SI12-left",
+      "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+      "position": [
+        0.11183215,
+        1.39360804,
+        -0.07039012
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.00866187,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          2,
+          0,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.011625387,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 2.622e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.048887837,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "SI9-right",
+      "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+      "position": [
+        -0.153379,
+        1.35,
+        -0.06
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.003659092,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "distanceToSurfaceMetres": 0.012628438,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -7.603e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.026737464,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "SI9-left",
+      "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+      "position": [
+        0.153379,
+        1.35,
+        -0.06
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.0036592,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.012628424,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 7.603e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.026737436,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "LI15-right",
+      "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+      "position": [
+        -0.185755,
+        1.405,
+        -0.02
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.0020759,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.020649831,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 3.3202e-05,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.00225285,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "LI15-left",
+      "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+      "position": [
+        0.185755,
+        1.405,
+        -0.02
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.002075902,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.020649816,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -3.3202e-05,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.002252925,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "TE14-right",
+      "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+      "position": [
+        -0.180348,
+        1.4,
+        -0.06
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.002563386,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.009015255,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 4.388e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.018650462,
+        "onBoundary": false,
+        "reliable": true
+      }
+    },
+    {
+      "id": "TE14-left",
+      "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+      "position": [
+        0.180348,
+        1.4,
+        -0.06
+      ],
+      "passed": true,
+      "muscle": {
+        "inside": true,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -1,
+        "rayIntersectionCounts": [
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "distanceToSurfaceMetres": 0.002563375,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "scapula": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": 0,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.009015239,
+        "onBoundary": false,
+        "reliable": true
+      },
+      "humerus": {
+        "inside": false,
+        "unanimousRays": true,
+        "windingAgrees": true,
+        "windingNumber": -4.388e-06,
+        "rayIntersectionCounts": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "distanceToSurfaceMetres": 0.018650505,
+        "onBoundary": false,
+        "reliable": true
+      }
+    }
+  ]
+}

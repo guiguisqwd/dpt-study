@@ -1,0 +1,166 @@
+{
+  "coordinateSystem": "Original GLB metres; Y superior; X positive to anatomical left; Z anterior.",
+  "modelSHA256": "8cbea4cc15fb2063853491634eb2c57b57cf7f104f7160c4eed82cf9e392ab0d",
+  "meaning": "Model-specific anatomical surface annotations, not segmented structures or clinical acupoints.",
+  "sourceURLs": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+  ],
+  "validationToleranceMetres": 1e-7,
+  "sides": {
+    "right": {
+      "scapular-spine": {
+        "position": [
+          -0.11183215,
+          1.38320804,
+          -0.09300116
+        ],
+        "distanceMetres": 4.057752820435783e-10,
+        "method": "Nearest triangle projection of prior ridge arc-length midpoint, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 4.057752820435783e-10,
+        "passed": true
+      },
+      "inferior-angle": {
+        "position": [
+          -0.093521792,
+          1.254269429,
+          -0.10115625
+        ],
+        "method": "Minimum Y scapula vertex, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 3.1323860457924123e-10,
+        "passed": true
+      },
+      "acromion": {
+        "position": [
+          -0.1671415,
+          1.415511913,
+          -0.0423355
+        ],
+        "method": "Midpoint XZ between prior anterior/posterior acromial region anchors; downward ray picks actual superior scapular surface.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 3.166790111793143e-11,
+        "passed": true
+      },
+      "infraspinous-fossa": {
+        "position": [
+          -0.1057287,
+          1.3402285,
+          -0.082420443
+        ],
+        "rayIntersectionCount": 2,
+        "method": "Posterior-to-anterior ray at prior below-spine regional XY, first actual scapular surface hit. This is bone, not the infraspinatus-muscle center.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 2.0722485337573512e-10,
+        "passed": true
+      },
+      "supraspinous-fossa": {
+        "position": [
+          -0.087,
+          1.388,
+          -0.078013575
+        ],
+        "rayIntersectionCount": 2,
+        "method": "Posterior-to-anterior ray at manually identified medial supraspinous-fossa XY (absolute X 0.087 m, Y 1.388 m), first actual scapular surface hit on each side. The earlier supraspinatus center projects outside the bone and is deliberately not reused.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 4.4789942784187745e-11,
+        "passed": true
+      },
+      "anterolateral-acromion": {
+        "position": [
+          -0.163382764,
+          1.414010141,
+          -0.023034453
+        ],
+        "distanceMetres": 5.298810571565565e-7,
+        "method": "Nearest triangle projection of prior anterolateral acromion region anchor, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 1.1314344129064168e-11,
+        "passed": true
+      },
+      "posterolateral-acromion": {
+        "position": [
+          -0.17089984,
+          1.407688837,
+          -0.061636875
+        ],
+        "distanceMetres": 2.6017060839939156e-7,
+        "method": "Nearest triangle projection of prior posterolateral acromion region anchor, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 2.0212366547559167e-10,
+        "passed": true
+      }
+    },
+    "left": {
+      "scapular-spine": {
+        "position": [
+          0.111832149,
+          1.38320804,
+          -0.093001149
+        ],
+        "distanceMetres": 1.2021247027985092e-9,
+        "method": "Nearest triangle projection of prior ridge arc-length midpoint, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 1.5705913882793904e-10,
+        "passed": true
+      },
+      "inferior-angle": {
+        "position": [
+          0.093521809,
+          1.254269496,
+          -0.101156245
+        ],
+        "method": "Minimum Y scapula vertex, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 2.5951454243888793e-10,
+        "passed": true
+      },
+      "acromion": {
+        "position": [
+          0.1671415,
+          1.415511886,
+          -0.0423355
+        ],
+        "method": "Midpoint XZ between prior anterior/posterior acromial region anchors; downward ray picks actual superior scapular surface.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 1.816340069200511e-10,
+        "passed": true
+      },
+      "infraspinous-fossa": {
+        "position": [
+          0.10572871,
+          1.34022852,
+          -0.08242044
+        ],
+        "rayIntersectionCount": 2,
+        "method": "Posterior-to-anterior ray at prior below-spine regional XY, first actual scapular surface hit. This is bone, not the infraspinatus-muscle center.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 3.656692606930817e-10,
+        "passed": true
+      },
+      "supraspinous-fossa": {
+        "position": [
+          0.087,
+          1.388,
+          -0.078013574
+        ],
+        "rayIntersectionCount": 2,
+        "method": "Posterior-to-anterior ray at manually identified medial supraspinous-fossa XY (absolute X 0.087 m, Y 1.388 m), first actual scapular surface hit on each side. The earlier supraspinatus center projects outside the bone and is deliberately not reused.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 9.677905088491063e-12,
+        "passed": true
+      },
+      "anterolateral-acromion": {
+        "position": [
+          0.163382765,
+          1.41401014,
+          -0.023034451
+        ],
+        "distanceMetres": 5.279857800147294e-7,
+        "method": "Nearest triangle projection of prior anterolateral acromion region anchor, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 5.144938185537716e-10,
+        "passed": true
+      },
+      "posterolateral-acromion": {
+        "position": [
+          0.170899835,
+          1.407688832,
+          -0.061636871
+        ],
+        "distanceMetres": 2.6875510059282893e-7,
+        "method": "Nearest triangle projection of prior posterolateral acromion region anchor, independently evaluated on each side.",
+        "verifiedDistanceToActualBoneSurfaceMetres": 2.593031839315575e-10,
+        "passed": true
+      }
+    }
+  },
+  "passedCount": 14
+}

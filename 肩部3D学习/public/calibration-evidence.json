@@ -1,0 +1,805 @@
+{
+  "modelVersion": "vanatome-1.4.0-994e6cc8ffbb212e",
+  "meaning": "内部解剖学习参照，非临床穴位中心",
+  "references": {
+    "SI11-right": {
+      "coordinateSystem": "GLB原始模型坐标，米；Y向上；X左正；Z前正",
+      "landmarks": {
+        "spineMedialRootApprox": [
+          -0.07,
+          1.37175,
+          -0.10078436
+        ],
+        "spineAcromialTransitionApprox": [
+          -0.15,
+          1.4015,
+          -0.07336363
+        ],
+        "spineCrestMidpointApprox": [
+          -0.11183215,
+          1.38320804,
+          -0.09300116
+        ],
+        "inferiorAngle": [
+          -0.09352179,
+          1.25426943,
+          -0.10115625
+        ]
+      },
+      "guides": [
+        {
+          "label": "肩胛冈中点（近似） · Midpoint of scapular spine (approx.)",
+          "position": [
+            -0.11183215,
+            1.38320804,
+            -0.09300116
+          ]
+        },
+        {
+          "label": "肩胛下角 · Inferior angle of scapula",
+          "position": [
+            -0.09352179,
+            1.25426943,
+            -0.10115625
+          ]
+        }
+      ],
+      "ridgeSampling": {
+        "method": "在人工识别的肩胛冈范围内取后方最突出的骨嵴点，再取骨嵴弧长半程。边界为人工近似。",
+        "xAbsoluteInterval": [
+          0.07,
+          0.15
+        ],
+        "xStep": 0.001,
+        "yStep": 0.00025,
+        "arcLength": 0.09678007905874908
+      },
+      "position": [
+        -0.1057287,
+        1.3402285,
+        -0.09684569
+      ],
+      "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+      "method": "在模型后面观人工辨认肩胛冈范围，沿后方骨嵴取近似中点；与肩胛下角连线，取从冈中点向下角的 1/3 处作为定位投影。该横向、上下位置射线穿过冈下肌，将前后两次交点的中间位置用于显示肌内层次。",
+      "limitation": "肩胛冈范围及中点为人工识别近似；此标记是天宗定位对应的冈下肌内学习参照，不是标准穴位深度或经临床校准的穴位中心。未包含皮肤层。",
+      "guidePath": [
+        [
+          -0.11183215,
+          1.38320804,
+          -0.09300116
+        ],
+        [
+          -0.1057287,
+          1.3402285,
+          -0.09571952
+        ],
+        [
+          -0.09352179,
+          1.25426943,
+          -0.10115625
+        ]
+      ],
+      "oneThirdOnLandmarkLine": [
+        -0.1057287,
+        1.3402285,
+        -0.09571952
+      ],
+      "posteriorBoneProjection": [
+        -0.1057287,
+        1.3402285,
+        -0.08242044
+      ],
+      "rayInterval": [
+        -0.11109940836289633,
+        -0.08259196512300648
+      ],
+      "rayAxis": "Z",
+      "insideMethod": "posterior/anterior mesh intersection midpoint at landmark-derived XY",
+      "validation": {
+        "solidAngleWindingNumber": 1.0,
+        "zRayIntersections": 2,
+        "insideAssociatedMuscleMesh": true,
+        "meaning": "仅验证参照点在指定肌肉网格内部，不验证穴位医学准确性"
+      },
+      "nameEn": "Tianzong",
+      "anatomyNameEn": "Infraspinatus muscle"
+    },
+    "SI12-right": {
+      "coordinateSystem": "GLB原始模型坐标，米；Y向上；X左正；Z前正",
+      "landmarks": {
+        "spineMedialRootApprox": [
+          -0.07,
+          1.37175,
+          -0.10078436
+        ],
+        "spineAcromialTransitionApprox": [
+          -0.15,
+          1.4015,
+          -0.07336363
+        ],
+        "spineCrestMidpointApprox": [
+          -0.11183215,
+          1.38320804,
+          -0.09300116
+        ],
+        "inferiorAngle": [
+          -0.09352179,
+          1.25426943,
+          -0.10115625
+        ]
+      },
+      "guides": [
+        {
+          "label": "肩胛冈中点（近似） · Midpoint of scapular spine (approx.)",
+          "position": [
+            -0.11183215,
+            1.38320804,
+            -0.09300116
+          ]
+        },
+        {
+          "label": "肩胛下角 · Inferior angle of scapula",
+          "position": [
+            -0.09352179,
+            1.25426943,
+            -0.10115625
+          ]
+        }
+      ],
+      "ridgeSampling": {
+        "method": "在人工识别的肩胛冈范围内取后方最突出的骨嵴点，再取骨嵴弧长半程。边界为人工近似。",
+        "xAbsoluteInterval": [
+          0.07,
+          0.15
+        ],
+        "xStep": 0.001,
+        "yStep": 0.00025,
+        "arcLength": 0.09678007905874908
+      },
+      "position": [
+        -0.11183215,
+        1.39360804,
+        -0.07039017
+      ],
+      "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+      "method": "以同一近似肩胛冈中点的横向坐标为参照，在其上方与冈上肌模型相交的范围内选择区域中部；沿前后方向取冈上肌两次交点的中间位置，展示秉风相关的冈上肌层次。",
+      "limitation": "标准描述冈上窝、肩胛冈中点上方，但没有固定上移距离或统一深度；此处选择冈上肌内区域参照，不能据此声称已校准秉风的准确穴位。",
+      "guidePath": [
+        [
+          -0.11183215,
+          1.38320804,
+          -0.09300116
+        ],
+        [
+          -0.11183215,
+          1.39360804,
+          -0.07039017
+        ]
+      ],
+      "supraspinatusAboveRidgeYInterval": [
+        1.3832080383913483,
+        1.404008038391346
+      ],
+      "rayInterval": [
+        -0.0806165930672868,
+        -0.0601637532139932
+      ],
+      "rayAxis": "Z",
+      "insideMethod": "center of supraspinatus section in manually bounded superior region; anatomical illustration only",
+      "validation": {
+        "solidAngleWindingNumber": 1.0,
+        "zRayIntersections": 2,
+        "insideAssociatedMuscleMesh": true,
+        "meaning": "仅验证参照点在指定肌肉网格内部，不验证穴位医学准确性"
+      },
+      "nameEn": "Bingfeng",
+      "anatomyNameEn": "Supraspinatus muscle"
+    },
+    "SI11-left": {
+      "coordinateSystem": "GLB原始模型坐标，米；Y向上；X左正；Z前正",
+      "landmarks": {
+        "spineMedialRootApprox": [
+          0.07,
+          1.37175,
+          -0.10078434
+        ],
+        "spineAcromialTransitionApprox": [
+          0.15,
+          1.4015,
+          -0.07336362
+        ],
+        "spineCrestMidpointApprox": [
+          0.11183215,
+          1.38320804,
+          -0.09300115
+        ],
+        "inferiorAngle": [
+          0.09352181,
+          1.2542695,
+          -0.10115625
+        ]
+      },
+      "guides": [
+        {
+          "label": "肩胛冈中点（近似） · Midpoint of scapular spine (approx.)",
+          "position": [
+            0.11183215,
+            1.38320804,
+            -0.09300115
+          ]
+        },
+        {
+          "label": "肩胛下角 · Inferior angle of scapula",
+          "position": [
+            0.09352181,
+            1.2542695,
+            -0.10115625
+          ]
+        }
+      ],
+      "ridgeSampling": {
+        "method": "在人工识别的肩胛冈范围内取后方最突出的骨嵴点，再取骨嵴弧长半程。边界为人工近似。",
+        "xAbsoluteInterval": [
+          0.07,
+          0.15
+        ],
+        "xStep": 0.001,
+        "yStep": 0.00025,
+        "arcLength": 0.09678007091939475
+      },
+      "position": [
+        0.10572871,
+        1.34022852,
+        -0.09684561
+      ],
+      "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+      "method": "在模型后面观人工辨认肩胛冈范围，沿后方骨嵴取近似中点；与肩胛下角连线，取从冈中点向下角的 1/3 处作为定位投影。该横向、上下位置射线穿过冈下肌，将前后两次交点的中间位置用于显示肌内层次。",
+      "limitation": "肩胛冈范围及中点为人工识别近似；此标记是天宗定位对应的冈下肌内学习参照，不是标准穴位深度或经临床校准的穴位中心。未包含皮肤层。",
+      "guidePath": [
+        [
+          0.11183215,
+          1.38320804,
+          -0.09300115
+        ],
+        [
+          0.10572871,
+          1.34022852,
+          -0.09571951
+        ],
+        [
+          0.09352181,
+          1.2542695,
+          -0.10115625
+        ]
+      ],
+      "oneThirdOnLandmarkLine": [
+        0.10572871,
+        1.34022852,
+        -0.09571951
+      ],
+      "posteriorBoneProjection": [
+        0.10572871,
+        1.34022852,
+        -0.08242044
+      ],
+      "rayInterval": [
+        -0.11109931119255965,
+        -0.082591913907575
+      ],
+      "rayAxis": "Z",
+      "insideMethod": "posterior/anterior mesh intersection midpoint at landmark-derived XY",
+      "validation": {
+        "solidAngleWindingNumber": -1.0,
+        "zRayIntersections": 2,
+        "insideAssociatedMuscleMesh": true,
+        "meaning": "仅验证参照点在指定肌肉网格内部，不验证穴位医学准确性"
+      },
+      "nameEn": "Tianzong",
+      "anatomyNameEn": "Infraspinatus muscle"
+    },
+    "SI12-left": {
+      "coordinateSystem": "GLB原始模型坐标，米；Y向上；X左正；Z前正",
+      "landmarks": {
+        "spineMedialRootApprox": [
+          0.07,
+          1.37175,
+          -0.10078434
+        ],
+        "spineAcromialTransitionApprox": [
+          0.15,
+          1.4015,
+          -0.07336362
+        ],
+        "spineCrestMidpointApprox": [
+          0.11183215,
+          1.38320804,
+          -0.09300115
+        ],
+        "inferiorAngle": [
+          0.09352181,
+          1.2542695,
+          -0.10115625
+        ]
+      },
+      "guides": [
+        {
+          "label": "肩胛冈中点（近似） · Midpoint of scapular spine (approx.)",
+          "position": [
+            0.11183215,
+            1.38320804,
+            -0.09300115
+          ]
+        },
+        {
+          "label": "肩胛下角 · Inferior angle of scapula",
+          "position": [
+            0.09352181,
+            1.2542695,
+            -0.10115625
+          ]
+        }
+      ],
+      "ridgeSampling": {
+        "method": "在人工识别的肩胛冈范围内取后方最突出的骨嵴点，再取骨嵴弧长半程。边界为人工近似。",
+        "xAbsoluteInterval": [
+          0.07,
+          0.15
+        ],
+        "xStep": 0.001,
+        "yStep": 0.00025,
+        "arcLength": 0.09678007091939475
+      },
+      "position": [
+        0.11183215,
+        1.39360804,
+        -0.07039012
+      ],
+      "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+      "method": "以同一近似肩胛冈中点的横向坐标为参照，在其上方与冈上肌模型相交的范围内选择区域中部；沿前后方向取冈上肌两次交点的中间位置，展示秉风相关的冈上肌层次。",
+      "limitation": "标准描述冈上窝、肩胛冈中点上方，但没有固定上移距离或统一深度；此处选择冈上肌内区域参照，不能据此声称已校准秉风的准确穴位。",
+      "guidePath": [
+        [
+          0.11183215,
+          1.38320804,
+          -0.09300115
+        ],
+        [
+          0.11183215,
+          1.39360804,
+          -0.07039012
+        ]
+      ],
+      "supraspinatusAboveRidgeYInterval": [
+        1.3832080383853564,
+        1.4040080383853542
+      ],
+      "rayInterval": [
+        -0.08061652800700812,
+        -0.060163703252910934
+      ],
+      "rayAxis": "Z",
+      "insideMethod": "center of supraspinatus section in manually bounded superior region; anatomical illustration only",
+      "validation": {
+        "solidAngleWindingNumber": -1.0,
+        "zRayIntersections": 2,
+        "insideAssociatedMuscleMesh": true,
+        "meaning": "仅验证参照点在指定肌肉网格内部，不验证穴位医学准确性"
+      },
+      "nameEn": "Bingfeng",
+      "anatomyNameEn": "Supraspinatus muscle"
+    },
+    "LI15-right": {
+      "position": [
+        -0.185755,
+        1.405,
+        -0.02
+      ],
+      "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+      "method": "先由肩峰前外侧端与肱骨大结节上外侧骨面参照限定肩前外侧局部，再于该局部的三角肌肩峰部取沿 X 轴网格交点之间的内部中点。它是用于学习该骨肌关系的区域中心。",
+      "limitation": "本模型上臂未外展且没有皮肤/动态凹陷；此坐标是骨性标志附近的三角肌内部区域参照，不是经穴标准位置或针刺靶点。",
+      "anchors": [
+        {
+          "label": "肩峰前外侧端近似骨面参照 · Anterolateral acromion",
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "position": [
+            -0.163383,
+            1.41401,
+            -0.023034
+          ],
+          "labelZh": "肩峰前外侧端近似骨面参照",
+          "labelEn": "Anterolateral acromion"
+        },
+        {
+          "label": "大结节上外侧近似骨面参照 · Superior-lateral greater tubercle of humerus",
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "position": [
+            -0.180375,
+            1.402916,
+            -0.022097
+          ],
+          "labelZh": "大结节上外侧近似骨面参照",
+          "labelEn": "Superior-lateral greater tubercle of humerus"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.405,
+        "z": -0.02,
+        "min": -0.195455,
+        "max": -0.176055,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            -0.169327,
+            1.412214,
+            -0.030223
+          ],
+          "distance": 0.02065
+        },
+        "humerus": {
+          "position": [
+            -0.185268,
+            1.402802,
+            -0.02007
+          ],
+          "distance": 0.002253
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    },
+    "TE14-right": {
+      "position": [
+        -0.180348,
+        1.4,
+        -0.06
+      ],
+      "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+      "method": "先由肩峰后外侧角与肱骨大结节后外侧骨面参照限定肩后外侧局部，再于肩峰后外侧角下方的三角肌肩胛冈部取沿 X 轴网格交点之间的内部中点。",
+      "limitation": "本模型未显示标准外展姿势下的后侧凹陷；此坐标只表示相关肌层区域，不是经穴标准位置或针刺靶点。",
+      "anchors": [
+        {
+          "label": "肩峰后外侧角近似骨面参照 · Posterolateral acromion",
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "position": [
+            -0.1709,
+            1.407689,
+            -0.061637
+          ],
+          "labelZh": "肩峰后外侧角近似骨面参照",
+          "labelEn": "Posterolateral acromion"
+        },
+        {
+          "label": "大结节后外侧近似骨面参照 · Posterolateral greater tubercle of humerus",
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "position": [
+            -0.183467,
+            1.390113,
+            -0.042897
+          ],
+          "labelZh": "大结节后外侧近似骨面参照",
+          "labelEn": "Posterolateral greater tubercle of humerus"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.4,
+        "z": -0.06,
+        "min": -0.186608,
+        "max": -0.174089,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            -0.171607,
+            1.402089,
+            -0.060716
+          ],
+          "distance": 0.009016
+        },
+        "humerus": {
+          "position": [
+            -0.173105,
+            1.39231,
+            -0.04463
+          ],
+          "distance": 0.018651
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    },
+    "SI9-right": {
+      "position": [
+        -0.153379,
+        1.35,
+        -0.06
+      ],
+      "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+      "method": "在肩关节后下方、邻近肩胛骨外侧缘的小圆肌局部截面中，以沿 X 轴网格交点之间的内部中点表示相关深层解剖区域；附邻近肩胛骨/肱骨表面点供空间关系复核。",
+      "limitation": "标准肩贞需要上臂内收、腋后纹及 1 B-cun；模型无皮肤与腋后纹，不能从此处推算精确肩贞。本坐标只表示小圆肌相关学习区域，不是经穴或针刺靶点。",
+      "anchors": [
+        {
+          "label": "同侧邻近肩胛骨表面参照（非穴位） · Scapula — nearby bone surface",
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "position": [
+            -0.143806,
+            1.35216,
+            -0.052052
+          ],
+          "distance": 0.012629,
+          "labelZh": "同侧邻近肩胛骨表面参照（非穴位）",
+          "labelEn": "Scapula — nearby bone surface"
+        },
+        {
+          "label": "同侧邻近肱骨表面参照（非穴位） · Humerus — nearby bone surface",
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "position": [
+            -0.156036,
+            1.369881,
+            -0.04232
+          ],
+          "distance": 0.026737,
+          "labelZh": "同侧邻近肱骨表面参照（非穴位）",
+          "labelEn": "Humerus — nearby bone surface"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.35,
+        "z": -0.06,
+        "min": -0.174435,
+        "max": -0.132324,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            -0.143806,
+            1.35216,
+            -0.052052
+          ],
+          "distance": 0.012629
+        },
+        "humerus": {
+          "position": [
+            -0.156036,
+            1.369881,
+            -0.04232
+          ],
+          "distance": 0.026737
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    },
+    "LI15-left": {
+      "position": [
+        0.185755,
+        1.405,
+        -0.02
+      ],
+      "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+      "method": "先由肩峰前外侧端与肱骨大结节上外侧骨面参照限定肩前外侧局部，再于该局部的三角肌肩峰部取沿 X 轴网格交点之间的内部中点。它是用于学习该骨肌关系的区域中心。",
+      "limitation": "本模型上臂未外展且没有皮肤/动态凹陷；此坐标是骨性标志附近的三角肌内部区域参照，不是经穴标准位置或针刺靶点。",
+      "anchors": [
+        {
+          "label": "肩峰前外侧端近似骨面参照 · Anterolateral acromion",
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "position": [
+            0.163383,
+            1.41401,
+            -0.023034
+          ],
+          "labelZh": "肩峰前外侧端近似骨面参照",
+          "labelEn": "Anterolateral acromion"
+        },
+        {
+          "label": "大结节上外侧近似骨面参照 · Superior-lateral greater tubercle of humerus",
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "position": [
+            0.180375,
+            1.402916,
+            -0.022097
+          ],
+          "labelZh": "大结节上外侧近似骨面参照",
+          "labelEn": "Superior-lateral greater tubercle of humerus"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.405,
+        "z": -0.02,
+        "min": 0.176055,
+        "max": 0.195455,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            0.169327,
+            1.412214,
+            -0.030223
+          ],
+          "distance": 0.02065
+        },
+        "humerus": {
+          "position": [
+            0.185268,
+            1.402802,
+            -0.02007
+          ],
+          "distance": 0.002253
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    },
+    "TE14-left": {
+      "position": [
+        0.180348,
+        1.4,
+        -0.06
+      ],
+      "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+      "method": "先由肩峰后外侧角与肱骨大结节后外侧骨面参照限定肩后外侧局部，再于肩峰后外侧角下方的三角肌肩胛冈部取沿 X 轴网格交点之间的内部中点。",
+      "limitation": "本模型未显示标准外展姿势下的后侧凹陷；此坐标只表示相关肌层区域，不是经穴标准位置或针刺靶点。",
+      "anchors": [
+        {
+          "label": "肩峰后外侧角近似骨面参照 · Posterolateral acromion",
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "position": [
+            0.1709,
+            1.407689,
+            -0.061637
+          ],
+          "labelZh": "肩峰后外侧角近似骨面参照",
+          "labelEn": "Posterolateral acromion"
+        },
+        {
+          "label": "大结节后外侧近似骨面参照 · Posterolateral greater tubercle of humerus",
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "position": [
+            0.183467,
+            1.390113,
+            -0.042897
+          ],
+          "labelZh": "大结节后外侧近似骨面参照",
+          "labelEn": "Posterolateral greater tubercle of humerus"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.4,
+        "z": -0.06,
+        "min": 0.174089,
+        "max": 0.186608,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            0.171607,
+            1.402089,
+            -0.060716
+          ],
+          "distance": 0.009016
+        },
+        "humerus": {
+          "position": [
+            0.173105,
+            1.39231,
+            -0.04463
+          ],
+          "distance": 0.018651
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    },
+    "SI9-left": {
+      "position": [
+        0.153379,
+        1.35,
+        -0.06
+      ],
+      "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+      "method": "在肩关节后下方、邻近肩胛骨外侧缘的小圆肌局部截面中，以沿 X 轴网格交点之间的内部中点表示相关深层解剖区域；附邻近肩胛骨/肱骨表面点供空间关系复核。",
+      "limitation": "标准肩贞需要上臂内收、腋后纹及 1 B-cun；模型无皮肤与腋后纹，不能从此处推算精确肩贞。本坐标只表示小圆肌相关学习区域，不是经穴或针刺靶点。",
+      "anchors": [
+        {
+          "label": "同侧邻近肩胛骨表面参照（非穴位） · Scapula — nearby bone surface",
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "position": [
+            0.143806,
+            1.35216,
+            -0.052052
+          ],
+          "distance": 0.012629,
+          "labelZh": "同侧邻近肩胛骨表面参照（非穴位）",
+          "labelEn": "Scapula — nearby bone surface"
+        },
+        {
+          "label": "同侧邻近肱骨表面参照（非穴位） · Humerus — nearby bone surface",
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "position": [
+            0.156036,
+            1.369881,
+            -0.04232
+          ],
+          "distance": 0.026737,
+          "labelZh": "同侧邻近肱骨表面参照（非穴位）",
+          "labelEn": "Humerus — nearby bone surface"
+        }
+      ],
+      "rayInterval": {
+        "axis": "x",
+        "y": 1.35,
+        "z": -0.06,
+        "min": 0.132324,
+        "max": 0.174435,
+        "intersectionCount": 2,
+        "method": "three.Raycaster; material DoubleSide; vertices transformed by matrixWorld to original GLB shared coordinates"
+      },
+      "nearestBoneSurface": {
+        "scapula": {
+          "position": [
+            0.143806,
+            1.35216,
+            -0.052052
+          ],
+          "distance": 0.012629
+        },
+        "humerus": {
+          "position": [
+            0.156036,
+            1.369881,
+            -0.04232
+          ],
+          "distance": 0.026737
+        }
+      },
+      "boneContainment": {
+        "scapula": false,
+        "humerus": false
+      }
+    }
+  },
+  "modelSha256": {
+    "z-anatomy-1.4.0-skeletal.glb": "8cbea4cc15fb2063853491634eb2c57b57cf7f104f7160c4eed82cf9e392ab0d",
+    "z-anatomy-1.4.0-muscular.glb": "8a31c34c1ee578714bcd8a9a950aced4aaf0bbbd6047ec3b57836a4df6e8121d"
+  },
+  "sources": [
+    {
+      "title": "WHO Standard Acupuncture Point Locations in the Western Pacific Region",
+      "url": "https://iris.who.int/bitstream/handle/10665/353407/9789290613831-eng.pdf",
+      "accessedMirror": "https://www.medbox.org/index.php/dl/627a4de115110145a1723f64",
+      "printedPages": {
+        "scope": 2,
+        "SI11": 93,
+        "SI12": 93,
+        "SI9": 92,
+        "LI15": 41,
+        "TE14": 164
+      }
+    }
+  ]
+}

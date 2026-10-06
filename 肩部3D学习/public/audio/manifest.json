@@ -1,0 +1,662 @@
+{
+  "version": 2,
+  "synthesized": true,
+  "generator": "Per-clip source metadata",
+  "description": "Synthesized pronunciation study aids. See each clip for its actual provider and voice.",
+  "acupointNote": "穴位名称为汉语拼音名称，并非英语词；穴名音频使用普通话。",
+  "clips": {
+    "supraspinatus": {
+      "text": "Supraspinatus",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/supraspinatus-9d028e7a93.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Supraspinatus",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.848,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 9087,
+      "rms": 1820.69,
+      "bytes": 29568,
+      "sha256": "9d028e7a9320189e127e13c43ac7bbc5a67df29df8408f2586550a9302ec0997",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "infraspinatus": {
+      "text": "Infraspinatus",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/infraspinatus-3855abba84.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Infraspinatus",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 2.16,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 10876,
+      "rms": 2073.02,
+      "bytes": 34560,
+      "sha256": "3855abba840125ffe9fe922fc59192b807eacc7b7dfdb5dd85987f1999fa04e2",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "teres-minor": {
+      "text": "Teres minor",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/teres-minor-37304fcf68.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Teres minor",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 2.16,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 12817,
+      "rms": 2102.31,
+      "bytes": 34560,
+      "sha256": "37304fcf68b0fb592dfe5c5a5e5f509e2be739451a29666775e41bed37884112",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "subscapularis": {
+      "text": "Subscapularis",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/subscapularis-88542dca80.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Subscapularis",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.968,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 12208,
+      "rms": 1757.18,
+      "bytes": 31488,
+      "sha256": "88542dca80385cce8f33077ac7dfc6bc60576db2011d97dab3dfae9ca90b111c",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "deltoid": {
+      "text": "Deltoid",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/deltoid-fa1a238e21.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Deltoid",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.152,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 23300,
+      "rms": 2522.21,
+      "bytes": 18432,
+      "sha256": "fa1a238e21e405df91f5ee16bbf9e47df58f0e6d85f682d4d765ab9259587c5a",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "acromial-part": {
+      "text": "Acromial part",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/acromial-part-b35b2f8d20.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Acromial part",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 11076,
+      "rms": 2017.92,
+      "bytes": 28800,
+      "sha256": "b35b2f8d20fab7032bf3295d18d71450ee08053010f89c1d39092da7f94b1c65",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "clavicular-part": {
+      "text": "Clavicular part",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/clavicular-part-c90c119dc3.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Clavicular part",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.416,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 14964,
+      "rms": 2124.38,
+      "bytes": 22656,
+      "sha256": "c90c119dc3a4e28b53c2cbad6757bf5b5b7b19fdc25caffba274677ed99a576c",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "spinal-part": {
+      "text": "Spinal part",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/spinal-part-23ebd69a0c.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Spinal part",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 15426,
+      "rms": 2104.64,
+      "bytes": 28800,
+      "sha256": "23ebd69a0c6285d82207ead3d16b68e55d78bce3dbc0563d3c5b55474487e521",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "scapula": {
+      "text": "Scapula",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/scapula-9ea768320c.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Scapula",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 12849,
+      "rms": 1809.88,
+      "bytes": 19200,
+      "sha256": "9ea768320cfe87c612ece9c06f20e543736e7f043c73d23e73885a35a820119d",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "clavicle": {
+      "text": "Clavicle",
+      "voice": "marin",
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini-tts",
+      "lang": "en-US",
+      "file": "audio/marin/clavicle-9541b6d184.mp3",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "source": {
+        "url": "https://www.openai.fm/",
+        "method": "browser UI download",
+        "downloaded_on": "2026-10-05"
+      },
+      "generationParameters": {
+        "input": "Clavicle",
+        "instructions": "Read the supplied anatomical term once, clearly and naturally in American English, as a pronunciation example for a student. Use accurate anatomical pronunciation and stress, a neutral conversational tone, and a comfortable pace. Say only the supplied term. No introduction, explanation, spelling, or added words.",
+        "speed": null,
+        "response_format": null
+      },
+      "duration": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 16331,
+      "rms": 2158.97,
+      "bytes": 19200,
+      "sha256": "9541b6d184483c73ad3f659efef72d7d328518142fd45db0fdc1d67786529a7f",
+      "measurement": "Locally decoded signed 16-bit PCM; source download preserved"
+    },
+    "humerus": {
+      "text": "Humerus",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/humerus.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 0.6966,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 21023,
+      "rms": 5169.24,
+      "bytes": 34816,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "rotator-cuff": {
+      "text": "Rotator cuff",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/rotator-cuff.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.1313,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 26222,
+      "rms": 4838.07,
+      "bytes": 53988,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "scapular-spine": {
+      "text": "Scapular spine",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/scapular-spine.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.3123,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 24586,
+      "rms": 4774.0,
+      "bytes": 61968,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "inferior-angle": {
+      "text": "Inferior angle",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/inferior-angle.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.1337,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 21240,
+      "rms": 5984.56,
+      "bytes": 54090,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "acromion": {
+      "text": "Acromion",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/acromion.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 0.8429,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 22993,
+      "rms": 5555.77,
+      "bytes": 41270,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "greater-tubercle": {
+      "text": "Greater tubercle",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/greater-tubercle.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.0922,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 23756,
+      "rms": 5069.41,
+      "bytes": 52262,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "infraspinous-fossa": {
+      "text": "Infraspinous fossa",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/infraspinous-fossa.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.3891,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 25342,
+      "rms": 5128.16,
+      "bytes": 65354,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "supraspinous-fossa": {
+      "text": "Supraspinous fossa",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/supraspinous-fossa.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.5214,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 25072,
+      "rms": 4886.88,
+      "bytes": 71190,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "posterior-shoulder": {
+      "text": "Posterior shoulder",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/posterior-shoulder.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.3418,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 24222,
+      "rms": 5408.3,
+      "bytes": 63270,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "anterolateral-acromion": {
+      "text": "Anterolateral acromion",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/anterolateral-acromion.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.8066,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 25088,
+      "rms": 5975.6,
+      "bytes": 83768,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "posterolateral-acromion": {
+      "text": "Posterolateral acromion",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/posterolateral-acromion.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.8187,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 25448,
+      "rms": 5757.57,
+      "bytes": 84300,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "posterior-deltoid": {
+      "text": "Posterior deltoid",
+      "voice": "Samantha",
+      "lang": "en-US",
+      "file": "audio/posterior-deltoid.wav",
+      "synthesized": true,
+      "kind": "English anatomical term",
+      "rateWordsPerMinute": 140,
+      "duration": 1.4115,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 25407,
+      "rms": 5359.24,
+      "bytes": 66342,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "si11": {
+      "text": "天宗",
+      "voice": "Tingting",
+      "lang": "zh-CN",
+      "file": "audio/si11.wav",
+      "synthesized": true,
+      "kind": "Chinese acupoint name; pinyin is not English",
+      "rateWordsPerMinute": 140,
+      "duration": 0.6753,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 16014,
+      "rms": 4081.71,
+      "bytes": 33876,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "si12": {
+      "text": "秉风",
+      "voice": "Tingting",
+      "lang": "zh-CN",
+      "file": "audio/si12.wav",
+      "synthesized": true,
+      "kind": "Chinese acupoint name; pinyin is not English",
+      "rateWordsPerMinute": 140,
+      "duration": 0.623,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 18477,
+      "rms": 4315.66,
+      "bytes": 31570,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "si9": {
+      "text": "肩贞",
+      "voice": "Tingting",
+      "lang": "zh-CN",
+      "file": "audio/si9.wav",
+      "synthesized": true,
+      "kind": "Chinese acupoint name; pinyin is not English",
+      "rateWordsPerMinute": 140,
+      "duration": 0.6185,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 15463,
+      "rms": 4157.43,
+      "bytes": 31372,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "li15": {
+      "text": "肩髃",
+      "voice": "Tingting",
+      "lang": "zh-CN",
+      "file": "audio/li15.wav",
+      "synthesized": true,
+      "kind": "Chinese acupoint name; pinyin is not English",
+      "rateWordsPerMinute": 140,
+      "duration": 0.514,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 15399,
+      "rms": 4216.77,
+      "bytes": 26764,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    },
+    "te14": {
+      "text": "肩髎",
+      "voice": "Tingting",
+      "lang": "zh-CN",
+      "file": "audio/te14.wav",
+      "synthesized": true,
+      "kind": "Chinese acupoint name; pinyin is not English",
+      "rateWordsPerMinute": 140,
+      "duration": 0.6301,
+      "sampleRate": 22050,
+      "channels": 1,
+      "peak": 18380,
+      "rms": 4247.58,
+      "bytes": 31884,
+      "provider": "Apple",
+      "model": null,
+      "source": {
+        "method": "macOS say",
+        "note": "Retained original local speech synthesis"
+      }
+    }
+  },
+  "failures": {},
+  "voiceCounts": {
+    "OpenAI / marin": 10,
+    "Apple / Samantha": 12,
+    "Apple / Tingting": 5
+  }
+}

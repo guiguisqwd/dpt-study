@@ -1,0 +1,38 @@
+# Dependencies, local build output, and generated release bundles
+node_modules/
+dist/
+.vite/
+.pnpm-store/
+/website-release/
+/tmp/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+.DS_Store
+
+# Local credentials and intermediate voice files are never project sources
+.env
+.env.*
+!.env.example
+.voice-staging/
+*.pem
+*.key
+
+# Review screenshots are local evidence, not published anatomy assets
+/screenshots/
+/test-results/
+/playwright-report/
+/*.png
+/*.jpg
+/肩部3D学习/*.png
+/肩部3D学习/*.jpg
+/reading-source/build-report.json
+/reading-source/pdf-export-report.json
+
+# Keep the reviewed PDF as a release input; rebuild ZIPs during publication
+/output/*
+!/output/pdf/
+/output/pdf/*
+!/output/pdf/肩袖-英中双语学习简报.pdf

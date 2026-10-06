@@ -1,0 +1,152 @@
+[
+  {
+    "id": "humeral-head",
+    "english": "Humeral head",
+    "chinese": "肱骨头",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.149,
+        1.39,
+        -0.017774742
+      ],
+      "left": [
+        0.149,
+        1.39,
+        -0.017774843
+      ]
+    },
+    "view": "front",
+    "description": "Rounded proximal articular region, facing medially toward the scapula. / 近端朝向肩胛骨的圆形关节面区域。",
+    "basis": "Anterior surface sample within the smooth medial head region identified in anterior and medial mesh views.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  },
+  {
+    "id": "greater-tubercle",
+    "english": "Greater tubercle",
+    "chinese": "肱骨大结节",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.180374998,
+        1.402915955,
+        -0.022096995
+      ],
+      "left": [
+        0.180374995,
+        1.402915871,
+        -0.022096985
+      ]
+    },
+    "view": "front",
+    "description": "Lateral prominence beside the humeral head. / 位于肱骨头外侧的骨性隆起。",
+    "basis": "Reprojected existing LI15 superior-lateral greater-tubercle evidence anchor onto this side's own humerus mesh.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  },
+  {
+    "id": "lesser-tubercle",
+    "english": "Lesser tubercle",
+    "chinese": "肱骨小结节",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.1695,
+        1.388,
+        -0.004291979
+      ],
+      "left": [
+        0.1695,
+        1.388,
+        -0.004292026
+      ]
+    },
+    "view": "front",
+    "description": "Anterior prominence; the intertubercular groove separates it from the greater tubercle. / 前方的骨性隆起，与大结节之间为结节间沟。",
+    "basis": "Anterior positive-Z prominence in the proximal surface section; visually identified between the groove and medial head.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  },
+  {
+    "id": "intertubercular-groove",
+    "english": "Intertubercular groove",
+    "chinese": "结节间沟",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.18,
+        1.392,
+        -0.011037322
+      ],
+      "left": [
+        0.18,
+        1.392,
+        -0.011037311
+      ]
+    },
+    "view": "front",
+    "description": "Shallow channel between the greater and lesser tubercles; its fine margins are simplified in this mesh. / 大、小结节之间的浅沟；此网格简化了沟的细部边界。",
+    "basis": "Anterior surface trough between the lateral greater-tubercle bulge and more anterior lesser-tubercle bulge at Y=1.392 m. A regional surface pointer, not an exact traced groove.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  },
+  {
+    "id": "anatomical-neck",
+    "english": "Anatomical neck",
+    "chinese": "肱骨解剖颈",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.15,
+        1.371,
+        -0.018499519
+      ],
+      "left": [
+        0.15,
+        1.371,
+        -0.018499471
+      ]
+    },
+    "view": "front",
+    "description": "Margin around the humeral head; this dot shows one inferior-anterior part of that region. / 肱骨头周缘；此点示意该区域前下方的一处，并非完整环线。",
+    "basis": "Anterior-inferior transition of the rounded head region, inspected in anterior, anteromedial and medial mesh views; approximate regional example.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  },
+  {
+    "id": "surgical-neck",
+    "english": "Surgical neck",
+    "chinese": "肱骨外科颈",
+    "anatomy": "appendicular-skeleton-humerus",
+    "positions": {
+      "right": [
+        -0.18,
+        1.356,
+        -0.014288868
+      ],
+      "left": [
+        0.18,
+        1.356,
+        -0.014288848
+      ]
+    },
+    "view": "front",
+    "description": "Narrowing below the proximal expansion, where it joins the shaft; the dot marks one anterior part. / 近端膨大与骨干相接的收窄区域；此点示意其前方的一处。",
+    "basis": "Anterior surface at the narrowing below the tubercles and head, before the relatively uniform shaft; approximate regional example.",
+    "sourceURLs": [
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+    ],
+    "precision": "Approximate model-surface study label; no subregion segmentation or exact boundary."
+  }
+]

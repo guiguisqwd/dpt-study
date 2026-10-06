@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06",
+  "skill": {
+    "name": "scientific-critical-thinking",
+    "version": "1.5",
+    "source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-critical-thinking/SKILL.md",
+    "used_as": "已读取并按流程应用；未全局安装",
+    "attribution": "Kassis T, Agarwal V, He Y, Patel D, Brueckner AM (2026). Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. arXiv:2609.00065. https://doi.org/10.48550/arXiv.2609.00065",
+    "citation_version_checked": "v2; no journal reference listed"
+  },
+  "sources": {
+    "results_abstract": "https://pubmed.ncbi.nlm.nih.gov/41476428/",
+    "results_doi": "https://doi.org/10.2519/jospt.2025.13460",
+    "protocol_pdf": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871",
+    "registry_link": "https://clinicaltrials.gov/study/NCT03442894"
+  },
+  "access": {
+    "results_full_text": "未取得，出版社返回403",
+    "protocol": "已核对公开全文相关方法段落",
+    "registry_current_and_history": "未核验"
+  },
+  "changes": [
+    "前四章去除导读口令与生成过程措辞",
+    "第六章按问题、结果、方法评价、结论边界重写",
+    "补充效应量和95%CI",
+    "PASS明确为绝对百分点",
+    "OR参照组保持未明，不换算为风险比",
+    "删除未核验二手评论的针刺操作概括"
+  ],
+  "primary_results": {
+    "outcome": "1-year SPADI",
+    "PT_DN_minus_PT": {
+      "difference": -7.51,
+      "CI95": [
+        -16.57,
+        1.54
+      ]
+    },
+    "PT_DN_minus_PT_SDN": {
+      "difference": -9.85,
+      "CI95": [
+        -18.98,
+        0.73
+      ],
+      "note": "按摘要原数值记录，未自行修正"
+    }
+  },
+  "preserved": "第五章复习内容（仅删除章节过渡提示）、15幅SVG及前四章知识内容与链接；3D应用、语音和坐标未编辑"
+}

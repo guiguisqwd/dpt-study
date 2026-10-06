@@ -1,0 +1,307 @@
+{
+  "model": "z-anatomy-1.4.0-skeletal.glb",
+  "sha256": "8cbea4cc15fb2063853491634eb2c57b57cf7f104f7160c4eed82cf9e392ab0d",
+  "coordinateSystem": "Original shared GLB coordinates, metres; Y up; X left-positive; Z anterior-positive",
+  "scope": "Proximal humerus only; approximate anatomical study pointers on the existing simplified bone mesh. Surface membership is geometric evidence, not proof of expert anatomical accuracy. Circumferential necks and groove margins are not reconstructed or segmented.",
+  "triangleCounts": {
+    "left": 1796,
+    "right": 1796
+  },
+  "sourceURLs": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+  ],
+  "passed": true,
+  "validatedCount": 12,
+  "results": [
+    {
+      "id": "humeral-head",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.149,
+        1.39,
+        -0.017774742
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1536,
+      "rayOrigin": [
+        -0.149,
+        1.39,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 1.4637159031938695e-10,
+      "passed": true,
+      "basis": "Anterior surface sample within the smooth medial head region identified in anterior and medial mesh views."
+    },
+    {
+      "id": "humeral-head",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.149,
+        1.39,
+        -0.017774843
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1536,
+      "rayOrigin": [
+        0.149,
+        1.39,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 1.9165779221842255e-10,
+      "passed": true,
+      "basis": "Anterior surface sample within the smooth medial head region identified in anterior and medial mesh views."
+    },
+    {
+      "id": "greater-tubercle",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.180374998,
+        1.402915955,
+        -0.022096995
+      ],
+      "method": "Nearest triangle projection of prior bone anchor, independently on each side",
+      "triangleIndex": 1129,
+      "distanceToMeshMetres": 1.898680882425663e-10,
+      "passed": true,
+      "basis": "Reprojected existing LI15 superior-lateral greater-tubercle evidence anchor onto this side's own humerus mesh."
+    },
+    {
+      "id": "greater-tubercle",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.180374995,
+        1.402915871,
+        -0.022096985
+      ],
+      "method": "Nearest triangle projection of prior bone anchor, independently on each side",
+      "triangleIndex": 1129,
+      "distanceToMeshMetres": 2.1112872003171572e-10,
+      "passed": true,
+      "basis": "Reprojected existing LI15 superior-lateral greater-tubercle evidence anchor onto this side's own humerus mesh."
+    },
+    {
+      "id": "lesser-tubercle",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.1695,
+        1.388,
+        -0.004291979
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1746,
+      "rayOrigin": [
+        -0.1695,
+        1.388,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 2.8894106497447706e-10,
+      "passed": true,
+      "basis": "Anterior positive-Z prominence in the proximal surface section; visually identified between the groove and medial head."
+    },
+    {
+      "id": "lesser-tubercle",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.1695,
+        1.388,
+        -0.004292026
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1746,
+      "rayOrigin": [
+        0.1695,
+        1.388,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 2.0147306982901702e-10,
+      "passed": true,
+      "basis": "Anterior positive-Z prominence in the proximal surface section; visually identified between the groove and medial head."
+    },
+    {
+      "id": "intertubercular-groove",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.18,
+        1.392,
+        -0.011037322
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1069,
+      "rayOrigin": [
+        -0.18,
+        1.392,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 1.192541727558433e-10,
+      "passed": true,
+      "basis": "Anterior surface trough between the lateral greater-tubercle bulge and more anterior lesser-tubercle bulge at Y=1.392 m. A regional surface pointer, not an exact traced groove."
+    },
+    {
+      "id": "intertubercular-groove",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.18,
+        1.392,
+        -0.011037311
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1069,
+      "rayOrigin": [
+        0.18,
+        1.392,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 2.612032589667816e-10,
+      "passed": true,
+      "basis": "Anterior surface trough between the lateral greater-tubercle bulge and more anterior lesser-tubercle bulge at Y=1.392 m. A regional surface pointer, not an exact traced groove."
+    },
+    {
+      "id": "anatomical-neck",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.15,
+        1.371,
+        -0.018499519
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1456,
+      "rayOrigin": [
+        -0.15,
+        1.371,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 2.051734215277202e-10,
+      "passed": true,
+      "basis": "Anterior-inferior transition of the rounded head region, inspected in anterior, anteromedial and medial mesh views; approximate regional example."
+    },
+    {
+      "id": "anatomical-neck",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.15,
+        1.371,
+        -0.018499471
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1456,
+      "rayOrigin": [
+        0.15,
+        1.371,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 2.5584140718590275e-10,
+      "passed": true,
+      "basis": "Anterior-inferior transition of the rounded head region, inspected in anterior, anteromedial and medial mesh views; approximate regional example."
+    },
+    {
+      "id": "surgical-neck",
+      "side": "right",
+      "anatomyId": "appendicular-skeleton-humerus-right",
+      "position": [
+        -0.18,
+        1.356,
+        -0.014288868
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1007,
+      "rayOrigin": [
+        -0.18,
+        1.356,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 3.4728373817656593e-10,
+      "passed": true,
+      "basis": "Anterior surface at the narrowing below the tubercles and head, before the relatively uniform shaft; approximate regional example."
+    },
+    {
+      "id": "surgical-neck",
+      "side": "left",
+      "anatomyId": "appendicular-skeleton-humerus-left",
+      "position": [
+        0.18,
+        1.356,
+        -0.014288848
+      ],
+      "method": "First positive-Z-to-negative-Z ray hit, independently on each side",
+      "triangleIndex": 1007,
+      "rayOrigin": [
+        0.18,
+        1.356,
+        0.1
+      ],
+      "rayDirection": [
+        0,
+        0,
+        -1
+      ],
+      "rayIntersectionCount": 2,
+      "distanceToMeshMetres": 6.473149341943412e-12,
+      "passed": true,
+      "basis": "Anterior surface at the narrowing below the tubercles and head, before the relatively uniform shaft; approximate regional example."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Rewrites the reviewed PDF's 3D links without regenerating its page layout.
+pypdf==6.10.0

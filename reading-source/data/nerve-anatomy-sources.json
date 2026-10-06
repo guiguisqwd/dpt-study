@@ -1,0 +1,61 @@
+{
+  "figures": [
+    {
+      "file": "16-肩胛上神经-后肩解剖.svg",
+      "title_en": "Suprascapular nerve: anatomical course",
+      "title_zh": "肩胛上神经：解剖走行",
+      "caption_en": "Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.",
+      "caption_zh": "右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。",
+      "paragraph_en": "The suprascapular nerve arises from the superior trunk of the brachial plexus, usually carrying fibers from C5 and C6. It courses posterolaterally across the posterior triangle of the neck and passes through the suprascapular notch beneath the superior transverse scapular ligament. It gives motor branches to Supraspinatus in the supraspinous fossa, then passes around the lateral end of the scapular spine through the spinoglenoid notch to supply Infraspinatus in the infraspinous fossa.",
+      "paragraph_zh": "肩胛上神经起自臂丛上干，通常含 C5、C6 神经纤维。它向后外侧经过颈后三角，从肩胛上横韧带下方穿过肩胛上切迹，在冈上窝内发出支配冈上肌的运动支；随后绕过肩胛冈外侧端，经冈盂切迹进入冈下窝，支配冈下肌。"
+    },
+    {
+      "file": "17-腋神经-四边孔解剖.svg",
+      "title_en": "Axillary nerve: the quadrangular space",
+      "title_zh": "腋神经：四边孔",
+      "caption_en": "Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.",
+      "caption_zh": "移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。",
+      "paragraph_en": "The axillary nerve arises from the posterior cord of the brachial plexus, mainly from C5 and C6. It passes posteriorly through the quadrangular space with the posterior circumflex humeral artery and winds around the surgical neck of the Humerus deep to Deltoid. Its anterior branch supplies the anterior and middle parts of Deltoid. Its posterior branch supplies Teres minor and usually supplies the posterior part of Deltoid and continues as the superior lateral cutaneous nerve of the arm. Branching and intramuscular supply vary between individuals.",
+      "paragraph_zh": "腋神经起自臂丛后束，主要含 C5、C6 神经纤维。它与旋肱后动脉一起向后穿过四边孔，在三角肌深面绕行肱骨外科颈。前支支配三角肌前部和中部；后支支配小圆肌，通常也支配三角肌后部，并延续为臂外上侧皮神经。 分支方式及肌内支配存在个体差异。"
+    }
+  ],
+  "nerve_levels": {
+    "heading_en": "Cervical levels are not thoracic levels",
+    "heading_zh": "颈神经节段与胸神经节段",
+    "paragraph_en": "C stands for cervical (neck), whereas T stands for thoracic (chest). In an innervation label such as C5–C6, the numbers identify the spinal nerve levels contributing fibers to the nerve; they do not identify two thoracic vertebrae. There are seven cervical vertebrae, C1–C7, but eight pairs of cervical spinal nerves, C1–C8. C1–C7 nerves leave above the same-numbered vertebra; C8 leaves between C7 and T1. The roots of the brachial plexus are the anterior rami of spinal nerves C5–T1, not the vertebral bones themselves.",
+    "paragraph_zh": "C 是 cervical（颈部）的缩写，T 是 thoracic（胸部）的缩写。神经支配中的 C5–C6 指向该神经贡献纤维的脊神经节段，不是两块胸椎。颈椎有 7 块（C1–C7），颈神经有 8 对（C1–C8）；C1–C7 神经从同名椎骨上方穿出，C8 从 C7 与 T1 之间穿出。臂丛的“根”是 C5–T1 脊神经的前支，而不是椎骨本身。"
+  },
+  "sources": [
+    {
+      "title": "University of Utah, Shoulder, Axilla and Arm / upper-limb anatomy syllabus",
+      "url": "https://anatomy.med.utah.edu/diganat/PT/2014_lecture/PT_syllabus_2014_sm.pdf",
+      "supports": "Suprascapular nerve course; C5–C6 origin; ligament relationship; Supraspinatus and Infraspinatus innervation."
+    },
+    {
+      "title": "University of Utah, Unit 4 Limbs syllabus",
+      "url": "https://anatomy.med.utah.edu/diganat/SOM/unit_4/lec/unit4%20dm.vb.indd.pdf",
+      "supports": "Quadrangular-space boundaries and contents; posterior circumflex humeral artery course."
+    },
+    {
+      "title": "NCBI Bookshelf: Anatomy, Head and Neck, Cervical Nerves",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538136/",
+      "supports": "Eight cervical nerves; exit pattern; anterior rami and plexus formation."
+    },
+    {
+      "title": "NCBI Bookshelf: Anatomy, Head and Neck, Cervical Vertebrae",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539734/",
+      "supports": "Seven cervical vertebrae versus eight cervical nerve pairs."
+    },
+    {
+      "title": "The anatomic branch pattern of the axillary nerve (cadaveric study)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17097311/",
+      "supports": "Anterior branch supplies anterior/middle Deltoid; posterior branch supplies Teres minor; posterior Deltoid innervation has variation."
+    },
+    {
+      "title": "Mapping the axillary nerve within the deltoid muscle (cadaveric study)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18766295/",
+      "supports": "Posterior-branch motor and cutaneous branches; branching variations."
+    }
+  ],
+  "notes": "New figures are original editable SVG schematics based on anatomical descriptions; they are not reproduced source illustrations. Existing flowcharts06–07 should be secondary / expandable after the new anatomy figures.08 explicitly distinguishes vertebrae, cervical nerves, and brachial plexus roots;14 is rebuilt with all text inside separated panels;15 label boxes are removed in favor of readable label halos. Figure07 was rebuilt as a branching map because the original serial arrows could imply anterior branch arises from posterior cutaneous branch. This factual diagram correction preserves the original targets while clarifying branch relationships."
+}

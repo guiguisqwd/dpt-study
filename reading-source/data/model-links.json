@@ -1,0 +1,67 @@
+{
+  "supraspinatus": {
+    "english": "Supraspinatus",
+    "chinese": "冈上肌",
+    "term": "supraspinatus"
+  },
+  "infraspinatus": {
+    "english": "Infraspinatus",
+    "chinese": "冈下肌",
+    "term": "infraspinatus"
+  },
+  "teres-minor": {
+    "english": "Teres minor",
+    "chinese": "小圆肌",
+    "term": "teres-minor"
+  },
+  "subscapularis": {
+    "english": "Subscapularis",
+    "chinese": "肩胛下肌",
+    "term": "subscapularis"
+  },
+  "deltoid": {
+    "english": "Deltoid",
+    "chinese": "三角肌",
+    "term": "deltoid"
+  },
+  "posterior-deltoid": {
+    "english": "Posterior deltoid",
+    "chinese": "三角肌后部",
+    "term": "posterior-deltoid"
+  },
+  "anterior-deltoid": {
+    "english": "Anterior deltoid",
+    "chinese": "三角肌前部",
+    "term": "clavicular-part"
+  },
+  "middle-deltoid": {
+    "english": "Middle deltoid",
+    "chinese": "三角肌中部",
+    "term": "acromial-part"
+  },
+  "teres-major": {
+    "english": "Teres major",
+    "chinese": "大圆肌",
+    "term": null
+  },
+  "trapezius": {
+    "english": "Trapezius",
+    "chinese": "斜方肌",
+    "term": null
+  },
+  "upper-trapezius": {
+    "english": "Upper trapezius",
+    "chinese": "上斜方肌",
+    "term": null
+  },
+  "lower-trapezius": {
+    "english": "Lower trapezius",
+    "chinese": "下斜方肌",
+    "term": null
+  },
+  "serratus-anterior": {
+    "english": "Serratus anterior",
+    "chinese": "前锯肌",
+    "term": null
+  }
+}

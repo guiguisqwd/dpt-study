@@ -6,4 +6,5 @@
 *.zip binary
 *.svg text
 *.html text
-*.md text
+# Markdown uses trailing double spaces for deliberate hard line breaks.
+*.md text whitespace=-blank-at-eol,-blank-at-eof
