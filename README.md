@@ -5,6 +5,7 @@
 **GitHub 是共同维护的项目来源：每次授权修改，检查后提交并推送。** 现有仓库 [guiguisqwd/shoulder-study](https://github.com/guiguisqwd/shoulder-study) 和站点路径保留，以兼容已有链接；历史名称不限制主题范围。Claude 与其他协作者先读 [CLAUDE.md](./CLAUDE.md)。
 
 - [学习首页](https://guiguisqwd.github.io/shoulder-study/study.html)
+- [解剖学习工作台：维护范围与接手说明](./docs/MAINTENANCE.md)
 - [新增主题流程](./docs/ADDING_A_TOPIC.md)
 - [肩袖阅读](https://guiguisqwd.github.io/shoulder-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/shoulder-study/reading-claude.html) · [肩袖 3D](https://guiguisqwd.github.io/shoulder-study/?term=humerus)
 

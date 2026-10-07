@@ -2,6 +2,9 @@
 
 Read `CLAUDE.md` and `README.md` before changing this project. The user requires
 GitHub to be the shared source of truth for both Codex and Claude.
+The intended independent Codex project name is **解剖学习工作台**; its maintenance scope covers
+the whole Anatomy study workbench. Read [docs/MAINTENANCE.md](./docs/MAINTENANCE.md)
+for project scope, source locations and handoff requirements.
 
 This product is **Anatomy study / 解剖学习**, with multiple anatomy topics.
 Shoulder is the first topic, not the limit of the product. Keep the existing
