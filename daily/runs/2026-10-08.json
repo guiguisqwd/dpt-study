@@ -140,6 +140,13 @@
      "status": "done",
      "at": "2026-10-08T00:25:01-07:00",
      "evidence": "https://claude.ai/artifact/3k1RZqb9tf9heXKLHe58ig version 3 (1791444289-d393), 33 cards incl. 8 from 2026-10-08"
+    },
+    "publish": {
+     "status": "blocked",
+     "at": "2026-10-08T00:25:02-07:00",
+     "error": "git push origin HEAD:main failed (128):\n\nremote: access denied by the git proxy: guiguisqwd/shoulder-study is not in this session's authorized repository set, so the proxy will not inject a credential for it. To fix, add the repository to the session's sources.\nfatal: unable to access 'https://github.com/guiguisqwd/shoulder-study.git/': The requested URL returned error: 403\n",
+     "commit": "f61485329fdafd8b0a96f23b85c83a74f5f46074",
+     "branch": "main"
     }
    },
    "started": "2026-10-07T05:43:03-07:00",
@@ -290,6 +297,12 @@
    "phase": "evening",
    "step": "review_center",
    "status": "done"
+  },
+  {
+   "at": "2026-10-08T00:25:02-07:00",
+   "phase": "evening",
+   "step": "publish",
+   "status": "blocked"
   }
  ],
  "kind": "learning",

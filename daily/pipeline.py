@@ -386,10 +386,20 @@ def s_publish(run, date, phase="evening", step="publish"):
         if remote != head:
             raise RuntimeError(f"remote main {remote} != local {head}")
     except Exception as e:  # keep the commit locally; report precisely
-        set_step(run, phase, step, "blocked", error=str(e)[-800:], commit=head, branch=branch)
-        return need(24, "GitHub push blocked", [f"Local commit {head[:10]} is kept. Error: {str(e)[-400:]}",
-                                                "Report this in the final message; do not force-push. If credentials are missing, the user must grant "
-                                                "write access to guiguisqwd/shoulder-study."])
+        git("rebase", "--abort", check=False)          # never leave the clone mid-rebase
+        head = git("rev-parse", "HEAD").stdout.strip()
+        bundle = STAGING / "backup" / "shoulder-study-unpushed.bundle"
+        bundle.parent.mkdir(parents=True, exist_ok=True)
+        base = "origin/main" if git("rev-parse", "--verify", "-q", "origin/main", check=False).returncode == 0 else None
+        b = git("bundle", "create", str(bundle), f"{base}..HEAD" if base else "HEAD", check=False)
+        set_step(run, phase, step, "blocked", error=str(e)[-800:], commit=head, branch=branch,
+                 bundle=str(bundle) if b.returncode == 0 else None)
+        return need(24, "GitHub push blocked", [
+            f"Local commit {head[:10]} is kept. Error: {str(e)[-400:]}",
+            f"Backup: device_commit_files stagedPath={bundle} → devicePath=~/Documents/DPT-每日简报/系统/待推送/shoulder-study-unpushed.bundle "
+            "(force=true). A later session restores it with: git fetch <bundle> HEAD && git merge --ff-only FETCH_HEAD.",
+            "Report this in the final message; do not force-push. If credentials are missing, the user must add guiguisqwd/shoulder-study "
+            "to the task's sources with write access."])
     set_step(run, phase, step, "done", evidence={"commit": head, "pushed_to": "origin/main",
                                                "site": f"{paths.SITE_BASE}daily/{date}/index.html"})
     return 0

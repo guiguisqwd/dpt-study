@@ -52,3 +52,4 @@
 {"date": "2026-10-08", "at": "2026-10-07T05:49:25-07:00", "phase": "evening", "step": "archive", "status": "done"}
 {"date": "2026-10-08", "at": "2026-10-07T05:49:25-07:00", "phase": "evening", "step": "review_center", "status": "waiting"}
 {"date": "2026-10-08", "at": "2026-10-08T00:25:01-07:00", "phase": "evening", "step": "review_center", "status": "done"}
+{"date": "2026-10-08", "at": "2026-10-08T00:25:02-07:00", "phase": "evening", "step": "publish", "status": "blocked", "error": "git push origin HEAD:main failed (128):\n\nremote: access denied by the git proxy: guiguisqwd/shoulder-study is not in this session's authorized repository set, so the proxy will not inject a credential for it. To fix, add the repository to the session's sources.\nfatal: unable to access 'https://githu"}

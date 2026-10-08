@@ -35,6 +35,16 @@ python3 daily/pipeline.py mark archive --date 2026-10-08 --evidence @commit-resu
 Review days (Sundays, 12/16–12/23) are generated automatically from the week's packs
 (`engine/review_pack.py`): no authoring step.
 
+## Scheduled runs and the backup bundle
+
+Two scheduled tasks run this pipeline in fresh cloud sessions linked to gui's Mac:
+`DPT 每日学习包 · 前一晚生成` (18:07 Pacific, `evening` for tomorrow) and `DPT 每日学习包 · 4:30 推送`
+(04:18 Pacific, `morning` for today). Each clones this repo, then restores commits that could not be
+pushed yet from `~/Documents/DPT-每日简报/系统/待推送/shoulder-study-unpushed.bundle` on the Mac
+(`git fetch <bundle> HEAD && git merge --ff-only FETCH_HEAD`). When `publish`/`record` cannot push
+(exit 24), the pipeline writes a fresh bundle (`origin/main..HEAD`) to the staging folder and prints
+the `device_commit_files` call that puts it back on the Mac, so the next run starts from it.
+
 ## Layout
 
 ```
