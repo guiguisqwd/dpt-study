@@ -11,3 +11,55 @@
 .bone-view-controls>button{min-width:120px}
 .vanatome-annotation[data-compact=true]{font-size:10px!important}.vanatome-annotation[data-compact=true]>span:last-child{line-height:1.2!important}
 @media(max-width:740px){.anatomy-strip{min-height:120px}}
+/* Depth & surroundings · 深浅与周围结构 */
+.depth-section{margin-top:18px;padding-top:1px;border-top:1px solid var(--line)}
+.depth-section .tiny{line-height:1.6}
+.depth-custom{border:1px solid #6b5a3a;border-radius:6px;padding:6px 8px}
+.depth-axis{font-size:11px!important;line-height:1.6!important;color:#c9d3cb}
+.depth-axis>span{display:block;font-size:10px;letter-spacing:.4px;color:var(--muted)}
+.depth-strip{list-style:none;margin:10px 0 0;padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#121d19}
+.depth-row{display:grid;grid-template-columns:12px minmax(0,1fr);border-top:1px solid #26352e}
+.depth-row:first-child{border-top:0}
+.depth-bar{position:relative;background:var(--layer,#3a4a42)}
+.depth-body{padding:6px 9px 7px;min-width:0;display:flex;flex-direction:column;gap:2px}
+.depth-line{display:flex;justify-content:space-between;align-items:baseline;gap:8px;min-width:0}
+.depth-line b{font-size:12px;font-weight:500;color:#eef2ee;overflow-wrap:anywhere}
+.depth-range{font-size:11px;color:#e6d3ac;white-space:nowrap;font-variant-numeric:tabular-nums}
+.depth-sub small{font-size:10px;color:var(--muted);white-space:nowrap}
+.depth-sub small.depth-zh{white-space:normal;color:#b9c6bd}
+.depth-zh{font-size:10px;color:#b9c6bd}
+.depth-skin .depth-bar{background:repeating-linear-gradient(135deg,#4b5a52 0 3px,#1a2622 3px 7px)}
+.depth-skin{background:repeating-linear-gradient(135deg,#ffffff07 0 6px,transparent 6px 12px)}
+.depth-skin b{color:#b8c4bc!important;font-weight:400!important}
+.depth-missing{font-size:10px;color:#d9b77d}
+.depth-gap .depth-bar{background:repeating-linear-gradient(180deg,#3a4a42 0 3px,transparent 3px 6px)}
+.depth-gap .depth-body{padding:3px 9px}
+.depth-gap small{font-size:10px;color:#93a39a}
+.depth-layer.is-reference{background:#1d2b25;box-shadow:inset 0 0 0 1px var(--marker,#e6b96b)}
+.depth-ref-dot{position:absolute;left:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--marker,#e6b96b);box-shadow:0 0 0 2px #121d19}
+.point-detail .depth-ref{margin:2px 0 0;font-size:11px;line-height:1.5;color:var(--marker,#e6b96b)}
+.depth-note{font-size:10px;line-height:1.55;color:#a7b6ad}
+.depth-stop{margin-top:6px!important}
+.depth-subheading{font-size:11px;font-weight:500;color:#c7d1c8;margin:16px 0 7px;letter-spacing:.3px}
+.depth-subheading small{display:block;font-size:10px;font-weight:400;color:var(--muted);margin-top:2px;letter-spacing:0}
+.depth-nearby{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.depth-nearby li{display:grid;grid-template-columns:8px minmax(0,1fr) auto;column-gap:8px;row-gap:1px;align-items:baseline;padding:5px 0;border-bottom:1px solid #22302a}
+.depth-nearby li:last-child{border-bottom:0}
+.depth-nearby i{width:7px;height:7px;border-radius:50%;align-self:center}
+.depth-nearby-name{min-width:0;font-size:11px}
+.depth-nearby-name b{font-weight:500;color:#e9eee9}
+.depth-nearby-name small{margin-left:6px;font-size:10px;color:#b4c2b9}
+.depth-distance{font-size:11px;color:#e6d3ac;white-space:nowrap;font-variant-numeric:tabular-nums}
+.depth-direction{grid-column:2/4;font-size:10px;line-height:1.5;color:#c3cec6}
+.depth-direction small{display:block;color:var(--muted);font-size:10px}
+.depth-missing-list{list-style:none;margin:0;padding:0;font-size:10px;line-height:1.55;color:#b8c4bc}
+.depth-missing-list li{padding:4px 0 4px 9px;border-left:2px dashed #55665c;margin-bottom:4px}
+.depth-missing-list b{font-weight:500;color:#dbe3dd}
+.depth-missing-list span{display:block;color:#9faea5}
+.point-detail .depth-caption{margin-top:14px;padding:7px 9px;border-radius:6px;background:#2a2619;border:1px solid #5d5034;font-size:11px;line-height:1.6;color:#efdcb4}
+.depth-details{border:1px solid var(--line);border-radius:7px;padding:9px;margin-top:10px}
+.depth-details summary{cursor:pointer;font-size:10px;color:#d8c29c;line-height:1.7}
+.point-detail .depth-details p,.depth-details li{font-size:11px;line-height:1.65;color:#b9c5bd}
+.depth-details ul{margin:6px 0;padding-left:16px}
+.depth-details a{font-size:10px}
+.vanatome-probe-callout{font-family:inherit}

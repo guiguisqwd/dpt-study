@@ -22,6 +22,7 @@ import {
 } from "react";
 import * as THREE from "three";
 import { AnnotationLayer } from "./AnnotationLayer.js";
+import { ProbeLayer } from "./ProbeLayer.js";
 import { resolveVanatomeAtlasSources } from "./composition.js";
 import {
   calculateFocusDistance,
@@ -1156,6 +1157,11 @@ function CompositeScene({
         annotations={props.annotations}
         selectedAnnotationId={props.selectedAnnotationId}
         onAnnotationSelect={props.onAnnotationSelect}
+        modelScale={props.modelScale}
+        modelPosition={props.modelPosition}
+      />
+      <ProbeLayer
+        probes={props.probes}
         modelScale={props.modelScale}
         modelPosition={props.modelPosition}
       />

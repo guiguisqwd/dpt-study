@@ -25,6 +25,7 @@ export type {
   VanatomeIsolationMode,
   VanatomeIsolationState,
   VanatomeLoadProgress,
+  VanatomeProbe,
   VanatomeStructure,
   VanatomeVector3,
   VanatomeViewerAppearance,

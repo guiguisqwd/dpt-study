@@ -1,0 +1,3563 @@
+{
+  "schemaVersion": 1,
+  "modelVersion": "vanatome-1.4.0-994e6cc8ffbb212e",
+  "referenceVersion": "shoulder-model-reference-2026-10-06-v1",
+  "generatedBy": "scripts/compute-acupoint-depth.mjs",
+  "scope": {
+    "en": "Model-based study reference. Not a needling path or needling depth. Distances come from one anatomical atlas and are not clinical measurements.",
+    "zh": "模型学习参照，不是进针路径或进针深度。距离来自单一解剖模型，不是临床测量值。"
+  },
+  "units": {
+    "positions": "original-model-metres-y-up (before modelScale 7 and modelPosition [0, -6.1, 0])",
+    "distances": "centimetres = original model metres × 100, measured along the probe axis from the first modeled surface (depth 0)"
+  },
+  "axisConventions": {
+    "up": "+y",
+    "anterior": "+z",
+    "rightSide": "x < 0",
+    "leftSide": "x > 0",
+    "lateralRight": "-x",
+    "lateralLeft": "+x",
+    "verifiedBy": [
+      "Superior +y: manubrium of sternum (y 1.377) above body of sternum (y 1.299); vertebra C7 (y 1.452) above sacrum (y 0.923).",
+      "Anterior +z: body of sternum z 0.091 versus vertebra T4 z -0.065; rectus abdominis z 0.082 versus gluteus maximus z -0.063.",
+      "Right side x < 0: all 320 sided meshes agree (Z-Anatomy source names ending \".r\" and anatomy IDs ending \"-right\" lie at x < 0; \".l\"/\"-left\" at x > 0). With +y up and +z anterior in a right-handed glTF frame, the subject's right is forward × up = -x, so names and geometry agree (no mirroring).",
+      "Anatomical position: on the right hand the first metacarpal (thumb, x -0.301) lies lateral to the fifth (x -0.243)."
+    ]
+  },
+  "method": {
+    "axis": "For each point a documented approach direction (posterior for SI11, SI12, SI9; lateral for LI15, TE14; mirrored for the left side) is cast through the model reference. Where that line first meets a modeled surface, the area-weighted outward normal of that structure's outward-facing triangles within 2.5 cm (a skin-scale patch) sets the probe direction, and the probe passes exactly through the reference. This approximates \"perpendicular to the body surface\" using the outer muscle surface, because skin is not modeled. The same construction with 1.5–3 cm patches is recorded under axis.sensitivity.",
+    "crossings": "Rays start 30 cm outside the reference. Every triangle of every muscle and bone mesh is tested double-sided (Möller–Trumbore); hits closer than 1e-6 m along the ray are merged; per-structure hits are paired into entry/exit by parity and checked against outward triangle normals.",
+    "layers": "Layers are listed from depth 0 until the axis crosses a rib (thoracic wall) or the humerus, or until the next modeled structure starts more than 1.5 cm beyond the deepest layer so far (after the reference), with an 8 cm limit.",
+    "nearby": "For every other structure, the nearest surface point to the reference (exhaustive triangle search) within 3 cm. Direction names use the components of the unit vector reference→nearest point: the largest anatomical component and a second one if it is at least 0.45; \"deeper/more superficial along the probe\" uses the component along the probe axis with the same threshold. A structure whose mesh also contains the reference (winding number) is listed as overlapping.",
+    "loaderCheck": "npm script test:depth reproduces every ray count and surface distance in public/geometry-validation.json (made with three.js) before checking this file."
+  },
+  "points": {
+    "SI11-right": {
+      "pointId": "SI11",
+      "side": "right",
+      "referenceAnatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+      "referencePosition": [
+        -0.1057287,
+        1.3402285,
+        -0.0968457
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Tianzong lies in the infraspinous fossa; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the infraspinatus) over the fossa.",
+          "zh": "天宗位于冈下窝；探针自后方进入，并按模型外表面（冈下肌）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "point": [
+            -0.1057287,
+            1.3402285,
+            -0.1110994
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 242
+        },
+        "directionInward": [
+          0.06158,
+          -0.292882,
+          0.954164
+        ],
+        "origin": [
+          -0.1065481,
+          1.3441255,
+          -0.1095414
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 17.4,
+        "angleToEntrySurfaceNormalDeg": 2.4,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 4.97,
+        "layerStopReason": "thoracic-wall",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 1.33,
+            "max": 1.35
+          },
+          "layerSequences": [
+            "Infraspinatus → Scapula → Subscapularis → Fifth rib"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "angleToSurfaceNormalDeg": 30.4
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 1.33,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+        "english": "Infraspinatus",
+        "chinese": "冈下肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 2.67,
+          "thicknessCm": 2.67,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "entryCm": 2.68,
+          "exitCm": 2.96,
+          "thicknessCm": 0.28,
+          "gapBeforeCm": 0.01,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "entryCm": 2.95,
+          "exitCm": 3.62,
+          "thicknessCm": 0.67,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.01,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "skeleton-fifth-rib-right",
+          "english": "Fifth rib",
+          "chinese": "第5肋",
+          "kind": "bone",
+          "entryCm": 3.67,
+          "exitCm": 5.04,
+          "thicknessCm": 1.37,
+          "gapBeforeCm": 0.05,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true,
+          "note": {
+            "en": "Deep to the ribs lie the intercostal muscles, pleura and lung, which are not modeled.",
+            "zh": "肋的深面为肋间肌、胸膜和肺，模型未包含。"
+          }
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.1,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.216,
+              "lateral": -0.56,
+              "anterior": 0.8,
+              "deep": 0.861
+            }
+          },
+          "closestPoint": [
+            -0.0995567,
+            1.3378442,
+            -0.0880305
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 1.36,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.229,
+              "lateral": -0.456,
+              "anterior": 0.86,
+              "deep": 0.916
+            }
+          },
+          "closestPoint": [
+            -0.0995141,
+            1.3371022,
+            -0.0851306
+          ]
+        },
+        {
+          "anatomyId": "skeleton-fifth-rib-right",
+          "english": "Fifth rib",
+          "chinese": "第5肋",
+          "kind": "bone",
+          "distanceCm": 1.83,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.192,
+              "lateral": -0.566,
+              "anterior": 0.802,
+              "deep": 0.856
+            }
+          },
+          "closestPoint": [
+            -0.095369,
+            1.3367135,
+            -0.0821694
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.23,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "anterior"
+            ],
+            "en": "Inferior, anterior",
+            "zh": "下方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.61,
+              "lateral": 0.521,
+              "anterior": 0.597,
+              "deep": 0.717
+            }
+          },
+          "closestPoint": [
+            -0.117318,
+            1.3266536,
+            -0.0835461
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 2.51,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.912,
+              "lateral": 0.402,
+              "anterior": -0.079,
+              "deep": -0.368
+            }
+          },
+          "closestPoint": [
+            -0.1158117,
+            1.3631147,
+            -0.0988334
+          ]
+        },
+        {
+          "anatomyId": "skeleton-sixth-rib-right",
+          "english": "Sixth rib",
+          "chinese": "第6肋",
+          "kind": "bone",
+          "distanceCm": 2.94,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.754,
+              "lateral": -0.54,
+              "anterior": 0.374,
+              "deep": 0.611
+            }
+          },
+          "closestPoint": [
+            -0.0898443,
+            1.3180701,
+            -0.0858397
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Suprascapular nerve and vessels",
+          "chinese": "肩胛上神经与血管",
+          "note": {
+            "en": "Reach the infraspinous fossa deep to the infraspinatus.",
+            "zh": "在冈下肌深面进入冈下窝。"
+          }
+        },
+        {
+          "english": "Circumflex scapular vessels",
+          "chinese": "旋肩胛血管",
+          "note": {
+            "en": "Supply the infraspinous region.",
+            "zh": "分布于冈下区。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        },
+        {
+          "en": "Source meshes interpenetrate here (Subscapularis); overlapping ranges are shown as modeled, not as real tissue sharing space.",
+          "zh": "此处原始网格存在互相穿插（肩胛下肌）；重叠范围按模型显示，不代表真实组织共占同一空间。"
+        }
+      ]
+    },
+    "SI11-left": {
+      "pointId": "SI11",
+      "side": "left",
+      "referenceAnatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+      "referencePosition": [
+        0.1057287,
+        1.3402285,
+        -0.0968456
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Tianzong lies in the infraspinous fossa; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the infraspinatus) over the fossa.",
+          "zh": "天宗位于冈下窝；探针自后方进入，并按模型外表面（冈下肌）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "point": [
+            0.1057287,
+            1.3402285,
+            -0.1110993
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 242
+        },
+        "directionInward": [
+          -0.06158,
+          -0.292882,
+          0.954164
+        ],
+        "origin": [
+          0.1065481,
+          1.3441255,
+          -0.1095413
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 17.4,
+        "angleToEntrySurfaceNormalDeg": 2.4,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 4.97,
+        "layerStopReason": "thoracic-wall",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 1.33,
+            "max": 1.35
+          },
+          "layerSequences": [
+            "Infraspinatus → Scapula → Subscapularis → Fifth rib"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "angleToSurfaceNormalDeg": 30.4
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 1.33,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+        "english": "Infraspinatus",
+        "chinese": "冈下肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 2.67,
+          "thicknessCm": 2.67,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "entryCm": 2.68,
+          "exitCm": 2.96,
+          "thicknessCm": 0.28,
+          "gapBeforeCm": 0.01,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "entryCm": 2.95,
+          "exitCm": 3.62,
+          "thicknessCm": 0.67,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.01,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "skeleton-fifth-rib-left",
+          "english": "Fifth rib",
+          "chinese": "第5肋",
+          "kind": "bone",
+          "entryCm": 3.67,
+          "exitCm": 5.04,
+          "thicknessCm": 1.37,
+          "gapBeforeCm": 0.05,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true,
+          "note": {
+            "en": "Deep to the ribs lie the intercostal muscles, pleura and lung, which are not modeled.",
+            "zh": "肋的深面为肋间肌、胸膜和肺，模型未包含。"
+          }
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.1,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.216,
+              "lateral": -0.56,
+              "anterior": 0.8,
+              "deep": 0.861
+            }
+          },
+          "closestPoint": [
+            0.0995567,
+            1.3378442,
+            -0.0880305
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 1.36,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.229,
+              "lateral": -0.456,
+              "anterior": 0.86,
+              "deep": 0.916
+            }
+          },
+          "closestPoint": [
+            0.0995142,
+            1.3371022,
+            -0.0851306
+          ]
+        },
+        {
+          "anatomyId": "skeleton-fifth-rib-left",
+          "english": "Fifth rib",
+          "chinese": "第5肋",
+          "kind": "bone",
+          "distanceCm": 1.83,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.192,
+              "lateral": -0.566,
+              "anterior": 0.802,
+              "deep": 0.856
+            }
+          },
+          "closestPoint": [
+            0.095369,
+            1.3367135,
+            -0.0821693
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.23,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "anterior"
+            ],
+            "en": "Inferior, anterior",
+            "zh": "下方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.61,
+              "lateral": 0.521,
+              "anterior": 0.597,
+              "deep": 0.717
+            }
+          },
+          "closestPoint": [
+            0.1173181,
+            1.3266535,
+            -0.0835461
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 2.51,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.912,
+              "lateral": 0.402,
+              "anterior": -0.079,
+              "deep": -0.368
+            }
+          },
+          "closestPoint": [
+            0.1158117,
+            1.3631147,
+            -0.0988334
+          ]
+        },
+        {
+          "anatomyId": "skeleton-sixth-rib-left",
+          "english": "Sixth rib",
+          "chinese": "第6肋",
+          "kind": "bone",
+          "distanceCm": 2.94,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.754,
+              "lateral": -0.54,
+              "anterior": 0.374,
+              "deep": 0.611
+            }
+          },
+          "closestPoint": [
+            0.0898443,
+            1.3180701,
+            -0.0858396
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Suprascapular nerve and vessels",
+          "chinese": "肩胛上神经与血管",
+          "note": {
+            "en": "Reach the infraspinous fossa deep to the infraspinatus.",
+            "zh": "在冈下肌深面进入冈下窝。"
+          }
+        },
+        {
+          "english": "Circumflex scapular vessels",
+          "chinese": "旋肩胛血管",
+          "note": {
+            "en": "Supply the infraspinous region.",
+            "zh": "分布于冈下区。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        },
+        {
+          "en": "Source meshes interpenetrate here (Subscapularis); overlapping ranges are shown as modeled, not as real tissue sharing space.",
+          "zh": "此处原始网格存在互相穿插（肩胛下肌）；重叠范围按模型显示，不代表真实组织共占同一空间。"
+        }
+      ]
+    },
+    "SI12-right": {
+      "pointId": "SI12",
+      "side": "right",
+      "referenceAnatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+      "referencePosition": [
+        -0.1118321,
+        1.393608,
+        -0.0703902
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Bingfeng lies in the supraspinous fossa above the midpoint of the scapular spine; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the supraspinatus).",
+          "zh": "秉风位于肩胛冈中点上方的冈上窝；探针自后方进入，并按模型外表面（冈上肌）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "point": [
+            -0.1118321,
+            1.393608,
+            -0.0806166
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 131
+        },
+        "directionInward": [
+          0.367136,
+          -0.262843,
+          0.892258
+        ],
+        "origin": [
+          -0.1152458,
+          1.396052,
+          -0.0786865
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 26.8,
+        "angleToEntrySurfaceNormalDeg": 8.6,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 5.15,
+        "layerStopReason": "thoracic-wall",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.93,
+            "max": 0.93
+          },
+          "layerSequences": [
+            "Supraspinatus → Scapula → Subscapularis → Third rib"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "angleToSurfaceNormalDeg": 21.4
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.93,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+        "english": "Supraspinatus",
+        "chinese": "冈上肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 1.82,
+          "thicknessCm": 1.82,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "entryCm": 2.43,
+          "exitCm": 2.71,
+          "thicknessCm": 0.28,
+          "gapBeforeCm": 0.61,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "entryCm": 2.94,
+          "exitCm": 3.55,
+          "thicknessCm": 0.61,
+          "gapBeforeCm": 0.23,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "skeleton-third-rib-right",
+          "english": "Third rib",
+          "chinese": "第3肋",
+          "kind": "bone",
+          "entryCm": 3.94,
+          "exitCm": 4.85,
+          "thicknessCm": 0.91,
+          "gapBeforeCm": 0.39,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true,
+          "note": {
+            "en": "Deep to the ribs lie the intercostal muscles, pleura and lung, which are not modeled.",
+            "zh": "肋的深面为肋间肌、胸膜和肺，模型未包含。"
+          }
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.16,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "lateral"
+            ],
+            "en": "Inferior, lateral",
+            "zh": "下方、外侧",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.665,
+              "lateral": 0.545,
+              "anterior": -0.51,
+              "deep": -0.481
+            }
+          },
+          "closestPoint": [
+            -0.118168,
+            1.3858741,
+            -0.0763225
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.32,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "posterior"
+            ],
+            "en": "Inferior, posterior",
+            "zh": "下方、后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.725,
+              "lateral": 0.355,
+              "anterior": -0.591,
+              "deep": -0.467
+            }
+          },
+          "closestPoint": [
+            -0.1165368,
+            1.3840159,
+            -0.0782095
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 1.53,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.649,
+              "lateral": -0.559,
+              "anterior": 0.516,
+              "deep": 0.836
+            }
+          },
+          "closestPoint": [
+            -0.103277,
+            1.38367,
+            -0.0624916
+          ]
+        },
+        {
+          "anatomyId": "neck-muscles-omohyoid-muscle-right",
+          "english": "Omohyoid",
+          "chinese": "肩胛舌骨肌",
+          "kind": "muscle",
+          "distanceCm": 1.72,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.113,
+              "lateral": -0.657,
+              "anterior": 0.746,
+              "deep": 0.936
+            }
+          },
+          "closestPoint": [
+            -0.1005323,
+            1.3916662,
+            -0.0575554
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 1.78,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior"
+            ],
+            "en": "Posterior",
+            "zh": "后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.443,
+              "lateral": 0.32,
+              "anterior": -0.838,
+              "deep": -0.749
+            }
+          },
+          "closestPoint": [
+            -0.1175143,
+            1.385745,
+            -0.0852693
+          ]
+        },
+        {
+          "anatomyId": "skeleton-third-rib-right",
+          "english": "Third rib",
+          "chinese": "第3肋",
+          "kind": "bone",
+          "distanceCm": 2.66,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.098,
+              "lateral": -0.675,
+              "anterior": 0.731,
+              "deep": 0.926
+            }
+          },
+          "closestPoint": [
+            -0.0938878,
+            1.391007,
+            -0.0509597
+          ]
+        },
+        {
+          "anatomyId": "skeleton-fourth-rib-right",
+          "english": "Fourth rib",
+          "chinese": "第4肋",
+          "kind": "bone",
+          "distanceCm": 2.77,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.677,
+              "lateral": -0.656,
+              "anterior": 0.335,
+              "deep": 0.717
+            }
+          },
+          "closestPoint": [
+            -0.0936568,
+            1.374845,
+            -0.0611123
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Trapezius",
+          "chinese": "斜方肌",
+          "note": {
+            "en": "Covers the supraspinatus superficially; absent from this atlas, so the supraspinatus is the first modeled layer here.",
+            "zh": "覆盖于冈上肌浅面；本模型未包含，因此此处第一层建模结构是冈上肌。"
+          }
+        },
+        {
+          "english": "Suprascapular nerve and vessels",
+          "chinese": "肩胛上神经与血管",
+          "note": {
+            "en": "Run in the supraspinous fossa deep to the supraspinatus.",
+            "zh": "在冈上肌深面行于冈上窝。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    },
+    "SI12-left": {
+      "pointId": "SI12",
+      "side": "left",
+      "referenceAnatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+      "referencePosition": [
+        0.1118322,
+        1.393608,
+        -0.0703901
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Bingfeng lies in the supraspinous fossa above the midpoint of the scapular spine; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the supraspinatus).",
+          "zh": "秉风位于肩胛冈中点上方的冈上窝；探针自后方进入，并按模型外表面（冈上肌）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+          "point": [
+            0.1118322,
+            1.393608,
+            -0.0806165
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 131
+        },
+        "directionInward": [
+          -0.367136,
+          -0.262843,
+          0.892258
+        ],
+        "origin": [
+          0.1152458,
+          1.396052,
+          -0.0786865
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 26.8,
+        "angleToEntrySurfaceNormalDeg": 8.6,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 5.15,
+        "layerStopReason": "thoracic-wall",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.93,
+            "max": 0.93
+          },
+          "layerSequences": [
+            "Supraspinatus → Scapula → Subscapularis → Third rib"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "angleToSurfaceNormalDeg": 21.4
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.93,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+        "english": "Supraspinatus",
+        "chinese": "冈上肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 1.82,
+          "thicknessCm": 1.82,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "entryCm": 2.43,
+          "exitCm": 2.71,
+          "thicknessCm": 0.28,
+          "gapBeforeCm": 0.61,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "entryCm": 2.94,
+          "exitCm": 3.55,
+          "thicknessCm": 0.61,
+          "gapBeforeCm": 0.23,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "skeleton-third-rib-left",
+          "english": "Third rib",
+          "chinese": "第3肋",
+          "kind": "bone",
+          "entryCm": 3.94,
+          "exitCm": 4.85,
+          "thicknessCm": 0.91,
+          "gapBeforeCm": 0.39,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true,
+          "note": {
+            "en": "Deep to the ribs lie the intercostal muscles, pleura and lung, which are not modeled.",
+            "zh": "肋的深面为肋间肌、胸膜和肺，模型未包含。"
+          }
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.16,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "lateral"
+            ],
+            "en": "Inferior, lateral",
+            "zh": "下方、外侧",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.665,
+              "lateral": 0.545,
+              "anterior": -0.51,
+              "deep": -0.481
+            }
+          },
+          "closestPoint": [
+            0.118168,
+            1.3858741,
+            -0.0763224
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.32,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "posterior"
+            ],
+            "en": "Inferior, posterior",
+            "zh": "下方、后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.725,
+              "lateral": 0.355,
+              "anterior": -0.591,
+              "deep": -0.467
+            }
+          },
+          "closestPoint": [
+            0.1165368,
+            1.3840158,
+            -0.0782096
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 1.53,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.649,
+              "lateral": -0.559,
+              "anterior": 0.516,
+              "deep": 0.836
+            }
+          },
+          "closestPoint": [
+            0.103277,
+            1.3836699,
+            -0.0624915
+          ]
+        },
+        {
+          "anatomyId": "neck-muscles-omohyoid-muscle-left",
+          "english": "Omohyoid",
+          "chinese": "肩胛舌骨肌",
+          "kind": "muscle",
+          "distanceCm": 1.72,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.113,
+              "lateral": -0.657,
+              "anterior": 0.746,
+              "deep": 0.936
+            }
+          },
+          "closestPoint": [
+            0.1005324,
+            1.3916662,
+            -0.0575554
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 1.78,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior"
+            ],
+            "en": "Posterior",
+            "zh": "后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.443,
+              "lateral": 0.32,
+              "anterior": -0.838,
+              "deep": -0.749
+            }
+          },
+          "closestPoint": [
+            0.1175143,
+            1.385745,
+            -0.0852693
+          ]
+        },
+        {
+          "anatomyId": "skeleton-third-rib-left",
+          "english": "Third rib",
+          "chinese": "第3肋",
+          "kind": "bone",
+          "distanceCm": 2.66,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.098,
+              "lateral": -0.675,
+              "anterior": 0.731,
+              "deep": 0.926
+            }
+          },
+          "closestPoint": [
+            0.0938878,
+            1.391007,
+            -0.0509596
+          ]
+        },
+        {
+          "anatomyId": "skeleton-fourth-rib-left",
+          "english": "Fourth rib",
+          "chinese": "第4肋",
+          "kind": "bone",
+          "distanceCm": 2.77,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "medial"
+            ],
+            "en": "Inferior, medial",
+            "zh": "下方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.677,
+              "lateral": -0.656,
+              "anterior": 0.335,
+              "deep": 0.717
+            }
+          },
+          "closestPoint": [
+            0.0936568,
+            1.3748451,
+            -0.0611122
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Trapezius",
+          "chinese": "斜方肌",
+          "note": {
+            "en": "Covers the supraspinatus superficially; absent from this atlas, so the supraspinatus is the first modeled layer here.",
+            "zh": "覆盖于冈上肌浅面；本模型未包含，因此此处第一层建模结构是冈上肌。"
+          }
+        },
+        {
+          "english": "Suprascapular nerve and vessels",
+          "chinese": "肩胛上神经与血管",
+          "note": {
+            "en": "Run in the supraspinous fossa deep to the supraspinatus.",
+            "zh": "在冈上肌深面行于冈上窝。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    },
+    "SI9-right": {
+      "pointId": "SI9",
+      "side": "right",
+      "referenceAnatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+      "referencePosition": [
+        -0.153379,
+        1.35,
+        -0.06
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Jianzhen lies posteroinferior to the shoulder joint; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the posterior deltoid).",
+          "zh": "肩贞位于肩关节后下方；探针自后方进入，并按模型外表面（三角肌后部）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "point": [
+            -0.153379,
+            1.35,
+            -0.1010519
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 116
+        },
+        "directionInward": [
+          -0.046045,
+          0.175137,
+          0.983467
+        ],
+        "origin": [
+          -0.1516036,
+          1.343247,
+          -0.0979209
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 10.4,
+        "angleToEntrySurfaceNormalDeg": 13.1,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 5.14,
+        "layerStopReason": "no-further-structure",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 3.35,
+            "max": 3.92
+          },
+          "layerSequences": [
+            "Deltoid · spinal part → Teres minor"
+          ],
+          "sameLayerSequence": true
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 3.86,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+        "english": "Teres minor",
+        "chinese": "小圆肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 1.39,
+          "thicknessCm": 1.39,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "entryCm": 1.54,
+          "exitCm": 4.84,
+          "thicknessCm": 3.3,
+          "gapBeforeCm": 0.15,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.26,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "anterior"
+            ],
+            "en": "Medial, anterior",
+            "zh": "内侧、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.171,
+              "lateral": -0.758,
+              "anterior": 0.629,
+              "deep": 0.614
+            }
+          },
+          "closestPoint": [
+            -0.1438062,
+            1.3521604,
+            -0.052052
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.44,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.841,
+              "lateral": -0.312,
+              "anterior": -0.443,
+              "deep": -0.303
+            }
+          },
+          "closestPoint": [
+            -0.1489049,
+            1.362068,
+            -0.0663578
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 2.11,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior"
+            ],
+            "en": "Posterior",
+            "zh": "后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.064,
+              "lateral": 0.327,
+              "anterior": -0.943,
+              "deep": -0.924
+            }
+          },
+          "closestPoint": [
+            -0.1602652,
+            1.3486501,
+            -0.0798826
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 2.48,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "anterior"
+            ],
+            "en": "Medial, anterior",
+            "zh": "内侧、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.043,
+              "lateral": -0.81,
+              "anterior": 0.584,
+              "deep": 0.545
+            }
+          },
+          "closestPoint": [
+            -0.1332905,
+            1.3510776,
+            -0.0455191
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 2.67,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior",
+              "anterior"
+            ],
+            "en": "Superior, anterior",
+            "zh": "上方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.744,
+              "lateral": 0.099,
+              "anterior": 0.661,
+              "deep": 0.785
+            }
+          },
+          "closestPoint": [
+            -0.1560358,
+            1.3698808,
+            -0.0423199
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Teres major",
+          "chinese": "大圆肌",
+          "note": {
+            "en": "Lies inferior to the teres minor in this region.",
+            "zh": "在此区域位于小圆肌下方。"
+          }
+        },
+        {
+          "english": "Triceps brachii, long head",
+          "chinese": "肱三头肌长头",
+          "note": {
+            "en": "Passes between the teres minor and teres major.",
+            "zh": "穿行于小圆肌与大圆肌之间。"
+          }
+        },
+        {
+          "english": "Axillary nerve and posterior circumflex humeral vessels",
+          "chinese": "腋神经与旋肱后血管",
+          "note": {
+            "en": "Pass through the quadrangular space (teres minor, teres major, long head of triceps, humerus).",
+            "zh": "穿过四边孔（小圆肌、大圆肌、肱三头肌长头、肱骨围成）。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    },
+    "SI9-left": {
+      "pointId": "SI9",
+      "side": "left",
+      "referenceAnatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+      "referencePosition": [
+        0.153379,
+        1.35,
+        -0.06
+      ],
+      "axis": {
+        "approach": {
+          "en": "Posterior",
+          "zh": "后方"
+        },
+        "rationale": {
+          "en": "Jianzhen lies posteroinferior to the shoulder joint; the probe enters from posterior and is turned to run perpendicular to the modeled outer surface (the posterior deltoid).",
+          "zh": "肩贞位于肩关节后下方；探针自后方进入，并按模型外表面（三角肌后部）法线调整为垂直于该处外表面。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          0,
+          0,
+          -1
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "point": [
+            0.153379,
+            1.35,
+            -0.1010519
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 116
+        },
+        "directionInward": [
+          0.046045,
+          0.175137,
+          0.983467
+        ],
+        "origin": [
+          0.1516036,
+          1.343247,
+          -0.0979209
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From posterior",
+          "zh": "自后方"
+        },
+        "angleFromNominalDeg": 10.4,
+        "angleToEntrySurfaceNormalDeg": 13.1,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 5.14,
+        "layerStopReason": "no-further-structure",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 3.35,
+            "max": 3.92
+          },
+          "layerSequences": [
+            "Deltoid · spinal part → Teres minor"
+          ],
+          "sameLayerSequence": true
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 3.86,
+      "referenceLayer": {
+        "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+        "english": "Teres minor",
+        "chinese": "小圆肌"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 1.39,
+          "thicknessCm": 1.39,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "entryCm": 1.54,
+          "exitCm": 4.84,
+          "thicknessCm": 3.3,
+          "gapBeforeCm": 0.15,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 1.26,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "anterior"
+            ],
+            "en": "Medial, anterior",
+            "zh": "内侧、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.171,
+              "lateral": -0.758,
+              "anterior": 0.629,
+              "deep": 0.614
+            }
+          },
+          "closestPoint": [
+            0.1438062,
+            1.3521604,
+            -0.052052
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.44,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.841,
+              "lateral": -0.312,
+              "anterior": -0.443,
+              "deep": -0.303
+            }
+          },
+          "closestPoint": [
+            0.1489049,
+            1.3620679,
+            -0.0663578
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "distanceCm": 2.11,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior"
+            ],
+            "en": "Posterior",
+            "zh": "后方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": -0.064,
+              "lateral": 0.327,
+              "anterior": -0.943,
+              "deep": -0.924
+            }
+          },
+          "closestPoint": [
+            0.1602652,
+            1.3486501,
+            -0.0798826
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 2.48,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "anterior"
+            ],
+            "en": "Medial, anterior",
+            "zh": "内侧、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.043,
+              "lateral": -0.81,
+              "anterior": 0.584,
+              "deep": 0.545
+            }
+          },
+          "closestPoint": [
+            0.1332905,
+            1.3510776,
+            -0.0455191
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 2.67,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior",
+              "anterior"
+            ],
+            "en": "Superior, anterior",
+            "zh": "上方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.744,
+              "lateral": 0.099,
+              "anterior": 0.661,
+              "deep": 0.785
+            }
+          },
+          "closestPoint": [
+            0.1560359,
+            1.3698808,
+            -0.0423199
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Teres major",
+          "chinese": "大圆肌",
+          "note": {
+            "en": "Lies inferior to the teres minor in this region.",
+            "zh": "在此区域位于小圆肌下方。"
+          }
+        },
+        {
+          "english": "Triceps brachii, long head",
+          "chinese": "肱三头肌长头",
+          "note": {
+            "en": "Passes between the teres minor and teres major.",
+            "zh": "穿行于小圆肌与大圆肌之间。"
+          }
+        },
+        {
+          "english": "Axillary nerve and posterior circumflex humeral vessels",
+          "chinese": "腋神经与旋肱后血管",
+          "note": {
+            "en": "Pass through the quadrangular space (teres minor, teres major, long head of triceps, humerus).",
+            "zh": "穿过四边孔（小圆肌、大圆肌、肱三头肌长头、肱骨围成）。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    },
+    "LI15-right": {
+      "pointId": "LI15",
+      "side": "right",
+      "referenceAnatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+      "referencePosition": [
+        -0.185755,
+        1.405,
+        -0.02
+      ],
+      "axis": {
+        "approach": {
+          "en": "Lateral",
+          "zh": "外侧"
+        },
+        "rationale": {
+          "en": "Jianyu lies in the hollow between the anterolateral acromion and the greater tubercle; the probe starts from lateral and is turned to run perpendicular to the modeled outer surface (the deltoid). With the arm adducted in this model, that surface faces superolaterally, so the probe runs inferomedially toward the greater tubercle.",
+          "zh": "肩髃位于肩峰前外侧端与肱骨大结节之间的凹陷；探针自外侧开始，并按模型外表面（三角肌）法线调整为垂直于该处外表面。本模型上臂内收，该处外表面朝向外上方，因此探针向内下方指向大结节。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          -1,
+          0,
+          0
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+          "point": [
+            -0.1954551,
+            1.405,
+            -0.02
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 216
+        },
+        "directionInward": [
+          0.478286,
+          -0.788653,
+          -0.386352
+        ],
+        "origin": [
+          -0.1873434,
+          1.4076191,
+          -0.0187169
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From superior, lateral",
+          "zh": "自上方、外侧"
+        },
+        "angleFromNominalDeg": 61.4,
+        "angleToEntrySurfaceNormalDeg": 12.8,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 1.91,
+        "layerStopReason": "humerus",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.32,
+            "max": 0.34
+          },
+          "layerSequences": [
+            "Deltoid · acromial part → Supraspinatus → Humerus"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "angleToSurfaceNormalDeg": 12.3
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.33,
+      "referenceLayer": {
+        "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+        "english": "Deltoid · acromial part",
+        "chinese": "三角肌 · 肩峰部"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 0.55,
+          "thicknessCm": 0.55,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "entryCm": 0.3,
+          "exitCm": 0.72,
+          "thicknessCm": 0.42,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.25,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "entryCm": 0.61,
+          "exitCm": 5.34,
+          "thicknessCm": 4.73,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.11,
+          "containsReference": false,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [
+        "rotator-cuff-muscles-supraspinatus-muscle-right"
+      ],
+      "nearby": [
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "distanceCm": 0,
+          "overlapsReference": true,
+          "direction": null,
+          "closestPoint": [
+            -0.1859254,
+            1.4051533,
+            -0.0200419
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 0.23,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.976,
+              "lateral": -0.216,
+              "anterior": -0.031,
+              "deep": 0.885
+            }
+          },
+          "closestPoint": [
+            -0.1852677,
+            1.4028016,
+            -0.0200704
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-clavicular-part-of-deltoid-muscle-right",
+          "english": "Deltoid · clavicular part",
+          "chinese": "三角肌 · 锁骨部",
+          "kind": "muscle",
+          "distanceCm": 0.93,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": -0.242,
+              "lateral": -0.553,
+              "anterior": 0.797,
+              "deep": 0.147
+            }
+          },
+          "closestPoint": [
+            -0.1806346,
+            1.4027597,
+            -0.0126208
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.36,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior",
+              "inferior"
+            ],
+            "en": "Posterior, inferior",
+            "zh": "后方、下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.508,
+              "lateral": 0.254,
+              "anterior": -0.823,
+              "deep": 0.597
+            }
+          },
+          "closestPoint": [
+            -0.1892223,
+            1.3980783,
+            -0.0312121
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 2.06,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "posterior"
+            ],
+            "en": "Medial, posterior",
+            "zh": "内侧、后方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.349,
+              "lateral": -0.796,
+              "anterior": -0.495,
+              "deep": 0.296
+            }
+          },
+          "closestPoint": [
+            -0.1693272,
+            1.4122142,
+            -0.0302224
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.32,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.895,
+              "lateral": 0.375,
+              "anterior": -0.243,
+              "deep": 0.62
+            }
+          },
+          "closestPoint": [
+            -0.1944615,
+            1.3842159,
+            -0.0256358
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-right",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 2.66,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "inferior"
+            ],
+            "en": "Medial, inferior",
+            "zh": "内侧、下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.552,
+              "lateral": -0.638,
+              "anterior": 0.536,
+              "deep": 0.534
+            }
+          },
+          "closestPoint": [
+            -0.168746,
+            1.3902826,
+            -0.0057202
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Subacromial (subdeltoid) bursa",
+          "chinese": "肩峰下（三角肌下）滑囊",
+          "note": {
+            "en": "Lies between the deltoid and the supraspinatus tendon.",
+            "zh": "位于三角肌与冈上肌腱之间。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        },
+        {
+          "en": "Source meshes interpenetrate here (Supraspinatus, Humerus); overlapping ranges are shown as modeled, not as real tissue sharing space.",
+          "zh": "此处原始网格存在互相穿插（冈上肌、肱骨）；重叠范围按模型显示，不代表真实组织共占同一空间。"
+        }
+      ]
+    },
+    "LI15-left": {
+      "pointId": "LI15",
+      "side": "left",
+      "referenceAnatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+      "referencePosition": [
+        0.185755,
+        1.405,
+        -0.02
+      ],
+      "axis": {
+        "approach": {
+          "en": "Lateral",
+          "zh": "外侧"
+        },
+        "rationale": {
+          "en": "Jianyu lies in the hollow between the anterolateral acromion and the greater tubercle; the probe starts from lateral and is turned to run perpendicular to the modeled outer surface (the deltoid). With the arm adducted in this model, that surface faces superolaterally, so the probe runs inferomedially toward the greater tubercle.",
+          "zh": "肩髃位于肩峰前外侧端与肱骨大结节之间的凹陷；探针自外侧开始，并按模型外表面（三角肌）法线调整为垂直于该处外表面。本模型上臂内收，该处外表面朝向外上方，因此探针向内下方指向大结节。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          1,
+          0,
+          0
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+          "point": [
+            0.1954551,
+            1.405,
+            -0.02
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 216
+        },
+        "directionInward": [
+          -0.478286,
+          -0.788654,
+          -0.386352
+        ],
+        "origin": [
+          0.1873434,
+          1.4076191,
+          -0.0187169
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From superior, lateral",
+          "zh": "自上方、外侧"
+        },
+        "angleFromNominalDeg": 61.4,
+        "angleToEntrySurfaceNormalDeg": 12.8,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 1.91,
+        "layerStopReason": "humerus",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.32,
+            "max": 0.34
+          },
+          "layerSequences": [
+            "Deltoid · acromial part → Supraspinatus → Humerus"
+          ],
+          "sameLayerSequence": true
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "angleToSurfaceNormalDeg": 12.3
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.33,
+      "referenceLayer": {
+        "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+        "english": "Deltoid · acromial part",
+        "chinese": "三角肌 · 肩峰部"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 0.55,
+          "thicknessCm": 0.55,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "entryCm": 0.3,
+          "exitCm": 0.72,
+          "thicknessCm": 0.42,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.25,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "entryCm": 0.61,
+          "exitCm": 5.34,
+          "thicknessCm": 4.73,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0.11,
+          "containsReference": false,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [
+        "rotator-cuff-muscles-supraspinatus-muscle-left"
+      ],
+      "nearby": [
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "distanceCm": 0,
+          "overlapsReference": true,
+          "direction": null,
+          "closestPoint": [
+            0.1859253,
+            1.4051532,
+            -0.0200419
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 0.23,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.976,
+              "lateral": -0.216,
+              "anterior": -0.031,
+              "deep": 0.885
+            }
+          },
+          "closestPoint": [
+            0.1852677,
+            1.4028015,
+            -0.0200704
+          ]
+        },
+        {
+          "anatomyId": "deltoid-muscles-clavicular-part-of-deltoid-muscle-left",
+          "english": "Deltoid · clavicular part",
+          "chinese": "三角肌 · 锁骨部",
+          "kind": "muscle",
+          "distanceCm": 0.93,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": -0.242,
+              "lateral": -0.553,
+              "anterior": 0.797,
+              "deep": 0.147
+            }
+          },
+          "closestPoint": [
+            0.1806346,
+            1.4027597,
+            -0.0126208
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 1.36,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "posterior",
+              "inferior"
+            ],
+            "en": "Posterior, inferior",
+            "zh": "后方、下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.508,
+              "lateral": 0.254,
+              "anterior": -0.823,
+              "deep": 0.597
+            }
+          },
+          "closestPoint": [
+            0.1892222,
+            1.3980782,
+            -0.0312121
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 2.06,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "posterior"
+            ],
+            "en": "Medial, posterior",
+            "zh": "内侧、后方",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.349,
+              "lateral": -0.796,
+              "anterior": -0.495,
+              "deep": 0.296
+            }
+          },
+          "closestPoint": [
+            0.1693272,
+            1.4122142,
+            -0.0302224
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.32,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.895,
+              "lateral": 0.375,
+              "anterior": -0.243,
+              "deep": 0.62
+            }
+          },
+          "closestPoint": [
+            0.1944615,
+            1.3842158,
+            -0.0256358
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-subscapularis-muscle-left",
+          "english": "Subscapularis",
+          "chinese": "肩胛下肌",
+          "kind": "muscle",
+          "distanceCm": 2.66,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial",
+              "inferior"
+            ],
+            "en": "Medial, inferior",
+            "zh": "内侧、下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.552,
+              "lateral": -0.638,
+              "anterior": 0.536,
+              "deep": 0.534
+            }
+          },
+          "closestPoint": [
+            0.168746,
+            1.3902825,
+            -0.0057202
+          ]
+        }
+      ],
+      "notModeled": [
+        {
+          "english": "Subacromial (subdeltoid) bursa",
+          "chinese": "肩峰下（三角肌下）滑囊",
+          "note": {
+            "en": "Lies between the deltoid and the supraspinatus tendon.",
+            "zh": "位于三角肌与冈上肌腱之间。"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        },
+        {
+          "en": "Source meshes interpenetrate here (Supraspinatus, Humerus); overlapping ranges are shown as modeled, not as real tissue sharing space.",
+          "zh": "此处原始网格存在互相穿插（冈上肌、肱骨）；重叠范围按模型显示，不代表真实组织共占同一空间。"
+        }
+      ]
+    },
+    "TE14-right": {
+      "pointId": "TE14",
+      "side": "right",
+      "referenceAnatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+      "referencePosition": [
+        -0.180348,
+        1.4,
+        -0.06
+      ],
+      "axis": {
+        "approach": {
+          "en": "Lateral",
+          "zh": "外侧"
+        },
+        "rationale": {
+          "en": "Jianliao lies between the posterolateral acromion and the greater tubercle; the probe starts from lateral and is turned to run perpendicular to the modeled outer surface (the deltoid). With the arm adducted in this model, that surface faces superolaterally and posteriorly.",
+          "zh": "肩髎位于肩峰后外侧角与肱骨大结节之间；探针自外侧开始，并按模型外表面（三角肌）法线调整为垂直于该处外表面。本模型上臂内收，该处外表面朝向外上后方。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          -1,
+          0,
+          0
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+          "point": [
+            -0.195796,
+            1.4,
+            -0.06
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 172
+        },
+        "directionInward": [
+          0.518514,
+          -0.698607,
+          0.493043
+        ],
+        "origin": [
+          -0.1829774,
+          1.4035427,
+          -0.0625003
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From superior, lateral",
+          "zh": "自上方、外侧"
+        },
+        "angleFromNominalDeg": 58.8,
+        "angleToEntrySurfaceNormalDeg": 10.7,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 4.13,
+        "layerStopReason": "humerus",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.31,
+            "max": 0.55
+          },
+          "layerSequences": [
+            "Deltoid · spinal part → Infraspinatus → Humerus",
+            "Deltoid · acromial part → Deltoid · spinal part → Infraspinatus → Humerus"
+          ],
+          "sameLayerSequence": false
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "angleToSurfaceNormalDeg": 49
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.51,
+      "referenceLayer": {
+        "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+        "english": "Deltoid · spinal part",
+        "chinese": "三角肌 · 肩胛冈部"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 0.12,
+          "thicknessCm": 0.12,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-right",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "entryCm": 0.19,
+          "exitCm": 0.88,
+          "thicknessCm": 0.69,
+          "gapBeforeCm": 0.07,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "entryCm": 1.38,
+          "exitCm": 2.82,
+          "thicknessCm": 1.43,
+          "gapBeforeCm": 0.5,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "entryCm": 2.83,
+          "exitCm": 5.58,
+          "thicknessCm": 2.75,
+          "gapBeforeCm": 0.02,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-right",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "distanceCm": 0.34,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": 0.91,
+              "lateral": 0.412,
+              "anterior": -0.038,
+              "deep": -0.869
+            }
+          },
+          "closestPoint": [
+            -0.1817341,
+            1.4030591,
+            -0.0601289
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-right",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 0.86,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "anterior"
+            ],
+            "en": "Inferior, anterior",
+            "zh": "下方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.636,
+              "lateral": -0.454,
+              "anterior": 0.624,
+              "deep": 0.987
+            }
+          },
+          "closestPoint": [
+            -0.1764212,
+            1.3945003,
+            -0.0546062
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-right",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 0.9,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial"
+            ],
+            "en": "Medial",
+            "zh": "内侧",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.232,
+              "lateral": -0.97,
+              "anterior": -0.079,
+              "deep": 0.302
+            }
+          },
+          "closestPoint": [
+            -0.1716074,
+            1.4020893,
+            -0.0607157
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-right",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "distanceCm": 1.71,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.05,
+              "lateral": -0.616,
+              "anterior": 0.786,
+              "deep": 0.672
+            }
+          },
+          "closestPoint": [
+            -0.1698231,
+            1.4008553,
+            -0.0465814
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-right",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 1.87,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior"
+            ],
+            "en": "Anterior",
+            "zh": "前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.412,
+              "lateral": -0.388,
+              "anterior": 0.824,
+              "deep": 0.896
+            }
+          },
+          "closestPoint": [
+            -0.1731052,
+            1.3923098,
+            -0.0446298
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-right",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.4,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.919,
+              "lateral": 0.155,
+              "anterior": 0.364,
+              "deep": 0.741
+            }
+          },
+          "closestPoint": [
+            -0.1840512,
+            1.3779825,
+            -0.0512881
+          ]
+        }
+      ],
+      "notModeled": [],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    },
+    "TE14-left": {
+      "pointId": "TE14",
+      "side": "left",
+      "referenceAnatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+      "referencePosition": [
+        0.180348,
+        1.4,
+        -0.06
+      ],
+      "axis": {
+        "approach": {
+          "en": "Lateral",
+          "zh": "外侧"
+        },
+        "rationale": {
+          "en": "Jianliao lies between the posterolateral acromion and the greater tubercle; the probe starts from lateral and is turned to run perpendicular to the modeled outer surface (the deltoid). With the arm adducted in this model, that surface faces superolaterally and posteriorly.",
+          "zh": "肩髎位于肩峰后外侧角与肱骨大结节之间；探针自外侧开始，并按模型外表面（三角肌）法线调整为垂直于该处外表面。本模型上臂内收，该处外表面朝向外上后方。"
+        },
+        "method": "outer-surface-normal",
+        "nominalOutward": [
+          1,
+          0,
+          0
+        ],
+        "nominalSurface": {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+          "point": [
+            0.195796,
+            1.4,
+            -0.06
+          ],
+          "patchRadiusCm": 2.5,
+          "triangles": 172
+        },
+        "directionInward": [
+          -0.518514,
+          -0.698607,
+          0.493043
+        ],
+        "origin": [
+          0.1829774,
+          1.4035427,
+          -0.0625003
+        ],
+        "originDescription": {
+          "en": "First modeled surface along the axis (depth 0)",
+          "zh": "轴线上第一个建模表面（深度 0）"
+        },
+        "approachLabel": {
+          "en": "From superior, lateral",
+          "zh": "自上方、外侧"
+        },
+        "angleFromNominalDeg": 58.8,
+        "angleToEntrySurfaceNormalDeg": 10.7,
+        "referenceOffsetMm": 0,
+        "probeStartCm": -1,
+        "probeEndCm": 4.13,
+        "layerStopReason": "humerus",
+        "sensitivity": {
+          "patchRadiiCm": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "referenceDepthCm": {
+            "min": 0.31,
+            "max": 0.55
+          },
+          "layerSequences": [
+            "Deltoid · spinal part → Infraspinatus → Humerus",
+            "Deltoid · acromial part → Deltoid · spinal part → Infraspinatus → Humerus"
+          ],
+          "sameLayerSequence": false
+        },
+        "firstBoneSurface": {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "angleToSurfaceNormalDeg": 49
+        },
+        "irregularStructures": []
+      },
+      "referenceDepthCm": 0.51,
+      "referenceLayer": {
+        "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+        "english": "Deltoid · spinal part",
+        "chinese": "三角肌 · 肩胛冈部"
+      },
+      "layers": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "entryCm": 0,
+          "exitCm": 0.12,
+          "thicknessCm": 0.12,
+          "gapBeforeCm": 0,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "deltoid-muscles-scapular-spinal-part-of-deltoid-muscle-left",
+          "english": "Deltoid · spinal part",
+          "chinese": "三角肌 · 肩胛冈部",
+          "kind": "muscle",
+          "entryCm": 0.19,
+          "exitCm": 0.88,
+          "thicknessCm": 0.69,
+          "gapBeforeCm": 0.07,
+          "overlapsPreviousCm": 0,
+          "containsReference": true,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "entryCm": 1.38,
+          "exitCm": 2.82,
+          "thicknessCm": 1.43,
+          "gapBeforeCm": 0.5,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "entryCm": 2.83,
+          "exitCm": 5.58,
+          "thicknessCm": 2.75,
+          "gapBeforeCm": 0.02,
+          "overlapsPreviousCm": 0,
+          "containsReference": false,
+          "normalsAgree": true
+        }
+      ],
+      "alsoInsideReference": [],
+      "nearby": [
+        {
+          "anatomyId": "deltoid-muscles-acromial-part-of-deltoid-muscle-left",
+          "english": "Deltoid · acromial part",
+          "chinese": "三角肌 · 肩峰部",
+          "kind": "muscle",
+          "distanceCm": 0.34,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "superior"
+            ],
+            "en": "Superior",
+            "zh": "上方",
+            "probeRelation": "superficial",
+            "probeRelationEn": "more superficial along the probe",
+            "probeRelationZh": "沿探针更浅",
+            "components": {
+              "superior": 0.91,
+              "lateral": 0.412,
+              "anterior": -0.038,
+              "deep": -0.869
+            }
+          },
+          "closestPoint": [
+            0.1817341,
+            1.4030591,
+            -0.0601289
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-infraspinatus-muscle-left",
+          "english": "Infraspinatus",
+          "chinese": "冈下肌",
+          "kind": "muscle",
+          "distanceCm": 0.86,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior",
+              "anterior"
+            ],
+            "en": "Inferior, anterior",
+            "zh": "下方、前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.636,
+              "lateral": -0.454,
+              "anterior": 0.624,
+              "deep": 0.987
+            }
+          },
+          "closestPoint": [
+            0.1764212,
+            1.3945002,
+            -0.0546062
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-scapula-left",
+          "english": "Scapula",
+          "chinese": "肩胛骨",
+          "kind": "bone",
+          "distanceCm": 0.9,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "medial"
+            ],
+            "en": "Medial",
+            "zh": "内侧",
+            "probeRelation": "level",
+            "probeRelationEn": "beside the probe",
+            "probeRelationZh": "探针侧旁",
+            "components": {
+              "superior": 0.232,
+              "lateral": -0.97,
+              "anterior": -0.079,
+              "deep": 0.302
+            }
+          },
+          "closestPoint": [
+            0.1716074,
+            1.4020893,
+            -0.0607156
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-supraspinatus-muscle-left",
+          "english": "Supraspinatus",
+          "chinese": "冈上肌",
+          "kind": "muscle",
+          "distanceCm": 1.71,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior",
+              "medial"
+            ],
+            "en": "Anterior, medial",
+            "zh": "前方、内侧",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": 0.05,
+              "lateral": -0.616,
+              "anterior": 0.786,
+              "deep": 0.672
+            }
+          },
+          "closestPoint": [
+            0.1698231,
+            1.4008552,
+            -0.0465814
+          ]
+        },
+        {
+          "anatomyId": "appendicular-skeleton-humerus-left",
+          "english": "Humerus",
+          "chinese": "肱骨",
+          "kind": "bone",
+          "distanceCm": 1.87,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "anterior"
+            ],
+            "en": "Anterior",
+            "zh": "前方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.412,
+              "lateral": -0.388,
+              "anterior": 0.824,
+              "deep": 0.896
+            }
+          },
+          "closestPoint": [
+            0.1731052,
+            1.3923098,
+            -0.0446298
+          ]
+        },
+        {
+          "anatomyId": "rotator-cuff-muscles-teres-minor-muscle-left",
+          "english": "Teres minor",
+          "chinese": "小圆肌",
+          "kind": "muscle",
+          "distanceCm": 2.4,
+          "overlapsReference": false,
+          "direction": {
+            "terms": [
+              "inferior"
+            ],
+            "en": "Inferior",
+            "zh": "下方",
+            "probeRelation": "deep",
+            "probeRelationEn": "deeper along the probe",
+            "probeRelationZh": "沿探针更深",
+            "components": {
+              "superior": -0.919,
+              "lateral": 0.155,
+              "anterior": 0.364,
+              "deep": 0.741
+            }
+          },
+          "closestPoint": [
+            0.1840512,
+            1.3779824,
+            -0.051288
+          ]
+        }
+      ],
+      "notModeled": [],
+      "limitations": [
+        {
+          "en": "Depths start at the first modeled surface (outer muscle or bone), not at the skin. Skin and subcutaneous fat are not in the model, so a depth from the skin would be larger and varies between people.",
+          "zh": "深度从第一个建模表面（肌肉或骨的外表面）起算，而不是从皮肤起算。模型不含皮肤和皮下脂肪，从皮肤量起的深度会更大，并且因人而异。"
+        },
+        {
+          "en": "Skin, subcutaneous fat, fascia, nerves, vessels and bursae are not modeled. This atlas also has no trapezius, latissimus dorsi, teres major or triceps brachii.",
+          "zh": "模型不含皮肤、皮下脂肪、筋膜、神经、血管和滑囊；本模型也没有斜方肌、背阔肌、大圆肌和肱三头肌。"
+        },
+        {
+          "en": "One adult atlas in a fixed pose (arm adducted). Standard locations for some of these points use abduction or other positions, which change the relations shown here.",
+          "zh": "单一成人模型、固定姿势（上臂内收）。部分穴位的标准定位使用外展等姿势，姿势改变会改变此处显示的关系。"
+        },
+        {
+          "en": "This probe is a geometric study axis through the model reference. It is not a needling path, needling direction or needling depth.",
+          "zh": "此探针是穿过模型参照点的几何学习轴线，不是进针路径、进针方向或进针深度。"
+        }
+      ]
+    }
+  }
+}

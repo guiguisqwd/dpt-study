@@ -54,7 +54,7 @@ pnpm install --frozen-lockfile
 pnpm build
 ```
 
-依赖和锁文件未变时可省略安装。`pnpm build` 包含 TypeScript 检查；改变几何参照时另运行 `pnpm test:geometry`。修改内容、图示或交互后，还需在浏览器中检查实际效果。
+依赖和锁文件未变时可省略安装。`pnpm build` 包含 TypeScript 检查；改变几何参照时另运行 `pnpm test:geometry` 和 `pnpm test:depth`。修改内容、图示或交互后，还需在浏览器中检查实际效果。
 
 `pnpm build` 和 `pnpm dev` 都会先调用 `scripts/build-platform.py`，自动生成主题页与 `study.html` 主题库。单独运行 `build-topics.py` 只生成主题内容，不生成学习首页。
 

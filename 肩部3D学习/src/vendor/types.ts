@@ -20,6 +20,25 @@ export type VanatomeAnnotation = {
   guideLabels?: readonly { label: string; position: VanatomeVector3 }[];
 };
 
+/**
+ * A straight study axis drawn over the model in original model coordinates.
+ * The viewer draws it through all geometry and assigns it no anatomical meaning.
+ */
+export type VanatomeProbe = {
+  id: string;
+  start: VanatomeVector3;
+  end: VanatomeVector3;
+  /** Colour of the thin base line. */
+  color?: string;
+  /** Portion drawn dashed, e.g. outside the outermost modeled surface. */
+  dashedUntil?: VanatomeVector3;
+  segments?: readonly { start: VanatomeVector3; end: VanatomeVector3; color: string }[];
+  ticks?: readonly VanatomeVector3[];
+  marker?: { position: VanatomeVector3; color: string };
+  /** Text callouts stacked beside the probe with leader lines. */
+  callouts?: readonly { id: string; label: string; position: VanatomeVector3; color: string; emphasis?: boolean }[];
+};
+
 export type VanatomeSurfacePickEvent = {
   /** The anatomy structure that owns the picked surface. */
   id: string;
@@ -152,6 +171,8 @@ type VanatomeViewerBaseProps = {
    * one-shot requests. Selection, visibility, labels and resize do not refocus. */
   cameraRequest?: VanatomeCameraRequest | null;
   annotations?: readonly VanatomeAnnotation[];
+  /** Study axes drawn on top of the model (see VanatomeProbe). */
+  probes?: readonly VanatomeProbe[];
   selectedAnnotationId?: string | null;
   onAnnotationSelect?: (id: string) => void;
   /** Editing consumes a surface click instead of selecting an anatomy structure. */

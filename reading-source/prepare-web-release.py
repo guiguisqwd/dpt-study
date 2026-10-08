@@ -17,7 +17,7 @@ if OUT.is_symlink() or DIST.is_symlink():
 if DIST.exists():shutil.rmtree(DIST)
 DIST.mkdir(parents=True,exist_ok=True)
 # Explicit allowlist. Keep secrets, source voice staging, screenshots and other workspace files out.
-files=['study.html','topics.json','topic.css','index.html','reading.html','reading-claude.html','calibration-evidence.json','geometry-validation.json','humerus-landmark-evidence.json','scapula-landmark-evidence.json']
+files=['study.html','topics.json','topic.css','index.html','reading.html','reading-claude.html','calibration-evidence.json','geometry-validation.json','acupoint-depth.json','humerus-landmark-evidence.json','scapula-landmark-evidence.json']
 for name in files:
  src=APP/'dist'/name
  if not src.is_file():raise SystemExit(f'Required build file is missing: {src}')

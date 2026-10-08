@@ -56,6 +56,10 @@ jobs:
         working-directory: 肩部3D学习
         run: pnpm test:geometry
 
+      - name: Check acupoint depth data against the model
+        working-directory: 肩部3D学习
+        run: pnpm test:depth
+
       - name: Build the topic library, type-check and build the 3D application
         working-directory: 肩部3D学习
         run: pnpm build
