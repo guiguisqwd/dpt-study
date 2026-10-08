@@ -372,7 +372,7 @@ def s_publish(run, date, phase="evening", step="publish"):
     git("add", "daily", "肩部3D学习/public/daily", "reading-source/prepare-web-release.py", "scripts/build-platform.py", check=False)
     staged = git("diff", "--cached", "--name-only").stdout.split()
     if staged:
-        git("-c", "user.name=guiguisqwd", "-c", "user.email=314179357+guiguisqwd@users.noreply.github.com", "commit", "-m",
+        git("-c", "user.name=Claude", "-c", "user.email=noreply@anthropic.com", "commit", "-m",
             f"Daily pack {date}: {c_out} ({phase})\n\nGenerated and checked by daily/pipeline.py; run record in daily/runs/{date}.json.\n\n"
             "Co-Authored-By: Claude <noreply@anthropic.com>")
     head = git("rev-parse", "HEAD").stdout.strip()
