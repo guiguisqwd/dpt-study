@@ -27,7 +27,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from engine import paths, plan, schema, build as builder, site, archive, cards  # noqa: E402
 from engine.paths import DAYS, RUNS, REPO, DAILY  # noqa: E402
 
-STAGING = Path(os.environ.get("DPT_STAGING", "/mnt/user-data/outputs/dpt-daily"))
+STAGING = Path(os.environ.get("DPT_STAGING") or ("/mnt/user-data/outputs/dpt-daily" if Path("/mnt/user-data/outputs").is_dir()
+                                                  else str(Path(tempfile.gettempdir()) / "dpt-daily")))
 TZ = "America/Los_Angeles"
 
 EVENING = [  # (name, kind, exit code if it needs action / fails)
@@ -40,14 +41,16 @@ EVENING = [  # (name, kind, exit code if it needs action / fails)
     ("visual_review", "claude", 11),
     ("site", "auto", 22),
     ("cards", "auto", 22),
-    ("archive", "claude", 12),
-    ("review_center", "claude", 14),
     ("publish", "auto", 24),
 ]
+# The evening phase runs where the repository can be pushed (a Claude Code routine with the repo attached).
+# The morning phase runs in the Mac-linked Cowork task: it clones the pushed repo, delivers the pack,
+# updates the review-center artifact and writes the archive (including this run record) to the Mac.
 MORNING = [
     ("locate", "auto", 30),
     ("deliver", "claude", 13),
-    ("record", "auto", 24),
+    ("review_center", "claude", 14),
+    ("archive", "claude", 12),
 ]
 PHASES = {"evening": EVENING, "morning": MORNING}
 # Steps whose evidence may be "skipped: <reason>" without failing verify (the reason is recorded).
@@ -338,11 +341,11 @@ def s_cards(run, date):
 
 
 def s_archive(run, date):
-    rec = step_rec(run, "evening", "archive")
-    man = archive.stage(date, STAGING, run={"date": date, "fingerprint": fingerprint(date),
-                                            "steps": {k: v.get("status") for k, v in run["phases"]["evening"]["steps"].items()}})
+    steps = {f"{ph}/{k}": v.get("status") for ph in ("evening", "morning") for k, v in run["phases"].get(ph, {}).get("steps", {}).items()}
+    set_step(run, "morning", "archive", "waiting")
+    man = archive.stage(date, STAGING, run={"date": date, "fingerprint": fingerprint(date), "steps": steps})
     mpath = STAGING / date / "manifest.json"
-    set_step(run, "evening", "archive", "waiting", evidence=str(mpath))
+    set_step(run, "morning", "archive", "waiting", evidence=str(mpath))
     return need(12, "write the pack to the Mac", [
         f"Call device_commit_files with the {len(man['files'])} entries in {mpath} (stagedPath → devicePath).",
         f"Save the tool's JSON result to {STAGING / date / 'commit-result.json'} and run:",
@@ -352,10 +355,10 @@ def s_archive(run, date):
 
 
 def s_review_center(run, date):
-    rec = step_rec(run, "evening", "review_center")
+    rec = step_rec(run, "morning", "review_center")
     if rec.get("status") == "done":
         return 0
-    set_step(run, "evening", "review_center", "waiting")
+    set_step(run, "morning", "review_center", "waiting")
     return need(14, "update the review center (复习中心)", [
         "Publish daily/review-center/index.html to the existing review-center artifact with the Artifact tool:",
         "  read https://claude.ai/artifact/3k1RZqb9tf9heXKLHe58ig first, then publish file_path=daily/review-center/index.html with that url.",
@@ -388,7 +391,7 @@ def s_publish(run, date, phase="evening", step="publish"):
     except Exception as e:  # keep the commit locally; report precisely
         git("rebase", "--abort", check=False)          # never leave the clone mid-rebase
         head = git("rev-parse", "HEAD").stdout.strip()
-        bundle = STAGING / "backup" / "shoulder-study-unpushed.bundle"
+        bundle = STAGING / "backup" / "dpt-study-unpushed.bundle"
         bundle.parent.mkdir(parents=True, exist_ok=True)
         base = "origin/main" if git("rev-parse", "--verify", "-q", "origin/main", check=False).returncode == 0 else None
         b = git("bundle", "create", str(bundle), f"{base}..HEAD" if base else "HEAD", check=False)
@@ -396,10 +399,10 @@ def s_publish(run, date, phase="evening", step="publish"):
                  bundle=str(bundle) if b.returncode == 0 else None)
         return need(24, "GitHub push blocked", [
             f"Local commit {head[:10]} is kept. Error: {str(e)[-400:]}",
-            f"Backup: device_commit_files stagedPath={bundle} → devicePath=~/Documents/DPT-每日简报/系统/待推送/shoulder-study-unpushed.bundle "
+            f"Backup: device_commit_files stagedPath={bundle} → devicePath=~/Documents/DPT-每日简报/系统/待推送/dpt-study-unpushed.bundle "
             "(force=true). A later session restores it with: git fetch <bundle> HEAD && git merge --ff-only FETCH_HEAD.",
-            "Report this in the final message; do not force-push. If credentials are missing, the user must add guiguisqwd/shoulder-study "
-            "to the task's sources with write access."])
+            "Report this in the final message; do not force-push. If credentials are missing, run the evening phase in the Claude Code routine that has guiguisqwd/dpt-study attached "
+            "(this session cannot push)."])
     set_step(run, phase, step, "done", evidence={"commit": head, "pushed_to": "origin/main",
                                                "site": f"{paths.SITE_BASE}daily/{date}/index.html"})
     return 0

@@ -1,6 +1,6 @@
 # Adding a topic · 新增解剖主题
 
-新主题复用 Anatomy study 的主题目录、页面生成、3D 查看器和内容检查。肩袖保留现有源稿作为兼容主题；Hip joint（髋关节）目前是结构化草稿。仓库名称 `shoulder-study` 和历史目录保持稳定，避免破坏旧链接。
+新主题复用 Anatomy study 的主题目录、页面生成、3D 查看器和内容检查。肩袖保留现有源稿作为兼容主题；Hip joint（髋关节）目前是结构化草稿。仓库名称为 `dpt-study`（原 `shoulder-study`）；历史目录保持稳定，避免破坏旧链接。
 
 ## 1. 同步并创建主题
 

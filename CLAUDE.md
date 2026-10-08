@@ -8,7 +8,7 @@
 
 用户要求这个软件覆盖多个解剖主题；后续加入 Hip joint（髋关节）等内容时，应沿用已经确认的内容、图示、英语表达、模型联动与质量检查规范，避免重复修正同一类问题。
 
-- 产品名为 **Anatomy study（解剖学习）**。`shoulder-study` 是现有 GitHub 仓库及站点路径，保留以兼容书签、文章及 PDF 链接；本地“肩袖”和“肩部3D学习”目录也是兼容路径，不表示产品只能有一个主题。未经明确迁移安排，不要重命名这些路径。
+- 产品名为 **Anatomy study（解剖学习）**。GitHub 仓库于 2026-10-08 按用户要求由 `shoulder-study` 改名为 **`dpt-study`**（站点 `https://guiguisqwd.github.io/dpt-study/`），以涵盖解剖、经穴、3D、每日学习包和文献阅读。GitHub 会把旧仓库地址重定向到新仓库，但 Pages 旧站点路径不会自动跳转。本地“肩袖”和“肩部3D学习”目录仍是兼容路径，不表示产品只能有一个主题；未经明确迁移安排，不要重命名这些目录。
 - 新主题放在 `topics/<slug>/`，由 `topic.json` 注册；用共享脚本发现、校验并构建。先读 [docs/ADDING_A_TOPIC.md](./docs/ADDING_A_TOPIC.md)，不要复制整个应用另建一套。
 - 保持“共享界面与渲染逻辑”和“主题内容与模型映射”分离。一般新增关节应修改主题数据、图示和资料；如果确需扩展共享能力，扩展一次并检查已有主题。
 - 肩袖使用兼容适配方式保留现有成熟阅读稿、3D 行为、语音和 Claude 独立版。不要为统一目录破坏已经完成的内容。
@@ -23,7 +23,7 @@
 
 执行规则：**每次完成用户授权的内容或代码修改，都要在适当检查通过后提交到 Git，并推送到同一个 GitHub 仓库。只修改本地文件不算完成同步。** 不必为已经授权的正常提交和推送重复征求确认。
 
-共同仓库：[guiguisqwd/shoulder-study](https://github.com/guiguisqwd/shoulder-study)；远端地址：`https://github.com/guiguisqwd/shoulder-study.git`。该仓库为公开仓库，只放本项目可公开的学习内容、代码及必要资源。
+共同仓库：[guiguisqwd/dpt-study](https://github.com/guiguisqwd/dpt-study)；远端地址：`https://github.com/guiguisqwd/dpt-study.git`。该仓库为公开仓库，只放本项目可公开的学习内容、代码及必要资源。
 
 - 本仓库根目录是解剖学习项目，包含主题数据、阅读源稿、配图、3D 应用和维护文档；本地目录仍沿用“肩袖”这一历史名称。不要把上级“知识工作台”中的其他项目一起加入版本控制。
 - 用 `git remote get-url origin` 确认实际 GitHub 地址；用当前分支及其 upstream 确认推送目标。不要猜测仓库名称、分支或部署地址。
@@ -88,10 +88,10 @@ GitHub Pages 的 Source 已设为 GitHub Actions。`.github/workflows/pages.yml`
 
 线上入口如下；首次部署已于 2026-10-06 通过 GitHub Actions，并验证阅读、3D 和下载入口返回 HTTP 200。以后每次部署仍需检查运行结果：
 
-- 学习首页：`https://guiguisqwd.github.io/shoulder-study/study.html`
-- 标准阅读：`https://guiguisqwd.github.io/shoulder-study/reading.html`
-- Claude 阅读版：`https://guiguisqwd.github.io/shoulder-study/reading-claude.html`
-- 3D：`https://guiguisqwd.github.io/shoulder-study/?term=humerus`
+- 学习首页：`https://guiguisqwd.github.io/dpt-study/study.html`
+- 标准阅读：`https://guiguisqwd.github.io/dpt-study/reading.html`
+- Claude 阅读版：`https://guiguisqwd.github.io/dpt-study/reading-claude.html`
+- 3D：`https://guiguisqwd.github.io/dpt-study/?term=humerus`
 
 PDF 和 Markdown 离线输出位于 `output/pdf/`。目前发布使用已核验的 38 页 PDF，仅用 `pypdf` 更新其中的线上链接，不重新排版。PDF 重新导出目前依赖 Mac 字体和本地渲染环境；正文或配图变化后，按 `制作流程-肩袖双语学习.md` 重新导出并检查，再提交更新。不要把旧 PDF 标为已同步，也不要假设 Ubuntu 发布工作流会自动重建 PDF。
 

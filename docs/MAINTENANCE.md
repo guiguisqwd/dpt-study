@@ -8,15 +8,15 @@
 /Users/guigui/Documents/ChatGPT/知识工作台/阅读输出/肩袖
 ```
 
-本地“肩袖”“肩部3D学习”目录及 `shoulder-study` 仓库名保留兼容旧路径，不限制产品范围。上级“知识工作台”的其他项目不属于此仓库的维护范围。
+仓库名为 `dpt-study`（2026-10-08 由 `shoulder-study` 改名）；本地“肩袖”“肩部3D学习”目录保留兼容旧路径，不限制产品范围。上级“知识工作台”的其他项目不属于此仓库的维护范围。
 
 ## 入口与当前内容
 
-- [GitHub 共同仓库](https://github.com/guiguisqwd/shoulder-study)
-- [学习首页与主题库](https://guiguisqwd.github.io/shoulder-study/study.html)
-- [肩袖主题](https://guiguisqwd.github.io/shoulder-study/topics/shoulder/index.html) · [标准阅读](https://guiguisqwd.github.io/shoulder-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/shoulder-study/reading-claude.html)
-- [肩袖 3D 旧入口](https://guiguisqwd.github.io/shoulder-study/?term=humerus)
-- [髋关节草稿](https://guiguisqwd.github.io/shoulder-study/topics/hip/index.html) · [骨骼模型预览](https://guiguisqwd.github.io/shoulder-study/?topic=hip&term=femur)
+- [GitHub 共同仓库](https://github.com/guiguisqwd/dpt-study)
+- [学习首页与主题库](https://guiguisqwd.github.io/dpt-study/study.html)
+- [肩袖主题](https://guiguisqwd.github.io/dpt-study/topics/shoulder/index.html) · [标准阅读](https://guiguisqwd.github.io/dpt-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/dpt-study/reading-claude.html)
+- [肩袖 3D 旧入口](https://guiguisqwd.github.io/dpt-study/?term=humerus)
+- [髋关节草稿](https://guiguisqwd.github.io/dpt-study/topics/hip/index.html) · [骨骼模型预览](https://guiguisqwd.github.io/dpt-study/?topic=hip&term=femur)
 
 截至 2026-10-07，Shoulder / Rotator cuff（肩部／肩袖）为 `published`，Hip joint（髋关节）为 `draft`，已接入骨骼预览，完整课程尚未编写。后续以各主题的 `topic.json` 为准，不把草稿或模型预览称为完成课程。
 

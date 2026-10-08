@@ -24,7 +24,7 @@ MAC_ARCHIVE_MD = MAC_ROOT + "/daily"           # daily/<yyyy>/<mm>/<date>.md (ta
 MAC_INDEX = MAC_ROOT + "/index"                # catalog.jsonl, 纵向主题树.md, 横向主题.md
 MAC_RUNS = MAC_ROOT + "/系统/运行记录"
 
-SITE_BASE = "https://guiguisqwd.github.io/shoulder-study/"
+SITE_BASE = "https://guiguisqwd.github.io/dpt-study/"
 LOCAL_3D = "http://127.0.0.1:5178/"
 
 

@@ -2,12 +2,12 @@
 
 面向多个解剖主题的双语学习网站。每个主题沿用同一套学习顺序、英文表达、解剖图示、3D 联动和核验标准；肩袖是第一个主题，Hip joint（髋关节）作为后续主题草稿保留扩展位置。
 
-**GitHub 是共同维护的项目来源：每次授权修改，检查后提交并推送。** 现有仓库 [guiguisqwd/shoulder-study](https://github.com/guiguisqwd/shoulder-study) 和站点路径保留，以兼容已有链接；历史名称不限制主题范围。Claude 与其他协作者先读 [CLAUDE.md](./CLAUDE.md)。
+**GitHub 是共同维护的项目来源：每次授权修改，检查后提交并推送。** 仓库 [guiguisqwd/dpt-study](https://github.com/guiguisqwd/dpt-study)（2026-10-08 由 shoulder-study 改名）。Claude 与其他协作者先读 [CLAUDE.md](./CLAUDE.md)。
 
-- [学习首页](https://guiguisqwd.github.io/shoulder-study/study.html)
+- [学习首页](https://guiguisqwd.github.io/dpt-study/study.html)
 - [解剖学习工作台：维护范围与接手说明](./docs/MAINTENANCE.md)
 - [新增主题流程](./docs/ADDING_A_TOPIC.md)
-- [肩袖阅读](https://guiguisqwd.github.io/shoulder-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/shoulder-study/reading-claude.html) · [肩袖 3D](https://guiguisqwd.github.io/shoulder-study/?term=humerus)
+- [肩袖阅读](https://guiguisqwd.github.io/dpt-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/dpt-study/reading-claude.html) · [肩袖 3D](https://guiguisqwd.github.io/dpt-study/?term=humerus)
 
 ## 新增主题
 
@@ -46,8 +46,8 @@ python3 scripts/build-platform.py
 使用 Node.js 24、pnpm 11.19.0、Python 3.13，与发布工作流保持一致：
 
 ```sh
-git clone https://github.com/guiguisqwd/shoulder-study.git
-cd shoulder-study
+git clone https://github.com/guiguisqwd/dpt-study.git
+cd dpt-study
 python3 scripts/validate-topics.py
 cd 肩部3D学习
 pnpm install --frozen-lockfile
@@ -78,7 +78,7 @@ python3 -m http.server 5178 --bind 127.0.0.1 --directory dist
 
 ```sh
 python3 -m pip install -r reading-source/requirements-publish.txt
-python3 reading-source/prepare-web-release.py --site-url https://guiguisqwd.github.io/shoulder-study/
+python3 reading-source/prepare-web-release.py --site-url https://guiguisqwd.github.io/dpt-study/
 ```
 
 网站入口为 `website-release/dist/study.html`；3D 入口仍是 `index.html`。发布保留主题内容、肩袖两种阅读版、模型、现有音频、配图、下载及许可，并转换线上链接。

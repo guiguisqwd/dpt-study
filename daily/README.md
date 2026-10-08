@@ -12,8 +12,8 @@ acupoints read aloud in Chinese, self-checks, flashcards, and spaced-repetition 
 
 | When (Pacific) | Phase | Steps (AUTO = the script does and checks it; CLAUDE = the session does it, then records evidence) |
 | --- | --- | --- |
-| ~19:50 the evening before | `evening` | plan · **author** (CLAUDE: content.json + figures.py) · figures · validate · build · qa · **visual_review** (CLAUDE: look at every screenshot) · site · cards · **archive** (CLAUDE: write to the Mac) · **review_center** (CLAUDE: update the artifact) · publish (git commit + push) |
-| ~04:25 | `morning` | locate · **deliver** (CLAUDE: SendUserFile) · record (commit + push the run record) |
+| 18:07 the evening before | `evening` | plan · **author** (CLAUDE: content.json + figures.py) · figures · validate · build · qa · **visual_review** (CLAUDE: look at every screenshot) · site · cards · publish (git commit + push) |
+| 04:18 | `morning` | locate · **deliver** (CLAUDE: SendUserFile) · **review_center** (CLAUDE: update the artifact) · **archive** (CLAUDE: write pack, indexes and this run record to the Mac) |
 
 The script stops at the first unfinished step, prints exactly what to do, and exits with that
 step's code (10 author, 11 visual review, 12 Mac archive, 13 deliver, 14 review center, 20–23 a
@@ -35,15 +35,17 @@ python3 daily/pipeline.py mark archive --date 2026-10-08 --evidence @commit-resu
 Review days (Sundays, 12/16–12/23) are generated automatically from the week's packs
 (`engine/review_pack.py`): no authoring step.
 
-## Scheduled runs and the backup bundle
+## Where each phase runs
 
-Two scheduled tasks run this pipeline in fresh cloud sessions linked to gui's Mac:
-`DPT 每日学习包 · 前一晚生成` (18:07 Pacific, `evening` for tomorrow) and `DPT 每日学习包 · 4:30 推送`
-(04:18 Pacific, `morning` for today). Each clones this repo, then restores commits that could not be
-pushed yet from `~/Documents/DPT-每日简报/系统/待推送/shoulder-study-unpushed.bundle` on the Mac
-(`git fetch <bundle> HEAD && git merge --ff-only FETCH_HEAD`). When `publish`/`record` cannot push
-(exit 24), the pipeline writes a fresh bundle (`origin/main..HEAD`) to the staging folder and prints
-the `device_commit_files` call that puts it back on the Mac, so the next run starts from it.
+| Phase | Runs in | Why |
+| --- | --- | --- |
+| `evening` (18:07 Pacific, for tomorrow) | Claude Code routine `DPT 每日学习包 · 前一晚生成` with `guiguisqwd/dpt-study` attached | can push to `main`, so GitHub Pages updates |
+| `morning` (04:18 Pacific, for today) | Cowork scheduled task `DPT 每日学习包 · 4:30 推送`, linked to gui's Mac | can send the file to gui, update the review-center artifact and write the Mac archive |
+
+The morning task clones the pushed repository (public, read-only), so it needs no push access.
+If an evening push is ever blocked (exit 24), the pipeline writes `origin/main..HEAD` to
+`dpt-study-unpushed.bundle` in the staging folder; restore it with
+`git fetch <bundle> HEAD && git merge --ff-only FETCH_HEAD` in a session that can push.
 
 ## Layout
 
@@ -85,7 +87,7 @@ daily/
 
 ## Where the results go
 
-- Phone: the 04:25 scheduled task sends the HTML with a Claude notification.
-- Website: `https://guiguisqwd.github.io/shoulder-study/daily/` (after push + Pages deploy).
+- Phone: the 04:18 scheduled task sends the HTML with a Claude notification.
+- Website: `https://guiguisqwd.github.io/dpt-study/daily/` (after push + Pages deploy).
 - Mac: `~/Documents/DPT-每日简报/每日学习包/<pack>/`, `daily/YYYY/MM/<date>.md`, `index/`.
-- Record: `daily/runs/<date>.json` in this repository (and in the Mac archive Markdown).
+- Record: `daily/runs/<date>.json` in this repository (evening steps) and `~/Documents/DPT-每日简报/系统/运行记录/<date>.json` on the Mac (all steps).

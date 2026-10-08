@@ -60,7 +60,7 @@ def day_markdown(c, run=None):
          [f"  - {h}" for h in c.get("tags", {}).get("horizontal", [])] + \
          [f"keywords_en: [{', '.join([m['en'] for m in c.get('muscles', [])] + [a.get('pinyin', '') for a in c.get('acupoints', [])])}]",
           f"pack: 每日学习包/{stem}/{stem}.html", f"pack_md: 每日学习包/{stem}/{stem}.md",
-          f"site: https://guiguisqwd.github.io/shoulder-study/daily/{date}/index.html",
+          f"site: https://guiguisqwd.github.io/dpt-study/daily/{date}/index.html",
           f"next_up: [{', '.join(a['name'] for a in (nxt[0]['acupoints'] if nxt else []))}{'; ' if nxt else ''}{', '.join(m['zh'] for m in (nxt[0]['muscles'] if nxt else []))}]", "---", ""]
     L = fm + [f"# 每日学习包存档 · {date}（{plan.weekday_zh(date)}）· 第 {c.get('day')} 天", "",
               f"> {c['title']['zh']}｜{c['title']['en']}。推送页是 `{stem}.html`；本文件比推送页多出每一条知识的检索标记（纵向/横向）、复习日期和资料来源，供后续 Agent 检索复用。", ""]
@@ -131,8 +131,12 @@ def stage(date, staging_root, run=None):
     for device_commit_files) and return the manifest [{stagedPath, devicePath}]."""
     c = load_content(date); B = build_dir(date); stem = out_name(c)
     root = Path(staging_root) / date
-    if root.exists():
-        shutil.rmtree(root)
+    for old in ("pack", "index", "review-center", "runs", "archive.md", "manifest.json"):   # keep deliver/ and others
+        q = root / old
+        if q.is_dir():
+            shutil.rmtree(q)
+        elif q.exists():
+            q.unlink()
     files = []
     def put(src_path=None, text=None, rel=None, device=None):
         dst = root / rel
@@ -162,6 +166,9 @@ def stage(date, staging_root, run=None):
     rc = DAILY / "review-center" / "index.html"
     if rc.exists():
         put(rc, rel="review-center/index.html", device=f"{MAC_ROOT}/复习中心/index.html")
+    rr = DAILY / "runs" / f"{date}.json"
+    if rr.exists():
+        put(rr, rel=f"runs/{date}.json", device=f"{MAC_ROOT}/系统/运行记录/{date}.json")
     manifest = {"date": date, "files": files}
     (root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     assert len(files) <= 50, "device_commit_files takes at most 50 files per call"

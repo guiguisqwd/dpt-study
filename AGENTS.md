@@ -7,8 +7,8 @@ the whole Anatomy study workbench. Read [docs/MAINTENANCE.md](./docs/MAINTENANCE
 for project scope, source locations and handoff requirements.
 
 This product is **Anatomy study / 解剖学习**, with multiple anatomy topics.
-Shoulder is the first topic, not the limit of the product. Keep the existing
-`shoulder-study` repository URL and historical local paths compatible. For a new
+Shoulder is the first topic, not the limit of the product. The repository was renamed
+`shoulder-study` → `dpt-study` on 2026-10-08; keep historical local paths compatible. For a new
 topic, read `docs/ADDING_A_TOPIC.md`, use `topics/<slug>/topic.json` and the shared
 scaffold, validation and build scripts. Do not duplicate the entire viewer or
 copy shoulder facts into another anatomical region. Keep topic content and model

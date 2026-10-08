@@ -74,7 +74,7 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           # PRs exercise the same URL-rewriting path without deploying.
-          site_url="${SITE_URL:-https://example.invalid/shoulder-study/}"
+          site_url="${SITE_URL:-https://example.invalid/dpt-study/}"
           python reading-source/prepare-web-release.py --site-url "$site_url"
 
       - name: Upload the complete Pages artifact

@@ -5,7 +5,11 @@
 const path = require('path');
 const fs = require('fs');
 function loadPlaywright() {
-  for (const p of ['playwright', '/opt/node22/lib/node_modules/playwright', '/opt/npm-tools/node_modules/playwright', '/usr/lib/node_modules/playwright']) {
+  let globalRoot = null;
+  try { globalRoot = require('child_process').execSync('npm root -g', { encoding: 'utf8' }).trim(); } catch (e) { /* no npm */ }
+  const tries = ['playwright', globalRoot && path.join(globalRoot, 'playwright'), '/opt/node22/lib/node_modules/playwright',
+                 '/opt/npm-tools/node_modules/playwright', '/usr/lib/node_modules/playwright'].filter(Boolean);
+  for (const p of tries) {
     try { return require(p); } catch (e) { /* try next */ }
   }
   throw new Error('playwright not found');
