@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daily study packs · 每日学习包</title>
+<style>:root{--paper:#faf7ef;--ground:#ede9df;--ink:#292b2a;--muted:#6c706b;--rule:#dad7cc;--accent:#42695e;--red:#ae4b3e}*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:980px;margin:auto;padding:40px 20px 70px}.eyebrow{font-size:12px;letter-spacing:2px;color:var(--muted)}h1{font:700 38px/1.25 "Kaiti SC","STKaiti","Songti SC",serif;margin:10px 0 6px}h1 span{display:block;font:400 17px/1.6 -apple-system,sans-serif;color:var(--muted)}
+.progress{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}.progress span{background:var(--paper);border:1px solid var(--rule);border-radius:999px;padding:5px 14px;font-size:14px}.bar{height:8px;background:#ddd8cc;border-radius:9px;overflow:hidden;margin:6px 0 24px}.bar i{display:block;height:100%;background:var(--accent)}
+input{width:100%;padding:11px 14px;border:1px solid var(--rule);border-radius:9px;background:var(--paper);font-size:15px;margin:6px 0 18px}
+.day{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:0 0 14px}.meta{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;color:var(--muted)}
+.day h2{margin:6px 0 10px;font:700 25px/1.35 "Kaiti SC","STKaiti","Songti SC",serif}.day h2 a{color:var(--ink);text-decoration:none}.day h2 small{display:block;font:400 14px/1.5 -apple-system,sans-serif;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--rule);border-radius:999px;padding:2px 10px;font-size:13.5px;background:#fffdf7}.chip small{color:var(--muted);margin-left:5px}.chip.acu{border-color:#e2b9ae;color:var(--red)}
+.tags{font-size:12.5px;color:var(--muted);margin:10px 0 4px}.links a{color:var(--accent);font-weight:600;margin-right:14px;font-size:14px}footer{font-size:12px;color:var(--muted);margin-top:30px}footer a{color:var(--accent)}</style></head>
+<body><main><div class="eyebrow">DPT FOUNDATIONS · DAILY</div><h1>每日学习包<span>Daily study packs · acupoints, muscles, nerves and movement, English first</span></h1>
+<div class="progress"><span>6 / 362 acupoints · 穴位</span><span>7 / 157 muscles · 肌肉</span><span>Goal · 目标 2026-12-23</span></div>
+<div class="bar"><i style="width:2.5%"></i></div>
+<input id="q" type="search" placeholder="Search a point or muscle · 搜索穴位或肌肉" autocomplete="off">
+<article class="day" data-search="肺经与胸前肌 lung meridian lu1–lu6 · pectoral muscles 中府 云门 天府 侠白 尺泽 孔最 pectoralis major 胸大肌 pectoralis minor 胸小肌 subclavius 锁骨下肌">
+<div class="meta"><span>2026-10-07 周三</span><span>Day 1 · 第 1 天</span></div>
+<h2><a href="./2026-10-07/index.html">肺经与胸前肌<small>Lung meridian LU1–LU6 · Pectoral muscles</small></a></h2>
+<div class="chips"><span class="chip acu">中府<small>Zhōngfǔ</small></span><span class="chip acu">云门<small>Yúnmén</small></span><span class="chip acu">天府<small>Tiānfǔ</small></span><span class="chip acu">侠白<small>Xiábái</small></span><span class="chip acu">尺泽<small>Chǐzé</small></span><span class="chip acu">孔最<small>Kǒngzuì</small></span><span class="chip mus">Pectoralis major<small>胸大肌</small></span><span class="chip mus">Pectoralis minor<small>胸小肌</small></span><span class="chip mus">Subclavius<small>锁骨下肌</small></span></div>
+<p class="tags">臂丛与神经通路 · 力偶与生物力学 · 记忆法 · 中西医对照/穴位-触发点 · 体表定位/骨度分寸 · 针刺安全/危险结构</p>
+<p class="links"><a href="./2026-10-07/index.html">Open pack · 打开学习包 ↗</a> <a href="./2026-10-07/2026-10-07-第1天-肺经与胸前肌.md">Markdown</a></p></article>
+<footer>Every pack is generated and checked by the daily pipeline (daily/pipeline.py); run records are in the repository under daily/runs/. · 每份学习包都由每日流程生成并检查，运行记录见仓库 daily/runs/。 <a href="../study.html">Topic library · 主题库</a></footer></main>
+<script>const q=document.getElementById('q'),days=[...document.querySelectorAll('.day')];q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();days.forEach(d=>d.hidden=!d.dataset.search.includes(v));});</script></body></html>

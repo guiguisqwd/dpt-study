@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-07",
+  "out": "2026-10-07-第1天-肺经与胸前肌",
+  "chapters": 6,
+  "figure_occurrences": 8,
+  "figures": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "model_links": [
+    "clavicle",
+    "deltoid",
+    "humerus",
+    "intertubercular-groove",
+    "scapula"
+  ],
+  "html_bytes": 226176
+}

@@ -55,6 +55,7 @@
 | 共享 3D 页面、状态与交互 | `肩部3D学习/src/` |
 | 模型、音频、许可等公开资源 | `肩部3D学习/public/` |
 | Claude 独立阅读版 | `肩部3D学习/public/reading-claude.html` |
+| 每日学习包（内容、配图、流水线、运行记录） | `daily/`：每天的 `days/<date>/content.json` 与 `figures.py`；共用引擎在 `daily/engine/`；说明见 `daily/README.md`。`肩部3D学习/public/daily/` 是生成输出 |
 
 `reading-claude.html` 是独立维护的版本，必须保留。标准阅读构建不得覆盖它；修改该版时以 `public/reading-claude.html` 为源，不要只改 `dist/` 中的副本。
 

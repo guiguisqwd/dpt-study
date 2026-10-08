@@ -1,0 +1,6 @@
+# QA screenshots are regenerated on every run (qa.json and visual-review.json are kept as the record)
+days/*/build/qa/*.png
+days/*/build/qa/view/
+days/*/build/_figcheck/
+__pycache__/
+*.pyc

@@ -1,0 +1,80 @@
+{
+ "schema": "dpt-daily-catalog/1",
+ "entries": [
+  {
+   "date": "2026-10-07",
+   "day": 1,
+   "kind": "learning",
+   "out": "2026-10-07-第1天-肺经与胸前肌",
+   "title": {
+    "zh": "肺经与胸前肌",
+    "en": "Lung meridian LU1–LU6 · Pectoral muscles"
+   },
+   "acupoints": [
+    [
+     "中府",
+     "Zhōngfǔ",
+     "LU1"
+    ],
+    [
+     "云门",
+     "Yúnmén",
+     "LU2"
+    ],
+    [
+     "天府",
+     "Tiānfǔ",
+     "LU3"
+    ],
+    [
+     "侠白",
+     "Xiábái",
+     "LU4"
+    ],
+    [
+     "尺泽",
+     "Chǐzé",
+     "LU5"
+    ],
+    [
+     "孔最",
+     "Kǒngzuì",
+     "LU6"
+    ]
+   ],
+   "muscles": [
+    [
+     "Pectoralis major",
+     "胸大肌"
+    ],
+    [
+     "Pectoralis minor",
+     "胸小肌"
+    ],
+    [
+     "Subclavius",
+     "锁骨下肌"
+    ]
+   ],
+   "tags": {
+    "vertical": [
+     "解剖学/上肢/肩带/胸前区肌群",
+     "神经科学/周围神经/臂丛/胸神经",
+     "运动学/生物力学/肩胛胸壁关节",
+     "中医针灸对照/经络/手太阴肺经"
+    ],
+    "horizontal": [
+     "臂丛与神经通路",
+     "力偶与生物力学",
+     "记忆法",
+     "中西医对照/穴位-触发点",
+     "体表定位/骨度分寸",
+     "针刺安全/危险结构"
+    ]
+   },
+   "figures": 8,
+   "path": "daily/2026-10-07/index.html",
+   "md": "daily/2026-10-07/2026-10-07-第1天-肺经与胸前肌.md"
+  }
+ ]
+}

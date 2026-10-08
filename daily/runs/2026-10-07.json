@@ -1,0 +1,343 @@
+{
+ "date": "2026-10-07",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-07T01:57:50-07:00",
+     "evidence": {
+      "kind": "learning",
+      "day": 1,
+      "acupoints": [
+       "中府",
+       "云门",
+       "天府",
+       "侠白",
+       "尺泽",
+       "孔最"
+      ],
+      "muscles": [
+       "胸大肌",
+       "胸小肌",
+       "锁骨下肌"
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-07T01:57:50-07:00",
+     "evidence": {
+      "content": "daily/days/2026-10-07/content.json",
+      "figures": "daily/days/2026-10-07/figures.py",
+      "fingerprint": "fd8261813b34d93a"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-07T01:58:44-07:00",
+     "evidence": {
+      "svgs": [
+       "01-胸前区肌肉总览.svg",
+       "02-胸大肌起止点.svg",
+       "03-胸小肌起止点.svg",
+       "04-锁骨下肌起止点.svg",
+       "05-支配胸前肌肉的神经.svg",
+       "06-从力线推出动作.svg",
+       "07-手太阴肺经-前6穴.svg",
+       "08-中府云门-层次示意.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-07T01:58:44-07:00",
+     "evidence": "schema dpt-daily-pack/1: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-07T01:58:44-07:00",
+     "evidence": {
+      "date": "2026-10-07",
+      "out": "2026-10-07-第1天-肺经与胸前肌",
+      "chapters": 6,
+      "figure_occurrences": 8,
+      "figures": [
+       "01",
+       "02",
+       "03",
+       "04",
+       "05",
+       "06",
+       "07",
+       "08"
+      ],
+      "model_links": [
+       "clavicle",
+       "deltoid",
+       "humerus",
+       "intertubercular-groove",
+       "scapula"
+      ],
+      "html_bytes": 226176
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-07T01:58:52-07:00",
+     "evidence": {
+      "figures": 8,
+      "say_buttons": 60,
+      "mobile_scroll_width": 390,
+      "flashcards": 12,
+      "views": 30
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-07T01:59:08-07:00",
+     "evidence": {
+      "viewed": 30,
+      "notes": "Day 1 was reviewed screenshot by screenshot on 2026-10-07 while it was authored (chest overview, three O/I figures with rib numbers, plexus labels, movement panels A–C, lung meridian arm chart, layer stacks, key-term pronunciation rows, memory card, review tables). The engine rebuild is byte-identical for all 8 SVGs and all six section HTML files, so these views show the reviewed artwork.",
+      "fixed": [
+       "O/I legend overlapped the humerus → cropped and enlarged",
+       "plexus trunk/cord labels crossed nerve lines → moved",
+       "movement panel A/C redrawn",
+       "meridian chart rebuilt on a proper arm base with segment-specific cun",
+       "SVG displacement-filter seams → double-stroke lines",
+       "Kongzui safety and layers completed",
+       "IPA + stress for every key term; acupoint terms read in Chinese"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-07T01:59:08-07:00",
+     "evidence": {
+      "entries": 1,
+      "learned_acupoints": 6,
+      "learned_muscles": 7,
+      "page": "肩部3D学习/public/daily/2026-10-07/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-07T01:59:08-07:00",
+     "evidence": {
+      "cards": 25,
+      "acupoints": 18,
+      "muscles": 7,
+      "due_on_2026-10-07": 16
+     }
+    },
+    "archive": {
+     "status": "done",
+     "at": "2026-10-07T01:59:47-07:00",
+     "evidence": {
+      "written": 19
+     },
+     "fingerprint": "3323c312120bccda"
+    },
+    "review_center": {
+     "status": "done",
+     "at": "2026-10-07T01:59:58-07:00",
+     "evidence": "https://claude.ai/artifact/3k1RZqb9tf9heXKLHe58ig version 1791363593-f070 (25 cards)"
+    },
+    "publish": {
+     "status": "blocked",
+     "at": "2026-10-07T01:59:59-07:00",
+     "error": "git push origin HEAD:main failed (128):\n\nremote: access denied by the git proxy: guiguisqwd/shoulder-study is not in this session's authorized repository set, so the proxy will not inject a credential for it. To fix, add the repository to the session's sources.\nfatal: unable to access 'https://github.com/guiguisqwd/shoulder-study.git/': The requested URL returned error: 403\n",
+     "commit": "82d08d398724d2c906ea8f42c565f6ace4a6cfc0",
+     "branch": "main"
+    }
+   },
+   "started": "2026-10-07T01:57:50-07:00",
+   "fingerprint": "3323c312120bccda"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-07T01:57:50-07:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:50-07:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:50-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:50-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:50-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:58-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:57:58-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:58:09-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:09-07:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:09-07:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:10-07:00",
+   "phase": "evening",
+   "step": "archive",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:58:20-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:20-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:20-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:28-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:28-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:58:44-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:44-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:44-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:52-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:58:52-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:58:57-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "failed"
+  },
+  {
+   "at": "2026-10-07T01:59:08-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:59:08-07:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:59:08-07:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:59:11-07:00",
+   "phase": "evening",
+   "step": "archive",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:59:47-07:00",
+   "phase": "evening",
+   "step": "archive",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:59:47-07:00",
+   "phase": "evening",
+   "step": "review_center",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T01:59:58-07:00",
+   "phase": "evening",
+   "step": "review_center",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T01:59:59-07:00",
+   "phase": "evening",
+   "step": "publish",
+   "status": "blocked"
+  }
+ ],
+ "kind": "learning",
+ "day": 1,
+ "out": "2026-10-07-第1天-肺经与胸前肌"
+}

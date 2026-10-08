@@ -1,0 +1,974 @@
+{
+ "schema": "dpt-daily-pack/1",
+ "date": "2026-10-07",
+ "day": 1,
+ "kind": "learning",
+ "slug_zh": "肺经与胸前肌",
+ "title": {
+  "zh": "肺经与胸前肌",
+  "en": "Lung meridian LU1–LU6 · Pectoral muscles"
+ },
+ "page_title": "第 1 天｜肺经与胸前肌",
+ "description": "DPT 基础第 1 天：胸大肌、胸小肌、锁骨下肌与手太阴肺经前 6 穴。",
+ "brand_sub": "肺经与胸前肌 · 10/7",
+ "today_line": "今天：6 个新穴位（中府、云门、天府、侠白、尺泽、孔最）· 3 块新肌肉（胸大肌、胸小肌、锁骨下肌）· 复习 16 张旧卡",
+ "study_plan": [
+  [
+   "先看图（10 分钟）",
+   "01 肌肉、04 穴位的图，对着自己胸前和手臂找"
+  ],
+  [
+   "再读文字（20 分钟）",
+   "01–04 章，每章末尾先自测"
+  ],
+  [
+   "复习（15 分钟）",
+   "05 章记忆卡 + 复习中心里的旧卡"
+  ],
+  [
+   "英文（5 分钟）",
+   "06 章读两遍，用新词造一句"
+  ]
+ ],
+ "footer": "DPT 基础 · 第 1 天 · 定位依据 GB/T 12346；层次为学习用的简化描述，不代表进针方向或深度。",
+ "md_prefix": "# 第 1 天：肺经与胸前肌\n\nDPT 基础 · 2026-10-07 · 手太阴肺经前 6 穴 + 胸大肌、胸小肌、锁骨下肌\n",
+ "tags": {
+  "vertical": [
+   "解剖学/上肢/肩带/胸前区肌群",
+   "神经科学/周围神经/臂丛/胸神经",
+   "运动学/生物力学/肩胛胸壁关节",
+   "中医针灸对照/经络/手太阴肺经"
+  ],
+  "horizontal": [
+   "臂丛与神经通路",
+   "力偶与生物力学",
+   "记忆法",
+   "中西医对照/穴位-触发点",
+   "体表定位/骨度分寸",
+   "针刺安全/危险结构"
+  ]
+ },
+ "muscles": [
+  {
+   "id": "pectoralis-major",
+   "en": "Pectoralis major",
+   "zh": "胸大肌",
+   "letter": "P",
+   "color": "#b94334",
+   "figure": "02",
+   "o": [
+    "Clavicular head: medial half of the clavicle. Sternocostal head: sternum, upper six costal cartilages, and the aponeurosis of the external oblique",
+    "锁骨部：锁骨内侧半；胸肋部：胸骨、上 6 个肋软骨及腹外斜肌腱膜"
+   ],
+   "i": [
+    "Lateral lip of the intertubercular groove of the humerus",
+    "肱骨结节间沟外侧唇"
+   ],
+   "n": [
+    "Lateral pectoral nerve (C5–C7) and medial pectoral nerve (C8–T1)",
+    "胸外侧神经（C5–C7）和胸内侧神经（C8–T1）"
+   ],
+   "a": [
+    "Adducts and internally rotates the humerus; the clavicular part also flexes the shoulder",
+    "使肱骨内收、内旋；锁骨部还使肩前屈"
+   ],
+   "sentence": [
+    "The pectoralis major originates from the clavicle, sternum, and upper costal cartilages, passes laterally across the front of the chest, and inserts onto the lateral lip of the intertubercular groove.",
+    "胸大肌起自锁骨、胸骨和上部肋软骨，向外侧横过胸前，止于肱骨结节间沟外侧唇。"
+   ],
+   "acu": "中府（浅层）、云门（外缘）",
+   "acu_en": "Zhongfu (superficial layer), Yunmen (lateral edge)",
+   "o_short": [
+    "Clavicle, sternum, costal cartilages 1–6",
+    "锁骨内侧半、胸骨、第 1–6 肋软骨"
+   ],
+   "i_short": [
+    "Lateral lip, intertubercular groove",
+    "结节间沟外侧唇"
+   ],
+   "n_short": [
+    "Lateral + medial pectoral nn. (C5–T1)",
+    "胸外侧、胸内侧神经"
+   ],
+   "a_short": [
+    "Adduction, internal rotation; flexion (clavicular part)",
+    "内收、内旋；锁骨部前屈"
+   ],
+   "source": "https://www.ncbi.nlm.nih.gov/books/NBK545241/"
+  },
+  {
+   "id": "pectoralis-minor",
+   "en": "Pectoralis minor",
+   "zh": "胸小肌",
+   "letter": "P",
+   "color": "#8f4a3c",
+   "figure": "03",
+   "o": [
+    "Outer surfaces of ribs 3–5 near their costal cartilages",
+    "第 3–5 肋外面，靠近肋软骨处"
+   ],
+   "i": [
+    "Coracoid process of the scapula",
+    "肩胛骨喙突"
+   ],
+   "n": [
+    "Medial pectoral nerve (C8–T1)",
+    "胸内侧神经（C8–T1）"
+   ],
+   "a": [
+    "Protracts and depresses the scapula and tilts it forward; lifts the ribs when the scapula is fixed",
+    "使肩胛骨前伸、下降并前倾；肩胛骨固定时上提肋骨"
+   ],
+   "sentence": [
+    "The pectoralis minor originates from ribs 3 to 5, passes upward and laterally beneath the pectoralis major, and inserts onto the coracoid process.",
+    "胸小肌起自第 3–5 肋，在胸大肌深面向外上方走行，止于喙突。"
+   ],
+   "acu": "中府（深层）",
+   "acu_en": "Zhongfu (deep layer)",
+   "o_short": [
+    "Ribs 3–5",
+    "第 3–5 肋"
+   ],
+   "i_short": [
+    "Coracoid process",
+    "喙突"
+   ],
+   "n_short": [
+    "Medial pectoral n. (C8–T1)",
+    "胸内侧神经"
+   ],
+   "a_short": [
+    "Scapula forward and down",
+    "肩胛骨前伸、下降"
+   ],
+   "source": "https://www.ncbi.nlm.nih.gov/books/NBK545241/"
+  },
+  {
+   "id": "subclavius",
+   "en": "Subclavius",
+   "zh": "锁骨下肌",
+   "letter": "S",
+   "color": "#b46a2c",
+   "figure": "04",
+   "o": [
+    "Junction of the first rib and its costal cartilage",
+    "第 1 肋与肋软骨交界处"
+   ],
+   "i": [
+    "Inferior surface of the middle third of the clavicle",
+    "锁骨中 1/3 下面"
+   ],
+   "n": [
+    "Nerve to subclavius (C5–C6)",
+    "锁骨下肌神经（C5–C6）"
+   ],
+   "a": [
+    "Anchors and depresses the clavicle; steadies the sternoclavicular joint",
+    "固定并下拉锁骨；稳定胸锁关节"
+   ],
+   "sentence": [
+    "The subclavius originates from the first rib, passes laterally beneath the clavicle, and inserts onto the inferior surface of its middle third.",
+    "锁骨下肌起自第 1 肋，在锁骨下方向外侧走行，止于锁骨中 1/3 的下面。"
+   ],
+   "acu": "云门附近（锁骨下窝）",
+   "acu_en": "near Yunmen (infraclavicular fossa)",
+   "o_short": [
+    "1st rib and cartilage",
+    "第 1 肋及肋软骨"
+   ],
+   "i_short": [
+    "Underside of clavicle, middle third",
+    "锁骨中 1/3 下面"
+   ],
+   "n_short": [
+    "Nerve to subclavius (C5–C6)",
+    "锁骨下肌神经"
+   ],
+   "a_short": [
+    "Steadies the clavicle",
+    "稳定锁骨"
+   ],
+   "source": "https://www.ncbi.nlm.nih.gov/books/NBK545241/"
+  }
+ ],
+ "acupoints": [
+  {
+   "name": "中府",
+   "pinyin": "Zhōngfǔ",
+   "loc": "在胸部，横平第 1 肋间隙，锁骨下窝外侧，前正中线旁开 6 寸",
+   "loc_short": "1st intercostal space, 6 cun lateral to the midline",
+   "layers": "皮肤 → 皮下组织 → 胸大肌 → 胸小肌",
+   "safety": "深面为胸腔和肺：向外斜刺，不可向内深刺",
+   "muscles": "胸大肌、胸小肌",
+   "find": "先找云门，向下 1 寸，平第 1 肋间隙",
+   "code": "LU1",
+   "meridian": "手太阴肺经"
+  },
+  {
+   "name": "云门",
+   "pinyin": "Yúnmén",
+   "loc": "在胸部，锁骨下窝凹陷中，肩胛骨喙突内缘，前正中线旁开 6 寸",
+   "loc_short": "Infraclavicular fossa, medial to the coracoid, 6 cun lateral",
+   "layers": "皮肤 → 皮下组织 → 三角肌与胸大肌之间 → 锁胸筋膜",
+   "safety": "深面有腋动脉、腋静脉和臂丛，内侧靠近胸膜：向外斜刺，不可向内深刺",
+   "muscles": "胸大肌、三角肌（两肌之间）",
+   "find": "手臂稍向前抬，锁骨外端下方出现凹陷；摸到喙突，贴着它内缘的凹陷就是",
+   "code": "LU2",
+   "meridian": "手太阴肺经"
+  },
+  {
+   "name": "天府",
+   "pinyin": "Tiānfǔ",
+   "loc": "在臂前区，腋前纹头下 3 寸，肱二头肌桡侧缘处",
+   "loc_short": "3 cun below the anterior axillary fold, radial border of biceps",
+   "layers": "皮肤 → 皮下组织 → 肱二头肌桡侧缘 → 肱肌",
+   "safety": "附近有头静脉，进针时避开",
+   "muscles": "肱二头肌、肱肌",
+   "find": "腋前纹头到肘横纹为 9 寸，取上 1/3 处，在肱二头肌外侧缘",
+   "code": "LU3",
+   "meridian": "手太阴肺经"
+  },
+  {
+   "name": "侠白",
+   "pinyin": "Xiábái",
+   "loc": "在臂前区，腋前纹头下 4 寸，肱二头肌桡侧缘处",
+   "loc_short": "4 cun below the anterior axillary fold, radial border of biceps",
+   "layers": "皮肤 → 皮下组织 → 肱二头肌桡侧缘 → 肱肌",
+   "safety": "附近有头静脉，进针时避开",
+   "muscles": "肱二头肌、肱肌",
+   "find": "天府下 1 寸；“侠”同“夹”，夹着肱二头肌",
+   "code": "LU4",
+   "meridian": "手太阴肺经"
+  },
+  {
+   "name": "尺泽",
+   "pinyin": "Chǐzé",
+   "loc": "在肘区，肘横纹上，肱二头肌腱桡侧缘凹陷中",
+   "loc_short": "On the cubital crease, radial to the biceps tendon",
+   "layers": "皮肤 → 皮下组织 → 肱桡肌 → 肱肌",
+   "safety": "深面在肱桡肌与肱肌之间有桡神经",
+   "muscles": "肱桡肌、肱肌",
+   "find": "微屈肘，摸到绷紧的肱二头肌腱，腱的桡侧（拇指侧）凹陷",
+   "code": "LU5",
+   "meridian": "手太阴肺经"
+  },
+  {
+   "name": "孔最",
+   "pinyin": "Kǒngzuì",
+   "loc": "在前臂前区，腕掌侧远端横纹上 7 寸，尺泽与太渊连线上",
+   "loc_short": "7 cun above the wrist crease on the Chize–Taiyuan line",
+   "layers": "皮肤 → 皮下组织 → 肱桡肌 → 桡侧腕屈肌 → 旋前圆肌 → 拇长屈肌",
+   "safety": "浅层有头静脉；深层有桡动脉和桡神经浅支，避开血管",
+   "muscles": "肱桡肌、旋前圆肌、拇长屈肌",
+   "find": "肘横纹到腕横纹为 12 寸；从尺泽向下 5 寸，在尺泽与太渊的连线上",
+   "code": "LU6",
+   "meridian": "手太阴肺经"
+  }
+ ],
+ "memory": {
+  "title": [
+   "How to remember them",
+   "三步记住这三块肌肉"
+  ],
+  "steps": [
+   [
+    "Feel",
+    "摸",
+    "Lay your left hand flat on your right chest and squeeze your arm against your side: the muscle that hardens under your palm is the pectoralis major. Then press into the hollow below the outer clavicle; the hard knob deep there is the coracoid process, where the pectoralis minor hangs.",
+    "左手平放在右胸，右臂往身体侧夹紧：手掌下变硬的就是胸大肌。再按锁骨外侧下方的凹陷，深处硬硬的骨突是喙突，胸小肌就挂在它上面。"
+   ],
+   [
+    "Draw",
+    "画",
+    "Close the page and draw three strokes: a big fan from the clavicle and sternum to the arm, a small triangle from ribs 3–5 up to the coracoid, and a short bar under the clavicle. Then compare with Figure 01.",
+    "合上页面画三笔：从锁骨和胸骨扇向手臂的大扇子；从第 3–5 肋收到喙突的小三角；锁骨下面一根短横条。画完对照图 01。"
+   ],
+   [
+    "Move",
+    "动",
+    "Act each one out: hug a tree (pectoralis major: adduction and internal rotation); roll your shoulder forward and down (pectoralis minor); hold your clavicle down toward the first rib (subclavius).",
+    "用动作记：抱大树（胸大肌：内收、内旋）；肩膀向前下方扣（胸小肌）；把锁骨压向第 1 肋（锁骨下肌）。"
+   ]
+  ],
+  "hook": [
+   "major 1–6 · minor 3–5 · subclavius 1",
+   "胸大肌连第 1–6 肋软骨，胸小肌第 3–5 肋，锁骨下肌第 1 肋"
+  ]
+ },
+ "sources": [
+  [
+   "https://www.ncbi.nlm.nih.gov/books/NBK545241/",
+   "StatPearls: Anatomy, Shoulder and Upper Limb, Pectoral Muscles"
+  ]
+ ],
+ "figures": {
+  "01": "胸前区肌肉总览",
+  "02": "胸大肌起止点",
+  "03": "胸小肌起止点",
+  "04": "锁骨下肌起止点",
+  "05": "支配胸前肌肉的神经",
+  "06": "从力线推出动作",
+  "07": "手太阴肺经-前6穴",
+  "08": "中府云门-层次示意"
+ },
+ "chapters": [
+  {
+   "num": 1,
+   "id": "muscles",
+   "title": [
+    "Muscles: the anterior chest wall",
+    "今日肌肉：胸前区"
+   ],
+   "goals": [
+    [
+     "Name the three anterior chest wall muscles in English and Chinese.",
+     "用英文和中文说出胸前区的三块肌肉。"
+    ],
+    [
+     "State each muscle's origin and insertion and point to them on your own chest.",
+     "说出每块肌肉的起点和止点，并在自己胸前指出来。"
+    ],
+    [
+     "Tell which of the three lies deepest.",
+     "说出三块肌肉里哪一块最深。"
+    ]
+   ],
+   "terms": [
+    [
+     "Pectoralis major",
+     "胸大肌"
+    ],
+    [
+     "Pectoralis minor",
+     "胸小肌"
+    ],
+    [
+     "Subclavius",
+     "锁骨下肌"
+    ],
+    [
+     "Clavicle",
+     "锁骨"
+    ],
+    [
+     "Sternum",
+     "胸骨"
+    ],
+    [
+     "Coracoid process",
+     "喙突"
+    ],
+    [
+     "Costal cartilage",
+     "肋软骨"
+    ],
+    [
+     "Intertubercular groove",
+     "结节间沟"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Three muscles cover the front of the upper chest. The pectoralis major is the large superficial fan; the pectoralis minor lies beneath it; the subclavius is a small muscle hidden under the clavicle.",
+     "zh": "胸前上部有三块肌肉：胸大肌是最浅、最大的一片扇形肌；胸小肌在它的深面；锁骨下肌是一块藏在锁骨下方的小肌肉。"
+    },
+    {
+     "t": "fig",
+     "n": "01",
+     "en": "Right side, anterior view. Pectoralis major is shown in red; pectoralis minor (deep) is dashed; the subclavius lies under the clavicle.",
+     "zh": "右侧前面观。胸大肌为红色；胸小肌在深层，用虚线表示；锁骨下肌位于锁骨下方。"
+    },
+    {
+     "t": "h3",
+     "en": "Origins, insertions, and course",
+     "zh": "起点、止点与走行"
+    },
+    {
+     "t": "p",
+     "en": "O = origin; I = insertion. The dashed O → I line shows the attachment order only; force and movement are drawn with solid arrows in Chapter 03.",
+     "zh": "O 表示起点，I 表示止点。虚线 O → I 只表示附着顺序；受力和动作在第 03 章用实线箭头表示。"
+    },
+    {
+     "t": "muscle_cards"
+    }
+   ],
+   "check": [
+    [
+     "Which of the three muscles attaches to the coracoid process?",
+     "三块肌肉里，哪一块附着在喙突上？",
+     "The pectoralis minor. It runs from ribs 3 to 5 up to the coracoid process.",
+     "胸小肌。它从第 3–5 肋向上止于喙突。"
+    ],
+    [
+     "Where does the pectoralis major insert, and which tendon lies just medial to that insertion?",
+     "胸大肌止于哪里？紧挨着止点内侧的是哪条肌腱？",
+     "On the lateral lip of the intertubercular groove; the long head of biceps runs in the groove just medial to it.",
+     "止于结节间沟外侧唇；肱二头肌长头腱就在它内侧的沟里走行。"
+    ]
+   ],
+   "take": [
+    "Pectoralis major is the superficial fan to the humerus; pectoralis minor runs deep to it from ribs 3–5 to the coracoid; subclavius sits under the clavicle.",
+    "胸大肌是最浅的扇形肌，止于肱骨；胸小肌在它深面，从第 3–5 肋到喙突；锁骨下肌藏在锁骨下方。"
+   ],
+   "bridge": [
+    "nerve",
+    "Next: the nerves that reach these muscles. 下一章：支配这些肌肉的神经。",
+    "02 Innervation"
+   ],
+   "toc": [
+    "Muscles",
+    "今日肌肉"
+   ]
+  },
+  {
+   "num": 2,
+   "id": "nerve",
+   "title": [
+    "Innervation: the pectoral nerves",
+    "神经支配：胸前肌肉的神经"
+   ],
+   "goals": [
+    [
+     "Name the nerve to each of today's three muscles.",
+     "说出今天三块肌肉各自的支配神经。"
+    ],
+    [
+     "Trace each nerve back to its cord or trunk and its spinal segments.",
+     "把每条神经追溯到它来自的束或干，以及对应的脊神经节段。"
+    ]
+   ],
+   "terms": [
+    [
+     "Brachial plexus",
+     "臂丛"
+    ],
+    [
+     "Lateral pectoral nerve",
+     "胸外侧神经"
+    ],
+    [
+     "Medial pectoral nerve",
+     "胸内侧神经"
+    ],
+    [
+     "Nerve to subclavius",
+     "锁骨下肌神经"
+    ],
+    [
+     "Lateral cord",
+     "外侧束"
+    ],
+    [
+     "Medial cord",
+     "内侧束"
+    ],
+    [
+     "Superior trunk",
+     "上干"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "levels",
+     "title": "C = Cervical · 颈部 &nbsp; T = Thoracic · 胸部",
+     "items": [
+      [
+       "C5–C7",
+       "第 5–7 颈神经，经外侧束 → 胸外侧神经"
+      ],
+      [
+       "C8–T1",
+       "第 8 颈神经与第 1 胸神经，经内侧束 → 胸内侧神经"
+      ],
+      [
+       "C5–C6",
+       "上干直接发出 → 锁骨下肌神经"
+      ]
+     ]
+    },
+    {
+     "t": "fig",
+     "n": "05",
+     "en": "Brachial plexus overview. Red: lateral cord to the lateral pectoral nerve. Purple: medial cord to the medial pectoral nerve. Blue: superior trunk to the nerve to subclavius.",
+     "zh": "臂丛总览。红色：外侧束 → 胸外侧神经；紫色：内侧束 → 胸内侧神经；蓝色：上干 → 锁骨下肌神经。"
+    },
+    {
+     "t": "p",
+     "en": "The lateral pectoral nerve (C5–C7) leaves the lateral cord and mainly supplies the clavicular part of the pectoralis major. The medial pectoral nerve (C8–T1) leaves the medial cord, pierces the pectoralis minor, and supplies both the pectoralis minor and the sternocostal part of the pectoralis major.",
+     "zh": "胸外侧神经（C5–C7）由外侧束发出，主要支配胸大肌锁骨部。胸内侧神经（C8–T1）由内侧束发出，穿过胸小肌，支配胸小肌和胸大肌胸肋部。"
+    },
+    {
+     "t": "p",
+     "en": "The nerve to subclavius (C5–C6) is a small branch of the superior trunk. Because the two pectoral nerves come from different cords, the pectoralis major receives fibres from C5 all the way to T1.",
+     "zh": "锁骨下肌神经（C5–C6）是上干发出的一条小分支。两条胸神经来自不同的束，所以胸大肌接受从 C5 一直到 T1 的纤维。"
+    },
+    {
+     "t": "pitfall",
+     "zh": "“外侧”“内侧”是按发出的束命名的。胸内侧神经在胸前反而走得更靠外，穿过胸小肌。"
+    }
+   ],
+   "check": [
+    [
+     "Which nerve pierces the pectoralis minor?",
+     "哪条神经穿过胸小肌？",
+     "The medial pectoral nerve (C8–T1).",
+     "胸内侧神经（C8–T1）。"
+    ],
+    [
+     "Why does the pectoralis major carry fibres from C5 to T1?",
+     "为什么胸大肌的神经纤维从 C5 一直到 T1？",
+     "It is supplied by both the lateral pectoral nerve (C5–C7, lateral cord) and the medial pectoral nerve (C8–T1, medial cord).",
+     "因为它同时由胸外侧神经（C5–C7，外侧束）和胸内侧神经（C8–T1，内侧束）支配。"
+    ]
+   ],
+   "take": [
+    "Lateral pectoral = lateral cord, C5–C7; medial pectoral = medial cord, C8–T1, through pectoralis minor; nerve to subclavius = superior trunk, C5–C6.",
+    "胸外侧神经来自外侧束（C5–C7）；胸内侧神经来自内侧束（C8–T1），穿过胸小肌；锁骨下肌神经来自上干（C5–C6）。"
+   ],
+   "bridge": [
+    "motion",
+    "Next: what these muscles do. 下一章：这些肌肉做什么动作。",
+    "03 Movement"
+   ],
+   "toc": [
+    "Innervation",
+    "神经支配"
+   ]
+  },
+  {
+   "num": 3,
+   "id": "motion",
+   "title": [
+    "Movement: from attachment to action",
+    "动作：从附着到动作"
+   ],
+   "goals": [
+    [
+     "Predict the actions of pectoralis major from its line of pull.",
+     "根据力线推出胸大肌的动作。"
+    ],
+    [
+     "Explain how pectoralis minor moves the scapula.",
+     "解释胸小肌怎样带动肩胛骨。"
+    ]
+   ],
+   "terms": [
+    [
+     "Adduction",
+     "内收"
+    ],
+    [
+     "Internal rotation",
+     "内旋"
+    ],
+    [
+     "Flexion",
+     "屈"
+    ],
+    [
+     "Protraction",
+     "前伸"
+    ],
+    [
+     "Depression",
+     "下降"
+    ],
+    [
+     "Line of pull",
+     "力线"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "fig",
+     "n": "06",
+     "en": "A: pectoralis major pulls the arm toward the midline. B: it inserts in front of the humeral long axis, so it rotates the humerus internally. C: pectoralis minor pulls the scapula forward and down.",
+     "zh": "A：胸大肌把手臂拉向中线；B：止点在肱骨长轴前方，所以使肱骨内旋；C：胸小肌把肩胛骨拉向前下方。"
+    },
+    {
+     "t": "p",
+     "en": "The pectoralis major crosses the front of the shoulder and inserts in front of the long axis of the humerus. It therefore adducts and internally rotates the arm. Its clavicular part, which lies higher, also flexes the shoulder.",
+     "zh": "胸大肌从肩关节前方跨过，止点在肱骨长轴前方，所以使手臂内收、内旋。位置较高的锁骨部还能使肩前屈。"
+    },
+    {
+     "t": "p",
+     "en": "The pectoralis minor pulls the coracoid process forward and downward, so it protracts and depresses the scapula and tilts it forward. When the scapula is fixed, it can lift the ribs and assist deep inspiration.",
+     "zh": "胸小肌把喙突拉向前下方，使肩胛骨前伸、下降并前倾。肩胛骨固定时，它可以上提肋骨，协助深吸气。"
+    },
+    {
+     "t": "p",
+     "en": "The subclavius pulls the clavicle toward the first rib and steadies the sternoclavicular joint during arm movement.",
+     "zh": "锁骨下肌把锁骨拉向第 1 肋，在手臂活动时稳定胸锁关节。"
+    }
+   ],
+   "check": [
+    [
+     "A muscle inserts in front of the humeral long axis and pulls medially. Which rotation does it produce?",
+     "一块肌肉止于肱骨长轴前方，并向内牵拉。它产生哪种旋转？",
+     "Internal rotation, as with the pectoralis major.",
+     "内旋，胸大肌就是这样。"
+    ],
+    [
+     "Which of today's muscles moves the scapula rather than the humerus?",
+     "今天的肌肉里，哪一块带动的是肩胛骨而不是肱骨？",
+     "The pectoralis minor; it attaches to the coracoid process of the scapula.",
+     "胸小肌；它止于肩胛骨的喙突。"
+    ]
+   ],
+   "take": [
+    "Pectoralis major: adduction and internal rotation (clavicular part also flexes). Pectoralis minor: scapula forward and down. Subclavius: steadies the clavicle.",
+    "胸大肌：内收、内旋（锁骨部还能前屈）。胸小肌：把肩胛骨拉向前下方。锁骨下肌：稳定锁骨。"
+   ],
+   "bridge": [
+    "acupoints",
+    "Next: the six lung meridian points over these muscles. 下一章：压在这些肌肉上的肺经 6 个穴位。",
+    "04 Acupoints"
+   ],
+   "toc": [
+    "Movement",
+    "动作"
+   ]
+  },
+  {
+   "num": 4,
+   "id": "acupoints",
+   "title": [
+    "Acupoints: lung meridian LU1–LU6",
+    "穴位：手太阴肺经前 6 穴"
+   ],
+   "goals": [
+    [
+     "Locate Zhongfu, Yunmen, Tianfu, Xiabai, Chize, and Kongzui on your own body.",
+     "在自己身上找到中府、云门、天府、侠白、尺泽、孔最。"
+    ],
+    [
+     "Use bone-proportional cun to place Tianfu, Xiabai, and Kongzui.",
+     "用骨度分寸定位天府、侠白、孔最。"
+    ],
+    [
+     "State what lies deep to Zhongfu and Yunmen.",
+     "说出中府、云门深面有什么。"
+    ]
+   ],
+   "terms": [
+    [
+     "中府",
+     "Zhōngfǔ",
+     "zh"
+    ],
+    [
+     "云门",
+     "Yúnmén",
+     "zh"
+    ],
+    [
+     "天府",
+     "Tiānfǔ",
+     "zh"
+    ],
+    [
+     "侠白",
+     "Xiábái",
+     "zh"
+    ],
+    [
+     "尺泽",
+     "Chǐzé",
+     "zh"
+    ],
+    [
+     "孔最",
+     "Kǒngzuì",
+     "zh"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "The lung meridian starts on the chest at Zhongfu, runs along the anterolateral (radial) side of the upper limb, passes the radial side of the cubital crease at Chize, and ends at the thumb. Today covers the first six points, from the chest to the upper forearm.",
+     "zh": "手太阴肺经在体表从胸前的中府出发，沿上肢内侧前缘（桡侧）下行，经肘横纹桡侧的尺泽，止于拇指。今天学前 6 个，从胸前走到前臂上段。"
+    },
+    {
+     "t": "fig",
+     "n": "07",
+     "en": "Right side, anatomical position. Red dots are today's six points; grey dots are tomorrow's. The ruler shows the bone-proportional cun.",
+     "zh": "右侧，解剖学姿势前面观。红点是今天的 6 个穴位，灰点明天学；左侧标尺是骨度分寸。"
+    },
+    {
+     "t": "acu_cards"
+    },
+    {
+     "t": "h3",
+     "en": "What lies beneath Zhongfu and Yunmen",
+     "zh": "中府、云门深面有什么"
+    },
+    {
+     "t": "fig",
+     "n": "08",
+     "en": "Layers from skin to deep structures. Not to scale and not a needling depth.",
+     "zh": "从皮肤到深层结构的层次；不按比例，不表示进针深度。"
+    },
+    {
+     "t": "p",
+     "en": "Both points lie over the upper chest wall. Deep to Zhongfu are the pectoral muscles, the first intercostal space, the pleura, and the lung. Deep to Yunmen, beneath the clavipectoral fascia, run the axillary artery and vein and the cords of the brachial plexus.",
+     "zh": "两个穴位都在上胸壁。中府深面依次是胸大肌、胸小肌、第 1 肋间隙、胸膜和肺；云门深面、锁胸筋膜之下，有腋动脉、腋静脉和臂丛的各束。"
+    }
+   ],
+   "check": [
+    [
+     "How many cun below the anterior axillary fold is Tianfu, and how many is Xiabai?",
+     "天府在腋前纹头下几寸？侠白呢？",
+     "Tianfu is 3 cun below the fold and Xiabai 4 cun, both on the radial border of the biceps.",
+     "天府在下 3 寸，侠白在下 4 寸，都在肱二头肌桡侧缘。"
+    ],
+    [
+     "Which nerve lies deep to Chize?",
+     "尺泽深面有哪条神经？",
+     "The radial nerve, between the brachioradialis and the brachialis.",
+     "桡神经，位于肱桡肌与肱肌之间。"
+    ]
+   ],
+   "take": [
+    "Zhongfu and Yunmen sit over the pectoral muscles with pleura and the axillary bundle deep; Tianfu and Xiabai follow the biceps; Chize is at the biceps tendon; Kongzui is 7 cun above the wrist.",
+    "中府、云门压在胸前肌肉上，深面是胸膜和腋部神经血管束；天府、侠白沿着肱二头肌；尺泽在肱二头肌腱旁；孔最在腕横纹上 7 寸。"
+   ],
+   "bridge": [
+    "review",
+    "Next: review everything from today. 下一章：复习今天的全部内容。",
+    "05 Review"
+   ],
+   "toc": [
+    "Acupoints",
+    "穴位"
+   ]
+  },
+  {
+   "num": 5,
+   "id": "review",
+   "title": [
+    "Review and recall",
+    "整理与复习"
+   ],
+   "goals": [
+    [
+     "Recall all six points and three muscles without looking.",
+     "不看页面，说出今天的 6 个穴位和 3 块肌肉。"
+    ]
+   ],
+   "terms": [
+    [
+     "Origin",
+     "起点"
+    ],
+    [
+     "Insertion",
+     "止点"
+    ],
+    [
+     "Innervation",
+     "神经支配"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "h3",
+     "en": "5.1 One-page summary",
+     "zh": "5.1 一页总结"
+    },
+    {
+     "t": "summary_tables"
+    },
+    {
+     "t": "h3",
+     "en": "5.2 The lung meridian song",
+     "zh": "5.2 肺经穴歌"
+    },
+    {
+     "t": "song",
+     "zh": "手太阴肺十一穴，中府云门天府诀，侠白尺泽孔最存，列缺经渠太渊涉，鱼际少商如韭叶。"
+    },
+    {
+     "t": "p",
+     "en": "The song lists all eleven lung meridian points in order. Today you have learned the first six, up to Kongzui.",
+     "zh": "这首歌按顺序列出肺经全部 11 个穴位。今天学到第 6 个，孔最。"
+    },
+    {
+     "t": "h3",
+     "en": "5.3 Pronunciation list",
+     "zh": "5.3 读音表"
+    },
+    {
+     "t": "p",
+     "en": "Capital letters mark the stressed syllable. Press the speaker to hear it, say it twice, then open the dictionary link to check a recorded voice.",
+     "zh": "大写（页面里加粗）的音节是重音。先点喇叭听，跟读两遍；想听真人录音就点词典链接。"
+    },
+    {
+     "t": "pron_table",
+     "terms": [
+      "Pectoralis major",
+      "Pectoralis minor",
+      "Subclavius",
+      "Clavicle",
+      "Sternum",
+      "Coracoid process",
+      "Costal cartilage",
+      "Intertubercular groove",
+      "Lateral pectoral nerve",
+      "Medial pectoral nerve",
+      "Brachial plexus",
+      "Adduction",
+      "Protraction",
+      "Biceps brachii",
+      "Brachioradialis",
+      "Cephalic vein"
+     ],
+     "zh_map": {
+      "Pectoralis major": "胸大肌",
+      "Pectoralis minor": "胸小肌",
+      "Subclavius": "锁骨下肌",
+      "Clavicle": "锁骨",
+      "Sternum": "胸骨",
+      "Coracoid process": "喙突",
+      "Costal cartilage": "肋软骨",
+      "Intertubercular groove": "结节间沟",
+      "Lateral pectoral nerve": "胸外侧神经",
+      "Medial pectoral nerve": "胸内侧神经",
+      "Brachial plexus": "臂丛",
+      "Adduction": "内收",
+      "Protraction": "前伸",
+      "Biceps brachii": "肱二头肌",
+      "Brachioradialis": "肱桡肌",
+      "Cephalic vein": "头静脉"
+     }
+    },
+    {
+     "t": "h3",
+     "en": "5.4 Flashcards",
+     "zh": "5.4 记忆卡"
+    },
+    {
+     "t": "p",
+     "en": "Say the answer aloud before turning the card.",
+     "zh": "翻卡之前先大声说出答案。"
+    },
+    {
+     "t": "flashcards",
+     "extra": [
+      [
+       "The pectoralis minor runs from ribs ____ to the ____.",
+       "胸小肌从第____肋到____。",
+       "3 to 5 · coracoid process",
+       "3–5 · 喙突"
+      ],
+      [
+       "Tianfu lies ____ cun below the anterior axillary fold on the ____ border of the biceps.",
+       "天府在腋前纹头下____寸，肱二头肌____缘。",
+       "3 · radial",
+       "3 · 桡侧"
+      ],
+      [
+       "Kongzui lies ____ cun above the distal wrist crease.",
+       "孔最在腕掌侧远端横纹上____寸。",
+       "7",
+       "7"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "en": "These cards also go into the review center, which brings them back on days 1, 3, 7, 14, and 30.",
+     "zh": "这些卡片也会进入复习中心，在第 1、3、7、14、30 天再出现。"
+    }
+   ],
+   "bridge": [
+    "english",
+    "Next: a short English reading. 下一章：一段英文短读。",
+    "06 English"
+   ],
+   "toc": [
+    "Review",
+    "复习"
+   ]
+  },
+  {
+   "num": 6,
+   "id": "english",
+   "title": [
+    "English reading: the coracoid as a landmark",
+    "英文短读：以喙突为标志"
+   ],
+   "goals": [
+    [
+     "Read a short anatomy passage in English without translating word by word.",
+     "读一段英文解剖短文，不逐词翻译。"
+    ],
+    [
+     "Use five new terms in your own sentence.",
+     "用五个新词各造一个句子。"
+    ]
+   ],
+   "terms": [
+    [
+     "Landmark",
+     "标志"
+    ],
+    [
+     "Neurovascular bundle",
+     "神经血管束"
+    ],
+    [
+     "Deep to",
+     "在……深面"
+    ],
+    [
+     "Medial to",
+     "在……内侧"
+    ],
+    [
+     "Pierce",
+     "穿过"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "The coracoid process is a useful landmark on the front of the shoulder. You can feel it about two to three centimetres below the junction of the middle and lateral thirds of the clavicle, in the small hollow between the deltoid and the pectoralis major.",
+     "zh": "喙突是肩前部一个有用的体表标志。在锁骨中、外 1/3 交界处下方约 2–3 厘米，三角肌与胸大肌之间的小凹陷里，可以摸到它。"
+    },
+    {
+     "t": "p",
+     "en": "The pectoralis minor inserts on the coracoid process. Deep to this muscle run the axillary artery and the cords of the brachial plexus, which is why the point Yunmen, just medial to the coracoid, should never be needled deeply toward the chest.",
+     "zh": "胸小肌止于喙突。在这块肌肉的深面，走行着腋动脉和臂丛的各束；所以紧贴喙突内侧的云门，绝不能朝胸腔方向深刺。"
+    },
+    {
+     "t": "p",
+     "en": "The pectoralis minor also divides the axillary artery into three parts: the first part lies medial to the muscle, the second part deep to it, and the third part lateral to it.",
+     "zh": "胸小肌还把腋动脉分成三段：第一段在胸小肌内侧，第二段在它深面，第三段在它外侧。"
+    },
+    {
+     "t": "sources",
+     "end": true
+    }
+   ],
+   "check": [
+    [
+     "Write one English sentence using “deep to” about today's muscles.",
+     "用 “deep to” 写一句关于今天肌肉的英文句子。",
+     "Example: The pectoralis minor lies deep to the pectoralis major.",
+     "例句：胸小肌位于胸大肌深面。"
+    ],
+    [
+     "Into how many parts does the pectoralis minor divide the axillary artery?",
+     "胸小肌把腋动脉分成几段？",
+     "Three: medial to, deep to, and lateral to the muscle.",
+     "三段：在胸小肌内侧、深面和外侧。"
+    ]
+   ],
+   "toc": [
+    "English",
+    "英文短读"
+   ]
+  }
+ ]
+}

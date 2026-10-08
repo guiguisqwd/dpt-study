@@ -1,0 +1,180 @@
+{
+ "_note": "IPA（美式）与重音拼读按 Merriam-Webster / Taber's 的常见标音整理；大写音节为重音。点击词典链接可听真人发音。",
+ "terms": {
+  "Pectoralis major": [
+   "/ˌpɛktəˈreɪlɪs ˈmeɪdʒər/",
+   "pek-tuh-RAY-lis MAY-jer",
+   "https://www.merriam-webster.com/medical/pectoralis"
+  ],
+  "Pectoralis minor": [
+   "/ˌpɛktəˈreɪlɪs ˈmaɪnər/",
+   "pek-tuh-RAY-lis MY-ner",
+   "https://www.merriam-webster.com/medical/pectoralis"
+  ],
+  "Subclavius": [
+   "/sʌbˈkleɪviəs/",
+   "sub-KLAY-vee-uhs",
+   "https://www.merriam-webster.com/medical/subclavius"
+  ],
+  "Clavicle": [
+   "/ˈklævɪkəl/",
+   "KLAV-ih-kuhl",
+   "https://www.merriam-webster.com/dictionary/clavicle"
+  ],
+  "Sternum": [
+   "/ˈstɝnəm/",
+   "STUR-nuhm",
+   "https://www.merriam-webster.com/dictionary/sternum"
+  ],
+  "Coracoid process": [
+   "/ˈkɔrəˌkɔɪd ˈprɑsɛs/",
+   "KOR-uh-koyd PRAH-ses",
+   "https://www.merriam-webster.com/dictionary/coracoid"
+  ],
+  "Costal cartilage": [
+   "/ˈkɑstəl ˈkɑrtəlɪdʒ/",
+   "KOS-tuhl KAR-tuh-lij",
+   "https://www.merriam-webster.com/dictionary/costal"
+  ],
+  "Intertubercular groove": [
+   "/ˌɪntərtuˈbɝkjələr ɡruv/",
+   "in-ter-too-BUR-kyuh-ler GROOV",
+   "https://www.merriam-webster.com/dictionary/tubercular"
+  ],
+  "Lateral pectoral nerve": [
+   "/ˈlætərəl ˈpɛktərəl nɝv/",
+   "LAT-er-uhl PEK-tuh-ruhl NURV",
+   "https://www.merriam-webster.com/dictionary/pectoral"
+  ],
+  "Medial pectoral nerve": [
+   "/ˈmidiəl ˈpɛktərəl nɝv/",
+   "MEE-dee-uhl PEK-tuh-ruhl NURV",
+   "https://www.merriam-webster.com/dictionary/medial"
+  ],
+  "Nerve to subclavius": [
+   "/nɝv tə sʌbˈkleɪviəs/",
+   "NURV tuh sub-KLAY-vee-uhs",
+   "https://www.merriam-webster.com/medical/subclavius"
+  ],
+  "Lateral cord": [
+   "/ˈlætərəl kɔrd/",
+   "LAT-er-uhl KORD",
+   "https://www.merriam-webster.com/dictionary/lateral"
+  ],
+  "Medial cord": [
+   "/ˈmidiəl kɔrd/",
+   "MEE-dee-uhl KORD",
+   "https://www.merriam-webster.com/dictionary/medial"
+  ],
+  "Superior trunk": [
+   "/səˈpɪriər trʌŋk/",
+   "suh-PEER-ee-er TRUNGK",
+   "https://www.merriam-webster.com/dictionary/superior"
+  ],
+  "Brachial plexus": [
+   "/ˈbreɪkiəl ˈplɛksəs/",
+   "BRAY-kee-uhl PLEK-suhs",
+   "https://www.merriam-webster.com/medical/brachial%20plexus"
+  ],
+  "Adduction": [
+   "/əˈdʌkʃən/",
+   "uh-DUK-shuhn",
+   "https://www.merriam-webster.com/dictionary/adduction"
+  ],
+  "Internal rotation": [
+   "/ɪnˈtɝnəl roʊˈteɪʃən/",
+   "in-TUR-nuhl roh-TAY-shuhn",
+   "https://www.merriam-webster.com/dictionary/rotation"
+  ],
+  "Flexion": [
+   "/ˈflɛkʃən/",
+   "FLEK-shuhn",
+   "https://www.merriam-webster.com/dictionary/flexion"
+  ],
+  "Protraction": [
+   "/proʊˈtrækʃən/",
+   "proh-TRAK-shuhn",
+   "https://www.merriam-webster.com/dictionary/protraction"
+  ],
+  "Depression": [
+   "/dɪˈprɛʃən/",
+   "dih-PRESH-uhn",
+   "https://www.merriam-webster.com/dictionary/depression"
+  ],
+  "Line of pull": [
+   "/laɪn əv pʊl/",
+   "LYNE uhv PUL",
+   "https://www.merriam-webster.com/dictionary/pull"
+  ],
+  "Origin": [
+   "/ˈɔrədʒən/",
+   "OR-uh-juhn",
+   "https://www.merriam-webster.com/dictionary/origin"
+  ],
+  "Insertion": [
+   "/ɪnˈsɝʃən/",
+   "in-SUR-shuhn",
+   "https://www.merriam-webster.com/dictionary/insertion"
+  ],
+  "Innervation": [
+   "/ˌɪnərˈveɪʃən/",
+   "in-er-VAY-shuhn",
+   "https://www.merriam-webster.com/dictionary/innervation"
+  ],
+  "Landmark": [
+   "/ˈlændˌmɑrk/",
+   "LAND-mark",
+   "https://www.merriam-webster.com/dictionary/landmark"
+  ],
+  "Neurovascular bundle": [
+   "/ˌnʊroʊˈvæskjələr ˈbʌndəl/",
+   "noor-oh-VAS-kyuh-ler BUN-duhl",
+   "https://www.merriam-webster.com/dictionary/neurovascular"
+  ],
+  "Deep to": [
+   "/dip tu/",
+   "DEEP too",
+   "https://www.merriam-webster.com/dictionary/deep"
+  ],
+  "Medial to": [
+   "/ˈmidiəl tu/",
+   "MEE-dee-uhl too",
+   "https://www.merriam-webster.com/dictionary/medial"
+  ],
+  "Pierce": [
+   "/pɪrs/",
+   "PEERS",
+   "https://www.merriam-webster.com/dictionary/pierce"
+  ],
+  "Biceps brachii": [
+   "/ˈbaɪsɛps ˈbreɪkiˌaɪ/",
+   "BY-seps BRAY-kee-eye",
+   "https://www.merriam-webster.com/medical/biceps%20brachii"
+  ],
+  "Brachioradialis": [
+   "/ˌbreɪkioʊˌreɪdiˈeɪlɪs/",
+   "bray-kee-oh-ray-dee-AY-lis",
+   "https://www.merriam-webster.com/medical/brachioradialis"
+  ],
+  "Cephalic vein": [
+   "/səˈfælɪk veɪn/",
+   "suh-FAL-ik VAYN",
+   "https://www.merriam-webster.com/medical/cephalic%20vein"
+  ],
+  "Axillary artery": [
+   "/ˈæksəˌlɛri ˈɑrtəri/",
+   "AK-suh-lair-ee AR-tuh-ree",
+   "https://www.merriam-webster.com/medical/axillary%20artery"
+  ],
+  "Cubital crease": [
+   "/ˈkjubɪtəl kris/",
+   "KYOO-bih-tuhl KREES",
+   "https://www.merriam-webster.com/dictionary/cubital"
+  ],
+  "Deltoid": [
+   "/ˈdɛlˌtɔɪd/",
+   "DEL-toyd",
+   "https://www.merriam-webster.com/dictionary/deltoid"
+  ]
+ }
+}

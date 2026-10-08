@@ -1,0 +1,5 @@
+{"deltoid":{"english":"Deltoid","chinese":"三角肌","term":"deltoid"},
+ "pectoralis-major":{"english":"Pectoralis major","chinese":"胸大肌","term":null},
+ "pectoralis-minor":{"english":"Pectoralis minor","chinese":"胸小肌","term":null},
+ "subclavius":{"english":"Subclavius","chinese":"锁骨下肌","term":null},
+ "_landmarks":{"clavicle":"clavicle","humerus":"humerus","scapula":"scapula","acromion":"acromion","intertubercular groove":"intertubercular-groove","humeral head":"humeral-head","greater tubercle":"greater-tubercle","lesser tubercle":"lesser-tubercle"}}

@@ -24,6 +24,12 @@ for name in files:
  shutil.copy2(src,DIST/name)
 for name in ['assets','models','audio','licenses','topics']:
  shutil.copytree(APP/'dist'/name,DIST/name,dirs_exist_ok=True)
+# Daily study packs (daily/pipeline.py publishes them into public/daily/).
+if (APP/'dist'/'daily').is_dir():
+ shutil.copytree(APP/'dist'/'daily',DIST/'daily',dirs_exist_ok=True)
+ for f in (DIST/'daily').rglob('*.md'):
+  page_base=base if a.site_url else os.path.relpath(DIST,f.parent)+'/'
+  f.write_text(f.read_text().replace('http://127.0.0.1:5178/',page_base).replace('http://localhost:5178/',page_base))
 for f in DIST.rglob('*.html'):
  page_base=base if a.site_url else os.path.relpath(DIST,f.parent)+'/'
  s=f.read_text();s=s.replace('http://127.0.0.1:5178/',page_base).replace('http://localhost:5178/',page_base)

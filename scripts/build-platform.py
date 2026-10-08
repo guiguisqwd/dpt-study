@@ -14,6 +14,14 @@ def esc(value):
     return html.escape(str(value), quote=True)
 
 
+def daily_link():
+    """Link to the daily study packs when the daily pipeline has published any (public/daily/index.html)."""
+    if not (PUBLIC / 'daily' / 'index.html').exists():
+        return ''
+    return ('<p class="daily-entry" style="margin:18px 0 0"><a href="./daily/index.html" style="font-weight:600">'
+            'Daily study packs <span lang="zh-CN">每日学习包</span><span aria-hidden="true"> ↗</span></a></p>')
+
+
 def build_library():
     catalog = json.loads((PUBLIC / 'topics.json').read_text())
     topics = sorted(catalog['topics'], key=lambda topic: (topic['status'] != 'published', topic['title']['en']))
@@ -36,7 +44,7 @@ def build_library():
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Anatomy study · 解剖学习</title><style>{css}</style></head>
     <body><main><header><div class="eyebrow">ANATOMY · LANGUAGE · EVIDENCE</div><h1>Anatomy study<span lang="zh-CN">解剖学习</span></h1>
     <p class="intro">Explore a region. Follow its structures. Explain it in English.<span class="translation" lang="zh-CN">按部位学习结构与联系，用完整英语描述解剖。</span></p>
-    <div class="counts"><span>{published} available<small lang="zh-CN">可学习主题</small></span><span>{len(topics)-published} in preparation<small lang="zh-CN">筹备中的主题</small></span><span>English first<small lang="zh-CN">英文在前 · 中文随后</small></span></div></header>
+    <div class="counts"><span>{published} available<small lang="zh-CN">可学习主题</small></span><span>{len(topics)-published} in preparation<small lang="zh-CN">筹备中的主题</small></span><span>English first<small lang="zh-CN">英文在前 · 中文随后</small></span></div>{daily_link()}</header>
     <section class="library" aria-labelledby="library-title"><div class="library-heading"><h2 id="library-title">Topic library <span lang="zh-CN">主题库</span></h2><label for="search">Find a region or structure<small lang="zh-CN">搜索部位或结构</small></label><input id="search" type="search" placeholder="Shoulder, hip… / 肩、髋…" autocomplete="off"></div>
     <div class="filters" role="group" aria-label="Topic status · 主题状态"><button type="button" aria-pressed="true" data-filter="all">All <span lang="zh-CN">全部</span></button><button type="button" aria-pressed="false" data-filter="published">Available <span lang="zh-CN">可学习</span></button><button type="button" aria-pressed="false" data-filter="draft">In preparation <span lang="zh-CN">筹备中</span></button></div>
     <div class="topic-grid">{''.join(cards)}</div><p id="empty" role="status" hidden>No matching topics.<span class="translation" lang="zh-CN">没有匹配的主题。</span></p></section>

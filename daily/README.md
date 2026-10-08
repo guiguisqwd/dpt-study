@@ -1,0 +1,81 @@
+# Daily study packs · 每日学习包流水线
+
+Every learning day of the plan (`plan/schedule.json`, 60 days to 2026-12-23: all 362 points of the
+14 meridians + the PT muscle list) gets one bilingual pack at the quality of Day 1:
+six chapters (Muscles → Innervation → Movement → Acupoints → Review → English), hand-drawn
+editable SVGs, pronunciation (IPA + stressed syllable + speech button) for every English key term,
+acupoints read aloud in Chinese, self-checks, flashcards, and spaced-repetition cards.
+
+`pipeline.py` runs the work as fixed, checked steps and records every run in `runs/`.
+
+## The two phases
+
+| When (Pacific) | Phase | Steps (AUTO = the script does and checks it; CLAUDE = the session does it, then records evidence) |
+| --- | --- | --- |
+| ~19:50 the evening before | `evening` | plan · **author** (CLAUDE: content.json + figures.py) · figures · validate · build · qa · **visual_review** (CLAUDE: look at every screenshot) · site · cards · **archive** (CLAUDE: write to the Mac) · **review_center** (CLAUDE: update the artifact) · publish (git commit + push) |
+| ~04:25 | `morning` | locate · **deliver** (CLAUDE: SendUserFile) · record (commit + push the run record) |
+
+The script stops at the first unfinished step, prints exactly what to do, and exits with that
+step's code (10 author, 11 visual review, 12 Mac archive, 13 deliver, 14 review center, 20–23 a
+check failed, 24 GitHub push blocked, 30 pack missing). After acting, record evidence with
+`pipeline.py mark …` and run the phase again. `pipeline.py verify --date D --phase P` exits 0 only
+when every step has status `done` with evidence. Changing `content.json`, `figures.py` or the
+pack-shaping engine files marks the later steps `stale`, so they run again; the visual review is
+carried over only when the page and every SVG are byte-identical to what was reviewed.
+
+```sh
+python3 daily/pipeline.py evening                 # tomorrow (Pacific)
+python3 daily/pipeline.py evening --date 2026-10-08
+python3 daily/pipeline.py morning                 # today (Pacific)
+python3 daily/pipeline.py status --date 2026-10-08
+python3 daily/pipeline.py verify --date 2026-10-08 --phase evening
+python3 daily/pipeline.py mark archive --date 2026-10-08 --evidence @commit-result.json
+```
+
+Review days (Sundays, 12/16–12/23) are generated automatically from the week's packs
+(`engine/review_pack.py`): no authoring step.
+
+## Layout
+
+```
+daily/
+  pipeline.py            orchestrator (steps, evidence, verify)
+  CONTENT_SCHEMA.md      content.json fields and block types
+  plan/schedule.json     the study plan; plan/legacy/ = 10-06 shoulder preview cards
+  engine/
+    figlib/              Fig kit (fig.py) + region base art: chest.py, arm.py, … (reuse; add new regions here)
+    render.py build.py   content.json → sections → <pack>.html/.md (3D ?term= links validated against 肩部3D学习/src)
+    schema.py            strict content checks (English first, O/I/N/A sentence, acupoint fields, pronunciation, tags, plan match)
+    qa/qa.js             Playwright: JS errors, chapters, SVG text overlap/outside, phone width, pronunciation coverage, screenshots
+    site.py              public/daily/<date>/ + public/daily/index.html + catalog.json (shipped by GitHub Pages)
+    archive.py           Mac archive: pack, tagged Markdown (item-meta, vertical/horizontal), catalog.jsonl, topic indexes
+    cards.py             review-center cards (intervals 1/3/7/14/30 days)
+    data/                pronunciation.json (IPA, stress, dictionary URL), model-links.json (3D term IDs)
+    templates/           reading shell + CSS (Day 1 design), review-center template
+  days/<date>/           content.json, figures.py, build/ (pack, 资源/, sections/, qa/qa.json, qa/visual-review.json)
+  runs/<date>.json       every step of every run: status, time, evidence, errors; runs/log.jsonl = append-only log
+  review-center/         generated review-center page
+  archive/seed-catalog.jsonl  catalog items that predate the pipeline (kept verbatim)
+```
+
+## Rules the checks enforce (from the user)
+
+- English first, then Chinese; muscles: Origin / Insertion / Nerve (with spinal segments) / Action and
+  the sentence "The X originates from …, passes …, and inserts onto …."; figures for every muscle.
+- Nerve figures start from the spine (C = Cervical 颈部, T = Thoracic 胸部 …); movement is explained
+  from the line of pull, with firing order and force couples where they matter.
+- Every acupoint: GB/T 12346 location, layers skin → deep, safety, related muscles, how to find it,
+  shown on a figure with the surrounding muscles. Layer figures are "not needling depth or direction".
+- Every English key term has IPA + stressed syllable + dictionary link; acupoints have tone-marked pinyin
+  and are read aloud in Chinese.
+- No public-health framing. Facts come from sources that were actually opened; uncertainty is stated.
+- Archive tags: `tags.vertical` uses the fixed top levels (解剖学 · 生理学 · 运动学/生物力学 · 病理学 ·
+  神经科学 · 检查评估 · 康复干预 · 循证方法学 · 中医针灸对照); `tags.horizontal` uses the controlled
+  vocabulary in `DPT-每日简报/README.md`.
+
+## Where the results go
+
+- Phone: the 04:25 scheduled task sends the HTML with a Claude notification.
+- Website: `https://guiguisqwd.github.io/shoulder-study/daily/` (after push + Pages deploy).
+- Mac: `~/Documents/DPT-每日简报/每日学习包/<pack>/`, `daily/YYYY/MM/<date>.md`, `index/`.
+- Record: `daily/runs/<date>.json` in this repository (and in the Mac archive Markdown).

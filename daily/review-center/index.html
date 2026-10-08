@@ -1,0 +1,138 @@
+<title>经穴肌肉记忆卡</title>
+<style>
+/* 布局：单栏学习台。顶部是进度，中间是今天要过的卡片，下面按经络、部位浏览全部卡片。 */
+:root{
+  --bg:#f6f3ea; --paper:#fffdf7; --ink:#262a27; --muted:#68706a; --rule:#ddd8ca;
+  --accent:#3f6a5c; --accent-ink:#ffffff; --soft:#e9eee5; --warn:#a8473a; --warn-soft:#f6e6e1;
+  --font-body:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --font-display:"Songti SC","STSong","Noto Serif SC",Georgia,serif;
+  --font-num:ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171b19; --paper:#20251f; --ink:#e7e6df; --muted:#a3aba3; --rule:#343b35;
+  --accent:#8cc0aa; --accent-ink:#10201a; --soft:#25302a; --warn:#e3907f; --warn-soft:#3a2622; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171b19; --paper:#20251f; --ink:#e7e6df; --muted:#a3aba3; --rule:#343b35;
+  --accent:#8cc0aa; --accent-ink:#10201a; --soft:#25302a; --warn:#e3907f; --warn-soft:#3a2622; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.75 var(--font-body);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-inline:18px;padding-block:22px 60px}
+h1{font:600 30px/1.3 var(--font-display);margin:4px 0 6px;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 18px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 22px}
+.stat{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;min-width:0}
+.stat b{display:block;font:600 22px/1.2 var(--font-num);font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted)}
+.bar{height:5px;background:var(--rule);border-radius:3px;margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.tabs button{border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:999px;padding:7px 14px;font:500 14px var(--font-body);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tabs button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.search{width:100%;padding:10px 12px;border:1px solid var(--rule);border-radius:10px;background:var(--paper);color:var(--ink);font:15px var(--font-body);margin:0 0 14px}
+.study{background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:22px 22px 18px}
+.study .meta{font-size:12px;color:var(--muted);letter-spacing:.4px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.study h2{font:600 34px/1.25 var(--font-display);margin:10px 0 2px}
+.study .sub{color:var(--muted);margin:0 0 10px}
+.study .ask{background:var(--soft);border-radius:8px;padding:9px 12px;font-size:14px;margin:6px 0 12px}
+dl.fields{display:grid;grid-template-columns:118px minmax(0,1fr);gap:8px 14px;margin:0;font-size:14.5px}
+dl.fields dt{color:var(--muted);font-size:12.5px;padding-top:2px}
+dl.fields dd{margin:0;min-width:0;overflow-wrap:anywhere}
+dd.safe{color:var(--warn)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.btn{border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:9px;padding:10px 16px;font:600 14px var(--font-body);cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.again{color:var(--warn);border-color:var(--warn)}
+.empty{text-align:center;color:var(--muted);padding:30px 10px}
+.group{margin:0 0 14px}
+.group>summary{cursor:pointer;font-weight:600;padding:8px 2px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.group>summary::-webkit-details-marker{display:none}
+.group>summary span{color:var(--muted);font-weight:400;font-size:13px;font-family:var(--font-num)}
+.rows{display:grid;gap:8px}
+.row{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px 14px}
+.row>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.row>summary::-webkit-details-marker{display:none}
+.row b{font:600 18px var(--font-display)}
+.row small{color:var(--muted)}
+.pill{margin-left:auto;font-size:11.5px;border-radius:999px;padding:1px 9px;background:var(--soft);color:var(--accent);white-space:nowrap}
+.pill.due{background:var(--warn-soft);color:var(--warn)}
+.row dl{margin-top:10px}
+.foot{font-size:12px;color:var(--muted);margin-top:30px;border-top:1px solid var(--rule);padding-top:12px}
+@media(max-width:620px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}dl.fields{grid-template-columns:1fr}dl.fields dt{padding-top:6px}.study h2{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div class="wrap">
+  <p class="lede" id="today-line">DPT 基础 · 12 月 23 日前背完</p>
+  <h1>经穴与肌肉记忆卡</h1>
+  <div class="stats">
+    <div class="stat"><b id="s-acu">0</b><span>已学穴位 / 362</span><div class="bar"><i id="b-acu"></i></div></div>
+    <div class="stat"><b id="s-mus">0</b><span>已学肌肉 / 157</span><div class="bar"><i id="b-mus"></i></div></div>
+    <div class="stat"><b id="s-due">0</b><span>今天要复习</span></div>
+    <div class="stat"><b id="s-left">0</b><span>距 12 月 23 日（天）</span></div>
+  </div>
+  <div class="tabs" role="group" aria-label="视图">
+    <button type="button" data-view="due" aria-pressed="true">今天复习</button>
+    <button type="button" data-view="meridian" aria-pressed="false">按经络</button>
+    <button type="button" data-view="region" aria-pressed="false">按部位</button>
+    <button type="button" data-view="all" aria-pressed="false">按学习日期</button>
+  </div>
+  <input class="search" id="q" type="search" placeholder="搜索穴名或肌肉名（中文或英文）" aria-label="搜索">
+  <div id="view"></div>
+  <p class="foot">复习间隔：学完后第 1、3、7、14、30 天，之后每 60 天一次。点“记住了”进入下一档；点“没记住”明天再来。进度只保存在当前这台设备的浏览器里。定位依据 GB/T 12346；层次为学习用的简化描述，不代表进针方向或深度。</p>
+</div>
+<script type="application/json" id="cards">[{"id": "acu-天宗", "type": "acu", "learned": "2026-10-06", "title": "天宗", "sub": "手太阳小肠经", "meridian": "手太阳小肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，肩胛冈中点与肩胛骨下角连线上 1/3 与下 2/3 交点凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 斜方肌（边缘）→ 冈下肌"], ["安全提示", "深面为骨面，较安全"], ["相关肌肉", "冈下肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-秉风", "type": "acu", "learned": "2026-10-06", "title": "秉风", "sub": "手太阳小肠经", "meridian": "手太阳小肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，肩胛冈中点上方冈上窝中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 斜方肌 → 冈上肌"], ["安全提示", "深面有肩胛上神经与血管"], ["相关肌肉", "冈上肌、斜方肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-曲垣", "type": "acu", "learned": "2026-10-06", "title": "曲垣", "sub": "手太阳小肠经", "meridian": "手太阳小肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，肩胛冈内侧端上缘凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 斜方肌 → 冈上肌"], ["安全提示", "勿向胸腔方向深刺"], ["相关肌肉", "冈上肌、斜方肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-巨骨", "type": "acu", "learned": "2026-10-06", "title": "巨骨", "sub": "手阳明大肠经", "meridian": "手阳明大肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，锁骨肩峰端与肩胛冈之间凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 斜方肌 → 冈上肌"], ["安全提示", "勿深刺"], ["相关肌肉", "冈上肌、斜方肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-臑俞", "type": "acu", "learned": "2026-10-06", "title": "臑俞", "sub": "手太阳小肠经", "meridian": "手太阳小肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，腋后纹头直上，肩胛冈下缘凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 三角肌后部 → 冈下肌"], ["安全提示", "—"], ["相关肌肉", "三角肌、冈下肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-肩贞", "type": "acu", "learned": "2026-10-06", "title": "肩贞", "sub": "手太阳小肠经", "meridian": "手太阳小肠经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，肩关节后下方，腋后纹头直上 1 寸"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 三角肌后缘 → 小圆肌、大圆肌"], ["安全提示", "深面四边孔：腋神经、旋肱后动脉"], ["相关肌肉", "小圆肌、大圆肌、三角肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-肩髎", "type": "acu", "learned": "2026-10-06", "title": "肩髎", "sub": "手少阳三焦经", "meridian": "手少阳三焦经", "region": "肩带与肩部", "fields": [["定位", "在三角肌区，肩峰角与肱骨大结节两骨间凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 三角肌 → 冈下肌、小圆肌腱附近"], ["安全提示", "—"], ["相关肌肉", "三角肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-肩髃", "type": "acu", "learned": "2026-10-06", "title": "肩髃", "sub": "手阳明大肠经", "meridian": "手阳明大肠经", "region": "肩带与肩部", "fields": [["定位", "在三角肌区，肩峰外侧缘前端与肱骨大结节两骨间凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 三角肌 → 冈上肌腱、肩峰下滑囊"], ["安全提示", "—"], ["相关肌肉", "三角肌、冈上肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-极泉", "type": "acu", "learned": "2026-10-06", "title": "极泉", "sub": "手少阴心经", "meridian": "手少阴心经", "region": "肩带与肩部", "fields": [["定位", "在腋区，腋窝中央，腋动脉搏动处"], ["层次（浅 → 深）", "皮肤 → 皮下组织（腋窝脂肪）→ 深面近肩胛下肌"], ["安全提示", "避开腋动脉；深面有臂丛"], ["相关肌肉", "肩胛下肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-肩井", "type": "acu", "learned": "2026-10-06", "title": "肩井", "sub": "足少阳胆经", "meridian": "足少阳胆经", "region": "肩带与肩部", "fields": [["定位", "在肩胛区，第 7 颈椎棘突与肩峰最外侧点连线的中点"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 斜方肌（上部）"], ["安全提示", "深面为肺尖，禁深刺"], ["相关肌肉", "斜方肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-辄筋", "type": "acu", "learned": "2026-10-06", "title": "辄筋", "sub": "足少阳胆经", "meridian": "足少阳胆经", "region": "胸壁与呼吸", "fields": [["定位", "在胸外侧区，第 4 肋间隙中，腋中线前 1 寸"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 前锯肌 → 肋间肌"], ["安全提示", "深面为胸膜，宜斜刺或平刺"], ["相关肌肉", "前锯肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-缺盆", "type": "acu", "learned": "2026-10-06", "title": "缺盆", "sub": "足阳明胃经", "meridian": "足阳明胃经", "region": "颈部", "fields": [["定位", "在颈外侧区，锁骨上大窝，锁骨上缘凹陷中，前正中线旁开 4 寸"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 颈阔肌 → 深面臂丛、锁骨下动脉"], ["安全提示", "深面为肺尖，禁深刺"], ["相关肌肉", "颈阔肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "mus-Supraspinatus", "type": "mus", "learned": "2026-10-06", "title": "冈上肌", "sub": "Supraspinatus", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Supraspinatus"], ["起点 Origin", "Supraspinous fossa of the scapula｜肩胛骨冈上窝"], ["止点 Insertion", "Superior facet of the greater tubercle of the humerus｜肱骨大结节上小面"], ["神经 Nerve", "Suprascapular nerve (C5–C6)｜肩胛上神经（C5–C6）"], ["动作 Action", "Initiates abduction; compresses the humeral head into the glenoid｜启动外展；把肱骨头压向关节盂"], ["穴位锚点", "秉风、巨骨、曲垣"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "mus-Infraspinatus", "type": "mus", "learned": "2026-10-06", "title": "冈下肌", "sub": "Infraspinatus", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Infraspinatus"], ["起点 Origin", "Infraspinous fossa of the scapula｜肩胛骨冈下窝"], ["止点 Insertion", "Middle facet of the greater tubercle of the humerus｜肱骨大结节中小面"], ["神经 Nerve", "Suprascapular nerve (C5–C6)｜肩胛上神经（C5–C6）"], ["动作 Action", "External rotation; stabilizes the humeral head from behind｜外旋；从后方稳定肱骨头"], ["穴位锚点", "天宗、臑俞"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "mus-Teres minor", "type": "mus", "learned": "2026-10-06", "title": "小圆肌", "sub": "Teres minor", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Teres minor"], ["起点 Origin", "Upper part of the lateral border of the scapula｜肩胛骨外侧缘上部"], ["止点 Insertion", "Inferior facet of the greater tubercle of the humerus｜肱骨大结节下小面"], ["神经 Nerve", "Axillary nerve (C5–C6)｜腋神经（C5–C6）"], ["动作 Action", "External rotation｜外旋"], ["穴位锚点", "肩贞"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "mus-Subscapularis", "type": "mus", "learned": "2026-10-06", "title": "肩胛下肌", "sub": "Subscapularis", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Subscapularis"], ["起点 Origin", "Subscapular fossa｜肩胛下窝"], ["止点 Insertion", "Lesser tubercle of the humerus｜肱骨小结节"], ["神经 Nerve", "Upper and lower subscapular nerves (C5–C6)｜上、下肩胛下神经（C5–C6）"], ["动作 Action", "Internal rotation; anterior stability｜内旋；前方稳定"], ["穴位锚点", "极泉方向"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "acu-中府", "type": "acu", "learned": "2026-10-07", "title": "中府", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在胸部，横平第 1 肋间隙，锁骨下窝外侧，前正中线旁开 6 寸"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 胸大肌 → 胸小肌"], ["安全提示", "深面为胸腔和肺：向外斜刺，不可向内深刺"], ["相关肌肉", "胸大肌、胸小肌"], ["怎么找", "先找云门，向下 1 寸，平第 1 肋间隙"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-云门", "type": "acu", "learned": "2026-10-07", "title": "云门", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在胸部，锁骨下窝凹陷中，肩胛骨喙突内缘，前正中线旁开 6 寸"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 三角肌与胸大肌之间 → 锁胸筋膜"], ["安全提示", "深面有腋动脉、腋静脉和臂丛，内侧靠近胸膜：向外斜刺，不可向内深刺"], ["相关肌肉", "胸大肌、三角肌（两肌之间）"], ["怎么找", "手臂稍向前抬，锁骨外端下方出现凹陷；摸到喙突，贴着它内缘的凹陷就是"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-天府", "type": "acu", "learned": "2026-10-07", "title": "天府", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在臂前区，腋前纹头下 3 寸，肱二头肌桡侧缘处"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 肱二头肌桡侧缘 → 肱肌"], ["安全提示", "附近有头静脉，进针时避开"], ["相关肌肉", "肱二头肌、肱肌"], ["怎么找", "腋前纹头到肘横纹为 9 寸，取上 1/3 处，在肱二头肌外侧缘"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-侠白", "type": "acu", "learned": "2026-10-07", "title": "侠白", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在臂前区，腋前纹头下 4 寸，肱二头肌桡侧缘处"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 肱二头肌桡侧缘 → 肱肌"], ["安全提示", "附近有头静脉，进针时避开"], ["相关肌肉", "肱二头肌、肱肌"], ["怎么找", "天府下 1 寸；“侠”同“夹”，夹着肱二头肌"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-尺泽", "type": "acu", "learned": "2026-10-07", "title": "尺泽", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在肘区，肘横纹上，肱二头肌腱桡侧缘凹陷中"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 肱桡肌 → 肱肌"], ["安全提示", "深面在肱桡肌与肱肌之间有桡神经"], ["相关肌肉", "肱桡肌、肱肌"], ["怎么找", "微屈肘，摸到绷紧的肱二头肌腱，腱的桡侧（拇指侧）凹陷"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "acu-孔最", "type": "acu", "learned": "2026-10-07", "title": "孔最", "sub": "手太阴肺经", "meridian": "手太阴肺经", "region": "肩带与肩部", "fields": [["定位", "在前臂前区，腕掌侧远端横纹上 7 寸，尺泽与太渊连线上"], ["层次（浅 → 深）", "皮肤 → 皮下组织 → 肱桡肌 → 桡侧腕屈肌 → 旋前圆肌 → 拇长屈肌"], ["安全提示", "浅层有头静脉；深层有桡动脉和桡神经浅支，避开血管"], ["相关肌肉", "肱桡肌、旋前圆肌、拇长屈肌"], ["怎么找", "肘横纹到腕横纹为 12 寸；从尺泽向下 5 寸，在尺泽与太渊的连线上"]], "ask": "定位在哪里？从浅到深经过哪些肌肉？"}, {"id": "mus-Pectoralis major", "type": "mus", "learned": "2026-10-07", "title": "胸大肌", "sub": "Pectoralis major", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Pectoralis major"], ["起点 Origin", "Clavicular head: medial half of the clavicle. Sternocostal head: sternum, upper six costal cartilages, and the aponeurosis of the external oblique｜锁骨部：锁骨内侧半；胸肋部：胸骨、上 6 个肋软骨及腹外斜肌腱膜"], ["止点 Insertion", "Lateral lip of the intertubercular groove of the humerus｜肱骨结节间沟外侧唇"], ["神经 Nerve", "Lateral pectoral nerve (C5–C7) and medial pectoral nerve (C8–T1)｜胸外侧神经（C5–C7）和胸内侧神经（C8–T1）"], ["动作 Action", "Adducts and internally rotates the humerus; the clavicular part also flexes the shoulder｜使肱骨内收、内旋；锁骨部还使肩前屈"], ["穴位锚点", "中府（浅层）、云门（外缘）"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "mus-Pectoralis minor", "type": "mus", "learned": "2026-10-07", "title": "胸小肌", "sub": "Pectoralis minor", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Pectoralis minor"], ["起点 Origin", "Outer surfaces of ribs 3–5 near their costal cartilages｜第 3–5 肋外面，靠近肋软骨处"], ["止点 Insertion", "Coracoid process of the scapula｜肩胛骨喙突"], ["神经 Nerve", "Medial pectoral nerve (C8–T1)｜胸内侧神经（C8–T1）"], ["动作 Action", "Protracts and depresses the scapula and tilts it forward; lifts the ribs when the scapula is fixed｜使肩胛骨前伸、下降并前倾；肩胛骨固定时上提肋骨"], ["穴位锚点", "中府（深层）"]], "ask": "英文名？起点、止点、神经、动作？"}, {"id": "mus-Subclavius", "type": "mus", "learned": "2026-10-07", "title": "锁骨下肌", "sub": "Subclavius", "meridian": "", "region": "肩带与肩部", "fields": [["英文名", "Subclavius"], ["起点 Origin", "Junction of the first rib and its costal cartilage｜第 1 肋与肋软骨交界处"], ["止点 Insertion", "Inferior surface of the middle third of the clavicle｜锁骨中 1/3 下面"], ["神经 Nerve", "Nerve to subclavius (C5–C6)｜锁骨下肌神经（C5–C6）"], ["动作 Action", "Anchors and depresses the clavicle; steadies the sternoclavicular joint｜固定并下拉锁骨；稳定胸锁关节"], ["穴位锚点", "云门附近（锁骨下窝）"]], "ask": "英文名？起点、止点、神经、动作？"}]</script>
+<script>
+(function(){
+var CARDS=JSON.parse(document.getElementById('cards').textContent);
+var INT=[1,3,7,14,30,60], KEY='dpt-cards-v1', DEADLINE='2026-12-23';
+function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function addDays(s,n){var p=s.split('-');var d=new Date(+p[0],+p[1]-1,+p[2]);d.setDate(d.getDate()+n);return iso(d);}
+var TODAY=iso(new Date());
+var state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){state={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+function st(c){return state[c.id]||{step:0,next:addDays(c.learned,1)};}
+function isDue(c){return c.learned<=TODAY && st(c).next<=TODAY;}
+function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch];});}
+function fields(c){return '<dl class="fields">'+c.fields.filter(function(f){return f[1];}).map(function(f){return '<dt>'+esc(f[0])+'</dt><dd'+(f[0]==='安全提示'&&f[1]!=='—'?' class="safe"':'')+'>'+esc(f[1])+'</dd>';}).join('')+'</dl>';}
+var learned=CARDS.filter(function(c){return c.learned<=TODAY;});
+function stats(){
+  var a=learned.filter(function(c){return c.type==='acu';}).length, m=learned.filter(function(c){return c.type==='mus';}).length;
+  document.getElementById('s-acu').textContent=a;document.getElementById('b-acu').style.width=Math.min(100,a/362*100)+'%';
+  document.getElementById('s-mus').textContent=m;document.getElementById('b-mus').style.width=Math.min(100,m/157*100)+'%';
+  document.getElementById('s-due').textContent=learned.filter(isDue).length;
+  var p=DEADLINE.split('-'),t=TODAY.split('-');var left=Math.round((new Date(+p[0],+p[1]-1,+p[2])-new Date(+t[0],+t[1]-1,+t[2]))/864e5);
+  document.getElementById('s-left').textContent=Math.max(0,left);
+  document.getElementById('today-line').textContent='DPT 基础 · 今天 '+TODAY+' · 12 月 23 日前背完十四经穴和常用肌肉';}
+var view='due', q='', shown=false, queue=null;
+function match(c){if(!q)return true;var s=(c.title+' '+c.sub+' '+c.meridian+' '+c.region).toLowerCase();return s.indexOf(q)>=0;}
+function renderDue(){
+  if(!queue)queue=learned.filter(isDue).filter(match).map(function(c){return c.id;});
+  var el=document.getElementById('view');
+  if(!queue.length){el.innerHTML='<div class="study empty"><p><b>今天的复习完成了。</b></p><p>可以切到“按经络”或“按部位”，把还不熟的再过一遍。</p></div>';return;}
+  var c=CARDS.filter(function(x){return x.id===queue[0];})[0], s=st(c);
+  el.innerHTML='<div class="study" aria-live="polite"><div class="meta"><span>'+(c.type==='acu'?'穴位 · '+esc(c.meridian):'肌肉 · '+esc(c.region))+'</span><span>还剩 '+queue.length+' 张 · 第 '+(s.step+1)+' 档</span></div>'+
+   '<h2>'+esc(c.title)+'</h2>'+(c.type==='mus'&&shown?'<p class="sub">'+esc(c.sub)+'</p>':'<p class="sub">&nbsp;</p>')+
+   '<div class="ask">先说出来：'+esc(c.ask)+'</div>'+(shown?fields(c):'')+
+   '<div class="actions">'+(shown?'<button class="btn again" data-act="again" type="button">没记住</button><button class="btn primary" data-act="know" type="button">记住了</button>':'<button class="btn primary" data-act="show" type="button">显示答案</button>')+'</div></div>';}
+function group(key){
+  var el=document.getElementById('view'), groups={}, order=[];
+  learned.filter(match).forEach(function(c){var k=key==='all'?c.learned:(key==='meridian'?(c.type==='acu'?c.meridian:'肌肉'):c.region);if(!groups[k]){groups[k]=[];order.push(k);}groups[k].push(c);});
+  if(key==='all')order.sort().reverse();
+  if(!order.length){el.innerHTML='<div class="study empty">没有找到匹配的卡片。</div>';return;}
+  el.innerHTML=order.map(function(k){var due=groups[k].filter(isDue).length;
+    return '<details class="group" open><summary>'+esc(k)+'<span>'+groups[k].length+' 张'+(due?' · '+due+' 张待复习':'')+'</span></summary><div class="rows">'+
+    groups[k].map(function(c){var s=st(c);return '<details class="row"><summary><b>'+esc(c.title)+'</b><small>'+esc(c.type==='acu'?c.meridian:c.sub)+'</small><span class="pill'+(isDue(c)?' due':'')+'">'+(isDue(c)?'今天复习':'下次 '+s.next.slice(5))+'</span></summary>'+fields(c)+'</details>';}).join('')+'</div></details>';}).join('');}
+function render(){stats();if(view==='due')renderDue();else group(view);}
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-view]');if(t){view=t.dataset.view;document.querySelectorAll('[data-view]').forEach(function(b){b.setAttribute('aria-pressed',b===t?'true':'false');});queue=null;shown=false;render();return;}
+  var a=e.target.closest('[data-act]');if(!a)return;var id=queue&&queue[0];if(!id)return;var c=CARDS.filter(function(x){return x.id===id;})[0];
+  if(a.dataset.act==='show'){shown=true;render();return;}
+  var s=st(c);
+  if(a.dataset.act==='know'){var step=Math.min(s.step+1,INT.length-1);state[id]={step:step,next:addDays(TODAY,INT[step])};queue.shift();}
+  else{state[id]={step:0,next:addDays(TODAY,1)};queue.push(queue.shift());if(queue.length===1){}}
+  if(a.dataset.act==='again'&&queue.length>1){}
+  save();shown=false;render();});
+document.getElementById('q').addEventListener('input',function(e){q=e.target.value.trim().toLowerCase();queue=null;shown=false;render();});
+render();
+})();
+</script>

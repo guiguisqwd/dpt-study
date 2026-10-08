@@ -1,0 +1,21 @@
+{"date":"2026-10-06","note":"肩袖专题（预习）",
+"acupoints":[
+ {"name":"天宗","meridian":"手太阳小肠经","region":"肩带与肩部","loc":"在肩胛区，肩胛冈中点与肩胛骨下角连线上 1/3 与下 2/3 交点凹陷中","layers":"皮肤 → 皮下组织 → 斜方肌（边缘）→ 冈下肌","safety":"深面为骨面，较安全","muscles":"冈下肌"},
+ {"name":"秉风","meridian":"手太阳小肠经","region":"肩带与肩部","loc":"在肩胛区，肩胛冈中点上方冈上窝中","layers":"皮肤 → 皮下组织 → 斜方肌 → 冈上肌","safety":"深面有肩胛上神经与血管","muscles":"冈上肌、斜方肌"},
+ {"name":"曲垣","meridian":"手太阳小肠经","region":"肩带与肩部","loc":"在肩胛区，肩胛冈内侧端上缘凹陷中","layers":"皮肤 → 皮下组织 → 斜方肌 → 冈上肌","safety":"勿向胸腔方向深刺","muscles":"冈上肌、斜方肌"},
+ {"name":"巨骨","meridian":"手阳明大肠经","region":"肩带与肩部","loc":"在肩胛区，锁骨肩峰端与肩胛冈之间凹陷中","layers":"皮肤 → 皮下组织 → 斜方肌 → 冈上肌","safety":"勿深刺","muscles":"冈上肌、斜方肌"},
+ {"name":"臑俞","meridian":"手太阳小肠经","region":"肩带与肩部","loc":"在肩胛区，腋后纹头直上，肩胛冈下缘凹陷中","layers":"皮肤 → 皮下组织 → 三角肌后部 → 冈下肌","safety":"—","muscles":"三角肌、冈下肌"},
+ {"name":"肩贞","meridian":"手太阳小肠经","region":"肩带与肩部","loc":"在肩胛区，肩关节后下方，腋后纹头直上 1 寸","layers":"皮肤 → 皮下组织 → 三角肌后缘 → 小圆肌、大圆肌","safety":"深面四边孔：腋神经、旋肱后动脉","muscles":"小圆肌、大圆肌、三角肌"},
+ {"name":"肩髎","meridian":"手少阳三焦经","region":"肩带与肩部","loc":"在三角肌区，肩峰角与肱骨大结节两骨间凹陷中","layers":"皮肤 → 皮下组织 → 三角肌 → 冈下肌、小圆肌腱附近","safety":"—","muscles":"三角肌"},
+ {"name":"肩髃","meridian":"手阳明大肠经","region":"肩带与肩部","loc":"在三角肌区，肩峰外侧缘前端与肱骨大结节两骨间凹陷中","layers":"皮肤 → 皮下组织 → 三角肌 → 冈上肌腱、肩峰下滑囊","safety":"—","muscles":"三角肌、冈上肌"},
+ {"name":"极泉","meridian":"手少阴心经","region":"肩带与肩部","loc":"在腋区，腋窝中央，腋动脉搏动处","layers":"皮肤 → 皮下组织（腋窝脂肪）→ 深面近肩胛下肌","safety":"避开腋动脉；深面有臂丛","muscles":"肩胛下肌"},
+ {"name":"肩井","meridian":"足少阳胆经","region":"肩带与肩部","loc":"在肩胛区，第 7 颈椎棘突与肩峰最外侧点连线的中点","layers":"皮肤 → 皮下组织 → 斜方肌（上部）","safety":"深面为肺尖，禁深刺","muscles":"斜方肌"},
+ {"name":"辄筋","meridian":"足少阳胆经","region":"胸壁与呼吸","loc":"在胸外侧区，第 4 肋间隙中，腋中线前 1 寸","layers":"皮肤 → 皮下组织 → 前锯肌 → 肋间肌","safety":"深面为胸膜，宜斜刺或平刺","muscles":"前锯肌"},
+ {"name":"缺盆","meridian":"足阳明胃经","region":"颈部","loc":"在颈外侧区，锁骨上大窝，锁骨上缘凹陷中，前正中线旁开 4 寸","layers":"皮肤 → 皮下组织 → 颈阔肌 → 深面臂丛、锁骨下动脉","safety":"深面为肺尖，禁深刺","muscles":"颈阔肌"}
+],
+"muscles":[
+ {"en":"Supraspinatus","zh":"冈上肌","region":"肩带与肩部","o":["Supraspinous fossa of the scapula","肩胛骨冈上窝"],"i":["Superior facet of the greater tubercle of the humerus","肱骨大结节上小面"],"n":["Suprascapular nerve (C5–C6)","肩胛上神经（C5–C6）"],"a":["Initiates abduction; compresses the humeral head into the glenoid","启动外展；把肱骨头压向关节盂"],"acu":"秉风、巨骨、曲垣"},
+ {"en":"Infraspinatus","zh":"冈下肌","region":"肩带与肩部","o":["Infraspinous fossa of the scapula","肩胛骨冈下窝"],"i":["Middle facet of the greater tubercle of the humerus","肱骨大结节中小面"],"n":["Suprascapular nerve (C5–C6)","肩胛上神经（C5–C6）"],"a":["External rotation; stabilizes the humeral head from behind","外旋；从后方稳定肱骨头"],"acu":"天宗、臑俞"},
+ {"en":"Teres minor","zh":"小圆肌","region":"肩带与肩部","o":["Upper part of the lateral border of the scapula","肩胛骨外侧缘上部"],"i":["Inferior facet of the greater tubercle of the humerus","肱骨大结节下小面"],"n":["Axillary nerve (C5–C6)","腋神经（C5–C6）"],"a":["External rotation","外旋"],"acu":"肩贞"},
+ {"en":"Subscapularis","zh":"肩胛下肌","region":"肩带与肩部","o":["Subscapular fossa","肩胛下窝"],"i":["Lesser tubercle of the humerus","肱骨小结节"],"n":["Upper and lower subscapular nerves (C5–C6)","上、下肩胛下神经（C5–C6）"],"a":["Internal rotation; anterior stability","内旋；前方稳定"],"acu":"极泉方向"}
+]}

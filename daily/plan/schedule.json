@@ -1,0 +1,3563 @@
+{
+ "goal": "2026-12-23 前背完十四经穴 362 个（中文名与定位）和 PT 常用肌肉（第一阶段）",
+ "intervals_days": [
+  1,
+  3,
+  7,
+  14,
+  30
+ ],
+ "learning_days": [
+  {
+   "day": 1,
+   "date": "2026-10-07",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "中府",
+     "meridian": "手太阴肺经",
+     "code": "LU1"
+    },
+    {
+     "name": "云门",
+     "meridian": "手太阴肺经",
+     "code": "LU2"
+    },
+    {
+     "name": "天府",
+     "meridian": "手太阴肺经",
+     "code": "LU3"
+    },
+    {
+     "name": "侠白",
+     "meridian": "手太阴肺经",
+     "code": "LU4"
+    },
+    {
+     "name": "尺泽",
+     "meridian": "手太阴肺经",
+     "code": "LU5"
+    },
+    {
+     "name": "孔最",
+     "meridian": "手太阴肺经",
+     "code": "LU6"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Pectoralis major",
+     "zh": "胸大肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Pectoralis minor",
+     "zh": "胸小肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Subclavius",
+     "zh": "锁骨下肌",
+     "region": "肩带与肩部"
+    }
+   ],
+   "meridians": [
+    "手太阴肺经"
+   ],
+   "regions": [
+    "肩带与肩部"
+   ]
+  },
+  {
+   "day": 2,
+   "date": "2026-10-08",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "列缺",
+     "meridian": "手太阴肺经",
+     "code": "LU7"
+    },
+    {
+     "name": "经渠",
+     "meridian": "手太阴肺经",
+     "code": "LU8"
+    },
+    {
+     "name": "太渊",
+     "meridian": "手太阴肺经",
+     "code": "LU9"
+    },
+    {
+     "name": "鱼际",
+     "meridian": "手太阴肺经",
+     "code": "LU10"
+    },
+    {
+     "name": "少商",
+     "meridian": "手太阴肺经",
+     "code": "LU11"
+    },
+    {
+     "name": "商阳",
+     "meridian": "手阳明大肠经",
+     "code": "LI1"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Serratus anterior",
+     "zh": "前锯肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Trapezius",
+     "zh": "斜方肌",
+     "region": "肩带与肩部"
+    }
+   ],
+   "meridians": [
+    "手太阴肺经",
+    "手阳明大肠经"
+   ],
+   "regions": [
+    "肩带与肩部"
+   ]
+  },
+  {
+   "day": 3,
+   "date": "2026-10-09",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "二间",
+     "meridian": "手阳明大肠经",
+     "code": "LI2"
+    },
+    {
+     "name": "三间",
+     "meridian": "手阳明大肠经",
+     "code": "LI3"
+    },
+    {
+     "name": "合谷",
+     "meridian": "手阳明大肠经",
+     "code": "LI4"
+    },
+    {
+     "name": "阳溪",
+     "meridian": "手阳明大肠经",
+     "code": "LI5"
+    },
+    {
+     "name": "偏历",
+     "meridian": "手阳明大肠经",
+     "code": "LI6"
+    },
+    {
+     "name": "温溜",
+     "meridian": "手阳明大肠经",
+     "code": "LI7"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Levator scapulae",
+     "zh": "肩胛提肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Rhomboid major",
+     "zh": "大菱形肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Rhomboid minor",
+     "zh": "小菱形肌",
+     "region": "肩带与肩部"
+    }
+   ],
+   "meridians": [
+    "手阳明大肠经"
+   ],
+   "regions": [
+    "肩带与肩部"
+   ]
+  },
+  {
+   "day": 4,
+   "date": "2026-10-10",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "下廉",
+     "meridian": "手阳明大肠经",
+     "code": "LI8"
+    },
+    {
+     "name": "上廉",
+     "meridian": "手阳明大肠经",
+     "code": "LI9"
+    },
+    {
+     "name": "手三里",
+     "meridian": "手阳明大肠经",
+     "code": "LI10"
+    },
+    {
+     "name": "曲池",
+     "meridian": "手阳明大肠经",
+     "code": "LI11"
+    },
+    {
+     "name": "肘髎",
+     "meridian": "手阳明大肠经",
+     "code": "LI12"
+    },
+    {
+     "name": "手五里",
+     "meridian": "手阳明大肠经",
+     "code": "LI13"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Latissimus dorsi",
+     "zh": "背阔肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Deltoid",
+     "zh": "三角肌",
+     "region": "肩带与肩部"
+    }
+   ],
+   "meridians": [
+    "手阳明大肠经"
+   ],
+   "regions": [
+    "肩带与肩部"
+   ]
+  },
+  {
+   "day": 5,
+   "date": "2026-10-12",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "臂臑",
+     "meridian": "手阳明大肠经",
+     "code": "LI14"
+    },
+    {
+     "name": "肩髃",
+     "meridian": "手阳明大肠经",
+     "code": "LI15"
+    },
+    {
+     "name": "巨骨",
+     "meridian": "手阳明大肠经",
+     "code": "LI16"
+    },
+    {
+     "name": "天鼎",
+     "meridian": "手阳明大肠经",
+     "code": "LI17"
+    },
+    {
+     "name": "扶突",
+     "meridian": "手阳明大肠经",
+     "code": "LI18"
+    },
+    {
+     "name": "口禾髎",
+     "meridian": "手阳明大肠经",
+     "code": "LI19"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Teres major",
+     "zh": "大圆肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Coracobrachialis",
+     "zh": "喙肱肌",
+     "region": "肩带与肩部"
+    },
+    {
+     "en": "Biceps brachii",
+     "zh": "肱二头肌",
+     "region": "上臂与肘"
+    }
+   ],
+   "meridians": [
+    "手阳明大肠经"
+   ],
+   "regions": [
+    "肩带与肩部",
+    "上臂与肘"
+   ]
+  },
+  {
+   "day": 6,
+   "date": "2026-10-13",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "迎香",
+     "meridian": "手阳明大肠经",
+     "code": "LI20"
+    },
+    {
+     "name": "极泉",
+     "meridian": "手少阴心经",
+     "code": "HT1"
+    },
+    {
+     "name": "青灵",
+     "meridian": "手少阴心经",
+     "code": "HT2"
+    },
+    {
+     "name": "少海",
+     "meridian": "手少阴心经",
+     "code": "HT3"
+    },
+    {
+     "name": "灵道",
+     "meridian": "手少阴心经",
+     "code": "HT4"
+    },
+    {
+     "name": "通里",
+     "meridian": "手少阴心经",
+     "code": "HT5"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Brachialis",
+     "zh": "肱肌",
+     "region": "上臂与肘"
+    },
+    {
+     "en": "Triceps brachii",
+     "zh": "肱三头肌",
+     "region": "上臂与肘"
+    }
+   ],
+   "meridians": [
+    "手阳明大肠经",
+    "手少阴心经"
+   ],
+   "regions": [
+    "上臂与肘"
+   ]
+  },
+  {
+   "day": 7,
+   "date": "2026-10-14",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "阴郄",
+     "meridian": "手少阴心经",
+     "code": "HT6"
+    },
+    {
+     "name": "神门",
+     "meridian": "手少阴心经",
+     "code": "HT7"
+    },
+    {
+     "name": "少府",
+     "meridian": "手少阴心经",
+     "code": "HT8"
+    },
+    {
+     "name": "少冲",
+     "meridian": "手少阴心经",
+     "code": "HT9"
+    },
+    {
+     "name": "少泽",
+     "meridian": "手太阳小肠经",
+     "code": "SI1"
+    },
+    {
+     "name": "前谷",
+     "meridian": "手太阳小肠经",
+     "code": "SI2"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Anconeus",
+     "zh": "肘肌",
+     "region": "上臂与肘"
+    },
+    {
+     "en": "Brachioradialis",
+     "zh": "肱桡肌",
+     "region": "上臂与肘"
+    },
+    {
+     "en": "Pronator teres",
+     "zh": "旋前圆肌",
+     "region": "前臂前群"
+    }
+   ],
+   "meridians": [
+    "手少阴心经",
+    "手太阳小肠经"
+   ],
+   "regions": [
+    "上臂与肘",
+    "前臂前群"
+   ]
+  },
+  {
+   "day": 8,
+   "date": "2026-10-15",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "后溪",
+     "meridian": "手太阳小肠经",
+     "code": "SI3"
+    },
+    {
+     "name": "腕骨",
+     "meridian": "手太阳小肠经",
+     "code": "SI4"
+    },
+    {
+     "name": "阳谷",
+     "meridian": "手太阳小肠经",
+     "code": "SI5"
+    },
+    {
+     "name": "养老",
+     "meridian": "手太阳小肠经",
+     "code": "SI6"
+    },
+    {
+     "name": "支正",
+     "meridian": "手太阳小肠经",
+     "code": "SI7"
+    },
+    {
+     "name": "小海",
+     "meridian": "手太阳小肠经",
+     "code": "SI8"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor carpi radialis",
+     "zh": "桡侧腕屈肌",
+     "region": "前臂前群"
+    },
+    {
+     "en": "Palmaris longus",
+     "zh": "掌长肌",
+     "region": "前臂前群"
+    }
+   ],
+   "meridians": [
+    "手太阳小肠经"
+   ],
+   "regions": [
+    "前臂前群"
+   ]
+  },
+  {
+   "day": 9,
+   "date": "2026-10-16",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "肩贞",
+     "meridian": "手太阳小肠经",
+     "code": "SI9"
+    },
+    {
+     "name": "臑俞",
+     "meridian": "手太阳小肠经",
+     "code": "SI10"
+    },
+    {
+     "name": "天宗",
+     "meridian": "手太阳小肠经",
+     "code": "SI11"
+    },
+    {
+     "name": "秉风",
+     "meridian": "手太阳小肠经",
+     "code": "SI12"
+    },
+    {
+     "name": "曲垣",
+     "meridian": "手太阳小肠经",
+     "code": "SI13"
+    },
+    {
+     "name": "肩外俞",
+     "meridian": "手太阳小肠经",
+     "code": "SI14"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor carpi ulnaris",
+     "zh": "尺侧腕屈肌",
+     "region": "前臂前群"
+    },
+    {
+     "en": "Flexor digitorum superficialis",
+     "zh": "指浅屈肌",
+     "region": "前臂前群"
+    },
+    {
+     "en": "Flexor digitorum profundus",
+     "zh": "指深屈肌",
+     "region": "前臂前群"
+    }
+   ],
+   "meridians": [
+    "手太阳小肠经"
+   ],
+   "regions": [
+    "前臂前群"
+   ]
+  },
+  {
+   "day": 10,
+   "date": "2026-10-17",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "肩中俞",
+     "meridian": "手太阳小肠经",
+     "code": "SI15"
+    },
+    {
+     "name": "天窗",
+     "meridian": "手太阳小肠经",
+     "code": "SI16"
+    },
+    {
+     "name": "天容",
+     "meridian": "手太阳小肠经",
+     "code": "SI17"
+    },
+    {
+     "name": "颧髎",
+     "meridian": "手太阳小肠经",
+     "code": "SI18"
+    },
+    {
+     "name": "听宫",
+     "meridian": "手太阳小肠经",
+     "code": "SI19"
+    },
+    {
+     "name": "天池",
+     "meridian": "手厥阴心包经",
+     "code": "PC1"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor pollicis longus",
+     "zh": "拇长屈肌",
+     "region": "前臂前群"
+    },
+    {
+     "en": "Pronator quadratus",
+     "zh": "旋前方肌",
+     "region": "前臂前群"
+    },
+    {
+     "en": "Extensor carpi radialis longus",
+     "zh": "桡侧腕长伸肌",
+     "region": "前臂后群"
+    }
+   ],
+   "meridians": [
+    "手太阳小肠经",
+    "手厥阴心包经"
+   ],
+   "regions": [
+    "前臂前群",
+    "前臂后群"
+   ]
+  },
+  {
+   "day": 11,
+   "date": "2026-10-19",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "天泉",
+     "meridian": "手厥阴心包经",
+     "code": "PC2"
+    },
+    {
+     "name": "曲泽",
+     "meridian": "手厥阴心包经",
+     "code": "PC3"
+    },
+    {
+     "name": "郄门",
+     "meridian": "手厥阴心包经",
+     "code": "PC4"
+    },
+    {
+     "name": "间使",
+     "meridian": "手厥阴心包经",
+     "code": "PC5"
+    },
+    {
+     "name": "内关",
+     "meridian": "手厥阴心包经",
+     "code": "PC6"
+    },
+    {
+     "name": "大陵",
+     "meridian": "手厥阴心包经",
+     "code": "PC7"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Extensor carpi radialis brevis",
+     "zh": "桡侧腕短伸肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Extensor digitorum",
+     "zh": "指伸肌",
+     "region": "前臂后群"
+    }
+   ],
+   "meridians": [
+    "手厥阴心包经"
+   ],
+   "regions": [
+    "前臂后群"
+   ]
+  },
+  {
+   "day": 12,
+   "date": "2026-10-20",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "劳宫",
+     "meridian": "手厥阴心包经",
+     "code": "PC8"
+    },
+    {
+     "name": "中冲",
+     "meridian": "手厥阴心包经",
+     "code": "PC9"
+    },
+    {
+     "name": "关冲",
+     "meridian": "手少阳三焦经",
+     "code": "TE1"
+    },
+    {
+     "name": "液门",
+     "meridian": "手少阳三焦经",
+     "code": "TE2"
+    },
+    {
+     "name": "中渚",
+     "meridian": "手少阳三焦经",
+     "code": "TE3"
+    },
+    {
+     "name": "阳池",
+     "meridian": "手少阳三焦经",
+     "code": "TE4"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Extensor digiti minimi",
+     "zh": "小指伸肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Extensor carpi ulnaris",
+     "zh": "尺侧腕伸肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Supinator",
+     "zh": "旋后肌",
+     "region": "前臂后群"
+    }
+   ],
+   "meridians": [
+    "手厥阴心包经",
+    "手少阳三焦经"
+   ],
+   "regions": [
+    "前臂后群"
+   ]
+  },
+  {
+   "day": 13,
+   "date": "2026-10-21",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "外关",
+     "meridian": "手少阳三焦经",
+     "code": "TE5"
+    },
+    {
+     "name": "支沟",
+     "meridian": "手少阳三焦经",
+     "code": "TE6"
+    },
+    {
+     "name": "会宗",
+     "meridian": "手少阳三焦经",
+     "code": "TE7"
+    },
+    {
+     "name": "三阳络",
+     "meridian": "手少阳三焦经",
+     "code": "TE8"
+    },
+    {
+     "name": "四渎",
+     "meridian": "手少阳三焦经",
+     "code": "TE9"
+    },
+    {
+     "name": "天井",
+     "meridian": "手少阳三焦经",
+     "code": "TE10"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Abductor pollicis longus",
+     "zh": "拇长展肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Extensor pollicis brevis",
+     "zh": "拇短伸肌",
+     "region": "前臂后群"
+    }
+   ],
+   "meridians": [
+    "手少阳三焦经"
+   ],
+   "regions": [
+    "前臂后群"
+   ]
+  },
+  {
+   "day": 14,
+   "date": "2026-10-22",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "清冷渊",
+     "meridian": "手少阳三焦经",
+     "code": "TE11"
+    },
+    {
+     "name": "消泺",
+     "meridian": "手少阳三焦经",
+     "code": "TE12"
+    },
+    {
+     "name": "臑会",
+     "meridian": "手少阳三焦经",
+     "code": "TE13"
+    },
+    {
+     "name": "肩髎",
+     "meridian": "手少阳三焦经",
+     "code": "TE14"
+    },
+    {
+     "name": "天髎",
+     "meridian": "手少阳三焦经",
+     "code": "TE15"
+    },
+    {
+     "name": "天牖",
+     "meridian": "手少阳三焦经",
+     "code": "TE16"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Extensor pollicis longus",
+     "zh": "拇长伸肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Extensor indicis",
+     "zh": "示指伸肌",
+     "region": "前臂后群"
+    },
+    {
+     "en": "Abductor pollicis brevis",
+     "zh": "拇短展肌",
+     "region": "手"
+    }
+   ],
+   "meridians": [
+    "手少阳三焦经"
+   ],
+   "regions": [
+    "前臂后群",
+    "手"
+   ]
+  },
+  {
+   "day": 15,
+   "date": "2026-10-23",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "翳风",
+     "meridian": "手少阳三焦经",
+     "code": "TE17"
+    },
+    {
+     "name": "瘛脉",
+     "meridian": "手少阳三焦经",
+     "code": "TE18"
+    },
+    {
+     "name": "颅息",
+     "meridian": "手少阳三焦经",
+     "code": "TE19"
+    },
+    {
+     "name": "角孙",
+     "meridian": "手少阳三焦经",
+     "code": "TE20"
+    },
+    {
+     "name": "耳门",
+     "meridian": "手少阳三焦经",
+     "code": "TE21"
+    },
+    {
+     "name": "耳和髎",
+     "meridian": "手少阳三焦经",
+     "code": "TE22"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor pollicis brevis",
+     "zh": "拇短屈肌",
+     "region": "手"
+    },
+    {
+     "en": "Opponens pollicis",
+     "zh": "拇对掌肌",
+     "region": "手"
+    }
+   ],
+   "meridians": [
+    "手少阳三焦经"
+   ],
+   "regions": [
+    "手"
+   ]
+  },
+  {
+   "day": 16,
+   "date": "2026-10-24",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "丝竹空",
+     "meridian": "手少阳三焦经",
+     "code": "TE23"
+    },
+    {
+     "name": "长强",
+     "meridian": "督脉",
+     "code": "GV1"
+    },
+    {
+     "name": "腰俞",
+     "meridian": "督脉",
+     "code": "GV2"
+    },
+    {
+     "name": "腰阳关",
+     "meridian": "督脉",
+     "code": "GV3"
+    },
+    {
+     "name": "命门",
+     "meridian": "督脉",
+     "code": "GV4"
+    },
+    {
+     "name": "悬枢",
+     "meridian": "督脉",
+     "code": "GV5"
+    },
+    {
+     "name": "脊中",
+     "meridian": "督脉",
+     "code": "GV6"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Adductor pollicis",
+     "zh": "拇收肌",
+     "region": "手"
+    },
+    {
+     "en": "Abductor digiti minimi (hand)",
+     "zh": "小指展肌",
+     "region": "手"
+    },
+    {
+     "en": "Flexor digiti minimi brevis (hand)",
+     "zh": "小指短屈肌",
+     "region": "手"
+    }
+   ],
+   "meridians": [
+    "手少阳三焦经",
+    "督脉"
+   ],
+   "regions": [
+    "手"
+   ]
+  },
+  {
+   "day": 17,
+   "date": "2026-10-26",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "中枢",
+     "meridian": "督脉",
+     "code": "GV7"
+    },
+    {
+     "name": "筋缩",
+     "meridian": "督脉",
+     "code": "GV8"
+    },
+    {
+     "name": "至阳",
+     "meridian": "督脉",
+     "code": "GV9"
+    },
+    {
+     "name": "灵台",
+     "meridian": "督脉",
+     "code": "GV10"
+    },
+    {
+     "name": "神道",
+     "meridian": "督脉",
+     "code": "GV11"
+    },
+    {
+     "name": "身柱",
+     "meridian": "督脉",
+     "code": "GV12"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Opponens digiti minimi",
+     "zh": "小指对掌肌",
+     "region": "手"
+    },
+    {
+     "en": "Palmaris brevis",
+     "zh": "掌短肌",
+     "region": "手"
+    }
+   ],
+   "meridians": [
+    "督脉"
+   ],
+   "regions": [
+    "手"
+   ]
+  },
+  {
+   "day": 18,
+   "date": "2026-10-27",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "陶道",
+     "meridian": "督脉",
+     "code": "GV13"
+    },
+    {
+     "name": "大椎",
+     "meridian": "督脉",
+     "code": "GV14"
+    },
+    {
+     "name": "哑门",
+     "meridian": "督脉",
+     "code": "GV15"
+    },
+    {
+     "name": "风府",
+     "meridian": "督脉",
+     "code": "GV16"
+    },
+    {
+     "name": "脑户",
+     "meridian": "督脉",
+     "code": "GV17"
+    },
+    {
+     "name": "强间",
+     "meridian": "督脉",
+     "code": "GV18"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Lumbricals (hand)",
+     "zh": "蚓状肌（手）",
+     "region": "手"
+    },
+    {
+     "en": "Dorsal interossei (hand)",
+     "zh": "骨间背侧肌（手）",
+     "region": "手"
+    },
+    {
+     "en": "Palmar interossei",
+     "zh": "骨间掌侧肌",
+     "region": "手"
+    }
+   ],
+   "meridians": [
+    "督脉"
+   ],
+   "regions": [
+    "手"
+   ]
+  },
+  {
+   "day": 19,
+   "date": "2026-10-28",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "后顶",
+     "meridian": "督脉",
+     "code": "GV19"
+    },
+    {
+     "name": "百会",
+     "meridian": "督脉",
+     "code": "GV20"
+    },
+    {
+     "name": "前顶",
+     "meridian": "督脉",
+     "code": "GV21"
+    },
+    {
+     "name": "囟会",
+     "meridian": "督脉",
+     "code": "GV22"
+    },
+    {
+     "name": "上星",
+     "meridian": "督脉",
+     "code": "GV23"
+    },
+    {
+     "name": "神庭",
+     "meridian": "督脉",
+     "code": "GV24"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Sternocleidomastoid",
+     "zh": "胸锁乳突肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Anterior scalene",
+     "zh": "前斜角肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "督脉"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 20,
+   "date": "2026-10-29",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "素髎",
+     "meridian": "督脉",
+     "code": "GV25"
+    },
+    {
+     "name": "水沟",
+     "meridian": "督脉",
+     "code": "GV26"
+    },
+    {
+     "name": "兑端",
+     "meridian": "督脉",
+     "code": "GV27"
+    },
+    {
+     "name": "龈交",
+     "meridian": "督脉",
+     "code": "GV28"
+    },
+    {
+     "name": "印堂",
+     "meridian": "督脉",
+     "code": "GV29"
+    },
+    {
+     "name": "会阴",
+     "meridian": "任脉",
+     "code": "CV1"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Middle scalene",
+     "zh": "中斜角肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Posterior scalene",
+     "zh": "后斜角肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Platysma",
+     "zh": "颈阔肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "督脉",
+    "任脉"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 21,
+   "date": "2026-10-30",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "曲骨",
+     "meridian": "任脉",
+     "code": "CV2"
+    },
+    {
+     "name": "中极",
+     "meridian": "任脉",
+     "code": "CV3"
+    },
+    {
+     "name": "关元",
+     "meridian": "任脉",
+     "code": "CV4"
+    },
+    {
+     "name": "石门",
+     "meridian": "任脉",
+     "code": "CV5"
+    },
+    {
+     "name": "气海",
+     "meridian": "任脉",
+     "code": "CV6"
+    },
+    {
+     "name": "阴交",
+     "meridian": "任脉",
+     "code": "CV7"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Digastric",
+     "zh": "二腹肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Stylohyoid",
+     "zh": "茎突舌骨肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Mylohyoid",
+     "zh": "下颌舌骨肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "任脉"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 22,
+   "date": "2026-10-31",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "神阙",
+     "meridian": "任脉",
+     "code": "CV8"
+    },
+    {
+     "name": "水分",
+     "meridian": "任脉",
+     "code": "CV9"
+    },
+    {
+     "name": "下脘",
+     "meridian": "任脉",
+     "code": "CV10"
+    },
+    {
+     "name": "建里",
+     "meridian": "任脉",
+     "code": "CV11"
+    },
+    {
+     "name": "中脘",
+     "meridian": "任脉",
+     "code": "CV12"
+    },
+    {
+     "name": "上脘",
+     "meridian": "任脉",
+     "code": "CV13"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Geniohyoid",
+     "zh": "颏舌骨肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Sternohyoid",
+     "zh": "胸骨舌骨肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "任脉"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 23,
+   "date": "2026-11-02",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "巨阙",
+     "meridian": "任脉",
+     "code": "CV14"
+    },
+    {
+     "name": "鸠尾",
+     "meridian": "任脉",
+     "code": "CV15"
+    },
+    {
+     "name": "中庭",
+     "meridian": "任脉",
+     "code": "CV16"
+    },
+    {
+     "name": "膻中",
+     "meridian": "任脉",
+     "code": "CV17"
+    },
+    {
+     "name": "玉堂",
+     "meridian": "任脉",
+     "code": "CV18"
+    },
+    {
+     "name": "紫宫",
+     "meridian": "任脉",
+     "code": "CV19"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Sternothyroid",
+     "zh": "胸骨甲状肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Thyrohyoid",
+     "zh": "甲状舌骨肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Omohyoid",
+     "zh": "肩胛舌骨肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "任脉"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 24,
+   "date": "2026-11-03",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "华盖",
+     "meridian": "任脉",
+     "code": "CV20"
+    },
+    {
+     "name": "璇玑",
+     "meridian": "任脉",
+     "code": "CV21"
+    },
+    {
+     "name": "天突",
+     "meridian": "任脉",
+     "code": "CV22"
+    },
+    {
+     "name": "廉泉",
+     "meridian": "任脉",
+     "code": "CV23"
+    },
+    {
+     "name": "承浆",
+     "meridian": "任脉",
+     "code": "CV24"
+    },
+    {
+     "name": "睛明",
+     "meridian": "足太阳膀胱经",
+     "code": "BL1"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Longus colli",
+     "zh": "颈长肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Longus capitis",
+     "zh": "头长肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "任脉",
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 25,
+   "date": "2026-11-04",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "攒竹",
+     "meridian": "足太阳膀胱经",
+     "code": "BL2"
+    },
+    {
+     "name": "眉冲",
+     "meridian": "足太阳膀胱经",
+     "code": "BL3"
+    },
+    {
+     "name": "曲差",
+     "meridian": "足太阳膀胱经",
+     "code": "BL4"
+    },
+    {
+     "name": "五处",
+     "meridian": "足太阳膀胱经",
+     "code": "BL5"
+    },
+    {
+     "name": "承光",
+     "meridian": "足太阳膀胱经",
+     "code": "BL6"
+    },
+    {
+     "name": "通天",
+     "meridian": "足太阳膀胱经",
+     "code": "BL7"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Splenius capitis",
+     "zh": "头夹肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Splenius cervicis",
+     "zh": "颈夹肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Semispinalis capitis",
+     "zh": "头半棘肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 26,
+   "date": "2026-11-05",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "络却",
+     "meridian": "足太阳膀胱经",
+     "code": "BL8"
+    },
+    {
+     "name": "玉枕",
+     "meridian": "足太阳膀胱经",
+     "code": "BL9"
+    },
+    {
+     "name": "天柱",
+     "meridian": "足太阳膀胱经",
+     "code": "BL10"
+    },
+    {
+     "name": "大杼",
+     "meridian": "足太阳膀胱经",
+     "code": "BL11"
+    },
+    {
+     "name": "风门",
+     "meridian": "足太阳膀胱经",
+     "code": "BL12"
+    },
+    {
+     "name": "肺俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL13"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Rectus capitis posterior major",
+     "zh": "头后大直肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Rectus capitis posterior minor",
+     "zh": "头后小直肌",
+     "region": "颈部"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "颈部"
+   ]
+  },
+  {
+   "day": 27,
+   "date": "2026-11-06",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "厥阴俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL14"
+    },
+    {
+     "name": "心俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL15"
+    },
+    {
+     "name": "督俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL16"
+    },
+    {
+     "name": "膈俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL17"
+    },
+    {
+     "name": "肝俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL18"
+    },
+    {
+     "name": "胆俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL19"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Obliquus capitis superior",
+     "zh": "头上斜肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Obliquus capitis inferior",
+     "zh": "头下斜肌",
+     "region": "颈部"
+    },
+    {
+     "en": "Iliocostalis",
+     "zh": "髂肋肌",
+     "region": "背部与脊柱"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "颈部",
+    "背部与脊柱"
+   ]
+  },
+  {
+   "day": 28,
+   "date": "2026-11-07",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "脾俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL20"
+    },
+    {
+     "name": "胃俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL21"
+    },
+    {
+     "name": "三焦俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL22"
+    },
+    {
+     "name": "肾俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL23"
+    },
+    {
+     "name": "气海俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL24"
+    },
+    {
+     "name": "大肠俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL25"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Longissimus",
+     "zh": "最长肌",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Spinalis",
+     "zh": "棘肌",
+     "region": "背部与脊柱"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "背部与脊柱"
+   ]
+  },
+  {
+   "day": 29,
+   "date": "2026-11-09",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "关元俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL26"
+    },
+    {
+     "name": "小肠俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL27"
+    },
+    {
+     "name": "膀胱俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL28"
+    },
+    {
+     "name": "中膂俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL29"
+    },
+    {
+     "name": "白环俞",
+     "meridian": "足太阳膀胱经",
+     "code": "BL30"
+    },
+    {
+     "name": "上髎",
+     "meridian": "足太阳膀胱经",
+     "code": "BL31"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Semispinalis (thoracis, cervicis)",
+     "zh": "半棘肌（胸、颈）",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Multifidus",
+     "zh": "多裂肌",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Rotatores",
+     "zh": "回旋肌",
+     "region": "背部与脊柱"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "背部与脊柱"
+   ]
+  },
+  {
+   "day": 30,
+   "date": "2026-11-10",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "次髎",
+     "meridian": "足太阳膀胱经",
+     "code": "BL32"
+    },
+    {
+     "name": "中髎",
+     "meridian": "足太阳膀胱经",
+     "code": "BL33"
+    },
+    {
+     "name": "下髎",
+     "meridian": "足太阳膀胱经",
+     "code": "BL34"
+    },
+    {
+     "name": "会阳",
+     "meridian": "足太阳膀胱经",
+     "code": "BL35"
+    },
+    {
+     "name": "承扶",
+     "meridian": "足太阳膀胱经",
+     "code": "BL36"
+    },
+    {
+     "name": "殷门",
+     "meridian": "足太阳膀胱经",
+     "code": "BL37"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Interspinales",
+     "zh": "棘间肌",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Intertransversarii",
+     "zh": "横突间肌",
+     "region": "背部与脊柱"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "背部与脊柱"
+   ]
+  },
+  {
+   "day": 31,
+   "date": "2026-11-11",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "浮郄",
+     "meridian": "足太阳膀胱经",
+     "code": "BL38"
+    },
+    {
+     "name": "委阳",
+     "meridian": "足太阳膀胱经",
+     "code": "BL39"
+    },
+    {
+     "name": "委中",
+     "meridian": "足太阳膀胱经",
+     "code": "BL40"
+    },
+    {
+     "name": "附分",
+     "meridian": "足太阳膀胱经",
+     "code": "BL41"
+    },
+    {
+     "name": "魄户",
+     "meridian": "足太阳膀胱经",
+     "code": "BL42"
+    },
+    {
+     "name": "膏肓",
+     "meridian": "足太阳膀胱经",
+     "code": "BL43"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Quadratus lumborum",
+     "zh": "腰方肌",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Serratus posterior superior",
+     "zh": "上后锯肌",
+     "region": "背部与脊柱"
+    },
+    {
+     "en": "Serratus posterior inferior",
+     "zh": "下后锯肌",
+     "region": "背部与脊柱"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "背部与脊柱"
+   ]
+  },
+  {
+   "day": 32,
+   "date": "2026-11-12",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "神堂",
+     "meridian": "足太阳膀胱经",
+     "code": "BL44"
+    },
+    {
+     "name": "譩譆",
+     "meridian": "足太阳膀胱经",
+     "code": "BL45"
+    },
+    {
+     "name": "膈关",
+     "meridian": "足太阳膀胱经",
+     "code": "BL46"
+    },
+    {
+     "name": "魂门",
+     "meridian": "足太阳膀胱经",
+     "code": "BL47"
+    },
+    {
+     "name": "阳纲",
+     "meridian": "足太阳膀胱经",
+     "code": "BL48"
+    },
+    {
+     "name": "意舍",
+     "meridian": "足太阳膀胱经",
+     "code": "BL49"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "External intercostals",
+     "zh": "肋间外肌",
+     "region": "胸壁与呼吸"
+    },
+    {
+     "en": "Internal intercostals",
+     "zh": "肋间内肌",
+     "region": "胸壁与呼吸"
+    },
+    {
+     "en": "Innermost intercostals",
+     "zh": "肋间最内肌",
+     "region": "胸壁与呼吸"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "胸壁与呼吸"
+   ]
+  },
+  {
+   "day": 33,
+   "date": "2026-11-13",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "胃仓",
+     "meridian": "足太阳膀胱经",
+     "code": "BL50"
+    },
+    {
+     "name": "肓门",
+     "meridian": "足太阳膀胱经",
+     "code": "BL51"
+    },
+    {
+     "name": "志室",
+     "meridian": "足太阳膀胱经",
+     "code": "BL52"
+    },
+    {
+     "name": "胞肓",
+     "meridian": "足太阳膀胱经",
+     "code": "BL53"
+    },
+    {
+     "name": "秩边",
+     "meridian": "足太阳膀胱经",
+     "code": "BL54"
+    },
+    {
+     "name": "合阳",
+     "meridian": "足太阳膀胱经",
+     "code": "BL55"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Diaphragm",
+     "zh": "膈肌",
+     "region": "胸壁与呼吸"
+    },
+    {
+     "en": "Transversus thoracis",
+     "zh": "胸横肌",
+     "region": "胸壁与呼吸"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "胸壁与呼吸"
+   ]
+  },
+  {
+   "day": 34,
+   "date": "2026-11-14",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "承筋",
+     "meridian": "足太阳膀胱经",
+     "code": "BL56"
+    },
+    {
+     "name": "承山",
+     "meridian": "足太阳膀胱经",
+     "code": "BL57"
+    },
+    {
+     "name": "飞扬",
+     "meridian": "足太阳膀胱经",
+     "code": "BL58"
+    },
+    {
+     "name": "跗阳",
+     "meridian": "足太阳膀胱经",
+     "code": "BL59"
+    },
+    {
+     "name": "昆仑",
+     "meridian": "足太阳膀胱经",
+     "code": "BL60"
+    },
+    {
+     "name": "仆参",
+     "meridian": "足太阳膀胱经",
+     "code": "BL61"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Levatores costarum",
+     "zh": "肋提肌",
+     "region": "胸壁与呼吸"
+    },
+    {
+     "en": "Subcostales",
+     "zh": "肋下肌",
+     "region": "胸壁与呼吸"
+    },
+    {
+     "en": "Rectus abdominis",
+     "zh": "腹直肌",
+     "region": "腹壁与盆底"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "胸壁与呼吸",
+    "腹壁与盆底"
+   ]
+  },
+  {
+   "day": 35,
+   "date": "2026-11-16",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "申脉",
+     "meridian": "足太阳膀胱经",
+     "code": "BL62"
+    },
+    {
+     "name": "金门",
+     "meridian": "足太阳膀胱经",
+     "code": "BL63"
+    },
+    {
+     "name": "京骨",
+     "meridian": "足太阳膀胱经",
+     "code": "BL64"
+    },
+    {
+     "name": "束骨",
+     "meridian": "足太阳膀胱经",
+     "code": "BL65"
+    },
+    {
+     "name": "足通谷",
+     "meridian": "足太阳膀胱经",
+     "code": "BL66"
+    },
+    {
+     "name": "至阴",
+     "meridian": "足太阳膀胱经",
+     "code": "BL67"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "External oblique",
+     "zh": "腹外斜肌",
+     "region": "腹壁与盆底"
+    },
+    {
+     "en": "Internal oblique",
+     "zh": "腹内斜肌",
+     "region": "腹壁与盆底"
+    }
+   ],
+   "meridians": [
+    "足太阳膀胱经"
+   ],
+   "regions": [
+    "腹壁与盆底"
+   ]
+  },
+  {
+   "day": 36,
+   "date": "2026-11-17",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "涌泉",
+     "meridian": "足少阴肾经",
+     "code": "KI1"
+    },
+    {
+     "name": "然谷",
+     "meridian": "足少阴肾经",
+     "code": "KI2"
+    },
+    {
+     "name": "太溪",
+     "meridian": "足少阴肾经",
+     "code": "KI3"
+    },
+    {
+     "name": "大钟",
+     "meridian": "足少阴肾经",
+     "code": "KI4"
+    },
+    {
+     "name": "水泉",
+     "meridian": "足少阴肾经",
+     "code": "KI5"
+    },
+    {
+     "name": "照海",
+     "meridian": "足少阴肾经",
+     "code": "KI6"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Transversus abdominis",
+     "zh": "腹横肌",
+     "region": "腹壁与盆底"
+    },
+    {
+     "en": "Pyramidalis",
+     "zh": "锥状肌",
+     "region": "腹壁与盆底"
+    },
+    {
+     "en": "Levator ani",
+     "zh": "肛提肌",
+     "region": "腹壁与盆底"
+    }
+   ],
+   "meridians": [
+    "足少阴肾经"
+   ],
+   "regions": [
+    "腹壁与盆底"
+   ]
+  },
+  {
+   "day": 37,
+   "date": "2026-11-18",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "复溜",
+     "meridian": "足少阴肾经",
+     "code": "KI7"
+    },
+    {
+     "name": "交信",
+     "meridian": "足少阴肾经",
+     "code": "KI8"
+    },
+    {
+     "name": "筑宾",
+     "meridian": "足少阴肾经",
+     "code": "KI9"
+    },
+    {
+     "name": "阴谷",
+     "meridian": "足少阴肾经",
+     "code": "KI10"
+    },
+    {
+     "name": "横骨",
+     "meridian": "足少阴肾经",
+     "code": "KI11"
+    },
+    {
+     "name": "大赫",
+     "meridian": "足少阴肾经",
+     "code": "KI12"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Coccygeus",
+     "zh": "尾骨肌",
+     "region": "腹壁与盆底"
+    },
+    {
+     "en": "Psoas major",
+     "zh": "腰大肌",
+     "region": "髋部与臀部"
+    }
+   ],
+   "meridians": [
+    "足少阴肾经"
+   ],
+   "regions": [
+    "腹壁与盆底",
+    "髋部与臀部"
+   ]
+  },
+  {
+   "day": 38,
+   "date": "2026-11-19",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "气穴",
+     "meridian": "足少阴肾经",
+     "code": "KI13"
+    },
+    {
+     "name": "四满",
+     "meridian": "足少阴肾经",
+     "code": "KI14"
+    },
+    {
+     "name": "中注",
+     "meridian": "足少阴肾经",
+     "code": "KI15"
+    },
+    {
+     "name": "肓俞",
+     "meridian": "足少阴肾经",
+     "code": "KI16"
+    },
+    {
+     "name": "商曲",
+     "meridian": "足少阴肾经",
+     "code": "KI17"
+    },
+    {
+     "name": "石关",
+     "meridian": "足少阴肾经",
+     "code": "KI18"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Iliacus",
+     "zh": "髂肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Psoas minor",
+     "zh": "腰小肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Gluteus maximus",
+     "zh": "臀大肌",
+     "region": "髋部与臀部"
+    }
+   ],
+   "meridians": [
+    "足少阴肾经"
+   ],
+   "regions": [
+    "髋部与臀部"
+   ]
+  },
+  {
+   "day": 39,
+   "date": "2026-11-20",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "阴都",
+     "meridian": "足少阴肾经",
+     "code": "KI19"
+    },
+    {
+     "name": "腹通谷",
+     "meridian": "足少阴肾经",
+     "code": "KI20"
+    },
+    {
+     "name": "幽门",
+     "meridian": "足少阴肾经",
+     "code": "KI21"
+    },
+    {
+     "name": "步廊",
+     "meridian": "足少阴肾经",
+     "code": "KI22"
+    },
+    {
+     "name": "神封",
+     "meridian": "足少阴肾经",
+     "code": "KI23"
+    },
+    {
+     "name": "灵墟",
+     "meridian": "足少阴肾经",
+     "code": "KI24"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Gluteus medius",
+     "zh": "臀中肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Gluteus minimus",
+     "zh": "臀小肌",
+     "region": "髋部与臀部"
+    }
+   ],
+   "meridians": [
+    "足少阴肾经"
+   ],
+   "regions": [
+    "髋部与臀部"
+   ]
+  },
+  {
+   "day": 40,
+   "date": "2026-11-21",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "神藏",
+     "meridian": "足少阴肾经",
+     "code": "KI25"
+    },
+    {
+     "name": "彧中",
+     "meridian": "足少阴肾经",
+     "code": "KI26"
+    },
+    {
+     "name": "俞府",
+     "meridian": "足少阴肾经",
+     "code": "KI27"
+    },
+    {
+     "name": "隐白",
+     "meridian": "足太阴脾经",
+     "code": "SP1"
+    },
+    {
+     "name": "大都",
+     "meridian": "足太阴脾经",
+     "code": "SP2"
+    },
+    {
+     "name": "太白",
+     "meridian": "足太阴脾经",
+     "code": "SP3"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Tensor fasciae latae",
+     "zh": "阔筋膜张肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Piriformis",
+     "zh": "梨状肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Superior gemellus",
+     "zh": "上孖肌",
+     "region": "髋部与臀部"
+    }
+   ],
+   "meridians": [
+    "足少阴肾经",
+    "足太阴脾经"
+   ],
+   "regions": [
+    "髋部与臀部"
+   ]
+  },
+  {
+   "day": 41,
+   "date": "2026-11-23",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "公孙",
+     "meridian": "足太阴脾经",
+     "code": "SP4"
+    },
+    {
+     "name": "商丘",
+     "meridian": "足太阴脾经",
+     "code": "SP5"
+    },
+    {
+     "name": "三阴交",
+     "meridian": "足太阴脾经",
+     "code": "SP6"
+    },
+    {
+     "name": "漏谷",
+     "meridian": "足太阴脾经",
+     "code": "SP7"
+    },
+    {
+     "name": "地机",
+     "meridian": "足太阴脾经",
+     "code": "SP8"
+    },
+    {
+     "name": "阴陵泉",
+     "meridian": "足太阴脾经",
+     "code": "SP9"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Inferior gemellus",
+     "zh": "下孖肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Obturator internus",
+     "zh": "闭孔内肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Obturator externus",
+     "zh": "闭孔外肌",
+     "region": "髋部与臀部"
+    }
+   ],
+   "meridians": [
+    "足太阴脾经"
+   ],
+   "regions": [
+    "髋部与臀部"
+   ]
+  },
+  {
+   "day": 42,
+   "date": "2026-11-24",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "血海",
+     "meridian": "足太阴脾经",
+     "code": "SP10"
+    },
+    {
+     "name": "箕门",
+     "meridian": "足太阴脾经",
+     "code": "SP11"
+    },
+    {
+     "name": "冲门",
+     "meridian": "足太阴脾经",
+     "code": "SP12"
+    },
+    {
+     "name": "府舍",
+     "meridian": "足太阴脾经",
+     "code": "SP13"
+    },
+    {
+     "name": "腹结",
+     "meridian": "足太阴脾经",
+     "code": "SP14"
+    },
+    {
+     "name": "大横",
+     "meridian": "足太阴脾经",
+     "code": "SP15"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Quadratus femoris",
+     "zh": "股方肌",
+     "region": "髋部与臀部"
+    },
+    {
+     "en": "Sartorius",
+     "zh": "缝匠肌",
+     "region": "大腿"
+    }
+   ],
+   "meridians": [
+    "足太阴脾经"
+   ],
+   "regions": [
+    "髋部与臀部",
+    "大腿"
+   ]
+  },
+  {
+   "day": 43,
+   "date": "2026-11-25",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "腹哀",
+     "meridian": "足太阴脾经",
+     "code": "SP16"
+    },
+    {
+     "name": "食窦",
+     "meridian": "足太阴脾经",
+     "code": "SP17"
+    },
+    {
+     "name": "天溪",
+     "meridian": "足太阴脾经",
+     "code": "SP18"
+    },
+    {
+     "name": "胸乡",
+     "meridian": "足太阴脾经",
+     "code": "SP19"
+    },
+    {
+     "name": "周荣",
+     "meridian": "足太阴脾经",
+     "code": "SP20"
+    },
+    {
+     "name": "大包",
+     "meridian": "足太阴脾经",
+     "code": "SP21"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Rectus femoris",
+     "zh": "股直肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Vastus lateralis",
+     "zh": "股外侧肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Vastus medialis",
+     "zh": "股内侧肌",
+     "region": "大腿"
+    }
+   ],
+   "meridians": [
+    "足太阴脾经"
+   ],
+   "regions": [
+    "大腿"
+   ]
+  },
+  {
+   "day": 44,
+   "date": "2026-11-26",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "大敦",
+     "meridian": "足厥阴肝经",
+     "code": "LR1"
+    },
+    {
+     "name": "行间",
+     "meridian": "足厥阴肝经",
+     "code": "LR2"
+    },
+    {
+     "name": "太冲",
+     "meridian": "足厥阴肝经",
+     "code": "LR3"
+    },
+    {
+     "name": "中封",
+     "meridian": "足厥阴肝经",
+     "code": "LR4"
+    },
+    {
+     "name": "蠡沟",
+     "meridian": "足厥阴肝经",
+     "code": "LR5"
+    },
+    {
+     "name": "中都",
+     "meridian": "足厥阴肝经",
+     "code": "LR6"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Vastus intermedius",
+     "zh": "股中间肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Pectineus",
+     "zh": "耻骨肌",
+     "region": "大腿"
+    }
+   ],
+   "meridians": [
+    "足厥阴肝经"
+   ],
+   "regions": [
+    "大腿"
+   ]
+  },
+  {
+   "day": 45,
+   "date": "2026-11-27",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "膝关",
+     "meridian": "足厥阴肝经",
+     "code": "LR7"
+    },
+    {
+     "name": "曲泉",
+     "meridian": "足厥阴肝经",
+     "code": "LR8"
+    },
+    {
+     "name": "阴包",
+     "meridian": "足厥阴肝经",
+     "code": "LR9"
+    },
+    {
+     "name": "足五里",
+     "meridian": "足厥阴肝经",
+     "code": "LR10"
+    },
+    {
+     "name": "阴廉",
+     "meridian": "足厥阴肝经",
+     "code": "LR11"
+    },
+    {
+     "name": "急脉",
+     "meridian": "足厥阴肝经",
+     "code": "LR12"
+    },
+    {
+     "name": "章门",
+     "meridian": "足厥阴肝经",
+     "code": "LR13"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Adductor longus",
+     "zh": "长收肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Adductor brevis",
+     "zh": "短收肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Adductor magnus",
+     "zh": "大收肌",
+     "region": "大腿"
+    }
+   ],
+   "meridians": [
+    "足厥阴肝经"
+   ],
+   "regions": [
+    "大腿"
+   ]
+  },
+  {
+   "day": 46,
+   "date": "2026-11-28",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "期门",
+     "meridian": "足厥阴肝经",
+     "code": "LR14"
+    },
+    {
+     "name": "承泣",
+     "meridian": "足阳明胃经",
+     "code": "ST1"
+    },
+    {
+     "name": "四白",
+     "meridian": "足阳明胃经",
+     "code": "ST2"
+    },
+    {
+     "name": "巨髎",
+     "meridian": "足阳明胃经",
+     "code": "ST3"
+    },
+    {
+     "name": "地仓",
+     "meridian": "足阳明胃经",
+     "code": "ST4"
+    },
+    {
+     "name": "大迎",
+     "meridian": "足阳明胃经",
+     "code": "ST5"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Gracilis",
+     "zh": "股薄肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Biceps femoris",
+     "zh": "股二头肌",
+     "region": "大腿"
+    }
+   ],
+   "meridians": [
+    "足厥阴肝经",
+    "足阳明胃经"
+   ],
+   "regions": [
+    "大腿"
+   ]
+  },
+  {
+   "day": 47,
+   "date": "2026-11-30",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "颊车",
+     "meridian": "足阳明胃经",
+     "code": "ST6"
+    },
+    {
+     "name": "下关",
+     "meridian": "足阳明胃经",
+     "code": "ST7"
+    },
+    {
+     "name": "头维",
+     "meridian": "足阳明胃经",
+     "code": "ST8"
+    },
+    {
+     "name": "人迎",
+     "meridian": "足阳明胃经",
+     "code": "ST9"
+    },
+    {
+     "name": "水突",
+     "meridian": "足阳明胃经",
+     "code": "ST10"
+    },
+    {
+     "name": "气舍",
+     "meridian": "足阳明胃经",
+     "code": "ST11"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Semitendinosus",
+     "zh": "半腱肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Semimembranosus",
+     "zh": "半膜肌",
+     "region": "大腿"
+    },
+    {
+     "en": "Tibialis anterior",
+     "zh": "胫骨前肌",
+     "region": "小腿"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "大腿",
+    "小腿"
+   ]
+  },
+  {
+   "day": 48,
+   "date": "2026-12-01",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "缺盆",
+     "meridian": "足阳明胃经",
+     "code": "ST12"
+    },
+    {
+     "name": "气户",
+     "meridian": "足阳明胃经",
+     "code": "ST13"
+    },
+    {
+     "name": "库房",
+     "meridian": "足阳明胃经",
+     "code": "ST14"
+    },
+    {
+     "name": "屋翳",
+     "meridian": "足阳明胃经",
+     "code": "ST15"
+    },
+    {
+     "name": "膺窗",
+     "meridian": "足阳明胃经",
+     "code": "ST16"
+    },
+    {
+     "name": "乳中",
+     "meridian": "足阳明胃经",
+     "code": "ST17"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Extensor hallucis longus",
+     "zh": "踇长伸肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Extensor digitorum longus",
+     "zh": "趾长伸肌",
+     "region": "小腿"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "小腿"
+   ]
+  },
+  {
+   "day": 49,
+   "date": "2026-12-02",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "乳根",
+     "meridian": "足阳明胃经",
+     "code": "ST18"
+    },
+    {
+     "name": "不容",
+     "meridian": "足阳明胃经",
+     "code": "ST19"
+    },
+    {
+     "name": "承满",
+     "meridian": "足阳明胃经",
+     "code": "ST20"
+    },
+    {
+     "name": "梁门",
+     "meridian": "足阳明胃经",
+     "code": "ST21"
+    },
+    {
+     "name": "关门",
+     "meridian": "足阳明胃经",
+     "code": "ST22"
+    },
+    {
+     "name": "太乙",
+     "meridian": "足阳明胃经",
+     "code": "ST23"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Fibularis tertius",
+     "zh": "第三腓骨肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Fibularis longus",
+     "zh": "腓骨长肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Fibularis brevis",
+     "zh": "腓骨短肌",
+     "region": "小腿"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "小腿"
+   ]
+  },
+  {
+   "day": 50,
+   "date": "2026-12-03",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "滑肉门",
+     "meridian": "足阳明胃经",
+     "code": "ST24"
+    },
+    {
+     "name": "天枢",
+     "meridian": "足阳明胃经",
+     "code": "ST25"
+    },
+    {
+     "name": "外陵",
+     "meridian": "足阳明胃经",
+     "code": "ST26"
+    },
+    {
+     "name": "大巨",
+     "meridian": "足阳明胃经",
+     "code": "ST27"
+    },
+    {
+     "name": "水道",
+     "meridian": "足阳明胃经",
+     "code": "ST28"
+    },
+    {
+     "name": "归来",
+     "meridian": "足阳明胃经",
+     "code": "ST29"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Gastrocnemius",
+     "zh": "腓肠肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Soleus",
+     "zh": "比目鱼肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Plantaris",
+     "zh": "跖肌",
+     "region": "小腿"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "小腿"
+   ]
+  },
+  {
+   "day": 51,
+   "date": "2026-12-04",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "气冲",
+     "meridian": "足阳明胃经",
+     "code": "ST30"
+    },
+    {
+     "name": "髀关",
+     "meridian": "足阳明胃经",
+     "code": "ST31"
+    },
+    {
+     "name": "伏兔",
+     "meridian": "足阳明胃经",
+     "code": "ST32"
+    },
+    {
+     "name": "阴市",
+     "meridian": "足阳明胃经",
+     "code": "ST33"
+    },
+    {
+     "name": "梁丘",
+     "meridian": "足阳明胃经",
+     "code": "ST34"
+    },
+    {
+     "name": "犊鼻",
+     "meridian": "足阳明胃经",
+     "code": "ST35"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Popliteus",
+     "zh": "腘肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Tibialis posterior",
+     "zh": "胫骨后肌",
+     "region": "小腿"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "小腿"
+   ]
+  },
+  {
+   "day": 52,
+   "date": "2026-12-05",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "足三里",
+     "meridian": "足阳明胃经",
+     "code": "ST36"
+    },
+    {
+     "name": "上巨虚",
+     "meridian": "足阳明胃经",
+     "code": "ST37"
+    },
+    {
+     "name": "条口",
+     "meridian": "足阳明胃经",
+     "code": "ST38"
+    },
+    {
+     "name": "下巨虚",
+     "meridian": "足阳明胃经",
+     "code": "ST39"
+    },
+    {
+     "name": "丰隆",
+     "meridian": "足阳明胃经",
+     "code": "ST40"
+    },
+    {
+     "name": "解溪",
+     "meridian": "足阳明胃经",
+     "code": "ST41"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor digitorum longus",
+     "zh": "趾长屈肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Flexor hallucis longus",
+     "zh": "踇长屈肌",
+     "region": "小腿"
+    },
+    {
+     "en": "Extensor digitorum brevis",
+     "zh": "趾短伸肌",
+     "region": "足"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经"
+   ],
+   "regions": [
+    "小腿",
+    "足"
+   ]
+  },
+  {
+   "day": 53,
+   "date": "2026-12-07",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "冲阳",
+     "meridian": "足阳明胃经",
+     "code": "ST42"
+    },
+    {
+     "name": "陷谷",
+     "meridian": "足阳明胃经",
+     "code": "ST43"
+    },
+    {
+     "name": "内庭",
+     "meridian": "足阳明胃经",
+     "code": "ST44"
+    },
+    {
+     "name": "厉兑",
+     "meridian": "足阳明胃经",
+     "code": "ST45"
+    },
+    {
+     "name": "瞳子髎",
+     "meridian": "足少阳胆经",
+     "code": "GB1"
+    },
+    {
+     "name": "听会",
+     "meridian": "足少阳胆经",
+     "code": "GB2"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Extensor hallucis brevis",
+     "zh": "踇短伸肌",
+     "region": "足"
+    },
+    {
+     "en": "Abductor hallucis",
+     "zh": "踇展肌",
+     "region": "足"
+    }
+   ],
+   "meridians": [
+    "足阳明胃经",
+    "足少阳胆经"
+   ],
+   "regions": [
+    "足"
+   ]
+  },
+  {
+   "day": 54,
+   "date": "2026-12-08",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "上关",
+     "meridian": "足少阳胆经",
+     "code": "GB3"
+    },
+    {
+     "name": "颔厌",
+     "meridian": "足少阳胆经",
+     "code": "GB4"
+    },
+    {
+     "name": "悬颅",
+     "meridian": "足少阳胆经",
+     "code": "GB5"
+    },
+    {
+     "name": "悬厘",
+     "meridian": "足少阳胆经",
+     "code": "GB6"
+    },
+    {
+     "name": "曲鬓",
+     "meridian": "足少阳胆经",
+     "code": "GB7"
+    },
+    {
+     "name": "率谷",
+     "meridian": "足少阳胆经",
+     "code": "GB8"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Flexor digitorum brevis",
+     "zh": "趾短屈肌",
+     "region": "足"
+    },
+    {
+     "en": "Abductor digiti minimi (foot)",
+     "zh": "小趾展肌",
+     "region": "足"
+    },
+    {
+     "en": "Quadratus plantae",
+     "zh": "足底方肌",
+     "region": "足"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "足"
+   ]
+  },
+  {
+   "day": 55,
+   "date": "2026-12-09",
+   "weekday": "三",
+   "acupoints": [
+    {
+     "name": "天冲",
+     "meridian": "足少阳胆经",
+     "code": "GB9"
+    },
+    {
+     "name": "浮白",
+     "meridian": "足少阳胆经",
+     "code": "GB10"
+    },
+    {
+     "name": "头窍阴",
+     "meridian": "足少阳胆经",
+     "code": "GB11"
+    },
+    {
+     "name": "完骨",
+     "meridian": "足少阳胆经",
+     "code": "GB12"
+    },
+    {
+     "name": "本神",
+     "meridian": "足少阳胆经",
+     "code": "GB13"
+    },
+    {
+     "name": "阳白",
+     "meridian": "足少阳胆经",
+     "code": "GB14"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Lumbricals (foot)",
+     "zh": "蚓状肌（足）",
+     "region": "足"
+    },
+    {
+     "en": "Flexor hallucis brevis",
+     "zh": "踇短屈肌",
+     "region": "足"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "足"
+   ]
+  },
+  {
+   "day": 56,
+   "date": "2026-12-10",
+   "weekday": "四",
+   "acupoints": [
+    {
+     "name": "头临泣",
+     "meridian": "足少阳胆经",
+     "code": "GB15"
+    },
+    {
+     "name": "目窗",
+     "meridian": "足少阳胆经",
+     "code": "GB16"
+    },
+    {
+     "name": "正营",
+     "meridian": "足少阳胆经",
+     "code": "GB17"
+    },
+    {
+     "name": "承灵",
+     "meridian": "足少阳胆经",
+     "code": "GB18"
+    },
+    {
+     "name": "脑空",
+     "meridian": "足少阳胆经",
+     "code": "GB19"
+    },
+    {
+     "name": "风池",
+     "meridian": "足少阳胆经",
+     "code": "GB20"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Adductor hallucis",
+     "zh": "踇收肌",
+     "region": "足"
+    },
+    {
+     "en": "Flexor digiti minimi brevis (foot)",
+     "zh": "小趾短屈肌",
+     "region": "足"
+    },
+    {
+     "en": "Plantar interossei",
+     "zh": "骨间足底肌",
+     "region": "足"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "足"
+   ]
+  },
+  {
+   "day": 57,
+   "date": "2026-12-11",
+   "weekday": "五",
+   "acupoints": [
+    {
+     "name": "肩井",
+     "meridian": "足少阳胆经",
+     "code": "GB21"
+    },
+    {
+     "name": "渊腋",
+     "meridian": "足少阳胆经",
+     "code": "GB22"
+    },
+    {
+     "name": "辄筋",
+     "meridian": "足少阳胆经",
+     "code": "GB23"
+    },
+    {
+     "name": "日月",
+     "meridian": "足少阳胆经",
+     "code": "GB24"
+    },
+    {
+     "name": "京门",
+     "meridian": "足少阳胆经",
+     "code": "GB25"
+    },
+    {
+     "name": "带脉",
+     "meridian": "足少阳胆经",
+     "code": "GB26"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Dorsal interossei (foot)",
+     "zh": "骨间背侧肌（足）",
+     "region": "足"
+    },
+    {
+     "en": "Masseter",
+     "zh": "咬肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "足",
+    "头面部（咀嚼肌与主要表情肌）"
+   ]
+  },
+  {
+   "day": 58,
+   "date": "2026-12-12",
+   "weekday": "六",
+   "acupoints": [
+    {
+     "name": "五枢",
+     "meridian": "足少阳胆经",
+     "code": "GB27"
+    },
+    {
+     "name": "维道",
+     "meridian": "足少阳胆经",
+     "code": "GB28"
+    },
+    {
+     "name": "居髎",
+     "meridian": "足少阳胆经",
+     "code": "GB29"
+    },
+    {
+     "name": "环跳",
+     "meridian": "足少阳胆经",
+     "code": "GB30"
+    },
+    {
+     "name": "风市",
+     "meridian": "足少阳胆经",
+     "code": "GB31"
+    },
+    {
+     "name": "中渎",
+     "meridian": "足少阳胆经",
+     "code": "GB32"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Temporalis",
+     "zh": "颞肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    },
+    {
+     "en": "Medial pterygoid",
+     "zh": "翼内肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    },
+    {
+     "en": "Lateral pterygoid",
+     "zh": "翼外肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "头面部（咀嚼肌与主要表情肌）"
+   ]
+  },
+  {
+   "day": 59,
+   "date": "2026-12-14",
+   "weekday": "一",
+   "acupoints": [
+    {
+     "name": "膝阳关",
+     "meridian": "足少阳胆经",
+     "code": "GB33"
+    },
+    {
+     "name": "阳陵泉",
+     "meridian": "足少阳胆经",
+     "code": "GB34"
+    },
+    {
+     "name": "阳交",
+     "meridian": "足少阳胆经",
+     "code": "GB35"
+    },
+    {
+     "name": "外丘",
+     "meridian": "足少阳胆经",
+     "code": "GB36"
+    },
+    {
+     "name": "光明",
+     "meridian": "足少阳胆经",
+     "code": "GB37"
+    },
+    {
+     "name": "阳辅",
+     "meridian": "足少阳胆经",
+     "code": "GB38"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Occipitofrontalis",
+     "zh": "枕额肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    },
+    {
+     "en": "Orbicularis oculi",
+     "zh": "眼轮匝肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "头面部（咀嚼肌与主要表情肌）"
+   ]
+  },
+  {
+   "day": 60,
+   "date": "2026-12-15",
+   "weekday": "二",
+   "acupoints": [
+    {
+     "name": "悬钟",
+     "meridian": "足少阳胆经",
+     "code": "GB39"
+    },
+    {
+     "name": "丘墟",
+     "meridian": "足少阳胆经",
+     "code": "GB40"
+    },
+    {
+     "name": "足临泣",
+     "meridian": "足少阳胆经",
+     "code": "GB41"
+    },
+    {
+     "name": "地五会",
+     "meridian": "足少阳胆经",
+     "code": "GB42"
+    },
+    {
+     "name": "侠溪",
+     "meridian": "足少阳胆经",
+     "code": "GB43"
+    },
+    {
+     "name": "足窍阴",
+     "meridian": "足少阳胆经",
+     "code": "GB44"
+    }
+   ],
+   "muscles": [
+    {
+     "en": "Orbicularis oris",
+     "zh": "口轮匝肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    },
+    {
+     "en": "Buccinator",
+     "zh": "颊肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    },
+    {
+     "en": "Zygomaticus major",
+     "zh": "颧大肌",
+     "region": "头面部（咀嚼肌与主要表情肌）"
+    }
+   ],
+   "meridians": [
+    "足少阳胆经"
+   ],
+   "regions": [
+    "头面部（咀嚼肌与主要表情肌）"
+   ]
+  }
+ ],
+ "weekly_review_days": [
+  "2026-10-11",
+  "2026-10-18",
+  "2026-10-25",
+  "2026-11-01",
+  "2026-11-08",
+  "2026-11-15",
+  "2026-11-22",
+  "2026-11-29",
+  "2026-12-06",
+  "2026-12-13"
+ ],
+ "final_review": [
+  "2026-12-16",
+  "2026-12-17",
+  "2026-12-18",
+  "2026-12-19",
+  "2026-12-20",
+  "2026-12-21",
+  "2026-12-22",
+  "2026-12-23"
+ ],
+ "already_learned": [
+  {
+   "en": "Supraspinatus",
+   "zh": "冈上肌",
+   "region": "肩带与肩部",
+   "learned": "2026-10-06"
+  },
+  {
+   "en": "Infraspinatus",
+   "zh": "冈下肌",
+   "region": "肩带与肩部",
+   "learned": "2026-10-06"
+  },
+  {
+   "en": "Teres minor",
+   "zh": "小圆肌",
+   "region": "肩带与肩部",
+   "learned": "2026-10-06"
+  },
+  {
+   "en": "Subscapularis",
+   "zh": "肩胛下肌",
+   "region": "肩带与肩部",
+   "learned": "2026-10-06"
+  }
+ ],
+ "phase2_after_2026-12-23": "全身其余肌肉：其余表情肌、眼外肌、舌肌、腭肌、喉肌、会阴部肌等，1 月完成",
+ "counts": {
+  "acupoints": 362,
+  "muscles_new": 153,
+  "muscles_learned": 4
+ }
+}

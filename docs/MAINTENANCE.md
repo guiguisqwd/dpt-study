@@ -31,6 +31,7 @@
 | Claude 独立阅读版 | `肩部3D学习/public/reading-claude.html`，独立维护，标准构建不得覆盖 |
 | 离线导出与发布包 | `output/pdf/`、`reading-source/export-pdf.py`、`reading-source/prepare-web-release.py`；`website-release/` 是生成输出 |
 | 自动检查与 GitHub Pages | `tests/`、`.github/workflows/pages.yml` |
+| 每日学习包（60 天十四经穴 + 肌肉计划） | `daily/pipeline.py`（分步执行、留证据、`verify` 总检查）、`daily/days/<date>/`、`daily/runs/`；网站入口 `daily/index.html` |
 
 构建和编辑边界见 [README](../README.md)；协作、提交与推送规则见 [CLAUDE.md](../CLAUDE.md)。新增主题按 [ADDING_A_TOPIC.md](./ADDING_A_TOPIC.md) 操作，内容和人工核验要求见 [QUALITY_RULES.md](../platform/QUALITY_RULES.md)，无需在每次新建关节课程时重新约定。
 
