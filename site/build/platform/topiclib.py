@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 ID = re.compile(r'^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$')
 SECTIONS = [
     ('anatomy', 'Anatomy', '解剖基础'),
@@ -51,8 +51,8 @@ def skeleton(topic_id, en, zh, region_en='', region_zh=''):
         'review': [], 'papers': [], 'sources': [],
         'nerveNotation': json.loads(json.dumps(NERVE_NOTATION)),
         'qa': {'reviewedBy': '', 'reviewedOn': '', 'checks': {k: False for k in QA_CHECKS}}}
-    manifest_template = ROOT / 'platform/templates/topic.json'
-    content_template = ROOT / 'platform/templates/content.json'
+    manifest_template = ROOT / 'site/build/platform/templates/topic.json'
+    content_template = ROOT / 'site/build/platform/templates/content.json'
     if manifest_template.exists(): manifest = {**read_json(manifest_template), **manifest}
     if content_template.exists(): content = read_json(content_template)
     return manifest, content
@@ -81,7 +81,7 @@ def inside(base, relative):
 def catalog_models(root=ROOT):
     result = {}
     for system in ['skeletal', 'muscular']:
-        path = Path(root) / '肩部3D学习/public/models' / (system + '.metadata.json')
+        path = Path(root) / 'library/shoulder/3d/public/models' / (system + '.metadata.json')
         for s in read_json(path)['structures']:
             result[s['id']] = s
     return result
@@ -157,9 +157,9 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
     errors, missing = [], []
     models = catalog_models(root) if models is None else models
     topic_dir = Path(topic_dir)
-    errors.extend(validate_shape(manifest, read_json(ROOT / 'platform/topic.schema.json'), 'topic'))
+    errors.extend(validate_shape(manifest, read_json(ROOT / 'site/build/platform/topic.schema.json'), 'topic'))
     if isinstance(manifest, dict) and manifest.get('adapter') == 'standard':
-        errors.extend(validate_shape(content, read_json(ROOT / 'platform/content.schema.json'), 'content'))
+        errors.extend(validate_shape(content, read_json(ROOT / 'site/build/platform/content.schema.json'), 'content'))
     if errors: return errors, missing
     ready = published_override or manifest.get('status') == 'published'
 
@@ -244,7 +244,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
     if manifest.get('adapter') == 'shoulder':
         # One explicit backwards-compatibility adapter, never a bypass for new courses.
         if tid != 'shoulder': fail('The shoulder adapter is reserved for the existing shoulder topic')
-        for relative in ['reading-source/sections/01-anatomy.html', '肩部3D学习/public/reading.html', '肩部3D学习/public/reading-claude.html']:
+        for relative in ['library/shoulder/text/sections/01-anatomy.html', 'library/shoulder/3d/public/reading.html', 'library/shoulder/3d/public/reading-claude.html']:
             if not (Path(root) / relative).is_file(): fail('Missing preserved shoulder source: ' + relative)
         return errors, missing
 
@@ -276,8 +276,8 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         try:
             asset = inside(topic_dir, diagram.get('file'))
             if asset.suffix.lower() != '.svg': raise ValueError('Anatomical diagrams must be editable SVG files')
-            if not str(diagram.get('file')).startswith('assets/'):
-                raise ValueError('Topic diagrams must be stored under assets/')
+            if not str(diagram.get('file')).startswith('figures/'):
+                raise ValueError('Topic diagrams must be stored under figures/')
             svg = ET.fromstring(asset.read_text())
             if svg.tag.split('}')[-1] != 'svg': raise ValueError('Expected an SVG root element')
             for element in svg.iter():
@@ -385,7 +385,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
 
 
 def discover(topics_dir=None, root=ROOT):
-    topics_dir = Path(topics_dir or Path(root) / 'topics')
+    topics_dir = Path(topics_dir or Path(root) / 'library')
     result = []
     for path in sorted(topics_dir.glob('*/topic.json')):
         if path.parent.is_symlink(): raise ValueError('Symlinked topic directories are not allowed')
@@ -537,7 +537,7 @@ def render(manifest, content, missing):
 
 
 def build(topics_dir=None, output=None, root=ROOT):
-    output = Path(output or Path(root) / '肩部3D学习/public')
+    output = Path(output or Path(root) / 'library/shoulder/3d/public')
     records = discover(topics_dir, root)
     models = catalog_models(root)
     checked = []
@@ -569,5 +569,5 @@ def build(topics_dir=None, output=None, root=ROOT):
                 shutil.copy2(inside(path, manifest['pdf']['file']), destination)
         catalog.append(public_manifest)
     write_json(output / 'topics.json', {'schemaVersion': 1, 'topics': catalog})
-    shutil.copy2(Path(root) / 'platform/topic.css', output / 'topic.css')
+    shutil.copy2(Path(root) / 'site/build/platform/topic.css', output / 'topic.css')
     return catalog

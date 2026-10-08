@@ -6,8 +6,9 @@ import json
 import subprocess
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
-PUBLIC = ROOT / '肩部3D学习' / 'public'
+ROOT = Path(__file__).resolve().parents[2]
+PUBLIC = ROOT / 'library' / 'shoulder' / '3d' / 'public'
+DAILY_PUBLIC = ROOT / 'site' / 'public' / 'daily'
 
 
 def esc(value):
@@ -16,7 +17,7 @@ def esc(value):
 
 def daily_link():
     """Link to the daily study packs when the daily pipeline has published any (public/daily/index.html)."""
-    if not (PUBLIC / 'daily' / 'index.html').exists():
+    if not (DAILY_PUBLIC / 'index.html').exists():
         return ''
     return ('<p class="daily-entry" style="margin:18px 0 0"><a href="./daily/index.html" style="font-weight:600">'
             'Daily study packs <span lang="zh-CN">每日学习包</span><span aria-hidden="true"> ↗</span></a></p>')
@@ -40,7 +41,7 @@ def build_library():
           <p>{esc(summary['en'])}<span class="translation" lang="zh-CN">{esc(summary['zh'])}</span></p>
           <a class="open-topic" href="{esc(home)}">{'Open topic' if ready else 'View topic'} <span lang="zh-CN">{'进入学习' if ready else '查看主题'}</span><span aria-hidden="true"> ↗</span></a>
         </article>''')
-    css = (ROOT / 'platform/library.css').read_text()
+    css = (ROOT / 'site/build/platform/library.css').read_text()
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Anatomy study · 解剖学习</title><style>{css}</style></head>
     <body><main><header><div class="eyebrow">ANATOMY · LANGUAGE · EVIDENCE</div><h1>Anatomy study<span lang="zh-CN">解剖学习</span></h1>
     <p class="intro">Explore a region. Follow its structures. Explain it in English.<span class="translation" lang="zh-CN">按部位学习结构与联系，用完整英语描述解剖。</span></p>
@@ -58,5 +59,5 @@ def build_library():
 
 
 if __name__ == '__main__':
-    subprocess.run([sys.executable, str(ROOT / 'scripts/build-topics.py')], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / 'site/build/build-topics.py')], cwd=ROOT, check=True)
     build_library()

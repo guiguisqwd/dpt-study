@@ -3,12 +3,12 @@
 import argparse
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'platform'))
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'platform'))
 from topiclib import ROOT, discover, validate
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--topics-dir', type=Path, default=ROOT / 'topics')
+    parser.add_argument('--topics-dir', type=Path, default=ROOT / 'library')
     parser.add_argument('--topic')
     parser.add_argument('--require-published', action='store_true', help='Require completed content and published status')
     args = parser.parse_args()

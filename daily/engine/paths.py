@@ -12,9 +12,9 @@ PLAN = DAILY / "plan" / "schedule.json"
 TEMPLATES = ENGINE / "templates"
 DATA = ENGINE / "data"
 QA_JS = ENGINE / "qa" / "qa.js"
-APP = REPO / "肩部3D学习"
+APP = REPO / "library" / "shoulder" / "3d"         # the 3D app the ?term= links are checked against
 APP_SRC = APP / "src"
-PUBLIC_DAILY = APP / "public" / "daily"
+PUBLIC_DAILY = REPO / "site" / "public" / "daily"  # website copy of every published pack
 CATALOG = DAILY / "catalog.json"
 
 # Mac archive (written by Claude through the device bridge; "~" = the user's home on the Mac)

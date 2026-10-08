@@ -11,9 +11,9 @@
     "test:geometry": "node scripts/validate-reference-geometry.mjs",
     "depth:compute": "node scripts/compute-acupoint-depth.mjs",
     "test:depth": "node scripts/compute-acupoint-depth.mjs --check",
-    "prepare:topics": "python3 ../scripts/build-platform.py",
-    "prebuild": "python3 ../scripts/build-platform.py",
-    "predev": "python3 ../scripts/build-platform.py"
+    "prepare:topics": "python3 ../../../site/build/build-platform.py",
+    "prebuild": "python3 ../../../site/build/build-platform.py",
+    "predev": "python3 ../../../site/build/build-platform.py"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

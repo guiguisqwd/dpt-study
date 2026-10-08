@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Publish a built day into the website source (肩部3D学习/public/daily/<date>/) and rebuild the
+"""Publish a built day into the website source (site/public/daily/<date>/) and rebuild the
 daily index page + daily/catalog.json. The GitHub Pages workflow ships public/daily/ on push to main."""
 import html, json, shutil
 from pathlib import Path

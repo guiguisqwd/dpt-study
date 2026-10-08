@@ -30,38 +30,38 @@ jobs:
 
       - uses: pnpm/action-setup@v6
         with:
-          package_json_file: 肩部3D学习/package.json
+          package_json_file: library/shoulder/3d/package.json
           run_install: false
 
       - uses: actions/setup-python@v6
         with:
           python-version: '3.13'
           cache: pip
-          cache-dependency-path: reading-source/requirements-publish.txt
+          cache-dependency-path: site/build/requirements-publish.txt
 
       - name: Install publication dependencies
-        run: python -m pip install -r reading-source/requirements-publish.txt
+        run: python -m pip install -r site/build/requirements-publish.txt
 
       - name: Install locked application dependencies
-        working-directory: 肩部3D学习
+        working-directory: library/shoulder/3d
         run: pnpm install --frozen-lockfile
 
       - name: Rebuild and validate reading content and model links
-        run: python reading-source/build-reading.py
+        run: python library/shoulder/text/build-reading.py
 
       - name: Test topic scaffolding and publication requirements
         run: python -m unittest discover -s tests -v
 
       - name: Check geometric reference containment
-        working-directory: 肩部3D学习
+        working-directory: library/shoulder/3d
         run: pnpm test:geometry
 
       - name: Check acupoint depth data against the model
-        working-directory: 肩部3D学习
+        working-directory: library/shoulder/3d
         run: pnpm test:depth
 
       - name: Build the topic library, type-check and build the 3D application
-        working-directory: 肩部3D学习
+        working-directory: library/shoulder/3d
         run: pnpm build
 
       - name: Read the configured Pages URL
@@ -75,7 +75,7 @@ jobs:
         run: |
           # PRs exercise the same URL-rewriting path without deploying.
           site_url="${SITE_URL:-https://example.invalid/dpt-study/}"
-          python reading-source/prepare-web-release.py --site-url "$site_url"
+          python site/build/prepare-web-release.py --site-url "$site_url"
 
       - name: Upload the complete Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

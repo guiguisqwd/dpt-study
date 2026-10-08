@@ -15,10 +15,11 @@ from reportlab.lib.pagesizes import A4, A3, landscape
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-BASE=Path(__file__).resolve().parents[1]
-ROOT=BASE.parents[1]
+HERE=Path(__file__).resolve().parent
+BASE=HERE.parent  # library/shoulder
+ROOT=Path(__file__).resolve().parents[5]
 TMP=ROOT/'tmp/pdfs/shoulder-export'
-OUT=BASE/'output/pdf/肩袖-英中双语学习简报.pdf'
+OUT=HERE/'肩袖-英中双语学习简报.pdf'
 INK=colors.HexColor('#243B33'); GREEN=colors.HexColor('#42695E'); GRAY=colors.HexColor('#626A64'); LINE=colors.HexColor('#D8DDD5')
 pdfmetrics.registerFont(TTFont('ArialUnicode','/System/Library/Fonts/Supplemental/Arial Unicode.ttf'))
 pdfmetrics.registerFont(TTFont('ArialRegular','/System/Library/Fonts/Supplemental/Arial.ttf'))
@@ -28,7 +29,7 @@ styles={}
 for name,size,lead,col,before,after in [('body',10.5,16.4,INK,0,7),('zh',9.7,16,GRAY,0,10),('h1',25,33,GREEN,0,19),('h2',19,26,GREEN,0,18),('h3',13.8,21,GREEN,14,10),('h4',11.6,18,GREEN,10,7),('small',8.4,13,GRAY,0,8),('cell',8.4,12.4,INK,0,0),('cellhead',8.6,13,GREEN,0,0),('caption',9.5,15,GRAY,10,0)]:
  styles[name]=ParagraphStyle(name,fontName='ArialUnicode',fontSize=size,leading=lead,textColor=col,spaceBefore=before,spaceAfter=after,wordWrap='CJK',allowWidows=0,allowOrphans=0,keepWithNext=name.startswith('h'))
 
-root=html.fromstring((BASE/'2026-10-06-肩袖-阅读优化版.html').read_text())
+root=html.fromstring((BASE/'text/2026-10-06-肩袖-阅读优化版.html').read_text())
 story=[]; inventory={'figures':[],'tables':0,'questions':0,'chapters':[]}; outlines=[]; consumed=set()
 
 def norm(s):
@@ -102,7 +103,7 @@ def figure(e):
   pending=story.pop()
  newpage(template)
  title=svg.xpath('./title')
- titletext=(pending.getPlainText() if pending else (text(title[0]) if title else next((p.stem[3:] for p in (BASE/'2026-10-06-肩袖-阅读优化版-资源').glob(num+'-*.svg')), 'Anatomical illustration · 解剖示意图')))
+ titletext=(pending.getPlainText() if pending else (text(title[0]) if title else next((p.stem[3:] for p in (BASE/'figures').glob(num+'-*.svg')), 'Anatomical illustration · 解剖示意图')))
  # SVG titles may be long; use their first English/Chinese pair as a clean plate heading.
  label=ptxt('FIGURE '+num+' · '+esc.escape(titletext),'h3')
  label.style=ParagraphStyle('plate-title',parent=styles['h3'],spaceBefore=0)

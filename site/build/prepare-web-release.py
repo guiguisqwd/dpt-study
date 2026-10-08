@@ -4,8 +4,9 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 import argparse, hashlib, json, os, re, shutil, zipfile
-ROOT=Path(__file__).resolve().parent.parent
-APP=ROOT/'肩部3D学习'
+ROOT=Path(__file__).resolve().parents[2]
+SHOULDER=ROOT/'library/shoulder'
+APP=SHOULDER/'3d'
 p=argparse.ArgumentParser();p.add_argument('--site-url',default='');a=p.parse_args()
 base=a.site_url.rstrip('/')+'/' if a.site_url else './'
 if a.site_url and not re.fullmatch(r'https://[A-Za-z0-9.-]+(?::\d+)?(?:/[A-Za-z0-9_/-]*)?/?',a.site_url):
@@ -25,8 +26,8 @@ for name in files:
 for name in ['assets','models','audio','licenses','topics']:
  shutil.copytree(APP/'dist'/name,DIST/name,dirs_exist_ok=True)
 # Daily study packs (daily/pipeline.py publishes them into public/daily/).
-if (APP/'dist'/'daily').is_dir():
- shutil.copytree(APP/'dist'/'daily',DIST/'daily',dirs_exist_ok=True)
+if (ROOT/'site/public/daily').is_dir():
+ shutil.copytree(ROOT/'site/public/daily',DIST/'daily',dirs_exist_ok=True)
  for f in (DIST/'daily').rglob('*.md'):
   page_base=base if a.site_url else os.path.relpath(DIST,f.parent)+'/'
   f.write_text(f.read_text().replace('http://127.0.0.1:5178/',page_base).replace('http://localhost:5178/',page_base))
@@ -35,12 +36,12 @@ for f in DIST.rglob('*.html'):
  s=f.read_text();s=s.replace('http://127.0.0.1:5178/',page_base).replace('http://localhost:5178/',page_base)
  f.write_text(s)
 # Portable article and figures for both people and tools that read text.
-assets=ROOT/'2026-10-06-肩袖-阅读优化版-资源'
+assets=SHOULDER/'figures'
 shutil.copytree(assets,DIST/'reading-assets',dirs_exist_ok=True)
-md=(ROOT/'2026-10-06-肩袖-阅读优化版.md').read_text().replace('http://127.0.0.1:5178/',base).replace(assets.name+'/','reading-assets/')
+md=(SHOULDER/'text/2026-10-06-肩袖-阅读优化版.md').read_text().replace('http://127.0.0.1:5178/',base).replace('../figures/','reading-assets/')
 (DIST/'reading.md').write_text(md)
 (DIST/'downloads').mkdir(exist_ok=True)
-pdf=ROOT/'output/pdf/肩袖-英中双语学习简报.pdf'
+pdf=SHOULDER/'pdf/肩袖-英中双语学习简报.pdf'
 if not pdf.is_file():raise SystemExit(f'Reviewed PDF is missing: {pdf}')
 shutil.copy2(pdf,DIST/'downloads/shoulder-bilingual.pdf')
 # Update only embedded PDF URL annotations when a real public origin is known; do not redraw pages.
@@ -61,7 +62,7 @@ with zipfile.ZipFile(DIST/'downloads/shoulder-markdown.zip','w',zipfile.ZIP_DEFL
  z.writestr('reading.md',md)
  for f in sorted((DIST/'reading-assets').glob('*.svg')):z.write(f,'reading-assets/'+f.name)
 (DIST/'content').mkdir(exist_ok=True)
-data={'title':'Shoulder study / 肩袖学习','muscles':json.loads((ROOT/'reading-source/data/muscles.json').read_text()),'model_links':json.loads((ROOT/'reading-source/data/model-links.json').read_text()),'humerus_landmarks':json.loads((APP/'src/humerus-landmarks.json').read_text()),'scapula_landmarks':json.loads((APP/'src/scapula-landmarks.json').read_text()),'scope':'Anatomical study references; not clinically calibrated acupoint or needling coordinates.'}
+data={'title':'Shoulder study / 肩袖学习','muscles':json.loads((SHOULDER/'text/data/muscles.json').read_text()),'model_links':json.loads((SHOULDER/'text/data/model-links.json').read_text()),'humerus_landmarks':json.loads((APP/'src/humerus-landmarks.json').read_text()),'scapula_landmarks':json.loads((APP/'src/scapula-landmarks.json').read_text()),'scope':'Anatomical study references; not clinically calibrated acupoint or needling coordinates.'}
 (DIST/'content/anatomy.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 catalog=json.loads((DIST/'topics.json').read_text())
 # Downloaded topic Markdown keeps its figure paths, while 3D links use the live site.

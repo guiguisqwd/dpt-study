@@ -16,7 +16,7 @@ C 是 cervical（颈部）的缩写，T 是 thoracic（胸部）的缩写。神�
 
 ### Suprascapular nerve: anatomical course｜肩胛上神经：解剖走行
 
-![Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.｜右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。](2026-10-06-肩袖-阅读优化版-资源/16-肩胛上神经-后肩解剖.svg)
+![Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.｜右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。](../figures/16-肩胛上神经-后肩解剖.svg)
 
 Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.
 
@@ -26,7 +26,7 @@ The suprascapular nerve arises from the superior trunk of the brachial plexus, u
 
 肩胛上神经起自臂丛上干，通常含 C5、C6 神经纤维。它向后外侧经过颈后三角，从肩胛上横韧带下方穿过肩胛上切迹，在冈上窝内发出支配冈上肌的运动支；随后绕过肩胛冈外侧端，经冈盂切迹进入冈下窝，支配冈下肌。
 
-![A compact route map to accompany the anatomy drawing.｜与解剖图配套的简明走行图。](2026-10-06-肩袖-阅读优化版-资源/06-肩胛上神经走行.svg)
+![A compact route map to accompany the anatomy drawing.｜与解剖图配套的简明走行图。](../figures/06-肩胛上神经走行.svg)
 
 A compact route map to accompany the anatomy drawing.
 
@@ -34,7 +34,7 @@ A compact route map to accompany the anatomy drawing.
 
 ### Axillary nerve: the quadrangular space｜腋神经：四边孔
 
-![Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.｜移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。](2026-10-06-肩袖-阅读优化版-资源/17-腋神经-四边孔解剖.svg)
+![Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.｜移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。](../figures/17-腋神经-四边孔解剖.svg)
 
 Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.
 
@@ -44,7 +44,7 @@ The axillary nerve arises from the posterior cord of the brachial plexus, mainly
 
 腋神经起自臂丛后束，主要含 C5、C6 神经纤维。它与旋肱后动脉一起向后穿过四边孔，在三角肌深面绕行肱骨外科颈。前支支配三角肌前部和中部；后支支配小圆肌及三角肌后部，并延续为臂外上侧皮神经。
 
-![A compact route map to accompany the anatomy drawing.｜与解剖图配套的简明走行图。](2026-10-06-肩袖-阅读优化版-资源/07-腋神经与四边孔.svg)
+![A compact route map to accompany the anatomy drawing.｜与解剖图配套的简明走行图。](../figures/07-腋神经与四边孔.svg)
 
 A compact route map to accompany the anatomy drawing.
 
@@ -56,7 +56,7 @@ The anterior rami of C5 and C6 unite to form the superior trunk. Each trunk divi
 
 C5、C6 脊神经的前支合成上干。各干再分为前股和后股；后股共同组成后束，腋神经和肩胛下神经从后束发出。肩胛上神经更早分出，直接起自上干。
 
-![Vertebrae, spinal nerve levels, and branches of the brachial plexus are labeled separately.｜椎骨、脊神经节段及臂丛分支分别标注。](2026-10-06-肩袖-阅读优化版-资源/08-臂丛全景.svg)
+![Vertebrae, spinal nerve levels, and branches of the brachial plexus are labeled separately.｜椎骨、脊神经节段及臂丛分支分别标注。](../figures/08-臂丛全景.svg)
 
 Vertebrae, spinal nerve levels, and branches of the brachial plexus are labeled separately.
 

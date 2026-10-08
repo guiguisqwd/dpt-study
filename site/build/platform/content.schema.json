@@ -494,7 +494,7 @@
           },
           "file": {
             "type": "string",
-            "pattern": "^assets/.*\\.svg$"
+            "pattern": "^figures/.*\\.svg$"
           },
           "alt": {
             "type": "object",

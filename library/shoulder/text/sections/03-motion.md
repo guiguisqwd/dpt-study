@@ -10,7 +10,7 @@ All four muscles also contribute to glenohumeral stability. A muscle’s attachm
 
 四块肌肉也都参与盂肱关节稳定。起止点的连线有助于解释肌肉作用，但实际运动还取决于关节位置及其他肌肉的活动。
 
-![Solid arrows show muscle pull; the separate O → I panel lists attachments.｜实线箭头表示肌肉拉力；独立的 O → I 面板列出起止点。](2026-10-06-肩袖-阅读优化版-资源/09-从力线理解外旋-内旋与外展.svg)
+![Solid arrows show muscle pull; the separate O → I panel lists attachments.｜实线箭头表示肌肉拉力；独立的 O → I 面板列出起止点。](../figures/09-从力线理解外旋-内旋与外展.svg)
 
 Solid arrows show muscle pull; the separate O → I panel lists attachments.
 
@@ -22,13 +22,13 @@ At the glenohumeral joint, the deltoid and rotator cuff work together to elevate
 
 在盂肱关节，三角肌与肩袖协同抬臂，并控制肱骨头的位置。在肩胛骨，上、下斜方肌与前锯肌协作，在上举过程中产生肩胛骨上旋。
 
-![Glenohumeral force couple: deltoid and rotator cuff, with an attachment reference panel.｜盂肱关节力偶：三角肌与肩袖；下方附起止点对照。](2026-10-06-肩袖-阅读优化版-资源/10-肩袖与三角肌的配合.svg)
+![Glenohumeral force couple: deltoid and rotator cuff, with an attachment reference panel.｜盂肱关节力偶：三角肌与肩袖；下方附起止点对照。](../figures/10-肩袖与三角肌的配合.svg)
 
 Glenohumeral force couple: deltoid and rotator cuff, with an attachment reference panel.
 
 盂肱关节力偶：三角肌与肩袖；下方附起止点对照。
 
-![Scapular upward rotation: trapezius and serratus anterior. Visible insertion regions are marked I.｜肩胛骨上旋：斜方肌与前锯肌。图中显示的止点区域用 I 标记。](2026-10-06-肩袖-阅读优化版-资源/11-肩胛骨上旋的力偶.svg)
+![Scapular upward rotation: trapezius and serratus anterior. Visible insertion regions are marked I.｜肩胛骨上旋：斜方肌与前锯肌。图中显示的止点区域用 I 标记。](../figures/11-肩胛骨上旋的力偶.svg)
 
 Scapular upward rotation: trapezius and serratus anterior. Visible insertion regions are marked I.
 
@@ -80,7 +80,7 @@ Arm elevation combines glenohumeral motion with scapulothoracic motion. The fami
 
 手臂上举结合了盂肱关节活动和肩胛胸壁活动。常见的 2∶1 是教学概括，并不是每个角度都恒定不变的比例。肩胛骨运动会随任务、上举平面与个体而变化。
 
-![A schematic of arm elevation from 0° to 180°.｜0° 至 180° 手臂上举示意。](2026-10-06-肩袖-阅读优化版-资源/12-0--30--90--180-肩肱节律.svg)
+![A schematic of arm elevation from 0° to 180°.｜0° 至 180° 手臂上举示意。](../figures/12-0--30--90--180-肩肱节律.svg)
 
 A schematic of arm elevation from 0° to 180°.
 
@@ -104,7 +104,7 @@ Further elevation involves continued scapular upward rotation and posterior tilt
 
 继续上举涉及肩胛骨持续上旋、后倾，以及肱骨外旋和锁骨运动。这些作用相互重叠，并不是彼此孤立、依次开关的阶段。
 
-![Schematic activation trends, not exact EMG values.｜一般性肌肉参与趋势示意，不是精确肌电数值。](2026-10-06-肩袖-阅读优化版-资源/13-肌肉发力时间轴.svg)
+![Schematic activation trends, not exact EMG values.｜一般性肌肉参与趋势示意，不是精确肌电数值。](../figures/13-肌肉发力时间轴.svg)
 
 Schematic activation trends, not exact EMG values.
 

@@ -5,9 +5,9 @@ from pathlib import Path
 from html.parser import HTMLParser
 import html,json,re,shutil,xml.etree.ElementTree as ET
 HERE=Path(__file__).resolve().parent
-ROOT=HERE.parent
-ASSETS=ROOT/'2026-10-06-肩袖-阅读优化版-资源'
-APP=ROOT/'肩部3D学习'
+TOPIC=HERE.parent
+ASSETS=TOPIC/'figures'
+APP=TOPIC/'3d'
 BASE='http://127.0.0.1:5178/'
 models=json.loads((HERE/'data/model-links.json').read_text())
 terms={v['english'].lower():v['term'] for v in models.values()}
@@ -77,14 +77,14 @@ valid_terms=set(re.findall(r"id: '([a-z-]+)'",vocab))
 for filename in ['humerus-landmarks.json','scapula-landmarks.json']:
  valid_terms.update(item['id'] for item in json.loads((APP/'src'/filename).read_text()))
 for term in set(re.findall(r'\?term=([a-z-]+)',page)):assert term in valid_terms,term
-for target in [ROOT/'2026-10-06-肩袖-阅读优化版.html',APP/'public/reading.html']:
+for target in [HERE/'2026-10-06-肩袖-阅读优化版.html',APP/'public/reading.html']:
  target.write_text(page,encoding='utf-8')
 md=(HERE/'templates/reading-prefix.md').read_text()+'\n\n'.join(md_chapters)+'\n'+(HERE/'templates/reading-footer.md').read_text()
-for path in re.findall(r'!\[[^]]*\]\(([^)]+)\)',md):assert (ROOT/path).exists(),path
-(ROOT/'2026-10-06-肩袖-阅读优化版.md').write_text(md,encoding='utf-8')
+for path in re.findall(r'!\[[^]]*\]\(([^)]+)\)',md):assert (HERE/path).exists(),path
+(HERE/'2026-10-06-肩袖-阅读优化版.md').write_text(md,encoding='utf-8')
 # The live static server serves dist. Vite build may run afterwards for app code changes.
 (APP/'dist').mkdir(exist_ok=True)
 shutil.copyfile(APP/'public/reading.html',APP/'dist/reading.html')
-summary={'chapters':6,'figure_occurrences':len(figure_ids),'figures':figure_ids,'model_links':sorted(set(re.findall(r'\?term=([a-z-]+)',page))),'source':'reading-source/sections','html_and_markdown_built':True}
+summary={'chapters':6,'figure_occurrences':len(figure_ids),'figures':figure_ids,'model_links':sorted(set(re.findall(r'\?term=([a-z-]+)',page))),'source':'library/shoulder/text/sections','html_and_markdown_built':True}
 (HERE/'build-report.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(summary,ensure_ascii=False))

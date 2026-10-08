@@ -4,7 +4,7 @@ The rotator cuff consists of the supraspinatus, infraspinatus, teres minor, and 
 
 肩袖由冈上肌、冈下肌、小圆肌和肩胛下肌组成。这些肌肉连接肩胛骨与肱骨近端，并帮助将肱骨头稳定在关节盂内。
 
-![Right shoulder: posterior and anterior views｜右肩后面观与前面观](2026-10-06-肩袖-阅读优化版-资源/01-右肩的后面观与前面观.svg)
+![Right shoulder: posterior and anterior views｜右肩后面观与前面观](../figures/01-右肩的后面观与前面观.svg)
 
 ### Origins, insertions, and anatomical course｜起点、止点与解剖走行
 
@@ -14,7 +14,7 @@ O 表示起点，I 表示止点；虚线 O → I 表示附着顺序，不是受�
 
 ### Supraspinatus｜冈上肌
 
-![Origin and insertion of Supraspinatus｜冈上肌起止点](2026-10-06-肩袖-阅读优化版-资源/02-冈上肌位置示意.svg)
+![Origin and insertion of Supraspinatus｜冈上肌起止点](../figures/02-冈上肌位置示意.svg)
 
 **Origin（起点）:** Supraspinous fossa of the scapula  
 肩胛骨冈上窝
@@ -34,7 +34,7 @@ It contributes to shoulder abduction and helps stabilize the humeral head in the
 
 ### Infraspinatus｜冈下肌
 
-![Origin and insertion of Infraspinatus｜冈下肌起止点](2026-10-06-肩袖-阅读优化版-资源/03-冈下肌位置示意.svg)
+![Origin and insertion of Infraspinatus｜冈下肌起止点](../figures/03-冈下肌位置示意.svg)
 
 **Origin（起点）:** Infraspinous fossa of the scapula  
 肩胛骨冈下窝
@@ -54,7 +54,7 @@ It externally rotates the humerus and contributes to dynamic stability of the gl
 
 ### Teres minor｜小圆肌
 
-![Origin and insertion of Teres minor｜小圆肌起止点](2026-10-06-肩袖-阅读优化版-资源/04-小圆肌位置示意.svg)
+![Origin and insertion of Teres minor｜小圆肌起止点](../figures/04-小圆肌位置示意.svg)
 
 **Origin（起点）:** Upper part of the lateral border of the scapula  
 肩胛骨外侧缘上部
@@ -74,7 +74,7 @@ It assists external rotation of the humerus and helps stabilize the humeral head
 
 ### Subscapularis｜肩胛下肌
 
-![Origin and insertion of Subscapularis｜肩胛下肌起止点](2026-10-06-肩袖-阅读优化版-资源/05-肩胛下肌位置示意.svg)
+![Origin and insertion of Subscapularis｜肩胛下肌起止点](../figures/05-肩胛下肌位置示意.svg)
 
 **Origin（起点）:** Subscapular fossa on the anterior surface of the scapula  
 肩胛骨前面的肩胛下窝

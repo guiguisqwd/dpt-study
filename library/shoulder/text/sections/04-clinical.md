@@ -24,13 +24,13 @@
 
 ### 4.2 Nerve injury: sensory and motor findings｜4.2 神经损伤与感觉、运动表现
 
-![Axillary nerve（腋神经） Regimental badge area（徽章区） 与临床对应](2026-10-06-肩袖-阅读优化版-资源/14-腋神经徽章区与临床对应.svg)
+![Axillary nerve（腋神经） Regimental badge area（徽章区） 与临床对应](../figures/14-腋神经徽章区与临床对应.svg)
 
 *Axillary nerve（腋神经） 的感觉区域、Myotome（肌节） 与损伤部位。*
 
 ### 4.3 Acupoints and regional anatomy｜4.3 穴位与局部解剖
 
-![右肩肌肉、神经与穴位叠加图](2026-10-06-肩袖-阅读优化版-资源/15-右肩肌肉-神经与穴位叠加图.svg)
+![右肩肌肉、神经与穴位叠加图](../figures/15-右肩肌肉-神经与穴位叠加图.svg)
 
 *红点为穴位，金色线为神经走行；视角与第 01 节解剖图一致。*
 
