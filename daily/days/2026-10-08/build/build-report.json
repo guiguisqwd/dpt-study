@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "out": "2026-10-08-第2天-肺经收尾与肩胛肌",
+  "chapters": 6,
+  "figure_occurrences": 9,
+  "figures": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09"
+  ],
+  "model_links": [
+    "acromion",
+    "clavicle",
+    "humerus",
+    "scapula"
+  ],
+  "html_bytes": 293395
+}

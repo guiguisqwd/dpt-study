@@ -1,0 +1,298 @@
+{
+ "date": "2026-10-08",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-07T05:43:03-07:00",
+     "evidence": {
+      "kind": "learning",
+      "day": 2,
+      "acupoints": [
+       "列缺",
+       "经渠",
+       "太渊",
+       "鱼际",
+       "少商",
+       "商阳"
+      ],
+      "muscles": [
+       "前锯肌",
+       "斜方肌"
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-07T05:43:03-07:00",
+     "evidence": {
+      "content": "daily/days/2026-10-08/content.json",
+      "figures": "daily/days/2026-10-08/figures.py",
+      "fingerprint": "b4834f88af3a6365"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-07T05:48:20-07:00",
+     "evidence": {
+      "svgs": [
+       "01-今日两块肌肉总览.svg",
+       "02-前锯肌起止点.svg",
+       "03-斜方肌起止点.svg",
+       "04-胸长神经与副神经.svg",
+       "05-上回旋力偶.svg",
+       "06-翼状肩胛.svg",
+       "07-肺经LU7-LU11与商阳.svg",
+       "08-怎么找列缺与井穴.svg",
+       "09-太渊列缺-层次示意.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-07T05:48:20-07:00",
+     "evidence": "schema dpt-daily-pack/1: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-07T05:48:20-07:00",
+     "evidence": {
+      "date": "2026-10-08",
+      "out": "2026-10-08-第2天-肺经收尾与肩胛肌",
+      "chapters": 6,
+      "figure_occurrences": 9,
+      "figures": [
+       "01",
+       "02",
+       "03",
+       "04",
+       "05",
+       "06",
+       "07",
+       "08",
+       "09"
+      ],
+      "model_links": [
+       "acromion",
+       "clavicle",
+       "humerus",
+       "scapula"
+      ],
+      "html_bytes": 293395
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-07T05:48:30-07:00",
+     "evidence": {
+      "figures": 9,
+      "say_buttons": 58,
+      "mobile_scroll_width": 390,
+      "flashcards": 12,
+      "views": 33
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-07T05:48:48-07:00",
+     "evidence": {
+      "viewed": 33,
+      "notes": "Viewed all 33 screenshots (top, every chapter slice, mobile top, 9 figures). Checked label/structure overlap, leader targets, acupoint dots on the radial wrist/thumb/index anatomy, English-first bilingual order, nothing clipped, figures match the text (SA ribs 1-8 to costal medial border; trapezius 3 parts; LTN C5-C7 from roots; CN XI cord->foramen magnum->jugular foramen->posterior triangle->deep to trapezius; medial vs lateral winging; LU7 1.5 cun, LU8 1 cun, LU9 on crease, LU10, LU11, LI1 nai",
+      "fixed": [
+       "f04: 'Upper cervical cord' label sat under the trapezius fill; C1-C5 tick labels moved left of the cord; foramen magnum label moved off the nerve path; trapezius label moved off the dashed nerve",
+       "f05: upper-trapezius arrow ran through its label; 'Result' label overlapped the acromion; lower-trapezius label moved below with a leader",
+       "f07: right-side leaders crossed each other and the ruler; forearm structures now labelled in a row above with a non-crossing fan; meridian shifted so the brachioradialis tendon is visible; snuffbox/thenar labels reordered",
+       "f01: spine-of-scapula and lower-part leaders crossed; serratus leader ended on the long-thoracic-nerve leader; scapula leader moved to the right of the nerve",
+       "f06: 'dashed = normal position' caption touched rib lines"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-07T05:48:48-07:00",
+     "evidence": {
+      "entries": 2,
+      "learned_acupoints": 12,
+      "learned_muscles": 9,
+      "page": "肩部3D学习/public/daily/2026-10-08/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-07T05:48:48-07:00",
+     "evidence": {
+      "cards": 33,
+      "acupoints": 24,
+      "muscles": 9,
+      "due_on_2026-10-08": 9
+     }
+    },
+    "archive": {
+     "status": "done",
+     "at": "2026-10-07T05:49:25-07:00",
+     "evidence": {
+      "written": 20
+     },
+     "fingerprint": "99e22c1725c849ae"
+    },
+    "review_center": {
+     "status": "done",
+     "at": "2026-10-08T00:25:01-07:00",
+     "evidence": "https://claude.ai/artifact/3k1RZqb9tf9heXKLHe58ig version 3 (1791444289-d393), 33 cards incl. 8 from 2026-10-08"
+    }
+   },
+   "started": "2026-10-07T05:43:03-07:00",
+   "fingerprint": "99e22c1725c849ae"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-07T05:43:03-07:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:03-07:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:03-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:03-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:03-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:12-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:43:12-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T05:47:22-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:47:22-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:47:22-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:47:31-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:47:31-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T05:48:20-07:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:20-07:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:20-07:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:30-07:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:30-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T05:48:48-07:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:48-07:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:48-07:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:48:49-07:00",
+   "phase": "evening",
+   "step": "archive",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-07T05:49:25-07:00",
+   "phase": "evening",
+   "step": "archive",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-07T05:49:25-07:00",
+   "phase": "evening",
+   "step": "review_center",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-08T00:25:01-07:00",
+   "phase": "evening",
+   "step": "review_center",
+   "status": "done"
+  }
+ ],
+ "kind": "learning",
+ "day": 2,
+ "out": "2026-10-08-第2天-肺经收尾与肩胛肌"
+}

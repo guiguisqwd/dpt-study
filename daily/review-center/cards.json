@@ -778,5 +778,269 @@
    ]
   ],
   "ask": "英文名？起点、止点、神经、动作？"
+ },
+ {
+  "id": "acu-列缺",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "列缺",
+  "sub": "手太阴肺经",
+  "meridian": "手太阴肺经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在前臂外侧，腕掌侧远端横纹上 1.5 寸，拇短伸肌腱与拇长展肌腱之间，拇长展肌腱沟的凹陷中"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（头静脉属支、桡神经浅支）→ 拇短伸肌腱与拇长展肌腱之间（旧教材作：肱桡肌腱与拇长展肌腱之间）→ 旋前方肌桡侧缘"
+   ],
+   [
+    "安全提示",
+    "浅层有头静脉属支和桡神经浅支；教材刺法为向肘部斜刺"
+   ],
+   [
+    "相关肌肉",
+    "拇长展肌腱、拇短伸肌腱；深面旋前方肌"
+   ],
+   [
+    "怎么找",
+    "两手虎口交叉，一手食指按在另一手桡骨茎突上，指尖下的凹陷就是列缺（见图 08）"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "acu-经渠",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "经渠",
+  "sub": "手太阴肺经",
+  "meridian": "手太阴肺经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在前臂前外侧，腕掌侧远端横纹上 1 寸，桡骨茎突与桡动脉之间"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（前臂外侧皮神经、桡神经浅支）→ 桡侧腕屈肌腱与拇长展肌腱之间，桡动、静脉的桡侧 → 旋前方肌"
+   ],
+   [
+    "安全提示",
+    "紧贴桡动脉的桡侧：避开动脉；教材记载禁灸"
+   ],
+   [
+    "相关肌肉",
+    "桡侧腕屈肌腱、拇长展肌腱；深面旋前方肌"
+   ],
+   [
+    "怎么找",
+    "太渊上 1 寸，约平腕掌侧近端横纹；在桡骨茎突内缘与桡动脉之间的凹陷"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "acu-太渊",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "太渊",
+  "sub": "手太阴肺经",
+  "meridian": "手太阴肺经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在腕前外侧，桡骨茎突与腕舟状骨之间，拇长展肌腱尺侧凹陷中（腕掌侧远端横纹桡侧，桡动脉搏动处）"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（前臂外侧皮神经、桡神经浅支）→ 桡侧腕屈肌腱与拇长展肌腱之间，桡动、静脉所在"
+   ],
+   [
+    "安全提示",
+    "穴位就在桡动脉上：先摸到脉，再避开动脉"
+   ],
+   [
+    "相关肌肉",
+    "拇长展肌腱、桡侧腕屈肌腱"
+   ],
+   [
+    "怎么找",
+    "仰掌，在腕掌侧远端横纹的桡侧端摸到桡动脉搏动，即拇长展肌腱尺侧的凹陷"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "acu-鱼际",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "鱼际",
+  "sub": "手太阴肺经",
+  "meridian": "手太阴肺经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在手掌，第1掌骨桡侧中点赤白肉际处。"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（前臂外侧皮神经、正中神经分支）→ 拇短展肌 → 拇对掌肌（旧教材写作“拇指掌肌”）"
+   ],
+   [
+    "安全提示",
+    "皮下有前臂外侧皮神经与正中神经分支"
+   ],
+   [
+    "相关肌肉",
+    "拇短展肌、拇对掌肌（大鱼际肌）"
+   ],
+   [
+    "怎么找",
+    "仰掌，在第 1 掌骨中点的桡侧，手掌与手背皮肤交界的赤白肉际处"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "acu-少商",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "少商",
+  "sub": "手太阴肺经",
+  "meridian": "手太阴肺经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在手指，拇指末节桡侧，指甲根角侧上方0.1寸。"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（指端动脉网；桡神经、正中神经的分支）"
+   ],
+   [
+    "安全提示",
+    "穴下只有皮下组织：教材为浅刺或点刺出血"
+   ],
+   [
+    "相关肌肉",
+    "无（穴下只有皮下组织）"
+   ],
+   [
+    "怎么找",
+    "拇指桡侧，沿指甲桡侧缘与甲根各画一线，交点外 0.1 寸（沿角平分线，见图 08）"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "acu-商阳",
+  "type": "acu",
+  "learned": "2026-10-08",
+  "title": "商阳",
+  "sub": "手阳明大肠经",
+  "meridian": "手阳明大肠经",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "定位",
+    "在手指，食指末节桡侧，指甲根角侧上方0.1寸。"
+   ],
+   [
+    "层次（浅 → 深）",
+    "皮肤 → 皮下组织（指端动脉网；正中神经的指掌侧固有神经）"
+   ],
+   [
+    "安全提示",
+    "穴下只有皮下组织：教材为浅刺或点刺出血"
+   ],
+   [
+    "相关肌肉",
+    "无（穴下只有皮下组织）"
+   ],
+   [
+    "怎么找",
+    "食指桡侧，沿指甲桡侧缘与甲根各画一线，交点外 0.1 寸（见图 08）"
+   ]
+  ],
+  "ask": "定位在哪里？从浅到深经过哪些肌肉？"
+ },
+ {
+  "id": "mus-Serratus anterior",
+  "type": "mus",
+  "learned": "2026-10-08",
+  "title": "前锯肌",
+  "sub": "Serratus anterior",
+  "meridian": "",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "英文名",
+    "Serratus anterior"
+   ],
+   [
+    "起点 Origin",
+    "Outer surfaces of ribs 1–8 (some texts: 1–9), by fleshy digitations｜第 1–8 肋外面（部分教材为第 1–9 肋），以肌齿起始"
+   ],
+   [
+    "止点 Insertion",
+    "Costal (anterior) surface of the medial border of the scapula, from the superior angle to the inferior angle｜肩胛骨内侧缘的肋面（前面），从上角到下角"
+   ],
+   [
+    "神经 Nerve",
+    "Long thoracic nerve (C5–C7), which arises directly from the roots of the brachial plexus｜胸长神经（C5–C7），直接起自臂丛的神经根"
+   ],
+   [
+    "动作 Action",
+    "Protracts the scapula and holds its medial border against the chest wall; the lower part rotates the scapula upward, so the arm can rise above 90°｜使肩胛骨前伸，并让内侧缘贴紧胸壁；下部使肩胛骨上回旋，手臂才能上举超过 90°"
+   ],
+   [
+    "穴位锚点",
+    "大包 SP21 在其下部肌齿表面（第 6 肋间隙、腋中线上，脾经时再学）"
+   ]
+  ],
+  "ask": "英文名？起点、止点、神经、动作？"
+ },
+ {
+  "id": "mus-Trapezius",
+  "type": "mus",
+  "learned": "2026-10-08",
+  "title": "斜方肌",
+  "sub": "Trapezius",
+  "meridian": "",
+  "region": "肩带与肩部",
+  "fields": [
+   [
+    "英文名",
+    "Trapezius"
+   ],
+   [
+    "起点 Origin",
+    "External occipital protuberance, medial third of the superior nuchal line, ligamentum nuchae, and the spinous processes of C7–T12｜枕外隆凸、上项线内侧 1/3、项韧带及 C7–T12 棘突"
+   ],
+   [
+    "止点 Insertion",
+    "Lateral third of the clavicle (upper part); medial margin of the acromion and upper crest of the scapular spine (middle part); medial end of the spine (lower part)｜锁骨外侧 1/3（上部）；肩峰内侧缘和肩胛冈上缘（中部）；肩胛冈内侧端，即冈根（下部）"
+   ],
+   [
+    "神经 Nerve",
+    "Motor: spinal accessory nerve (CN XI). Sensory and proprioceptive: ventral rami of C3–C4｜运动：副神经（第 XI 对脑神经）。感觉与本体感觉：C3–C4 前支"
+   ],
+   [
+    "动作 Action",
+    "Upper fibres elevate and upwardly rotate the scapula (and extend the head and neck); middle fibres retract it; lower fibres depress it and help rotate it upward｜上部纤维使肩胛骨上提、上回旋（并使头颈后伸）；中部使其后缩；下部使其下降并协助上回旋"
+   ],
+   [
+    "穴位锚点",
+    "肩井 GB21 在其上部纤维上（胆经时再学）；秉风、曲垣在其深面的冈上窝"
+   ]
+  ],
+  "ask": "英文名？起点、止点、神经、动作？"
  }
 ]

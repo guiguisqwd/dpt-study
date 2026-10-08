@@ -1,0 +1,40 @@
+{
+  "file": "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/2026-10-08-第2天-肺经收尾与肩胛肌.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "muscles",
+    "nerve",
+    "motion",
+    "acupoints",
+    "review",
+    "english"
+  ],
+  "figures": 9,
+  "say_buttons": 58,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/top.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-muscles.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-nerve.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-motion.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-acupoints.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-review.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/chapter-english.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-01.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-02.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-03.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-04.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-05.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-06.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-07.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-08.png",
+    "/home/claude/repo/shoulder-study/daily/days/2026-10-08/build/qa/figure-09.png"
+  ],
+  "flashcards": 12
+}
