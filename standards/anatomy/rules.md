@@ -71,4 +71,5 @@
 
 | 编号 | 规则 |
 | --- | --- |
-| AN-60 | 主题页只放两个大入口：**开始学习**（主阅读版，突出显示）和**三维模型**。同一内容的其他版本与下载（Claude 版、PDF、Markdown）合成一行“其他格式”小链接，不再各占一张卡片；页面不重复写简介。生成逻辑在 `platform/topiclib.py` 的 `render()`。 |
+| AN-60 | 主题页只放两个大入口：**开始学习**（主阅读版，突出显示）和**三维模型**。同一内容的其他版本（Claude 版、PDF）合成一行“其他格式”小链接，不再各占一张卡片；页面不重复写简介。生成逻辑在 `platform/topiclib.py` 的 `render()`。 |
+| AN-61 | Markdown 导出必须有，但它主要给 agent 读，不作页面按钮。主题页在 `<head>` 用 `<link rel="alternate" type="text/markdown">` 指向它；站点根目录 `llms.txt` 是给 agent 的全站清单，列出每个主题和每日包现有的 Markdown 全文、页面、PDF、3D 结构与未完成项。生成逻辑在 `reading-source/prepare-web-release.py`。 |

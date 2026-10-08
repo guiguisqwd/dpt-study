@@ -419,9 +419,11 @@ def bilingual(value, tag='p', cls=''):
 def md_pair(value): return value['en'] + '\n\n' + value['zh'] + '\n\n'
 
 
-def shell(manifest, body):
+def shell(manifest, body, markdown=''):
+    # Markdown is for agents, so it is advertised in <head> (and llms.txt) rather than as a visible button.
+    alternate = f'<link rel="alternate" type="text/markdown" href="{esc(markdown)}">' if markdown else ''
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{esc(manifest["title"]["en"])} · {esc(manifest["title"]["zh"])}</title>'
+            f'<title>{esc(manifest["title"]["en"])} · {esc(manifest["title"]["zh"])}</title>' + alternate +
             '<link rel="stylesheet" href="../../topic.css"></head><body><header><a href="../../study.html">Anatomy study · 解剖学习</a></header><main>'
             + bilingual(manifest['title'], 'h1') + body + '</main></body></html>')
 
@@ -432,7 +434,7 @@ def render(manifest, content, missing):
     local_link = lambda link: '../../' + link.removeprefix('./')
     # One main entry (course) plus the 3D model; other editions and downloads sit in one quiet line.
     main_labels = {'reading': pair('Start reading', '开始学习'), 'viewer': pair('3D model', '三维模型')}
-    extra_labels = {'claude': 'Claude 版', 'pdf': 'PDF', 'markdown': 'Markdown'}
+    extra_labels = {'claude': 'Claude 版', 'pdf': 'PDF'}
     nav = '<nav class="cards">' + ''.join('<a class="card' + (' primary' if key == 'reading' else '') + '" href="' + esc(local_link(url)) + '">' + bilingual(main_labels[key], 'strong') + '</a>'
                                          for key, url in entry_links.items() if key in main_labels) + '</nav>'
     extras = [(extra_labels[key], url) for key, url in entry_links.items() if key in extra_labels]
@@ -454,7 +456,8 @@ def render(manifest, content, missing):
         return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\nDraft · 草稿：课程尚未发布。\n\n'
     if manifest['adapter'] == 'shoulder':
         body = bilingual(manifest['summary']) + nav
-        return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\n[Read the maintained course · 阅读维护中的课程](../../reading.md)\n'
+        md_link = local_link(entry_links['markdown'])
+        return shell(manifest, body, md_link), shell(manifest, body, md_link), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\n[Read the maintained course · 阅读维护中的课程](../../reading.md)\n'
 
     sources = {s['id']: s for s in content['sources']}
     diagrams = {d['id']: d for d in content['diagrams']}
@@ -534,8 +537,9 @@ def render(manifest, content, missing):
         body += '</section>'
     body += '<section id="sources"><h2>Sources · 来源</h2><ul>' + ''.join('<li><a href="' + esc(s['url']) + '">' + esc(s['title']) + '</a></li>' for s in content['sources']) + '</ul></section>'
     md += '## Sources · 来源\n\n' + ''.join('- [' + s['title'] + '](' + s['url'] + ')\n' for s in content['sources'])
-    landing = shell(manifest, bilingual(manifest['summary']) + nav)
-    return landing, shell(manifest, body), md
+    md_link = local_link(entry_links['markdown'])
+    landing = shell(manifest, bilingual(manifest['summary']) + nav, md_link)
+    return landing, shell(manifest, body, md_link), md
 
 
 def build(topics_dir=None, output=None, root=ROOT):
