@@ -71,10 +71,31 @@ if a.site_url:
   markdown=DIST/'topics'/topic['id']/'reading.md'
   if topic['adapter']=='standard' and topic['status']=='published':
    markdown.write_text(markdown.read_text().replace('](../../?',']('+base+'?'))
-llm_lines=['# Anatomy study / 解剖学习', '', 'English-first bilingual anatomy learning, organized by topic.', '', '- Topic library: study.html', '- Topic registry: topics.json', '- Model attribution: licenses/ATTRIBUTION.txt', '']
+# llms.txt is the agent entry point: an inventory of the two content blocks, the anatomy
+# library (one chapter per region) and the daily packs derived from it.
+llm_lines=['# DPT study / 解剖学习', '', '> English-first bilingual anatomy, acupoint and paper-reading study site. Two blocks: the anatomy library (one chapter per body region) and daily learning packs generated from it. Read the Markdown links for full text.', '',
+ '- Study home: study.html', '- Chapter registry (JSON): topics.json', '- Daily pack index: daily/index.html', '- Model attribution: licenses/ATTRIBUTION.txt', '- Sources and rules: https://github.com/guiguisqwd/dpt-study (library/, daily/, standards/)', '', '## Anatomy library / 解剖知识库', '']
 for topic in catalog['topics']:
- llm_lines.append(f"- {topic['title']['en']} / {topic['title']['zh']} ({topic['status']}): topics/{topic['id']}/index.html")
-llm_lines += ['', 'Shoulder legacy links remain available: reading.html, reading-claude.html, reading.md and downloads/shoulder-bilingual.pdf.', 'Draft topics are unfinished learning materials. Model previews do not establish reviewed anatomical descriptions or clinical coordinates.', 'The 3D view requires JavaScript and WebGL. Text retrieval does not inspect its geometry.', 'Public URLs provide read access. Source changes require authenticated repository access.', 'Learning progress is saved in this browser, not synchronized across devices.']
+ links=topic.get('links',{}); rel=lambda u:u.removeprefix('./')
+ llm_lines.append(f"### {topic['title']['en']} / {topic['title']['zh']} ({topic['status']})")
+ llm_lines.append(f"{topic['summary']['en']} {topic['summary']['zh']}")
+ for key,label in [('markdown','Full text (Markdown)'),('reading','Course page'),('claude','Claude reading edition'),('pdf','Reviewed PDF'),('viewer','3D model'),('home','Chapter page')]:
+  if key in links:llm_lines.append(f"- {label}: {rel(links[key])}")
+ terms=topic.get('viewer',{}).get('terms',[]) if topic.get('viewer',{}).get('enabled') else []
+ if terms:llm_lines.append('- 3D structures (?term=): '+', '.join(f"{t['id']} ({t['name']['en']} {t['name']['zh']})" for t in terms))
+ if topic.get('missing'):llm_lines.append(f"- Not yet complete: {len(topic['missing'])} open items (listed under this chapter's `missing` in topics.json)")
+ llm_lines.append('')
+daily_meta={e['date']:e for e in json.loads((ROOT/'daily/catalog.json').read_text()).get('entries',[])} if (ROOT/'daily/catalog.json').is_file() else {}
+daily_md=sorted((DIST/'daily').glob('*/*.md')) if (DIST/'daily').is_dir() else []
+llm_lines += ['## Daily learning / 每日学习', '']
+for md in daily_md:
+ date=md.parent.name;e=daily_meta.get(date,{});title=e.get('title',{})
+ llm_lines.append(f"### {date}"+(f" · Day {e['day']}" if e.get('day') else '')+(f" · {title.get('en','')} / {title.get('zh','')}" if title else ''))
+ llm_lines += [f"- Full text (Markdown): daily/{date}/{md.name}", f"- Page: daily/{date}/index.html"]
+ if e.get('muscles'):llm_lines.append('- Muscles: '+', '.join(f"{en} {zh}" for en,zh in e['muscles']))
+ if e.get('acupoints'):llm_lines.append('- Acupoints: '+', '.join(f"{c} {n}" for n,_,c in e['acupoints']))
+ llm_lines.append('')
+llm_lines += ['## Notes', '', '- Draft chapters are unfinished learning materials. Model previews do not establish reviewed anatomical descriptions or clinical coordinates.', '- The 3D view requires JavaScript and WebGL. Text retrieval does not inspect its geometry.', '- Learning progress is saved in the browser, not synchronized across devices.']
 (DIST/'llms.txt').write_text('\n'.join(llm_lines)+'\n')
 (DIST/'.nojekyll').write_text('')
 # Catch broken downloads, model entry links, and relative HTML assets before upload.

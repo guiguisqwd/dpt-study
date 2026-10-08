@@ -9,20 +9,21 @@
 在仓库根目录运行：
 
 ```sh
-python3 scripts/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
+python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 ```
 
-主题 ID 使用稳定的英文 slug，发布后不随展示标题变化。可通过 `--region-en` 和 `--region-zh` 补充解剖区域。脚本创建 `topics/knee/`；新主题默认 `draft`，不是可直接学习的完成课程。
+主题 ID 使用稳定的英文 slug，发布后不随展示标题变化。可通过 `--region-en` 和 `--region-zh` 补充解剖区域。脚本创建 `library/knee/`；新主题默认 `draft`，不是可直接学习的完成课程。
 
 | 文件 | 维护内容 |
 | --- | --- |
 | `topic.json` | 中英文名称、区域、状态、适配方式和模型绑定等注册信息 |
 | `content.json` | 按共享结构填写的双语正文、肌肉、问答、文献及核验记录 |
-| `assets/` | 该主题拥有的图示；优先保留可编辑 SVG 及来源信息 |
+| `figures/` | 该章拥有的图示；优先保留可编辑 SVG 及来源信息 |
+| `3d/` | 该章的 3D 部分（ST-7）；新章节起步时只有说明，模型映射写在 `topic.json` |
 
 使用脚本生成的实际字段结构，不自行猜测新字段名称。标准新主题使用 `standard` 适配方式；`shoulder` 适配方式用于连接已有肩袖资料，不能拿来绕过新主题的内容要求。
 
-具体记录结构见 `platform/topic.schema.json`、`platform/content.schema.json` 和 `platform/content-records.example.json`；后者提供肌肉、图示、问答、文献等记录样式，空值需要填入真实核验内容。共享要求见 `platform/QUALITY_RULES.md`。**新主题以 `content.json` 作为唯一正文来源，HTML 和 Markdown 由同一内容生成。**
+具体记录结构见 `site/build/platform/topic.schema.json`、`site/build/platform/content.schema.json` 和 `site/build/platform/content-records.example.json`；后者提供肌肉、图示、问答、文献等记录样式，空值需要填入真实核验内容。共享要求见 `site/build/platform/QUALITY_RULES.md`。**新主题以 `content.json` 作为唯一正文来源，HTML 和 Markdown 由同一内容生成。**
 
 ## 2. 一次性按完整标准填写
 
@@ -64,18 +65,18 @@ python3 scripts/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 在仓库根目录运行：
 
 ```sh
-python3 scripts/validate-topics.py --topic knee
-cd 肩部3D学习
+python3 site/build/validate-topics.py --topic knee
+cd library/shoulder/3d
 pnpm build
 ```
 
 几何或空间标记发生变化时，另外运行 `pnpm test:geometry`。`validate-topics.py` 不带 `--topic` 时检查全部主题；`--require-published` 可用于检查指定主题是否已达到发布状态。
 
-生成结果在 `肩部3D学习/public/topics.json` 及 `public/topics/<id>/`。标准主题包含 `index.html`、`reading.html`、`reading.md` 和 `data.json`；改动应回到主题源文件，不直接修生成页。构建输出同步进入应用打包与网站发布流程。
+生成结果在 `library/shoulder/3d/public/topics.json` 及 `public/topics/<id>/`。标准主题包含 `index.html`、`reading.html`、`reading.md` 和 `data.json`；改动应回到主题源文件，不直接修生成页。构建输出同步进入应用打包与网站发布流程。
 
-`python3 scripts/build-platform.py` 还会生成自动发现所有主题的 `study.html` 首页；`pnpm build` 与 `pnpm dev` 通过各自的前置命令调用它。共享规范、校验和渲染逻辑位于 `platform/`，CLI 入口位于 `scripts/`。
+`python3 site/build/build-platform.py` 还会生成自动发现所有主题的 `study.html` 首页；`pnpm build` 与 `pnpm dev` 通过各自的前置命令调用它。共享规范、校验和渲染逻辑位于 `site/build/platform/`，CLI 入口位于 `site/build/`。
 
-只有改动肩袖标准阅读稿时才需另外运行 `python3 reading-source/build-reading.py`，沿用其现有 HTML / Markdown 双源兼容流程；新主题不需要重复这一维护方式。
+只有改动肩袖标准阅读稿时才需另外运行 `python3 library/shoulder/text/build-reading.py`，沿用其现有 HTML / Markdown 双源兼容流程；新主题不需要重复这一维护方式。
 
 发布前完成以下核验，并在主题提供的审核字段中记录真实结果、审核人和日期：
 
@@ -96,6 +97,6 @@ pnpm build
 
 每个新主题都应自动出现在主题目录，不需要手动复制一份首页。若新增字段需要共享渲染能力，先更新通用脚本和验证规则，再修改主题数据。
 
-PDF 为可选导出，必须真实生成、检查并与当前内容建立对应后才登记。现有肩袖 PDF 的重新导出流程见 [制作流程-肩袖双语学习.md](../制作流程-肩袖双语学习.md)；新主题不会因为创建了 `content.json` 就自动拥有 PDF。
+PDF 为可选导出，必须真实生成、检查并与当前内容建立对应后才登记。现有肩袖 PDF 的重新导出流程见 [制作流程-肩袖双语学习.md](./shoulder/text/制作流程-肩袖双语学习.md)；新主题不会因为创建了 `content.json` 就自动拥有 PDF。
 
 正常交付说明应包括主题状态、已完成内容、未完成缺项、检查证据、commit、实际推送分支和部署结果。保留清晰的边界比把草稿叫成“完成”更有助于下次继续。

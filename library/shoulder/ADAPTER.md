@@ -1,8 +1,8 @@
 # Shoulder adapter · 肩袖兼容层
 
 `topic.json` registers the maintained shoulder course in the shared topic library.
-The standard six chapters remain in `reading-source/`, SVGs in their existing directory,
-and the independent Claude edition remains in `肩部3D学习/public/reading-claude.html`.
+The standard six chapters are in `text/`, SVGs in `figures/`, the PDF in `pdf/`, the 3D site in `3d/`,
+and the independent Claude edition in `3d/public/reading-claude.html`.
 This adapter preserves historical links; it is reserved for this existing topic.
 New topics use `adapter: standard` and structured `content.json`.
 

@@ -1,8 +1,8 @@
 # Topic quality rules · 主题质量标准
 
-The content rules now live in [`standards/`](../standards/README.md), the single source for what a piece must contain and how it is checked. This file keeps the topic data contracts and commands.
+The content rules now live in [`standards/`](../../../standards/README.md), the single source for what a piece must contain and how it is checked. This file keeps the topic data contracts and commands.
 
-内容规则已统一到 [`standards/`](../standards/README.md)（2026-10-08），每条规则只写在那里一处。原来的十条对应如下：
+内容规则已统一到 [`standards/`](../../../standards/README.md)（2026-10-08），每条规则只写在那里一处。原来的十条对应如下：
 
 | 原条目 | 现在的位置 |
 | --- | --- |
@@ -14,8 +14,8 @@ The content rules now live in [`standards/`](../standards/README.md), the single
 | 6 Complete review answers | AN-06 |
 | 7 Critical reading | AN-30 至 AN-35 |
 | 8 Visual review | AN-16、QC-21、QC-24、QC-25、G-09 |
-| 9 Honest readiness | G-03、`standards/anatomy/checklist.md` |
-| 10 Offline outputs | 本文件下方命令与 `docs/ADDING_A_TOPIC.md` §5 |
+| 9 Honest readiness | G-03、`standards/library/checklist.md` |
+| 10 Offline outputs | 本文件下方命令与 `library/README.md` §5 |
 
 ## Contracts and commands · 数据约定与命令
 
@@ -26,10 +26,10 @@ The content rules now live in [`standards/`](../standards/README.md), the single
 - `topiclib.py`: discovery, semantic validation and one shared renderer.
 
 ```sh
-python3 scripts/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
-python3 scripts/validate-topics.py --topic knee
-python3 scripts/validate-topics.py --topic knee --require-published
-python3 scripts/build-topics.py
+python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
+python3 site/build/validate-topics.py --topic knee
+python3 site/build/validate-topics.py --topic knee --require-published
+python3 site/build/build-topics.py
 python3 -m unittest discover -s tests -v
 ```
 

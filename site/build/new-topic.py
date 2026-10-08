@@ -23,6 +23,9 @@ def main():
         write_json(destination / 'topic.json', manifest)
         write_json(destination / 'content.json', content)
         (destination / 'figures/.gitkeep').write_text('')
+        # Every chapter owns its 3D part (standards/library/steps.md ST-7).
+        (destination / '3d').mkdir()
+        (destination / '3d/README.md').write_text('# 3D\n\nThis chapter\'s 3D part (ST-7). Model mappings start in ../topic.json `viewer`.\n本章的三维部分（ST-7）；模型映射先写在 ../topic.json 的 viewer 中。\n', encoding='utf-8')
         print('Created draft: ' + str(destination))
         print('Fill content.json and model mappings, then validate and build. No course is published yet.')
     except (ValueError, OSError) as exc:
