@@ -6,6 +6,7 @@
 
 - [学习首页](https://guiguisqwd.github.io/dpt-study/study.html)
 - [解剖学习工作台：维护范围与接手说明](./docs/MAINTENANCE.md)
+- [内容制作规范（唯一规则来源）](./standards/README.md)
 - [新增主题流程](./docs/ADDING_A_TOPIC.md)
 - [肩袖阅读](https://guiguisqwd.github.io/dpt-study/reading.html) · [Claude 阅读版](https://guiguisqwd.github.io/dpt-study/reading-claude.html) · [肩袖 3D](https://guiguisqwd.github.io/dpt-study/?term=humerus)
 
