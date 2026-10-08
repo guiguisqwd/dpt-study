@@ -66,3 +66,9 @@
 | AN-50 | 肌肉附着优先核对解剖教材或出版方资料（Elsevier、Gray's）；神经走行核对大学解剖课程与解剖研究；常用补充：StatPearls/NCBI、TeachMeAnatomy、Kenhub、Radiopaedia。 |
 | AN-51 | 穴位：GB/T 12346-2021、WHO 2008、《针灸学》。 |
 | AN-52 | 来源写在各节正文，机器可读记录放主题数据（如 `sources`、核对记录 JSON）。 |
+
+## 主题页入口（AN-60 至 AN-69）
+
+| 编号 | 规则 |
+| --- | --- |
+| AN-60 | 主题页只放两个大入口：**开始学习**（主阅读版，突出显示）和**三维模型**。同一内容的其他版本与下载（Claude 版、PDF、Markdown）合成一行“其他格式”小链接，不再各占一张卡片；页面不重复写简介。生成逻辑在 `platform/topiclib.py` 的 `render()`。 |

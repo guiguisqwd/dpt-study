@@ -430,11 +430,14 @@ def render(manifest, content, missing):
     tid, status = manifest['id'], manifest['status']
     entry_links = links(manifest)
     local_link = lambda link: '../../' + link.removeprefix('./')
-    label_pairs = {'reading': pair('Read the course', '阅读课程'), 'claude': pair('Claude reading edition', 'Claude 阅读版'),
-                   'pdf': pair('Download reviewed PDF', '下载已核验 PDF'), 'markdown': pair('Download Markdown', '下载 Markdown'),
-                   'viewer': pair('Explore the 3D model', '查看三维模型')}
-    nav = '<nav class="cards">' + ''.join('<a class="card" href="' + esc(local_link(url)) + '">' + bilingual(label_pairs[key], 'strong') + '</a>'
-                                               for key, url in entry_links.items() if key in label_pairs) + '</nav>'
+    # One main entry (course) plus the 3D model; other editions and downloads sit in one quiet line.
+    main_labels = {'reading': pair('Start reading', '开始学习'), 'viewer': pair('3D model', '三维模型')}
+    extra_labels = {'claude': 'Claude 版', 'pdf': 'PDF', 'markdown': 'Markdown'}
+    nav = '<nav class="cards">' + ''.join('<a class="card' + (' primary' if key == 'reading' else '') + '" href="' + esc(local_link(url)) + '">' + bilingual(main_labels[key], 'strong') + '</a>'
+                                         for key, url in entry_links.items() if key in main_labels) + '</nav>'
+    extras = [(extra_labels[key], url) for key, url in entry_links.items() if key in extra_labels]
+    if extras:
+        nav += '<p class="more">Other formats · 其他格式：' + ' · '.join('<a href="' + esc(local_link(url)) + '">' + esc(label) + '</a>' for label, url in extras) + '</p>'
     if status == 'draft':
         notice = bilingual(pair('Draft — the course is not yet available.', '草稿：课程尚未完成，不能作为已核验的学习材料。'), 'p', 'notice')
         if manifest['viewer']['enabled']:
@@ -451,7 +454,6 @@ def render(manifest, content, missing):
         return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\nDraft · 草稿：课程尚未发布。\n\n'
     if manifest['adapter'] == 'shoulder':
         body = bilingual(manifest['summary']) + nav
-        body += bilingual(pair('Study muscle attachments, nerve pathways and movement in English, with Chinese translations and linked 3D anatomy.', '结合中文翻译与三维解剖，用英语学习肌肉起止点、神经走行与运动功能。'))
         return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\n[Read the maintained course · 阅读维护中的课程](../../reading.md)\n'
 
     sources = {s['id']: s for s in content['sources']}
