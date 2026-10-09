@@ -9,7 +9,7 @@
 | ST-3 写作 | 主题数据 + 章节模板 | 六章正文（单一源稿） | CH-01/CH-02、AN-01 至 AN-07、AN-30 至 AN-35、G-04 |
 | ST-4 画图 | 主题数据 + 正文 | 编号 SVG | AN-10 至 AN-17、AN-21、AN-22 |
 | ST-7 本章 3D（在 ST-4 之后、ST-5 之前做） | 主题数据（结构清单、3D 映射）+ 正文 | 本章 3D 部分：结构映射、骨性标志、需要时的语音和交互改动，放在 `library/<id>/3d/` | AN-40 至 AN-43；正文里的每个 `?term=` 都能在本章 3D 中打开；模型没有的结构按 AN-41 写明 |
-| ST-8 构建（在 ST-7 之后、ST-5 之前做） | 源文件：`topic.json`、`content.json`（肩袖为 `text/sections/` 双源稿和 `text/data/`）、`figures/` 的 SVG、`3d/` | 生成的页面：`library/shoulder/3d/public/topics.json`、`public/topics/<id>/` 下的 `index.html`、`reading.html`、`reading.md`、`data.json`，以及 `study.html` 首页；肩袖另有 `text/2026-10-06-肩袖-阅读优化版.html` 与 `.md`、`text/build-report.json`。命令见下方“构建与导出命令” | 校验和构建都无报错退出；QC-01 至 QC-04、QC-08 通过（草稿的待办项列进制作记录）；生成页没有手改，要改就回到源文件重建（G-08）；HTML 和 Markdown 来自同一次构建 |
+| ST-8 构建（在 ST-7 之后、ST-5 之前做） | 源文件：`topic.json`、`content.json`（肩袖为 `text/sections/` 双源稿和 `text/data/`）、`figures/` 的 SVG、`3d/` | 生成的页面：`library/shoulder/3d/public/topics.json`、`public/topics/<id>/` 下的 `index.html`、`reading.html`、`reading.md`、`data.json`，以及 `study.html` 首页；肩袖另有 `text/2026-10-06-肩袖-阅读优化版.html` 与 `.md`、`text/build-report.json`。命令见下方“构建与导出命令” | 校验和构建都无报错退出；QC-01 至 QC-06、QC-08 通过（草稿的待办项列进制作记录）；生成页没有手改，要改就回到源文件重建（G-08）；HTML 和 Markdown 来自同一次构建 |
 | ST-5 核验 | ST-8 构建出的页面和 SVG | 截图、检查清单结果 | [checklist.md](./checklist.md) 自动项全过，人工项逐条有证据；G-07 |
 | ST-9 导出 PDF（在 ST-5 之后、ST-6 之前做；本章提供 PDF 时必做） | 通过 ST-5 的阅读页（ST-8 输出）+ `figures/` 的 SVG | `library/<id>/pdf/` 下的 PDF；导出清单 `export-report.json`（页数、章节、图、表、问答数）；临时图片用完删除 | QC-27；PDF 来自当前这次构建，不是旧版；没通过前不在页面或目录里登记下载 |
 | ST-6 定稿 | 通过核验的内容（页面、PDF） | 成品 + 制作记录（方法、来源边界、3D 映射、未核验项、构建与 PDF 导出结果） | 制作记录齐全；之后交给推送流程，本规范到此为止 |
