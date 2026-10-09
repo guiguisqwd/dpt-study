@@ -70,6 +70,8 @@ def main():
         for sid, mesh in meshes(kind).items():
             for view in VIEWS:
                 out[view][sid] = outline(mesh, view)
+                if kind == 'muscular':  # thin, folded muscle sheets leave false holes; keep the outer outline only
+                    out[view][sid] = [max(out[view][sid], key=lambda r: Polygon(r).area)]
                 if 'left' not in sid: shapes[view].append(Polygon(out[view][sid][0]).buffer(0))
     # SKIN: a soft body outline around the right lower limb and pelvis, for surface-anatomy figures (schematic).
     for view in VIEWS:

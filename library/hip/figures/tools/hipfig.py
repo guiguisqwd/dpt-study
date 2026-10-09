@@ -77,11 +77,11 @@ class Stage:
     def skin(s, col='#b7ab95', fill='#f7efe2'):
         s.shape('skin', col, fill, 1.6, rough=False)
 
-    def band(s, mid, origin, insertion, op=0.85, w=1.6, bulge=0.25):
+    def band(s, mid, origin, insertion, bow=None, op=0.85, w=1.6):
         """Schematic muscle for structures the model lacks: a smooth band from an origin line to an insertion line (3D points)."""
         col = COLOR.get(mid, RED)
         o = [s.P(p) for p in origin]; i = [s.P(p) for p in insertion]
-        s.f.path(smooth_band(o, i, bulge), col, w, tint(col), op=op)
+        s.f.path(smooth_band(o, i, bow), col, w, tint(col), op=op)
         return o, i
 
 
@@ -90,19 +90,25 @@ def tint(hexcol, k=0.62):
     return '#%02x%02x%02x' % tuple(int(c + (255 - c) * k) for c in (r, g, b))
 
 
-def smooth_band(o, i, bulge=0.25):
-    """Closed path: origin edge o[0]→o[-1], side to i[-1], insertion edge back to i[0], side to o[0]; sides bow outwards."""
-    def mid(a, b, sign):
+def smooth_band(o, i, bow=None):
+    """Closed path: origin edge o[0]→o[-1], side to i[-1], insertion edge back to i[0], side to o[0].
+    Sides bow away from the band's centre by `bow` px (default: a little more than the wider end)."""
+    pts_all = o + i
+    cx, cy = sum(p[0] for p in pts_all) / len(pts_all), sum(p[1] for p in pts_all) / len(pts_all)
+    width = max(math.dist(o[0], o[-1]), math.dist(i[0], i[-1]))
+    def ctrl(a, b):
         mx, my = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
         dx, dy = b[0] - a[0], b[1] - a[1]
-        return mx - dy * bulge * sign, my + dx * bulge * sign
-    pts = 'M%.1f,%.1f ' % o[0] + ' '.join('L%.1f,%.1f' % p for p in o[1:])
-    c1 = mid(o[-1], i[-1], 1)
-    pts += ' Q%.1f,%.1f %.1f,%.1f' % (*c1, *i[-1])
-    pts += ' ' + ' '.join('L%.1f,%.1f' % p for p in reversed(i[:-1]))
-    c2 = mid(i[0], o[0], 1)
-    pts += ' Q%.1f,%.1f %.1f,%.1f Z' % (*c2, *o[0])
-    return pts
+        n = math.hypot(dx, dy) or 1
+        nx, ny = -dy / n, dx / n
+        k = bow if bow is not None else 0.3 * width + 4
+        c1, c2 = (mx + nx * k, my + ny * k), (mx - nx * k, my - ny * k)
+        return c1 if math.dist(c1, (cx, cy)) > math.dist(c2, (cx, cy)) else c2
+    d = 'M%.1f,%.1f ' % o[0] + ' '.join('L%.1f,%.1f' % p for p in o[1:])
+    d += ' Q%.1f,%.1f %.1f,%.1f' % (*ctrl(o[-1], i[-1]), *i[-1])
+    d += ' ' + ' '.join('L%.1f,%.1f' % p for p in reversed(i[:-1]))
+    d += ' Q%.1f,%.1f %.1f,%.1f Z' % (*ctrl(i[0], o[0]), *o[0])
+    return d
 
 
 def area(f, pts, col, label=None):
@@ -115,13 +121,46 @@ def area(f, pts, col, label=None):
         f.path(d, col, 2, dash='6 4', rough=False)
 
 
-def oi(f, o_pts, i_pts, letter_o='O', letter_i='I'):
+def oi(f, o_pts, i_pts, letter_o='O', letter_i='I', col=None):
     """Origin and insertion areas plus the dashed O→I attachment line (AN-13)."""
     area(f, o_pts, ORIGIN_C); area(f, i_pts, INSERT_C)
     oc = centroid(o_pts); ic = centroid(i_pts)
     f.raw(f'<path d="M{oc[0]:.1f},{oc[1]:.1f} L{ic[0]:.1f},{ic[1]:.1f}" stroke="#324c44" stroke-width="1.6" stroke-dasharray="7 5" fill="none"/>')
+    oc, ic = free_spot(f, oc), free_spot(f, ic)
     tag(f, *oc, letter_o, ORIGIN_C); tag(f, *ic, letter_i, INSERT_C)
     return oc, ic
+
+
+def free_spot(f, p, r=25):
+    """Nudge a tag sideways so it does not sit on another tag of the same figure."""
+    used = f.__dict__.setdefault('tags', [])
+    cands = [p] + [(p[0] + dx * r, p[1] + dy * r * 0.8) for dx, dy in
+                   [(1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1), (2, 0), (-2, 0), (0, 1.3), (0, -1.3)]]
+    spot = next((c for c in cands if all(math.dist(c, q) >= r for q in used)), cands[-1])
+    used.append(spot)
+    return spot
+
+
+def panel(f, view, center, at, K, bones, model=(), bands=(), attach=(), title=None, ghost=(), clip=None, labels=(), after=None):
+    """One drawing panel. bands: (muscle id, origin 3D pts, insertion 3D pts); attach: (muscle id, origin 3D pts, insertion 3D pts).
+    ghost: model muscles drawn as faint dashed outlines (for context). clip: (x, y, w, h) figure rectangle."""
+    st = Stage(f, view, center[0], center[1], at[0], at[1], K)
+    if clip:
+        cid = f.id('clip' + str(len(f.p)))
+        f.raw(f'<clipPath id="{cid}"><rect x="{clip[0]}" y="{clip[1]}" width="{clip[2]}" height="{clip[3]}"/></clipPath><g clip-path="url(#{cid})">')
+    st.bones(bones)
+    for mid in ghost: st.muscle(mid, op=0.5, w=1.2, dash='5 4', fill=False)
+    for mid in model: st.muscle(mid)
+    for b in bands: st.band(*b)
+    if clip: f.end()
+    for mid, o, i in attach:
+        letter = next(m.get('letter', '') for m in CONTENT['muscles'] if m['id'] == mid)
+        oi(f, [st.P(p) for p in o], [st.P(p) for p in i], letter, letter)
+    for en, zh, pt, x, y, *anchor in labels:
+        label(f, x, y, en, zh, GREY, anchor[0] if anchor else 'start', 13, to=st.P(pt) if len(pt) == 3 else pt)
+    if after: after(f, st)
+    if title: f.bi(at[0], title[2], title[0], title[1], 17, INK, 'middle', '700')
+    return st
 
 
 def centroid(pts): return (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
@@ -151,18 +190,31 @@ def text_width(en, zh, size=15):
     return max(len(en) * size * 0.53 + wide * size * 0.12, len(zh) * (size - 2) * 1.0)
 
 
-def legend_oi(f, x, y, rows, w=360):
-    """rows: [(muscle id, origin en, origin zh, insertion en, insertion zh)] → stacked bilingual O/I legend."""
+def name_of(mid): return next(m['name'] for m in CONTENT['muscles'] if m['id'] == mid)
+
+
+def legend_oi(f, x, y, rows):
+    """rows: [(muscle id, origin en, origin zh, insertion en, insertion zh)] → stacked bilingual O/I legend.
+    The texts are the short figure labels; diagrams in content.json repeat them as Origin:/Insertion: labels."""
     yy = y
     for mid, oen, ozh, ien, izh in rows:
         col = COLOR.get(mid, RED)
-        name = next(m['name'] for m in CONTENT['muscles'] if m['id'] == mid)
-        f.raw(f'<rect x="{x}" y="{yy - 15}" width="14" height="14" rx="3" fill="{tint(col)}" stroke="{col}" stroke-width="1.6"/>')
-        f.bi(x + 22, yy, name['en'], name['zh'], 15, col, 'start', '700')
-        f.bi(x + 22, yy + 40, 'Origin: ' + oen, '起点：' + ozh, 13, ORIGIN_C, 'start', '600')
-        f.bi(x + 22, yy + 78, 'Insertion: ' + ien, '止点：' + izh, 13, INSERT_C, 'start', '600')
-        yy += 122
+        name = name_of(mid)
+        letter = next(m.get('letter', '') for m in CONTENT['muscles'] if m['id'] == mid)
+        tag(f, x + 12, yy - 6, letter, col, 13)
+        f.bi(x + 32, yy, name['en'], name['zh'], 16, col, 'start', '700')
+        f.bi(x + 32, yy + 40, 'Origin: ' + oen, '起点：' + ozh, 13, ORIGIN_C, 'start', '600')
+        f.bi(x + 32, yy + 76, 'Insertion: ' + ien, '止点：' + izh, 13, INSERT_C, 'start', '600')
+        yy += 118
     return yy
+
+
+def key_oi(f, x, y):
+    """Small key: green dashed = origin, red dashed = insertion, dashed line = O→I attachment order (AN-13)."""
+    area(f, [(x, y), (x + 34, y)], ORIGIN_C); f.bi(x + 46, y + 4, 'Origin area', '起点区', 13, ORIGIN_C, 'start', '600')
+    area(f, [(x + 170, y), (x + 204, y)], INSERT_C); f.bi(x + 216, y + 4, 'Insertion area', '止点区', 13, INSERT_C, 'start', '600')
+    f.raw(f'<path d="M{x + 350},{y} L{x + 400},{y}" stroke="#324c44" stroke-width="1.6" stroke-dasharray="7 5"/>')
+    f.bi(x + 410, y + 4, 'Origin → insertion', '起点 → 止点', 13, INK, 'start', '600')
 
 
 def note(f, x, y, lines_en, lines_zh, col=GREY, size=13):
