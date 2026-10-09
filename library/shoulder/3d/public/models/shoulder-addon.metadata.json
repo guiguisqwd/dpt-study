@@ -645,9 +645,9 @@
       "layer": "muscular",
       "selectable": true,
       "position": [
-        0.4451,
-        4.3661,
-        -0.3192
+        0.4753,
+        2.7704,
+        -0.6972
       ],
       "objectCount": 1
     },
@@ -660,9 +660,9 @@
       "layer": "muscular",
       "selectable": true,
       "position": [
-        -0.4451,
-        4.3661,
-        -0.3192
+        -0.4753,
+        2.7704,
+        -0.6972
       ],
       "objectCount": 1
     },
@@ -675,9 +675,9 @@
       "layer": "muscular",
       "selectable": true,
       "position": [
-        0.4753,
-        2.7704,
-        -0.6972
+        0.4451,
+        4.3661,
+        -0.3192
       ],
       "objectCount": 1
     },
@@ -690,9 +690,9 @@
       "layer": "muscular",
       "selectable": true,
       "position": [
-        -0.4753,
-        2.7704,
-        -0.6972
+        -0.4451,
+        4.3661,
+        -0.3192
       ],
       "objectCount": 1
     },

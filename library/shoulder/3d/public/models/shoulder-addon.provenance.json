@@ -15,7 +15,7 @@
     "license": "MIT (Vanatome contributors); vendored unchanged"
   },
   "blenderVersion": "5.2.0 LTS",
-  "glbSha256": "924201b327df0406047630efdd0b757f114ddce94b75eeed1db074ddaeba8743",
+  "glbSha256": "e10e0b0749aaafb54abd1cb5fdde32ccb3e20b6360cfce2b006eb5469a330d21",
   "glbBytes": 2294280,
   "objectCount": 42,
   "meshes": {
@@ -411,32 +411,7 @@
     },
     "trapezius-muscles-ascending-part-of-trapezius-muscle-left": {
       "source": "Ascending part of trapezius muscle.l",
-      "minMetres": [
-        -0.004,
-        1.4156,
-        -0.0917
-      ],
-      "maxMetres": [
-        0.1312,
-        1.5747,
-        0.0004
-      ]
-    },
-    "trapezius-muscles-ascending-part-of-trapezius-muscle-right": {
-      "source": "Ascending part of trapezius muscle.r",
-      "minMetres": [
-        -0.1312,
-        1.4156,
-        -0.0917
-      ],
-      "maxMetres": [
-        0.004,
-        1.5747,
-        0.0004
-      ]
-    },
-    "trapezius-muscles-descending-part-of-trapezius-muscle-left": {
-      "source": "Descending part of trapezius muscle.l",
+      "zAnatomyName": "Descending part of trapezius muscle.l",
       "minMetres": [
         -0.0015,
         1.1201,
@@ -448,8 +423,9 @@
         -0.0691
       ]
     },
-    "trapezius-muscles-descending-part-of-trapezius-muscle-right": {
-      "source": "Descending part of trapezius muscle.r",
+    "trapezius-muscles-ascending-part-of-trapezius-muscle-right": {
+      "source": "Ascending part of trapezius muscle.r",
+      "zAnatomyName": "Descending part of trapezius muscle.r",
       "minMetres": [
         -0.1373,
         1.1201,
@@ -459,6 +435,34 @@
         0.0015,
         1.4143,
         -0.0691
+      ]
+    },
+    "trapezius-muscles-descending-part-of-trapezius-muscle-left": {
+      "source": "Descending part of trapezius muscle.l",
+      "zAnatomyName": "Ascending part of trapezius muscle.l",
+      "minMetres": [
+        -0.004,
+        1.4156,
+        -0.0917
+      ],
+      "maxMetres": [
+        0.1312,
+        1.5747,
+        0.0004
+      ]
+    },
+    "trapezius-muscles-descending-part-of-trapezius-muscle-right": {
+      "source": "Descending part of trapezius muscle.r",
+      "zAnatomyName": "Ascending part of trapezius muscle.r",
+      "minMetres": [
+        -0.1312,
+        1.4156,
+        -0.0917
+      ],
+      "maxMetres": [
+        0.004,
+        1.5747,
+        0.0004
       ]
     },
     "trapezius-muscles-transverse-part-of-trapezius-muscle-left": {
@@ -568,14 +572,16 @@
   },
   "mappingNotes": [
     {
-      "structure": "trapezius-muscles-ascending-part-of-trapezius-muscle",
-      "showAs": "Upper trapezius (descending part in Terminologia Anatomica)",
-      "why": "Measured on 2026-10-09: this mesh runs from above C7 (nuchal ligament and occiput) to the lateral clavicle, which is the superior/descending part in TA. Z-Anatomy labels it 'Ascending part'. The check 'topAbove Vertebra C7' guards the mapping."
+      "structure": "trapezius-muscles-descending-part-of-trapezius-muscle",
+      "showAs": "Upper trapezius (descending part)",
+      "zAnatomyName": "Ascending part of trapezius muscle",
+      "why": "Renamed before export (renameSourceObjects). Guarded by 'topAbove Vertebra C7' and 'overlaps Clavicle'."
     },
     {
-      "structure": "trapezius-muscles-descending-part-of-trapezius-muscle",
-      "showAs": "Lower trapezius (ascending part in Terminologia Anatomica)",
-      "why": "Measured on 2026-10-09: this mesh runs from about T12 up to the medial scapular spine, which is the inferior/ascending part in TA. Z-Anatomy labels it 'Descending part'. Guarded by 'topBelow Vertebra C7' and 'bottomBelow Vertebra T7'."
+      "structure": "trapezius-muscles-ascending-part-of-trapezius-muscle",
+      "showAs": "Lower trapezius (ascending part)",
+      "zAnatomyName": "Descending part of trapezius muscle",
+      "why": "Renamed before export (renameSourceObjects). Guarded by 'topBelow Vertebra C7', 'bottomBelow Vertebra T7' and 'overlaps Scapula'."
     },
     {
       "structure": "trapezius-muscles-transverse-part-of-trapezius-muscle",
