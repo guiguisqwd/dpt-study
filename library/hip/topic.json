@@ -268,8 +268,7 @@
       },
       "chapters": [
         "anatomy",
-        "innervation",
-        "movement"
+        "innervation"
       ],
       "modelTermId": "superior-gemellus"
     },
@@ -296,8 +295,7 @@
       },
       "chapters": [
         "anatomy",
-        "innervation",
-        "movement"
+        "innervation"
       ],
       "modelTermId": "inferior-gemellus"
     },
@@ -339,9 +337,7 @@
       "chapters": [
         "anatomy",
         "innervation",
-        "movement",
-        "clinical",
-        "review"
+        "movement"
       ],
       "modelTermId": null
     },
@@ -355,8 +351,7 @@
       "chapters": [
         "anatomy",
         "innervation",
-        "movement",
-        "review"
+        "movement"
       ],
       "modelTermId": null
     },
@@ -386,8 +381,7 @@
         "anatomy",
         "innervation",
         "movement",
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -416,8 +410,7 @@
         "anatomy",
         "innervation",
         "movement",
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -445,8 +438,7 @@
       "chapters": [
         "anatomy",
         "innervation",
-        "movement",
-        "review"
+        "movement"
       ],
       "modelTermId": null
     },
@@ -476,8 +468,7 @@
         "anatomy",
         "innervation",
         "movement",
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -506,8 +497,7 @@
       "chapters": [
         "anatomy",
         "innervation",
-        "movement",
-        "review"
+        "movement"
       ],
       "modelTermId": null
     },
@@ -519,8 +509,7 @@
         "zh": "腰丛"
       },
       "chapters": [
-        "innervation",
-        "review"
+        "innervation"
       ],
       "modelTermId": null
     },
@@ -532,8 +521,7 @@
         "zh": "骶丛"
       },
       "chapters": [
-        "innervation",
-        "review"
+        "innervation"
       ],
       "modelTermId": null
     },
@@ -653,8 +641,7 @@
         "zh": "髋骨"
       },
       "chapters": [
-        "anatomy",
-        "review"
+        "anatomy"
       ],
       "modelTermId": "hip-bone"
     },
@@ -855,8 +842,7 @@
       },
       "chapters": [
         "anatomy",
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -905,8 +891,7 @@
         "zh": "股骨颈"
       },
       "chapters": [
-        "anatomy",
-        "movement"
+        "anatomy"
       ],
       "modelTermId": null
     },
@@ -933,8 +918,7 @@
         "zh": "小转子"
       },
       "chapters": [
-        "anatomy",
-        "review"
+        "anatomy"
       ],
       "modelTermId": null
     },
@@ -994,8 +978,7 @@
         "zh": "髂胫束"
       },
       "chapters": [
-        "anatomy",
-        "clinical"
+        "anatomy"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1011,9 +994,7 @@
       },
       "chapters": [
         "anatomy",
-        "movement",
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -1025,8 +1006,7 @@
         "zh": "髋臼唇"
       },
       "chapters": [
-        "anatomy",
-        "clinical"
+        "anatomy"
       ],
       "modelTermId": null
     },
@@ -1039,8 +1019,7 @@
       },
       "chapters": [
         "anatomy",
-        "movement",
-        "review"
+        "movement"
       ],
       "modelTermId": null
     },
@@ -1052,8 +1031,7 @@
         "zh": "耻股韧带"
       },
       "chapters": [
-        "anatomy",
-        "movement"
+        "anatomy"
       ],
       "modelTermId": null
     },
@@ -1065,8 +1043,7 @@
         "zh": "坐股韧带"
       },
       "chapters": [
-        "anatomy",
-        "movement"
+        "anatomy"
       ],
       "modelTermId": null
     },
@@ -1093,8 +1070,7 @@
         "zh": "环跳"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1109,8 +1085,7 @@
         "zh": "居髎"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1125,8 +1100,7 @@
         "zh": "秩边"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1141,8 +1115,7 @@
         "zh": "承扶"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1157,8 +1130,7 @@
         "zh": "殷门"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1173,8 +1145,7 @@
         "zh": "髀关"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1189,8 +1160,7 @@
         "zh": "伏兔"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1205,8 +1175,7 @@
         "zh": "风市"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [
@@ -1221,8 +1190,7 @@
         "zh": "阴廉"
       },
       "chapters": [
-        "clinical",
-        "review"
+        "clinical"
       ],
       "modelTermId": null,
       "aliases": [

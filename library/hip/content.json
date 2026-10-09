@@ -300,6 +300,7 @@
         },
         {
           "type": "muscles",
+          "layout": "compact",
           "ids": [
             "gluteus-maximus",
             "gluteus-medius",
@@ -321,6 +322,7 @@
         },
         {
           "type": "muscles",
+          "layout": "compact",
           "ids": [
             "piriformis",
             "superior-gemellus",
@@ -348,6 +350,7 @@
         },
         {
           "type": "muscles",
+          "layout": "compact",
           "ids": [
             "psoas-major",
             "iliacus",
@@ -369,6 +372,7 @@
         },
         {
           "type": "muscles",
+          "layout": "compact",
           "ids": [
             "pectineus",
             "adductor-longus",
@@ -391,6 +395,7 @@
         },
         {
           "type": "muscles",
+          "layout": "compact",
           "ids": [
             "biceps-femoris",
             "semitendinosus",
@@ -1494,10 +1499,7 @@
           "layout": "stages",
           "cards": [
             {
-              "label": {
-                "en": "1",
-                "zh": "1"
-              },
+              "label": "1",
               "heading": {
                 "en": "Early forward bending: lumbar flexion leads",
                 "zh": "前屈早期：腰椎屈曲为主"
@@ -1510,10 +1512,7 @@
               ]
             },
             {
-              "label": {
-                "en": "2",
-                "zh": "2"
-              },
+              "label": "2",
               "heading": {
                 "en": "Mid range: anterior pelvic tilt joins in",
                 "zh": "中段：骨盆前倾加入"
@@ -1526,10 +1525,7 @@
               ]
             },
             {
-              "label": {
-                "en": "3",
-                "zh": "3"
-              },
+              "label": "3",
               "heading": {
                 "en": "End range: hip flexion dominates",
                 "zh": "末段：屈髋为主"
@@ -1542,10 +1538,7 @@
               ]
             },
             {
-              "label": {
-                "en": "4",
-                "zh": "4"
-              },
+              "label": "4",
               "heading": {
                 "en": "Return to upright: hips first, then lumbar spine",
                 "zh": "回到直立：先髋后腰"
@@ -4894,16 +4887,77 @@
       "id": "fig-11",
       "file": "figures/11-腰丛与骶丛.svg",
       "alt": {
-        "en": "",
-        "zh": ""
+        "en": "Lumbar and sacral plexuses: roots to hip nerves (supplementary flow chart). Root levels are nerve segments, not vertebrae, and vary between people.",
+        "zh": "腰丛与骶丛：从神经根到髋部神经（补充流程图）。根节段指神经节段，不是椎骨，且存在个体差异。"
       },
       "caption": {
-        "en": "",
-        "zh": ""
+        "en": "Lumbar and sacral plexuses: roots to hip nerves (supplementary flow chart). Root levels are nerve segments, not vertebrae, and vary between people.",
+        "zh": "腰丛与骶丛：从神经根到髋部神经（补充流程图）。根节段指神经节段，不是椎骨，且存在个体差异。"
       },
-      "labels": [],
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lumbar plexus",
+            "zh": "腰丛"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Sacral plexus",
+            "zh": "骶丛"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lumbosacral trunk",
+            "zh": "腰骶干"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Femoral nerve",
+            "zh": "股神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Obturator nerve",
+            "zh": "闭孔神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior gluteal nerve",
+            "zh": "臀上神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Inferior gluteal nerve",
+            "zh": "臀下神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Tibial division",
+            "zh": "胫神经部"
+          }
+        }
+      ],
       "sources": [
-        "n1-teachme-hip-joint"
+        "n1-kenhub-lumbar-plexus",
+        "n1-kenhub-sacral-plexus",
+        "n1-teachme-sciatic-nerve",
+        "n1-radiopaedia-nerve-quadratus-femoris",
+        "n1-radiopaedia-nerve-obturator-internus"
       ]
     },
     {
@@ -5062,7 +5116,50 @@
         "en": "Line of pull: flexors pass in front of the hip centre and extensors behind; abductors pass lateral and adductors medial.",
         "zh": "拉力线：屈肌在髋关节中心前方、伸肌在后方；外展肌在外侧、内收肌在内侧。"
       },
-      "labels": [],
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Psoas major",
+            "zh": "腰大肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Rectus femoris",
+            "zh": "股直肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Gluteus maximus",
+            "zh": "臀大肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Gluteus medius",
+            "zh": "臀中肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Adductor longus",
+            "zh": "长收肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Biceps femoris",
+            "zh": "股二头肌"
+          }
+        }
+      ],
       "sources": [
         "mv1-kenhub-hip-joint",
         "mv1-teachme-hip-joint"
@@ -5072,48 +5169,224 @@
       "id": "fig-15",
       "file": "figures/15-单腿站立的髋外展杠杆.svg",
       "alt": {
-        "en": "",
-        "zh": ""
+        "en": "Single-leg stance: the hip abductor lever. The model drawing shows the arms schematically; the lever diagram gives the ratio.",
+        "zh": "单腿站立：髋外展肌杠杆。模型图上的力臂长度为示意，比例见旁边的杠杆图。"
       },
       "caption": {
-        "en": "",
-        "zh": ""
+        "en": "Single-leg stance: the hip abductor lever. The model drawing shows the arms schematically; the lever diagram gives the ratio.",
+        "zh": "单腿站立：髋外展肌杠杆。模型图上的力臂长度为示意，比例见旁边的杠杆图。"
       },
-      "labels": [],
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Greater trochanter",
+            "zh": "大转子"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Centre of gravity",
+            "zh": "重心"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Fulcrum: hip joint centre",
+            "zh": "支点：髋关节中心"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Abductor lever arm",
+            "zh": "外展肌力臂"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Body-weight lever arm",
+            "zh": "体重力臂"
+          }
+        }
+      ],
       "sources": [
-        "n1-teachme-hip-joint"
+        "mv1-orthobullets-hip-biomechanics",
+        "mv1-harrison-hip-forces",
+        "mv1-ouhsc-hip-unilateral-stance",
+        "mv1-statpearls-trendelenburg-sign",
+        "mv1-statpearls-trendelenburg-gait"
       ]
     },
     {
       "id": "fig-16",
       "file": "figures/16-腰椎骨盆节律.svg",
       "alt": {
-        "en": "",
-        "zh": ""
+        "en": "Lumbopelvic rhythm in forward bending and the return to standing.",
+        "zh": "前屈与回到站立时的腰椎-骨盆节律。"
       },
       "caption": {
-        "en": "",
-        "zh": ""
+        "en": "Lumbopelvic rhythm in forward bending and the return to standing.",
+        "zh": "前屈与回到站立时的腰椎-骨盆节律。"
       },
-      "labels": [],
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lumbar spine",
+            "zh": "腰椎"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Pelvis",
+            "zh": "骨盆"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Hip joint",
+            "zh": "髋关节"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Thigh",
+            "zh": "大腿"
+          }
+        }
+      ],
       "sources": [
-        "n1-teachme-hip-joint"
+        "mv1-physiopedia-lumbopelvic-rhythm",
+        "mv1-esola-1996",
+        "mv1-hasebe-2016",
+        "mv1-moenter-forward-bend"
+      ]
+    },
+    {
+      "id": "fig-17",
+      "file": "figures/17-步态周期中髋部肌肉发力时间轴.svg",
+      "alt": {
+        "en": "Hip muscle activity across the gait cycle (approximate windows).",
+        "zh": "步态周期中髋部肌肉的发力时间轴（大致时间窗）。"
+      },
+      "caption": {
+        "en": "Hip muscle activity across the gait cycle (approximate windows).",
+        "zh": "步态周期中髋部肌肉的发力时间轴（大致时间窗）。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Gluteus maximus",
+            "zh": "臀大肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Iliopsoas",
+            "zh": "髂腰肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Adductor magnus",
+            "zh": "大收肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Hamstrings",
+            "zh": "腘绳肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Rectus femoris",
+            "zh": "股直肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Tensor fasciae latae",
+            "zh": "阔筋膜张肌"
+          }
+        }
+      ],
+      "sources": [
+        "mv1-ouhsc-gait-muscles",
+        "mv1-hall-brody-gait-hip",
+        "mv1-aapmr-normal-gait",
+        "mv1-physiopedia-gait-cycle",
+        "mv1-ncl-frcs-normal-gait"
       ]
     },
     {
       "id": "fig-18",
       "file": "figures/18-髋部神经损伤的感觉区与运动表现.svg",
       "alt": {
-        "en": "",
-        "zh": ""
+        "en": "Nerve injuries around the hip: sensory areas and motor signs (areas approximate and overlapping).",
+        "zh": "髋部神经损伤：感觉区与运动表现（区域为近似，彼此重叠）。"
       },
       "caption": {
-        "en": "",
-        "zh": ""
+        "en": "Nerve injuries around the hip: sensory areas and motor signs (areas approximate and overlapping).",
+        "zh": "髋部神经损伤：感觉区与运动表现（区域为近似，彼此重叠）。"
       },
-      "labels": [],
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Obturator n.",
+            "zh": "闭孔神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Sciatic n.",
+            "zh": "坐骨神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Saphenous n.",
+            "zh": "隐神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Gluteus medius",
+            "zh": "臀中肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Gluteus maximus",
+            "zh": "臀大肌"
+          }
+        }
+      ],
       "sources": [
-        "n1-teachme-hip-joint"
+        "n1-statpearls-meralgia",
+        "n1-statpearls-femoral-nerve",
+        "n1-kenhub-obturator-nerve",
+        "n1-statpearls-superior-gluteal-nerve",
+        "n1-kenhub-inferior-gluteal-nerve",
+        "n1-kenhub-sciatic-nerve"
       ]
     },
     {
@@ -6053,7 +6326,7 @@
         "zh": "居髎"
       },
       "location": {
-        "en": "Gallbladder Meridian of Foot-Shaoyang. In the buttock region, at the midpoint of the line connecting the anterior superior iliac spine with the most prominent point of the greater trochanter. WHO 2008: WHO 2008 (wording not opened directly, see notes): In the hip region, at the midpoint of the line connecting the anterior superior iliac spine and the prominence of the greater trochanter.",
+        "en": "Gallbladder Meridian of Foot-Shaoyang. In the buttock region, at the midpoint of the line connecting the anterior superior iliac spine with the most prominent point of the greater trochanter.",
         "zh": "足少阳胆经。在臀部，髂前上棘与股骨大转子最凸点连线的中点处。"
       },
       "layers": {
@@ -6088,7 +6361,7 @@
         "zh": "秩边"
       },
       "location": {
-        "en": "Bladder Meridian of Foot-Taiyang. In the buttock region, level with the fourth posterior sacral foramen, 3 cun lateral to the median sacral crest. WHO 2008: WHO 2008 (wording not opened directly, see notes): In the buttock region, at the same level as the fourth posterior sacral foramen, 3 B-cun lateral to the median sacral crest.",
+        "en": "Bladder Meridian of Foot-Taiyang. In the buttock region, level with the fourth posterior sacral foramen, 3 cun lateral to the median sacral crest.",
         "zh": "足太阳膀胱经。在臀部，横平第4骶后孔，骶正中嵴旁开3寸。"
       },
       "layers": {
@@ -6294,7 +6567,7 @@
         "zh": "阴廉"
       },
       "location": {
-        "en": "Liver Meridian of Foot-Jueyin. On the medial aspect of the thigh, 2 cun directly below Qichong (ST30). WHO 2008: WHO 2008 (wording not opened directly, see notes): On the medial aspect of the thigh, 2 B-cun distal to ST30.",
+        "en": "Liver Meridian of Foot-Jueyin. On the medial aspect of the thigh, 2 cun directly below Qichong (ST30).",
         "zh": "足厥阴肝经。在股内侧，气冲（ST30）直下2寸。"
       },
       "layers": {
