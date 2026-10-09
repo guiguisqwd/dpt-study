@@ -972,8 +972,7 @@
             "modelLinks",
             "layoutDesktop",
             "layoutMobile",
-            "fullAnswers",
-            "paperAppraisal"
+            "fullAnswers"
           ]
         }
       },
@@ -1269,7 +1268,6 @@
     "landmarks",
     "diagrams",
     "review",
-    "papers",
     "sources",
     "qa"
   ],

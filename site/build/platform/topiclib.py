@@ -22,11 +22,13 @@ SECTIONS = [
     ('movement', 'Movement and coordination', '动作与配合'),
     ('clinical', 'Clinical and regional anatomy', '临床与局部解剖'),
     ('review', 'Review and complete answers', '复习与完整答案'),
-    ('papers', 'Critical reading', '论文阅读'),
 ]
+# CH-01 (2026-10-09): paper reading left the chapter and became daily content (N-5). Chapters made
+# before that still carry a trailing 'papers' section until their own threads move it out.
+LEGACY_PAPER_SECTION = {'shoulder', 'hip'}
 STRUCTURE_KINDS = ['muscle', 'nerve', 'bone', 'landmark', 'joint', 'acupoint', 'paper']
 QA_CHECKS = ['medicalSources', 'bilingual', 'originInsertionLabels', 'modelLinks',
-             'layoutDesktop', 'layoutMobile', 'fullAnswers', 'paperAppraisal']
+             'layoutDesktop', 'layoutMobile', 'fullAnswers']
 MUSCLE_FIELDS = ['origin', 'insertion', 'course', 'actions', 'innervation']
 # QC-06: kinds whose English name is a key term needing IPA + stress + dictionary link (AN-07);
 # acupoints need tone-marked pinyin instead; paper titles are not pronunciation terms.
@@ -58,7 +60,7 @@ def skeleton(topic_id, en, zh, region_en='', region_zh=''):
     content = {'schemaVersion': 1, 'sections': [
         {'id': sid, 'title': pair(e, z), 'overview': pair(), 'blocks': [], 'diagramIds': []}
         for sid, e, z in SECTIONS], 'muscles': [], 'landmarks': [], 'diagrams': [],
-        'review': [], 'papers': [], 'sources': [],
+        'review': [], 'sources': [],
         'nerveNotation': json.loads(json.dumps(NERVE_NOTATION)),
         'qa': {'reviewedBy': '', 'reviewedOn': '', 'checks': {k: False for k in QA_CHECKS}}}
     manifest_template = ROOT / 'site/build/platform/templates/topic.json'
@@ -405,7 +407,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
     if not isinstance(content, dict): return errors + ['content.json must be an object'], missing
     if content.get('schemaVersion') != 1: fail('Unsupported content schemaVersion')
     for field in ['sections', 'muscles', 'landmarks', 'diagrams', 'review', 'papers', 'sources', 'acupoints', 'modelLinks']:
-        if field in ('acupoints', 'modelLinks') and field not in content: content = dict(content, **{field: []})
+        if field in ('acupoints', 'modelLinks', 'papers') and field not in content: content = dict(content, **{field: []})
         if not isinstance(content.get(field), list):
             fail(field + ' must be a list')
             content = dict(content, **{field: []})
@@ -461,7 +463,9 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         if required: require(bool(ids), label + ': anatomical diagram required')
 
     sections = content['sections']
-    if [s.get('id') for s in sections] != [s[0] for s in SECTIONS]: fail('Six sections must appear in the standard anatomy-to-paper order')
+    section_ids, five = [s.get('id') for s in sections], [s[0] for s in SECTIONS]
+    if section_ids == five + ['papers'] and tid in LEGACY_PAPER_SECTION: pass  # pending move to daily (CH-01)
+    elif section_ids != five: fail('Five sections must appear in the CH-01 order: ' + ', '.join(five))
     records = {'muscles': {m.get('id') for m in content['muscles']}, 'landmarks': {m.get('id') for m in content['landmarks']},
                'acupoints': {m.get('id') for m in content['acupoints']}, 'quiz': {m.get('id') for m in content['review']},
                'paper': {m.get('id') for m in content['papers']}}
@@ -579,7 +583,6 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         if review.get('mnemonic') is not None: bi(review['mnemonic'], 'review.mnemonic')
         sourced(review, 'review')
         require(len(review.get('answer', {}).get('en', '').split()) >= 12, 'Review answer must include a complete English explanation, not only a mnemonic')
-    require(bool(content['papers']), 'Critical paper reading is missing')
     for paper in content['papers']:
         require(bool(paper.get('citation', '').strip()), 'Paper citation is missing')
         for field in PAPER_FIELDS: bi(paper.get(field), 'paper.' + field)
@@ -605,7 +608,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
     require(any(b.get('type') == 'mnemonic' for b in reading.iter_blocks(review_blocks)) or any(r.get('mnemonic') for r in content['review']),
             'Review needs at least one mnemonic with its full English and Chinese wording (CH-01 05)')
     chapter_text = {section.get('id'): reading.section_text(content, section, blocks).lower()
-                    for section, blocks in reading.resolved_sections(content) if section.get('id') in {s[0] for s in SECTIONS}}
+                    for section, blocks in reading.resolved_sections(content) if section.get('id') in set(section_ids) & (set(five) | {'papers'})}
     check_structures(chapter_text, model_ids, [m.get('id') for m in content['muscles']])
     check_pronunciation(manifest, topic_dir, fail, require)
     qa = content.get('qa', {})
@@ -686,14 +689,14 @@ def render(manifest, content, missing, topic_dir=None, root=ROOT):
     if status == 'draft':
         notice = bilingual(pair('Draft — the course is not yet available.', '草稿：课程尚未完成，不能作为已核验的学习材料。'), 'p', 'notice')
         if manifest['viewer']['enabled']:
-            notice += bilingual(pair('The preview contains only the mapped model structures. Muscles, attachment labels and the six-part course still need preparation and review.',
-                                     '预览仅包含已匹配的模型结构；肌肉、起止点标注和六部分课程仍需编写与核验。'))
+            notice += bilingual(pair('The preview contains only the mapped model structures. Muscles, attachment labels and the five-part course still need preparation and review.',
+                                     '预览仅包含已匹配的模型结构；肌肉、起止点标注和五部分课程仍需编写与核验。'))
         body = notice + nav + bilingual(pair('Preparation checklist', '待完成项目'), 'h2') + '<ul class="checklist">'
-        checklist = [pair('Complete all six bilingual sections.', '完成六部分双语正文。'),
+        checklist = [pair('Complete all five bilingual sections.', '完成五部分双语正文。'),
                      pair('Add sourced muscle origins, insertions, courses and actions.', '补齐有来源依据的肌肉起止点、走行与动作。'),
                      pair('Label anatomical diagrams, nerves and bony landmarks.', '在解剖图中标出神经、骨性结构与肌肉起止点。'),
                      pair('Match model links and review any landmark coordinates.', '匹配三维模型链接并核验骨性标志坐标。'),
-                     pair('Write complete answers, mnemonics and paper appraisals.', '编写完整答案、简记与论文评析。'),
+                     pair('Write complete answers and mnemonics.', '编写完整答案与简记。'),
                      pair('Review sources and desktop/mobile layouts before publication.', '发布前核验来源与桌面、窄屏显示效果。')]
         body += ''.join('<li>' + bilingual(item, 'span') + '</li>' for item in checklist) + '</ul>'
         return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\nDraft · 草稿：课程尚未发布。\n\n'

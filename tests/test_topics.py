@@ -59,9 +59,6 @@ class TopicTests(unittest.TestCase):
         c['review'] = [{'id': 'test-question', 'question': pair('What is the test question?', '测试问题是什么？'),
                         'answer': pair('This complete English answer contains enough words to verify that a full explanation survives rendering before its Chinese translation.', '这是一段完整测试答案，用于检查中文位于英文之后。'),
                         'mnemonic': pair('Test mnemonic', '测试简记'), 'sources': ['test-source']}]
-        c['papers'] = [{'id': 'test-paper', 'citation': 'Artificial fixture, not a real paper.',
-                        **{key: artificial for key in ['question', 'design', 'population', 'methods', 'results', 'limitations', 'applicability']},
-                        'terms': [{'term': pair('Test term', '测试术语'), 'explanation': artificial}], 'sources': ['test-source']}]
         m['structures'] = [{'id': 'supraspinatus', 'kind': 'muscle', 'name': pair('Supraspinatus', '冈上肌'),
                             'chapters': ['anatomy'], 'modelTermId': 'supraspinatus'}]
         write_json(path / 'pronunciation.json', {'terms': {'Supraspinatus': [
@@ -139,7 +136,7 @@ class TopicTests(unittest.TestCase):
         self.assertTrue((destination / 'figures/test.svg').exists())
         markdown = (destination / 'reading.md').read_text()
         self.assertIn(english, markdown); self.assertIn('Test mnemonic', markdown)
-        self.assertIn('Study design', markdown); self.assertIn('lumbar', text)
+        self.assertIn('lumbar', text)
 
     def test_typed_blocks_render_in_page_and_markdown_and_records_are_placed_once(self):
         m, c, path = self.completed_fixture()
@@ -174,8 +171,11 @@ class TopicTests(unittest.TestCase):
         errors, _ = validate(bad, c, path, self.models)
         self.assertIn('ST-1 structure list is missing (topic.json structures)', errors)
         self.assertIn('supraspinatus: muscle record is not in the ST-1 structure list', errors)
-        bad = copy.deepcopy(m); bad['structures'][0]['chapters'] = ['papers']
-        self.assertIn('structure supraspinatus: not mentioned in chapter papers', validate(bad, c, path, self.models)[0])
+        bad = copy.deepcopy(m); bad['structures'][0]['chapters'] = ['clinical']
+        self.assertIn('structure supraspinatus: not mentioned in chapter clinical', validate(bad, c, path, self.models)[0])
+        bad = copy.deepcopy(m); bad['structures'][0]['chapters'] = ['papers']  # CH-01: no paper section any more
+        self.assertIn('structure supraspinatus: chapters must list at least one of anatomy, innervation, movement, clinical, review',
+                      validate(bad, c, path, self.models)[0])
         bad = copy.deepcopy(m); bad['structures'][0]['modelTermId'] = 'guessed-id'
         self.assertIn('structure supraspinatus: modelTermId is not a real 3D id', validate(bad, c, path, self.models)[0])
         bad = copy.deepcopy(m); bad['structures'][0]['kind'] = 'organ'
@@ -183,6 +183,15 @@ class TopicTests(unittest.TestCase):
         draft = copy.deepcopy(m); draft['status'] = 'draft'; draft['structures'] = []
         errors, missing = validate(draft, c, path, self.models)
         self.assertEqual(errors, []); self.assertIn('ST-1 structure list is missing (topic.json structures)', missing)
+
+    def test_chapter_has_five_sections_and_no_paper_section(self):
+        m, c, path = self.completed_fixture()
+        self.assertNotIn('Five sections must appear in the CH-01 order: anatomy, innervation, movement, clinical, review',
+                         validate(m, c, path, self.models)[0])
+        bad = copy.deepcopy(c)
+        bad['sections'].append({'id': 'papers', 'title': pair('Critical reading', '论文阅读'), 'overview': pair(), 'blocks': [], 'diagramIds': []})
+        self.assertIn('Five sections must appear in the CH-01 order: anatomy, innervation, movement, clinical, review',
+                      validate(m, bad, path, self.models)[0])
 
     def test_english_must_come_first(self):
         m, c, path = self.completed_fixture()

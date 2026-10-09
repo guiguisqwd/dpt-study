@@ -39,6 +39,8 @@
 
 ## 论文阅读（AN-30 至 AN-39）
 
+2026-10-09 起论文阅读不在章节里，是每日学习的「新」内容 N-5（[../daily/README.md](../daily/README.md)）；写法规则不变。
+
 方法沿用 scientific-critical-thinking SKILL.md v1.5（K-Dense-AI）。
 
 | 编号 | 规则 |
