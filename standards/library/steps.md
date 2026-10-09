@@ -21,7 +21,7 @@
 | 部分 | 放什么 | 肩袖 `library/shoulder/` | 新章节（如 `library/hip/`） |
 | --- | --- | --- | --- |
 | 注册 | 状态、标题、3D 映射 | `topic.json` | `topic.json` |
-| `text/` | 正文源稿、数据、成稿、制作记录与核对记录 | 正文在章节根目录的 `content.json`（生成 HTML 和 Markdown，`text/build-reading.py` 写到旧地址）；`text/` 放成稿、`text/data/` 核对记录、`text/制作流程-肩袖双语学习.md`、`text/论文阅读核对记录.json` | `content.json`（生成 HTML 和 Markdown），制作记录放章节根目录 |
+| `text/` | 正文源稿、数据、成稿、制作记录与核对记录 | 正文在章节根目录的 `content.json`（生成 HTML 和 Markdown，`text/build-reading.py` 写到旧地址）；`text/` 放成稿、`text/data/` 核对记录、`text/制作流程-肩袖双语学习.md` | `content.json`（生成 HTML 和 Markdown），制作记录放章节根目录 |
 | `figures/` | 编号 SVG | `figures/` | `figures/` |
 | `pdf/` | 离线 PDF 及其导出脚本 | `pdf/` | 有 PDF 时同样放 `pdf/` |
 | `3d/` | 本章 3D 网站或 3D 数据（ST-7） | `3d/`：完整的 3D 程序、模型、语音、骨性标志 | `3d/`：目前只有 `topic.json` 里的模型映射，借用肩部 3D 程序预览 |

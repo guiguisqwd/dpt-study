@@ -23,8 +23,8 @@ library/                     ① 解剖知识库
   README.md                  如何新增一章
   shoulder/                  肩部 · 肩袖
     topic.json、ADAPTER.md   注册与兼容说明
-    content.json             六章正文的唯一来源（HTML 与 Markdown 由它生成）；pronunciation.json 读音表
-    text/                    build-reading.py、生成的成稿、制作记录、论文核对记录
+    content.json             五章正文的唯一来源（HTML 与 Markdown 由它生成）；pronunciation.json 读音表
+    text/                    build-reading.py、生成的成稿、制作记录
     figures/                 17 张可编辑 SVG
     pdf/                     已核验 PDF 与导出脚本
     3d/                      肩部 3D 网站（React / Three.js / Vite，未完成）：模型、语音、骨性标志、Claude 阅读版
