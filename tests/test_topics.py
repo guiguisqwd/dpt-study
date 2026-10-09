@@ -62,6 +62,8 @@ class TopicTests(unittest.TestCase):
         c['papers'] = [{'id': 'test-paper', 'citation': 'Artificial fixture, not a real paper.',
                         **{key: artificial for key in ['question', 'design', 'population', 'methods', 'results', 'limitations', 'applicability']},
                         'terms': [{'term': pair('Test term', '测试术语'), 'explanation': artificial}], 'sources': ['test-source']}]
+        m['structures'] = [{'id': 'supraspinatus', 'kind': 'muscle', 'name': pair('Supraspinatus', '冈上肌'),
+                            'chapters': ['anatomy'], 'modelTermId': 'supraspinatus'}]
         c['qa'] = {'reviewedBy': 'Test fixture only', 'reviewedOn': '2026-10-06', 'checks': {key: True for key in QA_CHECKS}}
         return m, c, path
 
@@ -136,6 +138,22 @@ class TopicTests(unittest.TestCase):
         markdown = (destination / 'reading.md').read_text()
         self.assertIn(english, markdown); self.assertIn('Test mnemonic', markdown)
         self.assertIn('Study design', markdown); self.assertIn('lumbar', text)
+
+    def test_structure_list_must_exist_be_complete_and_match_the_text(self):
+        m, c, path = self.completed_fixture()
+        bad = copy.deepcopy(m); bad['structures'] = []
+        errors, _ = validate(bad, c, path, self.models)
+        self.assertIn('ST-1 structure list is missing (topic.json structures)', errors)
+        self.assertIn('supraspinatus: muscle record is not in the ST-1 structure list', errors)
+        bad = copy.deepcopy(m); bad['structures'][0]['chapters'] = ['papers']
+        self.assertIn('structure supraspinatus: not mentioned in chapter papers', validate(bad, c, path, self.models)[0])
+        bad = copy.deepcopy(m); bad['structures'][0]['modelTermId'] = 'guessed-id'
+        self.assertIn('structure supraspinatus: modelTermId is not a real 3D id', validate(bad, c, path, self.models)[0])
+        bad = copy.deepcopy(m); bad['structures'][0]['kind'] = 'organ'
+        self.assertTrue(validate(bad, c, path, self.models)[0])
+        draft = copy.deepcopy(m); draft['status'] = 'draft'; draft['structures'] = []
+        errors, missing = validate(draft, c, path, self.models)
+        self.assertEqual(errors, []); self.assertIn('ST-1 structure list is missing (topic.json structures)', missing)
 
     def test_nonexistent_incorrect_tissue_and_wrong_anatomy_mappings_fail(self):
         m, c, path = self.completed_fixture()

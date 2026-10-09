@@ -104,5 +104,442 @@
         }
       }
     ]
-  }
+  },
+  "structures": [
+    {
+      "id": "supraspinatus",
+      "kind": "muscle",
+      "name": {
+        "en": "Supraspinatus",
+        "zh": "冈上肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "supraspinatus"
+    },
+    {
+      "id": "infraspinatus",
+      "kind": "muscle",
+      "name": {
+        "en": "Infraspinatus",
+        "zh": "冈下肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "infraspinatus"
+    },
+    {
+      "id": "teres-minor",
+      "kind": "muscle",
+      "name": {
+        "en": "Teres minor",
+        "zh": "小圆肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "teres-minor"
+    },
+    {
+      "id": "subscapularis",
+      "kind": "muscle",
+      "name": {
+        "en": "Subscapularis",
+        "zh": "肩胛下肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "subscapularis"
+    },
+    {
+      "id": "deltoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Deltoid",
+        "zh": "三角肌"
+      },
+      "chapters": [
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "deltoid"
+    },
+    {
+      "id": "teres-major",
+      "kind": "muscle",
+      "name": {
+        "en": "Teres major",
+        "zh": "大圆肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "trapezius",
+      "kind": "muscle",
+      "name": {
+        "en": "Trapezius",
+        "zh": "斜方肌"
+      },
+      "chapters": [
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "serratus-anterior",
+      "kind": "muscle",
+      "name": {
+        "en": "Serratus anterior",
+        "zh": "前锯肌"
+      },
+      "chapters": [
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "suprascapular-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Suprascapular nerve",
+        "zh": "肩胛上神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "axillary-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Axillary nerve",
+        "zh": "腋神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "brachial-plexus",
+      "kind": "nerve",
+      "name": {
+        "en": "Brachial plexus",
+        "zh": "臂丛"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "humerus",
+      "kind": "bone",
+      "name": {
+        "en": "Humerus",
+        "zh": "肱骨"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": "humerus"
+    },
+    {
+      "id": "scapula",
+      "kind": "bone",
+      "name": {
+        "en": "Scapula",
+        "zh": "肩胛骨"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": "scapula"
+    },
+    {
+      "id": "clavicle",
+      "kind": "bone",
+      "name": {
+        "en": "Clavicle",
+        "zh": "锁骨"
+      },
+      "chapters": [
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": "clavicle"
+    },
+    {
+      "id": "glenohumeral-joint",
+      "kind": "joint",
+      "name": {
+        "en": "Glenohumeral joint",
+        "zh": "盂肱关节"
+      },
+      "aliases": [
+        "glenohumeral"
+      ],
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "greater-tubercle",
+      "kind": "landmark",
+      "name": {
+        "en": "Greater tubercle",
+        "zh": "大结节"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": "greater-tubercle"
+    },
+    {
+      "id": "lesser-tubercle",
+      "kind": "landmark",
+      "name": {
+        "en": "Lesser tubercle",
+        "zh": "小结节"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": "lesser-tubercle"
+    },
+    {
+      "id": "supraspinous-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Supraspinous fossa",
+        "zh": "冈上窝"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "supraspinous-fossa"
+    },
+    {
+      "id": "infraspinous-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Infraspinous fossa",
+        "zh": "冈下窝"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "infraspinous-fossa"
+    },
+    {
+      "id": "subscapular-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Subscapular fossa",
+        "zh": "肩胛下窝"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "acromion",
+      "kind": "landmark",
+      "name": {
+        "en": "Acromion",
+        "zh": "肩峰"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": "acromion"
+    },
+    {
+      "id": "glenoid",
+      "kind": "landmark",
+      "name": {
+        "en": "Glenoid cavity",
+        "zh": "关节盂"
+      },
+      "aliases": [
+        "glenoid"
+      ],
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "suprascapular-notch",
+      "kind": "landmark",
+      "name": {
+        "en": "Suprascapular notch",
+        "zh": "肩胛上切迹"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "spinoglenoid-notch",
+      "kind": "landmark",
+      "name": {
+        "en": "Spinoglenoid notch",
+        "zh": "冈盂切迹"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "quadrangular-space",
+      "kind": "landmark",
+      "name": {
+        "en": "Quadrangular space",
+        "zh": "四边孔"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "si11",
+      "kind": "acupoint",
+      "name": {
+        "en": "Tianzong",
+        "zh": "天宗"
+      },
+      "aliases": [
+        "SI11"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "si12",
+      "kind": "acupoint",
+      "name": {
+        "en": "Bingfeng",
+        "zh": "秉风"
+      },
+      "aliases": [
+        "SI12"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "si9",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jianzhen",
+        "zh": "肩贞"
+      },
+      "aliases": [
+        "SI9"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "li15",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jianyu",
+        "zh": "肩髃"
+      },
+      "aliases": [
+        "LI15"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "te14",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jianliao",
+        "zh": "肩髎"
+      },
+      "aliases": [
+        "TE14"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "hando-2026-dry-needling",
+      "kind": "paper",
+      "name": {
+        "en": "Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial",
+        "zh": "干针联合手法治疗与运动治疗肩峰下疼痛综合征：一项假干针对照随机临床试验"
+      },
+      "aliases": [
+        "10.2519/jospt.2025.13460"
+      ],
+      "chapters": [
+        "papers"
+      ],
+      "modelTermId": null
+    }
+  ]
 }

@@ -13,6 +13,7 @@ ST-5 核验时逐条过。自动项由脚本检查；人工项要留截图或记
 | QC-05 | 英文在前；肌肉 O/I/N/A 和句式齐全；穴位字段齐全 | AN-01 至 AN-03、AN-20 | `daily/engine/schema.py`（主题包尚未覆盖） |
 | QC-06 | 读音覆盖所有英文关键术语 | AN-07 | `daily/engine/qa/qa.js`（主题包尚未覆盖） |
 | QC-07 | SVG 文字出界、重叠；手机宽度显示 | AN-16 | `daily/engine/qa/qa.js` |
+| QC-08 | ST-1 结构清单存在；每一项在它所列的章节正文里出现；3D ID 真实存在；正文里每条肌肉记录都在清单里 | ST-1、AN-40、AN-41 | `site/build/platform/topiclib.py`（草稿记为待办，`published` 时报错） |
 
 ## 人工检查
 
