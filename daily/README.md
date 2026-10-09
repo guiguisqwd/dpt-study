@@ -81,7 +81,8 @@ daily/
     templates/           reading shell + CSS (Day 1 design), review-center template
   days/<date>/           content.json, figures.py, build/ (pack, 资源/, sections/, qa/qa.json, qa/visual-review.json)
   runs/<date>.json       every step of every run: status, time, evidence, errors; runs/log.jsonl = append-only log
-  review-center/         generated review-center page
+  review-center/         generated review-center page; each answer is written to the artifact's shared db
+                         (answers/<page load>, progress/c<hex card id>); push-hub syncs answers into feedback/
   archive/seed-catalog.jsonl  catalog items that predate the pipeline (kept verbatim)
 ```
 
