@@ -101,6 +101,6 @@ python3 site/build/prepare-web-release.py --site-url https://guiguisqwd.github.i
 
 ## 来源与许可
 
-3D 查看器基于 [Vanatome](https://github.com/vixotic/Vanatome)，版本记录在 [UPSTREAM.json](./library/shoulder/3d/UPSTREAM.json)。上游查看器代码采用 MIT；Z-Anatomy 等资产遵循 CC BY-SA 4.0 及署名要求。分发时保留 [代码许可](./library/shoulder/3d/public/licenses/LICENSE)、[资产许可](./library/shoulder/3d/public/licenses/ASSET-LICENSE.md) 和 [署名](./library/shoulder/3d/public/licenses/ATTRIBUTION.txt)。这些说明不替未授权第三方材料授予新许可。
+3D 查看器基于 [Vanatome](https://github.com/vixotic/Vanatome)，版本记录在 [UPSTREAM.json](./library/shoulder/3d/UPSTREAM.json)。上游查看器代码采用 MIT；Z-Anatomy 等资产遵循 CC BY-SA 4.0 及署名要求。肩部附加模型（14 块肩部肌肉）由同一份 Z-Anatomy 源文件导出，同样按 CC BY-SA 4.0 发布，来源记录在 UPSTREAM.json 的 `addons`。分发时保留 [代码许可](./library/shoulder/3d/public/licenses/LICENSE)、[资产许可](./library/shoulder/3d/public/licenses/ASSET-LICENSE.md) 和 [署名](./library/shoulder/3d/public/licenses/ATTRIBUTION.txt)。这些说明不替未授权第三方材料授予新许可。
 
 解剖与研究内容须保留各自来源、证据范围及未解决缺项。校验器检查结构、完整性和链接，不能代替专业内容核验。肩袖穴位为模型学习参照，其状态见 [3D 应用说明](./library/shoulder/3d/README.md)。

@@ -62,6 +62,7 @@
 | 肩袖可编辑解剖配图 | `library/shoulder/figures/` 中的 SVG |
 | 肩袖结构清单与 3D 跳转 | `library/shoulder/topic.json` 的 `structures`；正文另需的 3D 名称写在 `content.json` 的 `modelLinks` |
 | 3D 页面、状态与交互（肩部章节，髋关节暂借用） | `library/shoulder/3d/src/` |
+| 章节 3D 附加模型（自带模型缺的肌肉） | `library/<id>/3d/atlas-addon.json`；共用脚本 `site/build/atlas/`（见其 README） |
 | 模型、音频、许可等公开资源 | `library/shoulder/3d/public/` |
 | Claude 独立阅读版 | `library/shoulder/3d/public/reading-claude.html` |
 | 每日学习包（内容、配图、流水线、运行记录） | `daily/`：每天的 `days/<date>/content.json` 与 `figures.py`；共用引擎在 `daily/engine/`；说明见 `daily/README.md`。`site/public/daily/` 是生成输出 |
