@@ -1,6 +1,6 @@
 # 第 3 层 · 知识库章节制作步骤
 
-每一步写成同样的四格。调整某一步时只改那一行；合格标准只引用规则编号，不重写规则。
+每一步写成同样的四格。调整某一步时只改那一行；合格标准只引用规则编号，不重写规则。编号固定不改，表格按实际执行顺序排列：ST-1 → ST-2 → ST-3 → ST-4 → ST-7 → ST-8 → ST-5 → ST-9 → ST-6。
 
 | 步骤 | 输入 | 输出 | 合格标准 |
 | --- | --- | --- | --- |
@@ -9,8 +9,10 @@
 | ST-3 写作 | 主题数据 + 章节模板 | 六章正文（单一源稿） | CH-01/CH-02、AN-01 至 AN-07、AN-30 至 AN-35、G-04 |
 | ST-4 画图 | 主题数据 + 正文 | 编号 SVG | AN-10 至 AN-17、AN-21、AN-22 |
 | ST-7 本章 3D（在 ST-4 之后、ST-5 之前做） | 主题数据（结构清单、3D 映射）+ 正文 | 本章 3D 部分：结构映射、骨性标志、需要时的语音和交互改动，放在 `library/<id>/3d/` | AN-40 至 AN-43；正文里的每个 `?term=` 都能在本章 3D 中打开；模型没有的结构按 AN-41 写明 |
-| ST-5 核验 | 构建后的页面和 SVG | 截图、检查清单结果 | [checklist.md](./checklist.md) 自动项全过，人工项逐条有证据；G-07 |
-| ST-6 定稿 | 通过核验的内容 | 成品 + 制作记录（方法、来源边界、3D 映射、未核验项） | 制作记录齐全；之后交给推送流程，本规范到此为止 |
+| ST-8 构建（在 ST-7 之后、ST-5 之前做） | 源文件：`topic.json`、`content.json`（肩袖为 `text/sections/` 双源稿和 `text/data/`）、`figures/` 的 SVG、`3d/` | 生成的页面：`library/shoulder/3d/public/topics.json`、`public/topics/<id>/` 下的 `index.html`、`reading.html`、`reading.md`、`data.json`，以及 `study.html` 首页；肩袖另有 `text/2026-10-06-肩袖-阅读优化版.html` 与 `.md`、`text/build-report.json`。命令见下方“构建与导出命令” | 校验和构建都无报错退出；QC-01 至 QC-04、QC-08 通过（草稿的待办项列进制作记录）；生成页没有手改，要改就回到源文件重建（G-08）；HTML 和 Markdown 来自同一次构建 |
+| ST-5 核验 | ST-8 构建出的页面和 SVG | 截图、检查清单结果 | [checklist.md](./checklist.md) 自动项全过，人工项逐条有证据；G-07 |
+| ST-9 导出 PDF（在 ST-5 之后、ST-6 之前做；本章提供 PDF 时必做） | 通过 ST-5 的阅读页（ST-8 输出）+ `figures/` 的 SVG | `library/<id>/pdf/` 下的 PDF；导出清单 `export-report.json`（页数、章节、图、表、问答数）；临时图片用完删除 | QC-27；PDF 来自当前这次构建，不是旧版；没通过前不在页面或目录里登记下载 |
+| ST-6 定稿 | 通过核验的内容（页面、PDF） | 成品 + 制作记录（方法、来源边界、3D 映射、未核验项、构建与 PDF 导出结果） | 制作记录齐全；之后交给推送流程，本规范到此为止 |
 
 ## 文件落点
 
@@ -24,4 +26,14 @@
 | `pdf/` | 离线 PDF 及其导出脚本 | `pdf/` | 有 PDF 时同样放 `pdf/` |
 | `3d/` | 本章 3D 网站或 3D 数据（ST-7） | `3d/`：完整的 3D 程序、模型、语音、骨性标志 | `3d/`：目前只有 `topic.json` 里的模型映射，借用肩部 3D 程序预览 |
 
-构建与校验命令见 [library/README.md](../../library/README.md)。
+## 构建与导出命令
+
+在仓库根目录运行。详细说明见 [library/README.md](../../library/README.md) §4。
+
+| 步骤 | 命令 | 说明 |
+| --- | --- | --- |
+| ST-8 | `python3 site/build/validate-topics.py --topic <id>` | 校验本章；不带 `--topic` 查全部，`--require-published` 查是否够发布 |
+| ST-8 | `cd library/shoulder/3d && pnpm build` | 先自动跑 `site/build/build-platform.py`（生成各章页面和 `study.html`），再打包 3D 程序；几何或空间标记有改动时另跑 `pnpm test:geometry` |
+| ST-8（仅肩袖） | `python3 library/shoulder/text/build-reading.py` | 改了肩袖章节源稿、数据或 SVG 时才跑 |
+| ST-9（肩袖） | `node library/shoulder/pdf/render-pdf-diagrams.cjs`，再 `python3 library/shoulder/pdf/export-pdf.py` | 先把 SVG 渲染成图片，再排版 PDF；脚本用的是 macOS 系统字体路径；细节见 [制作流程-肩袖双语学习.md](../../library/shoulder/text/制作流程-肩袖双语学习.md) §6 |
+| ST-9（新章节） | 还没有通用导出脚本 | 新章节不会因为有 `content.json` 就自动有 PDF；要做 PDF 时先在 `library/<id>/pdf/` 放导出脚本，产物同样过 QC-27 |
