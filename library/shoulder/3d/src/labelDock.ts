@@ -14,7 +14,8 @@ export function dockLabelHeight(label: string, rowHeight: number) {
 export type DockCandidate = { annotation: VanatomeAnnotation; priority: number; y: number };
 
 /** The highest-priority labels (lowest number first) that fit the scene's label column without overlapping,
- * docked top to bottom by height (y). The column is the scene height minus 100 px (AnnotationLayer). */
+ * docked top to bottom by height (y). The column is the scene height minus 100 px (AnnotationLayer), and every
+ * docked label is at least min(42, row - 3) px tall there, so a label never counts as shorter than that. */
 export function fitDockedLabels(candidates: DockCandidate[], sceneHeight: number): VanatomeAnnotation[] {
   const usable = Math.max(0, sceneHeight - 100);
   const ranked = [...candidates].sort((a, b) => a.priority - b.priority);
@@ -22,8 +23,10 @@ export function fitDockedLabels(candidates: DockCandidate[], sceneHeight: number
   for (let count = ranked.length; count >= 1 && !shown.length; count--) {
     const trial = ranked.slice(0, count).sort((a, b) => b.y - a.y || a.priority - b.priority);
     const row = Math.min(50, usable / count);
-    const heights = trial.map(item => dockLabelHeight(item.annotation.label, row));
-    if (count === 1 || heights.every((height, index) => index === 0 || (heights[index - 1] + height) / 2 <= row + 1.5)) shown = trial;
+    const minHeight = Math.max(0, Math.min(42, row - 3));
+    const heights = trial.map(item => Math.max(minHeight, dockLabelHeight(item.annotation.label, row)));
+    // Neighbouring labels sit one row apart (centre to centre), so their half-heights must fit in one row.
+    if (count === 1 || heights.every((height, index) => index === 0 || (heights[index - 1] + height) / 2 <= row)) shown = trial;
   }
   return shown.map((item, index) => ({ ...item.annotation, labelDockIndex: index, labelDockCount: shown.length }));
 }
