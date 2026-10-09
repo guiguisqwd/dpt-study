@@ -1,0 +1,220 @@
+{
+ "date": "2026-10-09",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-09T14:18:50+00:00",
+     "evidence": "{\"kind\":\"supplement\",\"trial\":true,\"week\":1,\"chapter\":\"shoulder\",\"note\":\"Trial pack requested by gui 2026-10-09: 10-09 precedes weeks.json (starts 10-11), so it reuses the week-1 Monday entry (2026-10-12) unchanged; weeks.json and pipeline.py not modified.\"}"
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-09T14:18:43+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-09/content.json",
+      "figures": "daily/days/2026-10-09/figures.py",
+      "fingerprint": "52ee15131dae2645"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-09T14:19:09+00:00",
+     "evidence": {
+      "svgs": [
+       "01-肩外俞肩中俞天髎-叠加图.svg",
+       "02-臂臑-上臂外侧.svg",
+       "03-肩外俞天髎-层次示意.svg",
+       "04-肩袖四肌-后面观与前面观.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-09T14:19:16+00:00",
+     "evidence": "{\"schema\":\"dpt-daily-pack/2\",\"problems\":0,\"plan_check\":\"run with date set to 2026-10-12 (the plan entry this trial uses): 0 problems; figures checked with the real date; with date 2026-10-09 the only error is that 10-09 is a v1 learning day in schedule.json\"}"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-09T14:19:16+00:00",
+     "evidence": {
+      "date": "2026-10-09",
+      "out": "2026-10-09-第1周-试用-肩带四穴与肩袖四肌",
+      "chapters": 2,
+      "figure_occurrences": 4,
+      "figures": [
+       "01",
+       "02",
+       "03",
+       "04"
+      ],
+      "model_links": [
+       "acromion",
+       "clavicle",
+       "deltoid",
+       "greater-tubercle",
+       "humeral-head",
+       "humerus",
+       "lesser-tubercle",
+       "scapula"
+      ],
+      "html_bytes": 138007
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-09T14:19:21+00:00",
+     "evidence": {
+      "figures": 4,
+      "say_buttons": 21,
+      "mobile_scroll_width": 390,
+      "flashcards": 10,
+      "views": 15
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-09T14:19:48+00:00",
+     "evidence": {
+      "viewed": 15,
+      "notes": "Viewed all 15 screenshots (desktop chapters, phone top, 4 figures). Header marks the pack as a trial using week-1 Monday content; English first everywhere; 4 acupoint cards complete with GB/T, WHO (TE15 WHO text not opened, stated on the card), layers, safety, how to find. Fig 01: SI15 below C7 at 2 cun, SI14 below T1 at 3 cun on the medial border line, TE15 at the superior angle; levator, rhomboids, supraspinatus under a dashed trapezius; caption notes the base art places the scapula a little l",
+      "fixed": [
+       "fig 01 leaders reordered to reduce crossings; ruler label moved",
+       "fig 02 ruler and labels moved off the arm",
+       "fig 04 library figure: displacement filter removed and view titles put on one line (QA overlap)"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-09T14:19:48+00:00",
+     "evidence": {
+      "entries": 3,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-09/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-09T14:19:48+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-09": 24
+     }
+    }
+   },
+   "started": "2026-10-09T14:18:43+00:00",
+   "fingerprint": "a4b752e463c8e526"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-09T14:18:43+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:43+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:43+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:43+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "failed"
+  },
+  {
+   "at": "2026-10-09T14:18:50+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:50+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:50+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:18:57+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "failed"
+  },
+  {
+   "at": "2026-10-09T14:19:09+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:09+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "failed"
+  },
+  {
+   "at": "2026-10-09T14:19:16+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:16+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:21+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:21+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-09T14:19:48+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:48+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-09T14:19:48+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "learning",
+ "day": 3,
+ "out": "2026-10-09-第1周-试用-肩带四穴与肩袖四肌"
+}
