@@ -71,6 +71,22 @@
           "type": "heading",
           "level": 3,
           "text": {
+            "en": "Two neighboring muscles that are not part of the rotator cuff",
+            "zh": "两块不属于肩袖的相邻肌肉"
+          }
+        },
+        {
+          "type": "muscles",
+          "ids": [
+            "teres-major",
+            "trapezius"
+          ],
+          "layout": "cards"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
             "en": "Describing a muscle in English",
             "zh": "用英语完整描述肌肉"
           }
@@ -1544,6 +1560,90 @@
       "letter": "S"
     },
     {
+      "id": "teres-major",
+      "name": {
+        "en": "Teres major",
+        "zh": "大圆肌"
+      },
+      "origin": {
+        "en": "Posterior surface of the inferior angle of the scapula",
+        "zh": "肩胛骨下角后面"
+      },
+      "insertion": {
+        "en": "Medial lip of the intertubercular groove (crest of the lesser tubercle) of the humerus",
+        "zh": "肱骨结节间沟内侧唇（小结节嵴）"
+      },
+      "course": {
+        "en": "The teres major originates from the posterior surface of the inferior angle of the scapula, passes superolaterally below the teres minor and anterior to the long head of the triceps brachii, and inserts onto the medial lip of the intertubercular groove of the humerus.",
+        "zh": "大圆肌起自肩胛骨下角后面，在小圆肌下方、肱三头肌长头前方向上外侧走行，止于肱骨结节间沟内侧唇。"
+      },
+      "actions": {
+        "en": "It adducts and medially rotates the arm at the glenohumeral joint and helps extend the arm from a flexed position. Teres major is not part of the rotator cuff; it forms the inferior border of the quadrangular space.",
+        "zh": "它在盂肱关节使上臂内收和内旋，并协助上臂从屈曲位伸展。大圆肌不属于肩袖；它构成四边孔的下界。"
+      },
+      "innervation": {
+        "en": "Lower subscapular nerve, from the posterior cord of the brachial plexus (C5–C7)",
+        "zh": "下肩胛下神经，发自臂丛后束（C5–C7）"
+      },
+      "modelTermId": "teres-major",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-18"
+      ],
+      "sources": [
+        "muscles-elsevier-teres-major",
+        "muscles-kenhub-teres-major",
+        "muscles-teachmeanatomy-intrinsic-shoulder",
+        "muscles-statpearls-subscapularis",
+        "landmarks-teachme-quadrangular-space"
+      ],
+      "color": "#826459"
+    },
+    {
+      "id": "trapezius",
+      "name": {
+        "en": "Trapezius",
+        "zh": "斜方肌"
+      },
+      "origin": {
+        "en": "External occipital protuberance and medial third of the superior nuchal line of the occipital bone, the nuchal ligament, and the spinous processes of the C7–T12 vertebrae",
+        "zh": "枕骨的枕外隆凸和上项线内侧三分之一、项韧带，以及 C7–T12 椎骨棘突"
+      },
+      "insertion": {
+        "en": "Posterior border of the lateral third of the clavicle, the medial margin of the acromion, and the superior lip of the spine of the scapula as far as the tubercle at its medial end",
+        "zh": "锁骨外侧三分之一后缘、肩峰内侧缘，以及肩胛冈上唇直至其内侧端的结节"
+      },
+      "course": {
+        "en": "The trapezius originates from the occipital bone, the nuchal ligament and the spinous processes of the C7–T12 vertebrae, passes laterally as its fibers converge on the shoulder, and inserts onto the lateral third of the clavicle, the acromion and the spine of the scapula. The upper trapezius (descending part) runs inferolaterally to the clavicle, the middle trapezius (transverse part) runs horizontally to the acromion and the lateral part of the scapular spine, and the lower trapezius (ascending part) runs superolaterally to the medial end of the scapular spine. The vertebral levels at which the parts divide differ between sources.",
+        "zh": "斜方肌起自枕骨、项韧带和 C7–T12 椎骨棘突，肌纤维向肩部汇聚并向外侧走行，止于锁骨外侧三分之一、肩峰和肩胛冈。上斜方肌（降部）向下外侧走向锁骨，中斜方肌（横部）水平走向肩峰和肩胛冈外侧部，下斜方肌（升部）向上外侧走向肩胛冈内侧端。各部分界的椎骨节段在不同资料中略有出入。"
+      },
+      "actions": {
+        "en": "The upper part elevates the scapula, the middle part retracts it, and the lower part depresses its medial part. The upper and lower parts work with serratus anterior to rotate the scapula upward during arm elevation. With the scapula fixed, the upper part extends and laterally flexes the neck.",
+        "zh": "上部上提肩胛骨，中部使肩胛骨后缩，下部使肩胛骨内侧部下降。上部和下部与前锯肌协作，在手臂上举时使肩胛骨上旋。肩胛骨固定时，上部可使颈部后伸并侧屈。"
+      },
+      "innervation": {
+        "en": "Spinal accessory nerve (cranial nerve XI) for motor supply; anterior rami of the C3 and C4 spinal nerves through the cervical plexus, usually described as proprioceptive (sensory), although a cadaveric study found motor axons in these branches",
+        "zh": "副神经（第十一对脑神经）提供运动支配；C3、C4 脊神经前支经颈丛加入，通常被描述为本体感觉（感觉）纤维，但一项尸体研究在这些分支中发现了运动轴突"
+      },
+      "modelTermId": "trapezius",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-19"
+      ],
+      "sources": [
+        "muscles-kenhub-trapezius",
+        "muscles-statpearls-trapezius",
+        "diagrams-elsevier-trapezius-descending",
+        "muscles-elsevier-trapezius-transverse",
+        "diagrams-elsevier-trapezius-ascending",
+        "muscles-teachmeanatomy-superficial-back",
+        "muscles-loyola-trapezius",
+        "muscles-tubbs-2011-trapezius-cervical",
+        "statpearls-serratus-anterior"
+      ],
+      "color": "#2b6c7c"
+    },
+    {
       "id": "deltoid",
       "name": {
         "en": "Deltoid",
@@ -1606,11 +1706,8 @@
         "en": "Accessory nerve (cranial nerve XI); anterior rami of C3–C4, usually described as proprioceptive (sensory)",
         "zh": "副神经（第十一对脑神经）；C3–C4 脊神经前支，通常被描述为本体感觉（感觉）纤维"
       },
-      "modelTermId": null,
-      "modelUnavailableReason": {
-        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
-        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
-      },
+      "modelTermId": "upper-trapezius",
+      "modelUnavailableReason": null,
       "diagramIds": [
         "fig-11"
       ],
@@ -1648,11 +1745,8 @@
         "en": "Accessory nerve (cranial nerve XI); anterior rami of C3–C4, usually described as proprioceptive (sensory)",
         "zh": "副神经（第十一对脑神经）；C3–C4 脊神经前支，通常被描述为本体感觉（感觉）纤维"
       },
-      "modelTermId": null,
-      "modelUnavailableReason": {
-        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
-        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
-      },
+      "modelTermId": "lower-trapezius",
+      "modelUnavailableReason": null,
       "diagramIds": [
         "fig-11"
       ],
@@ -1691,11 +1785,8 @@
         "en": "Long thoracic nerve (C5–C7)",
         "zh": "胸长神经（C5–C7）"
       },
-      "modelTermId": null,
-      "modelUnavailableReason": {
-        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
-        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
-      },
+      "modelTermId": "serratus-anterior",
+      "modelUnavailableReason": null,
       "diagramIds": [
         "fig-11"
       ],
@@ -1964,8 +2055,8 @@
       "modelTermId": null,
       "viewerLandmarkId": null,
       "modelUnavailableReason": {
-        "en": "The 3D model has no separate marker for this space; select the teres minor or the humerus to see its superior and lateral borders.",
-        "zh": "三维模型没有单独标记四边孔；可选择小圆肌或肱骨，查看它的上界和外界。"
+        "en": "The 3D model has no separate marker for this space; select teres minor, teres major, the long head of triceps or the humerus to see its four borders.",
+        "zh": "三维模型没有单独标记四边孔；可分别选择小圆肌、大圆肌、肱三头肌长头或肱骨，查看它的四条边界。"
       },
       "diagramIds": [
         "fig-07",
@@ -3407,6 +3498,143 @@
         "axillary-branch-pattern",
         "axillary-deltoid-mapping"
       ]
+    },
+    {
+      "id": "fig-18",
+      "file": "figures/18-大圆肌位置示意.svg",
+      "alt": {
+        "en": "Teres major: origin and insertion.",
+        "zh": "大圆肌起点与止点。"
+      },
+      "caption": {
+        "en": "Posterior view. The teres major originates from the posterior surface of the inferior angle of the scapula (O) and inserts onto the medial lip of the intertubercular groove of the humerus (I). The insertion lies on the anterior surface of the humerus, so it is outlined with dashes behind the shaft. Attachment areas are schematic, and the dashed arrow maps origin to insertion rather than showing a force vector.",
+        "zh": "后面观。大圆肌起自肩胛骨下角后面（O），止于肱骨结节间沟内侧唇（I）。止点位于肱骨前面，因此在骨干后方用虚线勾出。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "teres-major",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "teres-major",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Posterior surface of the inferior angle of scapula",
+            "zh": "肩胛骨下角后面"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Medial lip of the intertubercular groove of humerus",
+            "zh": "肱骨结节间沟内侧唇"
+          }
+        }
+      ],
+      "sources": [
+        "muscles-elsevier-teres-major",
+        "muscles-kenhub-teres-major",
+        "muscles-teachmeanatomy-intrinsic-shoulder"
+      ]
+    },
+    {
+      "id": "fig-19",
+      "file": "figures/19-斜方肌位置示意.svg",
+      "alt": {
+        "en": "Trapezius: origin and insertion, with its upper, middle and lower parts.",
+        "zh": "斜方肌起点与止点，以及上、中、下三部分。"
+      },
+      "caption": {
+        "en": "Posterior view of the right trapezius. It originates from the occipital bone, the nuchal ligament and the spinous processes of C7–T12 (O) and inserts onto the lateral third of the clavicle, the acromion and the spine of the scapula (I). The upper (descending), middle (transverse) and lower (ascending) parts converge on these insertions; the vertebral levels at which the parts divide differ between sources. C7, T4 and T12 mark vertebrae. Attachment areas are schematic, and the dashed arrows map origin to insertion rather than showing force vectors.",
+        "zh": "右侧斜方肌后面观。斜方肌起自枕骨、项韧带和 C7–T12 棘突（O），止于锁骨外侧三分之一、肩峰和肩胛冈（I）。上部（降部）、中部（横部）和下部（升部）分别汇向这些止点；各部分界的椎骨节段在不同资料中略有出入。C7、T4、T12 指椎骨。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "trapezius",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "trapezius",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Upper trapezius (descending part)",
+            "zh": "上斜方肌（降部）"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Middle trapezius (transverse part)",
+            "zh": "中斜方肌（横部）"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lower trapezius (ascending part)",
+            "zh": "下斜方肌（升部）"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Occipital bone",
+            "zh": "枕骨"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Clavicle",
+            "zh": "锁骨"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Acromion",
+            "zh": "肩峰"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Spine of scapula",
+            "zh": "肩胛冈"
+          }
+        }
+      ],
+      "sources": [
+        "muscles-kenhub-trapezius",
+        "muscles-statpearls-trapezius",
+        "diagrams-elsevier-trapezius-descending",
+        "muscles-elsevier-trapezius-transverse",
+        "diagrams-elsevier-trapezius-ascending",
+        "muscles-loyola-trapezius",
+        "muscles-teachmeanatomy-superficial-back"
+      ]
     }
   ],
   "review": [
@@ -3969,6 +4197,26 @@
       "id": "diagrams-physiopedia-painful-arc",
       "title": "Physiopedia: Painful Arc",
       "url": "https://www.physio-pedia.com/Painful_Arc"
+    },
+    {
+      "id": "muscles-elsevier-teres-major",
+      "title": "Elsevier anatomy resource (Complete Anatomy): Teres major muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb/teres-major-muscle/17190"
+    },
+    {
+      "id": "muscles-kenhub-teres-major",
+      "title": "Kenhub: Teres major muscle: Anatomy, function, clinical aspects",
+      "url": "https://www.kenhub.com/en/library/anatomy/teres-major-muscle"
+    },
+    {
+      "id": "muscles-teachmeanatomy-intrinsic-shoulder",
+      "title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder",
+      "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"
+    },
+    {
+      "id": "muscles-elsevier-trapezius-transverse",
+      "title": "Elsevier anatomy resource (Complete Anatomy): Transverse part of trapezius muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/transverse-part-of-trapezius-muscle/19991"
     }
   ],
   "qa": {
