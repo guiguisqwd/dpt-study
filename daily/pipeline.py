@@ -24,7 +24,7 @@ import argparse, datetime as dt, hashlib, json, os, shutil, subprocess, sys, tra
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from engine import paths, plan, schema, build as builder, site, archive, cards  # noqa: E402
+from engine import paths, plan, schema, build as builder, site, archive, cards, codes  # noqa: E402
 from engine.paths import DAYS, RUNS, REPO, DAILY  # noqa: E402
 
 STAGING = Path(os.environ.get("DPT_STAGING") or ("/mnt/user-data/outputs/dpt-daily" if Path("/mnt/user-data/outputs").is_dir()
@@ -142,8 +142,39 @@ def need(code, title, lines):
 
 
 # ------------------------------------------------------------------ authoring brief
+def write_weekly_brief(date, info):
+    """Brief for a Monday–Saturday pack of the weekly plan (standards/daily/README.md)."""
+    d = DAYS / date
+    d.mkdir(parents=True, exist_ok=True)
+    names = codes.table()
+    prev = sorted(p.parent.name for p in DAYS.glob("*/content.json")
+                  if p.parent.name < date and json.loads(p.read_text(encoding="utf-8")).get("kind") == "supplement")
+    lines = [f"# Authoring brief · {date} {plan.weekday_zh(date)}", "",
+             f"Week {info['week']} · chapter `{info['chapter']}` ({info['chapterName']}) · rules: `standards/daily/README.md`", "",
+             "## Today's chapters (one per plan entry, same order; content/items/forms copied exactly from plan/weeks.json)", ""]
+    for k, e in enumerate(info["entries"], 1):
+        forms = "; ".join(f"{f} {names.get(f, '?')} → block `{'/'.join(sorted(codes.FORM_BLOCKS.get(f, {'?'})))}`" for f in e["forms"])
+        lines += [f"{k}. **{e['type']} {names.get(e['type'], '')}** ({'新' if e['group'] == 'new' else '旧的夯实'})",
+                  f"   - items: {json.dumps(e['items'], ensure_ascii=False)}", f"   - forms: {forms}"]
+    lines += ["", "## What to write", "",
+              f"1. `daily/days/{date}/content.json` — schema `dpt-daily-pack/2`, kind `supplement`, `week` {info['week']}, `chapter` `{info['chapter']}`, "
+              f"`chapter_name` `{info['chapterName']}`. Each chapter carries `content`, `items`, `forms` as above plus the usual title/toc/goals/terms/blocks/bridge. "
+              "Field and block definitions: `daily/CONTENT_SCHEMA.md` (v2 section)" + (f"; the last weekly pack is `daily/days/{prev[-1]}/content.json`." if prev else "."),
+              f"2. `daily/days/{date}/figures.py` — `build(out_dir)` drawing every figure in `content.figures` with `engine.figlib` (an empty build is fine when no figure is needed).",
+              "3. Consolidation (O-x): take the facts from the chapter `library/" + info["chapter"] + "/content.json` (DL-01), do not rewrite them differently.",
+              "   New content: N-1 acupoints in `content.acupoints` with `meridian` (AN-20 to AN-24); N-5 papers come from `daily/papers/<id>.json` (block `paper`);",
+              "   N-2/N-3/N-4/N-6/N-7 need sources you actually opened (G-02); N-4 cases are teaching cases.",
+              "4. Rules: English first then Chinese; pronunciation for every English key term (content.pronunciation or engine/data/pronunciation.json); "
+              "no public-health framing; archive tags (tags.vertical with fixed top levels, tags.horizontal).",
+              "5. Then run `python3 daily/pipeline.py evening --date " + date + "` again."]
+    (d / "AUTHORING_BRIEF.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return d / "AUTHORING_BRIEF.md"
+
+
 def write_brief(date):
     info = plan.day_info(date)
+    if info["kind"] == "supplement":
+        return write_weekly_brief(date, info)
     d = DAYS / date
     d.mkdir(parents=True, exist_ok=True)
     prev = sorted(p.parent.name for p in DAYS.glob("*/content.json") if p.parent.name < date)
@@ -178,6 +209,14 @@ def s_plan(run, date):
     run["kind"] = info["kind"]
     if info["kind"] == "learning":
         run["day"] = info["day"]
+    if "week" in info:
+        run["week"], run["chapter"] = info["week"], info["chapter"]
+        if info["kind"] == "unplanned":
+            set_step(run, "evening", "plan", "failed", error=info["reason"])
+            return need(2, "the weekly plan has nothing for this date", [info["reason"], "Fill daily/plan/weeks.json (DL-12) and run again."])
+        set_step(run, "evening", "plan", "done", evidence={"kind": info["kind"], "week": info["week"], "chapter": info["chapter"],
+                                                            "entries": [[e["type"], e["items"], e["forms"]] for e in info.get("entries", [])]})
+        return 0
     set_step(run, "evening", "plan", "done", evidence={"kind": info["kind"], "day": info.get("day"),
                                                         "acupoints": [a["name"] for a in info.get("acupoints", [])],
                                                         "muscles": [m["zh"] for m in info.get("muscles", [])]})
@@ -190,6 +229,9 @@ def s_author(run, date):
     if info["kind"] in ("weekly_review", "final_review") and not c.exists():
         from engine import review_pack
         review_pack.write(date, info)
+    if info["kind"] == "chapter_day" and not c.exists():
+        from engine import week_pack
+        week_pack.write_chapter_day(date, info)
     if info["kind"] == "none":
         set_step(run, "evening", "author", "done", evidence="no study item planned for this date")
         return 0
@@ -236,7 +278,7 @@ def s_validate(run, date):
     if errs:
         set_step(run, "evening", "validate", "failed", error=errs)
         return need(20, "content.json has problems", errs)
-    set_step(run, "evening", "validate", "done", evidence="schema dpt-daily-pack/1: 0 problems")
+    set_step(run, "evening", "validate", "done", evidence=f"schema {paths.load_content(date)['schema']}: 0 problems")
     return 0
 
 
