@@ -9,7 +9,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'site/build/platform'))
-from topiclib import QA_CHECKS, build, catalog_models, pair, skeleton, validate, write_json
+from topiclib import QA_CHECKS, build, catalog_models, html_order_problems, pair, skeleton, validate, write_json
 
 
 class TopicTests(unittest.TestCase):
@@ -64,6 +64,8 @@ class TopicTests(unittest.TestCase):
                         'terms': [{'term': pair('Test term', '测试术语'), 'explanation': artificial}], 'sources': ['test-source']}]
         m['structures'] = [{'id': 'supraspinatus', 'kind': 'muscle', 'name': pair('Supraspinatus', '冈上肌'),
                             'chapters': ['anatomy'], 'modelTermId': 'supraspinatus'}]
+        write_json(path / 'pronunciation.json', {'terms': {'Supraspinatus': [
+            '/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-NAY-tus', 'https://www.merriam-webster.com/medical/supraspinatus']}})
         c['qa'] = {'reviewedBy': 'Test fixture only', 'reviewedOn': '2026-10-06', 'checks': {key: True for key in QA_CHECKS}}
         return m, c, path
 
@@ -154,6 +156,39 @@ class TopicTests(unittest.TestCase):
         draft = copy.deepcopy(m); draft['status'] = 'draft'; draft['structures'] = []
         errors, missing = validate(draft, c, path, self.models)
         self.assertEqual(errors, []); self.assertIn('ST-1 structure list is missing (topic.json structures)', missing)
+
+    def test_english_must_come_first(self):
+        m, c, path = self.completed_fixture()
+        bad = copy.deepcopy(c); bad['sections'][0]['overview'] = pair('这是中文。', 'This is English.')
+        errors, _ = validate(m, bad, path, self.models)
+        self.assertTrue(any(e.startswith('QC-05 section anatomy.overview') for e in errors))
+        draft = copy.deepcopy(m); draft['status'] = 'draft'
+        errors, missing = validate(draft, bad, path, self.models)
+        self.assertEqual(errors, []); self.assertTrue(any(e.startswith('QC-05') for e in missing))
+        good = '<div><p lang="en">Origin</p><p class="translation" lang="zh-Hans">起点</p></div><dt>Origin · 起点</dt><div><b>C5 vertebra</b><span class="translation">第 5 颈椎</span></div>'
+        self.assertEqual(html_order_problems(good), [])
+        self.assertEqual(len(html_order_problems('<div><p class="translation" lang="zh-Hans">起点</p><p lang="en">Origin</p></div>')), 1)
+        self.assertEqual(len(html_order_problems('<p lang="en">Origin 起点</p>')), 1)
+        self.assertEqual(len(html_order_problems('<td>深面有 Suprascapular nerve（肩胛上神经）</td>')), 1)
+        self.assertEqual(len(html_order_problems('<figcaption>红点为穴位</figcaption>')), 1)
+
+    def test_every_key_term_needs_pronunciation(self):
+        m, c, path = self.completed_fixture()
+        bad = copy.deepcopy(m)
+        bad['structures'].append({'id': 'jianyu', 'kind': 'acupoint', 'name': pair('Jianyu', '肩髃'), 'chapters': ['anatomy'], 'modelTermId': None})
+        c['sections'][0]['blocks'][0]['body'] = pair('Jianyu lies on the test shoulder.', '肩髃位于测试肩部。')
+        errors, _ = validate(bad, c, path, self.models)
+        self.assertIn('QC-06 tone-marked pinyin missing for acupoint Jianyu (pronunciation.json)', errors)
+        (path / 'pronunciation.json').unlink()
+        errors, _ = validate(m, c, path, self.models)
+        self.assertIn('QC-06 pronunciation missing for key term Supraspinatus (pronunciation.json)', errors)
+        for entry in [['ˌsuprəspaɪˈneɪtəs', 'soo-pruh-spy-NAY-tus', 'https://example.invalid/x'],
+                      ['/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-nay-tus', 'https://example.invalid/x'],
+                      ['/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-NAY-tus', 'not a link'], 'Supraspinatus']:
+            write_json(path / 'pronunciation.json', {'terms': {'Supraspinatus': entry}})
+            self.assertTrue(any(e.startswith('pronunciation Supraspinatus') for e in validate(m, c, path, self.models)[0]), entry)
+        write_json(path / 'pronunciation.json', {'terms': {}, 'pinyin': {'Jianyu': 'Jianyu'}})
+        self.assertIn('pinyin Jianyu: tone marks are required', validate(m, c, path, self.models)[0])
 
     def test_nonexistent_incorrect_tissue_and_wrong_anatomy_mappings_fail(self):
         m, c, path = self.completed_fixture()

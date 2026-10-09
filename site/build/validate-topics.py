@@ -11,6 +11,7 @@ def main():
     parser.add_argument('--topics-dir', type=Path, default=ROOT / 'library')
     parser.add_argument('--topic')
     parser.add_argument('--require-published', action='store_true', help='Require completed content and published status')
+    parser.add_argument('--show-pending', action='store_true', help='List each pending item, not only the count')
     args = parser.parse_args()
     bad = False
     try:
@@ -21,6 +22,8 @@ def main():
             if args.require_published and manifest['status'] != 'published': errors.append('Topic status is not published')
             print(manifest['id'] + ': ' + ('FAIL' if errors else 'valid ' + manifest['status']) + ', ' + str(len(missing)) + ' pending items')
             for error in errors: print('  ERROR: ' + error)
+            if args.show_pending:
+                for item in missing: print('  pending: ' + item)
             bad |= bool(errors)
     except (ValueError, OSError, KeyError, TypeError) as exc:
         print('Validation failed: ' + str(exc), file=sys.stderr); bad = True
