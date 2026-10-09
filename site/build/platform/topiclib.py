@@ -8,6 +8,7 @@ import re
 import shutil
 import xml.etree.ElementTree as ET
 from datetime import date
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 
@@ -27,6 +28,15 @@ SHOULDER_SECTION_FILES = {'anatomy': '01-anatomy', 'innervation': '02-nerve', 'm
 QA_CHECKS = ['medicalSources', 'bilingual', 'originInsertionLabels', 'modelLinks',
              'layoutDesktop', 'layoutMobile', 'fullAnswers', 'paperAppraisal']
 MUSCLE_FIELDS = ['origin', 'insertion', 'course', 'actions', 'innervation']
+# QC-06: kinds whose English name is a key term needing IPA + stress + dictionary link (AN-07);
+# acupoints need tone-marked pinyin instead; paper titles are not pronunciation terms.
+# Published chapters that predate QC-05/QC-06: their gaps stay listed as pending instead of
+# blocking the build until the chapter is brought up to standard. Remove the entry once it passes.
+KNOWN_GAPS = {'shoulder': ('QC-05 ', 'QC-06 ')}
+PRONOUNCED_KINDS = ['muscle', 'nerve', 'bone', 'landmark', 'joint']
+CJK = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
+LATIN = re.compile(r'[A-Za-z]')
+TONE = re.compile(r'[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]')
 PAPER_FIELDS = ['question', 'design', 'population', 'methods', 'results', 'limitations', 'applicability']
 NERVE_NOTATION = {
     'cervical': {'en': 'C denotes cervical levels.', 'zh': 'C 表示颈部节段。'},
@@ -117,6 +127,95 @@ def valid_source_url(value):
         return False
 
 
+def order_problem(en, zh):
+    """QC-05 / G-01 for one {en, zh} pair: the English slot holds English, the Chinese slot Chinese."""
+    if en.strip() and (CJK.search(en) or not LATIN.search(en)): return 'English slot must hold English, not Chinese: ' + en[:40]
+    if zh.strip() and not CJK.search(zh): return 'Chinese slot must hold Chinese: ' + zh[:40]
+    return None
+
+
+class _OrderScan(HTMLParser):
+    """QC-05 for HTML chapter sources (shoulder adapter): text marked lang="en" holds no Chinese,
+    and every Chinese translation follows English inside the same parent element."""
+    VOID = {'br', 'img', 'hr', 'meta', 'link', 'input', 'source', 'wbr', 'col'}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []  # [tag, lang, saw_english_child]
+        self.problems = []
+
+    def lang(self):
+        return next((f[1] for f in reversed(self.stack) if f[1]), '')
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.VOID: return
+        a = dict(attrs)
+        own = a.get('lang') or ('zh' if 'translation' in (a.get('class') or '').split() else '')
+        if own.startswith('zh') and self.stack and not self.stack[-1][2] and not self.lang().startswith('zh'):
+            self.problems.append('Chinese translation comes before its English in <' + self.stack[-1][0] + '>')
+        if own.startswith('en') and self.stack: self.stack[-1][2] = True
+        self.stack.append([tag, own, False])
+
+    def handle_endtag(self, tag):
+        while self.stack:
+            frame = self.stack.pop()
+            # English inside an untagged child (e.g. <b>C5 vertebra</b>) counts for the parent too.
+            if self.stack and frame[2] and not frame[1].startswith('zh'): self.stack[-1][2] = True
+            if frame[0] == tag: break
+
+    def handle_data(self, data):
+        text = data.strip()
+        if not text or not self.stack: return
+        lang = self.lang()
+        if lang.startswith('en') and CJK.search(text):
+            self.problems.append('Chinese inside lang="en": ' + text[:40])
+        elif not lang:
+            if CJK.search(text) and not LATIN.search(text) and not self.stack[-1][2]:
+                self.problems.append('Chinese without English before it in <' + self.stack[-1][0] + '>: ' + text[:40])
+            if LATIN.search(text): self.stack[-1][2] = True
+            first = re.search(r'[A-Za-z\u3400-\u9fff]', text)
+            if first and CJK.match(first.group()) and re.search(r'[A-Za-z]{3,}', text):
+                self.problems.append('Chinese before English: ' + text[:40])
+
+
+def html_order_problems(markup):
+    scan = _OrderScan()
+    scan.feed(markup)
+    return scan.problems
+
+
+def check_pronunciation(manifest, topic_dir, fail, require):
+    """QC-06 / AN-07: <topic>/pronunciation.json covers every key term of the ST-1 structure list."""
+    path = Path(topic_dir) / 'pronunciation.json'
+    data = {}
+    if path.is_file():
+        try: data = read_json(path)
+        except (ValueError, OSError) as exc: fail('pronunciation.json: ' + str(exc)); return
+        if not isinstance(data, dict): fail('pronunciation.json must contain an object'); return
+    terms, pinyin = data.get('terms', {}), data.get('pinyin', {})
+    if not isinstance(terms, dict) or not isinstance(pinyin, dict):
+        fail('pronunciation.json: terms and pinyin must be objects'); return
+    for term, entry in terms.items():
+        label = 'pronunciation ' + term
+        if not (isinstance(entry, list) and len(entry) == 3 and all(isinstance(x, str) for x in entry)):
+            fail(label + ': expected ["/IPA/", "STRESS-ed respelling", "https://dictionary link"]'); continue
+        ipa, stress, url = entry
+        if not re.fullmatch(r'/[^/]+/', ipa.strip()): fail(label + ': IPA must be written between slashes')
+        if not re.search(r'\b[A-Z]{2,}\b', stress) or stress == stress.upper(): fail(label + ': respelling must capitalise only the stressed syllable')
+        if not valid_source_url(url): fail(label + ': dictionary link must be an HTTPS URL')
+    for name, value in pinyin.items():
+        if not isinstance(value, str) or not TONE.search(value): fail('pinyin ' + str(name) + ': tone marks are required')
+    known = {t.lower() for t in terms}
+    for item in manifest.get('structures') or []:
+        if not isinstance(item, dict): continue
+        en = (item.get('name') or {}).get('en', '') if isinstance(item.get('name'), dict) else ''
+        if not en.strip(): continue
+        if item.get('kind') in PRONOUNCED_KINDS:
+            require(en.lower() in known, 'QC-06 pronunciation missing for key term ' + en + ' (pronunciation.json)')
+        elif item.get('kind') == 'acupoint':
+            require(en in pinyin, 'QC-06 tone-marked pinyin missing for acupoint ' + en + ' (pronunciation.json)')
+
+
 def validate_shape(value, schema, label='data'):
     """Check the structural subset used by our checked-in schemas, without dependencies."""
     errors = []
@@ -174,6 +273,8 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
             fail(label + ': expected {en: string, zh: string}')
             return
         if required: require(bool(value['en'].strip()) and bool(value['zh'].strip()), label + ': English and Chinese are required')
+        problem = order_problem(value['en'], value['zh'])
+        if problem: require(False, 'QC-05 ' + label + ': ' + problem)
         # Deliberate visible placeholders cannot pass a publication gate.
         if ready and any(re.search(r'\b(?:TODO|TBD|placeholder)\b|待补|待核|待填', value[k], re.I) for k in ['en', 'zh']):
             fail(label + ': unresolved placeholder')
@@ -281,14 +382,17 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         chapter_text = {}
         for sid, stem in SHOULDER_SECTION_FILES.items():
             path = Path(root) / 'library/shoulder/text/sections' / (stem + '.html')
-            chapter_text[sid] = re.sub(r'<[^>]+>', ' ', path.read_text()).lower() if path.is_file() else ''
+            markup = path.read_text() if path.is_file() else ''
+            chapter_text[sid] = re.sub(r'<[^>]+>', ' ', markup).lower()
+            for problem in html_order_problems(markup): require(False, 'QC-05 ' + stem + '.html: ' + problem)
         model_ids = set(term_ids) | landmark_ids
         links_file = Path(root) / 'library/shoulder/text/data/model-links.json'
         if links_file.is_file(): model_ids |= {v.get('term') for v in read_json(links_file).values() if v.get('term')}
         for landmark_file in (Path(root) / 'library/shoulder/3d/src').glob('*-landmarks.json'):
             model_ids |= {x.get('id') for x in read_json(landmark_file) if isinstance(x, dict)}
         check_structures(chapter_text, model_ids)
-        if ready: errors.extend(missing)
+        check_pronunciation(manifest, topic_dir, fail, require)
+        if ready: errors.extend(m for m in missing if not m.startswith(KNOWN_GAPS.get(tid, ())))
         return errors, missing
 
     if not isinstance(content, dict): return errors + ['content.json must be an object'], missing
@@ -426,6 +530,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
                     text_of(v) if isinstance(v, dict) else (v if isinstance(v, str) else '') for v in row.values())
     chapter_text = {k: v.lower() for k, v in chapter_text.items() if k in {s[0] for s in SECTIONS}}
     check_structures(chapter_text, set(term_ids) | landmark_ids, [m.get('id') for m in content['muscles']])
+    check_pronunciation(manifest, topic_dir, fail, require)
     qa = content.get('qa', {})
     require(bool(qa.get('reviewedBy', '').strip()), 'Reviewer signoff is missing')
     require(valid_review_date(qa.get('reviewedOn', '')), 'A valid review date is required (YYYY-MM-DD)')

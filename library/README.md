@@ -50,6 +50,25 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 
 校验脚本（QC-08）检查：清单不为空；每一项的英文名或别名出现在它所列的每一章里；`modelTermId` 真实存在；`content.json` 里每条肌肉记录都在清单里。草稿阶段这些记为待办，改成 `published` 时变成错误。肩袖的清单在 `library/shoulder/topic.json`，可作参照。
 
+### 读音表（AN-07 的输出）
+
+每章在 `library/<id>/pronunciation.json` 写读音，格式与每日学习的 `daily/engine/data/pronunciation.json` 相同，方便每日包直接取用：
+
+```json
+{
+  "terms": {
+    "Supraspinatus": ["/ˌsuprəspaɪˈneɪtəs/", "soo-pruh-spy-NAY-tus", "https://www.merriam-webster.com/medical/supraspinatus"]
+  },
+  "pinyin": {
+    "Jianyu": "Jiānyú"
+  }
+}
+```
+
+`terms` 的键是英文名称，值依次是斜杠包住的 IPA、只大写重音音节的拼读、HTTPS 词典链接。`pinyin` 的键是穴位在结构清单里的英文名，值是带声调拼音。校验脚本（QC-06）检查：结构清单里每个 `muscle`、`nerve`、`bone`、`landmark`、`joint` 在 `terms` 里有一项（不分大小写），每个 `acupoint` 在 `pinyin` 里有一项；每一项格式正确。论文不需要读音。
+
+同一脚本还检查英文在前（QC-05）：`content.json` 里每对 `{en, zh}` 英文格只放英文、中文格放中文。
+
 ## 2. 一次性按完整标准填写
 
 专业名词、完整句子、标题、图示标签和答案均为 **English first, Chinese second（英文在前，中文在后）**。句子分别给出完整英文和中文译文；不要用中文句子夹几个英文单词替代专业英文表达。
