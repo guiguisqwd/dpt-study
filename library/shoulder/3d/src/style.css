@@ -63,3 +63,6 @@
 .depth-details ul{margin:6px 0;padding-left:16px}
 .depth-details a{font-size:10px}
 .vanatome-probe-callout{font-family:inherit}
+/* Docked label column · 标注栏 (labelDock.ts): the note when labels don't fit; the R/L mark moves aside */
+.label-note{margin:10px 0 -4px;color:#d8c29c;font-size:11px;line-height:1.6}
+@media(min-width:741px){.orientation.beside-dock{right:200px}}
