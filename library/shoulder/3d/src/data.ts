@@ -82,6 +82,28 @@ export const anatomyEnglish: Record<string, string> = {
   'coracobrachialis-muscles-coracobrachialis-muscle': 'Coracobrachialis',
   'brachialis-muscles-brachialis-muscle': 'Brachialis',
 };
+/** Muscle groups of the shoulder page's layer bar. Each lists the model group ids it shows (both sides). */
+export type MuscleGroupId = 'cuff' | 'deltoid' | 'back' | 'chest' | 'teres-major' | 'upper-arm';
+export const muscleGroups: { id: MuscleGroupId; en: string; zh: string; groupIds: string[]; initial: boolean }[] = [
+  { id: 'cuff', en: 'Rotator cuff', zh: '肩袖', groupIds: ['rotator-cuff-muscles'], initial: true },
+  { id: 'deltoid', en: 'Deltoid', zh: '三角肌', groupIds: ['deltoid-muscles'], initial: true },
+  // Shoulder add-on muscles: off until the learner turns them on or chooses one of their words.
+  { id: 'back', en: 'Back', zh: '背部', groupIds: ['trapezius-muscles', 'latissimus-dorsi-muscles', 'levator-scapulae-muscles', 'rhomboid-muscles'], initial: false },
+  { id: 'chest', en: 'Chest', zh: '胸部', groupIds: ['pectoralis-major-muscles', 'pectoralis-minor-muscles', 'subclavius-muscles', 'serratus-anterior-muscles'], initial: false },
+  { id: 'teres-major', en: 'Teres major', zh: '大圆肌', groupIds: ['teres-major-muscles'], initial: false },
+  { id: 'upper-arm', en: 'Upper arm', zh: '上臂', groupIds: ['biceps-brachii-muscles', 'triceps-brachii-muscles', 'coracobrachialis-muscles', 'brachialis-muscles'], initial: false },
+];
+export const initialMuscleGroups = Object.fromEntries(muscleGroups.map(group => [group.id, group.initial])) as Record<MuscleGroupId, boolean>;
+/** The model group id ('trapezius-muscles') of a group id, a part id or a part id with its side. */
+export function modelGroupOf(id: string): string | undefined {
+  return muscleGroups.flatMap(group => group.groupIds).find(groupId => id === groupId || id.startsWith(groupId + '-'));
+}
+/** The layer-bar group that shows a structure, if any. */
+export function muscleGroupOf(id: string): MuscleGroupId | undefined {
+  const groupId = modelGroupOf(id);
+  return groupId ? muscleGroups.find(group => group.groupIds.includes(groupId))?.id : undefined;
+}
+
 export const relatedEnglish: Record<string,string> = {
   SI11: 'Infraspinous fossa · Infraspinatus · Scapula',
   SI12: 'Supraspinous fossa · Supraspinatus · Spine of scapula',
