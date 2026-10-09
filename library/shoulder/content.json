@@ -1582,8 +1582,8 @@
         "zh": "它在盂肱关节使上臂内收和内旋，并协助上臂从屈曲位伸展。大圆肌不属于肩袖；它构成四边孔的下界。"
       },
       "innervation": {
-        "en": "Lower subscapular nerve, from the posterior cord of the brachial plexus (C5–C7)",
-        "zh": "下肩胛下神经，发自臂丛后束（C5–C7）"
+        "en": "Lower subscapular nerve, from the posterior cord of the brachial plexus (usually C5–C6; some sources include C7)",
+        "zh": "下肩胛下神经，发自臂丛后束（通常为 C5–C6，部分资料含 C7）"
       },
       "modelTermId": "teres-major",
       "modelUnavailableReason": null,
