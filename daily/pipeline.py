@@ -531,12 +531,15 @@ def push_run_record(date):
     """s_publish commits the pack before its own step, the phase's finish and the verify result are written to
     the run record. Commit and push that record too, so the pushed record passes `verify` and the clone stays clean."""
     files = [run_path(date).relative_to(REPO).as_posix(), (RUNS / "log.jsonl").relative_to(REPO).as_posix()]
-    if not git("status", "--porcelain", "--", *files).stdout.strip():
+    dirty = bool(git("status", "--porcelain", "--", *files).stdout.strip())
+    ahead = git("rev-list", "--count", "origin/main..HEAD", check=False).stdout.strip() not in ("", "0")
+    if not dirty and not ahead:
         return 0
-    git("add", "--", *files)
-    git("-c", "user.name=Claude", "-c", "user.email=noreply@anthropic.com", "commit", "-m",
-        f"Daily pack {date}: record the publish step in the run log\n\nCo-Authored-By: Claude <noreply@anthropic.com>")
-    try:
+    if dirty:
+        git("add", "--", *files)
+        git("-c", "user.name=Claude", "-c", "user.email=noreply@anthropic.com", "commit", "-m",
+            f"Daily pack {date}: record the publish step in the run log\n\nCo-Authored-By: Claude <noreply@anthropic.com>")
+    try:  # also retries a run-record commit an earlier run could not push
         git("fetch", "origin", "main")
         git("rebase", "origin/main")
         git("push", "origin", "HEAD:main")
@@ -562,7 +565,8 @@ def verify(date, phase, save=True):
     say(f"\nVERIFY {phase} {date}: " + ("ALL STEPS DONE" if not missing else f"{len(missing)} step(s) not done"))
     for m in missing:
         say("  ✗ " + str(m)[:600])
-    if save:
+    old = run["phases"].get(phase, {}).get("verified") or {}
+    if save and (old.get("ok") != (not missing) or old.get("missing") != missing):  # rewrite only when the result changes
         run["phases"].setdefault(phase, {})["verified"] = {"at": now(), "ok": not missing, "missing": missing}
         save_run(run)
     return 0 if not missing else 1
