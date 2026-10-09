@@ -8,6 +8,11 @@ acupoints read aloud in Chinese, self-checks, flashcards, and spaced-repetition 
 
 `pipeline.py` runs the work as fixed, checked steps and records every run in `runs/`.
 
+**Weekly plan (2026-10-09).** From 2026-10-11 the plan is `plan/weeks.json`: on Sunday gui studies one
+library chapter, Monday–Saturday packs supplement it with new content and consolidation (content types N-x / O-x,
+forms F-x in `standards/daily/README.md`). Paper records live in `papers/`. `pipeline.py` below still reads
+`plan/schedule.json` and the six-chapter form; it is to be switched to `weeks.json` before generation resumes.
+
 This is block ② of the repository: daily learning is generated **from** the anatomy library in
 `library/` (block ①). The rules for how a pack draws on the library, and the short chapter form
 (CH-02), are in `standards/daily/README.md`. Published pages go to `site/public/daily/`.
@@ -57,7 +62,9 @@ If an evening push is ever blocked (exit 24), the pipeline writes `origin/main..
 daily/
   pipeline.py            orchestrator (steps, evidence, verify)
   CONTENT_SCHEMA.md      content.json fields and block types
-  plan/schedule.json     the study plan; plan/legacy/ = 10-06 shoulder preview cards
+  plan/weeks.json        the weekly plan from 2026-10-11 (one chapter a week + six supplement days)
+  plan/schedule.json     the old 60-day plan (used by pipeline.py until it reads weeks.json); plan/legacy/ = 10-06 shoulder preview cards
+  papers/<id>.json       paper records for N-5 (paper reading moved out of the chapters)
   engine/
     figlib/              Fig kit (fig.py) + region base art: chest.py, arm.py, … (reuse; add new regions here)
     render.py build.py   content.json → sections → <pack>.html/.md (3D ?term= links validated against library/shoulder/3d/src)

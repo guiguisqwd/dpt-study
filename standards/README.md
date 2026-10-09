@@ -7,14 +7,14 @@
 | 块 | 规则 | 产出位置 |
 | --- | --- | --- |
 | ① 解剖知识库：生成好的大内容，按部位分章 | [library/](./library/rules.md)：章节模板、写法、图示、3D、制作步骤、检查清单 | `library/<id>/` |
-| ② 每日学习：按规程从知识库取材，生成当天该学的东西 | [daily/README.md](./daily/README.md)：取材规程 DL-xx、短版章节 CH-02 | `daily/` |
+| ② 每日学习：周日学一章，周一到周六按计划补全（新内容 + 旧的夯实） | [daily/README.md](./daily/README.md)：一周节奏和取材规程 DL-xx、内容清单 N-x / O-x、形式清单 F-x；学习计划 `daily/plan/weeks.json` | `daily/` |
 
 ## 四层结构
 
 | 层 | 文件 | 放什么 | 规则编号 |
 | --- | --- | --- | --- |
 | 0 通用原则 | [00-general.md](./00-general.md) | 任何内容方向都成立的规则 | `G-xx` |
-| 1 方向规范 | [library/rules.md](./library/rules.md)、[library/chapters.md](./library/chapters.md)；每日学习另见 [daily/README.md](./daily/README.md) | 生理解剖特有的写法、图示、穴位、论文、3D 规则和章节模板；每日取材规程 | `AN-xx`、`CH-xx`、`DL-xx` |
+| 1 方向规范 | [library/rules.md](./library/rules.md)、[library/chapters.md](./library/chapters.md)；每日学习另见 [daily/README.md](./daily/README.md) | 生理解剖特有的写法、图示、穴位、论文、3D 规则和章节模板；每日的一周节奏、内容和形式 | `AN-xx`、`CH-xx`、`DL-xx`、`N-x`、`O-x`、`F-x` |
 | 2 主题数据 | `library/<id>/`（`topic.json`、`content.json`、`pronunciation.json`） | 只属于一个主题的事实和参数：结构清单、起止点、来源、3D 映射、配色 | — |
 | 3 制作步骤 | [library/steps.md](./library/steps.md)、[library/checklist.md](./library/checklist.md) | 步骤顺序、每步的输入/输出/合格标准，以及检查清单 | `ST-x`、`QC-xx` |
 

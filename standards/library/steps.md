@@ -4,9 +4,9 @@
 
 | 步骤 | 输入 | 输出 | 合格标准 |
 | --- | --- | --- | --- |
-| ST-1 选题 | 学习计划或用户指定的主题 | `library/<id>/topic.json` 的 `structures` 清单：本章讲到的每块肌肉、神经、骨、骨性标志、关节、穴位和论文各一项，写明英中名称、类型、出现在哪几章、3D ID（模型没有写 `null`）；格式见 [library/README.md](../../library/README.md) | 每个结构都放进 CH-01 的某一章；QC-08 |
+| ST-1 选题 | 学习计划或用户指定的主题 | `library/<id>/topic.json` 的 `structures` 清单：本章讲到的每块肌肉、神经、骨、骨性标志、关节和穴位各一项，写明英中名称、类型、出现在哪几章、3D ID（模型没有写 `null`）；格式见 [library/README.md](../../library/README.md) | 每个结构都放进 CH-01 的某一章；QC-08 |
 | ST-2 查证 | 结构清单 | 起止点、走行、神经、动作、穴位数据；核对记录 | G-02、AN-02、AN-20、AN-50、AN-51；未核验项已列出（G-03） |
-| ST-3 写作 | 主题数据 + 章节模板 | 六章正文（单一源稿） | CH-01/CH-02、AN-01 至 AN-07、AN-30 至 AN-35、G-04 |
+| ST-3 写作 | 主题数据 + 章节模板 | 五部分正文（单一源稿） | CH-01、AN-01 至 AN-07、G-04 |
 | ST-4 画图 | 主题数据 + 正文 | 编号 SVG | AN-10 至 AN-17、AN-21、AN-22 |
 | ST-7 本章 3D（在 ST-4 之后、ST-5 之前做） | 主题数据（结构清单、3D 映射）+ 正文 | 本章 3D 部分：结构映射、骨性标志、需要时的语音和交互改动，放在 `library/<id>/3d/` | AN-40 至 AN-43；正文里的每个 `?term=` 都能在本章 3D 中打开；模型没有的结构按 AN-41 写明 |
 | ST-8 构建（在 ST-7 之后、ST-5 之前做） | 源文件：`topic.json`、`content.json`、`pronunciation.json`、`figures/` 的 SVG、`3d/`（肩袖相同） | 生成的页面：`library/shoulder/3d/public/topics.json`、`public/topics/<id>/` 下的 `index.html`、`reading.html`、`reading.md`、`data.json`，以及 `study.html` 首页；肩袖另把同一页写到旧地址：`text/2026-10-06-肩袖-阅读优化版.html` 与 `.md`、`3d/public/reading.html`，并写 `text/build-report.json`。命令见下方“构建与导出命令” | 校验和构建都无报错退出；QC-01 至 QC-06、QC-08 通过（草稿的待办项列进制作记录）；生成页没有手改，要改就回到源文件重建（G-08）；HTML 和 Markdown 来自同一次构建 |

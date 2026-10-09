@@ -65,26 +65,12 @@
       },
       "blocks": [],
       "diagramIds": []
-    },
-    {
-      "id": "papers",
-      "title": {
-        "en": "Critical reading",
-        "zh": "论文阅读"
-      },
-      "overview": {
-        "en": "",
-        "zh": ""
-      },
-      "blocks": [],
-      "diagramIds": []
     }
   ],
   "muscles": [],
   "landmarks": [],
   "diagrams": [],
   "review": [],
-  "papers": [],
   "sources": [],
   "nerveNotation": {
     "cervical": {
@@ -118,8 +104,7 @@
       "modelLinks": false,
       "layoutDesktop": false,
       "layoutMobile": false,
-      "fullAnswers": false,
-      "paperAppraisal": false
+      "fullAnswers": false
     }
   }
 }

@@ -42,9 +42,9 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 | 字段 | 写什么 |
 | --- | --- |
 | `id` | 英文小写 slug，章内唯一；肌肉的 `id` 与 `content.json` 里肌肉记录的 `id` 相同 |
-| `kind` | `muscle`、`nerve`、`bone`、`landmark`、`joint`、`acupoint`、`paper` 之一 |
+| `kind` | `muscle`、`nerve`、`bone`、`landmark`、`joint`、`acupoint` 之一（`paper` 同上，只留给旧章节） |
 | `name` | 英文、中文名称；论文写正式标题 |
-| `chapters` | 出现在哪几章：`anatomy`、`innervation`、`movement`、`clinical`、`review`、`papers` |
+| `chapters` | 出现在哪几章：`anatomy`、`innervation`、`movement`、`clinical`、`review`（`papers` 只留给 2026-10-09 前做的章节，论文移出后删掉） |
 | `modelTermId` | 3D 里真实存在的 ID；模型没有就写 `null`（AN-41） |
 | `aliases`（可选） | 正文里的其他写法，如穴位代码 `SI11`、论文 DOI |
 
@@ -88,7 +88,7 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 | `muscles` / `landmarks` / `acupoints` / `quiz` / `paper` | 把对应记录排进这一位置 | `ids`（`paper` 用 `id`）；`muscles` 另有 `layout`（`cards` / `compact`） |
 | `nerveNotation` | C / T / L / S 说明（AN-04） | — |
 
-记录（`muscles`、`landmarks`、`acupoints`、`review`、`papers`）没被任何块排进去时，自动接在默认章节末尾：肌肉和骨性标志在 01，穴位在 04，问答在 05，论文在 06；神经支配一章没有自己的 `nerve-levels` 提示框时自动加上 `nerveNotation`。穴位记录（AN-20）写 `code`、`name`、`location`、`layers`、`target`、`howToFind`、`safety`、`modelPointId` 和 `sources`。`page`（可选）放页眉、副标题、页脚和目录下方说明。肩袖 `library/shoulder/content.json` 用到了全部块，可作参照。
+记录（`muscles`、`landmarks`、`acupoints`、`review`、`papers`）没被任何块排进去时，自动接在默认章节末尾：肌肉和骨性标志在 01，穴位在 04，问答在 05（旧章节的论文在 06）；神经支配一章没有自己的 `nerve-levels` 提示框时自动加上 `nerveNotation`。穴位记录（AN-20）写 `code`、`name`、`location`、`layers`、`target`、`howToFind`、`safety`、`modelPointId` 和 `sources`。`page`（可选）放页眉、副标题、页脚和目录下方说明。肩袖 `library/shoulder/content.json` 用到了全部块，可作参照。
 
 ## 2. 一次性按完整标准填写
 
@@ -101,7 +101,6 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 | 03 Movement · 动作 | 动作方向、参与肌肉、起止点与牵拉关系；相关结构链接到同一主题中的实际模型 |
 | 04 Clinical anatomy · 临床解剖 | 与本主题相关的结构关系、检查或损伤表现及资料依据；说明教学模型的简化和证据范围 |
 | 05 Review · 复习 | 简记或口诀，以及完整专业英文描述和中文译文；问题与完整答案，不只给关键词 |
-| 06 Paper reading · 论文阅读 | 研究问题、设计、人群、干预或比较、结局指标、主要结果及局限；专业方法学术语英文在前，区分原文结论与自己的解读 |
 
 肌肉英文表达可使用下面的句式，但各主题的内容必须根据资料填写：
 
@@ -146,7 +145,7 @@ pnpm build
 发布前完成以下核验，并在主题提供的审核字段中记录真实结果、审核人和日期：
 
 1. **解剖与来源：** 每项起点、止点、走行、神经支配和动作都有对应资料；区分简化图与真实结构，不把自动通过当作事实正确。
-2. **双语与完整性：** 六阶段齐全；英文在前，中文在后；完整描述与完整问答均存在；方法学专业名词有对应英文。
+2. **双语与完整性：** 五部分齐全；英文在前，中文在后；完整描述与完整问答均存在；方法学专业名词有对应英文。
 3. **图示：** 肌肉起止点清楚；神经有解剖位置图；神经节段与椎骨编号明确；图例、指向线与正文一致。
 4. **模型：** 所有提供的结构绑定和链接都实测；缺失结构明确列出；不出现错误结构、错误侧别或错误主题。
 5. **版式：** 在宽屏、分屏和窄屏检查标签重叠、溢出、图文遮挡、表格及答案展开，实际阅读尺寸下保持可读。
