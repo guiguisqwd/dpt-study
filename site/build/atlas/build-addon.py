@@ -73,7 +73,9 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / 'config.json').write_text(json.dumps({'batches': {args.chapter: config['batch']}}), encoding='utf-8')
-        command = [args.blender_python, '-I', str(Path(__file__).with_name('run_export.py')), '--', str(blend), str(exporter),
+        renames = {old: new for old, new in config.get('renameSourceObjects', {}).items() if not old.startswith('_')}
+        (tmp / 'renames.json').write_text(json.dumps(renames), encoding='utf-8')
+        command = [args.blender_python, '-I', str(Path(__file__).with_name('run_export.py')), '--', str(blend), str(exporter), str(tmp / 'renames.json'),
                    '--config', str(tmp / 'config.json'), '--batch', args.chapter, '--output', str(tmp / 'out')]
         run = subprocess.run(command, capture_output=True, text=True)
         if run.returncode != 0 or 'VANATOME_EXPORT_COMPLETE' not in run.stdout:
@@ -86,6 +88,7 @@ def main():
         paths['metadata'].write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
     meshes = atlaslib.mesh_nodes(paths['glb'])
+    original = {new: old for old, new in renames.items()}
     provenance = {
         'chapter': args.chapter,
         'built': args.date,
@@ -96,7 +99,8 @@ def main():
         'glbSha256': sha256(paths['glb']),
         'glbBytes': paths['glb'].stat().st_size,
         'objectCount': report['objectCount'],
-        'meshes': {m['anatomyId']: {'source': source, 'minMetres': [round(v, 4) for v in m['min']],
+        'meshes': {m['anatomyId']: {'source': source, **({'zAnatomyName': original[source]} if source in original else {}),
+                                    'minMetres': [round(v, 4) for v in m['min']],
                                     'maxMetres': [round(v, 4) for v in m['max']]}
                    for source, m in sorted(meshes.items(), key=lambda item: item[1]['anatomyId'])},
         'mappingNotes': config.get('mappingNotes', []),
