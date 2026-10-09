@@ -87,12 +87,14 @@ export function StandardTopicViewer({ topic }: { topic: StudyTopic }) {
   }, [structureIndex, initialTerm, initialQuery]);
   const initialPosition = useMemo((): VanatomeVector3 => [initialTarget[0] + 0.4, initialTarget[1] + 0.3, initialTarget[2] + 5], [initialTarget]);
 
+  const addonKey = (topic.viewer.addons ?? []).join('|');
   useEffect(() => {
     if (!topic.viewer.enabled || !topic.viewer.terms.length) return;
     let active = true;
-    loadAtlases().then(data => { if (active) setAtlases(data); }).catch(reason => { if (active) setError(String(reason)); });
+    // A chapter with its own add-on model (library/<id>/3d/atlas-addon.json) loads it beside the shared models.
+    loadAtlases(addonKey ? addonKey.split('|') : []).then(data => { if (active) setAtlases(data); }).catch(reason => { if (active) setError(String(reason)); });
     return () => { active = false; };
-  }, [topic.viewer.enabled, topic.viewer.terms.length]);
+  }, [topic.viewer.enabled, topic.viewer.terms.length, addonKey]);
   useEffect(() => {
     if (!ready || initialFocusDone.current || !selectedId || !availableTerms.some(item => item.id === termId)) return;
     initialFocusDone.current = true;
