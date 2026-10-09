@@ -20,7 +20,7 @@ Exit codes: 0 done · 10 author content · 11 visual review · 12 write to Mac �
 14 review center · 20 validation failed · 21 figures failed · 22 build failed · 23 QA failed ·
 24 git commit/push blocked · 30 pack missing (morning) · 2 usage error.
 """
-import argparse, datetime as dt, hashlib, json, os, shutil, subprocess, sys, traceback
+import argparse, datetime as dt, hashlib, json, os, shutil, subprocess, sys, tempfile, traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
