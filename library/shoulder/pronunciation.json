@@ -26,11 +26,6 @@
       "uh-KROH-mee-uhn",
       "https://www.merriam-webster.com/medical/acromion"
     ],
-    "Allocation concealment": [
-      "/ˌæləˈkeɪʃən kənˈsilmənt/",
-      "al-uh-KAY-shuhn kuhn-SEEL-muhnt",
-      "https://www.merriam-webster.com/dictionary/concealment"
-    ],
     "Anatomical neck": [
       "/ˌænəˈtɑmɪkəl nɛk/",
       "an-uh-TAH-mih-kuhl NEK",
@@ -76,11 +71,6 @@
       "BY-seps BRAY-kee-eye",
       "https://www.merriam-webster.com/dictionary/biceps"
     ],
-    "Blinding": [
-      "/ˈblaɪndɪŋ/",
-      "BLYN-ding",
-      "https://www.merriam-webster.com/dictionary/blinding"
-    ],
     "Brachial plexus": [
       "/ˈbreɪkiəl ˈplɛksəs/",
       "BRAY-kee-uhl PLEK-suhs",
@@ -100,11 +90,6 @@
       "/ˈklævɪkəl/",
       "KLAV-ih-kuhl",
       "https://www.merriam-webster.com/dictionary/clavicle"
-    ],
-    "Confidence interval": [
-      "/ˈkɑnfədəns ˈɪntərvəl/",
-      "KAHN-fuh-duhns IN-ter-vuhl",
-      "https://www.merriam-webster.com/dictionary/interval"
     ],
     "Coracobrachialis": [
       "/ˌkɔrəkoʊˌbreɪkiˈeɪləs/",
@@ -221,11 +206,6 @@
       "in-fruh-SPY-nuhs FAH-suh",
       "https://www.merriam-webster.com/medical/infraspinous"
     ],
-    "Intention-to-treat": [
-      "/ɪnˈtɛnʃən tə trit/",
-      "in-TEN-shuhn tuh TREET",
-      "https://www.merriam-webster.com/dictionary/intention"
-    ],
     "Internal rotation": [
       "/ɪnˈtɝnəl roʊˈteɪʃən/",
       "in-TUR-nuhl roh-TAY-shuhn",
@@ -296,11 +276,6 @@
       "MID-uhl truh-PEE-zee-uhs",
       "https://www.merriam-webster.com/medical/trapezius"
     ],
-    "Multiplicity": [
-      "/ˌmʌltəˈplɪsəti/",
-      "mul-tuh-PLIS-uh-tee",
-      "https://www.merriam-webster.com/dictionary/multiplicity"
-    ],
     "Myotome": [
       "/ˈmaɪəˌtoʊm/",
       "MY-uh-tohm",
@@ -320,11 +295,6 @@
       "/ɑkˈsɪpətəl boʊn/",
       "ahk-SIP-uh-tuhl BOHN",
       "https://www.merriam-webster.com/medical/occipital"
-    ],
-    "Odds ratio": [
-      "/ɑdz ˈreɪʃiˌoʊ/",
-      "AHDZ RAY-shee-oh",
-      "https://www.merriam-webster.com/dictionary/ratio"
     ],
     "Pectoralis major": [
       "/ˌpɛktəˈreɪləs ˈmeɪdʒər/",
@@ -365,11 +335,6 @@
       "/kwɑˈdræŋɡjələr speɪs/",
       "kwah-DRANG-gyuh-ler SPAYS",
       "https://www.dictionary.com/browse/quadrangular"
-    ],
-    "Randomization": [
-      "/ˌrændəməˈzeɪʃən/",
-      "ran-duh-muh-ZAY-shuhn",
-      "https://www.merriam-webster.com/dictionary/randomization"
     ],
     "Resisted external rotation": [
       "/rɪˈzɪstəd ɛkˈstɝnəl roʊˈteɪʃən/",
@@ -421,16 +386,6 @@
       "seh-RAY-tuhs an-TEER-ee-er",
       "https://www.merriam-webster.com/medical/serratus"
     ],
-    "Sham": [
-      "/ʃæm/",
-      "SHAM",
-      "https://www.merriam-webster.com/dictionary/sham"
-    ],
-    "Shoulder Pain and Disability Index": [
-      "/ˈʃoʊldər peɪn ənd ˌdɪsəˈbɪləti ˈɪnˌdɛks/",
-      "SHOHL-der PAYN uhnd dis-uh-BIL-uh-tee IN-deks",
-      "https://www.merriam-webster.com/dictionary/disability"
-    ],
     "Spinal nerve": [
       "/ˈspaɪnəl nɝv/",
       "SPY-nuhl NURV",
@@ -459,11 +414,6 @@
     "Subacromial impingement": [
       "/ˌsʌbəˈkroʊmiəl ɪmˈpɪndʒmənt/",
       "sub-uh-KROH-mee-uhl im-PINJ-muhnt",
-      "https://www.merriam-webster.com/medical/subacromial"
-    ],
-    "Subacromial pain syndrome": [
-      "/ˌsʌbəˈkroʊmiəl peɪn ˈsɪnˌdroʊm/",
-      "sub-uh-KROH-mee-uhl PAYN SIN-drohm",
       "https://www.merriam-webster.com/medical/subacromial"
     ],
     "Subacromial space": [
@@ -603,7 +553,6 @@
     "Acromial angle": "肩峰角",
     "Acromioclavicular joint": "肩锁关节",
     "Acromion": "肩峰",
-    "Allocation concealment": "分配隐藏",
     "Anatomical neck": "解剖颈",
     "Anterior rami": "前支",
     "Anterior ramus": "前支",
@@ -613,12 +562,10 @@
     "Axillary nerve": "腋神经",
     "Belly-press test": "腹压试验",
     "Biceps brachii": "肱二头肌",
-    "Blinding": "盲法",
     "Brachial plexus": "臂丛",
     "Brachialis": "肱肌",
     "Cervical": "颈部的",
     "Clavicle": "锁骨",
-    "Confidence interval": "置信区间",
     "Coracobrachialis": "喙肱肌",
     "Coracoid process": "喙突",
     "Cranial nerve": "脑神经",
@@ -642,7 +589,6 @@
     "Inferior angle": "肩胛下角",
     "Infraspinatus": "冈下肌",
     "Infraspinous fossa": "冈下窝",
-    "Intention-to-treat": "意向治疗",
     "Internal rotation": "内旋",
     "Intertubercular groove": "结节间沟",
     "Lateral border of the acromion": "肩峰外侧缘",
@@ -657,12 +603,10 @@
     "Lower trapezius": "下斜方肌",
     "Medial border of the scapula": "肩胛骨内侧缘",
     "Middle trapezius": "中斜方肌",
-    "Multiplicity": "多重比较",
     "Myotome": "肌节",
     "Nerve root": "神经根",
     "Nuchal ligament": "项韧带",
     "Occipital bone": "枕骨",
-    "Odds ratio": "比值比",
     "Pectoralis major": "胸大肌",
     "Pectoralis minor": "胸小肌",
     "Pleura": "胸膜",
@@ -671,7 +615,6 @@
     "Posterior cord": "臂丛后束",
     "Posterior triangle of the neck": "颈后三角",
     "Quadrangular space": "四边孔",
-    "Randomization": "随机化",
     "Resisted external rotation": "抗阻外旋",
     "Rhomboid major": "大菱形肌",
     "Rhomboid minor": "小菱形肌",
@@ -682,15 +625,12 @@
     "Scapulohumeral rhythm": "肩肱节律",
     "Scapulothoracic": "肩胛胸壁的",
     "Serratus anterior": "前锯肌",
-    "Sham": "假对照",
-    "Shoulder Pain and Disability Index": "肩痛与功能障碍指数",
     "Spinal nerve": "脊神经",
     "Spinoglenoid notch": "冈盂切迹",
     "Spinous process": "棘突",
     "Spinous processes": "棘突",
     "Subacromial bursa": "肩峰下滑囊",
     "Subacromial impingement": "肩峰下撞击",
-    "Subacromial pain syndrome": "肩峰下疼痛综合征",
     "Subacromial space": "肩峰下间隙",
     "Subclavian artery": "锁骨下动脉",
     "Subclavius": "锁骨下肌",

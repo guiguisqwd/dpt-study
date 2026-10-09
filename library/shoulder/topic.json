@@ -6,8 +6,8 @@
     "zh": "肩袖"
   },
   "summary": {
-    "en": "Six-part bilingual reading, annotated anatomy diagrams, three-dimensional models and reviewed offline materials.",
-    "zh": "六部分双语阅读、解剖标注图、三维模型与已核验的离线资料。"
+    "en": "Five-part bilingual reading, annotated anatomy diagrams, three-dimensional models and reviewed offline materials.",
+    "zh": "五部分双语阅读、解剖标注图、三维模型与已核验的离线资料。"
   },
   "region": {
     "en": "Shoulder",
@@ -795,21 +795,6 @@
       ],
       "chapters": [
         "clinical"
-      ],
-      "modelTermId": null
-    },
-    {
-      "id": "hando-2026-dry-needling",
-      "kind": "paper",
-      "name": {
-        "en": "Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial",
-        "zh": "干针联合手法治疗与运动治疗肩峰下疼痛综合征：一项假干针对照随机临床试验"
-      },
-      "aliases": [
-        "10.2519/jospt.2025.13460"
-      ],
-      "chapters": [
-        "papers"
       ],
       "modelTermId": null
     }
