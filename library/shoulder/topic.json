@@ -215,6 +215,32 @@
       "modelTermId": null
     },
     {
+      "id": "upper-trapezius",
+      "kind": "muscle",
+      "name": {
+        "en": "Upper trapezius",
+        "zh": "上斜方肌"
+      },
+      "chapters": [
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lower-trapezius",
+      "kind": "muscle",
+      "name": {
+        "en": "Lower trapezius",
+        "zh": "下斜方肌"
+      },
+      "chapters": [
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
       "id": "serratus-anterior",
       "kind": "muscle",
       "name": {
@@ -278,7 +304,8 @@
       },
       "chapters": [
         "anatomy",
-        "movement"
+        "movement",
+        "clinical"
       ],
       "modelTermId": "humerus"
     },
@@ -291,7 +318,8 @@
       },
       "chapters": [
         "anatomy",
-        "movement"
+        "movement",
+        "clinical"
       ],
       "modelTermId": "scapula"
     },
@@ -333,7 +361,8 @@
       },
       "chapters": [
         "anatomy",
-        "movement"
+        "movement",
+        "clinical"
       ],
       "modelTermId": "greater-tubercle"
     },
@@ -346,7 +375,8 @@
       },
       "chapters": [
         "anatomy",
-        "movement"
+        "movement",
+        "clinical"
       ],
       "modelTermId": "lesser-tubercle"
     },
@@ -358,7 +388,8 @@
         "zh": "冈上窝"
       },
       "chapters": [
-        "anatomy"
+        "anatomy",
+        "clinical"
       ],
       "modelTermId": "supraspinous-fossa"
     },
@@ -370,7 +401,8 @@
         "zh": "冈下窝"
       },
       "chapters": [
-        "anatomy"
+        "anatomy",
+        "clinical"
       ],
       "modelTermId": "infraspinous-fossa"
     },
@@ -422,7 +454,8 @@
         "zh": "肩胛上切迹"
       },
       "chapters": [
-        "innervation"
+        "innervation",
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -434,7 +467,8 @@
         "zh": "冈盂切迹"
       },
       "chapters": [
-        "innervation"
+        "innervation",
+        "clinical"
       ],
       "modelTermId": null
     },
@@ -450,6 +484,92 @@
         "clinical"
       ],
       "modelTermId": null
+    },
+    {
+      "id": "scapular-spine",
+      "kind": "landmark",
+      "name": {
+        "en": "Scapular spine",
+        "zh": "肩胛冈"
+      },
+      "aliases": [
+        "Spine of the scapula"
+      ],
+      "chapters": [
+        "innervation",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": "scapular-spine"
+    },
+    {
+      "id": "inferior-angle",
+      "kind": "landmark",
+      "name": {
+        "en": "Inferior angle",
+        "zh": "肩胛骨下角"
+      },
+      "aliases": [
+        "Inferior angle of the scapula"
+      ],
+      "chapters": [
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": "inferior-angle"
+    },
+    {
+      "id": "acromial-angle",
+      "kind": "landmark",
+      "name": {
+        "en": "Acromial angle",
+        "zh": "肩峰角"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "medial-border-of-scapula",
+      "kind": "landmark",
+      "name": {
+        "en": "Medial border of the scapula",
+        "zh": "肩胛骨内侧缘"
+      },
+      "chapters": [
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lateral-border-of-scapula",
+      "kind": "landmark",
+      "name": {
+        "en": "Lateral border of the scapula",
+        "zh": "肩胛骨外侧缘"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "humeral-head",
+      "kind": "landmark",
+      "name": {
+        "en": "Humeral head",
+        "zh": "肱骨头"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "humeral-head"
     },
     {
       "id": "si11",
@@ -520,6 +640,126 @@
       },
       "aliases": [
         "TE14"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "si13",
+      "kind": "acupoint",
+      "name": {
+        "en": "Quyuan",
+        "zh": "曲垣"
+      },
+      "aliases": [
+        "SI13"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "li16",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jugu",
+        "zh": "巨骨"
+      },
+      "aliases": [
+        "LI16"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "si10",
+      "kind": "acupoint",
+      "name": {
+        "en": "Naoshu",
+        "zh": "臑俞"
+      },
+      "aliases": [
+        "SI10"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "ht1",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jiquan",
+        "zh": "极泉"
+      },
+      "aliases": [
+        "HT1"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "jiaji-c5-c6",
+      "kind": "acupoint",
+      "name": {
+        "en": "Cervical Jiaji",
+        "zh": "颈夹脊"
+      },
+      "aliases": [
+        "Jiaji (C5–C6)"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "st12",
+      "kind": "acupoint",
+      "name": {
+        "en": "Quepen",
+        "zh": "缺盆"
+      },
+      "aliases": [
+        "ST12"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "gb21",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jianjing",
+        "zh": "肩井"
+      },
+      "aliases": [
+        "GB21"
+      ],
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "gb23",
+      "kind": "acupoint",
+      "name": {
+        "en": "Zhejin",
+        "zh": "辄筋"
+      },
+      "aliases": [
+        "GB23"
       ],
       "chapters": [
         "clinical"

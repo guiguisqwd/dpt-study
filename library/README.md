@@ -1,6 +1,6 @@
 # Adding a topic · 新增解剖主题
 
-新主题复用 Anatomy study 的主题目录、页面生成、3D 查看器和内容检查。肩袖保留现有源稿作为兼容主题；Hip joint（髋关节）目前是结构化草稿。仓库名称为 `dpt-study`（原 `shoulder-study`）；历史目录保持稳定，避免破坏旧链接。
+新主题复用 Anatomy study 的主题目录、页面生成、3D 查看器和内容检查。肩袖（`library/shoulder/`）是第一章，也是参照样例；Hip joint（髋关节）目前是结构化草稿。仓库名称为 `dpt-study`（原 `shoulder-study`）；历史目录保持稳定，避免破坏旧链接。
 
 ## 1. 同步并创建主题
 
@@ -21,7 +21,7 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 | `figures/` | 该章拥有的图示；优先保留可编辑 SVG 及来源信息 |
 | `3d/` | 该章的 3D 部分（ST-7）；新章节起步时只有说明，模型映射写在 `topic.json` |
 
-使用脚本生成的实际字段结构，不自行猜测新字段名称。标准新主题使用 `standard` 适配方式；`shoulder` 适配方式用于连接已有肩袖资料，不能拿来绕过新主题的内容要求。
+使用脚本生成的实际字段结构，不自行猜测新字段名称。标准新主题使用 `standard` 适配方式；`shoulder` 适配方式只为肩袖保留旧网址（reading.html、`?term=`），内容检查与其他章相同。
 
 具体记录结构见 `site/build/platform/topic.schema.json`、`site/build/platform/content.schema.json` 和 `site/build/platform/content-records.example.json`；后者提供肌肉、图示、问答、文献等记录样式，空值需要填入真实核验内容。共享要求见 `site/build/platform/QUALITY_RULES.md`。**新主题以 `content.json` 作为唯一正文来源，HTML 和 Markdown 由同一内容生成。**
 
@@ -68,6 +68,27 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 `terms` 的键是英文名称，值依次是斜杠包住的 IPA、只大写重音音节的拼读、HTTPS 词典链接。`pinyin` 的键是穴位在结构清单里的英文名，值是带声调拼音。校验脚本（QC-06）检查：结构清单里每个 `muscle`、`nerve`、`bone`、`landmark`、`joint` 在 `terms` 里有一项（不分大小写），每个 `acupoint` 在 `pinyin` 里有一项；每一项格式正确。论文不需要读音。
 
 同一脚本还检查英文在前（QC-05）：`content.json` 里每对 `{en, zh}` 英文格只放英文、中文格放中文。
+
+### 正文块（`sections[].blocks`）
+
+每章的 `blocks` 按顺序排版，同一份内容生成网页和 Markdown（`site/build/platform/reading.py`）。双语值都写 `{"en", "zh"}`；文字里可用 `**粗体**` 和 `[来源名](https://…)`。解剖名称不要手写 3D 链接：结构清单里的名称和 `modelLinks` 里的名称在生成时自动链接。
+
+| `type` | 用途 | 主要字段 |
+| --- | --- | --- |
+| `heading` | 小标题 | `level`（3 或 4）、`text` |
+| `paragraph` | 一段英文 + 中文译文 | `text` |
+| `figure` | 插图，图注取自图示记录 | `diagramId`、`size`（可选 `medium`） |
+| `table` | 表格；每行第一格是行标题 | `columns`、`rows`（格子是 `{en, zh}`，数字、代码这类不分语言的值可写字符串）、`className` |
+| `note` | 提示框 | `heading`、`paragraphs`、`items`、`definitions`、`className` |
+| `cards` | 并排卡片或分阶段卡片 | `layout`（`columns` / `stages` / `stack`）、`cards[]`（`label`、`heading`、`paragraphs`、`items`） |
+| `steps` | 编号步骤，如触诊顺序 | `items[]`（`heading`、`text`） |
+| `mnemonic` | 口诀：完整英文中文句 + 中文原口诀 | `text`、`original` |
+| `details` | 可折叠段落（不能再套 `details`） | `summary`、`open`、`blocks` |
+| `sources` | 段落下的“来源”行 | `ids` |
+| `muscles` / `landmarks` / `acupoints` / `quiz` / `paper` | 把对应记录排进这一位置 | `ids`（`paper` 用 `id`）；`muscles` 另有 `layout`（`cards` / `compact`） |
+| `nerveNotation` | C / T / L / S 说明（AN-04） | — |
+
+记录（`muscles`、`landmarks`、`acupoints`、`review`、`papers`）没被任何块排进去时，自动接在默认章节末尾：肌肉和骨性标志在 01，穴位在 04，问答在 05，论文在 06；神经支配一章没有自己的 `nerve-levels` 提示框时自动加上 `nerveNotation`。穴位记录（AN-20）写 `code`、`name`、`location`、`layers`、`target`、`howToFind`、`safety`、`modelPointId` 和 `sources`。`page`（可选）放页眉、副标题、页脚和目录下方说明。肩袖 `library/shoulder/content.json` 用到了全部块，可作参照。
 
 ## 2. 一次性按完整标准填写
 
@@ -120,7 +141,7 @@ pnpm build
 
 `python3 site/build/build-platform.py` 还会生成自动发现所有主题的 `study.html` 首页；`pnpm build` 与 `pnpm dev` 通过各自的前置命令调用它。共享规范、校验和渲染逻辑位于 `site/build/platform/`，CLI 入口位于 `site/build/`。
 
-只有改动肩袖标准阅读稿时才需另外运行 `python3 library/shoulder/text/build-reading.py`，沿用其现有 HTML / Markdown 双源兼容流程；新主题不需要重复这一维护方式。
+肩袖还要把同一页写到旧地址：改动 `library/shoulder/content.json` 后运行 `python3 library/shoulder/text/build-reading.py`。新主题不需要这一步。
 
 发布前完成以下核验，并在主题提供的审核字段中记录真实结果、审核人和日期：
 

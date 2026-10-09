@@ -141,6 +141,33 @@ class TopicTests(unittest.TestCase):
         self.assertIn(english, markdown); self.assertIn('Test mnemonic', markdown)
         self.assertIn('Study design', markdown); self.assertIn('lumbar', text)
 
+    def test_typed_blocks_render_in_page_and_markdown_and_records_are_placed_once(self):
+        m, c, path = self.completed_fixture()
+        artificial = c['sections'][0]['overview']
+        c['acupoints'] = [{'id': 'test-point', 'code': 'TP1', 'name': pair('Testpoint', '测试穴'), 'location': artificial, 'layers': None,
+                           'target': artificial, 'howToFind': None, 'safety': artificial, 'modelPointId': None, 'sources': ['test-source']}]
+        c['sections'][0]['blocks'] = [
+            {'type': 'heading', 'level': 3, 'text': pair('Typed heading', '类型标题')},
+            {'type': 'table', 'columns': [pair('Name', '名称'), pair('Level', '节段')], 'rows': [[pair('Test row', '测试行'), 'C5–C6']]},
+            {'type': 'note', 'heading': pair('Test note', '测试提示'), 'items': [artificial]},
+            {'type': 'steps', 'items': [{'heading': pair('First step', '第一步'), 'text': artificial}]},
+            {'type': 'details', 'summary': pair('More detail', '更多细节'), 'blocks': [{'type': 'muscles', 'ids': ['supraspinatus'], 'layout': 'compact'}]},
+            {'type': 'sources', 'ids': ['test-source']}]
+        c['sections'][3]['blocks'].append({'type': 'mnemonic', 'text': artificial, 'original': '测试口诀'})
+        errors, missing = validate(m, c, path, self.models)
+        self.assertEqual(errors, []); self.assertEqual(missing, [])
+        self.write_topic(m, c, path); build(path.parent, self.base / 'public')
+        text = (self.base / 'public/topics/test-topic/reading.html').read_text()
+        markdown = (self.base / 'public/topics/test-topic/reading.md').read_text()
+        for needle in ['Typed heading', 'C5–C6', 'Test note', 'First step', 'More detail', 'Testpoint', 'TP1', '测试口诀']:
+            self.assertIn(needle, text); self.assertIn(needle, markdown)
+        self.assertEqual(text.count('id="muscle-supraspinatus"'), 1)  # placed by the block, not appended again
+        self.assertLess(text.index('id="clinical"'), text.index('Testpoint'))  # unplaced acupoints go to chapter 04
+        bad = copy.deepcopy(c); bad['sections'][0]['blocks'].append({'type': 'acupoints', 'ids': ['missing-point']})
+        self.assertTrue(any('unknown acupoints record' in e for e in validate(m, bad, path, self.models)[0]))
+        bad = copy.deepcopy(c); bad['sections'][0]['blocks'][1]['rows'] = [[pair('Test row', '测试行'), '中文格']]
+        self.assertTrue(any(e.startswith('QC-05') for e in validate(m, bad, path, self.models)[0]))
+
     def test_structure_list_must_exist_be_complete_and_match_the_text(self):
         m, c, path = self.completed_fixture()
         bad = copy.deepcopy(m); bad['structures'] = []
@@ -184,9 +211,13 @@ class TopicTests(unittest.TestCase):
         self.assertIn('QC-06 pronunciation missing for key term Supraspinatus (pronunciation.json)', errors)
         for entry in [['ˌsuprəspaɪˈneɪtəs', 'soo-pruh-spy-NAY-tus', 'https://example.invalid/x'],
                       ['/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-nay-tus', 'https://example.invalid/x'],
+                      ['/ˌsuprəspaɪˈneɪtəs/', 'SOO-PRUH-SPY-NAY-TUS', 'https://example.invalid/x'],
                       ['/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-NAY-tus', 'not a link'], 'Supraspinatus']:
             write_json(path / 'pronunciation.json', {'terms': {'Supraspinatus': entry}})
             self.assertTrue(any(e.startswith('pronunciation Supraspinatus') for e in validate(m, c, path, self.models)[0]), entry)
+        write_json(path / 'pronunciation.json', {'terms': {'Supraspinatus': ['/ˌsuprəspaɪˈneɪtəs/', 'soo-pruh-spy-NAY-tus', 'https://example.invalid/x'],
+                                                           'Nerve root': ['/nɝv rut/', 'NURV ROOT', 'https://example.invalid/root']}})
+        self.assertFalse([e for e in validate(m, c, path, self.models)[0] if e.startswith('pronunciation')])  # one-syllable words may be all capitals
         write_json(path / 'pronunciation.json', {'terms': {}, 'pinyin': {'Jianyu': 'Jianyu'}})
         self.assertIn('pinyin Jianyu: tone marks are required', validate(m, c, path, self.models)[0])
 

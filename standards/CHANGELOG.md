@@ -9,3 +9,4 @@
 | 2026-10-08 | ST-7 | 新增“本章 3D”步骤：生成、修改 3D 网站是每一章都有的部分，放 `library/<id>/3d/`；文件落点改为 `library/<id>/` 下 text / figures / pdf / 3d | gui：“生成 修改这个网站的过程 需要加入在每一个大的部分当中例如hip也应当有这么一部分” |
 | 2026-10-09 | ST-1、QC-08 | ST-1 的输出定为 `topic.json` 里的 `structures` 清单（固定字段），新增自动检查 QC-08；肩袖按现有正文补齐清单，髋关节留空作为待办 | gui：“规范没规定结构清单写在哪个文件、什么格式，ST-1 的输出无法被检查” |
 | 2026-10-09 | QC-05、QC-06 | 主题包加上“英文在前”和读音覆盖的自动检查（`topiclib.py`）；读音写在 `library/<id>/pronunciation.json`，按 ST-1 结构清单检查覆盖。肩袖的现有缺口暂记为待办，补齐后取消豁免 | 流程分析：这两项只有每日包有脚本，主题包没有 |
+| 2026-10-09 | QC-05、QC-06、AN-07、AN-20、文件落点 | 肩袖正文改为 `library/shoulder/content.json` 单一来源，HTML 和 Markdown 由共用渲染器生成；共享 content 格式加上正文块（表格、提示框、卡片、步骤、口诀、折叠段、穴位记录等，见 `library/README.md`）；肩袖读音表 `library/shoulder/pronunciation.json`；QC-05 改为检查 `content.json` 和生成的阅读页；取消肩袖的临时豁免；穴位表加“怎么找”一栏（AN-20）；QC-06 的重音拼读检查允许单音节词全大写（如 SHAM），多音节词仍须只大写重读音节；8 项发布核验记录在 `library/shoulder/发布签核.md` | gui 在“肩袖按新规范补齐”讨论里选方案 B（肩袖改用 content.json），并同意先扩展共享格式和渲染器：“没问题” |

@@ -54,53 +54,85 @@
           "blocks": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "heading": {
+              "anyOf": [
+                {
                   "type": "object",
-                  "required": [
-                    "en",
-                    "zh"
-                  ],
                   "properties": {
-                    "en": {
-                      "type": "string"
-                    },
-                    "zh": {
-                      "type": "string"
+                    "type": {
+                      "enum": [
+                        "heading",
+                        "paragraph",
+                        "figure",
+                        "table",
+                        "note",
+                        "cards",
+                        "muscles",
+                        "landmarks",
+                        "acupoints",
+                        "steps",
+                        "mnemonic",
+                        "quiz",
+                        "paper",
+                        "details",
+                        "sources",
+                        "nerveNotation"
+                      ]
                     }
                   },
-                  "additionalProperties": false
-                },
-                "body": {
-                  "type": "object",
                   "required": [
-                    "en",
-                    "zh"
-                  ],
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
                   "properties": {
-                    "en": {
-                      "type": "string"
+                    "heading": {
+                      "type": "object",
+                      "required": [
+                        "en",
+                        "zh"
+                      ],
+                      "properties": {
+                        "en": {
+                          "type": "string"
+                        },
+                        "zh": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
                     },
-                    "zh": {
-                      "type": "string"
+                    "body": {
+                      "type": "object",
+                      "required": [
+                        "en",
+                        "zh"
+                      ],
+                      "properties": {
+                        "en": {
+                          "type": "string"
+                        },
+                        "zh": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    "termIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "uniqueItems": true
                     }
                   },
-                  "additionalProperties": false
-                },
-                "termIds": {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                  },
-                  "uniqueItems": true
+                  "required": [
+                    "heading",
+                    "body",
+                    "termIds"
+                  ]
                 }
-              },
-              "required": [
-                "heading",
-                "body",
-                "termIds"
               ]
             }
           },
@@ -111,6 +143,26 @@
               "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
             },
             "uniqueItems": true
+          },
+          "anchor": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "navTitle": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
           }
         },
         "required": [
@@ -656,7 +708,6 @@
           "id",
           "question",
           "answer",
-          "mnemonic",
           "sources"
         ]
       }
@@ -931,12 +982,289 @@
         "reviewedOn",
         "checks"
       ]
+    },
+    "acupoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "location": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "layers": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "target": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "howToFind": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "safety": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "modelPointId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "code",
+          "name",
+          "location",
+          "safety",
+          "sources"
+        ]
+      }
+    },
+    "modelLinks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "term": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "en",
+          "term"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "page": {
+      "type": "object",
+      "properties": {
+        "eyebrow": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "subtitle": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "lead": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "footer": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "sidebarNote": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "description": {
+          "type": "object",
+          "required": [
+            "en",
+            "zh"
+          ],
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   },
   "required": [
     "schemaVersion",
     "sections",
-    "nerveNotation",
     "muscles",
     "landmarks",
     "diagrams",

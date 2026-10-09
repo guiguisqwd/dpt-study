@@ -23,7 +23,8 @@ library/                     ① 解剖知识库
   README.md                  如何新增一章
   shoulder/                  肩部 · 肩袖
     topic.json、ADAPTER.md   注册与兼容说明
-    text/                    六章 HTML / Markdown 双源稿、data/、templates/、build-reading.py、成稿、制作记录、论文核对记录
+    content.json             六章正文的唯一来源（HTML 与 Markdown 由它生成）；pronunciation.json 读音表
+    text/                    build-reading.py、生成的成稿、制作记录、论文核对记录
     figures/                 17 张可编辑 SVG
     pdf/                     已核验 PDF 与导出脚本
     3d/                      肩部 3D 网站（React / Three.js / Vite，未完成）：模型、语音、骨性标志、Claude 阅读版
@@ -75,9 +76,9 @@ python3 -m http.server 5178 --bind 127.0.0.1 --directory dist
 
 ## 更新与发布
 
-先同步 GitHub，再修改源文件，校验并构建，检查效果，提交并推送。保留其他协作者的修改；不强推、不覆盖。具体协作规则见 [CLAUDE.md](./CLAUDE.md)。肩袖正文的 HTML 和 Markdown 源稿同步维护，Claude 阅读版单独维护；新主题以结构化源文件生成页面与 Markdown。
+先同步 GitHub，再修改源文件，校验并构建，检查效果，提交并推送。保留其他协作者的修改；不强推、不覆盖。具体协作规则见 [CLAUDE.md](./CLAUDE.md)。每一章（包括肩袖）的正文只写在自己的 `content.json`，页面与 Markdown 由它生成；Claude 阅读版单独维护。
 
-仅在修改肩袖标准阅读稿时，于仓库根目录运行 `python3 library/shoulder/text/build-reading.py`，再构建应用。新增主题直接维护自己的 `content.json`。
+修改肩袖 `content.json` 后，于仓库根目录运行 `python3 library/shoulder/text/build-reading.py`（写到肩袖原有的阅读页地址），再构建应用。
 
 [GitHub Actions 工作流](./.github/workflows/pages.yml) 在推送 `main` 后检查、构建并发布，PR 只检查和构建。**本地保存、推送成功、部署成功是不同状态，分别核实后再报告。**
 
