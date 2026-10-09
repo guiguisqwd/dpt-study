@@ -21,6 +21,9 @@ SECTIONS = [
     ('review', 'Review and complete answers', '复习与完整答案'),
     ('papers', 'Critical reading', '论文阅读'),
 ]
+STRUCTURE_KINDS = ['muscle', 'nerve', 'bone', 'landmark', 'joint', 'acupoint', 'paper']
+SHOULDER_SECTION_FILES = {'anatomy': '01-anatomy', 'innervation': '02-nerve', 'movement': '03-motion',
+                          'clinical': '04-clinical', 'review': '05-review', 'papers': '06-reading'}
 QA_CHECKS = ['medicalSources', 'bilingual', 'originInsertionLabels', 'modelLinks',
              'layoutDesktop', 'layoutMobile', 'fullAnswers', 'paperAppraisal']
 MUSCLE_FIELDS = ['origin', 'insertion', 'course', 'actions', 'innervation']
@@ -44,7 +47,7 @@ def skeleton(topic_id, en, zh, region_en='', region_zh=''):
     manifest = {'schemaVersion': 1, 'id': topic_id, 'title': pair(en, zh),
                 'summary': pair('Content is being prepared and has not been reviewed.', '内容正在整理，尚未完成核验。'),
                 'region': pair(region_en or en, region_zh or zh), 'status': 'draft', 'adapter': 'standard',
-                'viewer': {'enabled': False, 'defaultTerm': None, 'terms': []}}
+                'viewer': {'enabled': False, 'defaultTerm': None, 'terms': []}, 'structures': []}
     content = {'schemaVersion': 1, 'sections': [
         {'id': sid, 'title': pair(e, z), 'overview': pair(), 'blocks': [], 'diagramIds': []}
         for sid, e, z in SECTIONS], 'muscles': [], 'landmarks': [], 'diagrams': [],
@@ -179,6 +182,35 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         require(bool(ids), label + ': source references required')
         if not isinstance(ids, list) or any(x not in source_ids for x in ids): fail(label + ': unknown source reference')
 
+    def check_structures(chapter_text, model_ids, muscle_ids=None):
+        """ST-1 / QC-08: the chapter's structure list exists, is well formed and is covered by the text."""
+        items = manifest.get('structures')
+        if items is None: items = []
+        if not isinstance(items, list): fail('structures must be a list'); return
+        require(bool(items), 'ST-1 structure list is missing (topic.json structures)')
+        seen = set()
+        for item in items:
+            if not isinstance(item, dict): fail('structure entries must be objects'); continue
+            sid = item.get('id')
+            label = 'structure ' + str(sid)
+            if not ID.fullmatch(str(sid)) or sid in seen: fail(label + ': invalid or duplicate id')
+            seen.add(sid)
+            if item.get('kind') not in STRUCTURE_KINDS: fail(label + ': kind must be one of ' + ', '.join(STRUCTURE_KINDS))
+            bi(item.get('name'), label + '.name')
+            chapters = item.get('chapters')
+            if not isinstance(chapters, list) or not chapters or any(c not in chapter_text for c in chapters):
+                fail(label + ': chapters must list at least one of ' + ', '.join(chapter_text)); continue
+            mapped = item.get('modelTermId')
+            if mapped is not None and mapped not in model_ids: fail(label + ': modelTermId is not a real 3D id')
+            needles = [item.get('name', {}).get('en', '')] + list(item.get('aliases', []))
+            needles = [n.lower() for n in needles if isinstance(n, str) and n.strip()]
+            for chapter in chapters:
+                require(any(n in chapter_text[chapter] for n in needles), label + ': not mentioned in chapter ' + chapter)
+        if muscle_ids is not None:
+            listed = {i.get('id') for i in items if isinstance(i, dict) and i.get('kind') == 'muscle'}
+            for mid in muscle_ids:
+                require(mid in listed, str(mid) + ': muscle record is not in the ST-1 structure list')
+
     tid = manifest.get('id')
     if not isinstance(tid, str) or not ID.fullmatch(tid): fail('Invalid topic id')
     elif topic_dir.name != tid: fail('Topic id must match its directory')
@@ -246,6 +278,17 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         if tid != 'shoulder': fail('The shoulder adapter is reserved for the existing shoulder topic')
         for relative in ['library/shoulder/text/sections/01-anatomy.html', 'library/shoulder/3d/public/reading.html', 'library/shoulder/3d/public/reading-claude.html']:
             if not (Path(root) / relative).is_file(): fail('Missing preserved shoulder source: ' + relative)
+        chapter_text = {}
+        for sid, stem in SHOULDER_SECTION_FILES.items():
+            path = Path(root) / 'library/shoulder/text/sections' / (stem + '.html')
+            chapter_text[sid] = re.sub(r'<[^>]+>', ' ', path.read_text()).lower() if path.is_file() else ''
+        model_ids = set(term_ids) | landmark_ids
+        links_file = Path(root) / 'library/shoulder/text/data/model-links.json'
+        if links_file.is_file(): model_ids |= {v.get('term') for v in read_json(links_file).values() if v.get('term')}
+        for landmark_file in (Path(root) / 'library/shoulder/3d/src').glob('*-landmarks.json'):
+            model_ids |= {x.get('id') for x in read_json(landmark_file) if isinstance(x, dict)}
+        check_structures(chapter_text, model_ids)
+        if ready: errors.extend(missing)
         return errors, missing
 
     if not isinstance(content, dict): return errors + ['content.json must be an object'], missing
@@ -368,6 +411,21 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         require(bool(paper.get('terms')), 'Paper methodology terms are missing')
         for term in paper.get('terms', []):
             bi(term.get('term'), 'paper.term'); bi(term.get('explanation'), 'paper.explanation')
+    def text_of(value):
+        return ' '.join(v for v in value.values() if isinstance(v, str)) if isinstance(value, dict) else ''
+    chapter_text = {}
+    for section in sections:
+        parts = [text_of(section.get('title')), text_of(section.get('overview'))]
+        parts += [text_of(b.get('heading')) + ' ' + text_of(b.get('body')) for b in section.get('blocks', []) if isinstance(b, dict)]
+        chapter_text[section.get('id')] = ' '.join(parts)
+    records = {'anatomy': content['muscles'] + content['landmarks'], 'review': content['review'], 'papers': content['papers']}
+    for chapter, rows in records.items():
+        for row in rows:
+            if isinstance(row, dict):
+                chapter_text[chapter] = chapter_text.get(chapter, '') + ' ' + ' '.join(
+                    text_of(v) if isinstance(v, dict) else (v if isinstance(v, str) else '') for v in row.values())
+    chapter_text = {k: v.lower() for k, v in chapter_text.items() if k in {s[0] for s in SECTIONS}}
+    check_structures(chapter_text, set(term_ids) | landmark_ids, [m.get('id') for m in content['muscles']])
     qa = content.get('qa', {})
     require(bool(qa.get('reviewedBy', '').strip()), 'Reviewer signoff is missing')
     require(valid_review_date(qa.get('reviewedOn', '')), 'A valid review date is required (YYYY-MM-DD)')

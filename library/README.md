@@ -16,7 +16,7 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 
 | 文件 | 维护内容 |
 | --- | --- |
-| `topic.json` | 中英文名称、区域、状态、适配方式和模型绑定等注册信息 |
+| `topic.json` | 中英文名称、区域、状态、适配方式、模型绑定，以及 ST-1 结构清单 `structures` |
 | `content.json` | 按共享结构填写的双语正文、肌肉、问答、文献及核验记录 |
 | `figures/` | 该章拥有的图示；优先保留可编辑 SVG 及来源信息 |
 | `3d/` | 该章的 3D 部分（ST-7）；新章节起步时只有说明，模型映射写在 `topic.json` |
@@ -24,6 +24,31 @@ python3 site/build/new-topic.py --id knee --en 'Knee joint' --zh 膝关节
 使用脚本生成的实际字段结构，不自行猜测新字段名称。标准新主题使用 `standard` 适配方式；`shoulder` 适配方式用于连接已有肩袖资料，不能拿来绕过新主题的内容要求。
 
 具体记录结构见 `site/build/platform/topic.schema.json`、`site/build/platform/content.schema.json` 和 `site/build/platform/content-records.example.json`；后者提供肌肉、图示、问答、文献等记录样式，空值需要填入真实核验内容。共享要求见 `site/build/platform/QUALITY_RULES.md`。**新主题以 `content.json` 作为唯一正文来源，HTML 和 Markdown 由同一内容生成。**
+
+### 结构清单（ST-1 的输出）
+
+选题时先在 `topic.json` 的 `structures` 里列出本章要讲的全部内容，写正文之前就填好。每一项：
+
+```json
+{
+  "id": "suprascapular-nerve",
+  "kind": "nerve",
+  "name": {"en": "Suprascapular nerve", "zh": "肩胛上神经"},
+  "chapters": ["innervation", "clinical", "review"],
+  "modelTermId": null
+}
+```
+
+| 字段 | 写什么 |
+| --- | --- |
+| `id` | 英文小写 slug，章内唯一；肌肉的 `id` 与 `content.json` 里肌肉记录的 `id` 相同 |
+| `kind` | `muscle`、`nerve`、`bone`、`landmark`、`joint`、`acupoint`、`paper` 之一 |
+| `name` | 英文、中文名称；论文写正式标题 |
+| `chapters` | 出现在哪几章：`anatomy`、`innervation`、`movement`、`clinical`、`review`、`papers` |
+| `modelTermId` | 3D 里真实存在的 ID；模型没有就写 `null`（AN-41） |
+| `aliases`（可选） | 正文里的其他写法，如穴位代码 `SI11`、论文 DOI |
+
+校验脚本（QC-08）检查：清单不为空；每一项的英文名或别名出现在它所列的每一章里；`modelTermId` 真实存在；`content.json` 里每条肌肉记录都在清单里。草稿阶段这些记为待办，改成 `published` 时变成错误。肩袖的清单在 `library/shoulder/topic.json`，可作参照。
 
 ## 2. 一次性按完整标准填写
 

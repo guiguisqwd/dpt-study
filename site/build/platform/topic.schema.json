@@ -250,6 +250,79 @@
         "terms"
       ]
     },
+    "structures": {
+      "description": "ST-1 structure list: every structure, nerve, acupoint and paper this chapter covers, with the chapters it appears in.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "kind": {
+            "enum": [
+              "muscle",
+              "nerve",
+              "bone",
+              "landmark",
+              "joint",
+              "acupoint",
+              "paper"
+            ]
+          },
+          "name": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "zh": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "chapters": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "anatomy",
+                "innervation",
+                "movement",
+                "clinical",
+                "review",
+                "papers"
+              ]
+            }
+          },
+          "modelTermId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "name",
+          "chapters",
+          "modelTermId"
+        ]
+      }
+    },
     "pdf": {
       "type": "object",
       "properties": {
