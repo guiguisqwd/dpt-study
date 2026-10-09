@@ -329,7 +329,7 @@ def s_visual_review(run, date):
 def s_site(run, date):
     site.publish_day(date)
     rep = site.rebuild_index()
-    set_step(run, "evening", "site", "done", evidence=rep | {"page": f"肩部3D学习/public/daily/{date}/index.html"})
+    set_step(run, "evening", "site", "done", evidence=rep | {"page": f"site/public/daily/{date}/index.html"})
     return 0
 
 
@@ -372,7 +372,7 @@ def git(*args, check=True):
 
 def s_publish(run, date, phase="evening", step="publish"):
     c_out = run.get("out", date)
-    git("add", "daily", "肩部3D学习/public/daily", "reading-source/prepare-web-release.py", "scripts/build-platform.py", check=False)
+    git("add", "daily", "site/public/daily", "site/build/prepare-web-release.py", "site/build/build-platform.py", check=False)
     staged = git("diff", "--cached", "--name-only").stdout.split()
     if staged:
         git("-c", "user.name=Claude", "-c", "user.email=noreply@anthropic.com", "commit", "-m",

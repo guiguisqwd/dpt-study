@@ -8,6 +8,10 @@ acupoints read aloud in Chinese, self-checks, flashcards, and spaced-repetition 
 
 `pipeline.py` runs the work as fixed, checked steps and records every run in `runs/`.
 
+This is block ② of the repository: daily learning is generated **from** the anatomy library in
+`library/` (block ①). The rules for how a pack draws on the library, and the short chapter form
+(CH-02), are in `standards/daily/README.md`. Published pages go to `site/public/daily/`.
+
 ## The two phases
 
 | When (Pacific) | Phase | Steps (AUTO = the script does and checks it; CLAUDE = the session does it, then records evidence) |
@@ -56,7 +60,7 @@ daily/
   plan/schedule.json     the study plan; plan/legacy/ = 10-06 shoulder preview cards
   engine/
     figlib/              Fig kit (fig.py) + region base art: chest.py, arm.py, … (reuse; add new regions here)
-    render.py build.py   content.json → sections → <pack>.html/.md (3D ?term= links validated against 肩部3D学习/src)
+    render.py build.py   content.json → sections → <pack>.html/.md (3D ?term= links validated against library/shoulder/3d/src)
     schema.py            strict content checks (English first, O/I/N/A sentence, acupoint fields, pronunciation, tags, plan match)
     qa/qa.js             Playwright: JS errors, chapters, SVG text overlap/outside, phone width, pronunciation coverage, screenshots
     site.py              public/daily/<date>/ + public/daily/index.html + catalog.json (shipped by GitHub Pages)

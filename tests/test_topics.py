@@ -8,7 +8,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'platform'))
+sys.path.insert(0, str(ROOT / 'site/build/platform'))
 from topiclib import QA_CHECKS, build, catalog_models, pair, skeleton, validate, write_json
 
 
@@ -50,12 +50,12 @@ class TopicTests(unittest.TestCase):
                            'modelTermId': 'humerus', 'viewerLandmarkId': None,
                            'modelUnavailableReason': pair('Exact landmark position is not mapped in this test.', '本测试未标注该标志的准确位置。'),
                            'diagramIds': ['test-diagram'], 'sources': ['test-source']}]
-        c['diagrams'] = [{'id': 'test-diagram', 'file': 'assets/test.svg', 'alt': artificial, 'caption': artificial,
+        c['diagrams'] = [{'id': 'test-diagram', 'file': 'figures/test.svg', 'alt': artificial, 'caption': artificial,
                           'labels': [{'kind': 'origin', 'muscleId': 'supraspinatus', 'text': pair('Origin: test site', '起点：测试部位')},
                                      {'kind': 'insertion', 'muscleId': 'supraspinatus', 'text': pair('Insertion: test site', '止点：测试部位')}],
                           'sources': ['test-source']}]
-        (path / 'assets').mkdir()
-        (path / 'assets/test.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg"><text>Origin: test site 起点：测试部位</text><text>Insertion: test site 止点：测试部位</text></svg>')
+        (path / 'figures').mkdir()
+        (path / 'figures/test.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg"><text>Origin: test site 起点：测试部位</text><text>Insertion: test site 止点：测试部位</text></svg>')
         c['review'] = [{'id': 'test-question', 'question': pair('What is the test question?', '测试问题是什么？'),
                         'answer': pair('This complete English answer contains enough words to verify that a full explanation survives rendering before its Chinese translation.', '这是一段完整测试答案，用于检查中文位于英文之后。'),
                         'mnemonic': pair('Test mnemonic', '测试简记'), 'sources': ['test-source']}]
@@ -70,21 +70,21 @@ class TopicTests(unittest.TestCase):
 
     def test_two_independent_topics_scaffold_without_core_changes(self):
         topics = self.base / 'topics'
-        core_before = (ROOT / 'platform/topiclib.py').read_bytes()
+        core_before = (ROOT / 'site/build/platform/topiclib.py').read_bytes()
         for tid in ['knee-test', 'elbow-test']:
-            result = subprocess.run([sys.executable, str(ROOT / 'scripts/new-topic.py'), '--id', tid, '--en', tid,
+            result = subprocess.run([sys.executable, str(ROOT / 'site/build/new-topic.py'), '--id', tid, '--en', tid,
                                      '--zh', '测试主题', '--topics-dir', str(topics)], capture_output=True)
             self.assertEqual(result.returncode, 0, result.stderr.decode())
         catalog = build(topics, self.base / 'public')
         self.assertEqual({t['id'] for t in catalog}, {'knee-test', 'elbow-test'})
         self.assertTrue(all(t['status'] == 'draft' for t in catalog))
-        self.assertEqual((ROOT / 'platform/topiclib.py').read_bytes(), core_before)
+        self.assertEqual((ROOT / 'site/build/platform/topiclib.py').read_bytes(), core_before)
         for topic in catalog:
             self.assertTrue((self.base / 'public/topics' / topic['id'] / 'index.html').exists())
 
     def test_new_topic_refuses_overwrite_and_path_traversal(self):
         topics = self.base / 'topics'
-        command = [sys.executable, str(ROOT / 'scripts/new-topic.py'), '--en', 'Test', '--zh', '测试', '--topics-dir', str(topics)]
+        command = [sys.executable, str(ROOT / 'site/build/new-topic.py'), '--en', 'Test', '--zh', '测试', '--topics-dir', str(topics)]
         self.assertEqual(subprocess.run(command + ['--id', 'knee'], capture_output=True).returncode, 0)
         existing = (topics / 'knee/topic.json').read_bytes()
         self.assertNotEqual(subprocess.run(command + ['--id', 'knee'], capture_output=True).returncode, 0)
@@ -117,7 +117,7 @@ class TopicTests(unittest.TestCase):
         malformed = copy.deepcopy(c); malformed['sections'][0]['blocks'] = [None]
         self.assertTrue(validate(m, malformed, path, self.models)[0])
         write_json(path / 'topic.json', [])
-        result = subprocess.run([sys.executable, str(ROOT / 'scripts/validate-topics.py'), '--topics-dir', str(path.parent)], capture_output=True, text=True)
+        result = subprocess.run([sys.executable, str(ROOT / 'site/build/validate-topics.py'), '--topics-dir', str(path.parent)], capture_output=True, text=True)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('must contain an object', result.stderr)
         self.assertNotIn('Traceback', result.stderr)
@@ -132,7 +132,7 @@ class TopicTests(unittest.TestCase):
         english, chinese = c['review'][0]['answer']['en'], c['review'][0]['answer']['zh']
         self.assertLess(text.index(english), text.index(chinese))
         self.assertIn('topic=test-topic&amp;term=supraspinatus', text)
-        self.assertTrue((destination / 'assets/test.svg').exists())
+        self.assertTrue((destination / 'figures/test.svg').exists())
         markdown = (destination / 'reading.md').read_text()
         self.assertIn(english, markdown); self.assertIn('Test mnemonic', markdown)
         self.assertIn('Study design', markdown); self.assertIn('lumbar', text)
@@ -149,7 +149,7 @@ class TopicTests(unittest.TestCase):
 
     def test_origin_insertion_must_exist_in_actual_svg(self):
         m, c, path = self.completed_fixture()
-        (path / 'assets/test.svg').write_text('<svg><text>Origin: test site 起点：测试部位</text></svg>')
+        (path / 'figures/test.svg').write_text('<svg><text>Origin: test site 起点：测试部位</text></svg>')
         errors, _ = validate(m, c, path, self.models)
         self.assertTrue(any('absent from SVG' in error for error in errors))
         c['diagrams'][0]['labels'] = c['diagrams'][0]['labels'][:1]
@@ -187,8 +187,8 @@ class TopicTests(unittest.TestCase):
         m, c, path = self.completed_fixture()
         c['diagrams'][0]['file'] = '../outside.svg'
         self.assertTrue(validate(m, c, path, self.models)[0])
-        c['diagrams'][0]['file'] = 'assets/test.svg'
-        (path / 'assets/test.svg').write_text('<svg><script>alert(1)</script></svg>')
+        c['diagrams'][0]['file'] = 'figures/test.svg'
+        (path / 'figures/test.svg').write_text('<svg><script>alert(1)</script></svg>')
         self.assertTrue(any('Active SVG' in e for e in validate(m, c, path, self.models)[0]))
 
     def test_source_and_qa_omissions_cannot_publish(self):
@@ -212,7 +212,7 @@ class TopicTests(unittest.TestCase):
 
     def test_missing_or_stale_pdf_is_not_advertised(self):
         m, c, path = self.completed_fixture()
-        m['pdf'] = {'file': 'assets/missing.pdf', 'contentDigest': 'old', 'reviewedBy': 'Tester', 'reviewedOn': '2026-10-06'}
+        m['pdf'] = {'file': 'figures/missing.pdf', 'contentDigest': 'old', 'reviewedBy': 'Tester', 'reviewedOn': '2026-10-06'}
         errors, _ = validate(m, c, path, self.models)
         self.assertTrue(any('PDF is missing' in e for e in errors)); self.assertTrue(any('stale' in e for e in errors))
 

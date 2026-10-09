@@ -26,20 +26,17 @@ venv/
 /playwright-report/
 /*.png
 /*.jpg
-/肩部3D学习/*.png
-/肩部3D学习/*.jpg
-/reading-source/build-report.json
-/reading-source/pdf-export-report.json
+/library/shoulder/3d/*.png
+/library/shoulder/3d/*.jpg
+/library/shoulder/text/build-report.json
+/library/shoulder/pdf/pdf-export-report.json
 
 # Keep the reviewed PDF as a release input; rebuild ZIPs during publication
-/output/*
-!/output/pdf/
-/output/pdf/*
-!/output/pdf/肩袖-英中双语学习简报.pdf
+/library/shoulder/pdf/*.zip
 
-# Topic pages and the library are generated from topics/ and platform/.
-/肩部3D学习/public/topics/
-/肩部3D学习/public/topics.json
-/肩部3D学习/public/study.html
+# Topic pages and the study home are generated from library/ by site/build/.
+/library/shoulder/3d/public/topics/
+/library/shoulder/3d/public/topics.json
+/library/shoulder/3d/public/study.html
 
-/肩部3D学习/public/topic.css
+/library/shoulder/3d/public/topic.css
