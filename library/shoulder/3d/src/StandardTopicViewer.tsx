@@ -35,7 +35,8 @@ export function StandardTopicViewer({ topic }: { topic: StudyTopic }) {
   const [view, setView] = useState<View>('front');
   const [freeView, setFreeView] = useState(false);
   const [displayMode, setDisplayMode] = useState<VanatomeDisplayMode>('xray');
-  const [allLabels, setAllLabels] = useState(true);
+  // Only the selected structure is labelled until All labels is ticked (gui, 2026-10-09).
+  const [allLabels, setAllLabels] = useState(false);
   const [showChinese, setShowChinese] = useState(true);
   const [bones, setBones] = useState(true);
   const [muscles, setMuscles] = useState(true);
@@ -66,7 +67,7 @@ export function StandardTopicViewer({ topic }: { topic: StudyTopic }) {
     const visibleIds = new Set(visibleTermIds.split('|').flatMap(id => [...(termStructures.get(id) || [])]));
     return structures.filter(structure => structure.objectCount && !visibleIds.has(structure.id)).map(structure => structure.id);
   }, [structures, termStructures, visibleTermIds]);
-  // Labels dock in a column beside the model; when they don't all fit, the selection comes first and a note says so.
+  // Labels dock in a column beside the model; with All labels on and too many to fit, the selection comes first and a note says so.
   const labelLayout = useMemo(() => {
     const candidates: DockCandidate[] = visibleTermIds.split('|').flatMap((id, order): DockCandidate[] => {
       const item = topic.viewer.terms.find(candidate => candidate.id === id);
@@ -82,8 +83,11 @@ export function StandardTopicViewer({ topic }: { topic: StudyTopic }) {
       candidates.push({ annotation: { id: `landmark:${landmark.id}`, label: `${landmark.name.en}${showChinese ? `\n${landmark.name.zh}` : ''}`,
         position: landmark.positions[side], color: '#f1c16f', showLabel: allLabels }, priority: landmark.id === landmarkId ? 0 : 1, y: landmark.positions[side][1] });
     }
-    // With labels off only the selected label shows, in the middle of the column.
-    if (!allLabels) return { items: candidates.map(item => ({ ...item.annotation, labelDockIndex: 0, labelDockCount: 1 })), total: candidates.length };
+    // With All labels off, only the selected structure (and a selected landmark) is labelled and marked.
+    if (!allLabels) {
+      const selected = candidates.filter(item => item.priority <= 0.5).map(item => ({ ...item, annotation: { ...item.annotation, showLabel: true } }));
+      return { items: fitDockedLabels(selected, sceneHeight), total: selected.length };
+    }
     return { items: fitDockedLabels(candidates, sceneHeight), total: candidates.length };
   }, [visibleTermIds, topic.viewer.terms, structureIndex, side, showChinese, allLabels, showLandmarks, reviewedLandmarks, termStructures, termId, landmarkId, sceneHeight]);
   const annotations = labelLayout.items;
