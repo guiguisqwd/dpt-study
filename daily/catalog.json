@@ -2,12 +2,12 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
-   "date": "2026-10-09",
+   "date": "2026-10-12",
    "day": null,
    "week": 1,
    "chapter": "shoulder",
    "kind": "supplement",
-   "out": "2026-10-09-第1周-试用-肩带四穴与肩袖四肌",
+   "out": "2026-10-12-第1周-试用-肩带四穴与肩袖四肌",
    "title": {
     "zh": "试用版：肩带四穴与肩袖四肌",
     "en": "Trial: SI14, SI15, TE15, LI14 · the rotator cuff"
@@ -68,8 +68,8 @@
     ]
    },
    "figures": 4,
-   "path": "daily/2026-10-09/index.html",
-   "md": "daily/2026-10-09/2026-10-09-第1周-试用-肩带四穴与肩袖四肌.md"
+   "path": "daily/2026-10-12/index.html",
+   "md": "daily/2026-10-12/2026-10-12-第1周-试用-肩带四穴与肩袖四肌.md"
   },
   {
    "date": "2026-10-08",

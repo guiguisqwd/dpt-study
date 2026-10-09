@@ -9,9 +9,9 @@
 >
 > **Key terms｜关键词：** 肩外俞（Jiānwàishū） · 肩中俞（Jiānzhōngshū） · 天髎（Tiānliáo） · 臂臑（Bìnào） · Levator scapulae（肩胛提肌） `li-VAY-ter SKAP-yuh-lee` /lɪˈveɪtər ˈskæpjəˌli/ · Rhomboid minor（小菱形肌） `ROM-boyd MY-ner` /ˈrɑmˌbɔɪd ˈmaɪnər/ · Trapezius（斜方肌） `truh-PEE-zee-uhs` /trəˈpiziəs/ · Deltoid（三角肌） `DEL-toyd` /ˈdɛlˌtɔɪd/ · Spinous process（棘突） `SPY-nuhs PRAH-ses` /ˈspaɪnəs ˈprɑsɛs/
 
-Trial pack. This is a trial run of the new weekly model. It uses the content planned for Monday 12 October (week 1, rotator cuff) so you can test the new format today.
+Trial pack. This is a trial run of the new weekly model. It is the pack planned for Monday 12 October (week 1, rotator cuff), published early on 9 October so you can test the new format now.
 
-试用版。这是新的周计划模式的试运行，用的是第 1 周（肩袖周）周一 10 月 12 日计划的内容，方便今天先试新格式。
+试用版。这是新的周计划模式的试运行，这是第 1 周（肩袖周）周一 10 月 12 日的包，10 月 9 日提前放出来，方便先试新格式。
 
 This week's chapter is the rotator cuff. Today's four new points sit on the muscles around it: SI14 and SI15 on the upper back over levator scapulae and the rhomboids, TE15 at the superior angle of the scapula over supraspinatus, and LI14 on the lateral arm at the lower end of the deltoid. All four lie under trapezius or deltoid, so the first layer you press through is a muscle you already know.
 

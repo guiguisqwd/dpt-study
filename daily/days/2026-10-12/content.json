@@ -1,6 +1,6 @@
 {
  "schema": "dpt-daily-pack/2",
- "date": "2026-10-09",
+ "date": "2026-10-12",
  "kind": "supplement",
  "week": 1,
  "chapter": "shoulder",
@@ -10,9 +10,9 @@
   "zh": "试用版：肩带四穴与肩袖四肌",
   "en": "Trial: SI14, SI15, TE15, LI14 · the rotator cuff"
  },
- "description": "DPT 每日包试用版（新周计划格式）：内容取自第 1 周周一（10-12）的计划。新：肩外俞、肩中俞、天髎、臂臑；夯实：肩袖四肌。",
- "brand_sub": "试用版 · 第 1 周周一内容 · 10/9",
- "today_line": "试用版（新格式）：4 个新穴位（肩外俞、肩中俞、天髎、臂臑）· 夯实肩袖四肌 · 自测 8 题 + 记忆卡",
+ "description": "DPT 每日包提前试用版（新周计划格式）：第 1 周周一（10-12）的包，10-09 先放出。新：肩外俞、肩中俞、天髎、臂臑；夯实：肩袖四肌。",
+ "brand_sub": "提前试用版 · 第 1 周周一 · 10/12",
+ "today_line": "提前试用版（新格式）：4 个新穴位（肩外俞、肩中俞、天髎、臂臑）· 夯实肩袖四肌 · 自测 8 题 + 记忆卡",
  "study_plan": [
   [
    "新穴位（20 分钟）",
@@ -27,7 +27,7 @@
    "02 章末：新穴位和肩袖四肌混在一起刷"
   ]
  ],
- "footer": "DPT 每日包 · 试用版（第 1 周周一内容，10-09 提前试用）· 定位依据 GB/T 12346-2021 与 WHO 2008；层次为学习用的简化描述，不代表进针方向或深度。",
+ "footer": "DPT 每日包 · 提前试用版（第 1 周周一 10-12 的内容，10-09 先放出来试）· 定位依据 GB/T 12346-2021 与 WHO 2008；层次为学习用的简化描述，不代表进针方向或深度。",
  "tags": {
   "vertical": [
    "解剖学/上肢/肩带/肩袖",
@@ -370,8 +370,8 @@
    "blocks": [
     {
      "t": "p",
-     "en": "<b>Trial pack.</b> This is a trial run of the new weekly model. It uses the content planned for Monday 12 October (week 1, rotator cuff) so you can test the new format today.",
-     "zh": "<b>试用版。</b>这是新的周计划模式的试运行，用的是第 1 周（肩袖周）周一 10 月 12 日计划的内容，方便今天先试新格式。"
+     "en": "<b>Trial pack.</b> This is a trial run of the new weekly model. It is the pack planned for Monday 12 October (week 1, rotator cuff), published early on 9 October so you can test the new format now.",
+     "zh": "<b>试用版。</b>这是新的周计划模式的试运行，这是第 1 周（肩袖周）周一 10 月 12 日的包，10 月 9 日提前放出来，方便先试新格式。"
     },
     {
      "t": "p",

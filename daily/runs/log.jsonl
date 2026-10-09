@@ -70,3 +70,18 @@
 {"date": "2026-10-09", "at": "2026-10-09T14:19:48+00:00", "phase": "evening", "step": "visual_review", "status": "done"}
 {"date": "2026-10-09", "at": "2026-10-09T14:19:48+00:00", "phase": "evening", "step": "site", "status": "done"}
 {"date": "2026-10-09", "at": "2026-10-09T14:19:48+00:00", "phase": "evening", "step": "cards", "status": "done"}
+{"date": "2026-10-09", "at": "2026-10-09T14:19:51+00:00", "phase": "evening", "step": "publish", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:07+00:00", "phase": "evening", "step": "plan", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:07+00:00", "phase": "evening", "step": "author", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:07+00:00", "phase": "evening", "step": "figures", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:07+00:00", "phase": "evening", "step": "validate", "status": "failed", "error": "['2026-10-09 is learning in plan/weeks.json, content says supplement', \"figure files missing in build/资源: ['01', '02', '03', '04'] (run the figures step)\"]"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:23+00:00", "phase": "evening", "step": "plan", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:23+00:00", "phase": "evening", "step": "author", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:23+00:00", "phase": "evening", "step": "figures", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:23+00:00", "phase": "evening", "step": "validate", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:23+00:00", "phase": "evening", "step": "build", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:28+00:00", "phase": "evening", "step": "qa", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:28+00:00", "phase": "evening", "step": "visual_review", "status": "waiting", "error": "['no visual-review.json newer than qa.json']"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:39+00:00", "phase": "evening", "step": "visual_review", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:39+00:00", "phase": "evening", "step": "site", "status": "done"}
+{"date": "2026-10-12", "at": "2026-10-09T14:21:39+00:00", "phase": "evening", "step": "cards", "status": "done"}

@@ -342,7 +342,7 @@
   "title": "冈上肌",
   "sub": "Supraspinatus",
   "meridian": "",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "英文名",
@@ -378,7 +378,7 @@
   "title": "冈下肌",
   "sub": "Infraspinatus",
   "meridian": "",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "英文名",
@@ -414,7 +414,7 @@
   "title": "小圆肌",
   "sub": "Teres minor",
   "meridian": "",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "英文名",
@@ -450,7 +450,7 @@
   "title": "肩胛下肌",
   "sub": "Subscapularis",
   "meridian": "",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "英文名",
@@ -1046,11 +1046,11 @@
  {
   "id": "acu-肩外俞",
   "type": "acu",
-  "learned": "2026-10-09",
+  "learned": "2026-10-12",
   "title": "肩外俞",
   "sub": "手太阳小肠经",
   "meridian": "手太阳小肠经",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "定位",
@@ -1078,11 +1078,11 @@
  {
   "id": "acu-肩中俞",
   "type": "acu",
-  "learned": "2026-10-09",
+  "learned": "2026-10-12",
   "title": "肩中俞",
   "sub": "手太阳小肠经",
   "meridian": "手太阳小肠经",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "定位",
@@ -1110,11 +1110,11 @@
  {
   "id": "acu-天髎",
   "type": "acu",
-  "learned": "2026-10-09",
+  "learned": "2026-10-12",
   "title": "天髎",
   "sub": "手少阳三焦经",
   "meridian": "手少阳三焦经",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "定位",
@@ -1142,11 +1142,11 @@
  {
   "id": "acu-臂臑",
   "type": "acu",
-  "learned": "2026-10-09",
+  "learned": "2026-10-12",
   "title": "臂臑",
   "sub": "手阳明大肠经",
   "meridian": "手阳明大肠经",
-  "region": "肩带与肩部",
+  "region": "肩袖 Rotator cuff",
   "fields": [
    [
     "定位",

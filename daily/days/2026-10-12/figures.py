@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Trial pack 2026-10-09 (content of week 1 Monday, 2026-10-12): SI14, SI15, TE15, LI14 and the rotator cuff.
+"""Week 1 Monday 2026-10-12, published early as a trial on 2026-10-09: SI14, SI15, TE15, LI14 and the rotator cuff.
 Run via pipeline (figures step) or: python3 figures.py <out_dir>."""
 import pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2]))
