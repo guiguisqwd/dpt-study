@@ -62,7 +62,11 @@ with zipfile.ZipFile(DIST/'downloads/shoulder-markdown.zip','w',zipfile.ZIP_DEFL
  z.writestr('reading.md',md)
  for f in sorted((DIST/'reading-assets').glob('*.svg')):z.write(f,'reading-assets/'+f.name)
 (DIST/'content').mkdir(exist_ok=True)
-data={'title':'Shoulder study / 肩袖学习','muscles':json.loads((SHOULDER/'text/data/muscles.json').read_text()),'model_links':json.loads((SHOULDER/'text/data/model-links.json').read_text()),'humerus_landmarks':json.loads((APP/'src/humerus-landmarks.json').read_text()),'scapula_landmarks':json.loads((APP/'src/scapula-landmarks.json').read_text()),'scope':'Anatomical study references; not clinically calibrated acupoint or needling coordinates.'}
+# Machine-readable shoulder facts come from the chapter's one source, library/shoulder/content.json.
+content=json.loads((SHOULDER/'content.json').read_text())
+model_links={s['name']['en']:s.get('modelTermId') for s in json.loads((SHOULDER/'topic.json').read_text())['structures'] if s['kind'] not in ('paper','acupoint')}
+model_links.update({l['en']:l['term'] for l in content.get('modelLinks',[])})
+data={'title':'Shoulder study / 肩袖学习','source':'library/shoulder/content.json','muscles':content['muscles'],'landmarks':content['landmarks'],'acupoints':content.get('acupoints',[]),'model_links':model_links,'humerus_landmarks':json.loads((APP/'src/humerus-landmarks.json').read_text()),'scapula_landmarks':json.loads((APP/'src/scapula-landmarks.json').read_text()),'scope':'Anatomical study references; not clinically calibrated acupoint or needling coordinates.'}
 (DIST/'content/anatomy.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 catalog=json.loads((DIST/'topics.json').read_text())
 # Downloaded topic Markdown keeps its figure paths, while 3D links use the live site.

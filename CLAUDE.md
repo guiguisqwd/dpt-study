@@ -20,7 +20,7 @@
 - GitHub 仓库于 2026-10-08 按用户要求由 `shoulder-study` 改名为 **`dpt-study`**（站点 `https://guiguisqwd.github.io/dpt-study/`）。GitHub 会把旧仓库地址重定向到新仓库，但 Pages 旧站点路径不会自动跳转（`guiguisqwd.github.io` 仓库里的 `shoulder-study/` 跳转页负责这件事）。
 - 新主题放在 `library/<id>/`，由 `topic.json` 注册；用共享脚本发现、校验并构建。先读 [library/README.md](./library/README.md)，不要复制整个应用另建一套。
 - 保持“共享界面与渲染逻辑”和“主题内容与模型映射”分离。一般新增关节应修改主题数据、图示和资料；如果确需扩展共享能力，扩展一次并检查已有主题。
-- 肩袖使用兼容适配方式保留现有成熟阅读稿、3D 行为、语音和 Claude 独立版。不要为统一目录破坏已经完成的内容。
+- 肩袖和其他章节一样以 `library/shoulder/content.json` 为唯一正文来源；`shoulder` 适配方式只负责保留旧地址（reading.html、`?term=`）、3D 行为、语音和 Claude 独立版。不要为统一目录破坏已经完成的内容。
 - `draft` 表示内容未完成，`published` 表示主题已完成相应核验。Hip joint 的起始目录是结构化草稿，不等于已完成的髋关节课程。不得把占位数据、未核对图示或未知模型当作已就绪学习材料。
 - 自动检查可以发现结构和链接问题，不能证明解剖事实正确；发布前仍须核验资料和实际图文显示。
 
@@ -57,10 +57,10 @@
 | 新主题内容、资料及模型映射 | 对应 `library/<id>/`；创建方式与校验见 `library/README.md` |
 | 主题生成与校验规则 | `site/build/` 中共享脚本 |
 | 共享主题内容规范、页面渲染和主题库样式 | `site/build/platform/` |
-| 肩袖六章阅读正文 | `library/shoulder/text/sections/` 中对应的 `.html` 与 `.md`，两者同步维护 |
-| 肩袖阅读版式与目录 | `library/shoulder/text/reading.css`、`library/shoulder/text/templates/` |
+| 肩袖六章阅读正文（HTML 与 Markdown 由它生成） | `library/shoulder/content.json`；读音在 `library/shoulder/pronunciation.json` |
+| 阅读页版式与目录（各章共用） | `site/build/platform/reading.py`、`site/build/platform/reading.css` |
 | 肩袖可编辑解剖配图 | `library/shoulder/figures/` 中的 SVG |
-| 肩袖肌肉、模型跳转及资料依据 | `library/shoulder/text/data/` |
+| 肩袖结构清单与 3D 跳转 | `library/shoulder/topic.json` 的 `structures`；正文另需的 3D 名称写在 `content.json` 的 `modelLinks` |
 | 3D 页面、状态与交互（肩部章节，髋关节暂借用） | `library/shoulder/3d/src/` |
 | 模型、音频、许可等公开资源 | `library/shoulder/3d/public/` |
 | Claude 独立阅读版 | `library/shoulder/3d/public/reading-claude.html` |
@@ -79,7 +79,7 @@ python3 site/build/build-platform.py
 
 `python3 site/build/build-platform.py` 生成主题页和自动发现主题的 `study.html` 学习首页；应用的 `prebuild` / `predev` 会调用它，因此正常的 `pnpm build` / `pnpm dev` 会同步主题库。
 
-仅在修改肩袖标准阅读源稿时运行 `python3 library/shoulder/text/build-reading.py`，更新原有 HTML / Markdown 输出，再构建应用；这项兼容流程不需要复制到新主题。
+修改 `library/shoulder/content.json` 后运行 `python3 library/shoulder/text/build-reading.py`，把同一份内容写到肩袖原有的 HTML / Markdown 输出位置（含 `3d/public/reading.html`），再构建应用。
 
 3D 应用构建：
 

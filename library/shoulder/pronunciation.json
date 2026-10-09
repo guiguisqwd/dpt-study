@@ -1,0 +1,653 @@
+{
+  "_note": "AN-07: American English IPA and a respelling with the stressed syllable in capitals, each checked against the linked dictionary page. Acupoint names carry tone-marked Hanyu Pinyin.",
+  "terms": {
+    "Abduction": [
+      "/æbˈdʌkʃən/",
+      "ab-DUK-shuhn",
+      "https://www.merriam-webster.com/dictionary/abduction"
+    ],
+    "Accessory nerve": [
+      "/ɪkˈsɛsəri nɝv/",
+      "ik-SES-uh-ree NURV",
+      "https://www.merriam-webster.com/medical/accessory"
+    ],
+    "Acromial angle": [
+      "/əˈkroʊmiəl ˈæŋɡəl/",
+      "uh-KROH-mee-uhl ANG-guhl",
+      "https://www.merriam-webster.com/medical/acromial"
+    ],
+    "Acromioclavicular joint": [
+      "/əˌkroʊmioʊkləˈvɪkjələr dʒɔɪnt/",
+      "uh-kroh-mee-oh-kluh-VIK-yuh-ler JOYNT",
+      "https://www.merriam-webster.com/medical/acromioclavicular"
+    ],
+    "Acromion": [
+      "/əˈkroʊmiən/",
+      "uh-KROH-mee-uhn",
+      "https://www.merriam-webster.com/medical/acromion"
+    ],
+    "Allocation concealment": [
+      "/ˌæləˈkeɪʃən kənˈsilmənt/",
+      "al-uh-KAY-shuhn kuhn-SEEL-muhnt",
+      "https://www.merriam-webster.com/dictionary/concealment"
+    ],
+    "Anatomical neck": [
+      "/ˌænəˈtɑmɪkəl nɛk/",
+      "an-uh-TAH-mih-kuhl NEK",
+      "https://www.merriam-webster.com/dictionary/anatomical"
+    ],
+    "Anterior rami": [
+      "/ænˈtɪriər ˈreɪˌmaɪ/",
+      "an-TEER-ee-er RAY-my",
+      "https://www.merriam-webster.com/medical/ramus"
+    ],
+    "Anterior ramus": [
+      "/ænˈtɪriər ˈreɪməs/",
+      "an-TEER-ee-er RAY-muhs",
+      "https://www.merriam-webster.com/medical/ramus"
+    ],
+    "Apex of the lung": [
+      "/ˈeɪˌpɛks əv ðə lʌŋ/",
+      "AY-peks uhv dhuh LUNG",
+      "https://www.merriam-webster.com/dictionary/apex"
+    ],
+    "Axilla": [
+      "/æɡˈzɪlə/",
+      "ag-ZIL-uh",
+      "https://www.merriam-webster.com/medical/axilla"
+    ],
+    "Axillary artery": [
+      "/ˈæksəˌlɛri ˈɑrtəri/",
+      "AK-suh-lair-ee AR-tuh-ree",
+      "https://www.merriam-webster.com/medical/axillary"
+    ],
+    "Axillary nerve": [
+      "/ˈæksəˌlɛri nɝv/",
+      "AK-suh-lair-ee NURV",
+      "https://www.merriam-webster.com/medical/axillary"
+    ],
+    "Belly-press test": [
+      "/ˈbɛli prɛs tɛst/",
+      "BEL-ee PRES TEST",
+      "https://www.merriam-webster.com/dictionary/belly"
+    ],
+    "Blinding": [
+      "/ˈblaɪndɪŋ/",
+      "BLYN-ding",
+      "https://www.merriam-webster.com/dictionary/blinding"
+    ],
+    "Brachial plexus": [
+      "/ˈbreɪkiəl ˈplɛksəs/",
+      "BRAY-kee-uhl PLEK-suhs",
+      "https://www.merriam-webster.com/medical/plexus"
+    ],
+    "Cervical": [
+      "/ˈsɝvɪkəl/",
+      "SUR-vih-kuhl",
+      "https://www.merriam-webster.com/medical/cervical"
+    ],
+    "Clavicle": [
+      "/ˈklævɪkəl/",
+      "KLAV-ih-kuhl",
+      "https://www.merriam-webster.com/dictionary/clavicle"
+    ],
+    "Confidence interval": [
+      "/ˈkɑnfədəns ˈɪntərvəl/",
+      "KAHN-fuh-duhns IN-ter-vuhl",
+      "https://www.merriam-webster.com/dictionary/interval"
+    ],
+    "Coracoid process": [
+      "/ˈkɔrəˌkɔɪd ˈprɑsɛs/",
+      "KOR-uh-koyd PRAH-ses",
+      "https://www.merriam-webster.com/dictionary/coracoid"
+    ],
+    "Cranial nerve": [
+      "/ˈkreɪniəl nɝv/",
+      "KRAY-nee-uhl NURV",
+      "https://www.merriam-webster.com/medical/cranial"
+    ],
+    "Deltoid": [
+      "/ˈdɛlˌtɔɪd/",
+      "DEL-toyd",
+      "https://www.merriam-webster.com/dictionary/deltoid"
+    ],
+    "Deltoid tuberosity": [
+      "/ˈdɛlˌtɔɪd ˌtubəˈrɑsəti/",
+      "DEL-toyd too-buh-RAH-suh-tee",
+      "https://www.merriam-webster.com/medical/tuberosity"
+    ],
+    "Dermatome": [
+      "/ˈdɝməˌtoʊm/",
+      "DUR-muh-tohm",
+      "https://www.merriam-webster.com/medical/dermatome"
+    ],
+    "Drop arm test": [
+      "/drɑp ɑrm tɛst/",
+      "DRAHP ARM TEST",
+      "https://www.merriam-webster.com/dictionary/drop"
+    ],
+    "Dry needling": [
+      "/draɪ ˈnidlɪŋ/",
+      "DRY NEED-ling",
+      "https://www.merriam-webster.com/dictionary/needling"
+    ],
+    "Elevation": [
+      "/ˌɛləˈveɪʃən/",
+      "el-uh-VAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/elevation"
+    ],
+    "Empty can test": [
+      "/ˈɛmpti kæn tɛst/",
+      "EMP-tee KAN TEST",
+      "https://www.merriam-webster.com/dictionary/empty"
+    ],
+    "External rotation": [
+      "/ɛkˈstɝnəl roʊˈteɪʃən/",
+      "ek-STUR-nuhl roh-TAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/rotation"
+    ],
+    "External rotation lag sign": [
+      "/ɛkˈstɝnəl roʊˈteɪʃən læɡ saɪn/",
+      "ek-STUR-nuhl roh-TAY-shuhn LAG SYNE",
+      "https://www.merriam-webster.com/dictionary/lag"
+    ],
+    "Force couple": [
+      "/fɔrs ˈkʌpəl/",
+      "FORS KUP-uhl",
+      "https://www.merriam-webster.com/dictionary/couple"
+    ],
+    "Glenohumeral joint": [
+      "/ˌɡlɛnoʊˈhjumərəl dʒɔɪnt/",
+      "glen-oh-HYOO-muh-ruhl JOYNT",
+      "https://www.merriam-webster.com/medical/glenohumeral"
+    ],
+    "Glenoid cavity": [
+      "/ˈɡlɛˌnɔɪd ˈkævəti/",
+      "GLEN-oyd KAV-uh-tee",
+      "https://www.merriam-webster.com/medical/glenoid"
+    ],
+    "Greater tubercle": [
+      "/ˈɡreɪtər ˈtubərkəl/",
+      "GRAY-ter TOO-ber-kuhl",
+      "https://www.merriam-webster.com/medical/tubercle"
+    ],
+    "Hornblower sign": [
+      "/ˈhɔrnˌbloʊər saɪn/",
+      "HORN-bloh-er SYNE",
+      "https://www.merriam-webster.com/dictionary/blower"
+    ],
+    "Humeral head": [
+      "/ˈhjumərəl hɛd/",
+      "HYOO-muh-ruhl HED",
+      "https://www.merriam-webster.com/medical/humeral"
+    ],
+    "Humerus": [
+      "/ˈhjumərəs/",
+      "HYOO-muh-ruhs",
+      "https://www.merriam-webster.com/medical/humerus"
+    ],
+    "Inferior angle": [
+      "/ɪnˈfɪriər ˈæŋɡəl/",
+      "in-FEER-ee-er ANG-guhl",
+      "https://www.merriam-webster.com/dictionary/inferior"
+    ],
+    "Infraspinatus": [
+      "/ˌɪnfrəspaɪˈneɪtəs/",
+      "in-fruh-spy-NAY-tuhs",
+      "https://www.merriam-webster.com/medical/infraspinatus"
+    ],
+    "Infraspinous fossa": [
+      "/ˌɪnfrəˈspaɪnəs ˈfɑsə/",
+      "in-fruh-SPY-nuhs FAH-suh",
+      "https://www.merriam-webster.com/medical/infraspinous"
+    ],
+    "Intention-to-treat": [
+      "/ɪnˈtɛnʃən tə trit/",
+      "in-TEN-shuhn tuh TREET",
+      "https://www.merriam-webster.com/dictionary/intention"
+    ],
+    "Internal rotation": [
+      "/ɪnˈtɝnəl roʊˈteɪʃən/",
+      "in-TUR-nuhl roh-TAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/rotation"
+    ],
+    "Intertubercular groove": [
+      "/ˌɪntərtʊˈbɝkjələr ɡruv/",
+      "in-ter-too-BUR-kyuh-ler GROOV",
+      "https://www.merriam-webster.com/medical/intertubercular"
+    ],
+    "Lateral border of the acromion": [
+      "/ˈlætərəl ˈbɔrdər əv ði əˈkroʊmiən/",
+      "LAT-er-uhl BOR-der uhv thee uh-KROH-mee-uhn",
+      "https://www.merriam-webster.com/medical/acromion"
+    ],
+    "Lateral border of the scapula": [
+      "/ˈlætərəl ˈbɔrdər əv ðə ˈskæpjələ/",
+      "LAT-er-uhl BOR-der uhv thuh SKAP-yuh-luh",
+      "https://www.merriam-webster.com/medical/lateral"
+    ],
+    "Lesser tubercle": [
+      "/ˈlɛsər ˈtubərkəl/",
+      "LES-er TOO-ber-kuhl",
+      "https://www.merriam-webster.com/medical/tubercle"
+    ],
+    "Lift-off test": [
+      "/ˈlɪftˌɔf tɛst/",
+      "LIFT-awf TEST",
+      "https://www.merriam-webster.com/dictionary/liftoff"
+    ],
+    "Long thoracic nerve": [
+      "/lɔŋ θəˈræsɪk nɝv/",
+      "LAWNG thuh-RAS-ik NURV",
+      "https://www.merriam-webster.com/medical/thoracic"
+    ],
+    "Lower subscapular nerve": [
+      "/ˈloʊər ˌsʌbˈskæpjələr nɝv/",
+      "LOH-er sub-SKAP-yuh-ler NURV",
+      "https://www.merriam-webster.com/medical/subscapular"
+    ],
+    "Lower trapezius": [
+      "/ˈloʊər trəˈpiziəs/",
+      "LOH-er truh-PEE-zee-uhs",
+      "https://www.merriam-webster.com/medical/trapezius"
+    ],
+    "Medial border of the scapula": [
+      "/ˈmidiəl ˈbɔrdər əv ðə ˈskæpjələ/",
+      "MEE-dee-uhl BOR-der uhv thuh SKAP-yuh-luh",
+      "https://www.merriam-webster.com/medical/medial"
+    ],
+    "Multiplicity": [
+      "/ˌmʌltəˈplɪsəti/",
+      "mul-tuh-PLIS-uh-tee",
+      "https://www.merriam-webster.com/dictionary/multiplicity"
+    ],
+    "Myotome": [
+      "/ˈmaɪəˌtoʊm/",
+      "MY-uh-tohm",
+      "https://www.merriam-webster.com/medical/myotome"
+    ],
+    "Nerve root": [
+      "/nɝv rut/",
+      "NURV ROOT",
+      "https://www.merriam-webster.com/dictionary/root"
+    ],
+    "Nuchal ligament": [
+      "/ˈnukəl ˈlɪɡəmənt/",
+      "NOO-kuhl LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/nuchal"
+    ],
+    "Odds ratio": [
+      "/ɑdz ˈreɪʃiˌoʊ/",
+      "AHDZ RAY-shee-oh",
+      "https://www.merriam-webster.com/dictionary/ratio"
+    ],
+    "Pleura": [
+      "/ˈplʊrə/",
+      "PLOOR-uh",
+      "https://www.merriam-webster.com/medical/pleura"
+    ],
+    "Posterior axillary fold": [
+      "/poʊˈstɪriər ˈæksəˌlɛri foʊld/",
+      "poh-STEER-ee-er AK-suh-lair-ee FOHLD",
+      "https://www.merriam-webster.com/medical/axillary"
+    ],
+    "Posterior circumflex humeral artery": [
+      "/poʊˈstɪriər ˈsɝkəmˌflɛks ˈhjumərəl ˈɑrtəri/",
+      "poh-STEER-ee-er SUR-kuhm-fleks HYOO-muh-ruhl AR-tuh-ree",
+      "https://www.merriam-webster.com/medical/circumflex"
+    ],
+    "Posterior cord": [
+      "/poʊˈstɪriər kɔrd/",
+      "poh-STEER-ee-er KORD",
+      "https://www.merriam-webster.com/dictionary/posterior"
+    ],
+    "Posterior triangle of the neck": [
+      "/poʊˈstɪriər ˈtraɪˌæŋɡəl əv ðə nɛk/",
+      "poh-STEER-ee-er TRY-ang-guhl uhv thuh NEK",
+      "https://www.merriam-webster.com/dictionary/posterior"
+    ],
+    "Quadrangular space": [
+      "/kwɑˈdræŋɡjələr speɪs/",
+      "kwah-DRANG-gyuh-ler SPAYS",
+      "https://www.dictionary.com/browse/quadrangular"
+    ],
+    "Randomization": [
+      "/ˌrændəməˈzeɪʃən/",
+      "ran-duh-muh-ZAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/randomization"
+    ],
+    "Resisted external rotation": [
+      "/rɪˈzɪstəd ɛkˈstɝnəl roʊˈteɪʃən/",
+      "rih-ZIS-tuhd ek-STUR-nuhl roh-TAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/resist"
+    ],
+    "Rotator cuff": [
+      "/ˈroʊˌteɪtər kʌf/",
+      "ROH-tay-ter KUF",
+      "https://www.merriam-webster.com/medical/rotator%20cuff"
+    ],
+    "Scapula": [
+      "/ˈskæpjələ/",
+      "SKAP-yuh-luh",
+      "https://www.merriam-webster.com/medical/scapula"
+    ],
+    "Scapular spine": [
+      "/ˈskæpjələr spaɪn/",
+      "SKAP-yuh-ler SPYNE",
+      "https://www.merriam-webster.com/medical/scapular"
+    ],
+    "Scapular winging": [
+      "/ˈskæpjələr ˈwɪŋɪŋ/",
+      "SKAP-yuh-ler WING-ing",
+      "https://www.merriam-webster.com/medical/scapular"
+    ],
+    "Scapulohumeral rhythm": [
+      "/ˌskæpjəloʊˈhjumərəl ˈrɪðəm/",
+      "skap-yuh-loh-HYOO-muh-ruhl RIDH-uhm",
+      "https://www.merriam-webster.com/medical/scapulohumeral"
+    ],
+    "Scapulothoracic": [
+      "/ˌskæpjəloʊθəˈræsɪk/",
+      "skap-yuh-loh-thuh-RAS-ik",
+      "https://www.merriam-webster.com/medical/scapulothoracic"
+    ],
+    "Serratus anterior": [
+      "/sɛˈreɪtəs ænˈtɪriər/",
+      "seh-RAY-tuhs an-TEER-ee-er",
+      "https://www.merriam-webster.com/medical/serratus"
+    ],
+    "Sham": [
+      "/ʃæm/",
+      "SHAM",
+      "https://www.merriam-webster.com/dictionary/sham"
+    ],
+    "Shoulder Pain and Disability Index": [
+      "/ˈʃoʊldər peɪn ənd ˌdɪsəˈbɪləti ˈɪnˌdɛks/",
+      "SHOHL-der PAYN uhnd dis-uh-BIL-uh-tee IN-deks",
+      "https://www.merriam-webster.com/dictionary/disability"
+    ],
+    "Spinal nerve": [
+      "/ˈspaɪnəl nɝv/",
+      "SPY-nuhl NURV",
+      "https://www.merriam-webster.com/dictionary/spinal"
+    ],
+    "Spinoglenoid notch": [
+      "/ˌspaɪnoʊˈɡlɛˌnɔɪd nɑtʃ/",
+      "spy-noh-GLEN-oyd NAHCH",
+      "https://www.merriam-webster.com/medical/glenoid"
+    ],
+    "Spinous process": [
+      "/ˈspaɪnəs ˈprɑsɛs/",
+      "SPY-nuhs PRAH-ses",
+      "https://www.merriam-webster.com/medical/spinous"
+    ],
+    "Spinous processes": [
+      "/ˈspaɪnəs ˈprɑsɛsəz/",
+      "SPY-nuhs PRAH-ses-uhz",
+      "https://www.merriam-webster.com/medical/spinous"
+    ],
+    "Subacromial bursa": [
+      "/ˌsʌbəˈkroʊmiəl ˈbɝsə/",
+      "sub-uh-KROH-mee-uhl BUR-suh",
+      "https://www.merriam-webster.com/medical/subacromial"
+    ],
+    "Subacromial impingement": [
+      "/ˌsʌbəˈkroʊmiəl ɪmˈpɪndʒmənt/",
+      "sub-uh-KROH-mee-uhl im-PINJ-muhnt",
+      "https://www.merriam-webster.com/medical/subacromial"
+    ],
+    "Subacromial pain syndrome": [
+      "/ˌsʌbəˈkroʊmiəl peɪn ˈsɪnˌdroʊm/",
+      "sub-uh-KROH-mee-uhl PAYN SIN-drohm",
+      "https://www.merriam-webster.com/medical/subacromial"
+    ],
+    "Subacromial space": [
+      "/ˌsʌbəˈkroʊmiəl speɪs/",
+      "sub-uh-KROH-mee-uhl SPAYS",
+      "https://www.merriam-webster.com/medical/subacromial"
+    ],
+    "Subclavian artery": [
+      "/ˌsʌbˈkleɪviən ˈɑrtəri/",
+      "sub-KLAY-vee-uhn AR-tuh-ree",
+      "https://www.merriam-webster.com/medical/subclavian"
+    ],
+    "Subscapular fossa": [
+      "/ˌsʌbˈskæpjələr ˈfɑsə/",
+      "sub-SKAP-yuh-ler FAH-suh",
+      "https://www.merriam-webster.com/medical/subscapular"
+    ],
+    "Subscapular nerve": [
+      "/ˌsʌbˈskæpjələr nɝv/",
+      "sub-SKAP-yuh-ler NURV",
+      "https://www.merriam-webster.com/medical/subscapular"
+    ],
+    "Subscapularis": [
+      "/ˌsʌbˌskæpjəˈlɛrəs/",
+      "sub-skap-yuh-LAIR-uhs",
+      "https://www.merriam-webster.com/medical/subscapularis"
+    ],
+    "Superior lateral cutaneous nerve of the arm": [
+      "/səˈpɪriər ˈlætərəl kjuˈteɪniəs nɝv əv ði ɑrm/",
+      "suh-PEER-ee-er LAT-er-uhl kyoo-TAY-nee-uhs NURV uhv thee ARM",
+      "https://www.merriam-webster.com/medical/cutaneous"
+    ],
+    "Superior transverse scapular ligament": [
+      "/səˈpɪriər trænsˈvɝs ˈskæpjələr ˈlɪɡəmənt/",
+      "suh-PEER-ee-er trans-VURS SKAP-yuh-ler LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/scapular"
+    ],
+    "Supraclavicular fossa": [
+      "/ˌsuprəklæˈvɪkjələr ˈfɑsə/",
+      "soo-pruh-kla-VIK-yuh-ler FAH-suh",
+      "https://www.merriam-webster.com/medical/supraclavicular"
+    ],
+    "Suprascapular nerve": [
+      "/ˌsuprəˈskæpjələr nɝv/",
+      "soo-pruh-SKAP-yuh-ler NURV",
+      "https://www.merriam-webster.com/medical/suprascapular"
+    ],
+    "Suprascapular notch": [
+      "/ˌsuprəˈskæpjələr nɑtʃ/",
+      "soo-pruh-SKAP-yuh-ler NAHCH",
+      "https://www.merriam-webster.com/medical/suprascapular"
+    ],
+    "Supraspinatus": [
+      "/ˌsuprəˌspaɪˈneɪtəs/",
+      "soo-pruh-spy-NAY-tuhs",
+      "https://www.merriam-webster.com/medical/supraspinatus"
+    ],
+    "Supraspinous fossa": [
+      "/ˌsuprəˈspaɪnəs ˈfɑsə/",
+      "soo-pruh-SPY-nuhs FAH-suh",
+      "https://www.merriam-webster.com/medical/supraspinous"
+    ],
+    "Surgical neck": [
+      "/ˈsɝdʒɪkəl nɛk/",
+      "SUR-jih-kuhl NEK",
+      "https://www.merriam-webster.com/dictionary/surgical"
+    ],
+    "Teres major": [
+      "/ˈtɪriz ˈmeɪdʒər/",
+      "TEER-eez MAY-jer",
+      "https://www.merriam-webster.com/medical/teres%20major"
+    ],
+    "Teres minor": [
+      "/ˈtɪriz ˈmaɪnər/",
+      "TEER-eez MY-ner",
+      "https://www.merriam-webster.com/medical/teres%20major"
+    ],
+    "Thoracic": [
+      "/θəˈræsɪk/",
+      "thuh-RAS-ik",
+      "https://www.merriam-webster.com/medical/thoracic"
+    ],
+    "Trapezius": [
+      "/trəˈpiziəs/",
+      "truh-PEE-zee-uhs",
+      "https://www.merriam-webster.com/medical/trapezius"
+    ],
+    "Triceps brachii": [
+      "/ˈtraɪˌsɛps ˈbreɪkiˌaɪ/",
+      "TRY-seps BRAY-kee-eye",
+      "https://www.merriam-webster.com/medical/biceps%20brachii"
+    ],
+    "Trigger point": [
+      "/ˈtrɪɡər pɔɪnt/",
+      "TRIG-er POYNT",
+      "https://www.merriam-webster.com/dictionary/trigger"
+    ],
+    "Upper subscapular nerve": [
+      "/ˈʌpər ˌsʌbˈskæpjələr nɝv/",
+      "UP-er sub-SKAP-yuh-ler NURV",
+      "https://www.merriam-webster.com/medical/subscapular"
+    ],
+    "Upper trapezius": [
+      "/ˈʌpər trəˈpiziəs/",
+      "UP-er truh-PEE-zee-uhs",
+      "https://www.merriam-webster.com/medical/trapezius"
+    ],
+    "Upward rotation": [
+      "/ˈʌpwərd roʊˈteɪʃən/",
+      "UP-werd roh-TAY-shuhn",
+      "https://www.merriam-webster.com/dictionary/rotation"
+    ],
+    "Vertebra": [
+      "/ˈvɝtəbrə/",
+      "VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "Vertebrae": [
+      "/ˈvɝtəˌbreɪ/",
+      "VUR-tuh-bray",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ]
+  },
+  "names": {
+    "Abduction": "外展",
+    "Accessory nerve": "副神经",
+    "Acromial angle": "肩峰角",
+    "Acromioclavicular joint": "肩锁关节",
+    "Acromion": "肩峰",
+    "Allocation concealment": "分配隐藏",
+    "Anatomical neck": "解剖颈",
+    "Anterior rami": "前支",
+    "Anterior ramus": "前支",
+    "Apex of the lung": "肺尖",
+    "Axilla": "腋窝",
+    "Axillary artery": "腋动脉",
+    "Axillary nerve": "腋神经",
+    "Belly-press test": "腹压试验",
+    "Blinding": "盲法",
+    "Brachial plexus": "臂丛",
+    "Cervical": "颈部的",
+    "Clavicle": "锁骨",
+    "Confidence interval": "置信区间",
+    "Coracoid process": "喙突",
+    "Cranial nerve": "脑神经",
+    "Deltoid": "三角肌",
+    "Deltoid tuberosity": "三角肌粗隆",
+    "Dermatome": "皮节",
+    "Drop arm test": "落臂试验",
+    "Dry needling": "干针",
+    "Elevation": "上举",
+    "Empty can test": "空罐试验",
+    "External rotation": "外旋",
+    "External rotation lag sign": "外旋滞后征",
+    "Force couple": "力偶",
+    "Glenohumeral joint": "盂肱关节",
+    "Glenoid cavity": "关节盂",
+    "Greater tubercle": "大结节",
+    "Hornblower sign": "Hornblower 征",
+    "Humeral head": "肱骨头",
+    "Humerus": "肱骨",
+    "Inferior angle": "肩胛下角",
+    "Infraspinatus": "冈下肌",
+    "Infraspinous fossa": "冈下窝",
+    "Intention-to-treat": "意向治疗",
+    "Internal rotation": "内旋",
+    "Intertubercular groove": "结节间沟",
+    "Lateral border of the acromion": "肩峰外侧缘",
+    "Lateral border of the scapula": "肩胛骨外侧缘",
+    "Lesser tubercle": "小结节",
+    "Lift-off test": "抬离试验",
+    "Long thoracic nerve": "胸长神经",
+    "Lower subscapular nerve": "下肩胛下神经",
+    "Lower trapezius": "下斜方肌",
+    "Medial border of the scapula": "肩胛骨内侧缘",
+    "Multiplicity": "多重比较",
+    "Myotome": "肌节",
+    "Nerve root": "神经根",
+    "Nuchal ligament": "项韧带",
+    "Odds ratio": "比值比",
+    "Pleura": "胸膜",
+    "Posterior axillary fold": "腋后襞（腋后纹）",
+    "Posterior circumflex humeral artery": "旋肱后动脉",
+    "Posterior cord": "臂丛后束",
+    "Posterior triangle of the neck": "颈后三角",
+    "Quadrangular space": "四边孔",
+    "Randomization": "随机化",
+    "Resisted external rotation": "抗阻外旋",
+    "Rotator cuff": "肩袖",
+    "Scapula": "肩胛骨",
+    "Scapular spine": "肩胛冈",
+    "Scapular winging": "翼状肩胛",
+    "Scapulohumeral rhythm": "肩肱节律",
+    "Scapulothoracic": "肩胛胸壁的",
+    "Serratus anterior": "前锯肌",
+    "Sham": "假对照",
+    "Shoulder Pain and Disability Index": "肩痛与功能障碍指数",
+    "Spinal nerve": "脊神经",
+    "Spinoglenoid notch": "冈盂切迹",
+    "Spinous process": "棘突",
+    "Spinous processes": "棘突",
+    "Subacromial bursa": "肩峰下滑囊",
+    "Subacromial impingement": "肩峰下撞击",
+    "Subacromial pain syndrome": "肩峰下疼痛综合征",
+    "Subacromial space": "肩峰下间隙",
+    "Subclavian artery": "锁骨下动脉",
+    "Subscapular fossa": "肩胛下窝",
+    "Subscapular nerve": "肩胛下神经",
+    "Subscapularis": "肩胛下肌",
+    "Superior lateral cutaneous nerve of the arm": "臂外上侧皮神经",
+    "Superior transverse scapular ligament": "肩胛上横韧带",
+    "Supraclavicular fossa": "锁骨上窝",
+    "Suprascapular nerve": "肩胛上神经",
+    "Suprascapular notch": "肩胛上切迹",
+    "Supraspinatus": "冈上肌",
+    "Supraspinous fossa": "冈上窝",
+    "Surgical neck": "外科颈",
+    "Teres major": "大圆肌",
+    "Teres minor": "小圆肌",
+    "Thoracic": "胸部的",
+    "Trapezius": "斜方肌",
+    "Triceps brachii": "肱三头肌",
+    "Trigger point": "触发点",
+    "Upper subscapular nerve": "上肩胛下神经",
+    "Upper trapezius": "上斜方肌",
+    "Upward rotation": "上旋",
+    "Vertebra": "椎骨",
+    "Vertebrae": "椎骨"
+  },
+  "pinyin": {
+    "Tianzong": "Tiānzōng",
+    "Bingfeng": "Bǐngfēng",
+    "Quyuan": "Qūyuán",
+    "Jugu": "Jùgǔ",
+    "Naoshu": "Nàoshū",
+    "Jianzhen": "Jiānzhēn",
+    "Jianliao": "Jiānliáo",
+    "Jianyu": "Jiānyú",
+    "Jiquan": "Jíquán",
+    "Jiaji": "Jiājǐ",
+    "Cervical Jiaji": "Jǐngjiājǐ",
+    "Quepen": "Quēpén",
+    "Jianjing": "Jiānjǐng",
+    "Zhejin": "Zhéjīn"
+  },
+  "unverified": [
+    "Cervical Jiaji",
+    "Hornblower sign",
+    "Jiaji",
+    "Spinoglenoid notch"
+  ]
+}

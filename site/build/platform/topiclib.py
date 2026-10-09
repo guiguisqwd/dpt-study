@@ -12,6 +12,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 
+import reading
+
 ROOT = Path(__file__).resolve().parents[3]
 ID = re.compile(r'^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$')
 SECTIONS = [
@@ -23,16 +25,11 @@ SECTIONS = [
     ('papers', 'Critical reading', '论文阅读'),
 ]
 STRUCTURE_KINDS = ['muscle', 'nerve', 'bone', 'landmark', 'joint', 'acupoint', 'paper']
-SHOULDER_SECTION_FILES = {'anatomy': '01-anatomy', 'innervation': '02-nerve', 'movement': '03-motion',
-                          'clinical': '04-clinical', 'review': '05-review', 'papers': '06-reading'}
 QA_CHECKS = ['medicalSources', 'bilingual', 'originInsertionLabels', 'modelLinks',
              'layoutDesktop', 'layoutMobile', 'fullAnswers', 'paperAppraisal']
 MUSCLE_FIELDS = ['origin', 'insertion', 'course', 'actions', 'innervation']
 # QC-06: kinds whose English name is a key term needing IPA + stress + dictionary link (AN-07);
 # acupoints need tone-marked pinyin instead; paper titles are not pronunciation terms.
-# Published chapters that predate QC-05/QC-06: their gaps stay listed as pending instead of
-# blocking the build until the chapter is brought up to standard. Remove the entry once it passes.
-KNOWN_GAPS = {'shoulder': ('QC-05 ', 'QC-06 ')}
 PRONOUNCED_KINDS = ['muscle', 'nerve', 'bone', 'landmark', 'joint']
 CJK = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
 LATIN = re.compile(r'[A-Za-z]')
@@ -100,6 +97,21 @@ def catalog_models(root=ROOT):
     return result
 
 
+def chapter_3d(topic_dir):
+    """Ids a chapter's own 3D part (ST-7, <chapter>/3d/src) defines: vocabulary terms, landmark markers
+    (id -> parent bone) and acupoint markers. Chapters that borrow another chapter's viewer define none."""
+    src = Path(topic_dir) / '3d/src'
+    terms, landmarks, points = set(), {}, set()
+    if (src / 'vocabulary.ts').is_file():
+        terms = set(re.findall(r"\bid: '([a-z][a-z0-9-]*)'", (src / 'vocabulary.ts').read_text(encoding='utf-8')))
+    for path in sorted(src.glob('*-landmarks.json')):
+        for item in read_json(path):
+            if isinstance(item, dict) and item.get('id'): landmarks[item['id']] = path.name.removesuffix('-landmarks.json')
+    if (src / 'data.ts').is_file():
+        points = set(re.findall(r"\{ id: '([A-Z]+[0-9]+)'", (src / 'data.ts').read_text(encoding='utf-8')))
+    return terms, landmarks, points
+
+
 def normal_model_name(name):
     return re.sub(r'\s+', ' ', re.sub(r'\s+muscle\b|\.[lr]$', '', name, flags=re.I)).strip().lower()
 
@@ -135,20 +147,22 @@ def order_problem(en, zh):
 
 
 class _OrderScan(HTMLParser):
-    """QC-05 for HTML chapter sources (shoulder adapter): text marked lang="en" holds no Chinese,
-    and every Chinese translation follows English inside the same parent element."""
+    """QC-05 for rendered reading pages: text marked lang="en" holds no Chinese, and every Chinese
+    translation follows English inside the same parent element."""
     VOID = {'br', 'img', 'hr', 'meta', 'link', 'input', 'source', 'wbr', 'col'}
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.stack = []  # [tag, lang, saw_english_child]
         self.problems = []
+        self.svg = 0
 
     def lang(self):
         return next((f[1] for f in reversed(self.stack) if f[1]), '')
 
     def handle_starttag(self, tag, attrs):
-        if tag in self.VOID: return
+        if tag == 'svg': self.svg += 1
+        if tag in self.VOID or self.svg: return
         a = dict(attrs)
         own = a.get('lang') or ('zh' if 'translation' in (a.get('class') or '').split() else '')
         if own.startswith('zh') and self.stack and not self.stack[-1][2] and not self.lang().startswith('zh'):
@@ -157,6 +171,9 @@ class _OrderScan(HTMLParser):
         self.stack.append([tag, own, False])
 
     def handle_endtag(self, tag):
+        if self.svg:
+            if tag == 'svg': self.svg -= 1
+            return
         while self.stack:
             frame = self.stack.pop()
             # English inside an untagged child (e.g. <b>C5 vertebra</b>) counts for the parent too.
@@ -165,7 +182,7 @@ class _OrderScan(HTMLParser):
 
     def handle_data(self, data):
         text = data.strip()
-        if not text or not self.stack: return
+        if not text or not self.stack or self.svg: return
         lang = self.lang()
         if lang.startswith('en') and CJK.search(text):
             self.problems.append('Chinese inside lang="en": ' + text[:40])
@@ -201,7 +218,9 @@ def check_pronunciation(manifest, topic_dir, fail, require):
             fail(label + ': expected ["/IPA/", "STRESS-ed respelling", "https://dictionary link"]'); continue
         ipa, stress, url = entry
         if not re.fullmatch(r'/[^/]+/', ipa.strip()): fail(label + ': IPA must be written between slashes')
-        if not re.search(r'\b[A-Z]{2,}\b', stress) or stress == stress.upper(): fail(label + ': respelling must capitalise only the stressed syllable')
+        # one-syllable words (SHAM, NURV ROOT) are all capitals; a longer word must also keep unstressed syllables lowercase
+        if not re.search(r'\b[A-Z]{2,}\b', stress) or any(len(w.split('-')) > 1 and w == w.upper() for w in stress.split()):
+            fail(label + ': respelling must capitalise only the stressed syllable')
         if not valid_source_url(url): fail(label + ': dictionary link must be an HTTPS URL')
     for name, value in pinyin.items():
         if not isinstance(value, str) or not TONE.search(value): fail('pinyin ' + str(name) + ': tone marks are required')
@@ -260,7 +279,7 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
     models = catalog_models(root) if models is None else models
     topic_dir = Path(topic_dir)
     errors.extend(validate_shape(manifest, read_json(ROOT / 'site/build/platform/topic.schema.json'), 'topic'))
-    if isinstance(manifest, dict) and manifest.get('adapter') == 'standard':
+    if isinstance(manifest, dict) and (manifest.get('adapter') == 'standard' or content is not None):
         errors.extend(validate_shape(content, read_json(ROOT / 'site/build/platform/content.schema.json'), 'content'))
     if errors: return errors, missing
     ready = published_override or manifest.get('status') == 'published'
@@ -375,29 +394,18 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
                 fail(label + ': reviewed coordinates need anatomical source URLs')
 
     if manifest.get('adapter') == 'shoulder':
-        # One explicit backwards-compatibility adapter, never a bypass for new courses.
+        # One explicit backwards-compatibility adapter for the first chapter's live URLs (reading.html,
+        # reading-claude.html, ?term=), never a bypass: its content is checked like every other chapter.
         if tid != 'shoulder': fail('The shoulder adapter is reserved for the existing shoulder topic')
-        for relative in ['library/shoulder/text/sections/01-anatomy.html', 'library/shoulder/3d/public/reading.html', 'library/shoulder/3d/public/reading-claude.html']:
-            if not (Path(root) / relative).is_file(): fail('Missing preserved shoulder source: ' + relative)
-        chapter_text = {}
-        for sid, stem in SHOULDER_SECTION_FILES.items():
-            path = Path(root) / 'library/shoulder/text/sections' / (stem + '.html')
-            markup = path.read_text() if path.is_file() else ''
-            chapter_text[sid] = re.sub(r'<[^>]+>', ' ', markup).lower()
-            for problem in html_order_problems(markup): require(False, 'QC-05 ' + stem + '.html: ' + problem)
-        model_ids = set(term_ids) | landmark_ids
-        links_file = Path(root) / 'library/shoulder/text/data/model-links.json'
-        if links_file.is_file(): model_ids |= {v.get('term') for v in read_json(links_file).values() if v.get('term')}
-        for landmark_file in (Path(root) / 'library/shoulder/3d/src').glob('*-landmarks.json'):
-            model_ids |= {x.get('id') for x in read_json(landmark_file) if isinstance(x, dict)}
-        check_structures(chapter_text, model_ids)
-        check_pronunciation(manifest, topic_dir, fail, require)
-        if ready: errors.extend(m for m in missing if not m.startswith(KNOWN_GAPS.get(tid, ())))
-        return errors, missing
+        for relative in ['library/shoulder/3d/public/reading.html', 'library/shoulder/3d/public/reading-claude.html']:
+            if not (Path(root) / relative).is_file(): fail('Missing preserved shoulder output: ' + relative)
+    app_terms, app_landmarks, app_points = chapter_3d(topic_dir)
+    model_ids = set(term_ids) | landmark_ids | app_terms | set(app_landmarks)
 
     if not isinstance(content, dict): return errors + ['content.json must be an object'], missing
     if content.get('schemaVersion') != 1: fail('Unsupported content schemaVersion')
-    for field in ['sections', 'muscles', 'landmarks', 'diagrams', 'review', 'papers', 'sources']:
+    for field in ['sections', 'muscles', 'landmarks', 'diagrams', 'review', 'papers', 'sources', 'acupoints', 'modelLinks']:
+        if field in ('acupoints', 'modelLinks') and field not in content: content = dict(content, **{field: []})
         if not isinstance(content.get(field), list):
             fail(field + ' must be a list')
             content = dict(content, **{field: []})
@@ -409,8 +417,14 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         if not source.get('title', '').strip(): fail('Source requires title')
         if not valid_source_url(source.get('url', '')): fail('Source requires a valid HTTPS URL')
     require(bool(source_ids), 'Evidence sources are missing')
-    for field in NERVE_NOTATION:
-        bi(content.get('nerveNotation', {}).get(field), 'nerveNotation.' + field)
+    # AN-04: the C/T/L/S notation is shown in the innervation section; a chapter that writes its own
+    # nerve-levels note there does not need the generic nerveNotation text.
+    own_note = any(b.get('type') == 'note' and b.get('className') == 'nerve-levels'
+                   for s in content['sections'] if isinstance(s, dict) and s.get('id') == 'innervation'
+                   for b in reading.iter_blocks(s.get('blocks', [])) if isinstance(b, dict))
+    if not own_note:
+        for field in NERVE_NOTATION:
+            bi(content.get('nerveNotation', {}).get(field), 'nerveNotation.' + field)
 
     diagrams = {}
     for diagram in content['diagrams']:
@@ -448,15 +462,69 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
 
     sections = content['sections']
     if [s.get('id') for s in sections] != [s[0] for s in SECTIONS]: fail('Six sections must appear in the standard anatomy-to-paper order')
+    records = {'muscles': {m.get('id') for m in content['muscles']}, 'landmarks': {m.get('id') for m in content['landmarks']},
+               'acupoints': {m.get('id') for m in content['acupoints']}, 'quiz': {m.get('id') for m in content['review']},
+               'paper': {m.get('id') for m in content['papers']}}
+
+    def cell(value, label):
+        if isinstance(value, str):  # language-neutral cell: numbers, codes, abbreviations
+            if CJK.search(value): require(False, 'QC-05 ' + label + ': Chinese text needs its English first ({en, zh})')
+        else: bi(value, label, required=False)
+
+    def check_block(block, label, nested=False):
+        """Typed blocks (library/README.md); a block without type is the original heading + body block."""
+        t = block.get('type', 'text')
+        if t == 'text':
+            bi(block.get('heading'), label + '.heading'); bi(block.get('body'), label + '.body')
+            if any(x not in model_ids for x in block.get('termIds', [])): fail(label + ': unknown 3D term')
+        elif t == 'heading':
+            if block.get('level') not in (3, 4): fail(label + ': heading level must be 3 or 4')
+            bi(block.get('text'), label + '.text')
+        elif t in ('paragraph',): bi(block.get('text'), label + '.text')
+        elif t == 'figure': diagram_refs([block.get('diagramId')], label)
+        elif t == 'table':
+            columns, rows = block.get('columns'), block.get('rows')
+            if not isinstance(columns, list) or not columns or not isinstance(rows, list) or not rows: fail(label + ': table needs columns and rows'); return
+            for i, c in enumerate(columns): cell(c, label + '.column' + str(i))
+            for r, row in enumerate(rows):
+                if not isinstance(row, list) or len(row) != len(columns): fail(label + ': row ' + str(r) + ' does not match the columns'); continue
+                for i, c in enumerate(row): cell(c, label + '.row' + str(r) + '.' + str(i))
+        elif t in ('note', 'cards'):
+            for card in ([block] if t == 'note' else block.get('cards', [])):
+                if card.get('heading') is not None: bi(card['heading'], label + '.heading')
+                for key in ('paragraphs', 'items', 'definitions'):
+                    for i, v in enumerate(card.get(key, [])): bi(v, label + '.' + key + str(i))
+            if t == 'cards' and block.get('layout', 'columns') not in ('columns', 'stages', 'stack'): fail(label + ': unknown cards layout')
+        elif t in records:
+            ids = reading.block_ids(block)
+            if not ids or any(i not in records[t] for i in ids): fail(label + ': unknown ' + t + ' record')
+        elif t == 'steps':
+            for i, item in enumerate(block.get('items', [])): bi(item.get('heading'), label + '.step' + str(i)); bi(item.get('text'), label + '.step' + str(i))
+        elif t == 'mnemonic':
+            bi(block.get('text'), label + '.text')
+            if not isinstance(block.get('original'), str) or not CJK.search(block['original']): fail(label + ': mnemonic original must be the Chinese text')
+        elif t == 'details':
+            if nested: fail(label + ': details cannot be nested')
+            bi(block.get('summary'), label + '.summary')
+            for i, inner in enumerate(block.get('blocks', [])): check_block(inner, label + '.' + str(i), True)
+        elif t == 'sources':
+            if not block.get('ids') or any(x not in source_ids for x in block['ids']): fail(label + ': unknown source reference')
+            for key in ('label', 'note'):
+                if block.get(key) is not None: bi(block[key], label + '.' + key)
+        elif t != 'nerveNotation': fail(label + ': unknown block type ' + str(t))
+
     for section in sections:
         label = 'section ' + str(section.get('id'))
         bi(section.get('title'), label + '.title')
         bi(section.get('overview'), label + '.overview')
-        diagram_refs(section.get('diagramIds', []), label, section.get('id') in ['anatomy', 'innervation', 'movement', 'clinical'])
-        for block in section.get('blocks', []):
-            bi(block.get('heading'), label + '.heading')
-            bi(block.get('body'), label + '.body')
-            if any(t not in term_ids for t in block.get('termIds', [])): fail(label + ': unknown 3D term')
+        if section.get('navTitle') is not None: bi(section['navTitle'], label + '.navTitle')
+        placed = [b['diagramId'] for b in reading.iter_blocks(section.get('blocks', [])) if b.get('type') == 'figure']
+        diagram_refs(section.get('diagramIds', []), label)
+        if section.get('id') in ['anatomy', 'innervation', 'movement', 'clinical']:
+            require(bool(section.get('diagramIds') or placed), label + ': anatomical diagram required')
+        for i, block in enumerate(section.get('blocks', [])):
+            if not isinstance(block, dict): fail(label + ': blocks must be objects'); continue
+            check_block(block, label + '.block' + str(i))
     require(bool(content['muscles']), 'Muscle attachment/course records are missing')
     seen_muscles = set()
     for muscle in content['muscles']:
@@ -472,7 +540,8 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         mapped = muscle.get('modelTermId')
         if mapped:
             term = next((t for t in terms if t['id'] == mapped), None)
-            if not term or term.get('kind') != 'muscle': fail(str(mid) + ': invalid muscle 3D mapping')
+            if term is None and mapped in app_terms: pass  # defined by the chapter's own 3D vocabulary
+            elif not term or term.get('kind') != 'muscle': fail(str(mid) + ': invalid muscle 3D mapping')
             elif normal_model_name(term['name']['en']) != normal_model_name(muscle['name']['en']): fail(str(mid) + ': muscle maps to a different anatomy')
         else:
             bi(muscle.get('modelUnavailableReason'), str(mid) + '.modelUnavailableReason')
@@ -494,7 +563,9 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
             term = next((t for t in terms if t['id'] == mapped), None)
             if not term or term.get('kind') != 'bone': fail('Bony landmark needs a bone modelTermId')
         marker_id = landmark.get('viewerLandmarkId')
-        if marker_id:
+        if marker_id and marker_id in app_landmarks and not any(l.get('id') == marker_id for l in landmarks):
+            if app_landmarks[marker_id] != mapped: fail('Landmark marker belongs to another structure: ' + marker_id)
+        elif marker_id:
             marker = next((l for l in landmarks if l['id'] == marker_id), None)
             if not mapped: fail('Landmark marker needs its parent bone modelTermId')
             if not marker or marker.get('reviewStatus') != 'reviewed': fail('Landmark marker is not reviewed')
@@ -504,7 +575,8 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
             bi(landmark.get('modelUnavailableReason'), 'landmark.modelUnavailableReason')
     require(bool(content['review']), 'Full English/Chinese review questions and answers are missing')
     for review in content['review']:
-        for field in ['question', 'answer', 'mnemonic']: bi(review.get(field), 'review.' + field)
+        for field in ['question', 'answer']: bi(review.get(field), 'review.' + field)
+        if review.get('mnemonic') is not None: bi(review['mnemonic'], 'review.mnemonic')
         sourced(review, 'review')
         require(len(review.get('answer', {}).get('en', '').split()) >= 12, 'Review answer must include a complete English explanation, not only a mnemonic')
     require(bool(content['papers']), 'Critical paper reading is missing')
@@ -515,21 +587,26 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
         require(bool(paper.get('terms')), 'Paper methodology terms are missing')
         for term in paper.get('terms', []):
             bi(term.get('term'), 'paper.term'); bi(term.get('explanation'), 'paper.explanation')
-    def text_of(value):
-        return ' '.join(v for v in value.values() if isinstance(v, str)) if isinstance(value, dict) else ''
-    chapter_text = {}
-    for section in sections:
-        parts = [text_of(section.get('title')), text_of(section.get('overview'))]
-        parts += [text_of(b.get('heading')) + ' ' + text_of(b.get('body')) for b in section.get('blocks', []) if isinstance(b, dict)]
-        chapter_text[section.get('id')] = ' '.join(parts)
-    records = {'anatomy': content['muscles'] + content['landmarks'], 'review': content['review'], 'papers': content['papers']}
-    for chapter, rows in records.items():
-        for row in rows:
-            if isinstance(row, dict):
-                chapter_text[chapter] = chapter_text.get(chapter, '') + ' ' + ' '.join(
-                    text_of(v) if isinstance(v, dict) else (v if isinstance(v, str) else '') for v in row.values())
-    chapter_text = {k: v.lower() for k, v in chapter_text.items() if k in {s[0] for s in SECTIONS}}
-    check_structures(chapter_text, set(term_ids) | landmark_ids, [m.get('id') for m in content['muscles']])
+    for link in content['modelLinks']:  # extra names the reading page links to the 3D viewer (AN-40)
+        if link.get('term') is not None and link['term'] not in model_ids: fail('modelLinks ' + str(link.get('en')) + ': not a real 3D id')
+    seen_points = set()
+    for point in content['acupoints']:
+        pid = point.get('id'); label = 'acupoint ' + str(pid)
+        if not ID.fullmatch(str(pid)) or pid in seen_points: fail(label + ': invalid or duplicate id')
+        seen_points.add(pid)
+        if not str(point.get('code', '')).strip(): fail(label + ': code is required')
+        bi(point.get('name'), label + '.name')
+        for key in ('location', 'safety'): bi(point.get(key), label + '.' + key)  # AN-20
+        for key in ('layers', 'target', 'howToFind'):
+            if point.get(key) is not None: bi(point[key], label + '.' + key)
+        sourced(point, label)
+        if point.get('modelPointId') is not None and point['modelPointId'] not in app_points: fail(label + ': modelPointId is not a real 3D point')
+    review_blocks = next((b for s, b in reading.resolved_sections(content) if s.get('id') == 'review'), [])
+    require(any(b.get('type') == 'mnemonic' for b in reading.iter_blocks(review_blocks)) or any(r.get('mnemonic') for r in content['review']),
+            'Review needs at least one mnemonic with its full English and Chinese wording (CH-01 05)')
+    chapter_text = {section.get('id'): reading.section_text(content, section, blocks).lower()
+                    for section, blocks in reading.resolved_sections(content) if section.get('id') in {s[0] for s in SECTIONS}}
+    check_structures(chapter_text, model_ids, [m.get('id') for m in content['muscles']])
     check_pronunciation(manifest, topic_dir, fail, require)
     qa = content.get('qa', {})
     require(bool(qa.get('reviewedBy', '').strip()), 'Reviewer signoff is missing')
@@ -543,6 +620,12 @@ def validate(manifest, content, topic_dir, models=None, root=ROOT, published_ove
             if pdf.get('contentDigest') != content_digest(content, topic_dir): fail('PDF is stale relative to content/diagrams')
             if not pdf.get('reviewedBy', '').strip() or not valid_review_date(pdf.get('reviewedOn', '')): fail('PDF visual review signoff is missing')
         except (ValueError, OSError, KeyError) as exc: fail('PDF: ' + str(exc))
+    if not errors and ready:
+        try:
+            page, _ = reading.render_page(chapter(manifest, content, topic_dir, root))
+            body = re.search(r'<main\b.*?</main>', page, re.S)  # the reading text; <html lang="en"> wraps the whole page
+            for problem in html_order_problems(body.group() if body else page): require(False, 'QC-05 rendered page: ' + problem)
+        except (KeyError, ValueError, OSError) as exc: fail('Reading page cannot be rendered: ' + str(exc))
     if ready: errors.extend(missing)
     return errors, missing
 
@@ -589,13 +672,15 @@ def shell(manifest, body):
             + bilingual(manifest['title'], 'h1') + body + '</main></body></html>')
 
 
-def render(manifest, content, missing):
+def render(manifest, content, missing, topic_dir=None, root=ROOT):
     tid, status = manifest['id'], manifest['status']
     entry_links = links(manifest)
     local_link = lambda link: '../../' + link.removeprefix('./')
     label_pairs = {'reading': pair('Read the course', '阅读课程'), 'claude': pair('Claude reading edition', 'Claude 阅读版'),
                    'pdf': pair('Download reviewed PDF', '下载已核验 PDF'), 'markdown': pair('Download Markdown', '下载 Markdown'),
                    'viewer': pair('Explore the 3D model', '查看三维模型')}
+    if manifest['adapter'] == 'shoulder':  # the reviewed PDF predates the content.json edition; restore the label after re-exporting it
+        label_pairs['pdf'] = pair('Download PDF (2026-10-06 edition, not yet updated)', '下载 PDF（2026-10-06 版，尚未随正文更新）')
     nav = '<nav class="cards">' + ''.join('<a class="card" href="' + esc(local_link(url)) + '">' + bilingual(label_pairs[key], 'strong') + '</a>'
                                                for key, url in entry_links.items() if key in label_pairs) + '</nav>'
     if status == 'draft':
@@ -617,86 +702,17 @@ def render(manifest, content, missing):
         body += bilingual(pair('Study muscle attachments, nerve pathways and movement in English, with Chinese translations and linked 3D anatomy.', '结合中文翻译与三维解剖，用英语学习肌肉起止点、神经走行与运动功能。'))
         return shell(manifest, body), shell(manifest, body), '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\n[Read the maintained course · 阅读维护中的课程](../../reading.md)\n'
 
-    sources = {s['id']: s for s in content['sources']}
-    diagrams = {d['id']: d for d in content['diagrams']}
-    def source_html(item):
-        return '<p class="sources">Sources · 来源: ' + ', '.join('<a href="' + esc(sources[s]['url']) + '">' + esc(sources[s]['title']) + '</a>' for s in item.get('sources', [])) + '</p>'
-    def figure(d):
-        return '<figure><a href="' + esc(d['file']) + '"><img loading="lazy" src="' + esc(d['file']) + '" alt="' + esc(d['alt']['en'] + ' · ' + d['alt']['zh']) + '"></a>' + bilingual(d['caption'], 'figcaption') + source_html(d) + '</figure>'
-    toc = '<nav class="toc">' + ''.join('<a href="#' + s['id'] + '">' + bilingual(s['title'], 'span') + '</a>' for s in content['sections']) + '</nav>'
-    body = nav + toc
-    md = '# ' + manifest['title']['en'] + ' · ' + manifest['title']['zh'] + '\n\n'
-    titles = {'origin': pair('Origin', '起点'), 'insertion': pair('Insertion', '止点'), 'course': pair('Course: from origin to insertion', '从起点到止点的走行'), 'actions': pair('Actions', '动作'), 'innervation': pair('Innervation', '神经支配')}
-    for index, section in enumerate(content['sections'], 1):
-        body += '<section id="' + section['id'] + '"><h2><small>' + f'{index:02}' + '</small>' + bilingual(section['title'], 'span') + '</h2>' + bilingual(section['overview'])
-        md += '## ' + str(index) + '. ' + section['title']['en'] + ' · ' + section['title']['zh'] + '\n\n' + md_pair(section['overview'])
-        for block in section.get('blocks', []):
-            body += bilingual(block['heading'], 'h3') + bilingual(block['body'])
-            md += '### ' + block['heading']['en'] + ' · ' + block['heading']['zh'] + '\n\n' + md_pair(block['body'])
-            for term in block.get('termIds', []):
-                href = '../../?' + urlencode({'topic': tid, 'term': term})
-                body += '<a class="model-link" href="' + esc(href) + '">View in 3D · 查看三维结构: ' + esc(term) + '</a>'
-                md += '[View in 3D · 查看三维结构](' + href + ')\n\n'
-        if section['id'] == 'innervation':
-            for notation in content['nerveNotation'].values():
-                body += bilingual(notation, 'p', 'notice')
-                md += md_pair(notation)
-        if section['id'] in ['anatomy', 'movement']:
-            for muscle in content['muscles']:
-                body += '<article class="muscle">' + bilingual(muscle['name'], 'h3')
-                md += '### ' + muscle['name']['en'] + ' · ' + muscle['name']['zh'] + '\n\n'
-                for key in MUSCLE_FIELDS:
-                    body += bilingual(titles[key], 'h4') + bilingual(muscle[key])
-                    md += '**' + titles[key]['en'] + ' · ' + titles[key]['zh'] + '**\n\n' + md_pair(muscle[key])
-                if muscle.get('modelTermId'):
-                    href = '../../?' + urlencode({'topic': tid, 'term': muscle['modelTermId']})
-                    body += '<a class="model-link" href="' + esc(href) + '">View this muscle in 3D · 查看该肌肉的三维模型</a>'
-                    md += '[View this muscle in 3D · 查看该肌肉的三维模型](' + href + ')\n\n'
-                else:
-                    body += bilingual(muscle['modelUnavailableReason'], 'p', 'notice')
-                    md += md_pair(muscle['modelUnavailableReason'])
-                for did in muscle['diagramIds']:
-                    body += figure(diagrams[did]); md += '![' + diagrams[did]['alt']['en'] + ' · ' + diagrams[did]['alt']['zh'] + '](' + diagrams[did]['file'] + ')\n\n'
-                body += source_html(muscle) + '</article>'
-        for did in section.get('diagramIds', []):
-            body += figure(diagrams[did]); md += '![' + diagrams[did]['alt']['en'] + ' · ' + diagrams[did]['alt']['zh'] + '](' + diagrams[did]['file'] + ')\n\n' + md_pair(diagrams[did]['caption'])
-        if section['id'] == 'anatomy':
-            for landmark in content['landmarks']:
-                body += bilingual(landmark['name'], 'h3') + bilingual(landmark['description']) + source_html(landmark)
-                md += '### ' + landmark['name']['en'] + ' · ' + landmark['name']['zh'] + '\n\n' + md_pair(landmark['description'])
-                if landmark.get('modelTermId'):
-                    query = {'topic': tid, 'term': landmark['modelTermId']}
-                    if landmark.get('viewerLandmarkId'): query['landmark'] = landmark['viewerLandmarkId']
-                    href = '../../?' + urlencode(query)
-                    body += '<a class="model-link" href="' + esc(href) + '">View the bone in 3D · 查看该骨的三维模型</a>'
-                    md += '[View the bone in 3D · 查看该骨的三维模型](' + href + ')\n\n'
-                if not landmark.get('viewerLandmarkId'):
-                    body += bilingual(landmark['modelUnavailableReason'], 'p', 'notice')
-                    md += md_pair(landmark['modelUnavailableReason'])
-                for did in landmark['diagramIds']:
-                    body += figure(diagrams[did]); md += '![' + diagrams[did]['alt']['en'] + ' · ' + diagrams[did]['alt']['zh'] + '](' + diagrams[did]['file'] + ')\n\n'
-        if section['id'] == 'review':
-            for review in content['review']:
-                body += '<details class="answer"><summary>' + bilingual(review['question'], 'span') + '</summary>'
-                body += bilingual(pair('Complete answer', '完整答案'), 'h3') + bilingual(review['answer'])
-                body += bilingual(pair('Mnemonic', '简记'), 'h4') + bilingual(review['mnemonic']) + source_html(review) + '</details>'
-                md += '### ' + review['question']['en'] + '\n\n' + review['question']['zh'] + '\n\n**Complete answer · 完整答案**\n\n' + md_pair(review['answer']) + '**Mnemonic · 简记**\n\n' + md_pair(review['mnemonic'])
-        if section['id'] == 'papers':
-            paper_labels = {'question': 'Research question · 研究问题', 'design': 'Study design · 研究设计', 'population': 'Population · 研究人群', 'methods': 'Methods · 方法', 'results': 'Results · 结果', 'limitations': 'Limitations · 局限', 'applicability': 'Applicability · 适用范围'}
-            for paper in content['papers']:
-                body += '<article class="paper"><h3>' + esc(paper['citation']) + '</h3>'
-                md += '### ' + paper['citation'] + '\n\n'
-                for key in PAPER_FIELDS:
-                    body += '<h4>' + paper_labels[key] + '</h4>' + bilingual(paper[key]); md += '**' + paper_labels[key] + '**\n\n' + md_pair(paper[key])
-                for term in paper['terms']:
-                    body += bilingual(term['term'], 'h4') + bilingual(term['explanation'])
-                    md += '**' + term['term']['en'] + ' · ' + term['term']['zh'] + '**\n\n' + md_pair(term['explanation'])
-                body += source_html(paper) + '</article>'
-        body += '</section>'
-    body += '<section id="sources"><h2>Sources · 来源</h2><ul>' + ''.join('<li><a href="' + esc(s['url']) + '">' + esc(s['title']) + '</a></li>' for s in content['sources']) + '</ul></section>'
-    md += '## Sources · 来源\n\n' + ''.join('- [' + s['title'] + '](' + s['url'] + ')\n' for s in content['sources'])
+    page, markdown = reading.render_page(chapter(manifest, content, topic_dir, root))
     landing = shell(manifest, bilingual(manifest['summary']) + nav)
-    return landing, shell(manifest, body), md
+    return landing, page, markdown
+
+
+def chapter(manifest, content, topic_dir, root=ROOT, **paths):
+    """Everything the reading renderer needs for one chapter; paths default to topics/<id>/ in the site."""
+    pron = Path(topic_dir) / 'pronunciation.json'
+    audio = reading.load_audio(Path(root) / 'library/shoulder/3d/public/audio/manifest.json')
+    return reading.Chapter(manifest, content, topic_dir, read_json(pron) if pron.is_file() else {}, audio,
+                           **{'model_base': '../../', 'audio_base': '../../', **paths})
 
 
 def build(topics_dir=None, output=None, root=ROOT):
@@ -717,9 +733,9 @@ def build(topics_dir=None, output=None, root=ROOT):
     for manifest, content, path, missing in checked:
         target = generated / manifest['id']
         target.mkdir()
-        landing, reading, markdown = render(manifest, content, missing)
+        landing, page, markdown = render(manifest, content, missing, path, root)
         (target / 'index.html').write_text(landing, encoding='utf-8')
-        (target / 'reading.html').write_text(reading, encoding='utf-8')
+        (target / 'reading.html').write_text(page, encoding='utf-8')
         (target / 'reading.md').write_text(markdown, encoding='utf-8')
         public_manifest = dict(manifest, links=links(manifest), missing=missing)
         write_json(target / 'data.json', {'topic': public_manifest, 'content': content if manifest['status'] == 'published' else None})

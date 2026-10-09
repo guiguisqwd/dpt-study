@@ -15,7 +15,7 @@
 | --- | --- | --- | --- |
 | 0 通用原则 | [00-general.md](./00-general.md) | 任何内容方向都成立的规则 | `G-xx` |
 | 1 方向规范 | [library/rules.md](./library/rules.md)、[library/chapters.md](./library/chapters.md)；每日学习另见 [daily/README.md](./daily/README.md) | 生理解剖特有的写法、图示、穴位、论文、3D 规则和章节模板；每日取材规程 | `AN-xx`、`CH-xx`、`DL-xx` |
-| 2 主题数据 | `library/<id>/`（肩袖在 `library/shoulder/text/data/`） | 只属于一个主题的事实和参数：结构清单、起止点、来源、3D 映射、配色 | — |
+| 2 主题数据 | `library/<id>/`（`topic.json`、`content.json`、`pronunciation.json`） | 只属于一个主题的事实和参数：结构清单、起止点、来源、3D 映射、配色 | — |
 | 3 制作步骤 | [library/steps.md](./library/steps.md)、[library/checklist.md](./library/checklist.md) | 步骤顺序、每步的输入/输出/合格标准，以及检查清单 | `ST-x`、`QC-xx` |
 
 上层约束下层，下层只引用上层的编号，不重写规则内容。用户认可的成品见 [library/exemplars.md](./library/exemplars.md)；规则说不清时以样板为准。

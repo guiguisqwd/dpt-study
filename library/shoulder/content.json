@@ -1,0 +1,3988 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "eyebrow": {
+      "en": "DPT study notes · 2026-10-06",
+      "zh": "DPT 学习笔记 · 阅读优化版"
+    },
+    "subtitle": {
+      "en": "From anatomy to paper reading",
+      "zh": "从解剖到文章阅读"
+    },
+    "lead": {
+      "en": "Location → innervation → movement → application → review → research",
+      "zh": "位置 → 支配 → 动作 → 应用 → 复习 → 研究"
+    },
+    "sidebarNote": {
+      "en": "Rotator cuff anatomy, innervation and movement; clinical tests, surface anatomy and research.",
+      "zh": "肩袖解剖、神经支配与运动功能；临床检查、体表解剖与研究文献。"
+    },
+    "footer": {
+      "en": "Adapted from the original 2026-10-06 rotator cuff notes. The original figures are kept; chapters and reading levels were reorganized.",
+      "zh": "基于原稿《2026-10-06-肩袖》整理 · 保留原有图示，重排章节与阅读层级。"
+    }
+  },
+  "sections": [
+    {
+      "id": "anatomy",
+      "navTitle": {
+        "en": "Anatomy",
+        "zh": "解剖基础"
+      },
+      "title": {
+        "en": "Anatomy: the four rotator cuff muscles",
+        "zh": "解剖基础：肩袖的四块肌肉"
+      },
+      "overview": {
+        "en": "The rotator cuff consists of the supraspinatus, infraspinatus, teres minor, and subscapularis. These muscles connect the scapula to the proximal humerus and help stabilize the humeral head in the glenoid cavity.",
+        "zh": "肩袖由冈上肌、冈下肌、小圆肌和肩胛下肌组成。这些肌肉连接肩胛骨与肱骨近端，并帮助将肱骨头稳定在关节盂内。"
+      },
+      "blocks": [
+        {
+          "type": "figure",
+          "diagramId": "fig-01"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Origins, insertions, and anatomical course",
+            "zh": "起点、止点与解剖走行"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "O = origin; I = insertion. The dashed O → I line follows the attachment sequence. It is separate from the force arrows used in the movement diagrams.",
+            "zh": "O 表示起点，I 表示止点。虚线 O → I 表示从起点到止点的附着顺序，与动作图中的受力箭头分开。"
+          }
+        },
+        {
+          "type": "muscles",
+          "ids": [
+            "supraspinatus",
+            "infraspinatus",
+            "teres-minor",
+            "subscapularis"
+          ],
+          "layout": "cards"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Describing a muscle in English",
+            "zh": "用英语完整描述肌肉"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The [muscle] originates from [origin], passes [direction / relation], and inserts onto [insertion].",
+            "zh": "［肌肉］起自［起点］，沿［方向／相邻关系］走行，止于［止点］。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The supraspinatus tendon passes beneath the acromion. Teres minor runs along the inferior border of the infraspinatus.",
+            "zh": "冈上肌腱从肩峰下方经过。小圆肌沿冈下肌下缘走行。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "It is innervated by [nerve] and contributes to [movement / stability].",
+            "zh": "它由［神经］支配，并参与［动作／稳定］。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Bony landmarks",
+            "zh": "骨性标志"
+          }
+        },
+        {
+          "type": "landmarks",
+          "ids": [
+            "greater-tubercle",
+            "lesser-tubercle",
+            "supraspinous-fossa",
+            "infraspinous-fossa",
+            "subscapular-fossa",
+            "acromion",
+            "glenoid",
+            "suprascapular-notch",
+            "spinoglenoid-notch",
+            "quadrangular-space"
+          ]
+        }
+      ],
+      "diagramIds": []
+    },
+    {
+      "id": "innervation",
+      "anchor": "nerve",
+      "navTitle": {
+        "en": "Innervation",
+        "zh": "神经支配"
+      },
+      "title": {
+        "en": "Innervation and anatomical nerve course",
+        "zh": "神经支配与解剖走行"
+      },
+      "overview": {
+        "en": "Three nerves from the brachial plexus supply the rotator cuff: the suprascapular nerve, the axillary nerve, and the upper and lower subscapular nerves. This chapter follows each nerve along its anatomical course.",
+        "zh": "肩袖由臂丛发出的三组神经支配：肩胛上神经、腋神经以及上、下肩胛下神经。本章沿解剖走行逐一追踪这些神经。"
+      },
+      "blocks": [
+        {
+          "type": "note",
+          "className": "nerve-levels",
+          "heading": {
+            "en": "C = Cervical; T = Thoracic",
+            "zh": "C = 颈部；T = 胸部"
+          },
+          "paragraphs": [
+            {
+              "en": "C stands for cervical (neck), whereas T stands for thoracic (chest). In an innervation label such as C5–C6, the numbers identify the spinal nerve levels contributing fibers to the nerve; they do not identify two thoracic vertebrae. There are seven cervical vertebrae, C1–C7, but eight pairs of cervical spinal nerves, C1–C8. C1–C7 nerves leave above the same-numbered vertebra; C8 leaves between C7 and T1. The roots of the brachial plexus are the anterior rami of spinal nerves C5–T1, not the vertebral bones themselves.",
+              "zh": "C 是 cervical（颈部）的缩写，T 是 thoracic（胸部）的缩写。神经支配中的 C5–C6 指向该神经贡献纤维的脊神经节段，不是两块胸椎。颈椎有 7 块（C1–C7），颈神经有 8 对（C1–C8）；C1–C7 神经从同名椎骨上方穿出，C8 从 C7 与 T1 之间穿出。臂丛的“根”是 C5–T1 脊神经的前支，而不是椎骨本身。"
+            }
+          ],
+          "definitions": [
+            {
+              "en": "C5 vertebra",
+              "zh": "第 5 颈椎：骨"
+            },
+            {
+              "en": "C5 spinal nerve",
+              "zh": "第 5 颈神经：神经"
+            },
+            {
+              "en": "T1 vertebra / T1 spinal nerve",
+              "zh": "第 1 胸椎 / 第 1 胸神经"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "en": "Nerve",
+              "zh": "神经"
+            },
+            {
+              "en": "Muscles supplied",
+              "zh": "所支配肌肉"
+            },
+            {
+              "en": "Origin and nerve levels",
+              "zh": "发出部位与神经节段"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "Suprascapular nerve",
+                "zh": "肩胛上神经"
+              },
+              {
+                "en": "Supraspinatus; Infraspinatus",
+                "zh": "冈上肌；冈下肌"
+              },
+              {
+                "en": "Superior trunk of the brachial plexus, usually C5–C6",
+                "zh": "臂丛上干，通常为 C5–C6"
+              }
+            ],
+            [
+              {
+                "en": "Axillary nerve",
+                "zh": "腋神经"
+              },
+              {
+                "en": "Teres minor; Deltoid",
+                "zh": "小圆肌；三角肌"
+              },
+              {
+                "en": "Posterior cord of the brachial plexus, mainly C5–C6",
+                "zh": "臂丛后束，主要为 C5–C6"
+              }
+            ],
+            [
+              {
+                "en": "Upper and lower subscapular nerves",
+                "zh": "上、下肩胛下神经"
+              },
+              {
+                "en": "Subscapularis; the lower nerve also supplies Teres major",
+                "zh": "肩胛下肌；下肩胛下神经还支配大圆肌"
+              },
+              {
+                "en": "Posterior cord of the brachial plexus, usually C5–C6 (some sources include C7)",
+                "zh": "臂丛后束，通常为 C5–C6（部分资料含 C7）"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Suprascapular nerve: anatomical course",
+            "zh": "肩胛上神经：解剖走行"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-16"
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The suprascapular nerve arises from the superior trunk of the brachial plexus, usually carrying fibers from C5 and C6. It courses posterolaterally across the posterior triangle of the neck and passes through the suprascapular notch beneath the superior transverse scapular ligament. It gives motor branches to Supraspinatus in the supraspinous fossa, then passes around the lateral end of the scapular spine through the spinoglenoid notch to supply Infraspinatus in the infraspinous fossa.",
+            "zh": "肩胛上神经起自臂丛上干，通常含 C5、C6 神经纤维。它向后外侧经过颈后三角，从肩胛上横韧带下方穿过肩胛上切迹，在冈上窝内发出支配冈上肌的运动支；随后绕过肩胛冈外侧端，经冈盂切迹进入冈下窝，支配冈下肌。"
+          }
+        },
+        {
+          "type": "details",
+          "summary": {
+            "en": "Compact route diagram",
+            "zh": "简明走行流程图"
+          },
+          "open": false,
+          "blocks": [
+            {
+              "type": "figure",
+              "diagramId": "fig-06"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Axillary nerve: the quadrangular space",
+            "zh": "腋神经：四边孔"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-17"
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The axillary nerve arises from the posterior cord of the brachial plexus, mainly from C5 and C6. It passes posteriorly through the quadrangular space with the posterior circumflex humeral artery and winds around the surgical neck of the Humerus deep to Deltoid. Its anterior branch supplies the anterior and middle parts of Deltoid. Its posterior branch supplies Teres minor and the posterior part of Deltoid and continues as the superior lateral cutaneous nerve of the arm.",
+            "zh": "腋神经起自臂丛后束，主要含 C5、C6 神经纤维。它与旋肱后动脉一起向后穿过四边孔，在三角肌深面绕行肱骨外科颈。前支支配三角肌前部和中部；后支支配小圆肌及三角肌后部，并延续为臂外上侧皮神经。"
+          }
+        },
+        {
+          "type": "details",
+          "summary": {
+            "en": "Compact route diagram",
+            "zh": "简明走行流程图"
+          },
+          "open": false,
+          "blocks": [
+            {
+              "type": "figure",
+              "diagramId": "fig-07"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Brachial plexus: from roots to peripheral nerves",
+            "zh": "臂丛：从根到周围神经"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The anterior rami of C5 and C6 unite to form the superior trunk. Each trunk divides into anterior and posterior divisions. The posterior divisions contribute to the posterior cord, from which the axillary and subscapular nerves arise. The suprascapular nerve branches earlier, directly from the superior trunk.",
+            "zh": "C5、C6 脊神经的前支合成上干。各干再分为前股和后股；后股共同组成后束，腋神经和肩胛下神经从后束发出。肩胛上神经更早分出，直接起自上干。"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-08"
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Roots → Trunks → Divisions → Cords → Branches. “Randy Travis Drinks Cold Beer” is a mnemonic for this sequence.",
+            "zh": "根 → 干 → 股 → 束 → 支。“Randy Travis Drinks Cold Beer” 用来记忆这个顺序。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "utah-upper-limb-syllabus",
+            "utah-unit4-limbs",
+            "ncbi-cervical-nerves",
+            "ncbi-cervical-vertebrae",
+            "axillary-branch-pattern",
+            "axillary-deltoid-mapping",
+            "muscles-statpearls-suprascapular-nerve",
+            "landmarks-teachme-axillary-nerve",
+            "muscles-statpearls-subscapularis",
+            "muscles-kenhub-subscapularis"
+          ],
+          "label": {
+            "en": "Anatomy references",
+            "zh": "解剖依据"
+          }
+        }
+      ],
+      "diagramIds": []
+    },
+    {
+      "id": "movement",
+      "anchor": "motion",
+      "navTitle": {
+        "en": "Movement",
+        "zh": "动作配合"
+      },
+      "title": {
+        "en": "Movement: attachments, force couples, and scapulohumeral rhythm",
+        "zh": "动作配合：起止点、力偶与肩肱节律"
+      },
+      "overview": {
+        "en": "Each muscle's line of pull, from origin to insertion, explains its action; the rotator cuff and the scapular muscles then work together in force couples and in scapulohumeral rhythm.",
+        "zh": "每块肌肉从起点到止点的拉力线解释了它的动作；肩袖与肩胛肌群再通过力偶和肩肱节律协同工作。"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "3.1 From attachment to action",
+            "zh": "3.1 从起止点理解动作"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Supraspinatus runs from the supraspinous fossa to the superior facet of the greater tubercle. Its line of action contributes to shoulder abduction. Infraspinatus and teres minor pass behind the glenohumeral joint to the middle and inferior facets of the greater tubercle, respectively; both contribute to external rotation. Subscapularis passes in front of the joint from the subscapular fossa to the lesser tubercle and contributes to internal rotation.",
+            "zh": "冈上肌从冈上窝走向大结节上小面，其作用线参与肩关节外展。冈下肌和小圆肌经盂肱关节后方，分别止于大结节中、下小面，两者均参与外旋。肩胛下肌从肩胛下窝经关节前方走向小结节，参与内旋。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "All four muscles also contribute to glenohumeral stability. A muscle’s attachment line helps explain its action, but the resulting movement also depends on joint position and the activity of other muscles.",
+            "zh": "四块肌肉也都参与盂肱关节稳定。起止点的连线有助于解释肌肉作用，但实际运动还取决于关节位置及其他肌肉的活动。"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-09"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "3.2 Two force couples",
+            "zh": "3.2 两组力偶"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "At the glenohumeral joint, the deltoid and rotator cuff work together to elevate the arm while controlling the position of the humeral head. At the scapula, the upper and lower trapezius work with serratus anterior to produce upward rotation during arm elevation.",
+            "zh": "在盂肱关节，三角肌与肩袖协同抬臂，并控制肱骨头的位置。在肩胛骨，上、下斜方肌与前锯肌协作，在上举过程中产生肩胛骨上旋。"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-10"
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-11"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Attachments of the muscles that move the scapula and humerus",
+            "zh": "带动肩胛骨与肱骨的肌肉起止点"
+          }
+        },
+        {
+          "type": "muscles",
+          "ids": [
+            "deltoid",
+            "upper-trapezius",
+            "lower-trapezius",
+            "serratus-anterior"
+          ],
+          "layout": "compact"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "3.3 Arm elevation and scapulohumeral rhythm",
+            "zh": "3.3 手臂上举与肩肱节律"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Arm elevation combines glenohumeral motion with scapulothoracic motion. The familiar 2:1 ratio is a teaching approximation, not a fixed ratio at every angle. Scapular motion varies with the task, the plane of elevation, and the individual.",
+            "zh": "手臂上举结合了盂肱关节活动和肩胛胸壁活动。常见的 2∶1 是教学概括，并不是每个角度都恒定不变的比例。肩胛骨运动会随任务、上举平面与个体而变化。"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-12"
+        },
+        {
+          "type": "cards",
+          "layout": "stages",
+          "cards": [
+            {
+              "label": "0–30°",
+              "heading": {
+                "en": "Initiation and positioning",
+                "zh": "起动与定位"
+              },
+              "paragraphs": [
+                {
+                  "en": "Supraspinatus and deltoid contribute to initiation of elevation. The rotator cuff helps stabilize the humeral head, while the scapular muscles position the scapula.",
+                  "zh": "冈上肌与三角肌参与上举起动；肩袖帮助稳定肱骨头，肩胛肌群调节肩胛骨位置。"
+                }
+              ]
+            },
+            {
+              "label": "30–90°",
+              "heading": {
+                "en": "Coordinated upward rotation",
+                "zh": "协同上旋"
+              },
+              "paragraphs": [
+                {
+                  "en": "Glenohumeral and scapular motion occur together. Trapezius and serratus anterior contribute to scapular upward rotation, and the clavicle also moves.",
+                  "zh": "盂肱关节与肩胛骨活动相互配合；斜方肌与前锯肌参与肩胛骨上旋，锁骨也同时运动。"
+                }
+              ]
+            },
+            {
+              "label": "90–180°",
+              "heading": {
+                "en": "Continued rotation and clearance",
+                "zh": "持续旋转与空间配合"
+              },
+              "paragraphs": [
+                {
+                  "en": "Further elevation involves continued scapular upward rotation and posterior tilt, together with humeral external rotation and clavicular motion. These are overlapping contributions rather than isolated on-off stages.",
+                  "zh": "继续上举涉及肩胛骨持续上旋、后倾，以及肱骨外旋和锁骨运动。这些作用相互重叠，并不是彼此孤立、依次开关的阶段。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "details",
+          "summary": {
+            "en": "Muscle activity across elevation angles",
+            "zh": "不同上举角度下的肌肉参与"
+          },
+          "open": false,
+          "blocks": [
+            {
+              "type": "figure",
+              "diagramId": "fig-13"
+            }
+          ]
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "elsevier-deltoid",
+            "statpearls-serratus-anterior",
+            "muscles-statpearls-trapezius",
+            "muscles-kenhub-trapezius",
+            "movement-kenhub-shoulder-joint",
+            "diagrams-physiopedia-scapulohumeral-rhythm"
+          ],
+          "label": {
+            "en": "Anatomy references",
+            "zh": "解剖依据"
+          },
+          "note": {
+            "en": "Scapulohumeral rhythm: Inman (1944); Bagg & Forrest (1988).",
+            "zh": "肩肱节律：Inman（1944）；Bagg 与 Forrest（1988）。"
+          }
+        }
+      ],
+      "diagramIds": []
+    },
+    {
+      "id": "clinical",
+      "title": {
+        "en": "Clinical tests and surface anatomy",
+        "zh": "临床检查与体表解剖"
+      },
+      "overview": {
+        "en": "This chapter matches each rotator cuff muscle to its special tests, lists common injuries and movement findings, shows the sensory and motor findings of nerve injury, maps shoulder acupoints onto the muscles and nerves beneath them, and ends with a palpation sequence for bony landmarks and the rotator cuff.",
+        "zh": "本章把每块肩袖肌肉与对应的特殊检查联系起来，列出常见损伤与动作表现，展示神经损伤的感觉与运动表现，把肩部穴位对应到其下方的肌肉和神经，最后给出骨性标志与肩袖的触诊步骤。"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "4.1 Rotator cuff muscles and special tests",
+            "zh": "4.1 肩袖肌肉与特殊检查"
+          }
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "en": "Muscle",
+              "zh": "肌肉"
+            },
+            {
+              "en": "Special tests",
+              "zh": "特殊检查"
+            },
+            {
+              "en": "Related movement and structures",
+              "zh": "相关动作与结构"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "Supraspinatus",
+                "zh": "冈上肌"
+              },
+              {
+                "en": "Empty can test / Drop arm test",
+                "zh": "空罐试验 / 落臂试验"
+              },
+              {
+                "en": "Abduction; the subacromial position of the tendon",
+                "zh": "外展；肌腱在肩峰下的位置"
+              }
+            ],
+            [
+              {
+                "en": "Infraspinatus",
+                "zh": "冈下肌"
+              },
+              {
+                "en": "Resisted external rotation / External rotation lag sign",
+                "zh": "抗阻外旋 / 外旋滞后征"
+              },
+              {
+                "en": "External rotation; suprascapular nerve",
+                "zh": "外旋；肩胛上神经"
+              }
+            ],
+            [
+              {
+                "en": "Teres minor",
+                "zh": "小圆肌"
+              },
+              {
+                "en": "Hornblower's sign",
+                "zh": "Hornblower 征"
+              },
+              {
+                "en": "External rotation; axillary nerve",
+                "zh": "外旋；腋神经"
+              }
+            ],
+            [
+              {
+                "en": "Subscapularis",
+                "zh": "肩胛下肌"
+              },
+              {
+                "en": "Lift-off test / Belly-press test",
+                "zh": "抬离试验 / 腹压试验"
+              },
+              {
+                "en": "Internal rotation; anterior surface of the scapula and lesser tubercle",
+                "zh": "内旋；肩胛骨前面与小结节"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "clinical-walch-1998-hornblower"
+          ],
+          "label": {
+            "en": "Teres minor test name",
+            "zh": "小圆肌检查名称"
+          }
+        },
+        {
+          "type": "cards",
+          "layout": "columns",
+          "cards": [
+            {
+              "heading": {
+                "en": "Common injuries and involved structures",
+                "zh": "常见损伤与累及结构"
+              },
+              "items": [
+                {
+                  "en": "The supraspinatus tendon is the structure most often involved in subacromial impingement and tears.",
+                  "zh": "冈上肌腱是肩峰下撞击和撕裂最常累及的结构。"
+                },
+                {
+                  "en": "Entrapment at the suprascapular notch leads to atrophy of both the supraspinatus and the infraspinatus.",
+                  "zh": "肩胛上切迹处卡压会导致冈上肌和冈下肌萎缩。"
+                },
+                {
+                  "en": "Entrapment at the spinoglenoid notch leads to atrophy of the infraspinatus only.",
+                  "zh": "冈盂切迹处卡压只导致冈下肌萎缩。"
+                },
+                {
+                  "en": "Anterior dislocation of the shoulder joint can involve the axillary nerve and the subscapularis.",
+                  "zh": "肩关节前脱位可累及腋神经和肩胛下肌。"
+                }
+              ]
+            },
+            {
+              "heading": {
+                "en": "Muscle imbalance and movement findings",
+                "zh": "肌肉失衡与动作表现"
+              },
+              "items": [
+                {
+                  "en": "Serratus anterior weakness causes insufficient scapular upward rotation, scapular winging and difficulty elevating the arm.",
+                  "zh": "前锯肌无力会导致肩胛上旋不足、翼状肩胛和上举困难。"
+                },
+                {
+                  "en": "When the upper trapezius is overactive and the lower trapezius is weak, the person compensates by shrugging the shoulder.",
+                  "zh": "上斜方肌过度活跃、下斜方肌无力时，会出现耸肩代偿。"
+                },
+                {
+                  "en": "Rotator cuff weakness involves the deltoid–rotator cuff force couple, upward movement of the humeral head, the subacromial space and pain.",
+                  "zh": "肩袖无力涉及三角肌—肩袖力偶、肱骨头上移、肩峰下间隙与疼痛。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "4.2 Nerve injury: sensory and motor findings",
+            "zh": "4.2 神经损伤与感觉、运动表现"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-14",
+          "size": "medium"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "4.3 Acupoints and regional anatomy",
+            "zh": "4.3 穴位与局部解剖"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The overlay figure and the acupoint tables in this section are a learning reference. Their layer order and model points are not clinically calibrated and do not indicate needling depth, direction or path. The safety notes in the tables are cautions only.",
+            "zh": "本节的叠加图和穴位表是学习参照。其中的层次顺序和模型点没有经过临床校准，不表示进针深度、方向或路径。表中的安全提示仅作警示。"
+          }
+        },
+        {
+          "type": "figure",
+          "diagramId": "fig-15"
+        },
+        {
+          "type": "details",
+          "open": true,
+          "summary": {
+            "en": "Acupoints and the muscles beneath them · 9 entries",
+            "zh": "穴位与其下方的肌肉 · 9 个条目"
+          },
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Locations follow [GB/T 12346-2021, Nomenclature and Location of Meridian Points](https://zynj.shutcm.edu.cn/_upload/article/files/66/b4/b34a95604d04b0bf686251b2d317/368ea8b0-187c-48a7-a402-ffdf1e11bb99.pdf). The layers list the muscles encountered from superficial to deep. Dry needling targets trigger points rather than selecting points along the meridians, but the two often lie in the same place.",
+                "zh": "定位依据：[GB/T 12346-2021《经穴名称与定位》](https://zynj.shutcm.edu.cn/_upload/article/files/66/b4/b34a95604d04b0bf686251b2d317/368ea8b0-187c-48a7-a402-ffdf1e11bb99.pdf)。层次写的是从浅到深会经过的肌肉。干针找的是触发点，不按经络取穴，但两者的位置常常重合。"
+              }
+            },
+            {
+              "type": "acupoints",
+              "ids": [
+                "si11",
+                "si12",
+                "si13",
+                "li16",
+                "si10",
+                "si9",
+                "te14",
+                "li15",
+                "ht1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "details",
+          "open": false,
+          "summary": {
+            "en": "Acupoint correspondences for the neck, the supraclavicular region and the scapular upward rotators",
+            "zh": "颈部、锁骨上区与肩胛上旋肌群的穴位对照"
+          },
+          "blocks": [
+            {
+              "type": "acupoints",
+              "ids": [
+                "jiaji-c5-c6",
+                "st12",
+                "gb21",
+                "gb23"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "details",
+          "open": false,
+          "summary": {
+            "en": "Bony landmarks and rotator cuff palpation",
+            "zh": "骨性标志与肩袖触诊"
+          },
+          "blocks": [
+            {
+              "type": "steps",
+              "items": [
+                {
+                  "heading": {
+                    "en": "Find the scapular spine",
+                    "zh": "找肩胛冈"
+                  },
+                  "text": {
+                    "en": "From the acromion, palpate medially until you feel a horizontal bony ridge, and follow it all the way to the medial border of the scapula.",
+                    "zh": "从肩峰往内侧摸，摸到一条横的骨嵴，一直摸到肩胛骨内侧缘。"
+                  }
+                },
+                {
+                  "heading": {
+                    "en": "Supraspinatus · Bingfeng (SI12)",
+                    "zh": "冈上肌 · 秉风（SI12）"
+                  },
+                  "text": {
+                    "en": "Press into the fossa above the midpoint of the scapular spine; with the arm at 15° of abduction, have the person abduct against resistance, and you can feel the supraspinatus tighten.",
+                    "zh": "在肩胛冈中点上方的窝里按下去；让他手臂抗阻外展 15°，能摸到冈上肌收紧。"
+                  }
+                },
+                {
+                  "heading": {
+                    "en": "Infraspinatus · Tianzong (SI11)",
+                    "zh": "冈下肌 · 天宗（SI11）"
+                  },
+                  "text": {
+                    "en": "Palpate the centre of the infraspinous fossa; with the elbow flexed to 90°, have the person externally rotate against resistance, and the whole infraspinatus bulges.",
+                    "zh": "在冈下窝中央触摸；屈肘 90° 做抗阻外旋，整片冈下肌鼓起来。"
+                  }
+                },
+                {
+                  "heading": {
+                    "en": "Teres minor · Jianzhen (SI9)",
+                    "zh": "小圆肌 · 肩贞（SI9）"
+                  },
+                  "text": {
+                    "en": "Palpate above the upper end of the posterior axillary fold, along the lateral border of the scapula; the teres minor contracts during resisted external rotation, as the infraspinatus does, and lies against the inferior border of the infraspinatus.",
+                    "zh": "在腋后纹头上方、肩胛骨外侧缘触摸；小圆肌与冈下肌一样在抗阻外旋时收缩，紧贴冈下肌下缘。"
+                  }
+                },
+                {
+                  "heading": {
+                    "en": "Subscapularis · approach via Jiquan (HT1)",
+                    "zh": "肩胛下肌 · 极泉（HT1）方向"
+                  },
+                  "text": {
+                    "en": "With the person supine and the arm slightly abducted, press from the posterior wall of the axilla toward the anterior surface of the scapula; have the person internally rotate against resistance.",
+                    "zh": "仰卧，手臂稍外展，从腋窝后壁朝肩胛骨前面按；让他抗阻内旋。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "diagramIds": [],
+      "navTitle": {
+        "en": "Clinical anatomy",
+        "zh": "临床解剖"
+      }
+    },
+    {
+      "id": "review",
+      "navTitle": {
+        "en": "Review",
+        "zh": "整理与复习"
+      },
+      "title": {
+        "en": "Review and recall",
+        "zh": "整理与复习"
+      },
+      "overview": {
+        "en": "Short memory cues first, then the same relationships in full sentences, then questions with complete answers.",
+        "zh": "先看简短口诀，再读完整句子的同一组关系，最后用问题与完整答案自测。"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "5.1 Compact memory cues",
+            "zh": "5.1 简记口诀"
+          }
+        },
+        {
+          "type": "mnemonic",
+          "text": {
+            "en": "Three rotator cuff tendons attach to the greater tubercle, and one attaches to the lesser tubercle.",
+            "zh": "三条肩袖肌腱附着于大结节，一条附着于小结节。"
+          },
+          "original": "三个坐大，一个站小。"
+        },
+        {
+          "type": "mnemonic",
+          "text": {
+            "en": "Supraspinatus and infraspinatus share the suprascapular nerve; teres minor uses the axillary nerve, and subscapularis uses the subscapular nerves.",
+            "zh": "冈上肌与冈下肌同由肩胛上神经支配；小圆肌由腋神经支配，肩胛下肌由肩胛下神经支配。"
+          },
+          "original": "冈上冈下归肩上，小圆跟腋走，肩下找肩下。"
+        },
+        {
+          "type": "mnemonic",
+          "text": {
+            "en": "The superior muscle assists abduction, the posterior muscles assist external rotation, and the anterior muscle assists internal rotation.",
+            "zh": "上方的肌肉协助外展，后方的肌肉协助外旋，前方的肌肉协助内旋。"
+          },
+          "original": "上面抬，后面外，前面内。"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "5.2 The same relationships in full sentences",
+            "zh": "5.2 完整叙述：位置、支配与动作"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Insertions",
+            "zh": "止点"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The tendons of supraspinatus, infraspinatus, and teres minor insert on the superior, middle, and inferior facets of the greater tubercle of the humerus, respectively. The subscapularis tendon inserts on the lesser tubercle. These attachments connect the rotator cuff muscles to the proximal humerus.",
+            "zh": "冈上肌、冈下肌和小圆肌的肌腱分别止于肱骨大结节的上面、中面和下面。肩胛下肌腱止于小结节。这些附着将肩袖肌肉连接到肱骨近端。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Innervation",
+            "zh": "神经支配"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The suprascapular nerve supplies supraspinatus and infraspinatus. The axillary nerve supplies teres minor and also innervates the deltoid. The upper and lower subscapular nerves supply subscapularis, and the lower subscapular nerve also supplies teres major.",
+            "zh": "肩胛上神经支配冈上肌和冈下肌。腋神经支配小圆肌，也支配三角肌。上、下肩胛下神经支配肩胛下肌，其中下肩胛下神经还支配大圆肌。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Actions and joint stability",
+            "zh": "动作与关节稳定"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Supraspinatus assists shoulder abduction. Infraspinatus and teres minor assist external rotation, whereas subscapularis assists internal rotation. The rotator cuff muscles also work together to stabilize the humeral head during shoulder movement; their roles extend beyond producing an isolated direction of movement.",
+            "zh": "冈上肌协助肩外展。冈下肌和小圆肌协助外旋，肩胛下肌协助内旋。肩袖肌肉还共同在肩部运动时稳定肱骨头，因此它们的作用不只是产生某一个单独方向的动作。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "5.3 Questions and complete answers",
+            "zh": "5.3 问题与完整答案"
+          }
+        },
+        {
+          "type": "quiz",
+          "ids": [
+            "q-insertions",
+            "q-external-rotators",
+            "q-suprascapular-compression",
+            "q-arm-elevation"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "Spaced review",
+            "zh": "间隔复习"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "On days 1, 3, 7, and 14, recall each muscle’s origin, insertion, innervation, and action before checking the answer. Connect the name to its location and nearby surface landmarks.",
+            "zh": "在第 1、3、7、14 天，先回忆每块肌肉的起点、止点、神经支配与动作，再核对答案。把名称与它的位置及附近的体表标志联系起来。"
+          }
+        }
+      ],
+      "diagramIds": []
+    },
+    {
+      "id": "papers",
+      "anchor": "reading",
+      "navTitle": {
+        "en": "Paper reading",
+        "zh": "文章阅读"
+      },
+      "title": {
+        "en": "Paper reading: the additional effects of dry needling",
+        "zh": "文章阅读：加用干针的额外获益"
+      },
+      "overview": {
+        "en": "A critical reading of a randomized trial that added dry needling to physical therapy for subacromial pain syndrome.",
+        "zh": "批判性阅读一项随机试验：在物理治疗基础上加用干针治疗肩峰下疼痛综合征。"
+      },
+      "blocks": [
+        {
+          "type": "paper",
+          "id": "hando-2026-dry-needling",
+          "open": false
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "This appraisal uses the results abstract and the public study protocol. The full results article has not been obtained. A protocol records planned methods and cannot establish how the trial was actually conducted.",
+            "zh": "本节评价依据结果摘要与公开研究方案，尚未取得结果论文全文。研究方案记录的是计划采用的方法，不能据此确认试验实际怎样执行。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "6.1 Research question and comparison groups",
+            "zh": "6.1 研究问题与比较对象"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "In 121 participants with subacromial pain syndrome (SAPS), the trial compared physical therapy alone with physical therapy plus sham dry needling or dry needling. The primary outcome was the Shoulder Pain and Disability Index (SPADI) at 1 year.",
+            "zh": "试验纳入 121 名肩峰下疼痛综合征（SAPS）患者，比较单纯物理治疗、物理治疗加假干针，以及物理治疗加干针。主要结局是 1 年时的肩痛与功能障碍指数（SPADI）。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2026-pubmed"
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "en": "Group",
+              "zh": "组别"
+            },
+            {
+              "en": "Intervention",
+              "zh": "干预"
+            }
+          ],
+          "rows": [
+            [
+              "PT",
+              {
+                "en": "Manual therapy and exercise",
+                "zh": "手法治疗与运动治疗"
+              }
+            ],
+            [
+              "PT + SDN",
+              {
+                "en": "Physical therapy plus sham dry needling",
+                "zh": "物理治疗加假干针"
+              }
+            ],
+            [
+              "PT + DN",
+              {
+                "en": "Physical therapy plus dry needling",
+                "zh": "物理治疗加干针"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The PT comparison estimates the added effect of including dry needling in the treatment program. The sham comparison also accounts for aspects of receiving a needling procedure. These comparisons address different questions.",
+            "zh": "与 PT 组的比较估计在治疗方案中加入干针的额外效果；与假干针组的比较还考虑了接受针刺程序所涉及的部分因素。这两项比较回答的问题不同。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "6.2 Primary outcome: SPADI at 1 year",
+            "zh": "6.2 主要结局：1 年时的 SPADI"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Lower SPADI scores indicate less pain and disability. A negative between-group difference favors PT + DN.",
+            "zh": "SPADI 分数越低，表示疼痛与功能障碍越轻。组间差值为负数时，方向上有利于 PT + DN 组。"
+          }
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "en": "Comparison: PT + DN minus control",
+              "zh": "比较：加用干针组减去对照组"
+            },
+            {
+              "en": "SPADI difference",
+              "zh": "SPADI 分差"
+            },
+            {
+              "en": "95% confidence interval (CI)",
+              "zh": "95% 置信区间"
+            }
+          ],
+          "rows": [
+            [
+              "PT + DN vs PT",
+              "−7.51",
+              "−16.57 to 1.54"
+            ],
+            [
+              "PT + DN vs PT + SDN",
+              "−9.85",
+              "−18.98 to 0.73"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Both confidence intervals include zero. The primary comparisons did not reach statistical significance; this does not establish equivalence or prove that dry needling has no effect. Estimates and intervals are reproduced as reported in the abstract.",
+            "zh": "两项置信区间都包含 0，主要比较未达到统计学显著性；这并不等于证明各组等效，也不等于证明干针没有作用。分差与区间按摘要所载记录，未自行修正。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2026-pubmed-reported-spadi-estimates-and-intervals"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "6.3 Secondary outcomes: symptom acceptability and health care use",
+            "zh": "6.3 次要结局：症状可接受状态与后续就医"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The Patient Acceptable Symptom State (PASS) records whether participants consider their current symptoms acceptable. The differences below are absolute percentage-point differences in affirmative responses, not relative percentage improvements.",
+            "zh": "患者可接受症状状态（PASS）记录患者是否认为目前的症状可以接受。下表是回答“可以接受”的比例之绝对差值，单位为百分点，并非相对改善百分比。"
+          }
+        },
+        {
+          "type": "table",
+          "columns": [
+            {
+              "en": "PASS comparison",
+              "zh": "PASS 比较"
+            },
+            {
+              "en": "Absolute difference",
+              "zh": "绝对差值"
+            },
+            {
+              "en": "95% CI",
+              "zh": "95% 置信区间"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "6 months: PT + DN vs PT",
+                "zh": "6 个月：PT + DN 对比 PT"
+              },
+              {
+                "en": "+34 percentage points",
+                "zh": "+34 个百分点"
+              },
+              {
+                "en": "+14 to +55 percentage points",
+                "zh": "+14 至 +55 个百分点"
+              }
+            ],
+            [
+              {
+                "en": "6 months: PT + DN vs PT + SDN",
+                "zh": "6 个月：PT + DN 对比 PT + SDN"
+              },
+              {
+                "en": "+24 percentage points",
+                "zh": "+24 个百分点"
+              },
+              {
+                "en": "+4 to +45 percentage points",
+                "zh": "+4 至 +45 个百分点"
+              }
+            ],
+            [
+              {
+                "en": "1 year: PT + DN vs PT + SDN",
+                "zh": "1 年：PT + DN 对比 PT + SDN"
+              },
+              {
+                "en": "+28 percentage points",
+                "zh": "+28 个百分点"
+              },
+              {
+                "en": "+7 to +49 percentage points",
+                "zh": "+7 至 +49 个百分点"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "For additional shoulder-related care within 1 year, the reported odds ratio (OR) was 0.35 (95% CI, 0.13–0.95). The abstract does not identify the reference group. An odds ratio cannot be directly restated as a risk reduction; this value should not be described as a 65% reduction in risk.",
+            "zh": "对于入组后 1 年内再次因肩部问题就医，摘要报告的优势比（OR）为 0.35（95% 置信区间 0.13–0.95）。摘要未说明参照组。优势比不能直接改写为风险降低的比例，因此不能把这个数值描述为“风险降低 65%”。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2026-pubmed-pass-and-health-care-use-results"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "6.4 Methods appraisal and unresolved questions",
+            "zh": "6.4 方法评价与尚未核实的信息"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Randomization, a sham comparator, and a public protocol support a more transparent comparison. The appraisal below separates planned methods from verified conduct. It is not a complete risk-of-bias assessment.",
+            "zh": "随机分组、假干针对照以及公开研究方案，使比较过程更便于追溯。以下评价区分计划采用的方法与已经核实的执行情况，并不构成完整的偏倚风险评价。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Randomization and allocation concealment",
+            "zh": "随机化与分配隐藏"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Randomization determines group assignment; allocation concealment prevents advance knowledge of the next assignment during enrollment. The protocol planned sequentially numbered, opaque, sealed envelopes. Whether this procedure was implemented adequately remains unverified.",
+            "zh": "随机化用于确定分组；分配隐藏用于防止在入组过程中提前知道下一次分配结果。研究方案计划采用顺序编号、不透明且密封的信封。该程序是否得到充分落实，仍未核实。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2019-protocol-protocol-p-358-randomization"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Blinding and outcome measurement",
+            "zh": "盲法与结局测量"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The protocol planned to blind participants receiving real or sham needling to that distinction. Participants in the no-needling group would know their assignment, and treating clinicians could not be blinded to the treatment delivered. Actual masking success and unmasking require the results report.",
+            "zh": "研究方案计划使接受真干针或假干针的患者不知道自己接受的是哪一种。未接受针刺的患者会知道自己的分组，实施治疗的临床人员也无法对所提供的治疗设盲。盲法实际是否成功以及是否发生揭盲，需要结果论文才能核实。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2019-protocol-protocol-p-358-blinding"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Prespecified outcomes and selective reporting",
+            "zh": "预设结局与选择性报告"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The protocol abstract lists SPADI and PROMIS-57, whereas its statistical section specifies 1-year SPADI as the primary endpoint. This wording difference alone does not establish outcome switching. The dated protocol, registration history, and final report must be compared.",
+            "zh": "研究方案摘要列出 SPADI 和 PROMIS-57，但其统计部分将 1 年时的 SPADI 明确定为主要终点。仅凭这处措辞差异，不能认定发生了结局更换。仍需对照注明日期的研究方案、注册历史和最终报告。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2019-protocol-protocol-pp-355-and-361"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Sample size, attrition, and missing data",
+            "zh": "样本量、失访与缺失数据"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The planned sample was 130; the results abstract reports 121 participants. This difference is not a count of participants lost to follow-up. Group-specific missingness, reasons for dropout, and the analysis of incomplete outcomes remain unverified.",
+            "zh": "计划样本量为 130 人，结果摘要报告 121 名参与者。这一差额并不是失访人数。各组缺失数据的分布、退出原因，以及不完整结局的分析方式，仍未核实。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The protocol planned analysis in the originally assigned groups. An intention-to-treat principle does not, by itself, solve missing-data bias. Evaluating the estimates requires the actual analysis population, missing-data assumptions, and sensitivity analyses.",
+            "zh": "研究方案计划按照最初随机分配的组别进行分析。意向治疗原则本身并不能解决缺失数据带来的偏倚。评价效应估计，还需要了解实际分析人群、缺失数据假设与敏感性分析。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2019-protocol-protocol-p-361-sample-size-and-statistical-approach"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": {
+            "en": "Multiplicity, harms, and health care ascertainment",
+            "zh": "多重比较、不良事件与就医信息来源"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Multiplicity adjustment and adverse-event reporting have not been verified. Favorable secondary results therefore need separate appraisal rather than replacing the primary result. The protocol planned database and record-based health care data, whereas the results abstract describes self-report; this difference and the OR reference group remain unresolved.",
+            "zh": "多重比较校正与不良事件报告尚未核实。因此，有利的次要结果需要单独评价，不能用来替代主要结果。研究方案计划通过数据库及病历收集就医数据，结果摘要则描述为患者自报；这一差异以及 OR 的参照组仍待厘清。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2019-protocol-protocol-p-361-health-care-utilization"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The paper identifies trial registration NCT03442894. The current registry contents and amendment history have not been verified in this appraisal. Missing verification is not evidence that a method was omitted.",
+            "zh": "论文注明的试验登记号为 NCT03442894。本次评价尚未核验注册页面的当前内容与修改历史。未能核实某项方法，不等于有证据表明研究未实施该方法。"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "nct03442894"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "6.5 Interpretation and applicability",
+            "zh": "6.5 结论与适用范围"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The trial did not establish an additional benefit on 1-year SPADI. Favorable secondary findings warrant cautious, outcome-specific interpretation. The results cannot be generalized to every dry-needling protocol, all shoulder pain, or acupuncture as a whole.",
+            "zh": "这项试验未能在 1 年 SPADI 上确立额外获益。有利的次要发现应按具体结局谨慎解释。结果不能推广到所有干针方案、全部肩痛患者，或针灸整体。"
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": {
+            "en": "References",
+            "zh": "文献"
+          }
+        },
+        {
+          "type": "sources",
+          "ids": [
+            "hando-2026-doi",
+            "hando-2026-pubmed",
+            "hando-2019-protocol"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The protocol was published in the Brazilian Journal of Physical Therapy, volume 23, pages 355–363. Its DOI is 10.1016/j.bjpt.2018.10.010.",
+            "zh": "研究方案发表于 Brazilian Journal of Physical Therapy，第 23 卷，第 355–363 页；DOI 为 10.1016/j.bjpt.2018.10.010。"
+          }
+        }
+      ],
+      "diagramIds": []
+    }
+  ],
+  "muscles": [
+    {
+      "id": "supraspinatus",
+      "name": {
+        "en": "Supraspinatus",
+        "zh": "冈上肌"
+      },
+      "origin": {
+        "en": "Supraspinous fossa of the scapula",
+        "zh": "肩胛骨冈上窝"
+      },
+      "insertion": {
+        "en": "Superior facet of the greater tubercle of the humerus",
+        "zh": "肱骨大结节上小面"
+      },
+      "course": {
+        "en": "The supraspinatus originates from the supraspinous fossa of the scapula, passes laterally beneath the acromion as a tendon, and inserts onto the superior facet of the greater tubercle of the humerus.",
+        "zh": "冈上肌起自肩胛骨冈上窝，以肌腱向外侧经肩峰下方走行，止于肱骨大结节上小面。"
+      },
+      "actions": {
+        "en": "It contributes to shoulder abduction and helps stabilize the humeral head in the glenoid cavity.",
+        "zh": "它参与肩关节外展，并帮助将肱骨头稳定在关节盂内。"
+      },
+      "innervation": {
+        "en": "Suprascapular nerve (usually C5–C6)",
+        "zh": "肩胛上神经（通常为 C5–C6）"
+      },
+      "modelTermId": "supraspinatus",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-02"
+      ],
+      "sources": [
+        "elsevier-supraspinatus",
+        "muscles-statpearls-arm-abductors",
+        "muscles-statpearls-suprascapular-nerve"
+      ],
+      "color": "#b94334",
+      "letter": "S"
+    },
+    {
+      "id": "infraspinatus",
+      "name": {
+        "en": "Infraspinatus",
+        "zh": "冈下肌"
+      },
+      "origin": {
+        "en": "Infraspinous fossa of the scapula",
+        "zh": "肩胛骨冈下窝"
+      },
+      "insertion": {
+        "en": "Middle facet of the greater tubercle of the humerus",
+        "zh": "肱骨大结节中小面"
+      },
+      "course": {
+        "en": "The infraspinatus originates from the infraspinous fossa of the scapula, passes laterally behind the glenohumeral joint as its fibers converge into a tendon, and inserts onto the middle facet of the greater tubercle of the humerus.",
+        "zh": "冈下肌起自肩胛骨冈下窝，肌纤维汇聚成肌腱，向外侧经盂肱关节后方走行，止于肱骨大结节中小面。"
+      },
+      "actions": {
+        "en": "It externally rotates the humerus and contributes to dynamic stability of the glenohumeral joint.",
+        "zh": "它使肱骨外旋，并参与盂肱关节的动态稳定。"
+      },
+      "innervation": {
+        "en": "Suprascapular nerve (usually C5–C6)",
+        "zh": "肩胛上神经（通常为 C5–C6）"
+      },
+      "modelTermId": "infraspinatus",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-03"
+      ],
+      "sources": [
+        "muscles-elsevier-infraspinatus",
+        "muscles-statpearls-infraspinatus",
+        "muscles-statpearls-suprascapular-nerve"
+      ],
+      "color": "#365e91",
+      "letter": "I"
+    },
+    {
+      "id": "teres-minor",
+      "name": {
+        "en": "Teres minor",
+        "zh": "小圆肌"
+      },
+      "origin": {
+        "en": "Upper part of the lateral border of the scapula",
+        "zh": "肩胛骨外侧缘上部"
+      },
+      "insertion": {
+        "en": "Inferior facet of the greater tubercle of the humerus",
+        "zh": "肱骨大结节下小面"
+      },
+      "course": {
+        "en": "The teres minor originates from the upper part of the lateral border of the scapula, passes superolaterally along the inferior border of the infraspinatus, and inserts onto the inferior facet of the greater tubercle of the humerus.",
+        "zh": "小圆肌起自肩胛骨外侧缘上部，沿冈下肌下缘向上外侧走行，止于肱骨大结节下小面。"
+      },
+      "actions": {
+        "en": "It assists external rotation of the humerus and helps stabilize the humeral head. Teres major is a separate muscle and is not part of the rotator cuff.",
+        "zh": "它协助肱骨外旋并帮助稳定肱骨头。大圆肌是另一块肌肉，不属于肩袖。"
+      },
+      "innervation": {
+        "en": "Axillary nerve (mainly C5–C6)",
+        "zh": "腋神经（主要为 C5–C6）"
+      },
+      "modelTermId": "teres-minor",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-04"
+      ],
+      "sources": [
+        "muscles-elsevier-teres-minor",
+        "muscles-statpearls-teres-minor"
+      ],
+      "color": "#4d7e45",
+      "letter": "T"
+    },
+    {
+      "id": "subscapularis",
+      "name": {
+        "en": "Subscapularis",
+        "zh": "肩胛下肌"
+      },
+      "origin": {
+        "en": "Subscapular fossa on the anterior surface of the scapula",
+        "zh": "肩胛骨前面的肩胛下窝"
+      },
+      "insertion": {
+        "en": "Lesser tubercle of the humerus",
+        "zh": "肱骨小结节"
+      },
+      "course": {
+        "en": "The subscapularis originates from the subscapular fossa on the anterior surface of the scapula, passes laterally in front of the glenohumeral joint, and inserts onto the lesser tubercle of the humerus.",
+        "zh": "肩胛下肌起自肩胛骨前面的肩胛下窝，经盂肱关节前方向外侧走行，止于肱骨小结节。"
+      },
+      "actions": {
+        "en": "It internally rotates the humerus and contributes to anterior stability of the glenohumeral joint.",
+        "zh": "它使肱骨内旋，并参与盂肱关节前方的稳定。"
+      },
+      "innervation": {
+        "en": "Upper and lower subscapular nerves (C5–C6; some sources include C7)",
+        "zh": "上、下肩胛下神经（C5–C6；部分资料还包括 C7）"
+      },
+      "modelTermId": "subscapularis",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-05"
+      ],
+      "sources": [
+        "elsevier-subscapularis",
+        "muscles-statpearls-subscapularis",
+        "muscles-kenhub-subscapularis"
+      ],
+      "color": "#805a9f",
+      "letter": "S"
+    },
+    {
+      "id": "deltoid",
+      "name": {
+        "en": "Deltoid",
+        "zh": "三角肌"
+      },
+      "origin": {
+        "en": "Lateral third of the clavicle, the acromion, and the spine of the scapula",
+        "zh": "锁骨外侧三分之一、肩峰和肩胛冈"
+      },
+      "insertion": {
+        "en": "Deltoid tuberosity of the humerus",
+        "zh": "肱骨三角肌粗隆"
+      },
+      "course": {
+        "en": "The deltoid originates from the lateral third of the clavicle, the acromion, and the spine of the scapula, passes toward the humerus as its fibers converge, and inserts onto the deltoid tuberosity of the humerus.",
+        "zh": "三角肌起自锁骨外侧三分之一、肩峰和肩胛冈，肌纤维向肱骨汇聚走行，止于肱骨三角肌粗隆。"
+      },
+      "actions": {
+        "en": "The middle, or acromial, part contributes strongly to arm abduction.",
+        "zh": "其中部，即肩峰部，是手臂外展的重要参与者。"
+      },
+      "innervation": {
+        "en": "Axillary nerve (mainly C5–C6)",
+        "zh": "腋神经（主要为 C5–C6）"
+      },
+      "modelTermId": "deltoid",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-10"
+      ],
+      "sources": [
+        "elsevier-deltoid",
+        "muscles-kenhub-deltoid",
+        "muscles-statpearls-arm-abductors"
+      ]
+    },
+    {
+      "id": "upper-trapezius",
+      "name": {
+        "en": "Upper trapezius",
+        "zh": "上斜方肌"
+      },
+      "origin": {
+        "en": "Occipital region and nuchal ligament",
+        "zh": "枕部和项韧带"
+      },
+      "insertion": {
+        "en": "Lateral third of the clavicle",
+        "zh": "锁骨外侧三分之一"
+      },
+      "course": {
+        "en": "The upper trapezius originates from the occipital region and the nuchal ligament, passes inferolaterally, and inserts onto the lateral third of the clavicle.",
+        "zh": "上斜方肌起自枕部和项韧带，向下外侧走行，止于锁骨外侧三分之一。"
+      },
+      "actions": {
+        "en": "The upper fibers of trapezius act with the other scapular rotators during elevation of the arm.",
+        "zh": "斜方肌上部纤维在手臂上举时与其他肩胛旋转肌协作。"
+      },
+      "innervation": {
+        "en": "Accessory nerve (cranial nerve XI); anterior rami of C3–C4, usually described as proprioceptive (sensory)",
+        "zh": "副神经（第十一对脑神经）；C3–C4 脊神经前支，通常被描述为本体感觉（感觉）纤维"
+      },
+      "modelTermId": null,
+      "modelUnavailableReason": {
+        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
+        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
+      },
+      "diagramIds": [
+        "fig-11"
+      ],
+      "sources": [
+        "muscles-statpearls-trapezius",
+        "muscles-kenhub-trapezius",
+        "muscles-teachmeanatomy-superficial-back",
+        "muscles-loyola-trapezius",
+        "muscles-tubbs-2011-trapezius-cervical"
+      ]
+    },
+    {
+      "id": "lower-trapezius",
+      "name": {
+        "en": "Lower trapezius",
+        "zh": "下斜方肌"
+      },
+      "origin": {
+        "en": "Spinous processes of the lower thoracic vertebrae, commonly described as T4–T12",
+        "zh": "下部胸椎棘突，常描述为 T4–T12"
+      },
+      "insertion": {
+        "en": "Scapular spine, near its medial end",
+        "zh": "肩胛冈内侧端附近"
+      },
+      "course": {
+        "en": "The lower trapezius originates from the spinous processes of the lower thoracic vertebrae, commonly described as T4–T12, passes superolaterally, and inserts onto the scapular spine near its medial end. Here T denotes thoracic vertebrae.",
+        "zh": "下斜方肌起自下部胸椎棘突（常描述为 T4–T12），向上外侧走行，止于肩胛冈内侧端附近。这里的 T 表示胸椎。"
+      },
+      "actions": {
+        "en": "The lower fibers of trapezius work with the upper trapezius and serratus anterior to produce upward rotation of the scapula during arm elevation.",
+        "zh": "斜方肌下部纤维与上斜方肌和前锯肌协作，在手臂上举时产生肩胛骨上旋。"
+      },
+      "innervation": {
+        "en": "Accessory nerve (cranial nerve XI); anterior rami of C3–C4, usually described as proprioceptive (sensory)",
+        "zh": "副神经（第十一对脑神经）；C3–C4 脊神经前支，通常被描述为本体感觉（感觉）纤维"
+      },
+      "modelTermId": null,
+      "modelUnavailableReason": {
+        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
+        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
+      },
+      "diagramIds": [
+        "fig-11"
+      ],
+      "sources": [
+        "muscles-statpearls-trapezius",
+        "muscles-kenhub-trapezius",
+        "muscles-teachmeanatomy-superficial-back",
+        "muscles-loyola-trapezius",
+        "muscles-tubbs-2011-trapezius-cervical",
+        "statpearls-serratus-anterior"
+      ]
+    },
+    {
+      "id": "serratus-anterior",
+      "name": {
+        "en": "Serratus anterior",
+        "zh": "前锯肌"
+      },
+      "origin": {
+        "en": "Lateral surfaces of the upper eight or nine ribs",
+        "zh": "上八或九根肋骨的外侧面"
+      },
+      "insertion": {
+        "en": "Anterior, or costal, surface of the medial border of the scapula",
+        "zh": "肩胛骨内侧缘的前面（肋面）"
+      },
+      "course": {
+        "en": "The serratus anterior originates from the lateral surfaces of the upper eight or nine ribs, passes around the thoracic wall, and inserts onto the anterior, or costal, surface of the medial border of the scapula.",
+        "zh": "前锯肌起自上八或九根肋骨的外侧面，绕过胸壁，止于肩胛骨内侧缘的前面（肋面）。"
+      },
+      "actions": {
+        "en": "Its inferior fibers attach near the inferior angle and contribute to upward rotation.",
+        "zh": "其下部纤维附着于下角附近，参与肩胛骨上旋。"
+      },
+      "innervation": {
+        "en": "Long thoracic nerve (C5–C7)",
+        "zh": "胸长神经（C5–C7）"
+      },
+      "modelTermId": null,
+      "modelUnavailableReason": {
+        "en": "3D mesh not included in the current atlas. Its origin and insertion are shown in this section’s diagrams.",
+        "zh": "当前模型包未包含这块肌肉，起止点见本节图示。"
+      },
+      "diagramIds": [
+        "fig-11"
+      ],
+      "sources": [
+        "statpearls-serratus-anterior",
+        "muscles-kenhub-serratus-anterior",
+        "muscles-teachmeanatomy-pectoral"
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "greater-tubercle",
+      "name": {
+        "en": "Greater tubercle",
+        "zh": "大结节"
+      },
+      "description": {
+        "en": "The greater tubercle is the bony prominence on the lateral side of the proximal humerus, separated from the lesser tubercle by the intertubercular groove. The supraspinatus, infraspinatus and teres minor insert onto its superior, middle and inferior facets, respectively.",
+        "zh": "大结节是肱骨近端外侧的骨性隆起，与小结节之间隔着结节间沟。冈上肌、冈下肌和小圆肌分别止于它的上小面、中小面和下小面。"
+      },
+      "sources": [
+        "landmarks-teachme-humerus",
+        "landmarks-statpearls-humerus"
+      ],
+      "modelTermId": "humerus",
+      "viewerLandmarkId": "greater-tubercle",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-01",
+        "fig-02",
+        "fig-03",
+        "fig-04",
+        "fig-09",
+        "fig-10",
+        "fig-13",
+        "fig-15"
+      ]
+    },
+    {
+      "id": "lesser-tubercle",
+      "name": {
+        "en": "Lesser tubercle",
+        "zh": "小结节"
+      },
+      "description": {
+        "en": "The lesser tubercle is the smaller prominence on the anterior surface of the proximal humerus, medial to the greater tubercle across the intertubercular groove. The subscapularis inserts onto it.",
+        "zh": "小结节是肱骨近端前面较小的骨性隆起，隔着结节间沟位于大结节内侧。肩胛下肌止于小结节。"
+      },
+      "sources": [
+        "landmarks-teachme-humerus",
+        "landmarks-statpearls-humerus"
+      ],
+      "modelTermId": "humerus",
+      "viewerLandmarkId": "lesser-tubercle",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-01",
+        "fig-05",
+        "fig-09",
+        "fig-10",
+        "fig-15"
+      ]
+    },
+    {
+      "id": "supraspinous-fossa",
+      "name": {
+        "en": "Supraspinous fossa",
+        "zh": "冈上窝"
+      },
+      "description": {
+        "en": "The supraspinous fossa is the smaller area on the posterior surface of the scapula, above the scapular spine. The supraspinatus originates here, and the suprascapular nerve crosses the fossa and gives motor branches to that muscle.",
+        "zh": "冈上窝是肩胛骨后面、肩胛冈上方较小的区域。冈上肌起于此处，肩胛上神经横过冈上窝，并向冈上肌发出运动支。"
+      },
+      "sources": [
+        "landmarks-teachme-scapula",
+        "landmarks-kenhub-scapula",
+        "landmarks-statpearls-suprascapular-nerve"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": "supraspinous-fossa",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-02",
+        "fig-06",
+        "fig-09",
+        "fig-10",
+        "fig-16"
+      ]
+    },
+    {
+      "id": "infraspinous-fossa",
+      "name": {
+        "en": "Infraspinous fossa",
+        "zh": "冈下窝"
+      },
+      "description": {
+        "en": "The infraspinous fossa is the larger area on the posterior surface of the scapula, below the scapular spine. The infraspinatus originates here, and the suprascapular nerve enters the fossa through the spinoglenoid notch to supply that muscle.",
+        "zh": "冈下窝是肩胛骨后面、肩胛冈下方较大的区域。冈下肌起于此处，肩胛上神经经冈盂切迹进入冈下窝，支配冈下肌。"
+      },
+      "sources": [
+        "landmarks-teachme-scapula",
+        "landmarks-kenhub-scapula",
+        "landmarks-statpearls-suprascapular-nerve"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": "infraspinous-fossa",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-03",
+        "fig-06",
+        "fig-09",
+        "fig-10",
+        "fig-16"
+      ]
+    },
+    {
+      "id": "subscapular-fossa",
+      "name": {
+        "en": "Subscapular fossa",
+        "zh": "肩胛下窝"
+      },
+      "description": {
+        "en": "The subscapular fossa is the large concave depression that covers most of the costal (anterior) surface of the scapula, which faces the rib cage. The subscapularis originates from it.",
+        "zh": "肩胛下窝是肩胛骨肋面（前面）上的大片凹陷，占据该面的大部分；肋面朝向胸廓。肩胛下肌起于肩胛下窝。"
+      },
+      "sources": [
+        "landmarks-teachme-scapula",
+        "landmarks-kenhub-scapula"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": null,
+      "modelUnavailableReason": {
+        "en": "The 3D model has no separate marker for this landmark; select the scapula to see the bone.",
+        "zh": "三维模型没有单独标记这一结构；请选择肩胛骨查看所在骨骼。"
+      },
+      "diagramIds": [
+        "fig-05",
+        "fig-09",
+        "fig-10"
+      ]
+    },
+    {
+      "id": "acromion",
+      "name": {
+        "en": "Acromion",
+        "zh": "肩峰"
+      },
+      "description": {
+        "en": "The acromion is the lateral extension of the scapular spine that arches over the glenohumeral joint and articulates with the clavicle. The supraspinatus tendon passes beneath it, and part of the deltoid originates from it.",
+        "zh": "肩峰是肩胛冈向外侧的延伸，呈弓形覆盖在盂肱关节上方，并与锁骨相关节。冈上肌腱从肩峰下方经过，三角肌也有一部分起于肩峰。"
+      },
+      "sources": [
+        "landmarks-teachme-scapula",
+        "landmarks-kenhub-scapula",
+        "landmarks-kenhub-supraspinatus"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": "acromion",
+      "modelUnavailableReason": null,
+      "diagramIds": [
+        "fig-01",
+        "fig-09",
+        "fig-10",
+        "fig-11",
+        "fig-13",
+        "fig-15",
+        "fig-16"
+      ]
+    },
+    {
+      "id": "glenoid",
+      "name": {
+        "en": "Glenoid cavity",
+        "zh": "关节盂"
+      },
+      "description": {
+        "en": "The glenoid cavity is the shallow socket at the upper end of the lateral border of the scapula, inferior to the coracoid process, where the head of the humerus articulates to form the glenohumeral joint. The rotator cuff muscles help stabilize the humeral head in this socket.",
+        "zh": "关节盂是肩胛骨外侧缘上端、喙突下方的浅窝，与肱骨头相关节，构成盂肱关节。肩袖肌群帮助将肱骨头稳定在关节盂内。"
+      },
+      "sources": [
+        "landmarks-teachme-scapula",
+        "landmarks-kenhub-scapula",
+        "landmarks-teachme-shoulder-joint"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": null,
+      "modelUnavailableReason": {
+        "en": "The 3D model has no separate marker for this landmark; select the scapula to see the bone.",
+        "zh": "三维模型没有单独标记这一结构；请选择肩胛骨查看所在骨骼。"
+      },
+      "diagramIds": [
+        "fig-10"
+      ]
+    },
+    {
+      "id": "suprascapular-notch",
+      "name": {
+        "en": "Suprascapular notch",
+        "zh": "肩胛上切迹"
+      },
+      "description": {
+        "en": "The suprascapular notch lies just medial to the coracoid process, where the superior border of the scapula meets the base of the coracoid process. The suprascapular nerve passes through it beneath the superior transverse scapular ligament before supplying the supraspinatus and infraspinatus, so compression here can affect both muscles.",
+        "zh": "肩胛上切迹位于喙突内侧，即肩胛骨上缘与喙突基底部相接处。肩胛上神经从肩胛上横韧带下方穿过此切迹，随后支配冈上肌和冈下肌，因此在此处受压可同时累及这两块肌肉。"
+      },
+      "sources": [
+        "landmarks-kenhub-scapula",
+        "landmarks-kenhub-suprascapular-nerve",
+        "landmarks-statpearls-suprascapular-nerve",
+        "landmarks-radiopaedia-scapula"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": null,
+      "modelUnavailableReason": {
+        "en": "The 3D model has no separate marker for this landmark; select the scapula to see the bone.",
+        "zh": "三维模型没有单独标记这一结构；请选择肩胛骨查看所在骨骼。"
+      },
+      "diagramIds": [
+        "fig-06",
+        "fig-15",
+        "fig-16"
+      ]
+    },
+    {
+      "id": "spinoglenoid-notch",
+      "name": {
+        "en": "Spinoglenoid notch",
+        "zh": "冈盂切迹"
+      },
+      "description": {
+        "en": "The spinoglenoid notch lies on the back of the scapula, behind the scapular neck and beneath the acromion, and connects the supraspinous and infraspinous fossae. The suprascapular nerve curves around the lateral border of the scapular spine through this notch into the infraspinous fossa to supply the infraspinatus, so compression here can cause isolated atrophy of the infraspinatus while the supraspinatus is spared.",
+        "zh": "冈盂切迹位于肩胛骨后面，在肩胛颈后方、肩峰下方，连通冈上窝和冈下窝。肩胛上神经绕过肩胛冈外侧缘，经此切迹进入冈下窝，支配冈下肌；因此在此处受压可只引起冈下肌萎缩，而冈上肌不受累。"
+      },
+      "sources": [
+        "landmarks-radiopaedia-scapula",
+        "landmarks-statpearls-scapula",
+        "landmarks-statpearls-suprascapular-nerve",
+        "landmarks-kenhub-suprascapular-nerve"
+      ],
+      "modelTermId": "scapula",
+      "viewerLandmarkId": null,
+      "modelUnavailableReason": {
+        "en": "The 3D model has no separate marker for this landmark; select the scapula to see the bone.",
+        "zh": "三维模型没有单独标记这一结构；请选择肩胛骨查看所在骨骼。"
+      },
+      "diagramIds": [
+        "fig-06",
+        "fig-15",
+        "fig-16"
+      ]
+    },
+    {
+      "id": "quadrangular-space",
+      "name": {
+        "en": "Quadrangular space",
+        "zh": "四边孔"
+      },
+      "description": {
+        "en": "The quadrangular space is a gap in the posterior axilla, bounded by the teres minor superiorly, the teres major inferiorly, the long head of the triceps brachii medially and the surgical neck of the humerus laterally. The axillary nerve passes through it with the posterior circumflex humeral artery before supplying the teres minor and the deltoid.",
+        "zh": "四边孔是腋区后部的间隙，上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉一起穿过四边孔，随后支配小圆肌和三角肌。"
+      },
+      "sources": [
+        "landmarks-teachme-quadrangular-space",
+        "landmarks-teachme-axillary-nerve"
+      ],
+      "modelTermId": null,
+      "viewerLandmarkId": null,
+      "modelUnavailableReason": {
+        "en": "The 3D model has no separate marker for this space; select the teres minor or the humerus to see its superior and lateral borders.",
+        "zh": "三维模型没有单独标记四边孔；可选择小圆肌或肱骨，查看它的上界和外界。"
+      },
+      "diagramIds": [
+        "fig-07",
+        "fig-17"
+      ]
+    }
+  ],
+  "acupoints": [
+    {
+      "id": "si11",
+      "code": "SI11",
+      "name": {
+        "en": "Tianzong",
+        "zh": "天宗"
+      },
+      "location": {
+        "en": "In the depression at the junction of the upper one third and the lower two thirds of the line connecting the midpoint of the scapular spine with the inferior angle of the scapula.",
+        "zh": "肩胛冈中点与肩胛下角连线上 1/3 与下 2/3 交点凹陷中。"
+      },
+      "layers": {
+        "en": "Infraspinatus",
+        "zh": "冈下肌"
+      },
+      "target": {
+        "en": "Infraspinatus trigger point, referring deep into the anterior shoulder",
+        "zh": "冈下肌触发点，牵涉到肩前深部"
+      },
+      "howToFind": {
+        "en": "Palpate the centre of the infraspinous fossa; with the elbow flexed to 90°, have the person externally rotate against resistance, and the whole infraspinatus bulges.",
+        "zh": "在冈下窝中央触摸；屈肘 90° 做抗阻外旋，整片冈下肌鼓起来。"
+      },
+      "safety": {
+        "en": "Bone lies deep to the point, so it is relatively safe.",
+        "zh": "深面是骨面，较安全。"
+      },
+      "modelPointId": "SI11",
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "si12",
+      "code": "SI12",
+      "name": {
+        "en": "Bingfeng",
+        "zh": "秉风"
+      },
+      "location": {
+        "en": "Superior to the midpoint of the scapular spine, in the supraspinous fossa.",
+        "zh": "肩胛冈中点上方，冈上窝中。"
+      },
+      "layers": {
+        "en": "Trapezius → supraspinatus",
+        "zh": "斜方肌 → 冈上肌"
+      },
+      "target": {
+        "en": "Supraspinatus trigger point, referring to the lateral deltoid",
+        "zh": "冈上肌触发点，牵涉到三角肌外侧"
+      },
+      "howToFind": {
+        "en": "Press into the fossa above the midpoint of the scapular spine; with the arm at 15° of abduction, have the person abduct against resistance, and you can feel the supraspinatus tighten.",
+        "zh": "在肩胛冈中点上方的窝里按下去；让他手臂抗阻外展 15°，能摸到冈上肌收紧。"
+      },
+      "safety": {
+        "en": "The suprascapular nerve and blood vessels lie deep to the point.",
+        "zh": "深面有肩胛上神经和血管。"
+      },
+      "modelPointId": "SI12",
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "si13",
+      "code": "SI13",
+      "name": {
+        "en": "Quyuan",
+        "zh": "曲垣"
+      },
+      "location": {
+        "en": "In the depression at the superior border of the medial end of the scapular spine.",
+        "zh": "肩胛冈内侧端上缘凹陷中。"
+      },
+      "layers": {
+        "en": "Trapezius → supraspinatus (medial part)",
+        "zh": "斜方肌 → 冈上肌（内侧）"
+      },
+      "target": {
+        "en": "Medial part of the supraspinatus",
+        "zh": "冈上肌内侧"
+      },
+      "howToFind": {
+        "en": "SI13 is located at the midpoint of the line connecting Naoshu (SI10) with the spinous process of the second thoracic vertebra (T2).",
+        "zh": "臑俞（SI10）与第2胸椎棘突连线的中点处。"
+      },
+      "safety": {
+        "en": "Do not needle deeply in an inferomedial direction.",
+        "zh": "勿向内下深刺。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "li16",
+      "code": "LI16",
+      "name": {
+        "en": "Jugu",
+        "zh": "巨骨"
+      },
+      "location": {
+        "en": "In the depression between the acromial end of the clavicle and the scapular spine.",
+        "zh": "锁骨肩峰端与肩胛冈之间凹陷中。"
+      },
+      "layers": {
+        "en": "Trapezius → supraspinatus",
+        "zh": "斜方肌 → 冈上肌"
+      },
+      "target": {
+        "en": "Supraspinatus (superior approach)",
+        "zh": "冈上肌（上方入路）"
+      },
+      "howToFind": {
+        "en": "The point lies in the depression between the two bones at the lateral end of the supraspinous fossa.",
+        "zh": "冈上窝外端两骨间凹陷中。"
+      },
+      "safety": {
+        "en": "Use oblique insertion and do not needle deeply.",
+        "zh": "宜斜刺，勿深刺。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "si10",
+      "code": "SI10",
+      "name": {
+        "en": "Naoshu",
+        "zh": "臑俞"
+      },
+      "location": {
+        "en": "Directly above the upper end of the posterior axillary fold, in the depression at the inferior border of the scapular spine.",
+        "zh": "腋后纹头直上，肩胛冈下缘凹陷中。"
+      },
+      "layers": {
+        "en": "Posterior deltoid → infraspinatus",
+        "zh": "三角肌后部 → 冈下肌"
+      },
+      "target": {
+        "en": "Lateral part of the infraspinatus; posterior deltoid",
+        "zh": "冈下肌外侧、三角肌后束"
+      },
+      "howToFind": null,
+      "safety": {
+        "en": "No specific safety caution is recorded for this point.",
+        "zh": "该穴位未记录特定安全提示。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "si9",
+      "code": "SI9",
+      "name": {
+        "en": "Jianzhen",
+        "zh": "肩贞"
+      },
+      "location": {
+        "en": "Posteroinferior to the shoulder joint, 1 B-cun directly above the upper end of the posterior axillary fold.",
+        "zh": "肩关节后下方，腋后纹头直上 1 寸。"
+      },
+      "layers": {
+        "en": "Posterior border of the deltoid → teres minor and teres major",
+        "zh": "三角肌后缘 → 小圆肌、大圆肌"
+      },
+      "target": {
+        "en": "Teres minor trigger point",
+        "zh": "小圆肌触发点"
+      },
+      "howToFind": {
+        "en": "Palpate above the upper end of the posterior axillary fold, along the lateral border of the scapula; the teres minor contracts during resisted external rotation, as the infraspinatus does, and lies against the inferior border of the infraspinatus.",
+        "zh": "在腋后纹头上方、肩胛骨外侧缘触摸；小圆肌与冈下肌一样在抗阻外旋时收缩，紧贴冈下肌下缘。"
+      },
+      "safety": {
+        "en": "The quadrangular space lies deep to the point, with the axillary nerve and the posterior circumflex humeral artery.",
+        "zh": "深面为四边孔，有腋神经和旋肱后动脉。"
+      },
+      "modelPointId": "SI9",
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "te14",
+      "code": "TE14",
+      "name": {
+        "en": "Jianliao",
+        "zh": "肩髎"
+      },
+      "location": {
+        "en": "On the shoulder girdle, in the depression between the acromial angle and the greater tubercle of the humerus.",
+        "zh": "在肩带部，肩峰角与肱骨大结节两骨间凹陷中。"
+      },
+      "layers": {
+        "en": "Deltoid → near the infraspinatus and the teres minor tendon",
+        "zh": "三角肌 → 冈下肌、小圆肌腱附近"
+      },
+      "target": {
+        "en": "Posterior deltoid",
+        "zh": "三角肌后束"
+      },
+      "howToFind": {
+        "en": "With the arm flexed and abducted, two depressions appear at the anterior and posterior ends of the lateral border of the acromion; the deeper anterior depression is Jianyu (LI15) and the posterior depression is this point. With the arm hanging at the side, the point is about 1 B-cun posterior to Jianyu (LI15).",
+        "zh": "屈臂外展时，肩峰外侧缘前后端呈现两个凹陷，前一较深凹陷为肩髃（LI15），后一凹陷即本穴。垂肩时，肩髃（LI15）后约1寸。"
+      },
+      "safety": {
+        "en": "No specific safety caution is recorded for this point.",
+        "zh": "该穴位未记录特定安全提示。"
+      },
+      "modelPointId": "TE14",
+      "sources": [
+        "acupoints-gbt-12346-2021"
+      ]
+    },
+    {
+      "id": "li15",
+      "code": "LI15",
+      "name": {
+        "en": "Jianyu",
+        "zh": "肩髃"
+      },
+      "location": {
+        "en": "In the depression between the anterior end of the lateral border of the acromion and the greater tubercle of the humerus.",
+        "zh": "肩峰外侧缘前端与肱骨大结节两骨间凹陷中。"
+      },
+      "layers": {
+        "en": "Deltoid → supraspinatus tendon and subacromial bursa",
+        "zh": "三角肌 → 冈上肌腱、肩峰下滑囊"
+      },
+      "target": {
+        "en": "Anterior and middle deltoid; the point closest to the site of subacromial pain",
+        "zh": "三角肌前、中束；最贴近肩峰下疼痛部位"
+      },
+      "howToFind": {
+        "en": "With the arm flexed and abducted, two depressions appear at the anterior and posterior ends of the lateral border of the acromion; the deeper anterior depression is this point, and the posterior depression is Jianliao (TE14).",
+        "zh": "屈臂外展，肩峰外侧缘前后端呈现两个凹陷，前一较深凹陷即本穴，后一凹陷为肩髎（TE14）。"
+      },
+      "safety": {
+        "en": "No specific safety caution is recorded for this point.",
+        "zh": "该穴位未记录特定安全提示。"
+      },
+      "modelPointId": "LI15",
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "ht1",
+      "code": "HT1",
+      "name": {
+        "en": "Jiquan",
+        "zh": "极泉"
+      },
+      "location": {
+        "en": "At the centre of the axilla, where the pulse of the axillary artery can be felt.",
+        "zh": "腋窝中央，腋动脉搏动处。"
+      },
+      "layers": {
+        "en": "Axillary fat → deep, near the subscapularis",
+        "zh": "腋窝脂肪 → 深面近肩胛下肌"
+      },
+      "target": {
+        "en": "Subscapularis (axillary approach)",
+        "zh": "肩胛下肌（腋窝入路）"
+      },
+      "howToFind": {
+        "en": "To palpate the subscapularis through the Jiquan (axillary) approach: with the person supine and the arm slightly abducted, press from the posterior wall of the axilla toward the anterior surface of the scapula, and have the person internally rotate against resistance.",
+        "zh": "经极泉（腋窝）入路触诊肩胛下肌：仰卧，手臂稍外展，从腋窝后壁朝肩胛骨前面按；让他抗阻内旋。"
+      },
+      "safety": {
+        "en": "The axillary artery and the brachial plexus lie here; this point requires specialised training.",
+        "zh": "此处有腋动脉和臂丛；需专门训练。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "jiaji-c5-c6",
+      "code": "Jiaji (C5–C6)",
+      "name": {
+        "en": "Cervical Jiaji",
+        "zh": "颈夹脊"
+      },
+      "location": {
+        "en": "On both sides of the spinous processes of the C5 and C6 vertebrae, 0.5 B-cun lateral to the posterior median line.",
+        "zh": "C5、C6 椎骨棘突两侧，后正中线旁开 0.5 寸。"
+      },
+      "layers": null,
+      "target": null,
+      "howToFind": null,
+      "safety": {
+        "en": "The tissue deep to the point lies close to where the C5 and C6 nerve roots exit.",
+        "zh": "深面靠近 C5、C6 神经根出口。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-ajtr-2024-cervical-jiaji"
+      ]
+    },
+    {
+      "id": "st12",
+      "code": "ST12",
+      "name": {
+        "en": "Quepen",
+        "zh": "缺盆"
+      },
+      "location": {
+        "en": "In the anterior region of the neck, in the greater supraclavicular fossa, 4 B-cun lateral to the anterior median line, in the depression superior to the clavicle.",
+        "zh": "在颈前部，锁骨上大窝，锁骨上缘凹陷中，前正中线旁开4寸。"
+      },
+      "layers": null,
+      "target": null,
+      "howToFind": null,
+      "safety": {
+        "en": "The superior and middle trunks of the brachial plexus, the subclavian artery and the apex of the lung lie deep to the point; deep needling is prohibited.",
+        "zh": "深面有臂丛上干和中干、锁骨下动脉、肺尖；禁深刺。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021",
+        "clinical-who-2008-acupoint-locations"
+      ]
+    },
+    {
+      "id": "gb21",
+      "code": "GB21",
+      "name": {
+        "en": "Jianjing",
+        "zh": "肩井"
+      },
+      "location": {
+        "en": "In the posterior region of the neck, at the midpoint of the line connecting the spinous process of the seventh cervical vertebra (C7) with the most lateral point of the acromion.",
+        "zh": "在颈后部，第7颈椎棘突与肩峰最外侧点连线的中点。"
+      },
+      "layers": null,
+      "target": {
+        "en": "Upper trapezius",
+        "zh": "上斜方肌"
+      },
+      "howToFind": null,
+      "safety": {
+        "en": "The apex of the lung lies deep to the point; deep needling is prohibited.",
+        "zh": "深面为肺尖，禁深刺。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021"
+      ]
+    },
+    {
+      "id": "gb23",
+      "code": "GB23",
+      "name": {
+        "en": "Zhejin",
+        "zh": "辄筋"
+      },
+      "location": {
+        "en": "In the lateral thoracic region, in the fourth intercostal space, 1 B-cun anterior to the midaxillary line.",
+        "zh": "在侧胸部，第4肋间隙中，腋中线前1寸。"
+      },
+      "layers": null,
+      "target": {
+        "en": "Serratus anterior",
+        "zh": "前锯肌"
+      },
+      "howToFind": null,
+      "safety": {
+        "en": "The pleura lies deep to the point; use horizontal (transverse) insertion.",
+        "zh": "深面为胸膜，宜平刺。"
+      },
+      "modelPointId": null,
+      "sources": [
+        "acupoints-gbt-12346-2021"
+      ]
+    }
+  ],
+  "diagrams": [
+    {
+      "id": "fig-01",
+      "file": "figures/01-右肩的后面观与前面观.svg",
+      "alt": {
+        "en": "Posterior and anterior views of the right shoulder: muscles and bony landmarks.",
+        "zh": "右肩后面观与前面观：肌肉和骨性标志。"
+      },
+      "caption": {
+        "en": "Posterior and anterior views of the right shoulder: muscles and bony landmarks.",
+        "zh": "右肩后面观与前面观：肌肉和骨性标志。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinatus",
+            "zh": "冈上肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Infraspinatus",
+            "zh": "冈下肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Teres minor",
+            "zh": "小圆肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Subscapularis",
+            "zh": "肩胛下肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Greater tubercle",
+            "zh": "大结节"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lesser tubercle",
+            "zh": "小结节"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis",
+        "elsevier-deltoid"
+      ]
+    },
+    {
+      "id": "fig-02",
+      "file": "figures/02-冈上肌位置示意.svg",
+      "alt": {
+        "en": "Supraspinatus: origin and insertion.",
+        "zh": "冈上肌起点与止点。"
+      },
+      "caption": {
+        "en": "Posterior view. The supraspinatus originates from the supraspinous fossa of the scapula (O) and inserts onto the superior facet of the greater tubercle of the humerus (I). Attachment areas are schematic, and the dashed arrow maps origin to insertion rather than showing a force vector.",
+        "zh": "后面观。冈上肌起自肩胛骨冈上窝（O），止于肱骨大结节上小面（I）。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "supraspinatus",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "supraspinatus",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinous fossa of scapula",
+            "zh": "肩胛骨冈上窝"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior facet of the greater tubercle of humerus",
+            "zh": "肱骨大结节上小面"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-supraspinatus"
+      ]
+    },
+    {
+      "id": "fig-03",
+      "file": "figures/03-冈下肌位置示意.svg",
+      "alt": {
+        "en": "Infraspinatus: origin and insertion.",
+        "zh": "冈下肌起点与止点。"
+      },
+      "caption": {
+        "en": "Posterior view. The infraspinatus originates from the infraspinous fossa of the scapula (O) and inserts onto the middle facet of the greater tubercle of the humerus (I). Attachment areas are schematic, and the dashed arrow maps origin to insertion rather than showing a force vector.",
+        "zh": "后面观。冈下肌起自肩胛骨冈下窝（O），止于肱骨大结节中小面（I）。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "infraspinatus",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "infraspinatus",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Infraspinous fossa of scapula",
+            "zh": "肩胛骨冈下窝"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Middle facet of the greater tubercle of humerus",
+            "zh": "肱骨大结节中小面"
+          }
+        }
+      ],
+      "sources": [
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor"
+      ]
+    },
+    {
+      "id": "fig-04",
+      "file": "figures/04-小圆肌位置示意.svg",
+      "alt": {
+        "en": "Teres minor: origin and insertion.",
+        "zh": "小圆肌起点与止点。"
+      },
+      "caption": {
+        "en": "Posterior view. The teres minor originates from the upper part of the lateral border of the scapula (O) and inserts onto the inferior facet of the greater tubercle of the humerus (I). Attachment areas are schematic, and the dashed arrow maps origin to insertion rather than showing a force vector.",
+        "zh": "后面观。小圆肌起自肩胛骨外侧缘上部（O），止于肱骨大结节下小面（I）。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "teres-minor",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "teres-minor",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lateral border of scapula",
+            "zh": "肩胛骨外侧缘"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Inferior facet of the greater tubercle of humerus",
+            "zh": "肱骨大结节下小面"
+          }
+        }
+      ],
+      "sources": [
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor"
+      ]
+    },
+    {
+      "id": "fig-05",
+      "file": "figures/05-肩胛下肌位置示意.svg",
+      "alt": {
+        "en": "Subscapularis: origin and insertion.",
+        "zh": "肩胛下肌起点与止点。"
+      },
+      "caption": {
+        "en": "Anterior view. The subscapularis originates from the subscapular fossa on the anterior surface of the scapula (O) and inserts onto the lesser tubercle of the humerus (I). Attachment areas are schematic, and the dashed arrow maps origin to insertion rather than showing a force vector.",
+        "zh": "前面观。肩胛下肌起自肩胛骨前面的肩胛下窝（O），止于肱骨小结节（I）。附着区域为示意，虚线箭头表示起点到止点的附着关系，并非力矢量。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "subscapularis",
+          "text": {
+            "en": "Origin",
+            "zh": "起点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "subscapularis",
+          "text": {
+            "en": "Insertion",
+            "zh": "止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Subscapular fossa of scapula",
+            "zh": "肩胛骨肩胛下窝"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lesser tubercle of humerus",
+            "zh": "肱骨小结节"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-subscapularis"
+      ]
+    },
+    {
+      "id": "fig-06",
+      "file": "figures/06-肩胛上神经走行.svg",
+      "alt": {
+        "en": "Suprascapular nerve pathway.",
+        "zh": "肩胛上神经走行。"
+      },
+      "caption": {
+        "en": "A compact route map to accompany the anatomy drawing.",
+        "zh": "与解剖图配套的简明走行图。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Suprascapular nerve",
+            "zh": "肩胛上神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior trunk",
+            "zh": "上干"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Suprascapular notch",
+            "zh": "肩胛上切迹"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinous fossa",
+            "zh": "冈上窝"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Spinoglenoid notch",
+            "zh": "冈盂切迹"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Infraspinous fossa",
+            "zh": "冈下窝"
+          }
+        }
+      ],
+      "sources": [
+        "utah-upper-limb-syllabus",
+        "utah-unit4-limbs",
+        "ncbi-cervical-nerves",
+        "muscles-statpearls-suprascapular-nerve"
+      ]
+    },
+    {
+      "id": "fig-07",
+      "file": "figures/07-腋神经与四边孔.svg",
+      "alt": {
+        "en": "Axillary nerve branching pathway.",
+        "zh": "腋神经分支通路。"
+      },
+      "caption": {
+        "en": "A compact route map to accompany the anatomy drawing.",
+        "zh": "与解剖图配套的简明走行图。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Axillary nerve",
+            "zh": "腋神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Posterior cord",
+            "zh": "臂丛后束"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Quadrangular space",
+            "zh": "四边孔"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Anterior branch",
+            "zh": "前支"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Posterior branch",
+            "zh": "后支"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Teres minor and posterior Deltoid",
+            "zh": "小圆肌与三角肌后部"
+          }
+        }
+      ],
+      "sources": [
+        "utah-unit4-limbs",
+        "landmarks-teachme-axillary-nerve",
+        "axillary-branch-pattern",
+        "axillary-deltoid-mapping"
+      ]
+    },
+    {
+      "id": "fig-08",
+      "file": "figures/08-臂丛全景.svg",
+      "alt": {
+        "en": "Vertebrae, spinal nerve levels, and branches of the brachial plexus are labeled separately.",
+        "zh": "椎骨、脊神经节段及臂丛分支分别标注。"
+      },
+      "caption": {
+        "en": "Vertebrae, spinal nerve levels, and branches of the brachial plexus are labeled separately.",
+        "zh": "椎骨、脊神经节段及臂丛分支分别标注。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "C5 cervical vertebra",
+            "zh": "第5颈椎"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "C5 cervical nerve",
+            "zh": "第5颈神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior trunk",
+            "zh": "上干"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Posterior cord",
+            "zh": "后束"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Suprascapular nerve",
+            "zh": "肩胛上神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Axillary nerve",
+            "zh": "腋神经"
+          }
+        }
+      ],
+      "sources": [
+        "utah-upper-limb-syllabus",
+        "utah-unit4-limbs",
+        "ncbi-cervical-nerves",
+        "ncbi-cervical-vertebrae",
+        "elsevier-subscapularis",
+        "statpearls-serratus-anterior",
+        "diagrams-elsevier-trapezius-descending",
+        "diagrams-elsevier-trapezius-ascending",
+        "muscles-statpearls-trapezius"
+      ]
+    },
+    {
+      "id": "fig-09",
+      "file": "figures/09-从力线理解外旋-内旋与外展.svg",
+      "alt": {
+        "en": "Solid arrows show muscle pull; the separate O → I panel lists attachments.",
+        "zh": "实线箭头表示肌肉拉力；独立的 O → I 面板列出起止点。"
+      },
+      "caption": {
+        "en": "Solid arrows show muscle pull; the separate O → I panel lists attachments.",
+        "zh": "实线箭头表示肌肉拉力；独立的 O → I 面板列出起止点。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Greater tubercle",
+            "zh": "大结节"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lesser tubercle",
+            "zh": "小结节"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "External rotation",
+            "zh": "外旋"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Internal rotation",
+            "zh": "内旋"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Abduction",
+            "zh": "外展"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Middle Deltoid",
+            "zh": "三角肌中束"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis",
+        "elsevier-deltoid"
+      ]
+    },
+    {
+      "id": "fig-10",
+      "file": "figures/10-肩袖与三角肌的配合.svg",
+      "alt": {
+        "en": "Glenohumeral force couple: deltoid and rotator cuff, with an attachment reference panel.",
+        "zh": "盂肱关节力偶：三角肌与肩袖；下方附起止点对照。"
+      },
+      "caption": {
+        "en": "Glenohumeral force couple: deltoid and rotator cuff, with an attachment reference panel.",
+        "zh": "盂肱关节力偶：三角肌与肩袖；下方附起止点对照。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "deltoid",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "deltoid",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Acromion",
+            "zh": "肩峰"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Glenoid cavity",
+            "zh": "关节盂"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Deltoid",
+            "zh": "三角肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinatus",
+            "zh": "冈上肌"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-deltoid",
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis"
+      ]
+    },
+    {
+      "id": "fig-11",
+      "file": "figures/11-肩胛骨上旋的力偶.svg",
+      "alt": {
+        "en": "Scapular upward rotation: trapezius and serratus anterior. Visible insertion regions are marked I.",
+        "zh": "肩胛骨上旋：斜方肌与前锯肌。图中显示的止点区域用 I 标记。"
+      },
+      "caption": {
+        "en": "Scapular upward rotation: trapezius and serratus anterior. Visible insertion regions are marked I.",
+        "zh": "肩胛骨上旋：斜方肌与前锯肌。图中显示的止点区域用 I 标记。"
+      },
+      "labels": [
+        {
+          "kind": "origin",
+          "muscleId": "upper-trapezius",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "upper-trapezius",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "origin",
+          "muscleId": "lower-trapezius",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "lower-trapezius",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "origin",
+          "muscleId": "serratus-anterior",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "insertion",
+          "muscleId": "serratus-anterior",
+          "text": {
+            "en": "Origin → insertion",
+            "zh": "起点 → 止点"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Upper Trapezius",
+            "zh": "上斜方肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lower Trapezius",
+            "zh": "下斜方肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lower Serratus anterior",
+            "zh": "前锯肌下部"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Upward rotation",
+            "zh": "上旋"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Accessory nerve",
+            "zh": "副神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Long thoracic nerve",
+            "zh": "胸长神经"
+          }
+        }
+      ],
+      "sources": [
+        "diagrams-elsevier-trapezius-descending",
+        "diagrams-elsevier-trapezius-ascending",
+        "muscles-statpearls-trapezius",
+        "statpearls-serratus-anterior"
+      ]
+    },
+    {
+      "id": "fig-12",
+      "file": "figures/12-0--30--90--180-肩肱节律.svg",
+      "alt": {
+        "en": "A schematic of arm elevation from 0° to 180°.",
+        "zh": "0° 至 180° 手臂上举示意。"
+      },
+      "caption": {
+        "en": "A schematic of arm elevation from 0° to 180°.",
+        "zh": "0° 至 180° 手臂上举示意。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Setting phase",
+            "zh": "定位期"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Glenohumeral 120° + Scapular 60°",
+            "zh": "盂肱 120° + 肩胛 60°"
+          }
+        }
+      ],
+      "sources": [
+        "diagrams-physiopedia-scapulohumeral-rhythm"
+      ]
+    },
+    {
+      "id": "fig-13",
+      "file": "figures/13-肌肉发力时间轴.svg",
+      "alt": {
+        "en": "Schematic activation trends, not exact EMG values.",
+        "zh": "一般性肌肉参与趋势示意，不是精确肌电数值。"
+      },
+      "caption": {
+        "en": "Schematic activation trends, not exact EMG values.",
+        "zh": "一般性肌肉参与趋势示意，不是精确肌电数值。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Painful arc",
+            "zh": "疼痛弧"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Middle Deltoid",
+            "zh": "三角肌中束"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinatus",
+            "zh": "冈上肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Serratus anterior",
+            "zh": "前锯肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Upper Trapezius",
+            "zh": "上斜方肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lower Trapezius",
+            "zh": "下斜方肌"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-deltoid",
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis",
+        "diagrams-elsevier-trapezius-descending",
+        "diagrams-elsevier-trapezius-ascending",
+        "muscles-statpearls-trapezius",
+        "statpearls-serratus-anterior",
+        "diagrams-physiopedia-painful-arc",
+        "movement-kenhub-shoulder-joint"
+      ]
+    },
+    {
+      "id": "fig-14",
+      "file": "figures/14-腋神经徽章区与临床对应.svg",
+      "alt": {
+        "en": "Axillary nerve: the regimental badge area and its clinical correlations.",
+        "zh": "腋神经：徽章区与临床对应。"
+      },
+      "caption": {
+        "en": "The sensory area of the axillary nerve, myotomes, and sites of injury.",
+        "zh": "腋神经的感觉区域、肌节与损伤部位。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Regimental badge area",
+            "zh": "徽章区"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior lateral cutaneous nerve of arm",
+            "zh": "臂外上侧皮神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Axillary nerve",
+            "zh": "腋神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Deltoid",
+            "zh": "三角肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Erb palsy",
+            "zh": "Erb 麻痹"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Long thoracic nerve",
+            "zh": "胸长神经"
+          }
+        }
+      ],
+      "sources": [
+        "axillary-branch-pattern",
+        "axillary-deltoid-mapping",
+        "utah-unit4-limbs",
+        "landmarks-teachme-axillary-nerve",
+        "ncbi-cervical-nerves",
+        "statpearls-serratus-anterior"
+      ]
+    },
+    {
+      "id": "fig-15",
+      "file": "figures/15-右肩肌肉-神经与穴位叠加图.svg",
+      "alt": {
+        "en": "Right shoulder: muscles, nerves and acupoints overlaid on the same drawing.",
+        "zh": "右肩肌肉、神经与穴位叠加图。"
+      },
+      "caption": {
+        "en": "Red dots mark acupoints and gold lines show nerve pathways; the views match the anatomy figure in Section 01.",
+        "zh": "红点为穴位，金色线为神经走行；视角与第 01 节解剖图一致。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Suprascapular nerve",
+            "zh": "肩胛上神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Axillary nerve (quadrangular space)",
+            "zh": "腋神经（四边孔）"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Tianzong · SI11",
+            "zh": "天宗"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Jianzhen · SI9",
+            "zh": "肩贞"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Jianyu · LI15",
+            "zh": "肩髃"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Jiquan · HT1",
+            "zh": "极泉"
+          }
+        }
+      ],
+      "sources": [
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis",
+        "elsevier-deltoid",
+        "utah-upper-limb-syllabus",
+        "utah-unit4-limbs",
+        "muscles-statpearls-suprascapular-nerve",
+        "landmarks-teachme-axillary-nerve",
+        "clinical-who-2008-acupoint-locations",
+        "acupoints-gbt-12346-2021"
+      ]
+    },
+    {
+      "id": "fig-16",
+      "file": "figures/16-肩胛上神经-后肩解剖.svg",
+      "alt": {
+        "en": "Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.",
+        "zh": "右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。"
+      },
+      "caption": {
+        "en": "Posterior view of the right shoulder. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch, and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.",
+        "zh": "右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Suprascapular nerve",
+            "zh": "肩胛上神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Supraspinatus",
+            "zh": "冈上肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Infraspinatus",
+            "zh": "冈下肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Scapular spine",
+            "zh": "肩胛冈"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Through the suprascapular notch",
+            "zh": "穿过肩胛上切迹"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Around the spinoglenoid notch",
+            "zh": "绕过冈盂切迹"
+          }
+        }
+      ],
+      "sources": [
+        "utah-upper-limb-syllabus",
+        "utah-unit4-limbs",
+        "ncbi-cervical-nerves",
+        "muscles-statpearls-suprascapular-nerve"
+      ]
+    },
+    {
+      "id": "fig-17",
+      "file": "figures/17-腋神经-四边孔解剖.svg",
+      "alt": {
+        "en": "Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.",
+        "zh": "移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。"
+      },
+      "caption": {
+        "en": "Posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially, and the surgical neck of the Humerus laterally. The axillary nerve and posterior circumflex humeral artery pass through it.",
+        "zh": "移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。"
+      },
+      "labels": [
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Axillary nerve",
+            "zh": "腋神经"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Quadrangular space",
+            "zh": "四边孔"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Superior: Teres minor",
+            "zh": "上界：小圆肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Inferior: Teres major",
+            "zh": "下界：大圆肌"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Medial: long head of Triceps brachii",
+            "zh": "内界：肱三头肌长头"
+          }
+        },
+        {
+          "kind": "structure",
+          "text": {
+            "en": "Lateral: surgical neck of Humerus",
+            "zh": "外界：肱骨外科颈"
+          }
+        }
+      ],
+      "sources": [
+        "utah-unit4-limbs",
+        "landmarks-teachme-quadrangular-space",
+        "landmarks-teachme-axillary-nerve",
+        "axillary-branch-pattern",
+        "axillary-deltoid-mapping"
+      ]
+    }
+  ],
+  "review": [
+    {
+      "id": "q-insertions",
+      "question": {
+        "en": "Which three rotator cuff muscles insert on the greater tubercle, and which muscle inserts on the lesser tubercle?",
+        "zh": "哪三块肩袖肌止于大结节，哪一块止于小结节？"
+      },
+      "answer": {
+        "en": "Supraspinatus, infraspinatus, and teres minor insert on the superior, middle, and inferior facets of the greater tubercle, respectively. Subscapularis inserts on the lesser tubercle. The order on the greater tubercle is therefore supraspinatus, infraspinatus, and teres minor from superior to inferior.",
+        "zh": "冈上肌、冈下肌和小圆肌分别止于大结节的上面、中面和下面。肩胛下肌止于小结节。因此，大结节上从上到下的顺序是冈上肌、冈下肌、小圆肌。"
+      },
+      "sources": [
+        "elsevier-supraspinatus",
+        "muscles-elsevier-infraspinatus",
+        "muscles-elsevier-teres-minor",
+        "elsevier-subscapularis"
+      ]
+    },
+    {
+      "id": "q-external-rotators",
+      "question": {
+        "en": "How does the innervation of infraspinatus differ from that of teres minor, even though both assist external rotation?",
+        "zh": "冈下肌与小圆肌都协助外旋，但二者的神经支配有什么不同？"
+      },
+      "answer": {
+        "en": "Infraspinatus is innervated by the suprascapular nerve, whereas teres minor is innervated by the axillary nerve. A shared action does not imply a shared peripheral nerve supply.",
+        "zh": "冈下肌由肩胛上神经支配，而小圆肌由腋神经支配。具有相同动作，并不意味着由同一条周围神经支配。"
+      },
+      "sources": [
+        "muscles-statpearls-suprascapular-nerve",
+        "landmarks-teachme-axillary-nerve"
+      ]
+    },
+    {
+      "id": "q-suprascapular-compression",
+      "question": {
+        "en": "Why can suprascapular nerve compression at the suprascapular notch affect different muscles from compression at the spinoglenoid notch?",
+        "zh": "为什么肩胛上神经在肩胛上切迹与冈盂切迹受压时，可能累及不同的肌肉？"
+      },
+      "answer": {
+        "en": "The suprascapular nerve passes through the suprascapular notch before supplying supraspinatus and then continues toward infraspinatus through the spinoglenoid notch. Compression at the suprascapular notch can therefore affect both muscles. Compression at the spinoglenoid notch occurs farther along the nerve and may affect infraspinatus while sparing supraspinatus.",
+        "zh": "肩胛上神经先经过肩胛上切迹，再发出支配冈上肌的分支，随后经冈盂切迹继续走向冈下肌。因此，在肩胛上切迹受压可能累及这两块肌肉；在更远端的冈盂切迹受压，则可能累及冈下肌而保留冈上肌的功能。"
+      },
+      "sources": [
+        "muscles-statpearls-suprascapular-nerve",
+        "utah-unit4-limbs"
+      ]
+    },
+    {
+      "id": "q-arm-elevation",
+      "question": {
+        "en": "During arm elevation, how do the rotator cuff muscles and the muscles that move the scapula contribute to shoulder function?",
+        "zh": "上举手臂时，肩袖肌群与带动肩胛骨的肌群分别怎样参与肩部功能？"
+      },
+      "answer": {
+        "en": "The rotator cuff muscles help stabilize and rotate the humeral head at the glenohumeral joint. Serratus anterior and the upper and lower portions of trapezius coordinate scapular upward rotation as the arm elevates. Humeral motion and scapular motion therefore work together during elevation.",
+        "zh": "肩袖肌群帮助在盂肱关节处稳定并转动肱骨头。随着手臂上举，前锯肌与斜方肌的上部、下部协调肩胛骨上旋。因此，上举过程需要肱骨运动与肩胛骨运动相互配合。"
+      },
+      "sources": [
+        "statpearls-serratus-anterior",
+        "muscles-statpearls-trapezius"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "id": "hando-2026-dry-needling",
+      "citation": "Hando BR et al. Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial. JOSPT 2026;56(1):50–63.",
+      "doi": "10.2519/jospt.2025.13460",
+      "title": {
+        "en": "Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial",
+        "zh": "干针联合手法治疗与运动治疗肩峰下疼痛综合征：一项假干针对照随机临床试验"
+      },
+      "byline": "Hando BR et al. · JOSPT 2026;56(1):50–63",
+      "question": {
+        "en": "What additional effect does dry needling have when it is added to manual therapy and exercise for subacromial pain syndrome (SAPS)? The trial compared physical therapy (PT) alone, PT plus sham dry needling (PT + SDN), and PT plus dry needling (PT + DN). The PT comparison estimates the added effect of including dry needling in the treatment program, whereas the sham comparison also accounts for aspects of receiving a needling procedure, so the two comparisons address different questions.",
+        "zh": "在手法治疗与运动治疗的基础上加用干针，对肩峰下疼痛综合征（SAPS）有什么额外效果？试验比较了单纯物理治疗（PT）、物理治疗加假干针（PT + SDN），以及物理治疗加干针（PT + DN）。与 PT 组的比较估计在治疗方案中加入干针的额外效果；与假干针组的比较还考虑了接受针刺程序所涉及的部分因素，因此这两项比较回答的问题不同。"
+      },
+      "design": {
+        "en": "A sham-controlled randomized clinical trial with three groups: PT (manual therapy and exercise), PT + SDN, and PT + DN. This appraisal is based on the results abstract and the public study protocol; the full results article has not been obtained. A protocol records planned methods and cannot establish how the trial was actually conducted. The paper identifies trial registration NCT03442894, but the current registry contents and amendment history have not been verified.",
+        "zh": "这是一项假干针对照随机临床试验，分为三组：PT（手法治疗与运动治疗）、PT + SDN 和 PT + DN。本评价依据结果摘要与公开研究方案，尚未取得结果论文全文。研究方案记录的是计划采用的方法，不能据此确认试验实际怎样执行。论文注明的试验登记号为 NCT03442894，但注册页面的当前内容与修改历史尚未核验。"
+      },
+      "population": {
+        "en": "The results abstract reports 121 participants with subacromial pain syndrome (SAPS). The planned sample in the protocol was 130; this difference is not a count of participants lost to follow-up. Group-specific missingness and reasons for dropout remain unverified.",
+        "zh": "结果摘要报告 121 名肩峰下疼痛综合征（SAPS）患者。研究方案计划的样本量为 130 人；这一差额并不是失访人数。各组缺失数据的分布与退出原因仍未核实。"
+      },
+      "methods": {
+        "en": "All three groups received physical therapy consisting of manual therapy and exercise; two groups additionally received sham dry needling or dry needling. The primary outcome was the Shoulder Pain and Disability Index (SPADI) at 1 year; secondary outcomes included the Patient Acceptable Symptom State (PASS) and additional shoulder-related care within 1 year. The protocol planned sequentially numbered, opaque, sealed envelopes for allocation concealment, blinding of participants receiving real or sham needling to that distinction, and analysis in the originally assigned groups. Whether these planned procedures were implemented as planned remains unverified.",
+        "zh": "三组都接受由手法治疗与运动治疗组成的物理治疗，其中两组另外加用假干针或干针。主要结局是 1 年时的肩痛与功能障碍指数（SPADI）；次要结局包括患者可接受症状状态（PASS），以及入组后 1 年内再次因肩部问题就医。研究方案计划采用顺序编号、不透明且密封的信封进行分配隐藏，使接受真干针或假干针的患者不知道自己接受的是哪一种，并按照最初随机分配的组别进行分析。这些计划程序是否按计划落实，仍未核实。"
+      },
+      "results": {
+        "en": "As reported in the abstract, the 1-year SPADI difference was −7.51 (95% CI −16.57 to 1.54) for PT + DN vs PT and −9.85 (95% CI −18.98 to 0.73) for PT + DN vs PT + SDN; both intervals include zero, so the primary comparisons did not reach statistical significance. At 6 months, absolute PASS differences were +34 percentage points (95% CI +14 to +55 percentage points) for PT + DN vs PT and +24 percentage points (95% CI +4 to +45 percentage points) for PT + DN vs PT + SDN; at 1 year, +28 percentage points (95% CI +7 to +49 percentage points) for PT + DN vs PT + SDN. For additional shoulder-related care within 1 year, the reported odds ratio (OR) was 0.35 (95% CI, 0.13–0.95); the abstract does not identify the reference group. An odds ratio cannot be directly restated as a risk reduction, so this value should not be described as a 65% reduction in risk.",
+        "zh": "按摘要所载，1 年 SPADI 组间差值为：PT + DN 对比 PT −7.51（95% 置信区间 −16.57 到 1.54），PT + DN 对比 PT + SDN −9.85（95% 置信区间 −18.98 到 0.73）；两项置信区间都包含 0，因此主要比较未达到统计学显著性。6 个月时，PASS 的绝对差值为：PT + DN 对比 PT +34 个百分点（95% 置信区间 +14 至 +55 个百分点），PT + DN 对比 PT + SDN +24 个百分点（95% 置信区间 +4 至 +45 个百分点）；1 年时，PT + DN 对比 PT + SDN 为 +28 个百分点（95% 置信区间 +7 至 +49 个百分点）。对于入组后 1 年内再次因肩部问题就医，摘要报告的优势比（OR）为 0.35（95% 置信区间 0.13–0.95）；摘要未说明参照组。优势比不能直接改写为风险降低的比例，因此不能把这个数值描述为“风险降低 65%”。"
+      },
+      "limitations": {
+        "en": "This appraisal rests on the results abstract and the protocol only: the full results article was not obtained, the registry was not checked, and the appraisal is not a complete risk-of-bias assessment. Adequate allocation concealment, masking success, the handling of missing data, multiplicity adjustment, and adverse-event reporting all remain unverified, and missing verification is not evidence that a method was omitted. The protocol abstract lists SPADI and PROMIS-57, whereas its statistical section specifies 1-year SPADI as the primary endpoint; this wording difference alone does not establish outcome switching. The protocol planned database and record-based health care data, whereas the results abstract describes self-report; this difference and the OR reference group remain unresolved.",
+        "zh": "本评价只依据结果摘要与研究方案：尚未取得结果论文全文，也未核验注册页面，因此并不构成完整的偏倚风险评价。分配隐藏是否充分落实、盲法是否成功、缺失数据如何处理、是否进行多重比较校正以及不良事件报告情况都仍未核实，而未能核实某项方法，不等于有证据表明研究未实施该方法。研究方案摘要列出 SPADI 和 PROMIS-57，但其统计部分将 1 年时的 SPADI 明确定为主要终点；仅凭这处措辞差异，不能认定发生了结局更换。研究方案计划通过数据库及病历收集就医数据，结果摘要则描述为患者自报；这一差异以及 OR 的参照组仍待厘清。"
+      },
+      "applicability": {
+        "en": "In this appraisal's interpretation, the trial did not establish an additional benefit of dry needling on 1-year SPADI; this does not establish equivalence or prove that dry needling has no effect. Favorable secondary findings warrant cautious, outcome-specific interpretation and cannot replace the primary result. The results cannot be generalized to every dry-needling protocol, all shoulder pain, or acupuncture as a whole.",
+        "zh": "按本评价的解读，这项试验未能在 1 年 SPADI 上确立加用干针的额外获益；这并不等于证明各组等效，也不等于证明干针没有作用。有利的次要发现应按具体结局谨慎解释，不能用来替代主要结果。结果不能推广到所有干针方案、全部肩痛患者，或针灸整体。"
+      },
+      "terms": [
+        {
+          "term": {
+            "en": "Randomization and allocation concealment",
+            "zh": "随机化与分配隐藏"
+          },
+          "explanation": {
+            "en": "Randomization determines group assignment; allocation concealment prevents advance knowledge of the next assignment during enrollment. The protocol planned sequentially numbered, opaque, sealed envelopes, and whether this procedure was implemented adequately remains unverified.",
+            "zh": "随机化用于确定分组；分配隐藏用于防止在入组过程中提前知道下一次分配结果。研究方案计划采用顺序编号、不透明且密封的信封，该程序是否得到充分落实，仍未核实。"
+          }
+        },
+        {
+          "term": {
+            "en": "Sham comparator",
+            "zh": "假干针对照"
+          },
+          "explanation": {
+            "en": "The comparison with PT alone estimates the added effect of including dry needling in the treatment program. The comparison with sham dry needling also accounts for aspects of receiving a needling procedure, so the two comparisons address different questions.",
+            "zh": "与单纯 PT 组的比较估计在治疗方案中加入干针的额外效果；与假干针组的比较还考虑了接受针刺程序所涉及的部分因素，因此这两项比较回答的问题不同。"
+          }
+        },
+        {
+          "term": {
+            "en": "Blinding",
+            "zh": "盲法"
+          },
+          "explanation": {
+            "en": "The protocol planned to blind participants receiving real or sham needling to that distinction. Participants in the no-needling group would know their assignment, and treating clinicians could not be blinded to the treatment delivered. Actual masking success and unmasking require the results report.",
+            "zh": "研究方案计划使接受真干针或假干针的患者不知道自己接受的是哪一种。未接受针刺的患者会知道自己的分组，实施治疗的临床人员也无法对所提供的治疗设盲。盲法实际是否成功以及是否发生揭盲，需要结果论文才能核实。"
+          }
+        },
+        {
+          "term": {
+            "en": "Shoulder Pain and Disability Index (SPADI)",
+            "zh": "肩痛与功能障碍指数（SPADI）"
+          },
+          "explanation": {
+            "en": "Lower SPADI scores indicate less pain and disability. In this trial, a negative between-group difference favors PT + DN.",
+            "zh": "SPADI 分数越低，表示疼痛与功能障碍越轻。在本试验中，组间差值为负数时，方向上有利于 PT + DN 组。"
+          }
+        },
+        {
+          "term": {
+            "en": "Patient Acceptable Symptom State (PASS)",
+            "zh": "患者可接受症状状态（PASS）"
+          },
+          "explanation": {
+            "en": "PASS records whether participants consider their current symptoms acceptable. The reported differences are absolute percentage-point differences in affirmative responses, not relative percentage improvements.",
+            "zh": "PASS 记录患者是否认为目前的症状可以接受。报告的差值是回答“可以接受”的比例之绝对差值，单位为百分点，并非相对改善百分比。"
+          }
+        },
+        {
+          "term": {
+            "en": "95% confidence interval (CI)",
+            "zh": "95% 置信区间"
+          },
+          "explanation": {
+            "en": "Both 1-year SPADI confidence intervals include zero, so the primary comparisons did not reach statistical significance. This does not establish equivalence or prove that dry needling has no effect.",
+            "zh": "两项 1 年 SPADI 置信区间都包含 0，因此主要比较未达到统计学显著性。这并不等于证明各组等效，也不等于证明干针没有作用。"
+          }
+        },
+        {
+          "term": {
+            "en": "Odds ratio (OR)",
+            "zh": "优势比（OR）"
+          },
+          "explanation": {
+            "en": "An odds ratio cannot be directly restated as a risk reduction, so the reported OR of 0.35 should not be described as a 65% reduction in risk. The abstract does not identify the reference group.",
+            "zh": "优势比不能直接改写为风险降低的比例，因此不能把报告的 OR 0.35 描述为“风险降低 65%”。摘要未说明参照组。"
+          }
+        },
+        {
+          "term": {
+            "en": "Multiplicity adjustment",
+            "zh": "多重比较校正"
+          },
+          "explanation": {
+            "en": "Multiplicity adjustment and adverse-event reporting have not been verified. Favorable secondary results therefore need separate appraisal rather than replacing the primary result.",
+            "zh": "多重比较校正与不良事件报告尚未核实。因此，有利的次要结果需要单独评价，不能用来替代主要结果。"
+          }
+        },
+        {
+          "term": {
+            "en": "Intention-to-treat principle",
+            "zh": "意向治疗原则"
+          },
+          "explanation": {
+            "en": "The protocol planned analysis in the originally assigned groups. An intention-to-treat principle does not, by itself, solve missing-data bias; evaluating the estimates requires the actual analysis population, missing-data assumptions, and sensitivity analyses.",
+            "zh": "研究方案计划按照最初随机分配的组别进行分析。意向治疗原则本身并不能解决缺失数据带来的偏倚；评价效应估计，还需要了解实际分析人群、缺失数据假设与敏感性分析。"
+          }
+        },
+        {
+          "term": {
+            "en": "Sample size and attrition",
+            "zh": "样本量与失访"
+          },
+          "explanation": {
+            "en": "The planned sample was 130, and the results abstract reports 121 participants. This difference is not a count of participants lost to follow-up.",
+            "zh": "计划样本量为 130 人，结果摘要报告 121 名参与者。这一差额并不是失访人数。"
+          }
+        },
+        {
+          "term": {
+            "en": "Prespecified outcomes and selective reporting",
+            "zh": "预设结局与选择性报告"
+          },
+          "explanation": {
+            "en": "A wording difference between parts of a protocol does not, by itself, establish outcome switching. The dated protocol, registration history, and final report must be compared.",
+            "zh": "研究方案不同部分之间的措辞差异，本身不能认定发生了结局更换。仍需对照注明日期的研究方案、注册历史和最终报告。"
+          }
+        },
+        {
+          "term": {
+            "en": "Study protocol",
+            "zh": "研究方案"
+          },
+          "explanation": {
+            "en": "A protocol records planned methods and cannot establish how the trial was actually conducted. Missing verification is not evidence that a method was omitted.",
+            "zh": "研究方案记录的是计划采用的方法，不能据此确认试验实际怎样执行。未能核实某项方法，不等于有证据表明研究未实施该方法。"
+          }
+        }
+      ],
+      "sources": [
+        "hando-2026-pubmed",
+        "hando-2019-protocol",
+        "hando-2026-doi",
+        "nct03442894"
+      ]
+    }
+  ],
+  "modelLinks": [
+    {
+      "en": "Posterior deltoid",
+      "term": "posterior-deltoid"
+    },
+    {
+      "en": "Anterior deltoid",
+      "term": "clavicular-part"
+    },
+    {
+      "en": "Middle deltoid",
+      "term": "acromial-part"
+    },
+    {
+      "en": "Rotator cuff",
+      "term": "rotator-cuff"
+    },
+    {
+      "en": "Humeral head",
+      "term": "humeral-head"
+    },
+    {
+      "en": "Scapular spine",
+      "term": "scapular-spine"
+    },
+    {
+      "en": "Inferior angle",
+      "term": "inferior-angle"
+    },
+    {
+      "en": "Surgical neck",
+      "term": "surgical-neck"
+    },
+    {
+      "en": "Deltoid tuberosity",
+      "term": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "utah-upper-limb-syllabus",
+      "title": "University of Utah, Shoulder, Axilla and Arm / upper-limb anatomy syllabus",
+      "url": "https://anatomy.med.utah.edu/diganat/PT/2014_lecture/PT_syllabus_2014_sm.pdf"
+    },
+    {
+      "id": "utah-unit4-limbs",
+      "title": "University of Utah, Unit 4 Limbs syllabus",
+      "url": "https://anatomy.med.utah.edu/diganat/SOM/unit_4/lec/unit4%20dm.vb.indd.pdf"
+    },
+    {
+      "id": "ncbi-cervical-nerves",
+      "title": "NCBI Bookshelf: Anatomy, Head and Neck, Cervical Nerves",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538136/"
+    },
+    {
+      "id": "ncbi-cervical-vertebrae",
+      "title": "NCBI Bookshelf: Anatomy, Head and Neck, Cervical Vertebrae",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539734/"
+    },
+    {
+      "id": "axillary-branch-pattern",
+      "title": "The anatomic branch pattern of the axillary nerve (cadaveric study)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17097311/"
+    },
+    {
+      "id": "axillary-deltoid-mapping",
+      "title": "Mapping the axillary nerve within the deltoid muscle (cadaveric study)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18766295/"
+    },
+    {
+      "id": "muscles-statpearls-suprascapular-nerve",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Suprascapular Nerve",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557880/"
+    },
+    {
+      "id": "landmarks-teachme-axillary-nerve",
+      "title": "TeachMeAnatomy: The Axillary Nerve - Course - Motor - Sensory",
+      "url": "https://teachmeanatomy.info/upper-limb/nerves/axillary-nerve/"
+    },
+    {
+      "id": "muscles-statpearls-subscapularis",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Subscapularis Muscle",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513344/"
+    },
+    {
+      "id": "muscles-kenhub-subscapularis",
+      "title": "Kenhub: Subscapularis: Origin, insertion, action, innervation",
+      "url": "https://www.kenhub.com/en/library/anatomy/subscapularis-muscle"
+    },
+    {
+      "id": "elsevier-deltoid",
+      "title": "Elsevier anatomy resource: Deltoid muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb-left/deltoid-muscle-left/19926"
+    },
+    {
+      "id": "statpearls-serratus-anterior",
+      "title": "NCBI Bookshelf (StatPearls): Serratus anterior anatomy",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK531457/"
+    },
+    {
+      "id": "muscles-statpearls-trapezius",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Back, Trapezius",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK518994/"
+    },
+    {
+      "id": "muscles-kenhub-trapezius",
+      "title": "Kenhub: Trapezius muscle: Anatomy, origins, insertions, actions",
+      "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle"
+    },
+    {
+      "id": "movement-kenhub-shoulder-joint",
+      "title": "Kenhub: Glenohumeral (shoulder) joint: bones, movements, muscles",
+      "url": "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint"
+    },
+    {
+      "id": "diagrams-physiopedia-scapulohumeral-rhythm",
+      "title": "Physiopedia: Scapulohumeral Rhythm",
+      "url": "https://www.physio-pedia.com/Scapulohumeral_Rhythm"
+    },
+    {
+      "id": "clinical-walch-1998-hornblower",
+      "title": "Walch G, Boulahia A, Calderone S, Robinson AHN. The 'dropping' and 'hornblower's' signs in evaluation of rotator-cuff tears. J Bone Joint Surg Br. 1998;80-B(4):624–628",
+      "url": "https://boneandjoint.org.uk/Article/10.1302/0301-620X.80B4.0800624"
+    },
+    {
+      "id": "hando-2026-pubmed",
+      "title": "PubMed: Results abstract · 结果摘要",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41476428/"
+    },
+    {
+      "id": "hando-2026-pubmed-reported-spadi-estimates-and-intervals",
+      "title": "Reported SPADI estimates and intervals · 摘要报告的 SPADI 估计值与区间",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41476428/"
+    },
+    {
+      "id": "hando-2026-pubmed-pass-and-health-care-use-results",
+      "title": "PASS and health care use results · PASS 与后续就医结果",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41476428/"
+    },
+    {
+      "id": "hando-2019-protocol-protocol-p-358-randomization",
+      "title": "Protocol, p. 358: Randomization · 研究方案，第 358 页：随机化",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "hando-2019-protocol-protocol-p-358-blinding",
+      "title": "Protocol, p. 358: Blinding · 研究方案，第 358 页：盲法",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "hando-2019-protocol-protocol-pp-355-and-361",
+      "title": "Protocol, pp. 355 and 361 · 研究方案，第 355、361 页",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "hando-2019-protocol-protocol-p-361-sample-size-and-statistical-approach",
+      "title": "Protocol, p. 361: Sample size and statistical approach · 研究方案，第 361 页：样本量与统计方法",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "hando-2019-protocol-protocol-p-361-health-care-utilization",
+      "title": "Protocol, p. 361: Health care utilization · 研究方案，第 361 页：医疗服务利用",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "nct03442894",
+      "title": "Trial registry · 试验注册页面",
+      "url": "https://clinicaltrials.gov/study/NCT03442894"
+    },
+    {
+      "id": "hando-2026-doi",
+      "title": "Hando et al. 2026: Results article · 结果论文",
+      "url": "https://doi.org/10.2519/jospt.2025.13460"
+    },
+    {
+      "id": "hando-2019-protocol",
+      "title": "Hando et al. 2019: Public protocol · 公开研究方案",
+      "url": "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871"
+    },
+    {
+      "id": "elsevier-supraspinatus",
+      "title": "Elsevier anatomy resource: Supraspinatus muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb/supraspinatus-muscle/21166"
+    },
+    {
+      "id": "muscles-statpearls-arm-abductors",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Arm Abductor Muscles",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK537148/"
+    },
+    {
+      "id": "muscles-elsevier-infraspinatus",
+      "title": "Elsevier anatomy resource: Infraspinatus muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb/infraspinatus-muscle/20380"
+    },
+    {
+      "id": "muscles-statpearls-infraspinatus",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Infraspinatus Muscle",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513255/"
+    },
+    {
+      "id": "muscles-elsevier-teres-minor",
+      "title": "Elsevier anatomy resource: Teres minor muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb/teres-minor-muscle/19335"
+    },
+    {
+      "id": "muscles-statpearls-teres-minor",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Teres Minor Muscle",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513324/"
+    },
+    {
+      "id": "elsevier-subscapularis",
+      "title": "Elsevier anatomy resource: Subscapularis muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-upper-limb/subscapularis-muscle/16597"
+    },
+    {
+      "id": "muscles-kenhub-deltoid",
+      "title": "Kenhub: Deltoid muscle: Origin, insertion, innervation, function",
+      "url": "https://kenhub.com/en/library/anatomy/the-deltoid-muscle"
+    },
+    {
+      "id": "muscles-teachmeanatomy-superficial-back",
+      "title": "TeachMeAnatomy: The Superficial Back Muscles - Attachments - Actions",
+      "url": "https://teachmeanatomy.info/back/muscles/superficial/"
+    },
+    {
+      "id": "muscles-loyola-trapezius",
+      "title": "Loyola University Chicago LUMEN gross anatomy dissector: Trapezius muscle actions",
+      "url": "https://www.lumen.luc.edu/lumen/meded/grossanatomy/dissector/muscles/trap.htm"
+    },
+    {
+      "id": "muscles-tubbs-2011-trapezius-cervical",
+      "title": "Tubbs et al. 2011: Study of the cervical plexus innervation of the trapezius muscle: Laboratory investigation (J Neurosurg Spine 14(5):626–629; abstract page)",
+      "url": "https://researchexperts.utmb.edu/en/publications/study-of-the-cervical-plexus-innervation-of-the-trapezius-muscle-/"
+    },
+    {
+      "id": "muscles-kenhub-serratus-anterior",
+      "title": "Kenhub: Serratus anterior muscle: Origin, insertion and action",
+      "url": "https://www.kenhub.com/en/library/anatomy/serratus-anterior-muscle"
+    },
+    {
+      "id": "muscles-teachmeanatomy-pectoral",
+      "title": "TeachMeAnatomy: Muscles of the Pectoral Region",
+      "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/"
+    },
+    {
+      "id": "landmarks-teachme-humerus",
+      "title": "TeachMeAnatomy: The Humerus - Proximal - Shaft - Distal",
+      "url": "https://teachmeanatomy.info/upper-limb/bones/humerus/"
+    },
+    {
+      "id": "landmarks-statpearls-humerus",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Humerus",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK534821/"
+    },
+    {
+      "id": "landmarks-teachme-scapula",
+      "title": "TeachMeAnatomy: The Scapula - Surfaces - Fractures - Winging",
+      "url": "https://teachmeanatomy.info/upper-limb/bones/scapula/"
+    },
+    {
+      "id": "landmarks-kenhub-scapula",
+      "title": "Kenhub: Scapula: Anatomy and clinical notes",
+      "url": "https://www.kenhub.com/en/library/anatomy/scapula"
+    },
+    {
+      "id": "landmarks-statpearls-suprascapular-nerve",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Shoulder and Upper Limb, Suprascapular Nerve",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557880/"
+    },
+    {
+      "id": "landmarks-kenhub-supraspinatus",
+      "title": "Kenhub: Supraspinatus: Origin, insertion, innervation, action",
+      "url": "https://www.kenhub.com/en/library/anatomy/supraspinatus-muscle"
+    },
+    {
+      "id": "landmarks-teachme-shoulder-joint",
+      "title": "TeachMeAnatomy: The Shoulder Joint - Structure - Movement",
+      "url": "https://teachmeanatomy.info/upper-limb/joints/shoulder/"
+    },
+    {
+      "id": "landmarks-kenhub-suprascapular-nerve",
+      "title": "Kenhub: Suprascapular nerve: origin, course and function",
+      "url": "https://www.kenhub.com/en/library/anatomy/suprascapular-nerve"
+    },
+    {
+      "id": "landmarks-radiopaedia-scapula",
+      "title": "Radiopaedia: Scapula",
+      "url": "https://radiopaedia.org/articles/scapula"
+    },
+    {
+      "id": "landmarks-statpearls-scapula",
+      "title": "NCBI Bookshelf (StatPearls): Anatomy, Thorax, Scapula",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538319/"
+    },
+    {
+      "id": "landmarks-teachme-quadrangular-space",
+      "title": "TeachMeAnatomy: Quadrangular Space - Borders - Contents",
+      "url": "https://teachmeanatomy.info/upper-limb/areas/quadrangular-space/"
+    },
+    {
+      "id": "acupoints-gbt-12346-2021",
+      "title": "GB/T 12346—2021 经穴名称与定位 (Nomenclature and location of meridian points), national standard of China issued 2021-11-26 by 国家市场监督管理总局 and 国家标准化管理委员会; copy hosted on a Shanghai University of Traditional Chinese Medicine site (zynj.shutcm.edu.cn)",
+      "url": "https://zynj.shutcm.edu.cn/_upload/article/files/66/b4/b34a95604d04b0bf686251b2d317/368ea8b0-187c-48a7-a402-ffdf1e11bb99.pdf"
+    },
+    {
+      "id": "clinical-who-2008-acupoint-locations",
+      "title": "WHO Standard Acupuncture Point Locations in the Western Pacific Region (2008), medbox.org copy",
+      "url": "https://www.medbox.org/index.php/dl/627a4de115110145a1723f64"
+    },
+    {
+      "id": "acupoints-ajtr-2024-cervical-jiaji",
+      "title": "Zhang L-Y, Yuan G-H. Therapeutic effect of modified cervical Jiaji acupuncture on mixed type cervical spondylosis. Am J Transl Res. 2024;16(7):3355–3365",
+      "url": "https://e-century.us/files/ajtr/16/7/ajtr0156878.pdf"
+    },
+    {
+      "id": "diagrams-elsevier-trapezius-descending",
+      "title": "Elsevier anatomy resource (Complete Anatomy): Descending part of trapezius muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/descending-part-of-trapezius-muscle/20351"
+    },
+    {
+      "id": "diagrams-elsevier-trapezius-ascending",
+      "title": "Elsevier anatomy resource (Complete Anatomy): Ascending part of trapezius muscle",
+      "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/ascending-part-of-trapezius-muscle/20192"
+    },
+    {
+      "id": "diagrams-physiopedia-painful-arc",
+      "title": "Physiopedia: Painful Arc",
+      "url": "https://www.physio-pedia.com/Painful_Arc"
+    }
+  ],
+  "qa": {
+    "reviewedBy": "Claude — checks and evidence in library/shoulder/发布签核.md",
+    "reviewedOn": "2026-10-09",
+    "checks": {
+      "medicalSources": true,
+      "bilingual": true,
+      "originInsertionLabels": true,
+      "modelLinks": true,
+      "layoutDesktop": true,
+      "layoutMobile": true,
+      "fullAnswers": true,
+      "paperAppraisal": true
+    }
+  }
+}
