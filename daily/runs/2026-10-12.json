@@ -144,10 +144,10 @@
      }
     },
     "publish": {
-     "status": "stale",
-     "at": "2026-10-09T14:21:44+00:00",
+     "status": "done",
+     "at": "2026-10-12T01:09:45+00:00",
      "evidence": {
-      "commit": "0dc7892b7400f882af7f12f4ddc6df269751a36d",
+      "commit": "5d86712e8fa8c4e4d0975f3305fba97d40addf86",
       "pushed_to": "origin/main",
       "site": "https://guiguisqwd.github.io/dpt-study/daily/2026-10-12/index.html"
      }
@@ -155,7 +155,7 @@
    },
    "started": "2026-10-09T14:21:23+00:00",
    "fingerprint": "9c4e92394198e06a",
-   "finished": "2026-10-09T14:21:44+00:00",
+   "finished": "2026-10-12T01:09:45+00:00",
    "verified": {
     "at": "2026-10-09T14:21:44+00:00",
     "ok": true,
@@ -276,6 +276,12 @@
    "at": "2026-10-12T01:09:42+00:00",
    "phase": "evening",
    "step": "cards",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:09:45+00:00",
+   "phase": "evening",
+   "step": "publish",
    "status": "done"
   }
  ],
