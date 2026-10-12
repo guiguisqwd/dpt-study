@@ -11,13 +11,24 @@
   ],
   "model_links": [
     "acromion",
+    "biceps-brachii",
     "clavicle",
     "deltoid",
     "greater-tubercle",
     "humeral-head",
     "humerus",
+    "infraspinatus",
     "lesser-tubercle",
-    "scapula"
+    "levator-scapulae",
+    "rhomboid-major",
+    "rhomboid-minor",
+    "scapula",
+    "subscapularis",
+    "supraspinatus",
+    "teres-major",
+    "teres-minor",
+    "trapezius",
+    "triceps-brachii"
   ],
-  "html_bytes": 138077
+  "html_bytes": 147105
 }

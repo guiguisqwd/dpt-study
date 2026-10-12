@@ -18,10 +18,7 @@
   "figure-03.png",
   "figure-04.png"
  ],
- "notes": "Same pack as reviewed under 2026-10-09 (figures byte-identical; text changed only in the trial notes). Re-viewed top.png: header now week 1 Monday 10-12, marked as early trial. Earlier full review: English first; 4 acupoint cards complete (TE15 WHO text not opened, stated on the card); fig 01 SI15/SI14/TE15 on levator, rhomboids, supraspinatus under dashed trapezius; fig 02 LI14 7 cun above LI11 at the anterior lower deltoid border; fig 03 layers say not needling depth or direction; fig 04 reused from the library chapter; quiz 8, flashcards 10; no horizontal scroll on phone.",
- "fixed": [
-  "moved from 2026-10-09 to its plan date 2026-10-12 so the committed-day test passes",
-  "fig 04 library figure: displacement filter removed and view titles put on one line (QA overlap)"
- ],
- "page_sha": "84f236a525fdd6b5"
+ "notes": "Re-viewed all 15 screenshots after the engine changes (study-home back link; 3D model links for every shoulder muscle). Content, figures and SVGs are unchanged from the earlier review; only links were added. top/mobile-top: back link 'Study home' shown, header week 1 Monday 10-12, English first, no horizontal scroll on phone; the trial wording is kept on purpose (the 10-12 trial pack goes out as made). Chapter 01: key terms with IPA and stress; 4 acupoint cards complete with GB/T location, layers, safety, how to find (TE15 WHO text not opened, stated on the card); fig 01 SI15/SI14/TE15 on levator scapulae, rhomboids and supraspinatus under dashed trapezius, ruler in cun, note that the superior angle sits near T2; fig 02 LI14 7 cun above LI11 at the anterior lower deltoid border on the LI11-LI15 line; fig 03 layers say not to scale, not needling depth or direction; quiz and take-home present. Chapter 02: fig 04 reused from the library chapter (posterior and anterior cuff views); muscle table with nerve segments; 8 self-test items; 10 flashcards; sources line. Minor, pre-existing and accepted: in fig 04 the supraspinatus and infraspinatus leaders start across their own labels and the clavicle label touches the outline; in fig 01 the levator leader passes near the cun ruler label. All remain readable.",
+ "fixed": [],
+ "page_sha": "35d86e05c0c19c34"
 }

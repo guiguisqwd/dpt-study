@@ -50,7 +50,7 @@
     },
     "figures": {
      "status": "done",
-     "at": "2026-10-09T14:21:23+00:00",
+     "at": "2026-10-12T01:08:52+00:00",
      "evidence": {
       "svgs": [
        "01-肩外俞肩中俞天髎-叠加图.svg",
@@ -62,12 +62,12 @@
     },
     "validate": {
      "status": "done",
-     "at": "2026-10-09T14:21:23+00:00",
+     "at": "2026-10-12T01:08:52+00:00",
      "evidence": "schema dpt-daily-pack/2: 0 problems"
     },
     "build": {
      "status": "done",
-     "at": "2026-10-09T14:21:23+00:00",
+     "at": "2026-10-12T01:08:52+00:00",
      "evidence": {
       "date": "2026-10-12",
       "out": "2026-10-12-第1周-试用-肩带四穴与肩袖四肌",
@@ -81,20 +81,31 @@
       ],
       "model_links": [
        "acromion",
+       "biceps-brachii",
        "clavicle",
        "deltoid",
        "greater-tubercle",
        "humeral-head",
        "humerus",
+       "infraspinatus",
        "lesser-tubercle",
-       "scapula"
+       "levator-scapulae",
+       "rhomboid-major",
+       "rhomboid-minor",
+       "scapula",
+       "subscapularis",
+       "supraspinatus",
+       "teres-major",
+       "teres-minor",
+       "trapezius",
+       "triceps-brachii"
       ],
-      "html_bytes": 138077
+      "html_bytes": 147105
      }
     },
     "qa": {
      "status": "done",
-     "at": "2026-10-09T14:21:28+00:00",
+     "at": "2026-10-12T01:09:00+00:00",
      "evidence": {
       "figures": 4,
       "say_buttons": 21,
@@ -105,21 +116,18 @@
     },
     "visual_review": {
      "status": "done",
-     "at": "2026-10-09T14:21:39+00:00",
+     "at": "2026-10-12T01:09:42+00:00",
      "evidence": {
       "viewed": 15,
-      "notes": "Same pack as reviewed under 2026-10-09 (figures byte-identical; text changed only in the trial notes). Re-viewed top.png: header now week 1 Monday 10-12, marked as early trial. Earlier full review: English first; 4 acupoint cards complete (TE15 WHO text not opened, stated on the card); fig 01 SI15/SI14/TE15 on levator, rhomboids, supraspinatus under dashed trapezius; fig 02 LI14 7 cun above LI11 at the anterior lower deltoid border; fig 03 layers say not needling depth or direction; fig 04 reuse",
-      "fixed": [
-       "moved from 2026-10-09 to its plan date 2026-10-12 so the committed-day test passes",
-       "fig 04 library figure: displacement filter removed and view titles put on one line (QA overlap)"
-      ]
+      "notes": "Re-viewed all 15 screenshots after the engine changes (study-home back link; 3D model links for every shoulder muscle). Content, figures and SVGs are unchanged from the earlier review; only links were added. top/mobile-top: back link 'Study home' shown, header week 1 Monday 10-12, English first, no horizontal scroll on phone; the trial wording is kept on purpose (the 10-12 trial pack goes out as made). Chapter 01: key terms with IPA and stress; 4 acupoint cards complete with GB/T location, layer",
+      "fixed": []
      }
     },
     "site": {
      "status": "done",
-     "at": "2026-10-09T14:21:39+00:00",
+     "at": "2026-10-12T01:09:42+00:00",
      "evidence": {
-      "entries": 3,
+      "entries": 4,
       "learned_acupoints": 16,
       "learned_muscles": 13,
       "page": "site/public/daily/2026-10-12/index.html"
@@ -127,7 +135,7 @@
     },
     "cards": {
      "status": "done",
-     "at": "2026-10-09T14:21:39+00:00",
+     "at": "2026-10-12T01:09:42+00:00",
      "evidence": {
       "cards": 37,
       "acupoints": 28,
@@ -136,7 +144,7 @@
      }
     },
     "publish": {
-     "status": "done",
+     "status": "stale",
      "at": "2026-10-09T14:21:44+00:00",
      "evidence": {
       "commit": "0dc7892b7400f882af7f12f4ddc6df269751a36d",
@@ -146,7 +154,7 @@
     }
    },
    "started": "2026-10-09T14:21:23+00:00",
-   "fingerprint": "bb8c53ac5b082231",
+   "fingerprint": "9c4e92394198e06a",
    "finished": "2026-10-09T14:21:44+00:00",
    "verified": {
     "at": "2026-10-09T14:21:44+00:00",
@@ -220,6 +228,54 @@
    "at": "2026-10-09T14:21:44+00:00",
    "phase": "evening",
    "step": "publish",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:08:52+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:08:52+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:08:52+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:09:00+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:09:00+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-12T01:09:42+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:09:42+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-12T01:09:42+00:00",
+   "phase": "evening",
+   "step": "cards",
    "status": "done"
   }
  ],
