@@ -140,10 +140,25 @@
       "muscles": 9,
       "due_on_2026-10-13": 20
      }
+    },
+    "publish": {
+     "status": "done",
+     "at": "2026-10-13T02:04:25+00:00",
+     "evidence": {
+      "commit": "5cdc76228155e8f29f10ae1608e9b5da33072036",
+      "pushed_to": "origin/main",
+      "site": "https://guiguisqwd.github.io/dpt-study/daily/2026-10-13/index.html"
+     }
     }
    },
    "started": "2026-10-13T01:08:25+00:00",
-   "fingerprint": "da8e98e059e450e3"
+   "fingerprint": "da8e98e059e450e3",
+   "finished": "2026-10-13T02:04:25+00:00",
+   "verified": {
+    "at": "2026-10-13T02:04:25+00:00",
+    "ok": true,
+    "missing": []
+   }
   }
  },
  "history": [
@@ -241,6 +256,12 @@
    "at": "2026-10-13T02:04:22+00:00",
    "phase": "evening",
    "step": "cards",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:04:25+00:00",
+   "phase": "evening",
+   "step": "publish",
    "status": "done"
   }
  ],
