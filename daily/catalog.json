@@ -2,6 +2,41 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
+   "date": "2026-10-13",
+   "day": null,
+   "week": 1,
+   "chapter": "shoulder",
+   "kind": "supplement",
+   "out": "2026-10-13-第1周-肩峰下疼痛与骨性标志",
+   "title": {
+    "zh": "肩峰下疼痛综合征：从检查到治疗 · 骨性标志",
+    "en": "Subacromial pain syndrome, from assessment to treatment · bony landmarks"
+   },
+   "acupoints": [],
+   "muscles": [],
+   "tags": {
+    "vertical": [
+     "病理学/肩/肩峰下疼痛综合征",
+     "检查评估/肩/肩峰下疼痛综合征",
+     "检查评估/鉴别诊断与红旗征",
+     "康复干预/肩/运动疗法与宣教",
+     "循证方法学/诊断准确性",
+     "解剖学/上肢/肩带/肩峰下间隙",
+     "解剖学/上肢/肩带/骨性标志"
+    ],
+    "horizontal": [
+     "结构→病理→干预链",
+     "特殊检查",
+     "学术争议",
+     "循证方法学/假对照RCT",
+     "记忆法"
+    ]
+   },
+   "figures": 3,
+   "path": "daily/2026-10-13/index.html",
+   "md": "daily/2026-10-13/2026-10-13-第1周-肩峰下疼痛与骨性标志.md"
+  },
+  {
    "date": "2026-10-12",
    "day": null,
    "week": 1,

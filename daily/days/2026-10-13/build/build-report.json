@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "out": "2026-10-13-第1周-肩峰下疼痛与骨性标志",
+  "chapters": 2,
+  "figure_occurrences": 3,
+  "figures": [
+    "01",
+    "02",
+    "03"
+  ],
+  "model_links": [
+    "acromion",
+    "clavicle",
+    "deltoid",
+    "greater-tubercle",
+    "humeral-head",
+    "humerus",
+    "infraspinatus",
+    "intertubercular-groove",
+    "lesser-tubercle",
+    "lower-trapezius",
+    "scapula",
+    "serratus-anterior",
+    "subscapularis",
+    "supraspinatus",
+    "teres-major",
+    "teres-minor",
+    "trapezius"
+  ],
+  "html_bytes": 177980
+}

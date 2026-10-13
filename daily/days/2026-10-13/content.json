@@ -1,0 +1,804 @@
+{
+ "schema": "dpt-daily-pack/2",
+ "date": "2026-10-13",
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "chapter_name": "肩袖 Rotator cuff",
+ "slug_zh": "肩峰下疼痛与骨性标志",
+ "title": {
+  "zh": "肩峰下疼痛综合征：从检查到治疗 · 骨性标志",
+  "en": "Subacromial pain syndrome, from assessment to treatment · bony landmarks"
+ },
+ "description": "DPT 每日包 · 第 1 周周二（10-13）。新：肩峰下疼痛综合征从问诊到回归活动的六步流程；夯实：肩胛骨与肱骨的骨性标志。",
+ "brand_sub": "第 1 周周二 · 10/13",
+ "today_line": "新：肩峰下疼痛综合征六步流程（问诊 → 回归）· 夯实：肩胛骨与肱骨 17 个骨性标志 · 自测 9 题 + 拼写 14 词",
+ "study_plan": [
+  [
+   "新内容（30 分钟）",
+   "01 章：先看图 01 和六步流程，再读细讲、鉴别表和疼痛弧"
+  ],
+  [
+   "夯实（15 分钟）",
+   "02 章：在图 03 上说出 A 到 Q，再答自测"
+  ],
+  [
+   "拼写（10 分钟）",
+   "02 章：14 个骨性标志的英文拼写，最后对照答案表"
+  ]
+ ],
+ "footer": "DPT 每日包 · 第 1 周周二（10-13）· 本周章节：肩袖 Rotator cuff（知识库 library/shoulder）· 流程内容只用实际打开核对过的来源，列在页末；学习材料，不代替临床判断。",
+ "tags": {
+  "vertical": [
+   "病理学/肩/肩峰下疼痛综合征",
+   "检查评估/肩/肩峰下疼痛综合征",
+   "检查评估/鉴别诊断与红旗征",
+   "康复干预/肩/运动疗法与宣教",
+   "循证方法学/诊断准确性",
+   "解剖学/上肢/肩带/肩峰下间隙",
+   "解剖学/上肢/肩带/骨性标志"
+  ],
+  "horizontal": [
+   "结构→病理→干预链",
+   "特殊检查",
+   "学术争议",
+   "循证方法学/假对照RCT",
+   "记忆法"
+  ]
+ },
+ "figures": {
+  "01": "肩峰下间隙",
+  "02": "疼痛弧",
+  "03": "肩胛骨与肱骨标志-看图标注"
+ },
+ "pronunciation": {
+  "Subacromial pain syndrome": [
+   "/ˌsʌbəˈkroʊmiəl peɪn ˈsɪnˌdroʊm/",
+   "sub-uh-KROH-mee-uhl PAYN SIN-drohm",
+   "https://www.merriam-webster.com/medical/subacromial"
+  ],
+  "Rotator cuff tendinopathy": [
+   "/ˈroʊˌteɪtər kʌf ˌtɛndəˈnɑpəθi/",
+   "ROH-tay-ter KUF ten-duh-NAH-puh-thee",
+   "https://www.merriam-webster.com/dictionary/tendinopathy"
+  ],
+  "Painful arc": [
+   "/ˈpeɪnfəl ɑrk/",
+   "PAYN-fuhl AHRK",
+   "https://www.dictionary.com/browse/arc"
+  ],
+  "Palpation": [
+   "/pælˈpeɪʃən/",
+   "pal-PAY-shuhn",
+   "https://www.dictionary.com/browse/palpation"
+  ],
+  "Adhesive capsulitis": [
+   "/ædˈhisɪv ˌkæpsəˈlaɪtəs/",
+   "ad-HEE-siv kap-suh-LYE-tuhs",
+   "https://www.merriam-webster.com/dictionary/capsulitis"
+  ],
+  "Glenohumeral osteoarthritis": [
+   "/ˌɡlɛnoʊˈhjumərəl ˌɑstioʊɑrˈθraɪtɪs/",
+   "glen-oh-HYOO-muh-ruhl ah-stee-oh-ahr-THRY-tis",
+   "https://www.merriam-webster.com/dictionary/osteoarthritis"
+  ],
+  "Cervical radiculopathy": [
+   "/ˈsɝvɪkəl rəˌdɪkjəˈlɑpəθi/",
+   "SUR-vih-kuhl ruh-dik-yuh-LAH-puh-thee",
+   "https://www.merriam-webster.com/dictionary/radiculopathy"
+  ],
+  "Corticosteroid injection": [
+   "/ˌkɔrtəkoʊˈstɛrɔɪd ɪnˈdʒɛkʃən/",
+   "kor-tuh-koh-STER-oyd in-JEK-shuhn",
+   "https://www.dictionary.com/browse/corticosteroid"
+  ],
+  "Subacromial decompression": [
+   "/ˌsʌbəˈkroʊmiəl ˌdikəmˈprɛʃən/",
+   "sub-uh-KROH-mee-uhl dee-kuhm-PRESH-uhn",
+   "https://www.dictionary.com/browse/decompression"
+  ]
+ },
+ "sources": [
+  [
+   "https://actaorthop.org/actao/article/download/10092/13799",
+   "Diercks R et al. Guideline for diagnosis and treatment of subacromial pain syndrome (Dutch Orthopaedic Association). Acta Orthop 2014;85(3):314-322"
+  ],
+  [
+   "https://actaorthop.org/actao/article/download/45365/52867?inline=1",
+   "Lambers Heerspink FO et al. Update of the Dutch guideline for subacromial pain syndrome, Part 1. Acta Orthop 2026;97:91-98"
+  ],
+  [
+   "https://bess.ac.uk/download/1463/subacromial-shoulder-pain/30248/subacromial-shoulder-pain-2025-2.pdf",
+   "Pandey RA, Singh HP. BESS Patient Care Pathway: Subacromial Pain. Shoulder Elbow 2025;17(6):713-724"
+  ],
+  [
+   "https://journals.sagepub.com/doi/10.1177/1758573215576456",
+   "Kulkarni R et al. BESS/BOA Patient Care Pathways: Subacromial shoulder pain. Shoulder Elbow 2015;7(2):135-143"
+  ],
+  [
+   "https://www.boa.ac.uk/asset/CAD0336B-9051-48A7-9E4DF7072C5C7E47",
+   "BESS/BOA/RCS Commissioning Guide: Subacromial Shoulder Pain, 2014 (referral signals, primary care algorithm)"
+  ],
+  [
+   "https://ora.ox.ac.uk/objects/uuid:a2956231-1a41-43ba-bea1-0091f53f0d9d/files/rkh04dr313",
+   "Gwilym S, Rupani N. BESS Patient Care Pathway: Frozen Shoulder. Shoulder Elbow 2025;17(4):351-363"
+  ],
+  [
+   "https://bess.ac.uk/wp-content/uploads/2020/06/Frozen_Shoulder.pdf",
+   "Rangan A et al. BESS/BOA Patient Care Pathways: Frozen shoulder. Shoulder Elbow 2015;7(4):299-307"
+  ],
+  [
+   "https://bess.ac.uk/wp-content/uploads/2020/06/Glenohumeral-osteoarthritis.pdf",
+   "Thomas M et al. BESS/BOA Patient Care Pathways: Glenohumeral osteoarthritis. Shoulder Elbow 2016;8(3):203-214"
+  ],
+  [
+   "https://boa.ac.uk/asset/DEAEADF1-A971-4544-A6F15D05C3C5CF43",
+   "Brownson P et al. BESS/BOA Patient Care Pathways: Traumatic anterior shoulder instability. Shoulder Elbow 2015;7(3):214-226"
+  ],
+  [
+   "https://www.aafp.org/pubs/afp/issues/2008/0215/p453.html",
+   "Burbank KM et al. Chronic shoulder pain: Part I. Evaluation and diagnosis. Am Fam Physician 2008;77(4):453-460"
+  ],
+  [
+   "https://www.aafp.org/pubs/afp/issues/2016/0501/p746.html",
+   "Childress MA, Becker BA. Nonoperative management of cervical radiculopathy. Am Fam Physician 2016;93(9):746-754"
+  ],
+  [
+   "https://uhra.herts.ac.uk/id/eprint/5875/1/Accepted_Manuscript.pdf",
+   "Lewis J. Rotator cuff related shoulder pain: assessment, management and uncertainties. Man Ther 2016;23:57-68 (accepted manuscript)"
+  ],
+  [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8978275",
+   "Requejo-Salinas N et al. International physical therapists consensus on clinical descriptors for diagnosing RCRSP: a Delphi study. Braz J Phys Ther 2022;26(2):100395"
+  ],
+  [
+   "https://scholars.duke.edu/publication/962178",
+   "Hermans J et al. Does this patient with shoulder pain have rotator cuff disease? JAMA 2013;310(8):837-847 (abstract)"
+  ],
+  [
+   "https://pubmed.ncbi.nlm.nih.gov/22773322/",
+   "Hegedus EJ et al. Which physical examination tests provide clinicians with the most value when examining the shoulder? Br J Sports Med 2012;46(14):964 (abstract)"
+  ],
+  [
+   "https://www.bmj.com/content/bmj/344/bmj.e787.full.pdf",
+   "Holmgren T et al. Effect of specific exercise strategy on need for surgery in subacromial impingement syndrome: RCT. BMJ 2012;344:e787"
+  ],
+  [
+   "https://bjsm.bmj.com/content/51/18/1340",
+   "Steuri R et al. Conservative interventions in adults with shoulder impingement: systematic review and meta-analysis. Br J Sports Med 2017;51(18):1340 (abstract)"
+  ],
+  [
+   "https://discovery.ucl.ac.uk/id/eprint/10064005/",
+   "Beard DJ et al. Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW). Lancet 2018;391(10118):329-338 (abstract)"
+  ],
+  [
+   "https://www.bmj.com/content/362/bmj.k2860",
+   "Paavola M et al. Subacromial decompression versus diagnostic arthroscopy (FIMPACT). BMJ 2018;362:k2860 (abstract)"
+  ],
+  [
+   "https://www.bmj.com/content/364/bmj.l294",
+   "Vandvik PO et al. Subacromial decompression surgery for adults with shoulder pain: a clinical practice guideline (BMJ Rapid Recommendations). BMJ 2019;364:l294"
+  ],
+  [
+   "https://eprints.whiterose.ac.uk/id/eprint/76263/7/WRRO_76263.pdf",
+   "Littlewood C et al. Development of a self-managed loaded exercise programme for rotator cuff tendinopathy. Physiotherapy 2013 (accepted manuscript)"
+  ],
+  [
+   "https://salford-repository.worktribe.com/output/3400850/therapeutic-exercise-for-rotator-cuff-tendinopathy-a-systematic-review-of-contextual-factors-and-prescription-parameters",
+   "Littlewood C et al. Therapeutic exercise for rotator cuff tendinopathy: contextual factors and prescription parameters. Int J Rehabil Res 2015;38(2):95-106 (abstract)"
+  ],
+  [
+   "https://pharesst.irsst.qc.ca/etudes-primaires/632",
+   "Lafrance S et al. Rotator cuff disorders: diagnosis, management and return to work, clinical practice guideline. J Orthop Sports Phys Ther 2022;52(10):647-664 (abstract)"
+  ],
+  [
+   "https://www.statpearls.com/point-of-care/28996",
+   "StatPearls. Shoulder Impingement Syndrome (updated 2026-01-10)"
+  ],
+  [
+   "https://www.kenhub.com/en/library/anatomy/supraspinatus-muscle",
+   "Kenhub. Supraspinatus muscle"
+  ],
+  [
+   "https://www.kenhub.com/en/library/anatomy/subacromial-bursa",
+   "Kenhub. Subacromial bursa"
+  ],
+  [
+   "https://radiopaedia.org/articles/33639",
+   "Radiopaedia. Coracoacromial ligament"
+  ],
+  [
+   "https://teachmeanatomy.info/upper-limb/joints/shoulder/",
+   "TeachMeAnatomy. The shoulder (glenohumeral) joint"
+  ],
+  [
+   "https://www.upoj.org/wp-content/uploads/v24/20_Bifano.pdf",
+   "Bifano S et al. For patients with impingement syndrome, is the acromion innocent? Univ Pa Orthop J 2014;24"
+  ]
+ ],
+ "chapters": [
+  {
+   "num": 1,
+   "id": "new-saps-pathway",
+   "content": "N-2",
+   "items": [
+    "Subacromial pain syndrome 肩峰下疼痛综合征：检测到治疗"
+   ],
+   "forms": [
+    "F-2",
+    "F-1"
+   ],
+   "title": [
+    "New: subacromial pain syndrome, from assessment to treatment",
+    "新内容：肩峰下疼痛综合征，从检查到治疗"
+   ],
+   "toc": [
+    "Subacromial pain",
+    "肩峰下疼痛"
+   ],
+   "goals": [
+    [
+     "Define subacromial pain syndrome and name what lies in the subacromial space.",
+     "说出肩峰下疼痛综合征的定义，以及肩峰下间隙里有什么结构。"
+    ],
+    [
+     "Walk through the six steps from history to return to activity, with a source for each step.",
+     "按六步走完从问诊到恢复活动的流程，每一步说得出依据。"
+    ],
+    [
+     "Recognise the findings that point away from subacromial pain and the signs that need referral.",
+     "认出提示不是肩峰下疼痛的表现，以及需要转诊的信号。"
+    ],
+    [
+     "Explain why exercise comes first and where the evidence is still unsettled.",
+     "说明为什么运动治疗排在前面，以及哪些地方证据还没有定论。"
+    ]
+   ],
+   "terms": [
+    [
+     "Subacromial pain syndrome",
+     "肩峰下疼痛综合征"
+    ],
+    [
+     "Subacromial space",
+     "肩峰下间隙"
+    ],
+    [
+     "Subacromial bursa",
+     "肩峰下滑囊"
+    ],
+    [
+     "Subacromial impingement",
+     "肩峰下撞击"
+    ],
+    [
+     "Rotator cuff tendinopathy",
+     "肩袖肌腱病"
+    ],
+    [
+     "Painful arc",
+     "疼痛弧"
+    ],
+    [
+     "Palpation",
+     "触诊"
+    ],
+    [
+     "Adhesive capsulitis",
+     "粘连性关节囊炎"
+    ],
+    [
+     "Glenohumeral osteoarthritis",
+     "盂肱关节骨关节炎"
+    ],
+    [
+     "Cervical radiculopathy",
+     "颈神经根病"
+    ],
+    [
+     "Corticosteroid injection",
+     "皮质类固醇注射"
+    ],
+    [
+     "Subacromial decompression",
+     "肩峰下减压术"
+    ],
+    [
+     "Dry needling",
+     "干针"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Subacromial pain syndrome (SAPS) is the Dutch guideline's name for non-traumatic, usually one-sided shoulder pain located around the acromion that often gets worse during or after lifting the arm (Diercks 2014). It is an umbrella diagnosis: bursitis, calcific tendinosis, supraspinatus tendinopathy, partial cuff tears, biceps tendinitis and cuff degeneration all sit under it. Lewis (2016) uses a wider umbrella, rotator cuff related shoulder pain (RCRSP), which also covers symptomatic full-thickness tears. You will meet both names, and the older word impingement, in papers and referral letters.",
+     "zh": "肩峰下疼痛综合征（SAPS）是荷兰指南的叫法：非外伤性、通常单侧、位于肩峰周围的肩痛，抬臂时或抬臂后常加重（Diercks 2014）。它是一个统称：滑囊炎、钙化性肌腱病、冈上肌腱病、肩袖部分撕裂、肱二头肌腱炎和肩袖退变都归在里面。Lewis（2016）用的统称更宽，叫肩袖相关肩痛（RCRSP），还包括有症状的全层撕裂。论文和转诊单里这两个名字都会见到，还有旧称“撞击”（impingement）。"
+    },
+    {
+     "t": "fig",
+     "n": "01",
+     "en": "The subacromial space in a coronal schematic. The acromion is the bony roof; together with the acromioclavicular joint and the coracoacromial ligament (not drawn) it bounds the space from above and in front, and the humeral head is the floor. The supraspinatus tendon and the subacromial (subdeltoid) bursa are drawn; parts of the infraspinatus and subscapularis tendons and the long head of biceps tendon also lie in the space but are not drawn.",
+     "zh": "肩峰下间隙的冠状面示意。肩峰是骨性的顶，它和肩锁关节、喙肩韧带（图中未画）一起从上方和前方围成这个间隙，肱骨头是底。图中画了冈上肌腱和肩峰下（三角肌下）滑囊；冈下肌腱和肩胛下肌腱的一部分、肱二头肌长头腱也在这个间隙里，没有画出。"
+    },
+    {
+     "t": "p",
+     "en": "The space is typically 1 to 1.5 cm high and narrows normally during abduction and forward flexion; superior migration of the humeral head, or too little scapular upward rotation and posterior tilt, narrows it further (StatPearls). The supraspinatus tendon runs under the acromion to the superior facet of the greater tubercle, and the subacromial bursa separates it from the coracoacromial ligament, the acromion and the deltoid (Kenhub). The part of the bursa that extends laterally deep to the deltoid is usually called the subdeltoid bursa.",
+     "zh": "这个间隙通常高 1–1.5 cm，外展和前屈时本来就会变窄；肱骨头上移，或肩胛骨上回旋和后倾不够，会让它更窄（StatPearls）。冈上肌腱从肩峰下方走到大结节上小面，肩峰下滑囊把它和喙肩韧带、肩峰、三角肌隔开（Kenhub）。滑囊向外延伸到三角肌深面的部分，通常叫三角肌下滑囊。"
+    },
+    {
+     "t": "h3",
+     "en": "The pathway in six steps",
+     "zh": "六步流程"
+    },
+    {
+     "t": "flow",
+     "steps": [
+      {
+       "title": [
+        "History: what the patient tells you",
+        "主诉与问诊"
+       ],
+       "text": [
+        "The typical story is pain around the upper arm that came on gradually, is made worse by shoulder-level or overhead activities, and followed no trauma (BESS 2025). The deltoid region is the area patients report most often (Requejo-Salinas 2022), and pain from the rotator cuff usually spreads no farther than the elbow (AAFP 2008). Ask about sleep and night pain, how easily the pain flares and how long it lasts once provoked; Lewis (2016) calls a shoulder that flares easily, stays painful for a long time and hurts at night irritable.",
+        "典型主诉是：上臂周围的疼痛逐渐出现，做到与肩同高或过头的动作时加重，之前没有外伤（BESS 2025）。病人最常指出的疼痛部位是三角肌区（Requejo-Salinas 2022）；肩袖来源的疼痛通常不超过肘部（AAFP 2008）。要问睡眠和夜间痛，问疼痛多容易被诱发、诱发后持续多久；Lewis（2016）把容易诱发、持续时间长、夜里也痛的情况称为“易激惹型”。"
+       ]
+      },
+      {
+       "title": [
+        "Observation and palpation",
+        "观察与触诊"
+       ],
+       "text": [
+        "Watch both arms rise together. The Dutch guideline says that judging range of motion by eye is useful only for comparing the painful side with the other side (Diercks 2014). Palpate around the acromion: subacromial tenderness may suggest rotator cuff pathology (AAFP 2008), while pain localised to the acromioclavicular joint with tenderness there points to that joint (BESS/BOA 2014). The opened guidelines give no other palpation findings for subacromial pain.",
+        "看双臂一起抬起。荷兰指南指出，目测关节活动度只适合拿患侧和健侧比较（Diercks 2014）。在肩峰周围触诊：肩峰下压痛可能提示肩袖病变（AAFP 2008）；疼痛局限在肩锁关节并有压痛，则指向肩锁关节（BESS/BOA 2014）。查到的指南没有给出肩峰下疼痛的其他触诊表现。"
+       ]
+      },
+      {
+       "title": [
+        "Range of motion, strength and special tests",
+        "关节活动度、肌力与特殊检查"
+       ],
+       "text": [
+        "Compare active with passive range. In rotator cuff pathology, active range is often lost while passive range is relatively preserved (AAFP 2008), and subacromial pain usually comes with full passive range of the glenohumeral joint (Kulkarni 2015). Test the painful arc (figure 02) and resisted strength against the other side. BESS (2025) calls subacromial pain syndrome a clinical diagnosis and says a combination of the Hawkins-Kennedy, Neer, Jobe and external rotation resistance tests is useful; a 2012 meta-analysis concluded that no single test can be recommended on its own to make the diagnosis (Hegedus 2012). Friday's chapter covers how each test is done.",
+        "先比较主动和被动活动度。肩袖病变常见主动活动度减少、被动活动度相对保留（AAFP 2008）；肩峰下疼痛通常伴有盂肱关节被动活动度完整（Kulkarni 2015）。检查疼痛弧（图 02），并和健侧比较抗阻肌力。BESS（2025）说肩峰下疼痛综合征是临床诊断，Hawkins-Kennedy、Neer、Jobe 和外旋抗阻几项检查组合起来有用；2012 年的荟萃分析认为，没有哪一项检查能单独用来下诊断（Hegedus 2012）。各项检查怎么做，放在周五那一章。"
+       ]
+      },
+      {
+       "title": [
+        "Differential diagnosis and referral signals",
+        "鉴别诊断与转诊信号"
+       ],
+       "text": [
+        "The diagnosis assumes no trauma and no sign of a cuff tear, arthritis, frozen shoulder, instability, or neck or nerve problems (BESS 2025). A large loss of passive external rotation suggests frozen shoulder or glenohumeral osteoarthritis; neck movements that bring on the arm symptoms suggest the cervical spine; a sudden loss of active elevation suggests an acute cuff tear. A hot, red joint and an unreduced dislocation need same-day referral (BESS/BOA 2014). The table below lists each sign with its source.",
+        "这个诊断的前提是：没有外伤，也没有肩袖撕裂、关节炎、冻结肩、不稳或颈椎与神经问题的表现（BESS 2025）。被动外旋明显受限，要想到冻结肩或盂肱关节骨关节炎；颈部动作引出上肢症状，要想到颈椎；突然不能主动抬臂，要想到急性肩袖撕裂。关节红热和未复位的脱位要当天转诊（BESS/BOA 2014）。下面的表逐条列出信号和来源。"
+       ]
+      },
+      {
+       "title": [
+        "Treatment: education, exercise, manual therapy, needling",
+        "治疗：宣教、运动处方、手法、针刺或干针"
+       ],
+       "text": [
+        "Start with advice: relative rest in the acute phase, then a gradual return to activity (Diercks 2014), moving within the patient's comfort zone (Lambers Heerspink 2026). Exercise is the core: low intensity, high frequency, within the pain threshold and focused on eccentric training (Diercks 2014), aimed at the rotator cuff and the scapular stabilisers rather than general exercise. Adding joint mobilisation to exercise gives little or no extra benefit (Diercks 2014; Steuri 2017). The Dutch guideline found acupuncture no more effective than placebo and gave no recommendation on dry needling. Injection and surgery are medical options; the notes below give the evidence.",
+        "先做宣教：急性期相对休息，然后逐步恢复活动（Diercks 2014），在病人能接受的范围内活动（Lambers Heerspink 2026）。运动是核心：低强度、高频率、不超过疼痛阈值、侧重离心训练（Diercks 2014），练肩袖和肩胛稳定肌，而不是一般性锻炼。在运动之外加关节松动，额外好处很小或没有（Diercks 2014；Steuri 2017）。荷兰指南认为针刺不比安慰治疗更有效，对干针没有给推荐。注射和手术属于医疗选项，证据见下文细讲。"
+       ]
+      },
+      {
+       "title": [
+        "Progression and return to activity",
+        "进阶与回归标准"
+       ],
+       "text": [
+        "Let the symptoms guide progression: change one thing at a time and watch its effect over 24 hours; as pain settles, both range and resistance can be increased (Lewis 2016). In the Holmgren trial, the load went up every other week with weights and elastic bands over 12 weeks (Holmgren 2012). BESS (2025) refers patients who have not improved after 12 weeks of non-operative care to secondary care. The opened sources give no numeric return-to-sport criteria; for work, they advise planning the return early, together with the worker (Lafrance 2022).",
+        "按症状进阶：一次只改一个变量，看它在 24 小时内的影响；疼痛减轻后，活动范围和阻力都可以加（Lewis 2016）。Holmgren 试验在 12 周里每两周用哑铃和弹力带加一次负荷（Holmgren 2012）。BESS（2025）规定，非手术治疗 12 周仍无改善的病人转专科。查到的来源没有给出重返运动的量化标准；重返工作方面，只建议尽早和病人一起制定计划（Lafrance 2022）。"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "fig",
+     "n": "02",
+     "en": "The painful arc: pain in the middle of active abduction. The opened sources give different ranges, so the figure shades the overlap (about 70–100°) darker and the parts only some sources include lighter.",
+     "zh": "疼痛弧：主动外展到中段时出现疼痛。查到的来源给的范围不同，所以图中把几个来源重叠的部分（约 70–100°）涂深，只有部分来源包括的范围涂浅。"
+    },
+    {
+     "t": "h3",
+     "en": "Steps 1 to 3 in more detail",
+     "zh": "第 1–3 步细讲"
+    },
+    {
+     "t": "p",
+     "en": "Age and night pain are weaker clues than they look. AAFP (2008) describes patients with rotator cuff pathology as typically over 40, but in an international Delphi study of physical therapists the descriptor 'age typically over 40' did not reach consensus, and the authors note that cuff disorders appear across a wide age range (Requejo-Salinas 2022). Night pain from lying on the affected shoulder has been associated with cuff tears, and AAFP also lists night pain under cuff disorders and adhesive capsulitis; the Delphi experts agreed only that this condition affects sleep. So ask every patient about sleep, but do not use night pain to pick the diagnosis.",
+     "zh": "年龄和夜间痛作为线索，比看上去弱。AAFP（2008）说肩袖病变的病人通常在 40 岁以上；但在一项国际物理治疗师 Delphi 研究里，“年龄通常超过 40 岁”这一条没有达成共识，作者指出肩袖疾病在很宽的年龄范围内都会出现（Requejo-Salinas 2022）。压着患肩睡觉时的夜间痛与肩袖撕裂有关，AAFP 也把夜间痛列在肩袖疾病和粘连性关节囊炎下面；Delphi 专家只同意“这种肩痛影响睡眠”。所以每个病人都要问睡眠，但不要靠夜间痛来定诊断。"
+    },
+    {
+     "t": "p",
+     "en": "The painful arc has no single agreed range. AAFP (2008) defines it as pain with active abduction between 60 and 100 degrees; StatPearls gives about 70 to 120 degrees, with relative relief above that; TeachMeAnatomy gives 60 to 120 degrees. In a JAMA review of referred patients examined by specialists, a positive painful arc had a positive likelihood ratio of 3.7 (95% CI 1.9–7.0) for rotator cuff disease, and a normal painful arc had a negative likelihood ratio of 0.36 (0.23–0.54); whether this holds for patients seen first in primary care is unknown (Hermans 2013). Weakness alone does not separate tendinopathy from a tear: on the empty can test, weakness compared with the other side may indicate rotator cuff pathology, including supraspinatus tendinopathy or tear (AAFP 2008).",
+     "zh": "疼痛弧没有统一的范围。AAFP（2008）定义为主动外展 60–100° 之间出现疼痛；StatPearls 写约 70–120°，超过后相对缓解；TeachMeAnatomy 写 60–120°。JAMA 的一篇综述纳入的是转诊来、由专科医生检查的病人：疼痛弧阳性对肩袖疾病的阳性似然比为 3.7（95% CI 1.9–7.0），疼痛弧正常的阴性似然比为 0.36（0.23–0.54）；在基层初诊的病人身上是否一样，目前不知道（Hermans 2013）。单看无力分不出肌腱病还是撕裂：空罐试验时患侧比健侧无力，可能提示肩袖病变，包括冈上肌腱病或撕裂（AAFP 2008）。"
+    },
+    {
+     "t": "h3",
+     "en": "Step 4: when it is not subacromial pain",
+     "zh": "第 4 步：不是肩峰下疼痛的时候"
+    },
+    {
+     "t": "p",
+     "en": "Each row below comes from its own pathway or review. Setting them against subacromial pain, for example full passive range in subacromial pain against lost passive external rotation in frozen shoulder, is our comparison across those documents; none of them states that contrast itself.",
+     "zh": "下表每一行出自各自的路径或综述。拿它们和肩峰下疼痛对比，比如肩峰下疼痛被动活动度完整、冻结肩被动外旋受限，是我们把几份文件放在一起做的比较，原文没有直接这样对比。"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Finding<span class=\"translation\" lang=\"zh-Hans\">表现</span></th><th>Think of<span class=\"translation\" lang=\"zh-Hans\">想到</span></th><th>What the source says to do<span class=\"translation\" lang=\"zh-Hans\">来源怎么处理</span></th><th>Source<span class=\"translation\" lang=\"zh-Hans\">来源</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Slow onset of pain near the deltoid insertion with a disproportionately severe loss of passive external rotation</span><span class=\"translation\" lang=\"zh-Hans\">三角肌止点附近疼痛缓慢出现，被动外旋受限明显重于其他方向</span></td><td><span lang=\"en\">Frozen shoulder (adhesive capsulitis)</span><span class=\"translation\" lang=\"zh-Hans\">冻结肩（粘连性关节囊炎）</span></td><td><span lang=\"en\">Clinical diagnosis; X-rays in two planes should be normal, to rule out arthritis, avascular necrosis or dislocation</span><span class=\"translation\" lang=\"zh-Hans\">临床诊断；两个平面的 X 线应正常，用来排除关节炎、缺血性坏死或脱位</span></td><td><span lang=\"en\">BESS 2025 and 2015 frozen shoulder pathways</span><span class=\"translation\" lang=\"zh-Hans\">BESS 冻结肩路径 2025、2015</span></td></tr><tr><td><span lang=\"en\">Global loss of range, especially severe loss of passive external rotation</span><span class=\"translation\" lang=\"zh-Hans\">各方向活动度都减少，被动外旋受限尤其严重</span></td><td><span lang=\"en\">Glenohumeral osteoarthritis</span><span class=\"translation\" lang=\"zh-Hans\">盂肱关节骨关节炎</span></td><td><span lang=\"en\">Plain radiographs are essential to confirm it</span><span class=\"translation\" lang=\"zh-Hans\">确诊必须拍 X 线平片</span></td><td><span lang=\"en\">BESS/BOA 2016 osteoarthritis pathway</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 骨关节炎路径 2016</span></td></tr><tr><td><span lang=\"en\">Worse with neck extension or side-bending towards the painful side; sensory symptoms in a dermatome; Spurling test reproduces radicular symptoms</span><span class=\"translation\" lang=\"zh-Hans\">颈后伸或向患侧侧屈时加重；感觉症状符合某个皮节；Spurling 试验诱发出根性症状</span></td><td><span lang=\"en\">Cervical radiculopathy</span><span class=\"translation\" lang=\"zh-Hans\">颈神经根病</span></td><td><span lang=\"en\">A neurological finding that gets worse at any point should trigger an MRI and referral to a spinal surgeon</span><span class=\"translation\" lang=\"zh-Hans\">客观神经体征一旦进展，应做 MRI 并转脊柱外科</span></td><td><span lang=\"en\">AAFP 2016</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2016</span></td></tr><tr><td><span lang=\"en\">Pain localised to the acromioclavicular joint with tenderness there; pain high in the arc; positive cross-arm test</span><span class=\"translation\" lang=\"zh-Hans\">疼痛局限在肩锁关节并有压痛；疼痛出现在抬臂高位；交臂试验阳性</span></td><td><span lang=\"en\">Acromioclavicular joint pain</span><span class=\"translation\" lang=\"zh-Hans\">肩锁关节疼痛</span></td><td><span lang=\"en\">A separate branch of the primary care algorithm</span><span class=\"translation\" lang=\"zh-Hans\">在基层诊疗流程图里单独一支</span></td><td><span lang=\"en\">BESS/BOA commissioning guide 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 诊疗指引 2014</span></td></tr><tr><td><span lang=\"en\">Worry that the shoulder may dislocate during sport or certain activities</span><span class=\"translation\" lang=\"zh-Hans\">担心肩关节在运动或某些动作时脱出</span></td><td><span lang=\"en\">Shoulder instability</span><span class=\"translation\" lang=\"zh-Hans\">肩关节不稳</span></td><td><span lang=\"en\">Diagnosis is based on history and examination; follow the instability pathway</span><span class=\"translation\" lang=\"zh-Hans\">靠病史和查体诊断；按不稳路径处理</span></td><td><span lang=\"en\">BESS/BOA 2015 instability pathway</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 不稳路径 2015</span></td></tr><tr><td><span lang=\"en\">Sudden loss of the ability to raise the arm actively, with or without trauma</span><span class=\"translation\" lang=\"zh-Hans\">突然不能主动抬臂，有无外伤都算</span></td><td><span lang=\"en\">Acute rotator cuff tear</span><span class=\"translation\" lang=\"zh-Hans\">急性肩袖撕裂</span></td><td><span lang=\"en\">Urgent referral to secondary care, within 2 weeks</span><span class=\"translation\" lang=\"zh-Hans\">2 周内紧急转专科</span></td><td><span lang=\"en\">BESS/BOA commissioning guide 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 诊疗指引 2014</span></td></tr><tr><td><span lang=\"en\">Acutely painful, red, warm joint; fever or feeling systemically unwell</span><span class=\"translation\" lang=\"zh-Hans\">关节急性疼痛、发红、发热；发烧或全身不适</span></td><td><span lang=\"en\">Infected joint</span><span class=\"translation\" lang=\"zh-Hans\">关节感染</span></td><td><span lang=\"en\">Emergency referral, same day</span><span class=\"translation\" lang=\"zh-Hans\">当天急诊转诊</span></td><td><span lang=\"en\">BESS/BOA commissioning guide 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 诊疗指引 2014</span></td></tr><tr><td><span lang=\"en\">Trauma followed by loss of rotation and an abnormal shoulder shape</span><span class=\"translation\" lang=\"zh-Hans\">外伤后不能旋转、肩部外形异常</span></td><td><span lang=\"en\">Unreduced dislocation</span><span class=\"translation\" lang=\"zh-Hans\">未复位的脱位</span></td><td><span lang=\"en\">Emergency referral, same day</span><span class=\"translation\" lang=\"zh-Hans\">当天急诊转诊</span></td><td><span lang=\"en\">BESS/BOA commissioning guide 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 诊疗指引 2014</span></td></tr><tr><td><span lang=\"en\">Shoulder mass or swelling</span><span class=\"translation\" lang=\"zh-Hans\">肩部肿块或肿胀</span></td><td><span lang=\"en\">Possible tumour</span><span class=\"translation\" lang=\"zh-Hans\">可能是肿瘤</span></td><td><span lang=\"en\">Urgent referral, on the local two-week cancer pathway</span><span class=\"translation\" lang=\"zh-Hans\">紧急转诊，走当地两周癌症转诊通道</span></td><td><span lang=\"en\">BESS/BOA commissioning guide 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 诊疗指引 2014</span></td></tr><tr><td><span lang=\"en\">Fever, history of cancer, night pain, weight loss</span><span class=\"translation\" lang=\"zh-Hans\">发烧、癌症史、夜间痛、体重下降</span></td><td><span lang=\"en\">Possible malignancy (red flags listed in a neck and arm pain review)</span><span class=\"translation\" lang=\"zh-Hans\">可能是恶性病变（颈臂痛综述列出的红旗）</span></td><td><span lang=\"en\">Night pain alone is not specific: frozen shoulder pain can mimic malignant disease</span><span class=\"translation\" lang=\"zh-Hans\">单有夜间痛不特异：冻结肩的疼痛也会像恶性病变</span></td><td><span lang=\"en\">AAFP 2016; BESS/BOA 2015 frozen shoulder pathway</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2016；BESS/BOA 冻结肩路径 2015</span></td></tr></tbody></table></div>",
+     "md": "| Finding 表现 | Think of 想到 | What the source says to do 来源怎么处理 | Source 来源 |\n|---|---|---|---|\n| Slow onset of pain near the deltoid insertion with a disproportionately severe loss of passive external rotation<br>三角肌止点附近疼痛缓慢出现，被动外旋受限明显重于其他方向 | Frozen shoulder (adhesive capsulitis)<br>冻结肩（粘连性关节囊炎） | Clinical diagnosis; X-rays in two planes should be normal, to rule out arthritis, avascular necrosis or dislocation<br>临床诊断；两个平面的 X 线应正常，用来排除关节炎、缺血性坏死或脱位 | BESS 2025 and 2015 frozen shoulder pathways<br>BESS 冻结肩路径 2025、2015 |\n| Global loss of range, especially severe loss of passive external rotation<br>各方向活动度都减少，被动外旋受限尤其严重 | Glenohumeral osteoarthritis<br>盂肱关节骨关节炎 | Plain radiographs are essential to confirm it<br>确诊必须拍 X 线平片 | BESS/BOA 2016 osteoarthritis pathway<br>BESS/BOA 骨关节炎路径 2016 |\n| Worse with neck extension or side-bending towards the painful side; sensory symptoms in a dermatome; Spurling test reproduces radicular symptoms<br>颈后伸或向患侧侧屈时加重；感觉症状符合某个皮节；Spurling 试验诱发出根性症状 | Cervical radiculopathy<br>颈神经根病 | A neurological finding that gets worse at any point should trigger an MRI and referral to a spinal surgeon<br>客观神经体征一旦进展，应做 MRI 并转脊柱外科 | AAFP 2016<br>AAFP 2016 |\n| Pain localised to the acromioclavicular joint with tenderness there; pain high in the arc; positive cross-arm test<br>疼痛局限在肩锁关节并有压痛；疼痛出现在抬臂高位；交臂试验阳性 | Acromioclavicular joint pain<br>肩锁关节疼痛 | A separate branch of the primary care algorithm<br>在基层诊疗流程图里单独一支 | BESS/BOA commissioning guide 2014<br>BESS/BOA 诊疗指引 2014 |\n| Worry that the shoulder may dislocate during sport or certain activities<br>担心肩关节在运动或某些动作时脱出 | Shoulder instability<br>肩关节不稳 | Diagnosis is based on history and examination; follow the instability pathway<br>靠病史和查体诊断；按不稳路径处理 | BESS/BOA 2015 instability pathway<br>BESS/BOA 不稳路径 2015 |\n| Sudden loss of the ability to raise the arm actively, with or without trauma<br>突然不能主动抬臂，有无外伤都算 | Acute rotator cuff tear<br>急性肩袖撕裂 | Urgent referral to secondary care, within 2 weeks<br>2 周内紧急转专科 | BESS/BOA commissioning guide 2014<br>BESS/BOA 诊疗指引 2014 |\n| Acutely painful, red, warm joint; fever or feeling systemically unwell<br>关节急性疼痛、发红、发热；发烧或全身不适 | Infected joint<br>关节感染 | Emergency referral, same day<br>当天急诊转诊 | BESS/BOA commissioning guide 2014<br>BESS/BOA 诊疗指引 2014 |\n| Trauma followed by loss of rotation and an abnormal shoulder shape<br>外伤后不能旋转、肩部外形异常 | Unreduced dislocation<br>未复位的脱位 | Emergency referral, same day<br>当天急诊转诊 | BESS/BOA commissioning guide 2014<br>BESS/BOA 诊疗指引 2014 |\n| Shoulder mass or swelling<br>肩部肿块或肿胀 | Possible tumour<br>可能是肿瘤 | Urgent referral, on the local two-week cancer pathway<br>紧急转诊，走当地两周癌症转诊通道 | BESS/BOA commissioning guide 2014<br>BESS/BOA 诊疗指引 2014 |\n| Fever, history of cancer, night pain, weight loss<br>发烧、癌症史、夜间痛、体重下降 | Possible malignancy (red flags listed in a neck and arm pain review)<br>可能是恶性病变（颈臂痛综述列出的红旗） | Night pain alone is not specific: frozen shoulder pain can mimic malignant disease<br>单有夜间痛不特异：冻结肩的疼痛也会像恶性病变 | AAFP 2016; BESS/BOA 2015 frozen shoulder pathway<br>AAFP 2016；BESS/BOA 冻结肩路径 2015 |\n"
+    },
+    {
+     "t": "p",
+     "en": "Imaging is not needed to confirm subacromial pain syndrome or to start treatment (BESS 2025). BESS lists plain radiographs for trauma, red flags, severe pain or stiffness, acromioclavicular joint arthritis, or subacromial pain lasting longer than four weeks. The Dutch update recommends ultrasound when a full- or partial-thickness supraspinatus tear is suspected, and MRI when ultrasound is unavailable or inconclusive (Lambers Heerspink 2026).",
+     "zh": "确诊肩峰下疼痛综合征和开始治疗都不需要影像（BESS 2025）。BESS 列出要拍 X 线平片的情况：外伤、有红旗征、疼痛或僵硬严重、肩锁关节炎，或肩峰下疼痛超过四周。荷兰指南更新版建议：怀疑冈上肌腱全层或部分撕裂时做超声，超声做不了或结果不明确时做 MRI（Lambers Heerspink 2026）。"
+    },
+    {
+     "t": "h3",
+     "en": "Step 5: treatment in more detail",
+     "zh": "第 5 步：治疗细讲"
+    },
+    {
+     "t": "p",
+     "en": "What the exercise looked like in a trial: Holmgren (2012) used eccentric strengthening of the rotator cuff plus concentric and eccentric exercises for the scapular stabilisers, combined with manual mobilisation. Patients had five or six supervised sessions over 12 weeks and did home exercises once or twice a day. Pain during the exercises was allowed, but it could not go above 5 on a 0–10 scale and had to settle back to the pre-exercise level before the next session; otherwise the load was reduced.",
+     "zh": "试验里的运动是什么样：Holmgren（2012）用肩袖离心强化，加上肩胛稳定肌的向心和离心训练，并配合手法松动。12 周内有 5–6 次治疗师指导，在家每天练 1–2 次。练习时允许疼痛，但不能超过 0–10 分的 5 分，而且下次练习前疼痛要回到练习前的水平；否则就减负荷。"
+    },
+    {
+     "t": "p",
+     "en": "Manual therapy: the Dutch guideline found that joint mobilisations add no benefit to an active exercise programme (Diercks 2014). A later meta-analysis found manual therapy plus exercise better than exercise alone only at the shortest follow-up, with a small effect (SMD −0.32, 95% CI −0.62 to −0.01), and rated all of its evidence very low quality (Steuri 2017).",
+     "zh": "手法治疗：荷兰指南认为，在主动运动之外加关节松动，没有额外好处（Diercks 2014）。后来的一项荟萃分析发现，手法加运动只在最短的随访时间点比单纯运动好，效应小（SMD −0.32，95% CI −0.62 到 −0.01），而且全部证据质量评为很低（Steuri 2017）。"
+    },
+    {
+     "t": "p",
+     "en": "Corticosteroid injection: in the first 8 weeks, subacromial injections reduce pain and improve function more than placebo injections, physiotherapy or no treatment, but the effect beyond 3 months is unclear, and an injection is not recommended as the only long-term treatment (Diercks 2014). The Dutch update suggests an injection to make exercise possible when severe pain stops the patient from taking part (Lambers Heerspink 2026); BESS considers one injection when there is no improvement by 6–8 weeks, as a shared decision with the patient (BESS 2025).",
+     "zh": "皮质类固醇注射：头 8 周内，肩峰下注射在减轻疼痛、改善功能上优于安慰注射、物理治疗或不治疗，但 3 个月以后的效果不明确，也不建议把注射当作唯一的长期治疗（Diercks 2014）。荷兰指南更新版建议：疼痛严重到没法参加运动治疗时，可以考虑注射，让运动做得下去（Lambers Heerspink 2026）；BESS 则是在 6–8 周仍无改善时，和病人共同决定是否打一针（BESS 2025）。"
+    },
+    {
+     "t": "p",
+     "en": "Acupuncture and dry needling: the 2014 Dutch guideline rated acupuncture as appearing no more effective than placebo or exercise therapy (level 3 evidence). It gives no recommendation on dry needling and says only that treatment of myofascial trigger points may be considered (Diercks 2014). Thursday's paper is a 2026 randomised trial of dry needling for subacromial pain, so needling gets its own day.",
+     "zh": "针刺与干针：2014 年荷兰指南认为，针刺看来不比安慰治疗或运动治疗更有效（3 级证据）。它对干针没有给推荐，只说可以考虑处理肌筋膜触发点（Diercks 2014）。周四要读的是一篇 2026 年干针治疗肩峰下疼痛的随机对照试验，针刺的问题那天专门讲。"
+    },
+    {
+     "t": "p",
+     "en": "Surgery: the Dutch guideline says subacromial pain should preferably be treated without surgery (Diercks 2014). Two placebo-controlled trials support this. In CSAW, both surgical groups did better than no treatment at 6 months, but the difference was not clinically important, and decompression added nothing over arthroscopy alone (Beard 2018). In FIMPACT, decompression gave no benefit over diagnostic arthroscopy at 24 months (Paavola 2018). A BMJ Rapid Recommendation panel then made a strong recommendation against the operation (Vandvik 2019). BESS (2025) still says surgery could be considered after six months of failed non-surgical treatment, so the sources disagree on its place late in the pathway; they agree it is not where treatment starts.",
+     "zh": "手术：荷兰指南说肩峰下疼痛最好不手术治疗（Diercks 2014）。两项有安慰对照的试验支持这一点。CSAW 试验中，两个手术组 6 个月时都比不治疗好，但差别没有临床意义，而且减压并不比单纯关节镜更好（Beard 2018）。FIMPACT 试验中，24 个月时减压术并不比诊断性关节镜更好（Paavola 2018）。随后 BMJ 快速推荐小组强烈建议不做这个手术（Vandvik 2019）。BESS（2025）仍然说，非手术治疗六个月无效后可以考虑手术。所以在流程后段手术放在哪里，来源之间有分歧；但都同意手术不是治疗的起点。"
+    },
+    {
+     "t": "h3",
+     "en": "Step 6: progression in more detail",
+     "zh": "第 6 步：进阶细讲"
+    },
+    {
+     "t": "p",
+     "en": "How much pain is acceptable during exercise is not settled. The Dutch guideline says stay within the pain threshold (Diercks 2014); Holmgren allowed up to 5 out of 10. Lewis (2016) suggests that in non-irritable cases, especially when progress has stalled, pain tolerated at about 2 to 5 out of 10 may be tried, as long as it settles soon after exercise and does not increase night pain or pain over 24 hours. Littlewood's self-managed programme lets exercise produce pain as long as symptoms are no worse once it stops, and progresses when that pain response settles (Littlewood 2013). A 2015 review found that producing or avoiding pain did not appear to change outcomes (Littlewood 2015), and BESS (2025) also calls the question unclear.",
+     "zh": "练习时能接受多痛，目前没有定论。荷兰指南说不超过疼痛阈值（Diercks 2014）；Holmgren 允许到 10 分里的 5 分。Lewis（2016）建议：不是易激惹型、尤其是进步停滞时，可以试着接受约 2–5 分、病人能耐受的疼痛，前提是练完很快缓解，而且不加重夜间痛和 24 小时内的疼痛。Littlewood 的自我管理方案允许练习时痛，只要停下后症状不比练之前重；疼痛反应消退了就进阶（Littlewood 2013）。2015 年的一篇综述发现，练习时痛或不痛，看来不影响结果（Littlewood 2015）；BESS（2025）也说这个问题不清楚。"
+    },
+    {
+     "t": "p",
+     "en": "For an irritable shoulder, Lewis (2016) notes that resistance work done quickly, under high loads and many repetitions, commonly aggravates symptoms. He suggests supported isometrics in the direction of pain to help control pain: some evidence from other regions supports this, but conclusive evidence for the shoulder is not available.",
+     "zh": "对易激惹型的肩，Lewis（2016）指出：速度快、负荷大、次数多的抗阻训练常常让症状加重。他建议在手臂有支撑的情况下，朝疼痛方向做等长收缩来控制疼痛；其他部位有一些证据支持，但肩部还没有确定的证据。"
+    },
+    {
+     "t": "p",
+     "en": "Time points from the guidelines: if symptoms last longer than 6 weeks, the Dutch guideline advises steps at work to prevent a chronic course and an ultrasound to rule out a cuff tear (Diercks 2014). BESS (2025) considers one injection at 6–8 weeks without improvement, refers to secondary care at 12 weeks and considers surgery at six months. A review of exercise trials says most programmes should show clinically significant results by 12 weeks (Littlewood 2015). No opened source gives numeric return-to-sport or return-to-work criteria such as strength ratios; the Dutch update advises building up exercise gradually within sport and work to increase how much load the cuff can bear (Lambers Heerspink 2026).",
+     "zh": "指南里的时间点：症状超过 6 周，荷兰指南建议在工作上采取措施，防止转成慢性，并做超声排除肩袖撕裂（Diercks 2014）。BESS（2025）是 6–8 周无改善考虑注射一针，12 周转专科，六个月考虑手术。一篇运动试验的综述说，多数方案到 12 周应该能看到有临床意义的效果（Littlewood 2015）。查到的来源都没有给出重返运动或工作的量化标准（比如肌力比值）；荷兰指南更新版建议在运动和工作中逐步加量，提高肩袖能承受的负荷（Lambers Heerspink 2026）。"
+    },
+    {
+     "t": "pitfall",
+     "label": "易混点",
+     "zh": "“撞击”是一种解释，不是定论。图 01 这样的画法，容易让人以为是肩峰把肌腱压坏了。外源说认为肩峰的机械压迫造成肌腱损伤，内源说认为肌腱先退变；病因至今有争议，也就没有公认的首选疗法（Bifano 2014）。StatPearls 也写到，现在的文献不再把撞击看成单一的解剖诊断，而看成一组临床症状。两项有安慰对照的手术试验（CSAW、FIMPACT）中，减压术都没有比对照手术更好。向病人解释时，可以用荷兰指南更新版的说法：逐步加量的运动，是为了提高肩袖能承受的负荷（Lambers Heerspink 2026）。"
+    },
+    {
+     "t": "p",
+     "en": "The rest of this week builds on this pathway: Wednesday is a teaching case of supraspinatus tendinopathy, Thursday is the dry needling trial, and Friday covers the special tests one by one.",
+     "zh": "本周后面几天接着这条流程走：周三是冈上肌腱病的教学病例，周四读干针的随机对照试验，周五逐项讲特殊检查。"
+    }
+   ],
+   "check": [
+    [
+     "What does the Dutch guideline's definition of subacromial pain syndrome describe, and what does BESS say should be absent?",
+     "荷兰指南怎样定义肩峰下疼痛综合征？BESS 说哪些情况不应该存在？",
+     "Non-traumatic, usually one-sided pain around the acromion that often gets worse during or after lifting the arm. BESS: no trauma and no sign of a cuff tear, arthritis, frozen shoulder, instability, or neck or nerve problems.",
+     "非外伤性、通常单侧、位于肩峰周围、抬臂时或抬臂后常加重的肩痛。BESS：没有外伤，也没有肩袖撕裂、关节炎、冻结肩、不稳或颈椎与神经问题的表现。"
+    ],
+    [
+     "Passive external rotation is as limited as active external rotation. Which two conditions come to mind, and which one needs X-rays to confirm it?",
+     "被动外旋和主动外旋一样受限，要想到哪两种情况？哪一种必须拍 X 线确诊？",
+     "Frozen shoulder and glenohumeral osteoarthritis. Plain radiographs are essential to confirm osteoarthritis; in frozen shoulder the X-rays should be normal.",
+     "冻结肩和盂肱关节骨关节炎。骨关节炎确诊必须拍 X 线平片；冻结肩的 X 线应该正常。"
+    ],
+    [
+     "Which two findings in this chapter need same-day referral?",
+     "本章哪两种表现要当天转诊？",
+     "An acutely painful, red, warm joint (possible infection), and trauma followed by loss of rotation and an abnormal shape (unreduced dislocation).",
+     "关节急性疼痛、发红、发热（可能感染）；外伤后不能旋转、外形异常（未复位的脱位）。"
+    ],
+    [
+     "In the Holmgren trial, what was the rule for pain during exercise?",
+     "Holmgren 试验对练习时的疼痛怎么规定？",
+     "Pain could not go above 5 on a 0–10 scale, and it had to settle back to the pre-exercise level before the next session; otherwise the load was reduced.",
+     "不能超过 0–10 分的 5 分，而且下次练习前要回到练习前的水平；否则就减负荷。"
+    ],
+    [
+     "Why is surgery not where treatment starts?",
+     "为什么手术不是治疗的起点？",
+     "The Dutch guideline prefers non-operative treatment, and in two placebo-controlled trials (CSAW, FIMPACT) decompression was no better than arthroscopy alone or diagnostic arthroscopy.",
+     "荷兰指南首选非手术治疗；两项有安慰对照的试验（CSAW、FIMPACT）中，减压术并不比单纯关节镜或诊断性关节镜更好。"
+    ]
+   ],
+   "take": [
+    "Subacromial pain syndrome is a clinical diagnosis: history and examination first, imaging only for specific reasons, exercise at the core of treatment, and surgery not the place to start.",
+    "肩峰下疼痛综合征是临床诊断：先问诊和查体，影像只在特定情况下做，运动是治疗核心，手术不是起点。"
+   ],
+   "bridge": [
+    "consolidate-landmarks",
+    "Next: the bony landmarks behind today's pathway. 下一章：今天流程用到的骨性标志。",
+    "02 Bony landmarks"
+   ]
+  },
+  {
+   "num": 2,
+   "id": "consolidate-landmarks",
+   "content": "O-2",
+   "items": [
+    "Scapula 肩胛骨标志",
+    "Humerus 肱骨标志"
+   ],
+   "forms": [
+    "F-6",
+    "F-9"
+   ],
+   "title": [
+    "Consolidate: bony landmarks of the scapula and humerus",
+    "夯实：肩胛骨与肱骨的骨性标志"
+   ],
+   "toc": [
+    "Bony landmarks",
+    "骨性标志"
+   ],
+   "goals": [
+    [
+     "Name 17 landmarks of the scapula and proximal humerus on a figure, front and back.",
+     "在前、后两个视图上说出肩胛骨和肱骨近端的 17 个骨性标志。"
+    ],
+    [
+     "Say which muscle attaches, or which nerve passes, at each landmark.",
+     "说出每个标志上附着哪块肌肉，或经过哪条神经。"
+    ],
+    [
+     "Spell the English names without looking.",
+     "不看书拼写英文名称。"
+    ]
+   ],
+   "terms": [
+    [
+     "Scapula",
+     "肩胛骨"
+    ],
+    [
+     "Humerus",
+     "肱骨"
+    ],
+    [
+     "Acromion",
+     "肩峰"
+    ],
+    [
+     "Scapular spine",
+     "肩胛冈"
+    ],
+    [
+     "Coracoid process",
+     "喙突"
+    ],
+    [
+     "Glenoid cavity",
+     "关节盂"
+    ],
+    [
+     "Suprascapular notch",
+     "肩胛上切迹"
+    ],
+    [
+     "Spinoglenoid notch",
+     "冈盂切迹"
+    ],
+    [
+     "Greater tubercle",
+     "大结节"
+    ],
+    [
+     "Lesser tubercle",
+     "小结节"
+    ],
+    [
+     "Intertubercular groove",
+     "结节间沟"
+    ],
+    [
+     "Surgical neck",
+     "外科颈"
+    ],
+    [
+     "Deltoid tuberosity",
+     "三角肌粗隆"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "These landmarks and attachments come from this week's chapter (library: shoulder). Today is retrieval practice: name each lettered landmark on figure 03 before you open the answers, then spell the English names. The key table comes last, so you check yourself after recalling.",
+     "zh": "这些骨性标志和附着关系取自本周章节（知识库：肩部）。今天练的是回忆：先在图 03 上说出每个字母指的标志，再展开答案，然后拼写英文名称。对照表放在最后，回忆完再核对。"
+    },
+    {
+     "t": "fig",
+     "n": "03",
+     "en": "Right scapula and proximal humerus, posterior and anterior views, drawn apart so the glenoid and notches show. Letters A to Q mark the landmarks of this week's chapter.",
+     "zh": "右侧肩胛骨与肱骨近端的后面观和前面观，两骨分开画，好看清关节盂和切迹。字母 A 到 Q 标出本周章节的骨性标志。"
+    },
+    {
+     "t": "h3",
+     "en": "Self-test",
+     "zh": "自测"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Figure 03, posterior view: name landmarks A to F.",
+       "看图 03 后面观：说出 A 到 F。",
+       "A Acromion; B Scapular spine; C Supraspinous fossa; D Infraspinous fossa; E Spinoglenoid notch; F Suprascapular notch.",
+       "A 肩峰；B 肩胛冈；C 冈上窝；D 冈下窝；E 冈盂切迹；F 肩胛上切迹。"
+      ],
+      [
+       "Figure 03, posterior view: name landmarks G to L.",
+       "看图 03 后面观：说出 G 到 L。",
+       "G Medial border of the scapula; H Lateral border of the scapula; I Inferior angle; J Greater tubercle; K Surgical neck; L Deltoid tuberosity.",
+       "G 肩胛骨内侧缘；H 肩胛骨外侧缘；I 下角；J 大结节；K 外科颈；L 三角肌粗隆。"
+      ],
+      [
+       "Figure 03, anterior view: name landmarks M to Q.",
+       "看图 03 前面观：说出 M 到 Q。",
+       "M Coracoid process; N Glenoid cavity; O Subscapular fossa; P Lesser tubercle; Q Intertubercular groove.",
+       "M 喙突；N 关节盂；O 肩胛下窝；P 小结节；Q 结节间沟。"
+      ],
+      [
+       "The suprascapular nerve can be compressed at F or at E. Which muscles are affected in each case?",
+       "肩胛上神经可能在 F 或 E 处受压。两种情况分别累及哪些肌肉？",
+       "F, the suprascapular notch: both supraspinatus and infraspinatus. E, the spinoglenoid notch: infraspinatus only; supraspinatus is spared.",
+       "F 肩胛上切迹：冈上肌和冈下肌都受累。E 冈盂切迹：只有冈下肌，冈上肌不受累。"
+      ],
+      [
+       "Which landmark does the axillary nerve wind around, and which space does that landmark bound?",
+       "腋神经绕行哪个骨性标志？这个标志是哪个间隙的边界？",
+       "The surgical neck of the humerus; it is the lateral boundary of the quadrangular space.",
+       "肱骨外科颈；它是四边孔的外界。"
+      ],
+      [
+       "Teres minor and teres major: which part of the scapula does each originate from?",
+       "小圆肌和大圆肌各起于肩胛骨的哪个部位？",
+       "Teres minor: the upper part of the lateral border. Teres major: the posterior surface of the inferior angle.",
+       "小圆肌：外侧缘上部。大圆肌：下角后面。"
+      ],
+      [
+       "Fill in: The deltoid originates from the lateral third of the clavicle, the ____ and the ____, and inserts onto the ____ of the humerus.",
+       "填空：三角肌起于锁骨外侧三分之一、____和____，止于肱骨____。",
+       "Acromion; spine of the scapula; deltoid tuberosity.",
+       "肩峰；肩胛冈；三角肌粗隆。"
+      ],
+      [
+       "Which landmark separates the greater and lesser tubercles, and which muscle inserts onto its medial lip?",
+       "哪个骨性标志分隔大结节和小结节？哪块肌肉止于它的内侧唇？",
+       "The intertubercular groove; the teres major (medial lip, the crest of the lesser tubercle).",
+       "结节间沟；大圆肌（内侧唇，即小结节嵴）。"
+      ],
+      [
+       "Which tendon passes beneath the acromion, and on which facet does it insert?",
+       "哪条肌腱从肩峰下方经过？止于哪个小面？",
+       "The supraspinatus tendon; the superior facet of the greater tubercle.",
+       "冈上肌腱；大结节上小面。"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Spelling",
+     "zh": "拼写默写"
+    },
+    {
+     "t": "p",
+     "en": "Type the English name for each Chinese term. Capital letters do not matter; the box checks your spelling.",
+     "zh": "看中文，打出英文名称。大小写不计；输入框会核对拼写。"
+    },
+    {
+     "t": "spell",
+     "words": [
+      [
+       "Acromion",
+       "肩峰"
+      ],
+      [
+       "Coracoid process",
+       "喙突"
+      ],
+      [
+       "Glenoid cavity",
+       "关节盂"
+      ],
+      [
+       "Supraspinous fossa",
+       "冈上窝"
+      ],
+      [
+       "Infraspinous fossa",
+       "冈下窝"
+      ],
+      [
+       "Subscapular fossa",
+       "肩胛下窝"
+      ],
+      [
+       "Suprascapular notch",
+       "肩胛上切迹"
+      ],
+      [
+       "Spinoglenoid notch",
+       "冈盂切迹"
+      ],
+      [
+       "Greater tubercle",
+       "大结节"
+      ],
+      [
+       "Lesser tubercle",
+       "小结节"
+      ],
+      [
+       "Intertubercular groove",
+       "结节间沟"
+      ],
+      [
+       "Surgical neck",
+       "外科颈"
+      ],
+      [
+       "Deltoid tuberosity",
+       "三角肌粗隆"
+      ],
+      [
+       "Inferior angle",
+       "下角"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Key: what each letter marks",
+     "zh": "答案对照：每个字母指什么"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Letter<span class=\"translation\" lang=\"zh-Hans\">字母</span></th><th>Landmark<span class=\"translation\" lang=\"zh-Hans\">骨性标志</span></th><th>What attaches or passes here<span class=\"translation\" lang=\"zh-Hans\">附着或经过的结构</span></th></tr></thead><tbody><tr><th><span lang=\"en\">A</span></th><td><span lang=\"en\">Acromion</span><span class=\"translation\" lang=\"zh-Hans\">肩峰</span></td><td><span lang=\"en\">The lateral extension of the scapular spine; it arches over the glenohumeral joint and articulates with the clavicle. The supraspinatus tendon passes beneath it, and part of the deltoid originates from it.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛冈向外侧的延伸，呈弓形覆盖在盂肱关节上方，并与锁骨相关节。冈上肌腱从它下方经过，三角肌也有一部分起于肩峰。</span></td></tr><tr><th><span lang=\"en\">B</span></th><td><span lang=\"en\">Scapular spine</span><span class=\"translation\" lang=\"zh-Hans\">肩胛冈</span></td><td><span lang=\"en\">The horizontal bony ridge you follow from the acromion to the medial border. Part of the deltoid originates from it; the trapezius inserts onto its superior lip as far as the tubercle at its medial end, and the lower trapezius near that medial end.</span><span class=\"translation\" lang=\"zh-Hans\">从肩峰往内侧一直摸到肩胛骨内侧缘的那条横骨嵴。三角肌有一部分起于肩胛冈；斜方肌止于肩胛冈上唇直至其内侧端的结节，下斜方肌止于内侧端附近。</span></td></tr><tr><th><span lang=\"en\">C</span></th><td><span lang=\"en\">Supraspinous fossa</span><span class=\"translation\" lang=\"zh-Hans\">冈上窝</span></td><td><span lang=\"en\">The smaller area on the posterior surface, above the spine. The supraspinatus originates here; the suprascapular nerve crosses it and gives motor branches to that muscle.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨后面、肩胛冈上方较小的区域。冈上肌起于此处；肩胛上神经横过冈上窝，并向冈上肌发出运动支。</span></td></tr><tr><th><span lang=\"en\">D</span></th><td><span lang=\"en\">Infraspinous fossa</span><span class=\"translation\" lang=\"zh-Hans\">冈下窝</span></td><td><span lang=\"en\">The larger area on the posterior surface, below the spine. The infraspinatus originates here; the suprascapular nerve reaches it through the spinoglenoid notch.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨后面、肩胛冈下方较大的区域。冈下肌起于此处；肩胛上神经经冈盂切迹进入冈下窝。</span></td></tr><tr><th><span lang=\"en\">E</span></th><td><span lang=\"en\">Spinoglenoid notch</span><span class=\"translation\" lang=\"zh-Hans\">冈盂切迹</span></td><td><span lang=\"en\">Behind the scapular neck and beneath the acromion; it connects the two fossae. The suprascapular nerve curves around the lateral border of the spine through it, so compression here can cause isolated atrophy of the infraspinatus while the supraspinatus is spared.</span><span class=\"translation\" lang=\"zh-Hans\">在肩胛颈后方、肩峰下方，连通冈上窝和冈下窝。肩胛上神经绕过肩胛冈外侧缘经此切迹进入冈下窝，所以这里受压可只引起冈下肌萎缩，冈上肌不受累。</span></td></tr><tr><th><span lang=\"en\">F</span></th><td><span lang=\"en\">Suprascapular notch</span><span class=\"translation\" lang=\"zh-Hans\">肩胛上切迹</span></td><td><span lang=\"en\">Where the superior border meets the base of the coracoid process, just medial to it. The suprascapular nerve passes through it beneath the superior transverse scapular ligament, so compression here can affect both supraspinatus and infraspinatus.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨上缘与喙突基底部相接处，在喙突内侧。肩胛上神经从肩胛上横韧带下方穿过此切迹，所以这里受压可同时累及冈上肌和冈下肌。</span></td></tr><tr><th><span lang=\"en\">G</span></th><td><span lang=\"en\">Medial border of the scapula</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨内侧缘</span></td><td><span lang=\"en\">The serratus anterior inserts onto its anterior, or costal, surface.</span><span class=\"translation\" lang=\"zh-Hans\">前锯肌止于内侧缘的前面（肋面）。</span></td></tr><tr><th><span lang=\"en\">H</span></th><td><span lang=\"en\">Lateral border of the scapula</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨外侧缘</span></td><td><span lang=\"en\">The teres minor originates from its upper part.</span><span class=\"translation\" lang=\"zh-Hans\">小圆肌起于外侧缘上部。</span></td></tr><tr><th><span lang=\"en\">I</span></th><td><span lang=\"en\">Inferior angle</span><span class=\"translation\" lang=\"zh-Hans\">下角</span></td><td><span lang=\"en\">The teres major originates from its posterior surface.</span><span class=\"translation\" lang=\"zh-Hans\">大圆肌起于下角后面。</span></td></tr><tr><th><span lang=\"en\">J</span></th><td><span lang=\"en\">Greater tubercle</span><span class=\"translation\" lang=\"zh-Hans\">大结节</span></td><td><span lang=\"en\">The bony prominence on the lateral side of the proximal humerus. The supraspinatus, infraspinatus and teres minor insert onto its superior, middle and inferior facets.</span><span class=\"translation\" lang=\"zh-Hans\">肱骨近端外侧的骨性隆起。冈上肌、冈下肌和小圆肌分别止于它的上、中、下小面。</span></td></tr><tr><th><span lang=\"en\">K</span></th><td><span lang=\"en\">Surgical neck</span><span class=\"translation\" lang=\"zh-Hans\">外科颈</span></td><td><span lang=\"en\">The axillary nerve winds around it deep to the deltoid after passing through the quadrangular space; the surgical neck is the lateral boundary of that space.</span><span class=\"translation\" lang=\"zh-Hans\">腋神经穿过四边孔后，在三角肌深面绕行外科颈；外科颈是四边孔的外界。</span></td></tr><tr><th><span lang=\"en\">L</span></th><td><span lang=\"en\">Deltoid tuberosity</span><span class=\"translation\" lang=\"zh-Hans\">三角肌粗隆</span></td><td><span lang=\"en\">The deltoid inserts here.</span><span class=\"translation\" lang=\"zh-Hans\">三角肌止于此处。</span></td></tr><tr><th><span lang=\"en\">M</span></th><td><span lang=\"en\">Coracoid process</span><span class=\"translation\" lang=\"zh-Hans\">喙突</span></td><td><span lang=\"en\">The suprascapular notch lies just medial to it, and the glenoid cavity lies inferior to it.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛上切迹在它内侧，关节盂在它下方。</span></td></tr><tr><th><span lang=\"en\">N</span></th><td><span lang=\"en\">Glenoid cavity</span><span class=\"translation\" lang=\"zh-Hans\">关节盂</span></td><td><span lang=\"en\">The shallow socket at the upper end of the lateral border, where the head of the humerus articulates to form the glenohumeral joint; the rotator cuff helps hold the humeral head in it.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨外侧缘上端的浅窝，与肱骨头相关节构成盂肱关节；肩袖帮助把肱骨头稳定在关节盂内。</span></td></tr><tr><th><span lang=\"en\">O</span></th><td><span lang=\"en\">Subscapular fossa</span><span class=\"translation\" lang=\"zh-Hans\">肩胛下窝</span></td><td><span lang=\"en\">The large concave depression covering most of the costal (anterior) surface. The subscapularis originates from it.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛骨肋面（前面）上的大片凹陷。肩胛下肌起于肩胛下窝。</span></td></tr><tr><th><span lang=\"en\">P</span></th><td><span lang=\"en\">Lesser tubercle</span><span class=\"translation\" lang=\"zh-Hans\">小结节</span></td><td><span lang=\"en\">The smaller prominence on the anterior surface of the proximal humerus, medial to the greater tubercle across the intertubercular groove. The subscapularis inserts onto it.</span><span class=\"translation\" lang=\"zh-Hans\">肱骨近端前面较小的隆起，隔着结节间沟位于大结节内侧。肩胛下肌止于小结节。</span></td></tr><tr><th><span lang=\"en\">Q</span></th><td><span lang=\"en\">Intertubercular groove</span><span class=\"translation\" lang=\"zh-Hans\">结节间沟</span></td><td><span lang=\"en\">It separates the greater and lesser tubercles. The teres major inserts onto its medial lip (the crest of the lesser tubercle).</span><span class=\"translation\" lang=\"zh-Hans\">分隔大结节和小结节。大圆肌止于结节间沟内侧唇（小结节嵴）。</span></td></tr></tbody></table></div>",
+     "md": "| Letter 字母 | Landmark 骨性标志 | What attaches or passes here 附着或经过的结构 |\n|---|---|---|\n| A | Acromion 肩峰 | The lateral extension of the scapular spine; it arches over the glenohumeral joint and articulates with the clavicle. The supraspinatus tendon passes beneath it, and part of the deltoid originates from it.<br>肩胛冈向外侧的延伸，呈弓形覆盖在盂肱关节上方，并与锁骨相关节。冈上肌腱从它下方经过，三角肌也有一部分起于肩峰。 |\n| B | Scapular spine 肩胛冈 | The horizontal bony ridge you follow from the acromion to the medial border. Part of the deltoid originates from it; the trapezius inserts onto its superior lip as far as the tubercle at its medial end, and the lower trapezius near that medial end.<br>从肩峰往内侧一直摸到肩胛骨内侧缘的那条横骨嵴。三角肌有一部分起于肩胛冈；斜方肌止于肩胛冈上唇直至其内侧端的结节，下斜方肌止于内侧端附近。 |\n| C | Supraspinous fossa 冈上窝 | The smaller area on the posterior surface, above the spine. The supraspinatus originates here; the suprascapular nerve crosses it and gives motor branches to that muscle.<br>肩胛骨后面、肩胛冈上方较小的区域。冈上肌起于此处；肩胛上神经横过冈上窝，并向冈上肌发出运动支。 |\n| D | Infraspinous fossa 冈下窝 | The larger area on the posterior surface, below the spine. The infraspinatus originates here; the suprascapular nerve reaches it through the spinoglenoid notch.<br>肩胛骨后面、肩胛冈下方较大的区域。冈下肌起于此处；肩胛上神经经冈盂切迹进入冈下窝。 |\n| E | Spinoglenoid notch 冈盂切迹 | Behind the scapular neck and beneath the acromion; it connects the two fossae. The suprascapular nerve curves around the lateral border of the spine through it, so compression here can cause isolated atrophy of the infraspinatus while the supraspinatus is spared.<br>在肩胛颈后方、肩峰下方，连通冈上窝和冈下窝。肩胛上神经绕过肩胛冈外侧缘经此切迹进入冈下窝，所以这里受压可只引起冈下肌萎缩，冈上肌不受累。 |\n| F | Suprascapular notch 肩胛上切迹 | Where the superior border meets the base of the coracoid process, just medial to it. The suprascapular nerve passes through it beneath the superior transverse scapular ligament, so compression here can affect both supraspinatus and infraspinatus.<br>肩胛骨上缘与喙突基底部相接处，在喙突内侧。肩胛上神经从肩胛上横韧带下方穿过此切迹，所以这里受压可同时累及冈上肌和冈下肌。 |\n| G | Medial border of the scapula 肩胛骨内侧缘 | The serratus anterior inserts onto its anterior, or costal, surface.<br>前锯肌止于内侧缘的前面（肋面）。 |\n| H | Lateral border of the scapula 肩胛骨外侧缘 | The teres minor originates from its upper part.<br>小圆肌起于外侧缘上部。 |\n| I | Inferior angle 下角 | The teres major originates from its posterior surface.<br>大圆肌起于下角后面。 |\n| J | Greater tubercle 大结节 | The bony prominence on the lateral side of the proximal humerus. The supraspinatus, infraspinatus and teres minor insert onto its superior, middle and inferior facets.<br>肱骨近端外侧的骨性隆起。冈上肌、冈下肌和小圆肌分别止于它的上、中、下小面。 |\n| K | Surgical neck 外科颈 | The axillary nerve winds around it deep to the deltoid after passing through the quadrangular space; the surgical neck is the lateral boundary of that space.<br>腋神经穿过四边孔后，在三角肌深面绕行外科颈；外科颈是四边孔的外界。 |\n| L | Deltoid tuberosity 三角肌粗隆 | The deltoid inserts here.<br>三角肌止于此处。 |\n| M | Coracoid process 喙突 | The suprascapular notch lies just medial to it, and the glenoid cavity lies inferior to it.<br>肩胛上切迹在它内侧，关节盂在它下方。 |\n| N | Glenoid cavity 关节盂 | The shallow socket at the upper end of the lateral border, where the head of the humerus articulates to form the glenohumeral joint; the rotator cuff helps hold the humeral head in it.<br>肩胛骨外侧缘上端的浅窝，与肱骨头相关节构成盂肱关节；肩袖帮助把肱骨头稳定在关节盂内。 |\n| O | Subscapular fossa 肩胛下窝 | The large concave depression covering most of the costal (anterior) surface. The subscapularis originates from it.<br>肩胛骨肋面（前面）上的大片凹陷。肩胛下肌起于肩胛下窝。 |\n| P | Lesser tubercle 小结节 | The smaller prominence on the anterior surface of the proximal humerus, medial to the greater tubercle across the intertubercular groove. The subscapularis inserts onto it.<br>肱骨近端前面较小的隆起，隔着结节间沟位于大结节内侧。肩胛下肌止于小结节。 |\n| Q | Intertubercular groove 结节间沟 | It separates the greater and lesser tubercles. The teres major inserts onto its medial lip (the crest of the lesser tubercle).<br>分隔大结节和小结节。大圆肌止于结节间沟内侧唇（小结节嵴）。 |\n"
+    },
+    {
+     "t": "p",
+     "en": "Palpation from the chapter: from the acromion, palpate medially until you feel a horizontal bony ridge, the scapular spine, and follow it all the way to the medial border of the scapula.",
+     "zh": "章节里的触诊：从肩峰往内侧摸，摸到一条横的骨嵴，就是肩胛冈，一直摸到肩胛骨内侧缘。"
+    },
+    {
+     "t": "sources",
+     "end": true,
+     "note": "以上来源用于 01 章，都是实际打开并逐条核对过的指南、试验和综述；来源之间有分歧或没有给出的地方，正文已注明。02 章的骨性标志与附着关系取自本周章节 library/shoulder/content.json。"
+    }
+   ],
+   "take": [
+    "Three fossae (supraspinous, infraspinous, subscapular) for three cuff origins; two tubercles for the four insertions; two notches decide which muscles a suprascapular nerve lesion weakens.",
+    "三个窝（冈上、冈下、肩胛下）是三块肩袖肌的起点；两个结节是四块肩袖肌的止点；两个切迹决定肩胛上神经受压时哪些肌肉无力。"
+   ]
+  }
+ ]
+}

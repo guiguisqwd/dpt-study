@@ -1,0 +1,35 @@
+{
+ "reviewer": "claude",
+ "verdict": "pass",
+ "viewed": [
+  "top.png",
+  "chapter-new-saps-pathway-1.png",
+  "chapter-new-saps-pathway-2.png",
+  "chapter-new-saps-pathway-3.png",
+  "chapter-new-saps-pathway-4.png",
+  "chapter-new-saps-pathway-5.png",
+  "chapter-new-saps-pathway-6.png",
+  "chapter-new-saps-pathway-7.png",
+  "chapter-new-saps-pathway-8.png",
+  "chapter-new-saps-pathway-9.png",
+  "chapter-consolidate-landmarks-1.png",
+  "chapter-consolidate-landmarks-2.png",
+  "chapter-consolidate-landmarks-3.png",
+  "chapter-consolidate-landmarks-4.png",
+  "chapter-consolidate-landmarks-5.png",
+  "chapter-consolidate-landmarks-6.png",
+  "mobile-top.png",
+  "figure-01.png",
+  "figure-02.png",
+  "figure-03.png"
+ ],
+ "notes": "Read all 20 screenshots in the previous run of this same content; after the only change (sources note wording) re-read chapter-consolidate-landmarks-6. Top and mobile: title, today line and three-step plan readable, no horizontal scroll. Chapter 01: goals, 13 key terms all with stress and IPA, intro, figure 01, six numbered flow steps (English first, Chinese below), figure 02, detail sections, the 10-row differential/referral table (4 columns readable, no cut text), imaging, treatment, progression, pitfall, 5 self-check questions, take-home and bridge. Chapter 02: 13 key terms, figure 03, 9 quiz items, 14 spelling boxes, 17-row key table, palpation line, sources list and note, take-home. Figures: 01 coronal subacromial space, every leader ends on its structure (acromion, supraspinatus band to the top of the greater tubercle, bursa between tendon and acromion, humeral head, glenoid, fossa floor), note cites StatPearls; 02 painful arc with the 70-100 overlap dark and 60-70/100-120 light, matching the three source ranges in the legend and in the text; 03 landmarks A-L posterior and M-Q anterior on the right bones, matching the quiz answers and the key table. No overlaps or text outside the figures (qa.json).",
+ "fixed": [
+  "Painful arc figure redrawn: sources give 60-100 (AAFP), about 70-120 (StatPearls) and 60-120 (TeachMeAnatomy), so the overlap and the partial ranges are shaded separately with a source legend",
+  "Figure 01 note changed to a sourced statement (space 1-1.5 cm, narrows on elevation, StatPearls)",
+  "70/100 degree labels moved off the sector boundaries",
+  "Chapter 02 quiz, intro and figure block renumbered to figure 03",
+  "Sources note said the list was below although it renders after the list; reworded"
+ ],
+ "page_sha": "0f740371626d9a01"
+}

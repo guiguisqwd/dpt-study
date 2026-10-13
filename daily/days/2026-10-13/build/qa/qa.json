@@ -1,0 +1,26 @@
+{
+  "file": "/home/claude/dpt-study/daily/days/2026-10-13/build/2026-10-13-第1周-肩峰下疼痛与骨性标志.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "new-saps-pathway",
+    "consolidate-landmarks"
+  ],
+  "figures": 3,
+  "say_buttons": 40,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/top.png",
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/chapter-new-saps-pathway.png",
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/chapter-consolidate-landmarks.png",
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/figure-01.png",
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/figure-02.png",
+    "/home/claude/dpt-study/daily/days/2026-10-13/build/qa/figure-03.png"
+  ],
+  "flashcards": 0
+}

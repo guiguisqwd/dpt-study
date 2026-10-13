@@ -1,0 +1,251 @@
+{
+ "date": "2026-10-13",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-13T01:08:25+00:00",
+     "evidence": {
+      "kind": "supplement",
+      "week": 1,
+      "chapter": "shoulder",
+      "entries": [
+       [
+        "N-2",
+        [
+         "Subacromial pain syndrome 肩峰下疼痛综合征：检测到治疗"
+        ],
+        [
+         "F-2",
+         "F-1"
+        ]
+       ],
+       [
+        "O-2",
+        [
+         "Scapula 肩胛骨标志",
+         "Humerus 肱骨标志"
+        ],
+        [
+         "F-6",
+         "F-9"
+        ]
+       ]
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-13T02:03:05+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-13/content.json",
+      "figures": "daily/days/2026-10-13/figures.py",
+      "fingerprint": "57532e0955118450"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-13T02:03:57+00:00",
+     "evidence": {
+      "svgs": [
+       "01-肩峰下间隙.svg",
+       "02-疼痛弧.svg",
+       "03-肩胛骨与肱骨标志-看图标注.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-13T02:03:57+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-13T02:03:57+00:00",
+     "evidence": {
+      "date": "2026-10-13",
+      "out": "2026-10-13-第1周-肩峰下疼痛与骨性标志",
+      "chapters": 2,
+      "figure_occurrences": 3,
+      "figures": [
+       "01",
+       "02",
+       "03"
+      ],
+      "model_links": [
+       "acromion",
+       "clavicle",
+       "deltoid",
+       "greater-tubercle",
+       "humeral-head",
+       "humerus",
+       "infraspinatus",
+       "intertubercular-groove",
+       "lesser-tubercle",
+       "lower-trapezius",
+       "scapula",
+       "serratus-anterior",
+       "subscapularis",
+       "supraspinatus",
+       "teres-major",
+       "teres-minor",
+       "trapezius"
+      ],
+      "html_bytes": 177980
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-13T02:04:02+00:00",
+     "evidence": {
+      "figures": 3,
+      "say_buttons": 40,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 20
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-13T02:04:22+00:00",
+     "evidence": {
+      "viewed": 20,
+      "notes": "Read all 20 screenshots in the previous run of this same content; after the only change (sources note wording) re-read chapter-consolidate-landmarks-6. Top and mobile: title, today line and three-step plan readable, no horizontal scroll. Chapter 01: goals, 13 key terms all with stress and IPA, intro, figure 01, six numbered flow steps (English first, Chinese below), figure 02, detail sections, the 10-row differential/referral table (4 columns readable, no cut text), imaging, treatment, progressi",
+      "fixed": [
+       "Painful arc figure redrawn: sources give 60-100 (AAFP), about 70-120 (StatPearls) and 60-120 (TeachMeAnatomy), so the overlap and the partial ranges are shaded separately with a source legend",
+       "Figure 01 note changed to a sourced statement (space 1-1.5 cm, narrows on elevation, StatPearls)",
+       "70/100 degree labels moved off the sector boundaries",
+       "Chapter 02 quiz, intro and figure block renumbered to figure 03",
+       "Sources note said the list was below although it renders after the list; reworded"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-13T02:04:22+00:00",
+     "evidence": {
+      "entries": 5,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-13/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-13T02:04:22+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-13": 20
+     }
+    }
+   },
+   "started": "2026-10-13T01:08:25+00:00",
+   "fingerprint": "da8e98e059e450e3"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-13T01:08:25+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T01:08:25+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-13T02:03:05+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:05+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:05+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:05+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:12+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:12+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-13T02:03:57+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:57+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:03:57+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:04:02+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:04:02+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-13T02:04:22+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:04:22+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-13T02:04:22+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "out": "2026-10-13-第1周-肩峰下疼痛与骨性标志"
+}
