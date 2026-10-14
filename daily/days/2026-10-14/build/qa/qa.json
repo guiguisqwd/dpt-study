@@ -1,0 +1,27 @@
+{
+  "file": "/home/claude/dpt-study/daily/days/2026-10-14/build/2026-10-14-第1周-冈上肌腱病案例与肩部两条神经.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "new-case-supraspinatus",
+    "consolidate-nerves"
+  ],
+  "figures": 4,
+  "say_buttons": 70,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/top.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/chapter-new-case-supraspinatus.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/chapter-consolidate-nerves.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/figure-01.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/figure-02.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/figure-03.png",
+    "/home/claude/dpt-study/daily/days/2026-10-14/build/qa/figure-04.png"
+  ],
+  "flashcards": 0
+}

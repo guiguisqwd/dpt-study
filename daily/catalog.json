@@ -2,6 +2,45 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
+   "date": "2026-10-14",
+   "day": null,
+   "week": 1,
+   "chapter": "shoulder",
+   "kind": "supplement",
+   "out": "2026-10-14-第1周-冈上肌腱病案例与肩部两条神经",
+   "title": {
+    "zh": "冈上肌腱病教学案例 · 肩胛上神经与腋神经",
+    "en": "A supraspinatus tendinopathy teaching case · the suprascapular and axillary nerves"
+   },
+   "acupoints": [],
+   "muscles": [],
+   "tags": {
+    "vertical": [
+     "病理学/肩/肩峰下疼痛综合征/冈上肌腱病",
+     "检查评估/肩/肩峰下疼痛综合征",
+     "检查评估/鉴别诊断与红旗征",
+     "康复干预/肩/运动疗法与宣教",
+     "康复干预/肩/复查与转诊节点",
+     "神经科学/周围神经/肩胛上神经",
+     "神经科学/周围神经/腋神经",
+     "解剖学/上肢/臂丛",
+     "解剖学/上肢/肩带/四边孔"
+    ],
+    "horizontal": [
+     "结构→病理→干预链",
+     "教学案例(SOAP)",
+     "英文临床沟通",
+     "学术争议",
+     "臂丛与神经通路",
+     "神经卡压",
+     "记忆法"
+    ]
+   },
+   "figures": 4,
+   "path": "daily/2026-10-14/index.html",
+   "md": "daily/2026-10-14/2026-10-14-第1周-冈上肌腱病案例与肩部两条神经.md"
+  },
+  {
    "date": "2026-10-13",
    "day": null,
    "week": 1,

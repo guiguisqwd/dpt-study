@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-14",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-14T01:08:18+00:00",
+     "evidence": {
+      "kind": "supplement",
+      "week": 1,
+      "chapter": "shoulder",
+      "entries": [
+       [
+        "N-4",
+        [
+         "Supraspinatus tendinopathy 冈上肌腱病案例"
+        ],
+        [
+         "F-3",
+         "F-4"
+        ]
+       ],
+       [
+        "O-4",
+        [
+         "Suprascapular nerve",
+         "Axillary nerve"
+        ],
+        [
+         "F-8",
+         "F-11"
+        ]
+       ]
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-14T01:22:08+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-14/content.json",
+      "figures": "daily/days/2026-10-14/figures.py",
+      "fingerprint": "6adee7ba17aa2880"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-14T01:28:52+00:00",
+     "evidence": {
+      "svgs": [
+       "01-案例复查时间线.svg",
+       "02-肩胛上神经后面观.svg",
+       "03-腋神经与四边孔.svg",
+       "04-腋神经徽章区与肌节.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-14T01:28:52+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-14T01:28:52+00:00",
+     "evidence": {
+      "date": "2026-10-14",
+      "out": "2026-10-14-第1周-冈上肌腱病案例与肩部两条神经",
+      "chapters": 2,
+      "figure_occurrences": 4,
+      "figures": [
+       "01",
+       "02",
+       "03",
+       "04"
+      ],
+      "model_links": [
+       "acromion",
+       "deltoid",
+       "greater-tubercle",
+       "humerus",
+       "infraspinatus",
+       "scapula",
+       "supraspinatus",
+       "teres-major",
+       "teres-minor",
+       "triceps-brachii",
+       "triceps-long-head"
+      ],
+      "html_bytes": 190758
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-14T01:28:59+00:00",
+     "evidence": {
+      "figures": 4,
+      "say_buttons": 70,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 24
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-14T01:29:38+00:00",
+     "evidence": {
+      "viewed": 24,
+      "notes": "Read all 24 screenshots after the last rebuild. Top and mobile: title, today line and the 30/20/10 study plan fit; mobile width 390 with no sideways scroll. Chapter 01: key terms all carry IPA and stress; SOAP card has S/O/A/P in order with P items on separate lines; reasons table has 10 rows with a source in each; night-pain pitfall, figure 01, the exercise-pain disagreement and the return-to-work paragraph read correctly; three dialogues show speaker, English, then Chinese; five self-check que",
+      "fixed": [
+       "Case card: the five P items ran together; split them onto separate lines.",
+       "Chapter 02: the key terms box listed every listen answer; cut it to the 5 plexus words and cut the listen list to 12 names, with the instruction saying the answers stay hidden.",
+       "Chapter 02: the C5 to C6 paragraph dropped the chapter's first sentence (C is cervical, T is thoracic), which made 'two thoracic vertebrae' confusing; now copies the whole chapter paragraph.",
+       "Figure 04: the chapter's figure 14 had an abstract arm and a leader pointing at nothing; redrew it with a lateral view of the arm, trunk outline behind it and labelled leaders.",
+       "Figure 04: the forearm cut line stuck out past the arm outline; the arm now ends in a dashed cut between the two borders.",
+       "Figure 01: a red leader crossed the week-12 labels and the callouts had empty space; removed the leader and tightened the callout and figure heights."
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-14T01:29:38+00:00",
+     "evidence": {
+      "entries": 6,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-14/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-14T01:29:38+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-14": 9
+     }
+    }
+   },
+   "started": "2026-10-14T01:08:17+00:00",
+   "fingerprint": "a3c894b44bd10c8a"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-14T01:08:18+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:08:18+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-14T01:22:08+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:22:08+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:22:08+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:22:08+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:22:16+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:22:16+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-14T01:25:58+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:25:58+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:25:58+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:26:05+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:26:05+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-14T01:28:52+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:28:52+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:28:52+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:28:59+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:28:59+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-14T01:29:38+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:29:38+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-14T01:29:38+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "out": "2026-10-14-第1周-冈上肌腱病案例与肩部两条神经"
+}

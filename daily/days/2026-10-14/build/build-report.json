@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-14",
+  "out": "2026-10-14-第1周-冈上肌腱病案例与肩部两条神经",
+  "chapters": 2,
+  "figure_occurrences": 4,
+  "figures": [
+    "01",
+    "02",
+    "03",
+    "04"
+  ],
+  "model_links": [
+    "acromion",
+    "deltoid",
+    "greater-tubercle",
+    "humerus",
+    "infraspinatus",
+    "scapula",
+    "supraspinatus",
+    "teres-major",
+    "teres-minor",
+    "triceps-brachii",
+    "triceps-long-head"
+  ],
+  "html_bytes": 190758
+}

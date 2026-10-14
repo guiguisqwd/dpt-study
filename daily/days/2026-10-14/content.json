@@ -1,0 +1,898 @@
+{
+ "schema": "dpt-daily-pack/2",
+ "date": "2026-10-14",
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "chapter_name": "肩袖 Rotator cuff",
+ "slug_zh": "冈上肌腱病案例与肩部两条神经",
+ "title": {
+  "zh": "冈上肌腱病教学案例 · 肩胛上神经与腋神经",
+  "en": "A supraspinatus tendinopathy teaching case · the suprascapular and axillary nerves"
+ },
+ "description": "DPT 每日包 · 第 1 周周三（10-14）。新：一个冈上肌腱病教学案例（SOAP 记录、理由表、复查节点、三段英文对话）；夯实：肩胛上神经与腋神经的节段、走行、卡压点和肌节。",
+ "brand_sub": "第 1 周周三 · 10/14",
+ "today_line": "新：冈上肌腱病教学案例（SOAP + 英文问诊、解释、汇报）· 夯实：肩胛上神经与腋神经 · 听音 12 词 + 手敲 7 段",
+ "study_plan": [
+  [
+   "新内容（30 分钟）",
+   "01 章：读 SOAP 记录和理由表，看图 01 的复查节点，再把三段对话大声练一遍"
+  ],
+  [
+   "夯实（20 分钟）",
+   "02 章：先听音写出 12 个结构名，再凭记忆打出 7 段走行和要点"
+  ],
+  [
+   "对照（10 分钟）",
+   "02 章：打完再看章节原图 02 到 04 和总表，标出漏掉的地方"
+  ]
+ ],
+ "footer": "DPT 每日包 · 第 1 周周三（10-14）· 本周章节：肩袖 Rotator cuff（知识库 library/shoulder）· 案例为教学用的虚构病人，内容只用实际打开核对过的来源，列在页末；学习材料，不代替临床判断。",
+ "tags": {
+  "vertical": [
+   "病理学/肩/肩峰下疼痛综合征/冈上肌腱病",
+   "检查评估/肩/肩峰下疼痛综合征",
+   "检查评估/鉴别诊断与红旗征",
+   "康复干预/肩/运动疗法与宣教",
+   "康复干预/肩/复查与转诊节点",
+   "神经科学/周围神经/肩胛上神经",
+   "神经科学/周围神经/腋神经",
+   "解剖学/上肢/臂丛",
+   "解剖学/上肢/肩带/四边孔"
+  ],
+  "horizontal": [
+   "结构→病理→干预链",
+   "教学案例(SOAP)",
+   "英文临床沟通",
+   "学术争议",
+   "臂丛与神经通路",
+   "神经卡压",
+   "记忆法"
+  ]
+ },
+ "figures": {
+  "01": "案例复查时间线",
+  "02": "肩胛上神经后面观",
+  "03": "腋神经与四边孔",
+  "04": "腋神经徽章区与肌节"
+ },
+ "pronunciation": {
+  "Supraspinatus tendinopathy": [
+   "/ˌsuprəˌspaɪˈneɪtəs ˌtɛndəˈnɑpəθi/",
+   "soo-pruh-spy-NAY-tuhs ten-duh-NAH-puh-thee",
+   "https://www.merriam-webster.com/dictionary/tendinopathy"
+  ],
+  "Subacromial pain syndrome": [
+   "/ˌsʌbəˈkroʊmiəl peɪn ˈsɪnˌdroʊm/",
+   "sub-uh-KROH-mee-uhl PAYN SIN-drohm",
+   "https://www.merriam-webster.com/medical/subacromial"
+  ],
+  "Rotator cuff tendinopathy": [
+   "/ˈroʊˌteɪtər kʌf ˌtɛndəˈnɑpəθi/",
+   "ROH-tay-ter KUF ten-duh-NAH-puh-thee",
+   "https://www.merriam-webster.com/dictionary/tendinopathy"
+  ],
+  "Painful arc": [
+   "/ˈpeɪnfəl ɑrk/",
+   "PAYN-fuhl AHRK",
+   "https://www.dictionary.com/browse/arc"
+  ],
+  "Eccentric exercise": [
+   "/ɪkˈsɛntrɪk ˈɛksərˌsaɪz/",
+   "ik-SEN-trik EK-ser-syze",
+   "https://www.merriam-webster.com/dictionary/eccentric"
+  ],
+  "Isometric exercise": [
+   "/ˌaɪsəˈmɛtrɪk ˈɛksərˌsaɪz/",
+   "eye-suh-MET-rik EK-ser-syze",
+   "https://www.merriam-webster.com/dictionary/isometric"
+  ],
+  "Corticosteroid injection": [
+   "/ˌkɔrtəkoʊˈstɛrɔɪd ɪnˈdʒɛkʃən/",
+   "kor-tuh-koh-STER-oyd in-JEK-shuhn",
+   "https://www.dictionary.com/browse/corticosteroid"
+  ]
+ },
+ "sources": [
+  [
+   "https://actaorthop.org/actao/article/download/10092/13799",
+   "Diercks R et al. Guideline for diagnosis and treatment of subacromial pain syndrome (Dutch Orthopaedic Association). Acta Orthop 2014;85(3):314-322"
+  ],
+  [
+   "https://actaorthop.org/actao/article/download/45365/52867?inline=1",
+   "Lambers Heerspink FO et al. Update of the Dutch guideline for subacromial pain syndrome, Part 1. Acta Orthop 2026;97:91-98"
+  ],
+  [
+   "https://bess.ac.uk/download/1463/subacromial-shoulder-pain/30248/subacromial-shoulder-pain-2025-2.pdf",
+   "Pandey RA, Singh HP. BESS Patient Care Pathway: Subacromial Pain. Shoulder Elbow 2025;17(6):713-724"
+  ],
+  [
+   "https://journals.sagepub.com/doi/10.1177/1758573215576456",
+   "Kulkarni R et al. BESS/BOA Patient Care Pathways: Subacromial shoulder pain. Shoulder Elbow 2015;7(2):135-143"
+  ],
+  [
+   "https://www.boa.ac.uk/asset/CAD0336B-9051-48A7-9E4DF7072C5C7E47",
+   "BESS/BOA/RCS Commissioning Guide: Subacromial Shoulder Pain, 2014 (referral signals, primary care algorithm)"
+  ],
+  [
+   "https://bess.ac.uk/wp-content/uploads/2020/06/Frozen_Shoulder.pdf",
+   "Rangan A et al. BESS/BOA Patient Care Pathways: Frozen shoulder. Shoulder Elbow 2015;7(4):299-307"
+  ],
+  [
+   "https://bess.ac.uk/wp-content/uploads/2020/06/Glenohumeral-osteoarthritis.pdf",
+   "Thomas M et al. BESS/BOA Patient Care Pathways: Glenohumeral osteoarthritis. Shoulder Elbow 2016;8(3):203-214"
+  ],
+  [
+   "https://www.aafp.org/pubs/afp/issues/2008/0215/p453.html",
+   "Burbank KM et al. Chronic shoulder pain: Part I. Evaluation and diagnosis. Am Fam Physician 2008;77(4):453-460"
+  ],
+  [
+   "https://www.aafp.org/pubs/afp/issues/2016/0501/p746.html",
+   "Childress MA, Becker BA. Nonoperative management of cervical radiculopathy. Am Fam Physician 2016;93(9):746-754"
+  ],
+  [
+   "https://uhra.herts.ac.uk/id/eprint/5875/1/Accepted_Manuscript.pdf",
+   "Lewis J. Rotator cuff related shoulder pain: assessment, management and uncertainties. Man Ther 2016;23:57-68 (accepted manuscript)"
+  ],
+  [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8978275",
+   "Requejo-Salinas N et al. International physical therapists consensus on clinical descriptors for diagnosing RCRSP: a Delphi study. Braz J Phys Ther 2022;26(2):100395"
+  ],
+  [
+   "https://scholars.duke.edu/publication/962178",
+   "Hermans J et al. Does this patient with shoulder pain have rotator cuff disease? JAMA 2013;310(8):837-847 (abstract)"
+  ],
+  [
+   "https://pubmed.ncbi.nlm.nih.gov/22773322/",
+   "Hegedus EJ et al. Which physical examination tests provide clinicians with the most value when examining the shoulder? Br J Sports Med 2012;46(14):964 (abstract)"
+  ],
+  [
+   "https://www.bmj.com/content/bmj/344/bmj.e787.full.pdf",
+   "Holmgren T et al. Effect of specific exercise strategy on need for surgery in subacromial impingement syndrome: RCT. BMJ 2012;344:e787"
+  ],
+  [
+   "https://salford-repository.worktribe.com/output/3400850/therapeutic-exercise-for-rotator-cuff-tendinopathy-a-systematic-review-of-contextual-factors-and-prescription-parameters",
+   "Littlewood C et al. Therapeutic exercise for rotator cuff tendinopathy: contextual factors and prescription parameters. Int J Rehabil Res 2015;38(2):95-106 (abstract)"
+  ],
+  [
+   "https://pharesst.irsst.qc.ca/etudes-primaires/632",
+   "Lafrance S et al. Rotator cuff disorders: diagnosis, management and return to work, clinical practice guideline. J Orthop Sports Phys Ther 2022;52(10):647-664 (abstract)"
+  ],
+  [
+   "https://teachmeanatomy.info/upper-limb/nerves/axillary-nerve/",
+   "TeachMeAnatomy. The axillary nerve (the badge area: skin over the inferior portion of the deltoid; a source of this week's chapter)"
+  ],
+  [
+   "https://www.kenhub.com/en/library/anatomy/supraspinatus-muscle",
+   "Kenhub. Supraspinatus muscle (course of the tendon under the acromion to the greater tubercle)"
+  ]
+ ],
+ "chapters": [
+  {
+   "num": 1,
+   "id": "new-case-supraspinatus",
+   "content": "N-4",
+   "items": [
+    "Supraspinatus tendinopathy 冈上肌腱病案例"
+   ],
+   "forms": [
+    "F-3",
+    "F-4"
+   ],
+   "title": [
+    "New: a teaching case of supraspinatus tendinopathy",
+    "新内容：冈上肌腱病教学案例"
+   ],
+   "toc": [
+    "Teaching case",
+    "教学案例"
+   ],
+   "goals": [
+    [
+     "Read a SOAP note and say which finding supports which part of the assessment.",
+     "读懂一份 SOAP 记录，说出每个表现支持评估里的哪一点。"
+    ],
+    [
+     "Say why this case starts with exercise, and at which points the plan changes, with the source for each.",
+     "说出这个病例为什么先做运动治疗、在哪些时间点改方案，并说出每一点的依据。"
+    ],
+    [
+     "Take a short history, explain the problem and report to a colleague in English.",
+     "用英文完成简短问诊、向病人解释、向同事汇报。"
+    ]
+   ],
+   "terms": [
+    [
+     "Supraspinatus tendinopathy",
+     "冈上肌腱病"
+    ],
+    [
+     "Subacromial pain syndrome",
+     "肩峰下疼痛综合征"
+    ],
+    [
+     "Rotator cuff tendinopathy",
+     "肩袖肌腱病"
+    ],
+    [
+     "Supraspinatus",
+     "冈上肌"
+    ],
+    [
+     "Acromion",
+     "肩峰"
+    ],
+    [
+     "Greater tubercle",
+     "大结节"
+    ],
+    [
+     "Subacromial bursa",
+     "肩峰下滑囊"
+    ],
+    [
+     "Painful arc",
+     "疼痛弧"
+    ],
+    [
+     "Resisted external rotation",
+     "抗阻外旋"
+    ],
+    [
+     "External rotation lag sign",
+     "外旋滞后征"
+    ],
+    [
+     "Eccentric exercise",
+     "离心训练"
+    ],
+    [
+     "Isometric exercise",
+     "等长训练"
+    ],
+    [
+     "Corticosteroid injection",
+     "皮质类固醇注射"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "This is a teaching case, not a real patient. It joins this week's chapter (where the supraspinatus runs, and which nerves supply the cuff) to Tuesday's six-step pathway for subacromial pain. Read the SOAP note first, then the table of reasons, then practise the three conversations aloud.",
+     "zh": "这是教学案例，不是真实病人。它把本周章节（冈上肌的走行、肩袖由哪些神经支配）和周二的肩峰下疼痛六步流程串在一起。先读 SOAP 记录，再看理由表，最后把三段对话大声练一遍。"
+    },
+    {
+     "t": "case",
+     "title": [
+      "Ms Grant, 48: right shoulder pain while stocking shelves",
+      "Grant 女士，48 岁：理货时右肩痛"
+     ],
+     "soap": {
+      "S": [
+       "Ms Grant, 48, right-handed, stacks shelves in a supermarket. Right shoulder pain for 3 weeks, starting gradually after a week of restocking high shelves; no fall or injury. The pain is over the outer upper arm (deltoid region) and does not go past the elbow. It is worse when reaching to shoulder height or overhead and when brushing her hair, and settles within about 30 minutes of rest. Worst pain 6/10. It wakes her about twice a week when she rolls onto the right side; she gets back to sleep. No neck pain, no pins and needles or numbness, no feeling that the shoulder might slip out, no sudden loss of the ability to lift the arm. No fever, weight loss or history of cancer. Her goal: full shifts including the top shelves, and sleeping on her right side.",
+       "Grant 女士，48 岁，右利手，在超市理货。右肩痛 3 周，是在集中补了一周高层货架之后慢慢开始的，没有摔倒或受伤。疼痛在上臂外侧（三角肌区），不过肘。往肩部高度或头顶上方够东西、梳头时加重，休息约 30 分钟后缓解。最痛 6/10。每周大约有两次翻身压到右侧时痛醒，之后能再睡着。没有颈痛，没有发麻或刺痛，没有肩要脱出的感觉，没有突然抬不起手臂。没有发烧、体重下降或癌症史。她的目标：上满班（包括高层货架），能侧躺右边睡觉。"
+      ],
+      "O": [
+       "Observation: no swelling, redness or deformity; muscle bulk in the supraspinous and infraspinous fossae is the same on both sides. Neck movements are full and do not change the arm pain. Palpation: tender below the acromion (subacromial); the acromioclavicular joint is not tender. Active abduction reaches full range but is painful between about 70° and 100° (painful arc). Passive range is full and pain-free on both sides, including external rotation with the arm by the side. Resisted abduction and resisted external rotation reproduce her pain, with strength equal to the left. No external rotation lag sign. Deltoid strength and sensation over the lateral upper arm (the badge area) are normal.",
+       "望诊：无肿胀、发红或畸形；两侧冈上窝、冈下窝的肌肉体积一样。颈部活动全范围，不改变手臂疼痛。触诊：肩峰下方压痛；肩锁关节无压痛。主动外展能到全范围，但约 70° 到 100° 之间疼痛（疼痛弧）。两侧被动活动度都是全范围且不痛，包括手臂放在体侧时的外旋。抗阻外展和抗阻外旋诱发出她平时的疼痛，力量与左侧相同。外旋滞后征阴性。三角肌力量和上臂外侧（徽章区）感觉正常。"
+      ],
+      "A": [
+       "Working diagnosis: subacromial pain syndrome, with the supraspinatus tendon the likely source (supraspinatus tendinopathy). Naming the tendon is a hypothesis: no single clinical test can make a pathognomonic diagnosis (Hegedus 2012), and the Dutch guideline counts supraspinatus tendinopathy as one of the labels under subacromial pain syndrome (Diercks 2014). No red flags. Nothing points to a full-thickness tear, frozen shoulder, osteoarthritis, pain from the neck, or a suprascapular or axillary nerve lesion (see the table below). Low irritability: the pain settles within about 30 minutes, so she does not fit the irritable picture Lewis describes, of easily aggravated pain that lasts once provoked, with night pain (our judgement).",
+       "工作诊断：肩峰下疼痛综合征，最可能的来源是冈上肌腱（冈上肌腱病）。把来源定为这条肌腱只是假设：没有哪一项临床检查能单独确诊（Hegedus 2012）；荷兰指南把冈上肌腱病算作肩峰下疼痛综合征下面的一种名称（Diercks 2014）。无红旗征。没有表现指向全层撕裂、冻结肩、骨关节炎、颈源性疼痛，或肩胛上神经、腋神经损伤（见下表）。激惹性低：疼痛约 30 分钟内缓解，不符合 Lewis 描述的高激惹表现（容易诱发、诱发后持续，并有夜间痛）；这是我们的判断。"
+      ],
+      "P": [
+       "1. Explain: a clinical diagnosis; no imaging is needed to start; most symptoms respond within three months (BESS 2025). <br>2. Activity: keep moving within comfort and avoid tasks that are too long, heavy or frequent (Dutch guideline 2026); cut back on the top shelves for now and agree a return-to-work plan with her and her employer early (Lafrance 2022). <br>3. Exercise: rotator cuff exercises with an eccentric emphasis and scapular stabiliser exercises, at home once or twice a day; pain while exercising up to 5/10 and back to its usual level before the next session, otherwise lower the load (Holmgren 2012). <br>4. Review every 2 weeks; change one thing at a time and watch the next 24 hours (Lewis 2016). <br>5. When the plan changes: figure 01.",
+       "1. 解释：这是临床诊断；开始治疗不需要影像；大多数人的症状三个月内会好转（BESS 2025）。<br>2. 活动：在舒服的范围内继续活动，避免时间太长、太重或太频繁的动作（荷兰指南 2026）；暂时少做高层货架，尽早和她及雇主一起定返岗计划（Lafrance 2022）。<br>3. 运动：以离心为重点的肩袖训练加肩胛稳定肌训练，在家每天 1–2 次；练习时疼痛不超过 5/10，下次练习前回落到平时水平，否则减负荷（Holmgren 2012）。<br>4. 每 2 周复查；一次只改一项，观察之后 24 小时的反应（Lewis 2016）。<br>5. 什么时候改方案：见图 01。"
+      ]
+     },
+     "note": [
+      "Teaching case, not a real patient. Findings and plan are built from the sources of this pack; where they disagree or say nothing, the text says so.",
+      "教学案例，不是真实病人。表现和计划按本包来源编写；来源有分歧或没有给出的地方，正文已注明。"
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Why each finding matters",
+     "zh": "每个表现说明什么"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Finding in this case<span class=\"translation\" lang=\"zh-Hans\">本例表现</span></th><th>What it suggests<span class=\"translation\" lang=\"zh-Hans\">说明什么</span></th><th>Source<span class=\"translation\" lang=\"zh-Hans\">来源</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Gradual onset without injury; worse at shoulder height and overhead</span><span class=\"translation\" lang=\"zh-Hans\">逐渐起病、无外伤；在肩部高度和头顶上方活动时加重</span></td><td><span lang=\"en\">Fits subacromial pain: insidious pain around the upper arm made worse by shoulder-level or overhead activities, with no history of trauma</span><span class=\"translation\" lang=\"zh-Hans\">符合肩峰下疼痛：上臂周围隐匿起病的疼痛，肩部高度或过头活动时加重，且没有外伤史</span></td><td><span lang=\"en\">BESS 2025</span><span class=\"translation\" lang=\"zh-Hans\">BESS 2025</span></td></tr><tr><td><span lang=\"en\">Pain in the deltoid region that stops above the elbow</span><span class=\"translation\" lang=\"zh-Hans\">疼痛在三角肌区，到肘上为止</span></td><td><span lang=\"en\">Fits rotator cuff pathology: lateral arm pain radiating no farther than the elbow; the deltoid region is the area people report most often</span><span class=\"translation\" lang=\"zh-Hans\">符合肩袖病变：上臂外侧痛，放射不超过肘部；三角肌区是病人最常报告的疼痛部位</span></td><td><span lang=\"en\">AAFP 2008; Requejo-Salinas 2022</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2008；Requejo-Salinas 2022</span></td></tr><tr><td><span lang=\"en\">Painful arc at about 70–100° of active abduction</span><span class=\"translation\" lang=\"zh-Hans\">主动外展约 70–100° 出现疼痛弧</span></td><td><span lang=\"en\">AAFP 2008 gives 60–100° for the painful arc; a positive painful arc had a positive likelihood ratio of 3.7 for rotator cuff disease, in referred patients</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2008 给出的疼痛弧是 60–100°；在转诊病人中，疼痛弧阳性对肩袖疾病的阳性似然比为 3.7</span></td><td><span lang=\"en\">AAFP 2008; Hermans 2013</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2008；Hermans 2013</span></td></tr><tr><td><span lang=\"en\">Resisted abduction and external rotation painful, strength normal; no lag sign</span><span class=\"translation\" lang=\"zh-Hans\">抗阻外展、抗阻外旋痛但力量正常；无滞后征</span></td><td><span lang=\"en\">Nothing points to a full-thickness tear: weakness on resisted testing may mean tendinopathy or a tear, a positive lag sign was the most accurate finding for a full-thickness tear, and a sudden loss of active elevation would need urgent referral</span><span class=\"translation\" lang=\"zh-Hans\">没有指向全层撕裂的表现：抗阻无力可能是肌腱病也可能是撕裂；滞后征阳性是诊断全层撕裂最准确的表现；突然不能主动抬臂则需紧急转诊</span></td><td><span lang=\"en\">AAFP 2008; Hermans 2013; BESS/BOA 2014</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2008；Hermans 2013；BESS/BOA 2014</span></td></tr><tr><td><span lang=\"en\">Full passive range, including external rotation</span><span class=\"translation\" lang=\"zh-Hans\">被动活动度全范围，包括外旋</span></td><td><span lang=\"en\">Subacromial pain usually comes with full passive glenohumeral range; frozen shoulder and glenohumeral osteoarthritis show a severe loss of passive external rotation. Setting the pathways side by side is our inference</span><span class=\"translation\" lang=\"zh-Hans\">肩峰下疼痛通常伴有盂肱关节被动活动度全范围；冻结肩和盂肱关节骨关节炎会出现严重的被动外旋受限。把这几份路径放在一起对比，是我们的推断</span></td><td><span lang=\"en\">Kulkarni 2015; Rangan 2015; Thomas 2016</span><span class=\"translation\" lang=\"zh-Hans\">Kulkarni 2015；Rangan 2015；Thomas 2016</span></td></tr><tr><td><span lang=\"en\">Neck movements do not change the pain; no sensory symptoms</span><span class=\"translation\" lang=\"zh-Hans\">颈部活动不改变疼痛；没有感觉症状</span></td><td><span lang=\"en\">Against cervical radiculopathy, where symptoms may worsen with neck extension or side-bending to the painful side and sensory symptoms often follow a dermatome</span><span class=\"translation\" lang=\"zh-Hans\">不支持颈神经根病：颈神经根病的症状可在颈后伸或向患侧侧屈时加重，感觉症状常符合某个皮节</span></td><td><span lang=\"en\">AAFP 2016</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2016</span></td></tr><tr><td><span lang=\"en\">Acromioclavicular joint not tender</span><span class=\"translation\" lang=\"zh-Hans\">肩锁关节无压痛</span></td><td><span lang=\"en\">The primary-care algorithm sends pain localised to the AC joint with tenderness down a separate branch</span><span class=\"translation\" lang=\"zh-Hans\">基层诊疗流程图把局限于肩锁关节并有压痛的疼痛单独分为一支</span></td><td><span lang=\"en\">BESS/BOA 2014</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 2014</span></td></tr><tr><td><span lang=\"en\">No fever, weight loss, cancer history, mass, hot red joint or trauma</span><span class=\"translation\" lang=\"zh-Hans\">没有发烧、体重下降、癌症史、肿块、红热关节或外伤</span></td><td><span lang=\"en\">None of the red flags on the referral lists</span><span class=\"translation\" lang=\"zh-Hans\">转诊清单上的红旗征都没有</span></td><td><span lang=\"en\">BESS/BOA 2014; AAFP 2016</span><span class=\"translation\" lang=\"zh-Hans\">BESS/BOA 2014；AAFP 2016</span></td></tr><tr><td><span lang=\"en\">Equal bulk in both fossae; strong external rotation; deltoid strength and badge-area sensation normal</span><span class=\"translation\" lang=\"zh-Hans\">两侧冈上窝、冈下窝肌肉对称；外旋有力；三角肌力量和徽章区感觉正常</span></td><td><span lang=\"en\">No sign of a suprascapular nerve lesion (wasting of supraspinatus and infraspinatus, or of infraspinatus alone) or of an axillary nerve lesion (deltoid weakness, badge-area sensory loss)</span><span class=\"translation\" lang=\"zh-Hans\">没有肩胛上神经损伤的表现（冈上肌和冈下肌萎缩，或只有冈下肌萎缩），也没有腋神经损伤的表现（三角肌无力、徽章区感觉减退）</span></td><td><span lang=\"en\">This week's chapter; chapter 02</span><span class=\"translation\" lang=\"zh-Hans\">本周章节；见 02 章</span></td></tr><tr><td><span lang=\"en\">Woken at night when lying on the right side</span><span class=\"translation\" lang=\"zh-Hans\">压着右侧睡时痛醒</span></td><td><span lang=\"en\">Does not decide the diagnosis on its own: night pain is listed with rotator cuff disorders and with tears, and rotator cuff related shoulder pain affects sleep</span><span class=\"translation\" lang=\"zh-Hans\">单凭这一点定不了诊断：夜间痛既列在肩袖疾病里，也和撕裂有关；肩袖相关肩痛会影响睡眠</span></td><td><span lang=\"en\">AAFP 2008; Requejo-Salinas 2022</span><span class=\"translation\" lang=\"zh-Hans\">AAFP 2008；Requejo-Salinas 2022</span></td></tr></tbody></table></div>",
+     "md": "| Finding in this case 本例表现 | What it suggests 说明什么 | Source 来源 |\n|---|---|---|\n| Gradual onset without injury; worse at shoulder height and overhead<br>逐渐起病、无外伤；在肩部高度和头顶上方活动时加重 | Fits subacromial pain: insidious pain around the upper arm made worse by shoulder-level or overhead activities, with no history of trauma<br>符合肩峰下疼痛：上臂周围隐匿起病的疼痛，肩部高度或过头活动时加重，且没有外伤史 | BESS 2025<br>BESS 2025 |\n| Pain in the deltoid region that stops above the elbow<br>疼痛在三角肌区，到肘上为止 | Fits rotator cuff pathology: lateral arm pain radiating no farther than the elbow; the deltoid region is the area people report most often<br>符合肩袖病变：上臂外侧痛，放射不超过肘部；三角肌区是病人最常报告的疼痛部位 | AAFP 2008; Requejo-Salinas 2022<br>AAFP 2008；Requejo-Salinas 2022 |\n| Painful arc at about 70–100° of active abduction<br>主动外展约 70–100° 出现疼痛弧 | AAFP 2008 gives 60–100° for the painful arc; a positive painful arc had a positive likelihood ratio of 3.7 for rotator cuff disease, in referred patients<br>AAFP 2008 给出的疼痛弧是 60–100°；在转诊病人中，疼痛弧阳性对肩袖疾病的阳性似然比为 3.7 | AAFP 2008; Hermans 2013<br>AAFP 2008；Hermans 2013 |\n| Resisted abduction and external rotation painful, strength normal; no lag sign<br>抗阻外展、抗阻外旋痛但力量正常；无滞后征 | Nothing points to a full-thickness tear: weakness on resisted testing may mean tendinopathy or a tear, a positive lag sign was the most accurate finding for a full-thickness tear, and a sudden loss of active elevation would need urgent referral<br>没有指向全层撕裂的表现：抗阻无力可能是肌腱病也可能是撕裂；滞后征阳性是诊断全层撕裂最准确的表现；突然不能主动抬臂则需紧急转诊 | AAFP 2008; Hermans 2013; BESS/BOA 2014<br>AAFP 2008；Hermans 2013；BESS/BOA 2014 |\n| Full passive range, including external rotation<br>被动活动度全范围，包括外旋 | Subacromial pain usually comes with full passive glenohumeral range; frozen shoulder and glenohumeral osteoarthritis show a severe loss of passive external rotation. Setting the pathways side by side is our inference<br>肩峰下疼痛通常伴有盂肱关节被动活动度全范围；冻结肩和盂肱关节骨关节炎会出现严重的被动外旋受限。把这几份路径放在一起对比，是我们的推断 | Kulkarni 2015; Rangan 2015; Thomas 2016<br>Kulkarni 2015；Rangan 2015；Thomas 2016 |\n| Neck movements do not change the pain; no sensory symptoms<br>颈部活动不改变疼痛；没有感觉症状 | Against cervical radiculopathy, where symptoms may worsen with neck extension or side-bending to the painful side and sensory symptoms often follow a dermatome<br>不支持颈神经根病：颈神经根病的症状可在颈后伸或向患侧侧屈时加重，感觉症状常符合某个皮节 | AAFP 2016<br>AAFP 2016 |\n| Acromioclavicular joint not tender<br>肩锁关节无压痛 | The primary-care algorithm sends pain localised to the AC joint with tenderness down a separate branch<br>基层诊疗流程图把局限于肩锁关节并有压痛的疼痛单独分为一支 | BESS/BOA 2014<br>BESS/BOA 2014 |\n| No fever, weight loss, cancer history, mass, hot red joint or trauma<br>没有发烧、体重下降、癌症史、肿块、红热关节或外伤 | None of the red flags on the referral lists<br>转诊清单上的红旗征都没有 | BESS/BOA 2014; AAFP 2016<br>BESS/BOA 2014；AAFP 2016 |\n| Equal bulk in both fossae; strong external rotation; deltoid strength and badge-area sensation normal<br>两侧冈上窝、冈下窝肌肉对称；外旋有力；三角肌力量和徽章区感觉正常 | No sign of a suprascapular nerve lesion (wasting of supraspinatus and infraspinatus, or of infraspinatus alone) or of an axillary nerve lesion (deltoid weakness, badge-area sensory loss)<br>没有肩胛上神经损伤的表现（冈上肌和冈下肌萎缩，或只有冈下肌萎缩），也没有腋神经损伤的表现（三角肌无力、徽章区感觉减退） | This week's chapter; chapter 02<br>本周章节；见 02 章 |\n| Woken at night when lying on the right side<br>压着右侧睡时痛醒 | Does not decide the diagnosis on its own: night pain is listed with rotator cuff disorders and with tears, and rotator cuff related shoulder pain affects sleep<br>单凭这一点定不了诊断：夜间痛既列在肩袖疾病里，也和撕裂有关；肩袖相关肩痛会影响睡眠 | AAFP 2008; Requejo-Salinas 2022<br>AAFP 2008；Requejo-Salinas 2022 |\n"
+    },
+    {
+     "t": "pitfall",
+     "label": "易混点",
+     "zh": "夜间痛单独出现，既不能直接当成红旗，也不能直接忽略。AAFP 2008 把夜间痛列在肩袖疾病里，也提到它和肩袖撕裂有关；Delphi 共识说肩袖相关肩痛会影响睡眠（Requejo-Salinas 2022）。但颈臂痛综述把发烧、癌症史、夜间痛、体重下降一起列为恶性病变的提示（AAFP 2016）。所以问到夜间痛，要接着问发烧、体重和癌症史，看它们是不是一起出现。"
+    },
+    {
+     "t": "h3",
+     "en": "When the plan changes",
+     "zh": "什么时候改方案"
+    },
+    {
+     "t": "fig",
+     "n": "01",
+     "en": "The case's review points over 12 weeks of care. The upper scale counts weeks from the first visit; the lower scale counts weeks since the pain began.",
+     "zh": "本例 12 周保守治疗中的复查节点。上面一行从首诊算周数，下面一行从发病算周数。"
+    },
+    {
+     "t": "p",
+     "en": "The sources do not agree on how much pain is acceptable during exercise. The Dutch guideline says to stay within the pain threshold (Diercks 2014). The Holmgren trial allowed up to 5/10 if it settled before the next session. Lewis suggests that, in non-irritable presentations whose progress has plateaued, pain of about 2 to 5/10 may be tried if it settles soon after and does not increase pain at night or over 24 hours. The BESS review could not tell whether exercising below or above the pain threshold makes a clinically important difference. This case uses the Holmgren rule because that trial gives a complete protocol.",
+     "zh": "练习时能接受多少疼痛，来源之间不一致。荷兰指南说要在疼痛阈值以内（Diercks 2014）。Holmgren 试验允许到 5/10，前提是下次练习前能回落。Lewis 认为，低激惹且进展停滞的病人可以尝试约 2–5/10 的疼痛，但练后要很快缓解，并且不加重夜间痛和 24 小时内的疼痛。BESS 的证据回顾无法判断在疼痛阈值以下还是以上练习有没有临床上重要的差别。本例采用 Holmgren 的规定，因为这项试验给出了完整的方案。"
+    },
+    {
+     "t": "p",
+     "en": "No source opened for this pack gives numeric criteria for returning to overhead work. The case therefore uses criteria agreed with the patient: full shifts including the top shelves, with pain at work no higher than during exercise and no worse the next morning. These are a teaching choice, not a published standard. What the sources do say is to build a return-to-work plan early, with the worker and other stakeholders (Lafrance 2022), and to build up exercise within sport and work gradually, to raise the load the cuff can bear (Dutch guideline 2026).",
+     "zh": "本包打开过的来源都没有给出回到过头工作的量化标准。所以本例用和病人商定的标准：上满班（包括高层货架），工作时的疼痛不超过练习时，第二天早上不加重。这是教学上的选择，不是公开发表的标准。来源给出的是做法：尽早和劳动者及相关各方一起定返岗计划（Lafrance 2022）；在运动和工作中逐步加量，提高肩袖能承受的负荷（荷兰指南 2026）。"
+    },
+    {
+     "t": "h3",
+     "en": "Speaking practice 1: taking the history",
+     "zh": "口语练习 1：问诊"
+    },
+    {
+     "t": "p",
+     "en": "Play each line, then say it yourself. The questions follow the order of the S line: where, how it started, what changes it, night, neck and nerves, instability, red flags, goal. The key terms at the top of this chapter show the IPA and stress of the hard words.",
+     "zh": "先播放每一句，再自己说一遍。问题按 S 一栏的顺序：部位、起病、加重和缓解因素、夜间、颈部和神经、不稳、红旗征、目标。难词的音标和重音见本章开头的关键词。"
+    },
+    {
+     "t": "dialogue",
+     "lines": [
+      [
+       "Physio · 治疗师",
+       "Hi, I'm Alex, one of the physiotherapists. What brings you in today?",
+       "你好，我是 Alex，这里的物理治疗师。今天是哪里不舒服？"
+      ],
+      [
+       "Patient · 病人",
+       "My right shoulder has been hurting for about three weeks.",
+       "我右肩痛了大概三周。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Can you point to where you feel it most?",
+       "能指一下最痛的地方吗？"
+      ],
+      [
+       "Patient · 病人",
+       "Here, on the outside of my upper arm.",
+       "这里，上臂外侧。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Does the pain ever go below your elbow?",
+       "疼痛会传到肘部以下吗？"
+      ],
+      [
+       "Patient · 病人",
+       "No, it stops above the elbow.",
+       "不会，到肘上面就停了。"
+      ],
+      [
+       "Physio · 治疗师",
+       "How did it start? Did you fall or hurt it?",
+       "是怎么开始的？有没有摔倒或受伤？"
+      ],
+      [
+       "Patient · 病人",
+       "No injury. It came on slowly after a week of stocking the top shelves.",
+       "没有受伤。是有一周一直往高层货架上货之后，慢慢开始痛的。"
+      ],
+      [
+       "Physio · 治疗师",
+       "What makes it worse, and what makes it better?",
+       "做什么会加重？怎样会减轻？"
+      ],
+      [
+       "Patient · 病人",
+       "Reaching up or brushing my hair makes it worse. It settles in about half an hour if I rest.",
+       "往上够东西或梳头会加重。休息半小时左右就缓下来。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Does it wake you at night?",
+       "晚上会痛醒吗？"
+      ],
+      [
+       "Patient · 病人",
+       "Sometimes, when I roll onto that side. Then I fall back asleep.",
+       "有时候翻身压到那边会醒，然后能再睡着。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Any neck pain, or pins and needles or numbness in your arm?",
+       "有没有颈部痛，或者手臂刺痛、发麻？"
+      ],
+      [
+       "Patient · 病人",
+       "No, none of that.",
+       "都没有。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Has your shoulder ever felt like it might slip out?",
+       "肩膀有没有过要脱出来的感觉？"
+      ],
+      [
+       "Patient · 病人",
+       "No, never.",
+       "没有，从来没有。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Have you had a fever, lost weight without trying, or ever been treated for cancer?",
+       "最近有没有发烧、没刻意减重却瘦了，或者以前治疗过癌症？"
+      ],
+      [
+       "Patient · 病人",
+       "No, I feel fine otherwise.",
+       "没有，别的都挺好。"
+      ],
+      [
+       "Physio · 治疗师",
+       "What would you most like to get back to?",
+       "你最想恢复做什么？"
+      ],
+      [
+       "Patient · 病人",
+       "Full shifts at work, and sleeping on my right side.",
+       "上满班，还有能侧躺右边睡觉。"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Speaking practice 2: explaining to the patient",
+     "zh": "口语练习 2：给病人解释"
+    },
+    {
+     "t": "dialogue",
+     "lines": [
+      [
+       "Physio · 治疗师",
+       "From what you've told me and what I've found, this looks like an irritated tendon at the top of your shoulder, the supraspinatus tendon.",
+       "根据你说的和我检查到的，这看起来是肩膀上方的一条肌腱受了刺激，叫冈上肌腱。"
+      ],
+      [
+       "Physio · 治疗师",
+       "It runs under the bony tip of your shoulder, the acromion, and attaches to the top of your arm bone. It is often sore in the middle of lifting the arm to the side, as yours is.",
+       "这条肌腱从肩膀外侧那块骨头（肩峰）下面经过，止于上臂骨的上端。手臂向侧面抬到中段时常会痛，你就是这样。"
+      ],
+      [
+       "Patient · 病人",
+       "Do I need a scan?",
+       "我需要拍片子或做扫描吗？"
+      ],
+      [
+       "Physio · 治疗师",
+       "Not right now. This is diagnosed from your story and the examination, and a scan isn't needed to start treatment. If things change, we'll look at it again.",
+       "现在不需要。这个靠病史和查体诊断，开始治疗不需要影像。情况有变化，我们再考虑。"
+      ],
+      [
+       "Patient · 病人",
+       "Should I stop using the arm?",
+       "我是不是应该先别用这只手？"
+      ],
+      [
+       "Physio · 治疗师",
+       "No. Keep moving it within what feels comfortable, but cut back on the top shelves for now. We'll build them back in step by step.",
+       "不用。在舒服的范围里继续活动，但暂时少做高层货架的活，我们再一步步加回来。"
+      ],
+      [
+       "Physio · 治疗师",
+       "The main treatment is exercise for the shoulder muscles. Some pain while you exercise is fine, up to five out of ten, as long as it settles back to your usual level before the next session.",
+       "主要的治疗是肩部肌肉的锻炼。练的时候有点痛没关系，最多到 10 分里的 5 分，只要下次练之前能回到平时的水平就行。"
+      ],
+      [
+       "Patient · 病人",
+       "How long will it take?",
+       "要多久能好？"
+      ],
+      [
+       "Physio · 治疗师",
+       "Most people with this problem improve within about three months. We'll check every two weeks, and if it isn't improving, we'll change the plan.",
+       "有这种问题的人，大多数三个月左右会好转。我们每两周复查一次，如果没有好转，就调整方案。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Can you tell me in your own words what we're going to do?",
+       "你能用自己的话说说我们接下来要做什么吗？"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "en": "The last line checks understanding: the patient repeats the plan in their own words, and you correct anything that is missing.",
+     "zh": "最后一句是确认病人听懂了：让病人用自己的话复述计划，漏了什么再补上。"
+    },
+    {
+     "t": "h3",
+     "en": "Speaking practice 3: reporting to a colleague",
+     "zh": "口语练习 3：向同事汇报"
+    },
+    {
+     "t": "dialogue",
+     "lines": [
+      [
+       "Physio · 治疗师",
+       "Can I run a new patient past you?",
+       "我跟你说一下一位新病人，可以吗？"
+      ],
+      [
+       "Colleague · 同事",
+       "Sure, go ahead.",
+       "好，你说。"
+      ],
+      [
+       "Physio · 治疗师",
+       "She's a 48-year-old shelf-stacker with three weeks of right lateral arm pain, gradual onset, no trauma. It's worse with overhead reaching, it doesn't go past the elbow, and she has some night pain lying on that side.",
+       "48 岁女性，超市理货员，右上臂外侧痛三周，逐渐起病，没有外伤。往上够东西时加重，不过肘，压着那一侧睡时夜里会痛。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Her neck is clear, no neuro symptoms, no red flags and no instability.",
+       "颈椎问题已排除，没有神经症状，没有红旗征，没有不稳。"
+      ],
+      [
+       "Physio · 治疗师",
+       "She has a painful arc from about seventy to a hundred degrees, subacromial tenderness and full passive range, including external rotation. Resisted abduction and external rotation are painful but strong, with no lag sign.",
+       "疼痛弧大约在 70° 到 100°，肩峰下压痛，被动活动度全范围，包括外旋。抗阻外展和抗阻外旋会痛，但力量正常，没有滞后征。"
+      ],
+      [
+       "Colleague · 同事",
+       "Any wasting over the scapula?",
+       "肩胛骨那里有没有肌肉萎缩？"
+      ],
+      [
+       "Physio · 治疗师",
+       "None. Bulk is equal in both fossae, and deltoid strength and sensation over the badge area are normal.",
+       "没有。冈上窝、冈下窝肌肉对称，三角肌力量和徽章区感觉都正常。"
+      ],
+      [
+       "Physio · 治疗师",
+       "My working diagnosis is subacromial pain syndrome, most likely supraspinatus tendinopathy, with low irritability.",
+       "我的工作诊断是肩峰下疼痛综合征，最可能是冈上肌腱病，激惹性低。"
+      ],
+      [
+       "Physio · 治疗师",
+       "Plan: education, cuff and scapular loading at home with pain up to five out of ten, and a review in two weeks. If there's no improvement by six to eight weeks, we'll discuss an injection with her GP.",
+       "计划：宣教，在家做肩袖和肩胛稳定肌的负荷训练，疼痛不超过 5/10，两周后复查。6–8 周仍无改善，就和她的家庭医生商量注射。"
+      ],
+      [
+       "Colleague · 同事",
+       "Sounds reasonable. Let me know how she's doing at the review.",
+       "听起来合理。复查时告诉我她的情况。"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "en": "A report runs in the same order as the note: who the patient is and the main complaint, what was ruled out, the key findings, the working diagnosis, then the plan and when it will be reviewed.",
+     "zh": "汇报的顺序和记录一样：病人是谁、主诉，排除了什么，关键体征，工作诊断，最后是计划和复查时间。"
+    }
+   ],
+   "check": [
+    [
+     "Which findings in this case argue against frozen shoulder, and which against a full-thickness tear?",
+     "这个案例里哪些表现不支持冻结肩？哪些不支持全层撕裂？",
+     "Against frozen shoulder: full passive range, including passive external rotation. Against a full-thickness tear: normal strength on resisted testing, no lag sign, and no sudden loss of active elevation.",
+     "不支持冻结肩：被动活动度全范围，包括被动外旋。不支持全层撕裂：抗阻测试力量正常，没有滞后征，没有突然不能主动抬臂。"
+    ],
+    [
+     "Why is supraspinatus tendinopathy written as a working diagnosis rather than a certainty?",
+     "为什么冈上肌腱病写成工作诊断，而不是确定的诊断？",
+     "No single clinical test can make a pathognomonic diagnosis (Hegedus 2012). The findings fit the supraspinatus tendon, but the examination cannot prove which structure is painful.",
+     "没有哪一项临床检查能单独确诊（Hegedus 2012）。这些表现符合冈上肌腱，但查体证明不了到底是哪个结构在痛。"
+    ],
+    [
+     "What is the rule for pain during exercise in this plan, and where does it come from?",
+     "这个计划里练习时的疼痛怎么规定？出自哪里？",
+     "Up to 5/10 while exercising, and back to the usual level before the next session; otherwise the load is lowered. It is the Holmgren 2012 trial's rule; other sources set it differently.",
+     "练习时不超过 5/10，下次练习前要回到平时水平，否则减负荷。这是 Holmgren 2012 试验的规定；其他来源的规定不一样。"
+    ],
+    [
+     "At which two points does the plan change if she is not improving?",
+     "如果她没有好转，计划在哪两个时间点改变？",
+     "By 6–8 weeks: one subacromial steroid injection can be considered in a shared decision. By 12 weeks of non-operative care: referral to secondary care (BESS 2025).",
+     "6–8 周：可以共同决定是否做一次肩峰下类固醇注射。保守治疗满 12 周：转专科（BESS 2025）。"
+    ],
+    [
+     "Which nerve checks are in the O line, and which nerve does each test?",
+     "O 一栏里有哪些神经检查？各查的是哪条神经？",
+     "Muscle bulk in the supraspinous and infraspinous fossae: suprascapular nerve. Deltoid strength and badge-area sensation: axillary nerve. External rotation strength involves both: Infraspinatus (suprascapular nerve) and Teres minor (axillary nerve).",
+     "冈上窝、冈下窝的肌肉体积：肩胛上神经。三角肌力量和徽章区感觉：腋神经。外旋力量两条都涉及：冈下肌（肩胛上神经）和小圆肌（腋神经）。"
+    ]
+   ],
+   "take": [
+    "A case note is a chain of reasons: each finding either supports the working diagnosis or rules something else out, and the plan says in advance when it will change.",
+    "病例记录是一串理由：每个表现要么支持工作诊断，要么排除别的可能；计划要事先写明什么时候改。"
+   ],
+   "bridge": [
+    "consolidate-nerves",
+    "Next: the suprascapular and axillary nerves, the two nerves this case checked. 下一章：肩胛上神经和腋神经，就是这个案例里检查过的两条神经。",
+    "02 Two nerves"
+   ]
+  },
+  {
+   "num": 2,
+   "id": "consolidate-nerves",
+   "content": "O-4",
+   "items": [
+    "Suprascapular nerve",
+    "Axillary nerve"
+   ],
+   "forms": [
+    "F-8",
+    "F-11"
+   ],
+   "title": [
+    "Consolidate: the suprascapular and axillary nerves",
+    "夯实：肩胛上神经与腋神经"
+   ],
+   "toc": [
+    "Two nerves",
+    "两条神经"
+   ],
+   "goals": [
+    [
+     "Give each nerve's levels, origin and course, from the brachial plexus to its muscles.",
+     "说出每条神经的节段、起源和走行，从臂丛一直到它支配的肌肉。"
+    ],
+    [
+     "Say where each nerve can be compressed or injured, and what you would find.",
+     "说出每条神经会在哪里受压或受伤，查体会看到什么。"
+    ],
+    [
+     "Tell a dermatome from a peripheral nerve territory, and name the C5 and C6 myotomes.",
+     "分清皮节和周围神经分布区，说出 C5、C6 的代表性肌节。"
+    ],
+    [
+     "Recognise the English names by ear, and type each course from memory.",
+     "听英文读音认出结构名，凭记忆打出走行。"
+    ]
+   ],
+   "terms": [
+    [
+     "Brachial plexus",
+     "臂丛"
+    ],
+    [
+     "Superior trunk",
+     "上干"
+    ],
+    [
+     "Posterior cord",
+     "臂丛后束"
+    ],
+    [
+     "Dermatome",
+     "皮节"
+    ],
+    [
+     "Myotome",
+     "肌节"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Everything in this chapter is copied from this week's chapter (library: shoulder, section 2, Innervation and anatomical nerve course, and its figures). Work in this order: listen and write the names, type each prompt from memory, then compare with the chapter's wording. The chapter figures and the summary table come last, so look at them only after you have recalled.",
+     "zh": "本章内容都照抄本周章节（知识库：肩部，第 2 节「神经支配与解剖走行」及其配图）。按这个顺序练：先听音写出结构名，再凭记忆打出每个提示，最后和章节原文对照。章节原图和总表放在最后，回忆完再看。"
+    },
+    {
+     "t": "p",
+     "en": "C stands for cervical (neck), whereas T stands for thoracic (chest). In an innervation label such as C5–C6, the numbers identify the spinal nerve levels contributing fibers to the nerve; they do not identify two thoracic vertebrae. There are seven cervical vertebrae, C1–C7, but eight pairs of cervical spinal nerves, C1–C8. C1–C7 nerves leave above the same-numbered vertebra; C8 leaves between C7 and T1. The roots of the brachial plexus are the anterior rami of spinal nerves C5–T1, not the vertebral bones themselves.",
+     "zh": "C 是 cervical（颈部）的缩写，T 是 thoracic（胸部）的缩写。神经支配中的 C5–C6 指向该神经贡献纤维的脊神经节段，不是两块胸椎。颈椎有 7 块（C1–C7），颈神经有 8 对（C1–C8）；C1–C7 神经从同名椎骨上方穿出，C8 从 C7 与 T1 之间穿出。臂丛的“根”是 C5–T1 脊神经的前支，而不是椎骨本身。"
+    },
+    {
+     "t": "h3",
+     "en": "Listen and write",
+     "zh": "听音辨词"
+    },
+    {
+     "t": "p",
+     "en": "Press play and write the English name and its Chinese on paper, then open the item to check your spelling. The 12 names follow the two nerves outwards, the suprascapular nerve first. The key terms above list only the plexus words, so the answers are not on the page until you open them.",
+     "zh": "点播放，在纸上写出英文名和中文，再展开核对拼写。12 个词按两条神经往外走的顺序排列，先肩胛上神经，后腋神经。上面的关键词只列了臂丛相关的词，答案要展开才看得到。"
+    },
+    {
+     "t": "listen",
+     "words": [
+      [
+       "Suprascapular nerve",
+       "肩胛上神经"
+      ],
+      [
+       "Axillary nerve",
+       "腋神经"
+      ],
+      [
+       "Posterior triangle of the neck",
+       "颈后三角"
+      ],
+      [
+       "Suprascapular notch",
+       "肩胛上切迹"
+      ],
+      [
+       "Superior transverse scapular ligament",
+       "肩胛上横韧带"
+      ],
+      [
+       "Supraspinous fossa",
+       "冈上窝"
+      ],
+      [
+       "Spinoglenoid notch",
+       "冈盂切迹"
+      ],
+      [
+       "Infraspinous fossa",
+       "冈下窝"
+      ],
+      [
+       "Quadrangular space",
+       "四边孔"
+      ],
+      [
+       "Posterior circumflex humeral artery",
+       "旋肱后动脉"
+      ],
+      [
+       "Surgical neck",
+       "外科颈"
+      ],
+      [
+       "Superior lateral cutaneous nerve of the arm",
+       "臂外上侧皮神经"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Type from memory",
+     "zh": "手敲笔记"
+    },
+    {
+     "t": "p",
+     "en": "Type each answer in the box without looking, then open the reference. The reference is the chapter's own wording; mark what you left out. Your typing stays in this browser.",
+     "zh": "不看书，在框里打出答案，再展开原文对照。原文就是章节的原话；把漏掉的地方标出来。你打的内容只保存在这个浏览器里。"
+    },
+    {
+     "t": "notes",
+     "id": "1014-plexus",
+     "prompt": [
+      "From roots to nerves: how do the suprascapular and axillary nerves leave the brachial plexus?",
+      "从根到神经：肩胛上神经和腋神经各从臂丛的哪里发出？"
+     ],
+     "answer": [
+      "The anterior rami of C5 and C6 unite to form the superior trunk. Each trunk divides into anterior and posterior divisions. The posterior divisions contribute to the posterior cord, from which the axillary and subscapular nerves arise. The suprascapular nerve branches earlier, directly from the superior trunk.",
+      "C5、C6 脊神经的前支合成上干。各干再分为前股和后股；后股共同组成后束，腋神经和肩胛下神经从后束发出。肩胛上神经更早分出，直接起自上干。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-ssn",
+     "prompt": [
+      "Suprascapular nerve: its origin and levels, then its course from the neck to Infraspinatus.",
+      "肩胛上神经：起源和节段，再写它从颈部到冈下肌的走行。"
+     ],
+     "answer": [
+      "The suprascapular nerve arises from the superior trunk of the brachial plexus, usually carrying fibers from C5 and C6. It courses posterolaterally across the posterior triangle of the neck and passes through the suprascapular notch beneath the superior transverse scapular ligament. It gives motor branches to Supraspinatus in the supraspinous fossa, then passes around the lateral end of the scapular spine through the spinoglenoid notch to supply Infraspinatus in the infraspinous fossa.",
+      "肩胛上神经起自臂丛上干，通常含 C5、C6 神经纤维。它向后外侧经过颈后三角，从肩胛上横韧带下方穿过肩胛上切迹，在冈上窝内发出支配冈上肌的运动支；随后绕过肩胛冈外侧端，经冈盂切迹进入冈下窝，支配冈下肌。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-axn",
+     "prompt": [
+      "Axillary nerve: its origin and levels, the space it passes through, and what each branch supplies.",
+      "腋神经：起源和节段、穿过的间隙、两个分支各支配什么。"
+     ],
+     "answer": [
+      "The axillary nerve arises from the posterior cord of the brachial plexus, mainly from C5 and C6. It passes posteriorly through the quadrangular space with the posterior circumflex humeral artery and winds around the surgical neck of the Humerus deep to Deltoid. Its anterior branch supplies the anterior and middle parts of Deltoid. Its posterior branch supplies Teres minor and the posterior part of Deltoid and continues as the superior lateral cutaneous nerve of the arm.",
+      "腋神经起自臂丛后束，主要含 C5、C6 神经纤维。它与旋肱后动脉一起向后穿过四边孔，在三角肌深面绕行肱骨外科颈。前支支配三角肌前部和中部；后支支配小圆肌及三角肌后部，并延续为臂外上侧皮神经。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-qs",
+     "prompt": [
+      "Quadrangular space: the four boundaries, and what passes through.",
+      "四边孔：四条边界，以及从中穿过的结构。"
+     ],
+     "answer": [
+      "The quadrangular space is a gap in the posterior axilla, bounded by the teres minor superiorly, the teres major inferiorly, the long head of the triceps brachii medially and the surgical neck of the humerus laterally. The axillary nerve passes through it with the posterior circumflex humeral artery before supplying the teres minor and the deltoid.",
+      "四边孔是腋区后部的间隙，上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉一起穿过四边孔，随后支配小圆肌和三角肌。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-entrap",
+     "prompt": [
+      "Compression and injury: what happens at the suprascapular notch, at the spinoglenoid notch, and when the axillary nerve is injured?",
+      "受压与损伤：在肩胛上切迹、冈盂切迹分别会怎样？腋神经损伤会怎样？"
+     ],
+     "answer": [
+      "Entrapment at the suprascapular notch leads to atrophy of both the supraspinatus and the infraspinatus. Entrapment at the spinoglenoid notch leads to atrophy of the infraspinatus only. Axillary nerve injury: Deltoid weakness and badge-area sensory loss. Risk: a surgical-neck fracture or an anterior shoulder dislocation.",
+      "肩胛上切迹处卡压会导致冈上肌和冈下肌萎缩。冈盂切迹处卡压只导致冈下肌萎缩。腋神经损伤：三角肌无力和徽章区感觉减退。风险因素：肱骨外科颈骨折或肩关节前脱位。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-derm",
+     "prompt": [
+      "Dermatome or nerve territory? Explain the badge area, then give the C5 and C6 myotomes.",
+      "皮节还是神经分布区？解释徽章区，再说出 C5、C6 的代表性肌节。"
+     ],
+     "answer": [
+      "Regimental badge area: the skin supplied by the superior lateral cutaneous nerve of arm, a cutaneous branch of the Axillary nerve. Peripheral nerve territory ≠ dermatome: the lateral upper arm overlaps the C5 dermatome. Key myotomes: C5, shoulder abduction; C6, elbow flexion and wrist extension. These movements receive overlapping segmental contributions.",
+      "徽章区：腋神经的皮肤感觉分布，由臂外上侧皮神经（腋神经发出的皮支）支配。周围神经分布区不等同于皮节：上臂外侧区域与 C5 皮节重叠。代表性肌节：C5 肩外展；C6 屈肘和伸腕。这些动作通常接受相邻神经节段的共同支配。"
+     ]
+    },
+    {
+     "t": "notes",
+     "id": "1014-army-navy",
+     "prompt": [
+      "At the suprascapular notch, which runs above the superior transverse scapular ligament and which below? Give the memory hook.",
+      "在肩胛上切迹处，什么走肩胛上横韧带上方，什么走下方？写出记忆口诀。"
+     ],
+     "answer": [
+      "Army over Navy: artery above, nerve below the superior transverse scapular ligament.",
+      "Army over Navy（A 在上、N 在下）：动脉走肩胛上横韧带上方，神经走韧带下方。"
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Check against the chapter figures",
+     "zh": "对照章节原图"
+    },
+    {
+     "t": "fig",
+     "n": "02",
+     "en": "Chapter figure 16, right shoulder, posterior view. The suprascapular nerve passes beneath the superior transverse scapular ligament, crosses the supraspinous fossa, turns around the spinoglenoid notch and enters the infraspinous fossa. Muscles are translucent to expose the deep nerve course.",
+     "zh": "章节图 16，右肩后面观。肩胛上神经从肩胛上横韧带下方穿过，横过冈上窝，绕过冈盂切迹，进入冈下窝。肌肉半透明显示，以显露深面的神经走行。"
+    },
+    {
+     "t": "fig",
+     "n": "03",
+     "en": "Chapter figure 17, posterior view with Deltoid removed. The quadrangular space is bounded by Teres minor superiorly, Teres major inferiorly, the long head of Triceps brachii medially and the surgical neck of the Humerus laterally. The axillary nerve and the posterior circumflex humeral artery pass through it.",
+     "zh": "章节图 17，移除三角肌后的后面观。四边孔的上界为小圆肌，下界为大圆肌，内界为肱三头肌长头，外界为肱骨外科颈。腋神经与旋肱后动脉经此穿过。"
+    },
+    {
+     "t": "fig",
+     "n": "04",
+     "en": "Redrawn from chapter figure 14 with a clearer arm: the badge area on the skin over the inferior part of Deltoid, the C5 and C6 myotomes, and axillary nerve injury.",
+     "zh": "按章节图 14 重画，手臂画得更清楚：徽章区位于三角肌下部表面的皮肤，C5、C6 肌节，以及腋神经损伤。"
+    },
+    {
+     "t": "h3",
+     "en": "Summary table",
+     "zh": "总表"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Nerve<span class=\"translation\" lang=\"zh-Hans\">神经</span></th><th>Origin and levels<span class=\"translation\" lang=\"zh-Hans\">发出部位与节段</span></th><th>Course<span class=\"translation\" lang=\"zh-Hans\">走行</span></th><th>Muscles<span class=\"translation\" lang=\"zh-Hans\">支配肌肉</span></th><th>Skin<span class=\"translation\" lang=\"zh-Hans\">皮肤感觉</span></th><th>Compression or injury<span class=\"translation\" lang=\"zh-Hans\">受压或损伤</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Suprascapular nerve</span><span class=\"translation\" lang=\"zh-Hans\">肩胛上神经</span></td><td><span lang=\"en\">Superior trunk of the brachial plexus, usually C5–C6</span><span class=\"translation\" lang=\"zh-Hans\">臂丛上干，通常为 C5–C6</span></td><td><span lang=\"en\">Posterior triangle of the neck → suprascapular notch beneath the superior transverse scapular ligament → supraspinous fossa → around the lateral end of the scapular spine through the spinoglenoid notch → infraspinous fossa</span><span class=\"translation\" lang=\"zh-Hans\">颈后三角 → 肩胛上横韧带下方穿过肩胛上切迹 → 冈上窝 → 绕肩胛冈外侧端经冈盂切迹 → 冈下窝</span></td><td><span lang=\"en\">Supraspinatus; Infraspinatus</span><span class=\"translation\" lang=\"zh-Hans\">冈上肌；冈下肌</span></td><td><span lang=\"en\">Not covered in this week's chapter</span><span class=\"translation\" lang=\"zh-Hans\">本周章节没有涉及</span></td><td><span lang=\"en\">Suprascapular notch: atrophy of both Supraspinatus and Infraspinatus. Spinoglenoid notch: atrophy of Infraspinatus only.</span><span class=\"translation\" lang=\"zh-Hans\">肩胛上切迹卡压：冈上肌和冈下肌萎缩。冈盂切迹卡压：只有冈下肌萎缩。</span></td></tr><tr><td><span lang=\"en\">Axillary nerve</span><span class=\"translation\" lang=\"zh-Hans\">腋神经</span></td><td><span lang=\"en\">Posterior cord of the brachial plexus, mainly C5–C6</span><span class=\"translation\" lang=\"zh-Hans\">臂丛后束，主要为 C5–C6</span></td><td><span lang=\"en\">Through the quadrangular space with the posterior circumflex humeral artery → around the surgical neck of the Humerus deep to Deltoid → anterior and posterior branches</span><span class=\"translation\" lang=\"zh-Hans\">与旋肱后动脉一起穿过四边孔 → 在三角肌深面绕行肱骨外科颈 → 分为前支和后支</span></td><td><span lang=\"en\">Deltoid (anterior and middle parts: anterior branch; posterior part: posterior branch); Teres minor (posterior branch)</span><span class=\"translation\" lang=\"zh-Hans\">三角肌（前部和中部：前支；后部：后支）；小圆肌（后支）</span></td><td><span lang=\"en\">Superior lateral cutaneous nerve of the arm: the regimental badge area</span><span class=\"translation\" lang=\"zh-Hans\">臂外上侧皮神经：徽章区</span></td><td><span lang=\"en\">Deltoid weakness and badge-area sensory loss. Risk: a surgical-neck fracture or an anterior shoulder dislocation.</span><span class=\"translation\" lang=\"zh-Hans\">三角肌无力和徽章区感觉减退。风险因素：肱骨外科颈骨折或肩关节前脱位。</span></td></tr></tbody></table></div>",
+     "md": "| Nerve 神经 | Origin and levels 发出部位与节段 | Course 走行 | Muscles 支配肌肉 | Skin 皮肤感觉 | Compression or injury 受压或损伤 |\n|---|---|---|---|---|---|\n| Suprascapular nerve<br>肩胛上神经 | Superior trunk of the brachial plexus, usually C5–C6<br>臂丛上干，通常为 C5–C6 | Posterior triangle of the neck → suprascapular notch beneath the superior transverse scapular ligament → supraspinous fossa → around the lateral end of the scapular spine through the spinoglenoid notch → infraspinous fossa<br>颈后三角 → 肩胛上横韧带下方穿过肩胛上切迹 → 冈上窝 → 绕肩胛冈外侧端经冈盂切迹 → 冈下窝 | Supraspinatus; Infraspinatus<br>冈上肌；冈下肌 | Not covered in this week's chapter<br>本周章节没有涉及 | Suprascapular notch: atrophy of both Supraspinatus and Infraspinatus. Spinoglenoid notch: atrophy of Infraspinatus only.<br>肩胛上切迹卡压：冈上肌和冈下肌萎缩。冈盂切迹卡压：只有冈下肌萎缩。 |\n| Axillary nerve<br>腋神经 | Posterior cord of the brachial plexus, mainly C5–C6<br>臂丛后束，主要为 C5–C6 | Through the quadrangular space with the posterior circumflex humeral artery → around the surgical neck of the Humerus deep to Deltoid → anterior and posterior branches<br>与旋肱后动脉一起穿过四边孔 → 在三角肌深面绕行肱骨外科颈 → 分为前支和后支 | Deltoid (anterior and middle parts: anterior branch; posterior part: posterior branch); Teres minor (posterior branch)<br>三角肌（前部和中部：前支；后部：后支）；小圆肌（后支） | Superior lateral cutaneous nerve of the arm: the regimental badge area<br>臂外上侧皮神经：徽章区 | Deltoid weakness and badge-area sensory loss. Risk: a surgical-neck fracture or an anterior shoulder dislocation.<br>三角肌无力和徽章区感觉减退。风险因素：肱骨外科颈骨折或肩关节前脱位。 |\n"
+    },
+    {
+     "t": "p",
+     "en": "Back to today's case: equal muscle bulk in both fossae and strong external rotation gave no sign of a suprascapular nerve lesion; normal deltoid strength and badge-area sensation gave no sign of an axillary nerve lesion. In this week's chapter, resisted external rotation and the external rotation lag sign are listed for Infraspinatus (suprascapular nerve), and Hornblower sign for Teres minor (axillary nerve).",
+     "zh": "回到今天的案例：两侧冈上窝、冈下窝肌肉对称，外旋有力，说明没有肩胛上神经损伤的表现；三角肌力量和徽章区感觉正常，说明没有腋神经损伤的表现。本周章节里，冈下肌（肩胛上神经）对应抗阻外旋和外旋滞后征，小圆肌（腋神经）对应 Hornblower 征。"
+    },
+    {
+     "t": "chapter_link"
+    },
+    {
+     "t": "sources",
+     "end": true,
+     "note": "以上来源用于 01 章，都是实际打开并逐条核对过的指南、试验和综述；来源之间有分歧或没有给出的地方，正文已注明。01 章的病人是虚构的教学案例。02 章的神经事实和图 02、03 取自本周章节 library/shoulder/content.json 及其配图；图 04 按章节图 14 重画，徽章区的位置依据章节来源 TeachMeAnatomy。"
+    }
+   ],
+   "take": [
+    "Two nerves from C5–C6, two routes: the suprascapular nerve leaves the superior trunk early and runs through two notches to two fossae; the axillary nerve leaves the posterior cord, goes through the quadrangular space and around the surgical neck to Deltoid and Teres minor.",
+    "两条神经都来自 C5–C6，走两条路：肩胛上神经早早从上干分出，经两个切迹到两个窝；腋神经从后束发出，穿过四边孔、绕外科颈，到三角肌和小圆肌。"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "reviewer": "claude",
+ "verdict": "pass",
+ "viewed": [
+  "top.png",
+  "chapter-new-case-supraspinatus-1.png",
+  "chapter-new-case-supraspinatus-2.png",
+  "chapter-new-case-supraspinatus-3.png",
+  "chapter-new-case-supraspinatus-4.png",
+  "chapter-new-case-supraspinatus-5.png",
+  "chapter-new-case-supraspinatus-6.png",
+  "chapter-new-case-supraspinatus-7.png",
+  "chapter-new-case-supraspinatus-8.png",
+  "chapter-new-case-supraspinatus-9.png",
+  "chapter-consolidate-nerves-1.png",
+  "chapter-consolidate-nerves-2.png",
+  "chapter-consolidate-nerves-3.png",
+  "chapter-consolidate-nerves-4.png",
+  "chapter-consolidate-nerves-5.png",
+  "chapter-consolidate-nerves-6.png",
+  "chapter-consolidate-nerves-7.png",
+  "chapter-consolidate-nerves-8.png",
+  "chapter-consolidate-nerves-9.png",
+  "mobile-top.png",
+  "figure-01.png",
+  "figure-02.png",
+  "figure-03.png",
+  "figure-04.png"
+ ],
+ "notes": "Read all 24 screenshots after the last rebuild. Top and mobile: title, today line and the 30/20/10 study plan fit; mobile width 390 with no sideways scroll. Chapter 01: key terms all carry IPA and stress; SOAP card has S/O/A/P in order with P items on separate lines; reasons table has 10 rows with a source in each; night-pain pitfall, figure 01, the exercise-pain disagreement and the return-to-work paragraph read correctly; three dialogues show speaker, English, then Chinese; five self-check questions hide their answers. Chapter 02: key terms show only the 5 plexus words so the 12 listen answers stay hidden; the C/T paragraph now matches the chapter in full; 7 type-from-memory prompts with hidden references; figures 02 and 03 are the chapter figures, figure 04 is the redraw; summary table and case link read correctly; sources list ends with the note on where each part comes from. Figure 01: callouts point at weeks 0, 3 and 7 on the care scale, the 6 to 8 week band, the exercise bar and the week-12 referral box do not cross labels. Figure 04: arm, deltoid, badge area and tuberosity labelled with leaders on the right structures; forearm ends in a dashed cut. Chapter figures 16 and 17 are copied unchanged (DL-03): in 17 the small 'Lateral' label touches the outline of the humeral head, and in 16 the 'Scapular spine' label touches the scapula outline; both stay readable and are left for the chapter itself.",
+ "fixed": [
+  "Case card: the five P items ran together; split them onto separate lines.",
+  "Chapter 02: the key terms box listed every listen answer; cut it to the 5 plexus words and cut the listen list to 12 names, with the instruction saying the answers stay hidden.",
+  "Chapter 02: the C5 to C6 paragraph dropped the chapter's first sentence (C is cervical, T is thoracic), which made 'two thoracic vertebrae' confusing; now copies the whole chapter paragraph.",
+  "Figure 04: the chapter's figure 14 had an abstract arm and a leader pointing at nothing; redrew it with a lateral view of the arm, trunk outline behind it and labelled leaders.",
+  "Figure 04: the forearm cut line stuck out past the arm outline; the arm now ends in a dashed cut between the two borders.",
+  "Figure 01: a red leader crossed the week-12 labels and the callouts had empty space; removed the leader and tightened the callout and figure heights."
+ ],
+ "page_sha": "be36caaf867f077a"
+}
