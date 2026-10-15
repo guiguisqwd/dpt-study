@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-15",
+  "out": "2026-10-15-第1周-干针试验精读与盂肱关节囊韧带",
+  "chapters": 2,
+  "figure_occurrences": 4,
+  "figures": [
+    "01",
+    "02",
+    "04",
+    "03"
+  ],
+  "model_links": [
+    "acromion",
+    "deltoid",
+    "greater-tubercle",
+    "humeral-head",
+    "humerus",
+    "infraspinatus",
+    "intertubercular-groove",
+    "lesser-tubercle",
+    "scapula",
+    "subscapularis",
+    "supraspinatus",
+    "teres-minor"
+  ],
+  "html_bytes": 215939
+}

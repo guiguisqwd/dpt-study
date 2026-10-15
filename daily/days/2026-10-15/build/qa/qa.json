@@ -1,0 +1,27 @@
+{
+  "file": "/home/claude/dpt-study/daily/days/2026-10-15/build/2026-10-15-第1周-干针试验精读与盂肱关节囊韧带.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "new-paper-dry-needling",
+    "consolidate-gh-joint"
+  ],
+  "figures": 4,
+  "say_buttons": 28,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/top.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/chapter-new-paper-dry-needling.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/chapter-consolidate-gh-joint.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/figure-01.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/figure-02.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/figure-04.png",
+    "/home/claude/dpt-study/daily/days/2026-10-15/build/qa/figure-03.png"
+  ],
+  "flashcards": 0
+}

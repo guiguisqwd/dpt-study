@@ -2,6 +2,42 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
+   "date": "2026-10-15",
+   "day": null,
+   "week": 1,
+   "chapter": "shoulder",
+   "kind": "supplement",
+   "out": "2026-10-15-第1周-干针试验精读与盂肱关节囊韧带",
+   "title": {
+    "zh": "论文精读：干针治疗肩峰下疼痛 · 盂肱关节的关节囊与韧带",
+    "en": "Reading a dry-needling trial · the glenohumeral capsule and ligaments"
+   },
+   "acupoints": [],
+   "muscles": [],
+   "tags": {
+    "vertical": [
+     "循证方法学/随机对照试验",
+     "循证方法学/效应量与置信区间",
+     "康复干预/肩/干针",
+     "病理学/肩/肩峰下疼痛综合征",
+     "解剖学/上肢/肩带/盂肱关节",
+     "解剖学/上肢/肩带/关节囊与韧带",
+     "运动学/生物力学/肩/运动平面与轴"
+    ],
+    "horizontal": [
+     "论文精读",
+     "循证方法学/假对照RCT",
+     "效应量与置信区间",
+     "学术争议",
+     "结构→病理→干预链",
+     "看图标注"
+    ]
+   },
+   "figures": 4,
+   "path": "daily/2026-10-15/index.html",
+   "md": "daily/2026-10-15/2026-10-15-第1周-干针试验精读与盂肱关节囊韧带.md"
+  },
+  {
    "date": "2026-10-14",
    "day": null,
    "week": 1,

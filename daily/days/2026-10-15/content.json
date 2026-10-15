@@ -1,0 +1,745 @@
+{
+ "schema": "dpt-daily-pack/2",
+ "date": "2026-10-15",
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "chapter_name": "肩袖 Rotator cuff",
+ "slug_zh": "干针试验精读与盂肱关节囊韧带",
+ "title": {
+  "zh": "论文精读：干针治疗肩峰下疼痛 · 盂肱关节的关节囊与韧带",
+  "en": "Reading a dry-needling trial · the glenohumeral capsule and ligaments"
+ },
+ "description": "DPT 每日包 · 第 1 周周四（10-15）。新：精读 Hando 2026 干针随机试验（八步读法、效应量图、三个容易读错的数字）；夯实：盂肱关节的类型、关节囊、韧带、运动平面与轴、紧张位与松弛位，15 道自测题。",
+ "brand_sub": "第 1 周周四 · 10/15",
+ "today_line": "新：干针随机试验精读（Hando 2026）· 夯实：盂肱关节囊与韧带 · 自测 15 题（含看图标注 A–K）",
+ "study_plan": [
+  [
+   "新内容（30 分钟）",
+   "01 章：先读论文卡片，再按八步表核对，看图 01，最后做 6 道自查题"
+  ],
+  [
+   "夯实（20 分钟）",
+   "02 章：读四张表（关节、韧带、平面与轴、体位）和图 02、04，看来源不一致的地方"
+  ],
+  [
+   "自测（15 分钟）",
+   "02 章：把表和图滑走，答 15 题，最后一题对着图 03 标注 A 到 K"
+  ]
+ ],
+ "footer": "DPT 每日包 · 第 1 周周四（10-15）· 本周章节：肩袖 Rotator cuff（知识库 library/shoulder）· 论文内容取自本周论文记录，关节囊与韧带取自实际打开核对的来源，列在页末；学习材料，不代替临床判断。",
+ "tags": {
+  "vertical": [
+   "循证方法学/随机对照试验",
+   "循证方法学/效应量与置信区间",
+   "康复干预/肩/干针",
+   "病理学/肩/肩峰下疼痛综合征",
+   "解剖学/上肢/肩带/盂肱关节",
+   "解剖学/上肢/肩带/关节囊与韧带",
+   "运动学/生物力学/肩/运动平面与轴"
+  ],
+  "horizontal": [
+   "论文精读",
+   "循证方法学/假对照RCT",
+   "效应量与置信区间",
+   "学术争议",
+   "结构→病理→干预链",
+   "看图标注"
+  ]
+ },
+ "figures": {
+  "01": "干针试验效应量",
+  "02": "盂肱关节囊与韧带外侧面观",
+  "03": "盂肱关节囊与韧带-看图标注",
+  "04": "盂肱关节囊前面观"
+ },
+ "pronunciation": {
+  "Allocation concealment": [
+   "/ˌæləˈkeɪʃən kənˈsilmənt/",
+   "al-uh-KAY-shuhn kuhn-SEEL-muhnt",
+   "https://www.merriam-webster.com/dictionary/concealment"
+  ],
+  "Blinding": [
+   "/ˈblaɪndɪŋ/",
+   "BLYN-ding",
+   "https://www.merriam-webster.com/dictionary/blinding"
+  ],
+  "Confidence interval": [
+   "/ˈkɑnfədəns ˈɪntərvəl/",
+   "KAHN-fuh-duhns IN-ter-vuhl",
+   "https://www.merriam-webster.com/dictionary/interval"
+  ],
+  "Intention-to-treat": [
+   "/ɪnˈtɛnʃən tə trit/",
+   "in-TEN-shuhn tuh TREET",
+   "https://www.merriam-webster.com/dictionary/intention"
+  ],
+  "Multiplicity": [
+   "/ˌmʌltəˈplɪsəti/",
+   "mul-tuh-PLIS-uh-tee",
+   "https://www.merriam-webster.com/dictionary/multiplicity"
+  ],
+  "Odds ratio": [
+   "/ɑdz ˈreɪʃiˌoʊ/",
+   "AHDZ RAY-shee-oh",
+   "https://www.merriam-webster.com/dictionary/ratio"
+  ],
+  "Randomization": [
+   "/ˌrændəməˈzeɪʃən/",
+   "ran-duh-muh-ZAY-shuhn",
+   "https://www.merriam-webster.com/dictionary/randomization"
+  ],
+  "Sham": [
+   "/ʃæm/",
+   "SHAM",
+   "https://www.merriam-webster.com/dictionary/sham"
+  ],
+  "Shoulder Pain and Disability Index": [
+   "/ˈʃoʊldər peɪn ənd ˌdɪsəˈbɪləti ˈɪnˌdɛks/",
+   "SHOHL-der PAYN uhnd dis-uh-BIL-uh-tee IN-deks",
+   "https://www.merriam-webster.com/dictionary/disability"
+  ],
+  "Subacromial pain syndrome": [
+   "/ˌsʌbəˈkroʊmiəl peɪn ˈsɪnˌdroʊm/",
+   "sub-uh-KROH-mee-uhl PAYN SIN-drohm",
+   "https://www.merriam-webster.com/medical/subacromial"
+  ],
+  "Patient Acceptable Symptom State": [
+   "/ˈpeɪʃənt əkˈsɛptəbəl ˈsɪmptəm steɪt/",
+   "PAY-shuhnt ak-SEP-tuh-buhl SIMP-tuhm STAYT",
+   "https://www.merriam-webster.com/dictionary/acceptable"
+  ],
+  "Percentage point": [
+   "/pərˈsɛntɪdʒ pɔɪnt/",
+   "per-SEN-tij POYNT",
+   "https://www.merriam-webster.com/dictionary/percentage"
+  ],
+  "Glenoid labrum": [
+   "/ˈɡlɛˌnɔɪd ˈleɪbrəm/",
+   "GLEN-oyd LAY-bruhm",
+   "https://www.merriam-webster.com/medical/labrum"
+  ],
+  "Joint capsule": [
+   "/dʒɔɪnt ˈkæpsəl/",
+   "JOYNT KAP-suhl",
+   "https://www.merriam-webster.com/medical/capsule"
+  ],
+  "Superior glenohumeral ligament": [
+   "/səˈpɪriər ˌɡlɛnoʊˈhjumərəl ˈlɪɡəmənt/",
+   "suh-PEER-ee-er glen-oh-HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/glenohumeral"
+  ],
+  "Middle glenohumeral ligament": [
+   "/ˈmɪdəl ˌɡlɛnoʊˈhjumərəl ˈlɪɡəmənt/",
+   "MID-uhl glen-oh-HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/glenohumeral"
+  ],
+  "Inferior glenohumeral ligament": [
+   "/ɪnˈfɪriər ˌɡlɛnoʊˈhjumərəl ˈlɪɡəmənt/",
+   "in-FEER-ee-er glen-oh-HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/glenohumeral"
+  ],
+  "Axillary pouch": [
+   "/ˈæksəˌlɛri paʊtʃ/",
+   "AK-suh-lair-ee POWCH",
+   "https://www.merriam-webster.com/medical/axillary"
+  ],
+  "Coracohumeral ligament": [
+   "/ˌkɔrəkoʊˈhjumərəl ˈlɪɡəmənt/",
+   "kor-uh-koh-HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/dictionary/coracoid"
+  ],
+  "Transverse humeral ligament": [
+   "/trænsˈvɝs ˈhjumərəl ˈlɪɡəmənt/",
+   "trans-VURS HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/humeral"
+  ],
+  "Coracoacromial ligament": [
+   "/ˌkɔrəkoʊəˈkroʊmiəl ˈlɪɡəmənt/",
+   "kor-uh-koh-uh-KROH-mee-uhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/acromial"
+  ],
+  "Rotator interval": [
+   "/ˈroʊˌteɪtər ˈɪntərvəl/",
+   "ROH-tay-ter IN-ter-vuhl",
+   "https://www.merriam-webster.com/dictionary/interval"
+  ],
+  "Close-packed position": [
+   "/ˈkloʊs ˌpækt pəˈzɪʃən/",
+   "KLOHS-pakt puh-ZISH-uhn",
+   "https://www.merriam-webster.com/dictionary/close"
+  ],
+  "Loose-packed position": [
+   "/ˈlus ˌpækt pəˈzɪʃən/",
+   "LOOS-pakt puh-ZISH-uhn",
+   "https://www.merriam-webster.com/dictionary/loose"
+  ],
+  "Capsular pattern": [
+   "/ˈkæpsələr ˈpætərn/",
+   "KAP-suh-ler PAT-ern",
+   "https://www.merriam-webster.com/medical/capsular"
+  ]
+ },
+ "sources": [
+  [
+   "https://pubmed.ncbi.nlm.nih.gov/41476428/",
+   "Hando BR et al. Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial. JOSPT 2026;56(1):50–63 (results abstract, via the paper record checked 2026-10-06)"
+  ],
+  [
+   "https://doi.org/10.2519/jospt.2025.13460",
+   "Hando BR et al. 2026, results article (DOI; full text not obtained: the publisher returned 403)"
+  ],
+  [
+   "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871",
+   "Hando BR et al. Study protocol. Braz J Phys Ther 2019;23:355–363. DOI 10.1016/j.bjpt.2018.10.010 (pp. 355, 358, 361 checked)"
+  ],
+  [
+   "https://clinicaltrials.gov/study/NCT03442894",
+   "Trial registration NCT03442894 (registry contents and history not checked)"
+  ],
+  [
+   "https://actaorthop.org/actao/article/download/10092/13799",
+   "Diercks R et al. Guideline for diagnosis and treatment of subacromial pain syndrome (Dutch Orthopaedic Association). Acta Orthop 2014;85(3):314-322"
+  ],
+  [
+   "https://teachmeanatomy.info/upper-limb/joints/shoulder/",
+   "TeachMeAnatomy. The Shoulder Joint (a source of this week's chapter)"
+  ],
+  [
+   "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+   "Kenhub. Shoulder joint (a source of this week's chapter)"
+  ],
+  [
+   "https://www.ncbi.nlm.nih.gov/books/NBK537018/",
+   "Chang LR, Anand P, Varacallo MA. Anatomy, Shoulder and Upper Limb, Glenohumeral Joint. StatPearls (updated 2025-03-03)"
+  ],
+  [
+   "https://radiopaedia.org/articles/ighl?lang=gb",
+   "Radiopaedia. Glenohumeral ligaments"
+  ],
+  [
+   "https://radiopaedia.org/articles/shoulder-ligaments",
+   "Radiopaedia. Shoulder ligaments"
+  ],
+  [
+   "https://radiopaedia.org/articles/33680",
+   "Radiopaedia. Coracohumeral ligament"
+  ],
+  [
+   "https://radiopaedia.org/articles/1996",
+   "Radiopaedia. Rotator cuff interval"
+  ],
+  [
+   "https://doi.org/10.4065/73.6.508",
+   "Itoi E et al. Superior-inferior stability of the shoulder: role of the coracohumeral ligament and the rotator interval capsule. Mayo Clin Proc 1998;73(6):508-515"
+  ],
+  [
+   "https://doi.org/10.2522/ptj.20050391",
+   "Lin HT, Hsu AT et al. Determining the resting position of the glenohumeral joint in subjects who are healthy. Phys Ther 2007;87(12):1669-1682"
+  ],
+  [
+   "https://us.humankinetics.com/blogs/excerpt/anatomical-planes-and-axes-of-movement",
+   "Koldenhoven RM, Behnke RS. Kinetic Anatomy, 5th ed. Human Kinetics: anatomical planes and axes of movement (excerpt; used only for the plane and axis pairs)"
+  ]
+ ],
+ "chapters": [
+  {
+   "num": 1,
+   "id": "new-paper-dry-needling",
+   "content": "N-5",
+   "items": [
+    "hando-2026-dry-needling"
+   ],
+   "forms": [
+    "F-5"
+   ],
+   "title": [
+    "New: reading a trial of dry needling for subacromial pain",
+    "新内容：精读一项干针治疗肩峰下疼痛的随机试验"
+   ],
+   "toc": [
+    "Paper reading",
+    "论文精读"
+   ],
+   "goals": [
+    [
+     "Say what each of the trial's two comparisons answers, and which outcome was primary.",
+     "说出试验的两项比较各回答什么问题，哪个结局是主要结局。"
+    ],
+    [
+     "Read each effect size with its 95% confidence interval, and say why the PASS differences are percentage points and why the odds ratio cannot become a risk reduction.",
+     "结合 95% 置信区间读每个效应量；说出 PASS 差值为什么是百分点，比值比为什么不能改写成风险降低。"
+    ],
+    [
+     "Keep what the protocol planned apart from what has been verified, and say how far the result applies.",
+     "把研究方案计划的方法和已经核实的执行情况分开，并说出结果能用到多远。"
+    ]
+   ],
+   "terms": [
+    [
+     "Dry needling",
+     "干针"
+    ],
+    [
+     "Sham",
+     "假对照（假干针）"
+    ],
+    [
+     "Randomization",
+     "随机化"
+    ],
+    [
+     "Allocation concealment",
+     "分配隐藏"
+    ],
+    [
+     "Blinding",
+     "盲法"
+    ],
+    [
+     "Shoulder Pain and Disability Index",
+     "肩痛与功能障碍指数（SPADI）"
+    ],
+    [
+     "Patient Acceptable Symptom State",
+     "患者可接受症状状态（PASS）"
+    ],
+    [
+     "Confidence interval",
+     "置信区间"
+    ],
+    [
+     "Percentage point",
+     "百分点"
+    ],
+    [
+     "Odds ratio",
+     "比值比（优势比，OR）"
+    ],
+    [
+     "Intention-to-treat",
+     "意向治疗"
+    ],
+    [
+     "Multiplicity",
+     "多重比较"
+    ],
+    [
+     "Subacromial pain syndrome",
+     "肩峰下疼痛综合征"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Tuesday's pathway left a gap: the 2014 Dutch guideline gave no recommendation on dry needling for subacromial pain syndrome (Diercks 2014). Today's paper is a sham-controlled randomised trial that added dry needling to manual therapy and exercise. The reading uses this week's paper record (daily/papers): the results abstract and the published protocol, checked on 2026-10-06. The full article and the trial registry were not checked, so some questions stay open, and the text says which.",
+     "zh": "周二的流程留了一个空白：2014 年荷兰指南对肩峰下疼痛综合征的干针治疗没有给出推荐（Diercks 2014）。今天的论文是一项假干针对照的随机试验：在手法治疗和运动治疗的基础上加干针。精读依据本周的论文记录（daily/papers），也就是 2026-10-06 核对过的结果摘要和已发表的研究方案。结果论文全文和试验注册页都没有核对，所以有些问题还没有答案，正文会说明是哪些。"
+    },
+    {
+     "t": "paper",
+     "id": "hando-2026-dry-needling"
+    },
+    {
+     "t": "h3",
+     "en": "Read it in order: eight steps",
+     "zh": "按顺序读：八步"
+    },
+    {
+     "t": "p",
+     "en": "Go through the card above in this order. The middle column is what the record reports; the right column is what the abstract and protocol cannot settle.",
+     "zh": "按这个顺序把上面的卡片过一遍。中间一列是记录里报告的内容；右边一列是摘要和研究方案解决不了的问题。"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Step<span class=\"translation\" lang=\"zh-Hans\">步骤</span></th><th>What the record says<span class=\"translation\" lang=\"zh-Hans\">论文记录里的内容</span></th><th>Still open at this level<span class=\"translation\" lang=\"zh-Hans\">在这一层还没解决的</span></th></tr></thead><tbody><tr><td><span lang=\"en\">1 Question and design</span><span class=\"translation\" lang=\"zh-Hans\">1 研究问题与设计</span></td><td><span lang=\"en\">Does dry needling add anything to manual therapy and exercise for subacromial pain syndrome? A randomised, sham-controlled trial with three groups.</span><span class=\"translation\" lang=\"zh-Hans\">在手法治疗和运动治疗之外加干针，对肩峰下疼痛综合征有没有额外效果？这是一项随机、假干针对照的三组试验。</span></td><td><span lang=\"en\">Registration NCT03442894: the current registry page and its amendment history were not checked.</span><span class=\"translation\" lang=\"zh-Hans\">试验登记号 NCT03442894：注册页面的当前内容和修改历史没有核对。</span></td></tr><tr><td><span lang=\"en\">2 Population</span><span class=\"translation\" lang=\"zh-Hans\">2 人群</span></td><td><span lang=\"en\">121 participants with subacromial pain syndrome; the protocol planned 130.</span><span class=\"translation\" lang=\"zh-Hans\">121 名肩峰下疼痛综合征患者；研究方案计划 130 人。</span></td><td><span lang=\"en\">The gap of 9 is not a count of people lost to follow-up. Missing data by group and reasons for dropout are not known.</span><span class=\"translation\" lang=\"zh-Hans\">相差的 9 人不是失访人数。各组缺失多少数据、为什么退出，都不清楚。</span></td></tr><tr><td><span lang=\"en\">3 Groups compared</span><span class=\"translation\" lang=\"zh-Hans\">3 比较的组</span></td><td><span lang=\"en\">PT (manual therapy and exercise); PT + sham dry needling (PT + SDN); PT + dry needling (PT + DN). Against PT, the trial estimates the added effect of including needling in the programme; against sham, it also accounts for aspects of receiving a needling procedure.</span><span class=\"translation\" lang=\"zh-Hans\">PT（手法治疗与运动治疗）；PT + 假干针（PT + SDN）；PT + 干针（PT + DN）。与 PT 比，估计的是在方案里加上干针的额外效果；与假干针比，还考虑了接受针刺程序本身的部分因素。</span></td><td><span lang=\"en\">Where, how deep and how often the needling was done is not in the record; it is not filled in here from second-hand summaries.</span><span class=\"translation\" lang=\"zh-Hans\">扎在哪里、扎多深、扎几次，记录里没有；这里也不拿二手概括来补。</span></td></tr><tr><td><span lang=\"en\">4 Primary and secondary outcomes</span><span class=\"translation\" lang=\"zh-Hans\">4 主要与次要结局</span></td><td><span lang=\"en\">Primary: the Shoulder Pain and Disability Index (SPADI) at 1 year. Secondary outcomes include the Patient Acceptable Symptom State (PASS) and further shoulder-related care within 1 year.</span><span class=\"translation\" lang=\"zh-Hans\">主要结局：1 年时的肩痛与功能障碍指数（SPADI）。次要结局包括患者可接受症状状态（PASS），以及 1 年内再次因肩部问题就医。</span></td><td><span lang=\"en\">The protocol abstract lists SPADI and PROMIS-57, while its statistics section names 1-year SPADI as primary. That wording alone does not show the outcome was switched.</span><span class=\"translation\" lang=\"zh-Hans\">研究方案摘要列出 SPADI 和 PROMIS-57，统计部分则把 1 年 SPADI 定为主要终点。仅凭这处措辞，不能认定换了结局。</span></td></tr><tr><td><span lang=\"en\">5 Effect size and 95% CI</span><span class=\"translation\" lang=\"zh-Hans\">5 效应量与 95% 置信区间</span></td><td><span lang=\"en\">SPADI at 1 year: −7.51 (95% CI −16.57 to 1.54) against PT; −9.85 (95% CI −18.98 to 0.73) against sham. Both intervals include 0. PASS: three differences, all above 0 (figure 01).</span><span class=\"translation\" lang=\"zh-Hans\">1 年 SPADI：对比 PT 为 −7.51（95% CI −16.57 到 1.54）；对比假干针为 −9.85（95% CI −18.98 到 0.73）。两个区间都包含 0。PASS：三项差值都在 0 以上（图 01）。</span></td><td><span lang=\"en\">The second SPADI interval is not centred on its estimate (see below). The odds ratio's reference group is not stated.</span><span class=\"translation\" lang=\"zh-Hans\">第二个 SPADI 区间不以估计值为中心（见下文）。比值比的参照组没有说明。</span></td></tr><tr><td><span lang=\"en\">6 Bias</span><span class=\"translation\" lang=\"zh-Hans\">6 偏倚</span></td><td><span lang=\"en\">The protocol planned sequentially numbered, opaque, sealed envelopes; blinding of participants to real versus sham needling; and analysis in the groups as randomised.</span><span class=\"translation\" lang=\"zh-Hans\">研究方案计划：顺序编号、不透明的密封信封；让接受真、假干针的患者不知道自己是哪一种；按最初随机分配的组分析。</span></td><td><span lang=\"en\">Whether these were carried out as planned, whether blinding worked, how missing data were handled, any adjustment for multiple comparisons, and adverse events: none verified. The no-needling group and the treating clinicians could not be blinded.</span><span class=\"translation\" lang=\"zh-Hans\">这些是否按计划落实、盲法是否成功、缺失数据怎么处理、有没有做多重比较校正、不良事件：都没有核实。不扎针那组的患者和实施治疗的人员本来就无法设盲。</span></td></tr><tr><td><span lang=\"en\">7 Applicability</span><span class=\"translation\" lang=\"zh-Hans\">7 适用范围</span></td><td><span lang=\"en\">Our reading: the results apply to people with subacromial pain syndrome who also receive manual therapy and exercise.</span><span class=\"translation\" lang=\"zh-Hans\">我们的解读：结果适用于同时接受手法治疗和运动治疗的肩峰下疼痛综合征患者。</span></td><td><span lang=\"en\">It does not extend to every dry-needling protocol, to all shoulder pain, or to acupuncture as a whole.</span><span class=\"translation\" lang=\"zh-Hans\">不能推广到所有干针方案、全部肩痛，或针灸整体。</span></td></tr><tr><td><span lang=\"en\">8 Where the conclusion stops</span><span class=\"translation\" lang=\"zh-Hans\">8 结论的边界</span></td><td><span lang=\"en\">Our reading (the record's appraisal, not the authors' conclusion): the trial did not establish an added benefit on 1-year SPADI; the favourable secondary results need cautious reading, one outcome at a time.</span><span class=\"translation\" lang=\"zh-Hans\">我们的解读（论文记录的评价，不是作者的结论）：这项试验没有在 1 年 SPADI 上确立加用干针的额外获益；有利的次要结果要逐项谨慎解读。</span></td><td><span lang=\"en\">This is not proof that the groups are equivalent, and not proof that dry needling has no effect.</span><span class=\"translation\" lang=\"zh-Hans\">这既不证明各组等效，也不证明干针没有作用。</span></td></tr></tbody></table></div>",
+     "md": "| Step 步骤 | What the record says 论文记录里的内容 | Still open at this level 在这一层还没解决的 |\n|---|---|---|\n| 1 Question and design<br>1 研究问题与设计 | Does dry needling add anything to manual therapy and exercise for subacromial pain syndrome? A randomised, sham-controlled trial with three groups.<br>在手法治疗和运动治疗之外加干针，对肩峰下疼痛综合征有没有额外效果？这是一项随机、假干针对照的三组试验。 | Registration NCT03442894: the current registry page and its amendment history were not checked.<br>试验登记号 NCT03442894：注册页面的当前内容和修改历史没有核对。 |\n| 2 Population<br>2 人群 | 121 participants with subacromial pain syndrome; the protocol planned 130.<br>121 名肩峰下疼痛综合征患者；研究方案计划 130 人。 | The gap of 9 is not a count of people lost to follow-up. Missing data by group and reasons for dropout are not known.<br>相差的 9 人不是失访人数。各组缺失多少数据、为什么退出，都不清楚。 |\n| 3 Groups compared<br>3 比较的组 | PT (manual therapy and exercise); PT + sham dry needling (PT + SDN); PT + dry needling (PT + DN). Against PT, the trial estimates the added effect of including needling in the programme; against sham, it also accounts for aspects of receiving a needling procedure.<br>PT（手法治疗与运动治疗）；PT + 假干针（PT + SDN）；PT + 干针（PT + DN）。与 PT 比，估计的是在方案里加上干针的额外效果；与假干针比，还考虑了接受针刺程序本身的部分因素。 | Where, how deep and how often the needling was done is not in the record; it is not filled in here from second-hand summaries.<br>扎在哪里、扎多深、扎几次，记录里没有；这里也不拿二手概括来补。 |\n| 4 Primary and secondary outcomes<br>4 主要与次要结局 | Primary: the Shoulder Pain and Disability Index (SPADI) at 1 year. Secondary outcomes include the Patient Acceptable Symptom State (PASS) and further shoulder-related care within 1 year.<br>主要结局：1 年时的肩痛与功能障碍指数（SPADI）。次要结局包括患者可接受症状状态（PASS），以及 1 年内再次因肩部问题就医。 | The protocol abstract lists SPADI and PROMIS-57, while its statistics section names 1-year SPADI as primary. That wording alone does not show the outcome was switched.<br>研究方案摘要列出 SPADI 和 PROMIS-57，统计部分则把 1 年 SPADI 定为主要终点。仅凭这处措辞，不能认定换了结局。 |\n| 5 Effect size and 95% CI<br>5 效应量与 95% 置信区间 | SPADI at 1 year: −7.51 (95% CI −16.57 to 1.54) against PT; −9.85 (95% CI −18.98 to 0.73) against sham. Both intervals include 0. PASS: three differences, all above 0 (figure 01).<br>1 年 SPADI：对比 PT 为 −7.51（95% CI −16.57 到 1.54）；对比假干针为 −9.85（95% CI −18.98 到 0.73）。两个区间都包含 0。PASS：三项差值都在 0 以上（图 01）。 | The second SPADI interval is not centred on its estimate (see below). The odds ratio's reference group is not stated.<br>第二个 SPADI 区间不以估计值为中心（见下文）。比值比的参照组没有说明。 |\n| 6 Bias<br>6 偏倚 | The protocol planned sequentially numbered, opaque, sealed envelopes; blinding of participants to real versus sham needling; and analysis in the groups as randomised.<br>研究方案计划：顺序编号、不透明的密封信封；让接受真、假干针的患者不知道自己是哪一种；按最初随机分配的组分析。 | Whether these were carried out as planned, whether blinding worked, how missing data were handled, any adjustment for multiple comparisons, and adverse events: none verified. The no-needling group and the treating clinicians could not be blinded.<br>这些是否按计划落实、盲法是否成功、缺失数据怎么处理、有没有做多重比较校正、不良事件：都没有核实。不扎针那组的患者和实施治疗的人员本来就无法设盲。 |\n| 7 Applicability<br>7 适用范围 | Our reading: the results apply to people with subacromial pain syndrome who also receive manual therapy and exercise.<br>我们的解读：结果适用于同时接受手法治疗和运动治疗的肩峰下疼痛综合征患者。 | It does not extend to every dry-needling protocol, to all shoulder pain, or to acupuncture as a whole.<br>不能推广到所有干针方案、全部肩痛，或针灸整体。 |\n| 8 Where the conclusion stops<br>8 结论的边界 | Our reading (the record's appraisal, not the authors' conclusion): the trial did not establish an added benefit on 1-year SPADI; the favourable secondary results need cautious reading, one outcome at a time.<br>我们的解读（论文记录的评价，不是作者的结论）：这项试验没有在 1 年 SPADI 上确立加用干针的额外获益；有利的次要结果要逐项谨慎解读。 | This is not proof that the groups are equivalent, and not proof that dry needling has no effect.<br>这既不证明各组等效，也不证明干针没有作用。 |\n"
+    },
+    {
+     "t": "fig",
+     "n": "01",
+     "en": "The effect sizes the results abstract reports. Left: the primary outcome, SPADI at 1 year; both intervals include 0. Right: PASS in percentage points; all three intervals lie above 0. The odds ratio is left out because its reference group is not stated.",
+     "zh": "结果摘要报告的效应量。左：主要结局，1 年 SPADI，两个区间都包含 0。右：PASS，单位是百分点，三个区间都在 0 以上。比值比没有画，因为参照组没有说明。"
+    },
+    {
+     "t": "h3",
+     "en": "Three numbers that are easy to misread",
+     "zh": "三个容易读错的数字"
+    },
+    {
+     "t": "p",
+     "en": "<b>−7.51 (−16.57 to 1.54).</b> The interval includes 0, so the trial did not show a statistically significant difference on SPADI. But the same interval also includes differences that favour dry needling by more than 16 points. “Not shown” is not “shown to be equal”.",
+     "zh": "<b>−7.51（−16.57 到 1.54）。</b>区间包含 0，所以试验没有在 SPADI 上显示出统计学显著的差异。但同一个区间里也有对干针有利、超过 16 分的差值。“没有显示出差异”不等于“显示两组相同”。"
+    },
+    {
+     "t": "p",
+     "en": "<b>+34 percentage points.</b> PASS asks whether people find their current symptoms acceptable. +34 is an absolute difference in the share who said yes. An illustration with made-up group figures, which are not in the record: if 40% of the PT group said yes, about 74% of the PT + DN group did. It is not “34% better”.",
+     "zh": "<b>+34 个百分点。</b>PASS 问的是患者觉得目前的症状能不能接受。+34 是回答“能接受”的比例之差，是绝对差值。举个例子（各组比例是虚构的，记录里没有）：如果 PT 组有 40% 的人说能接受，PT + DN 组大约就是 74%。它不是“好了 34%”。"
+    },
+    {
+     "t": "p",
+     "en": "<b>Odds ratio 0.35 (0.13–0.95).</b> An odds ratio compares odds, not risks, so it cannot be rewritten as “65% less further care”. The abstract also does not say which group is the reference, so it is not clear which comparison the number describes.",
+     "zh": "<b>比值比 0.35（0.13–0.95）。</b>比值比比较的是比值（odds），不是风险，所以不能改写成“再就医减少 65%”。摘要也没有说明参照组是哪一组，所以这个数字描述的是哪一项比较并不清楚。"
+    },
+    {
+     "t": "pitfall",
+     "label": "易混点",
+     "zh": "“区间包含 0”只说明没有显示出差异；“区间都在 0 以上”的次要结局也不能替代主要结局。读论文先看主要结局，再看次要结局，并留意作者有没有做多重比较校正：这项试验在摘要和研究方案这一层还看不到。"
+    },
+    {
+     "t": "h3",
+     "en": "A check on the printed numbers (our reading)",
+     "zh": "核对一下印出来的数字（我们的解读）"
+    },
+    {
+     "t": "p",
+     "en": "This is our own arithmetic, not a statement in the paper. The first SPADI interval is centred on its estimate: −7.51 lies 9.06 points above −16.57 and 9.05 below 1.54. The second is not: −9.85 lies 9.13 points above −18.98 but 10.58 below 0.73. A symmetric interval with the same lower limit would end near −0.72 and would not include 0. Some analyses do produce asymmetric intervals, so this does not prove an error; only the full article can settle it. The record keeps the number as printed, and so does this pack, so the reading “both intervals include 0” stands.",
+     "zh": "下面是我们自己的计算，不是论文里的说法。第一个 SPADI 区间以估计值为中心：−7.51 比 −16.57 高 9.06 分，比 1.54 低 9.05 分。第二个不是：−9.85 比 −18.98 高 9.13 分，却比 0.73 低 10.58 分。如果下限不变、区间对称，上限应在 −0.72 左右，那样就不包含 0 了。有些分析方法确实会给出不对称的区间，所以这不能证明印错了，只有全文能回答。论文记录按原数照录，本包也一样，因此“两个区间都包含 0”这个解读不变。"
+    },
+    {
+     "t": "p",
+     "en": "If a patient asks about dry needling, one way to put it (our wording, not the authors'): “In one randomised trial with a sham group, adding dry needling to exercise and manual therapy made no clear difference to pain and function at one year. One other measure, whether people found their symptoms acceptable, looked better with needling, but that needs confirming.”",
+     "zh": "如果病人问起干针，可以这样说（这是我们的说法，不是作者的原话）：“有一项设了假干针对照的随机试验，在运动和手法治疗之外加干针，一年后的疼痛和功能没有明确的差别。有一项其他指标，也就是患者是否觉得目前的症状可以接受，在加干针的组看起来更好，但还需要验证。”"
+    }
+   ],
+   "check": [
+    [
+     "The trial has two control groups. What does the comparison with PT answer, and what does the comparison with sham add?",
+     "试验有两个对照组。与 PT 组比较回答什么问题？与假干针组比较又多考虑了什么？",
+     "Against PT: the added effect of including dry needling in the programme. Against sham: it also accounts for aspects of receiving a needling procedure. The two comparisons answer different questions.",
+     "与 PT 比：在方案里加上干针的额外效果。与假干针比：还考虑了接受针刺程序本身的部分因素。两项比较回答的问题不同。"
+    ],
+    [
+     "The 1-year SPADI difference against PT is −7.51 (95% CI −16.57 to 1.54). Does this show that dry needling does not work?",
+     "1 年 SPADI 与 PT 组相比的差值是 −7.51（95% CI −16.57 到 1.54）。这能说明干针没用吗？",
+     "No. The interval includes 0, so no statistically significant difference was shown, and it also includes differences that favour dry needling. It neither establishes equivalence nor proves no effect.",
+     "不能。区间包含 0，只说明没有显示出统计学显著差异；区间里也有对干针有利的差值。这既不证明等效，也不证明没有作用。"
+    ],
+    [
+     "At 6 months, PASS was +34 percentage points for PT + DN against PT. What does +34 mean?",
+     "6 个月时，PT + DN 对比 PT 的 PASS 是 +34 个百分点。+34 是什么意思？",
+     "The share of people who called their symptoms acceptable was 34 percentage points higher with PT + DN (95% CI +14 to +55). It is an absolute difference in proportions, not a 34% relative improvement.",
+     "PT + DN 组认为症状能接受的人所占比例高 34 个百分点（95% CI +14 到 +55）。这是比例的绝对差值，不是相对改善 34%。"
+    ],
+    [
+     "Why must the odds ratio of 0.35 for further shoulder care not be reported as “65% less care”?",
+     "为什么再次因肩部就医的比值比 0.35 不能写成“就医减少 65%”？",
+     "An odds ratio compares odds, not risks, so it cannot be restated as a risk reduction; and the abstract does not say which group is the reference.",
+     "比值比比较的是比值，不是风险，不能改写成风险降低；而且摘要没有说明参照组。"
+    ],
+    [
+     "The protocol planned 130 participants and the abstract reports 121. Were 9 people lost to follow-up?",
+     "研究方案计划 130 人，摘要报告 121 人。是不是有 9 人失访？",
+     "Not necessarily. The gap between planned and reported numbers is not a dropout count; missing data by group need the full article.",
+     "不一定。计划人数和报告人数之差不是失访人数；各组缺失数据要看全文。"
+    ],
+    [
+     "Name three methods that cannot be verified from the abstract and protocol alone.",
+     "说出三项只凭摘要和研究方案无法核实的方法。",
+     "Any three of: whether allocation concealment was carried out as planned; whether blinding worked; how missing data were handled; adjustment for multiple comparisons; adverse events; the registry history; the reference group of the odds ratio.",
+     "任选三项：分配隐藏是否按计划落实；盲法是否成功；缺失数据怎么处理；多重比较校正；不良事件；注册修改历史；比值比的参照组。"
+    ]
+   ],
+   "take": [
+    "Read a trial in order and stop where the evidence stops. This one did not establish an added benefit of dry needling on its primary outcome at 1 year; its favourable secondary results need confirming; and several methods stay unverified until the full article is read.",
+    "按顺序读试验，证据到哪里就停在哪里。这项试验没有在 1 年的主要结局上确立加用干针的额外获益；有利的次要结果还需要验证；好几项方法要读到全文才能核实。"
+   ],
+   "bridge": [
+    "consolidate-gh-joint",
+    "Next: the glenohumeral joint itself, its capsule and ligaments, as a self-test. 下一章：盂肱关节本身的关节囊与韧带，用自测来夯实。",
+    "02 Capsule and ligaments"
+   ]
+  },
+  {
+   "num": 2,
+   "id": "consolidate-gh-joint",
+   "content": "O-3",
+   "items": [
+    "Glenohumeral joint 盂肱关节：关节囊与韧带"
+   ],
+   "forms": [
+    "F-6"
+   ],
+   "title": [
+    "Consolidate: the glenohumeral joint capsule and ligaments",
+    "夯实：盂肱关节的关节囊与韧带"
+   ],
+   "toc": [
+    "Capsule and ligaments",
+    "关节囊与韧带"
+   ],
+   "goals": [
+    [
+     "Give the joint type, where the capsule attaches, and its two weak spots.",
+     "说出关节类型、关节囊的附着处和两个薄弱处。"
+    ],
+    [
+     "Give each ligament's attachments and what it limits, and point to it on a drawing.",
+     "说出每条韧带的起止和限制的运动，并能在图上指出来。"
+    ],
+    [
+     "Name the plane and axis of each movement, the close-packed and loose-packed positions, and the capsular pattern.",
+     "说出每个运动的平面和轴、紧张位和松弛位，以及关节囊模式。"
+    ]
+   ],
+   "terms": [
+    [
+     "Glenohumeral joint",
+     "盂肱关节"
+    ],
+    [
+     "Glenoid labrum",
+     "盂唇"
+    ],
+    [
+     "Joint capsule",
+     "关节囊"
+    ],
+    [
+     "Anatomical neck",
+     "解剖颈"
+    ],
+    [
+     "Superior glenohumeral ligament",
+     "盂肱上韧带"
+    ],
+    [
+     "Middle glenohumeral ligament",
+     "盂肱中韧带"
+    ],
+    [
+     "Inferior glenohumeral ligament",
+     "盂肱下韧带"
+    ],
+    [
+     "Axillary pouch",
+     "腋囊"
+    ],
+    [
+     "Coracohumeral ligament",
+     "喙肱韧带"
+    ],
+    [
+     "Transverse humeral ligament",
+     "肱横韧带"
+    ],
+    [
+     "Coracoacromial ligament",
+     "喙肩韧带"
+    ],
+    [
+     "Rotator interval",
+     "肩袖间隙"
+    ],
+    [
+     "Close-packed position",
+     "紧张位"
+    ],
+    [
+     "Loose-packed position",
+     "松弛位"
+    ],
+    [
+     "Capsular pattern",
+     "关节囊模式"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "This week's chapter covers the glenoid cavity and the cuff muscles that hold the humeral head in it, but it has no section on the capsule or its ligaments. The facts below come from the chapter's own shoulder-joint sources, TeachMeAnatomy and Kenhub, checked against Radiopaedia and StatPearls; where they differ, the tables and the list after them say so. Read the tables and figures 02 and 04 first. Then scroll them out of sight and do the self-test with figure 03.",
+     "zh": "本周章节讲了关节盂和把肱骨头稳在里面的肩袖，但没有讲关节囊和韧带。下面的内容取自章节自己列的肩关节来源 TeachMeAnatomy 和 Kenhub，并用 Radiopaedia 和 StatPearls 核对过；来源不一致的地方，表格和表后的列表会写明。先看表格和图 02、04，然后把它们滑出屏幕，再对着图 03 做自测。"
+    },
+    {
+     "t": "h3",
+     "en": "The joint",
+     "zh": "关节本身"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Feature<span class=\"translation\" lang=\"zh-Hans\">项目</span></th><th>What the sources say<span class=\"translation\" lang=\"zh-Hans\">来源怎么说</span></th><th>Source<span class=\"translation\" lang=\"zh-Hans\">来源</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Type</span><span class=\"translation\" lang=\"zh-Hans\">类型</span></td><td><span lang=\"en\">A synovial ball-and-socket joint; multiaxial, with three degrees of freedom.</span><span class=\"translation\" lang=\"zh-Hans\">滑膜关节中的球窝关节；多轴，有三个自由度。</span></td><td><span lang=\"en\">Kenhub; TeachMeAnatomy</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；TeachMeAnatomy</span></td></tr><tr><td><span lang=\"en\">Joint surfaces</span><span class=\"translation\" lang=\"zh-Hans\">关节面</span></td><td><span lang=\"en\">The humeral head has 3–4 times the surface area of the glenoid cavity. The chapter calls the glenoid a shallow socket in which the rotator cuff helps hold the head.</span><span class=\"translation\" lang=\"zh-Hans\">肱骨头的面积是关节盂的 3–4 倍。章节把关节盂称为浅窝，肩袖帮助把肱骨头稳定在里面。</span></td><td><span lang=\"en\">Kenhub; chapter</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；本周章节</span></td></tr><tr><td><span lang=\"en\">Glenoid labrum</span><span class=\"translation\" lang=\"zh-Hans\">盂唇</span></td><td><span lang=\"en\">A fibrocartilage rim around the glenoid cavity; triangular in cross-section and thicker in front than below; continuous with the long head of biceps at the top.</span><span class=\"translation\" lang=\"zh-Hans\">围绕关节盂的纤维软骨环；横断面呈三角形，前部比下部厚；上方与肱二头肌长头相延续。</span></td><td><span lang=\"en\">TeachMeAnatomy; Kenhub; StatPearls</span><span class=\"translation\" lang=\"zh-Hans\">TeachMeAnatomy；Kenhub；StatPearls</span></td></tr><tr><td><span lang=\"en\">Joint capsule</span><span class=\"translation\" lang=\"zh-Hans\">关节囊</span></td><td><span lang=\"en\">Runs from the anatomical neck of the humerus to the glenoid. In front and below it inserts into the scapular neck, behind the labrum; above and behind it blends with the labrum. It is lax and lined by synovial membrane.</span><span class=\"translation\" lang=\"zh-Hans\">从肱骨解剖颈到关节盂。前方和下方止于盂唇后方的肩胛颈；上方和后方直接与盂唇融合。关节囊松弛，内衬滑膜。</span></td><td><span lang=\"en\">Kenhub; TeachMeAnatomy</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；TeachMeAnatomy</span></td></tr><tr><td><span lang=\"en\">Openings in the capsule</span><span class=\"translation\" lang=\"zh-Hans\">关节囊的开口</span></td><td><span lang=\"en\">One between the tubercles, where the long head of biceps tendon leaves the joint; one where the joint communicates with the subscapular bursa.</span><span class=\"translation\" lang=\"zh-Hans\">一处在大、小结节之间，肱二头肌长头腱从这里出关节；一处与肩胛下肌腱下囊相通。</span></td><td><span lang=\"en\">Kenhub</span></td></tr><tr><td><span lang=\"en\">Weak spots</span><span class=\"translation\" lang=\"zh-Hans\">薄弱处</span></td><td><span lang=\"en\">The rotator interval, the gap between the subscapularis and supraspinatus tendons where no cuff tendon covers the capsule (its roof is reinforced by the CHL, and the SGHL also supports it); and the inferior capsule, the weakest part, stretched in abduction and folded with the arm by the side.</span><span class=\"translation\" lang=\"zh-Hans\">肩袖间隙：位于肩胛下肌腱和冈上肌腱之间，这里的关节囊没有肩袖肌腱覆盖（顶由喙肱韧带加强，盂肱上韧带也起支持作用）；以及关节囊下部：最薄弱，外展时被拉紧，手臂垂在体侧时形成皱襞。</span></td><td><span lang=\"en\">Kenhub; Radiopaedia</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Radiopaedia</span></td></tr><tr><td><span lang=\"en\">Stabilisers</span><span class=\"translation\" lang=\"zh-Hans\">稳定结构</span></td><td><span lang=\"en\">Static: labrum, capsule and ligaments. Dynamic: muscles, including the rotator cuff, whose tone presses the head into the glenoid.</span><span class=\"translation\" lang=\"zh-Hans\">静态：盂唇、关节囊和韧带。动态：肌肉，包括肩袖；肩袖的张力把肱骨头压向关节盂。</span></td><td><span lang=\"en\">StatPearls; TeachMeAnatomy</span><span class=\"translation\" lang=\"zh-Hans\">StatPearls；TeachMeAnatomy</span></td></tr></tbody></table></div>",
+     "md": "| Feature 项目 | What the sources say 来源怎么说 | Source 来源 |\n|---|---|---|\n| Type<br>类型 | A synovial ball-and-socket joint; multiaxial, with three degrees of freedom.<br>滑膜关节中的球窝关节；多轴，有三个自由度。 | Kenhub; TeachMeAnatomy<br>Kenhub；TeachMeAnatomy |\n| Joint surfaces<br>关节面 | The humeral head has 3–4 times the surface area of the glenoid cavity. The chapter calls the glenoid a shallow socket in which the rotator cuff helps hold the head.<br>肱骨头的面积是关节盂的 3–4 倍。章节把关节盂称为浅窝，肩袖帮助把肱骨头稳定在里面。 | Kenhub; chapter<br>Kenhub；本周章节 |\n| Glenoid labrum<br>盂唇 | A fibrocartilage rim around the glenoid cavity; triangular in cross-section and thicker in front than below; continuous with the long head of biceps at the top.<br>围绕关节盂的纤维软骨环；横断面呈三角形，前部比下部厚；上方与肱二头肌长头相延续。 | TeachMeAnatomy; Kenhub; StatPearls<br>TeachMeAnatomy；Kenhub；StatPearls |\n| Joint capsule<br>关节囊 | Runs from the anatomical neck of the humerus to the glenoid. In front and below it inserts into the scapular neck, behind the labrum; above and behind it blends with the labrum. It is lax and lined by synovial membrane.<br>从肱骨解剖颈到关节盂。前方和下方止于盂唇后方的肩胛颈；上方和后方直接与盂唇融合。关节囊松弛，内衬滑膜。 | Kenhub; TeachMeAnatomy<br>Kenhub；TeachMeAnatomy |\n| Openings in the capsule<br>关节囊的开口 | One between the tubercles, where the long head of biceps tendon leaves the joint; one where the joint communicates with the subscapular bursa.<br>一处在大、小结节之间，肱二头肌长头腱从这里出关节；一处与肩胛下肌腱下囊相通。 | Kenhub |\n| Weak spots<br>薄弱处 | The rotator interval, the gap between the subscapularis and supraspinatus tendons where no cuff tendon covers the capsule (its roof is reinforced by the CHL, and the SGHL also supports it); and the inferior capsule, the weakest part, stretched in abduction and folded with the arm by the side.<br>肩袖间隙：位于肩胛下肌腱和冈上肌腱之间，这里的关节囊没有肩袖肌腱覆盖（顶由喙肱韧带加强，盂肱上韧带也起支持作用）；以及关节囊下部：最薄弱，外展时被拉紧，手臂垂在体侧时形成皱襞。 | Kenhub; Radiopaedia<br>Kenhub；Radiopaedia |\n| Stabilisers<br>稳定结构 | Static: labrum, capsule and ligaments. Dynamic: muscles, including the rotator cuff, whose tone presses the head into the glenoid.<br>静态：盂唇、关节囊和韧带。动态：肌肉，包括肩袖；肩袖的张力把肱骨头压向关节盂。 | StatPearls; TeachMeAnatomy<br>StatPearls；TeachMeAnatomy |\n"
+    },
+    {
+     "t": "h3",
+     "en": "Ligaments",
+     "zh": "韧带"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Ligament<span class=\"translation\" lang=\"zh-Hans\">韧带</span></th><th>From → to<span class=\"translation\" lang=\"zh-Hans\">起 → 止</span></th><th>What it does or limits<span class=\"translation\" lang=\"zh-Hans\">作用或限制</span></th><th>Source<span class=\"translation\" lang=\"zh-Hans\">来源</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Superior glenohumeral (SGHL)</span><span class=\"translation\" lang=\"zh-Hans\">盂肱上韧带</span></td><td><span lang=\"en\">Supraglenoid tubercle → upper lesser tubercle. Radiopaedia also gives the coracoid as an origin.</span><span class=\"translation\" lang=\"zh-Hans\">盂上结节 → 小结节上部。Radiopaedia 另把喙突列为起点之一。</span></td><td><span lang=\"en\">Resists inferior translation, especially with the arm adducted; steadies the long head of biceps tendon.</span><span class=\"translation\" lang=\"zh-Hans\">对抗肱骨头向下移位，尤其在内收位；稳定肱二头肌长头腱。</span></td><td><span lang=\"en\">Kenhub; Radiopaedia</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Radiopaedia</span></td></tr><tr><td><span lang=\"en\">Middle glenohumeral (MGHL)</span><span class=\"translation\" lang=\"zh-Hans\">盂肱中韧带</span></td><td><span lang=\"en\">Anterior glenoid, just below the SGHL → lesser tubercle.</span><span class=\"translation\" lang=\"zh-Hans\">关节盂前缘、盂肱上韧带下方 → 小结节。</span></td><td><span lang=\"en\">Limits external rotation, especially with the arm abducted. Absent in about 30% of shoulders.</span><span class=\"translation\" lang=\"zh-Hans\">限制外旋，尤其在外展位。约 30% 的肩关节没有这条韧带。</span></td><td><span lang=\"en\">Kenhub; Radiopaedia</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Radiopaedia</span></td></tr><tr><td><span lang=\"en\">Inferior glenohumeral (IGHL)</span><span class=\"translation\" lang=\"zh-Hans\">盂肱下韧带</span></td><td><span lang=\"en\">A sling from the inferior two-thirds of the labrum → inferior anatomical neck; an anterior band and a posterior band, with the axillary pouch between them.</span><span class=\"translation\" lang=\"zh-Hans\">像吊床一样，从盂唇下 2/3 → 解剖颈下部；分前束和后束，两束之间是腋囊。</span></td><td><span lang=\"en\">The strongest of the three and the main stabiliser of the abducted shoulder. Both bands steady the joint above 90° of abduction; the anterior band limits external rotation, the posterior band internal rotation.</span><span class=\"translation\" lang=\"zh-Hans\">三条中最强，是外展位肩关节的主要稳定结构。外展超过 90° 时两束都起稳定作用；前束限制外旋，后束限制内旋。</span></td><td><span lang=\"en\">Kenhub; Radiopaedia</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Radiopaedia</span></td></tr><tr><td><span lang=\"en\">Coracohumeral (CHL)</span><span class=\"translation\" lang=\"zh-Hans\">喙肱韧带</span></td><td><span lang=\"en\">Lateral base of the coracoid → greater and lesser tubercles (TeachMeAnatomy names only the greater tubercle). It reinforces the roof of the rotator interval and covers the long head of biceps tendon (Radiopaedia).</span><span class=\"translation\" lang=\"zh-Hans\">喙突根部外侧 → 大、小结节（TeachMeAnatomy 只写大结节）。它加强肩袖间隙的顶，并覆盖肱二头肌长头腱（Radiopaedia）。</span></td><td><span lang=\"en\">Supports the superior capsule; limits inferior translation and excessive external rotation. With the arm in external rotation, only the CHL contributed significantly to inferior stability (Itoi 1998).</span><span class=\"translation\" lang=\"zh-Hans\">加强关节囊上部；限制肱骨头向下移位和过度外旋。手臂外旋时，只有喙肱韧带对防止向下移位有显著作用（Itoi 1998）。</span></td><td><span lang=\"en\">Kenhub; Radiopaedia; StatPearls; Itoi 1998</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Radiopaedia；StatPearls；Itoi 1998</span></td></tr><tr><td><span lang=\"en\">Transverse humeral (THL)</span><span class=\"translation\" lang=\"zh-Hans\">肱横韧带</span></td><td><span lang=\"en\">Across the intertubercular groove, from the greater to the lesser tubercle.</span><span class=\"translation\" lang=\"zh-Hans\">横跨结节间沟，从大结节到小结节。</span></td><td><span lang=\"en\">Holds the long head of biceps tendon in the groove. StatPearls notes it may not be a distinct structure.</span><span class=\"translation\" lang=\"zh-Hans\">把肱二头肌长头腱固定在沟内。StatPearls 指出它可能不是一条独立的结构。</span></td><td><span lang=\"en\">TeachMeAnatomy; StatPearls</span><span class=\"translation\" lang=\"zh-Hans\">TeachMeAnatomy；StatPearls</span></td></tr><tr><td><span lang=\"en\">Coracoacromial (CAL)</span><span class=\"translation\" lang=\"zh-Hans\">喙肩韧带</span></td><td><span lang=\"en\">Coracoid process → acromion. Both ends are on the scapula, so it does not cross the joint.</span><span class=\"translation\" lang=\"zh-Hans\">喙突 → 肩峰。两端都在肩胛骨上，所以不跨过关节。</span></td><td><span lang=\"en\">Forms the middle of the coracoacromial arch over the head and resists upward displacement of the head. A thickened ligament can contribute to impingement.</span><span class=\"translation\" lang=\"zh-Hans\">构成肱骨头上方喙肩弓的中段，对抗肱骨头向上移位。韧带增厚可能参与撞击。</span></td><td><span lang=\"en\">Radiopaedia; TeachMeAnatomy</span><span class=\"translation\" lang=\"zh-Hans\">Radiopaedia；TeachMeAnatomy</span></td></tr><tr><td><span lang=\"en\">Rotator interval (a space, not a ligament)</span><span class=\"translation\" lang=\"zh-Hans\">肩袖间隙（是间隙，不是韧带）</span></td><td><span lang=\"en\">A triangle between the supraspinatus and subscapularis tendons, with the base of the coracoid at its base.</span><span class=\"translation\" lang=\"zh-Hans\">冈上肌腱和肩胛下肌腱之间的三角区，底边在喙突根部。</span></td><td><span lang=\"en\">Its roof is capsule reinforced by the CHL; it contains the long head of biceps tendon and the SGHL, which with the CHL keep the tendon from slipping out.</span><span class=\"translation\" lang=\"zh-Hans\">顶是由喙肱韧带加强的关节囊；里面有肱二头肌长头腱和盂肱上韧带；盂肱上韧带与喙肱韧带一起防止长头腱滑脱。</span></td><td><span lang=\"en\">Radiopaedia; Kenhub</span><span class=\"translation\" lang=\"zh-Hans\">Radiopaedia；Kenhub</span></td></tr></tbody></table></div>",
+     "md": "| Ligament 韧带 | From → to 起 → 止 | What it does or limits 作用或限制 | Source 来源 |\n|---|---|---|---|\n| Superior glenohumeral (SGHL)<br>盂肱上韧带 | Supraglenoid tubercle → upper lesser tubercle. Radiopaedia also gives the coracoid as an origin.<br>盂上结节 → 小结节上部。Radiopaedia 另把喙突列为起点之一。 | Resists inferior translation, especially with the arm adducted; steadies the long head of biceps tendon.<br>对抗肱骨头向下移位，尤其在内收位；稳定肱二头肌长头腱。 | Kenhub; Radiopaedia<br>Kenhub；Radiopaedia |\n| Middle glenohumeral (MGHL)<br>盂肱中韧带 | Anterior glenoid, just below the SGHL → lesser tubercle.<br>关节盂前缘、盂肱上韧带下方 → 小结节。 | Limits external rotation, especially with the arm abducted. Absent in about 30% of shoulders.<br>限制外旋，尤其在外展位。约 30% 的肩关节没有这条韧带。 | Kenhub; Radiopaedia<br>Kenhub；Radiopaedia |\n| Inferior glenohumeral (IGHL)<br>盂肱下韧带 | A sling from the inferior two-thirds of the labrum → inferior anatomical neck; an anterior band and a posterior band, with the axillary pouch between them.<br>像吊床一样，从盂唇下 2/3 → 解剖颈下部；分前束和后束，两束之间是腋囊。 | The strongest of the three and the main stabiliser of the abducted shoulder. Both bands steady the joint above 90° of abduction; the anterior band limits external rotation, the posterior band internal rotation.<br>三条中最强，是外展位肩关节的主要稳定结构。外展超过 90° 时两束都起稳定作用；前束限制外旋，后束限制内旋。 | Kenhub; Radiopaedia<br>Kenhub；Radiopaedia |\n| Coracohumeral (CHL)<br>喙肱韧带 | Lateral base of the coracoid → greater and lesser tubercles (TeachMeAnatomy names only the greater tubercle). It reinforces the roof of the rotator interval and covers the long head of biceps tendon (Radiopaedia).<br>喙突根部外侧 → 大、小结节（TeachMeAnatomy 只写大结节）。它加强肩袖间隙的顶，并覆盖肱二头肌长头腱（Radiopaedia）。 | Supports the superior capsule; limits inferior translation and excessive external rotation. With the arm in external rotation, only the CHL contributed significantly to inferior stability (Itoi 1998).<br>加强关节囊上部；限制肱骨头向下移位和过度外旋。手臂外旋时，只有喙肱韧带对防止向下移位有显著作用（Itoi 1998）。 | Kenhub; Radiopaedia; StatPearls; Itoi 1998<br>Kenhub；Radiopaedia；StatPearls；Itoi 1998 |\n| Transverse humeral (THL)<br>肱横韧带 | Across the intertubercular groove, from the greater to the lesser tubercle.<br>横跨结节间沟，从大结节到小结节。 | Holds the long head of biceps tendon in the groove. StatPearls notes it may not be a distinct structure.<br>把肱二头肌长头腱固定在沟内。StatPearls 指出它可能不是一条独立的结构。 | TeachMeAnatomy; StatPearls<br>TeachMeAnatomy；StatPearls |\n| Coracoacromial (CAL)<br>喙肩韧带 | Coracoid process → acromion. Both ends are on the scapula, so it does not cross the joint.<br>喙突 → 肩峰。两端都在肩胛骨上，所以不跨过关节。 | Forms the middle of the coracoacromial arch over the head and resists upward displacement of the head. A thickened ligament can contribute to impingement.<br>构成肱骨头上方喙肩弓的中段，对抗肱骨头向上移位。韧带增厚可能参与撞击。 | Radiopaedia; TeachMeAnatomy<br>Radiopaedia；TeachMeAnatomy |\n| Rotator interval (a space, not a ligament)<br>肩袖间隙（是间隙，不是韧带） | A triangle between the supraspinatus and subscapularis tendons, with the base of the coracoid at its base.<br>冈上肌腱和肩胛下肌腱之间的三角区，底边在喙突根部。 | Its roof is capsule reinforced by the CHL; it contains the long head of biceps tendon and the SGHL, which with the CHL keep the tendon from slipping out.<br>顶是由喙肱韧带加强的关节囊；里面有肱二头肌长头腱和盂肱上韧带；盂肱上韧带与喙肱韧带一起防止长头腱滑脱。 | Radiopaedia; Kenhub<br>Radiopaedia；Kenhub |\n"
+    },
+    {
+     "t": "fig",
+     "n": "02",
+     "en": "The right glenoid seen from the side with the humerus removed. The capsule is a sleeve cut close to the bone; the three glenohumeral ligaments are thickenings in its front and lower parts. The cuff tendons lie outside the capsule; none of them covers the inferior capsule, and the rotator interval is the gap between supraspinatus and subscapularis.",
+     "zh": "移除肱骨后从外侧看右侧关节盂。关节囊像一个袖套，在靠近骨处切断；三条盂肱韧带是关节囊前部和下部的增厚。肩袖肌腱在关节囊外面，没有一条覆盖关节囊下部；肩袖间隙就是冈上肌和肩胛下肌之间的空隙。"
+    },
+    {
+     "t": "fig",
+     "n": "04",
+     "en": "The same joint from the front, arm by the side. The capsule runs from the glenoid margin to the anatomical neck and hangs below as the axillary pouch. The long head of biceps tendon crosses the top of the head inside the joint and leaves it through the groove, under the transverse humeral ligament.",
+     "zh": "同一个关节的前面观，手臂垂在体侧。关节囊从关节盂边缘延伸到解剖颈，下方垂成腋囊。肱二头肌长头腱在关节内越过肱骨头顶部，经结节间沟、在肱横韧带下面离开关节。"
+    },
+    {
+     "t": "h3",
+     "en": "Planes, axes and positions",
+     "zh": "平面、轴和体位"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Movement<span class=\"translation\" lang=\"zh-Hans\">运动</span></th><th>Plane<span class=\"translation\" lang=\"zh-Hans\">平面</span></th><th>Axis<span class=\"translation\" lang=\"zh-Hans\">轴</span></th><th>Kenhub: glenohumeral joint alone (active)<span class=\"translation\" lang=\"zh-Hans\">Kenhub：仅盂肱关节（主动）</span></th><th>Kenhub: whole shoulder complex<span class=\"translation\" lang=\"zh-Hans\">Kenhub：整个肩复合体</span></th><th>StatPearls: listed under glenohumeral joint motion<span class=\"translation\" lang=\"zh-Hans\">StatPearls：列在“盂肱关节运动”下</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Flexion / extension</span><span class=\"translation\" lang=\"zh-Hans\">屈 / 伸</span></td><td><span lang=\"en\">Sagittal</span><span class=\"translation\" lang=\"zh-Hans\">矢状面</span></td><td><span lang=\"en\">Frontal-horizontal (side to side)</span><span class=\"translation\" lang=\"zh-Hans\">额状水平轴（左右方向）</span></td><td><span lang=\"en\">110° / 60°</span></td><td><span lang=\"en\">180° / 90°</span></td><td><span lang=\"en\">180° / 45–60°</span></td></tr><tr><td><span lang=\"en\">Abduction / adduction</span><span class=\"translation\" lang=\"zh-Hans\">外展 / 内收</span></td><td><span lang=\"en\">Frontal (coronal)</span><span class=\"translation\" lang=\"zh-Hans\">额状面（冠状面）</span></td><td><span lang=\"en\">Sagittal-horizontal (front to back)</span><span class=\"translation\" lang=\"zh-Hans\">矢状水平轴（前后方向）</span></td><td><span lang=\"en\">120° / 0°</span></td><td><span lang=\"en\">180° / 30°</span></td><td><span lang=\"en\">150° abduction</span><span class=\"translation\" lang=\"zh-Hans\">外展 150°</span></td></tr><tr><td><span lang=\"en\">Internal / external rotation</span><span class=\"translation\" lang=\"zh-Hans\">内旋 / 外旋</span></td><td><span lang=\"en\">Horizontal (transverse), arm by the side</span><span class=\"translation\" lang=\"zh-Hans\">水平面（横断面），手臂垂在体侧时</span></td><td><span lang=\"en\">Vertical (longitudinal)</span><span class=\"translation\" lang=\"zh-Hans\">垂直轴（纵轴）</span></td><td><span lang=\"en\">90° / 90°</span></td><td><span lang=\"en\">90° / 90°</span></td><td><span lang=\"en\">70–90° / 90°</span></td></tr></tbody></table></div>",
+     "md": "| Movement 运动 | Plane 平面 | Axis 轴 | Kenhub: glenohumeral joint alone (active) Kenhub：仅盂肱关节（主动） | Kenhub: whole shoulder complex Kenhub：整个肩复合体 | StatPearls: listed under glenohumeral joint motion StatPearls：列在“盂肱关节运动”下 |\n|---|---|---|---|---|---|\n| Flexion / extension<br>屈 / 伸 | Sagittal<br>矢状面 | Frontal-horizontal (side to side)<br>额状水平轴（左右方向） | 110° / 60° | 180° / 90° | 180° / 45–60° |\n| Abduction / adduction<br>外展 / 内收 | Frontal (coronal)<br>额状面（冠状面） | Sagittal-horizontal (front to back)<br>矢状水平轴（前后方向） | 120° / 0° | 180° / 30° | 150° abduction<br>外展 150° |\n| Internal / external rotation<br>内旋 / 外旋 | Horizontal (transverse), arm by the side<br>水平面（横断面），手臂垂在体侧时 | Vertical (longitudinal)<br>垂直轴（纵轴） | 90° / 90° | 90° / 90° | 70–90° / 90° |\n"
+    },
+    {
+     "t": "p",
+     "en": "Plane and axis pairs: Koldenhoven and Behnke, Kinetic Anatomy (publisher's excerpt). Rotation about a vertical axis: StatPearls. “With the arm by the side” is our addition: the humerus turns about its own long axis, which is vertical only when the arm hangs down.",
+     "zh": "平面与轴的对应：Koldenhoven 与 Behnke《Kinetic Anatomy》（出版社摘录）。绕垂直轴旋转：StatPearls。“手臂垂在体侧时”这个条件是我们加的：肱骨绕自身长轴旋转，只有手臂下垂时这条轴才是垂直的。"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Position<span class=\"translation\" lang=\"zh-Hans\">位置</span></th><th>What the sources say<span class=\"translation\" lang=\"zh-Hans\">来源怎么说</span></th><th>Source<span class=\"translation\" lang=\"zh-Hans\">来源</span></th></tr></thead><tbody><tr><td><span lang=\"en\">Close-packed</span><span class=\"translation\" lang=\"zh-Hans\">紧张位（闭合位）</span></td><td><span lang=\"en\">Abduction with external rotation: the capsule and ligaments are tightest and the surfaces fit best.</span><span class=\"translation\" lang=\"zh-Hans\">外展加外旋：关节囊和韧带最紧，关节面贴合最好。</span></td><td><span lang=\"en\">Kenhub</span></td></tr><tr><td><span lang=\"en\">Loose-packed (open-packed, resting)</span><span class=\"translation\" lang=\"zh-Hans\">松弛位（开放位、休息位）</span></td><td><span lang=\"en\">About 40–50° of abduction with about 30° of horizontal adduction. Lin 2007 measured 15 healthy people: the mean was 49.8° of glenohumeral abduction by one method and 23.7° by another; the abstract calls 30–60° the already accepted range.</span><span class=\"translation\" lang=\"zh-Hans\">外展约 40–50°，加水平内收约 30°。Lin 2007 测了 15 名健康人：一种方法测得的平均值是盂肱外展 49.8°，另一种是 23.7°；摘要把 30–60° 称为已被接受的范围。</span></td><td><span lang=\"en\">Kenhub; Lin 2007</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；Lin 2007</span></td></tr><tr><td><span lang=\"en\">Capsular pattern</span><span class=\"translation\" lang=\"zh-Hans\">关节囊模式</span></td><td><span lang=\"en\">External rotation is most limited, then abduction, then internal rotation, then flexion. In Tuesday's pathway, frozen shoulder showed a disproportionate loss of passive external rotation.</span><span class=\"translation\" lang=\"zh-Hans\">外旋受限最多，其次外展，再次内旋，然后屈。周二的流程里，冻结肩的表现正是被动外旋受限明显重于其他方向。</span></td><td><span lang=\"en\">Kenhub; Tuesday's pack</span><span class=\"translation\" lang=\"zh-Hans\">Kenhub；周二的包</span></td></tr></tbody></table></div>",
+     "md": "| Position 位置 | What the sources say 来源怎么说 | Source 来源 |\n|---|---|---|\n| Close-packed<br>紧张位（闭合位） | Abduction with external rotation: the capsule and ligaments are tightest and the surfaces fit best.<br>外展加外旋：关节囊和韧带最紧，关节面贴合最好。 | Kenhub |\n| Loose-packed (open-packed, resting)<br>松弛位（开放位、休息位） | About 40–50° of abduction with about 30° of horizontal adduction. Lin 2007 measured 15 healthy people: the mean was 49.8° of glenohumeral abduction by one method and 23.7° by another; the abstract calls 30–60° the already accepted range.<br>外展约 40–50°，加水平内收约 30°。Lin 2007 测了 15 名健康人：一种方法测得的平均值是盂肱外展 49.8°，另一种是 23.7°；摘要把 30–60° 称为已被接受的范围。 | Kenhub; Lin 2007<br>Kenhub；Lin 2007 |\n| Capsular pattern<br>关节囊模式 | External rotation is most limited, then abduction, then internal rotation, then flexion. In Tuesday's pathway, frozen shoulder showed a disproportionate loss of passive external rotation.<br>外旋受限最多，其次外展，再次内旋，然后屈。周二的流程里，冻结肩的表现正是被动外旋受限明显重于其他方向。 | Kenhub; Tuesday's pack<br>Kenhub；周二的包 |\n"
+    },
+    {
+     "t": "h3",
+     "en": "Where the sources differ",
+     "zh": "来源不一致的地方"
+    },
+    {
+     "t": "html",
+     "html": "<ul class=\"source-diffs\"><li><span lang=\"en\">Coracohumeral ligament insertion: the greater tubercle (TeachMeAnatomy) or both tubercles (Kenhub, StatPearls, Radiopaedia).</span><span class=\"translation\" lang=\"zh-Hans\">喙肱韧带的止点：大结节（TeachMeAnatomy），或大、小结节（Kenhub、StatPearls、Radiopaedia）。</span></li><li><span lang=\"en\">Superior glenohumeral ligament origin: the supraglenoid tubercle (Kenhub); Radiopaedia adds the coracoid. Radiopaedia also says it is present in 97% of shoulders and the middle ligament is absent in about 30%.</span><span class=\"translation\" lang=\"zh-Hans\">盂肱上韧带的起点：盂上结节（Kenhub）；Radiopaedia 另加喙突。Radiopaedia 还写到盂肱上韧带见于 97% 的肩关节，盂肱中韧带约 30% 缺如。</span></li><li><span lang=\"en\">Transverse humeral ligament: TeachMeAnatomy describes it as holding the biceps tendon; StatPearls says it may not be a distinct structure.</span><span class=\"translation\" lang=\"zh-Hans\">肱横韧带：TeachMeAnatomy 写它固定肱二头肌腱；StatPearls 说它可能不是一条独立的结构。</span></li><li><span lang=\"en\">Ranges of motion: Kenhub gives two sets. For the glenohumeral joint alone (active): flexion 110°, extension 60°, abduction 120°. For the whole shoulder complex: flexion 180°, extension 90°, abduction 180°, adduction 30°. StatPearls lists flexion 180°, extension 45–60° and abduction 150° under glenohumeral joint motion without separating out scapular motion, so its flexion matches Kenhub's whole-complex figure while abduction still differs (150° against 180°). The chapter's figure 12 splits 180° of elevation into about 120° at the glenohumeral joint and 60° at the scapula, as a teaching approximation.</span><span class=\"translation\" lang=\"zh-Hans\">活动范围：Kenhub 给了两组数字。仅盂肱关节（主动）：屈 110°、伸 60°、外展 120°。整个肩复合体：屈 180°、伸 90°、外展 180°、内收 30°。StatPearls 把屈 180°、伸 45–60°、外展 150° 列在“盂肱关节运动”下，没有把肩胛骨的活动分开；所以它的屈与 Kenhub 的肩复合体数字一致，外展仍有差别（150° 对 180°）。章节图 12 把 180° 上举分成盂肱关节约 120°、肩胛骨约 60°，这是教学上的概括。</span></li><li><span lang=\"en\">Resting position: Kenhub gives 40–50° of abduction with 30° of horizontal adduction; Lin 2007 measured a mean of 49.8° or 23.7° of abduction depending on the method.</span><span class=\"translation\" lang=\"zh-Hans\">休息位：Kenhub 写外展 40–50° 加水平内收 30°；Lin 2007 按测量方法不同，得到的平均外展角是 49.8° 或 23.7°。</span></li><li><span lang=\"en\">Rotator interval: Radiopaedia puts the lateral margin of the coracoid base at its medial side, roofs it with capsule reinforced by the CHL, and lists the long head of biceps tendon and the SGHL as its contents. StatPearls borders it with the supraspinatus tendon above, the subscapularis tendon below, the CHL laterally and the SGHL medially, and lists the long head of biceps tendon, the CHL and the SGHL as its contents. The tables and the self-test follow Radiopaedia.</span><span class=\"translation\" lang=\"zh-Hans\">肩袖间隙：Radiopaedia 以喙突根部外侧缘为内侧界，顶是由喙肱韧带加强的关节囊，内容为肱二头肌长头腱和盂肱上韧带。StatPearls 以冈上肌腱为上界、肩胛下肌腱为下界、喙肱韧带为外侧界、盂肱上韧带为内侧界，内容为肱二头肌长头腱、喙肱韧带和盂肱上韧带。表格和自测题按 Radiopaedia 的说法。</span></li></ul>",
+     "md": "- Coracohumeral ligament insertion: the greater tubercle (TeachMeAnatomy) or both tubercles (Kenhub, StatPearls, Radiopaedia).<br>喙肱韧带的止点：大结节（TeachMeAnatomy），或大、小结节（Kenhub、StatPearls、Radiopaedia）。\n- Superior glenohumeral ligament origin: the supraglenoid tubercle (Kenhub); Radiopaedia adds the coracoid. Radiopaedia also says it is present in 97% of shoulders and the middle ligament is absent in about 30%.<br>盂肱上韧带的起点：盂上结节（Kenhub）；Radiopaedia 另加喙突。Radiopaedia 还写到盂肱上韧带见于 97% 的肩关节，盂肱中韧带约 30% 缺如。\n- Transverse humeral ligament: TeachMeAnatomy describes it as holding the biceps tendon; StatPearls says it may not be a distinct structure.<br>肱横韧带：TeachMeAnatomy 写它固定肱二头肌腱；StatPearls 说它可能不是一条独立的结构。\n- Ranges of motion: Kenhub gives two sets. For the glenohumeral joint alone (active): flexion 110°, extension 60°, abduction 120°. For the whole shoulder complex: flexion 180°, extension 90°, abduction 180°, adduction 30°. StatPearls lists flexion 180°, extension 45–60° and abduction 150° under glenohumeral joint motion without separating out scapular motion, so its flexion matches Kenhub's whole-complex figure while abduction still differs (150° against 180°). The chapter's figure 12 splits 180° of elevation into about 120° at the glenohumeral joint and 60° at the scapula, as a teaching approximation.<br>活动范围：Kenhub 给了两组数字。仅盂肱关节（主动）：屈 110°、伸 60°、外展 120°。整个肩复合体：屈 180°、伸 90°、外展 180°、内收 30°。StatPearls 把屈 180°、伸 45–60°、外展 150° 列在“盂肱关节运动”下，没有把肩胛骨的活动分开；所以它的屈与 Kenhub 的肩复合体数字一致，外展仍有差别（150° 对 180°）。章节图 12 把 180° 上举分成盂肱关节约 120°、肩胛骨约 60°，这是教学上的概括。\n- Resting position: Kenhub gives 40–50° of abduction with 30° of horizontal adduction; Lin 2007 measured a mean of 49.8° or 23.7° of abduction depending on the method.<br>休息位：Kenhub 写外展 40–50° 加水平内收 30°；Lin 2007 按测量方法不同，得到的平均外展角是 49.8° 或 23.7°。\n- Rotator interval: Radiopaedia puts the lateral margin of the coracoid base at its medial side, roofs it with capsule reinforced by the CHL, and lists the long head of biceps tendon and the SGHL as its contents. StatPearls borders it with the supraspinatus tendon above, the subscapularis tendon below, the CHL laterally and the SGHL medially, and lists the long head of biceps tendon, the CHL and the SGHL as its contents. The tables and the self-test follow Radiopaedia.<br>肩袖间隙：Radiopaedia 以喙突根部外侧缘为内侧界，顶是由喙肱韧带加强的关节囊，内容为肱二头肌长头腱和盂肱上韧带。StatPearls 以冈上肌腱为上界、肩胛下肌腱为下界、喙肱韧带为外侧界、盂肱上韧带为内侧界，内容为肱二头肌长头腱、喙肱韧带和盂肱上韧带。表格和自测题按 Radiopaedia 的说法。\n"
+    },
+    {
+     "t": "p",
+     "en": "Why this matters clinically: most dislocations are anterior, usually from excessive extension and lateral rotation, and a torn capsule raises the risk of dislocating again (TeachMeAnatomy). The chapter adds that an anterior dislocation can involve the axillary nerve and subscapularis. In adhesive capsulitis the capsule becomes inflamed and stiff (StatPearls), which fits the capsular pattern above.",
+     "zh": "临床意义：大多数脱位是前脱位，通常由过度伸展和外旋引起；关节囊撕裂后，再次脱位的风险更高（TeachMeAnatomy）。本周章节还写到，前脱位可累及腋神经和肩胛下肌。粘连性关节囊炎时关节囊发炎、变僵硬（StatPearls），这和上面的关节囊模式相符。"
+    },
+    {
+     "t": "h3",
+     "en": "Self-test",
+     "zh": "自测"
+    },
+    {
+     "t": "p",
+     "en": "Scroll the tables and figures 02 and 04 out of sight. Answer each question before you open it; for the last one, use figure 03.",
+     "zh": "把表格和图 02、04 滑出屏幕。每题先自己答，再展开看答案；最后一题看图 03。"
+    },
+    {
+     "t": "fig",
+     "n": "03",
+     "en": "Self-test: the drawing of figure 02 with letters A to K in place of the names. The answers are in the last question below.",
+     "zh": "自测：图 02 的同一张图，名称换成字母 A 到 K。答案在下面最后一题。"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Choice: the glenohumeral joint is (a) a synovial hinge joint, (b) a synovial ball-and-socket joint, (c) a fibrous joint, (d) a synovial pivot joint.",
+       "选择：盂肱关节是（a）滑膜屈戌关节（b）滑膜球窝关节（c）纤维连结（d）滑膜车轴关节。",
+       "(b) A synovial ball-and-socket joint: multiaxial, with three degrees of freedom.",
+       "（b）滑膜球窝关节：多轴，三个自由度。"
+      ],
+      [
+       "Fill in: on the humerus, the capsule attaches to the ______ neck.",
+       "填空：关节囊在肱骨上附着于 ______ 颈。",
+       "The anatomical neck, not the surgical neck (figure 04).",
+       "解剖颈，不是外科颈（图 04）。"
+      ],
+      [
+       "Fill in: in front and below, the capsule inserts into the scapular neck ______ the labrum; above and behind, it ______ the labrum.",
+       "填空：关节囊前方和下方止于盂唇 ______ 的肩胛颈；上方和后方则与盂唇 ______。",
+       "Behind (posterior to); blends with.",
+       "后方；融合。"
+      ],
+      [
+       "Choice: the weakest part of the capsule is (a) superior, (b) posterior, (c) inferior, (d) anterior.",
+       "选择：关节囊最薄弱的部分是（a）上部（b）后部（c）下部（d）前部。",
+       "(c) The inferior capsule. It is stretched in abduction and forms a fold, the axillary pouch, with the arm by the side. In figure 02 no cuff tendon lies below it.",
+       "（c）下部。外展时被拉紧，手臂垂在体侧时形成皱襞，也就是腋囊。图 02 里它下方没有肩袖肌腱。"
+      ],
+      [
+       "Choice: the strongest glenohumeral ligament is (a) superior, (b) middle, (c) inferior, (d) none of them; the coracohumeral ligament is.",
+       "选择：最强的盂肱韧带是（a）上（b）中（c）下（d）都不是，是喙肱韧带。",
+       "(c) The inferior glenohumeral ligament, the main stabiliser of the abducted shoulder.",
+       "（c）盂肱下韧带，外展位肩关节的主要稳定结构。"
+      ],
+      [
+       "Fill in: the anterior band of the inferior glenohumeral ligament limits ______ rotation; the posterior band limits ______ rotation.",
+       "填空：盂肱下韧带前束限制 ______ 旋；后束限制 ______ 旋。",
+       "External; internal.",
+       "外；内。"
+      ],
+      [
+       "Choice: with the arm by the side, which two resist the head sliding down? (a) SGHL and CHL, (b) MGHL and THL, (c) IGHL and CAL, (d) labrum and THL.",
+       "选择：手臂垂在体侧时，哪两个结构对抗肱骨头向下滑？（a）盂肱上韧带和喙肱韧带（b）盂肱中韧带和肱横韧带（c）盂肱下韧带和喙肩韧带（d）盂唇和肱横韧带。",
+       "(a) The SGHL (especially in adduction) and the CHL. Itoi 1998 adds that with the arm in external rotation, only the CHL contributed significantly to inferior stability.",
+       "（a）盂肱上韧带（尤其在内收位）和喙肱韧带。Itoi 1998 补充：手臂外旋时，只有喙肱韧带对防止向下移位有显著作用。"
+      ],
+      [
+       "Fill in: the rotator interval lies between the ______ and ______ tendons, with the base of the ______ at its base. It contains the ______ and the SGHL, and its roof is reinforced by the ______.",
+       "填空：肩袖间隙位于 ______ 肌腱和 ______ 肌腱之间，底边在 ______ 根部；里面有 ______ 和盂肱上韧带，顶由 ______ 加强。",
+       "Supraspinatus, subscapularis; coracoid; the long head of biceps tendon; the coracohumeral ligament.",
+       "冈上肌、肩胛下肌；喙突；肱二头肌长头腱；喙肱韧带。"
+      ],
+      [
+       "Choice: which ligament does not cross the glenohumeral joint? (a) CHL, (b) CAL, (c) SGHL, (d) IGHL.",
+       "选择：哪条韧带不跨过盂肱关节？（a）喙肱韧带（b）喙肩韧带（c）盂肱上韧带（d）盂肱下韧带。",
+       "(b) The coracoacromial ligament joins two parts of the scapula. It forms a roof over the joint instead.",
+       "（b）喙肩韧带连接肩胛骨的两个部分，它在关节上方形成一个顶。"
+      ],
+      [
+       "Fill in: close-packed position: ______ with ______. Loose-packed (resting) position: about ______° of abduction with about 30° of horizontal adduction.",
+       "填空：紧张位：______ 加 ______。松弛位（休息位）：外展约 ______°，加水平内收约 30°。",
+       "Abduction with external rotation; 40–50° (Kenhub). Lin 2007 found different means depending on the method (49.8° or 23.7°).",
+       "外展加外旋；40–50°（Kenhub）。Lin 2007 按测量方法不同，得到不同的平均值（49.8° 或 23.7°）。"
+      ],
+      [
+       "Choice: abduction takes place in (a) the sagittal plane about a frontal axis, (b) the frontal plane about a sagittal axis, (c) the horizontal plane about a vertical axis, (d) the frontal plane about a vertical axis.",
+       "选择：外展发生在（a）矢状面，绕额状轴（b）额状面，绕矢状轴（c）水平面，绕垂直轴（d）额状面，绕垂直轴。",
+       "(b) The frontal (coronal) plane, about a sagittal-horizontal (front to back) axis.",
+       "（b）额状面（冠状面），绕矢状水平轴（前后方向）。"
+      ],
+      [
+       "Fill in: the capsular pattern of the shoulder, from most to least limited: ______ > ______ > ______ > flexion.",
+       "填空：肩关节的关节囊模式，按受限程度从多到少：______ > ______ > ______ > 屈。",
+       "External rotation > abduction > internal rotation > flexion. Think of the frozen shoulder row of Tuesday's pathway.",
+       "外旋 > 外展 > 内旋 > 屈。可以联系周二流程里冻结肩那一行。"
+      ],
+      [
+       "Fill in: the long head of biceps tendon leaves the capsule between the ______ tubercles and is held in the groove by the ______ ligament.",
+       "填空：肱二头肌长头腱在 ______ 结节之间出关节囊，由 ______ 韧带固定在沟内。",
+       "Greater and lesser; transverse humeral (figure 04).",
+       "大、小；肱横（图 04）。"
+      ],
+      [
+       "After an anterior dislocation, which nerve is at risk, and what do you check?",
+       "肩关节前脱位后，哪条神经有风险？要检查什么？",
+       "The axillary nerve: deltoid strength and sensation over the badge area (this week's chapter; Wednesday's pack). Anterior dislocations make up about 95% (TeachMeAnatomy) or 96% (StatPearls) of shoulder dislocations.",
+       "腋神经：查三角肌力量和徽章区感觉（本周章节；周三的包）。前脱位约占肩关节脱位的 95%（TeachMeAnatomy）或 96%（StatPearls）。"
+      ],
+      [
+       "Label: name structures A to K in figure 03.",
+       "看图标注：说出图 03 中 A 到 K 各是什么结构。",
+       "A superior glenohumeral ligament · B middle glenohumeral ligament · C inferior glenohumeral ligament, anterior band · D axillary pouch · E inferior glenohumeral ligament, posterior band · F coracohumeral ligament · G coracoacromial ligament · H long head of biceps tendon · I glenoid labrum · J joint capsule (cut edge) · K rotator interval.",
+       "A 盂肱上韧带 · B 盂肱中韧带 · C 盂肱下韧带前束 · D 腋囊 · E 盂肱下韧带后束 · F 喙肱韧带 · G 喙肩韧带 · H 肱二头肌长头腱 · I 盂唇 · J 关节囊（切缘）· K 肩袖间隙。"
+      ]
+     ]
+    },
+    {
+     "t": "chapter_link"
+    },
+    {
+     "t": "sources",
+     "end": true,
+     "note": "01 章的试验内容全部取自论文记录 daily/papers/hando-2026-dry-needling（2026-10-06 按结果摘要和研究方案核对），图 01 只画摘要报告的数字；区间对称性的计算和给病人的说法是我们的解读，正文已标明。02 章的关节类型、肩袖稳定作用、2∶1 节律和前脱位取自本周章节；章节没有关节囊和韧带一节，这部分取自章节来源 TeachMeAnatomy、Kenhub，并用 Radiopaedia、StatPearls、Itoi 1998、Lin 2007 核对，分歧已列出。图 02 至 04 是新画的示意图。"
+    }
+   ],
+   "take": [
+    "A loose capsule from the glenoid margin to the anatomical neck, thickened in front and below by three glenohumeral ligaments, reinforced above by the coracohumeral ligament, and weakest below and at the rotator interval. Because the capsule is so loose, holding the head in the glenoid depends largely on the cuff.",
+    "关节囊松弛，从关节盂边缘到解剖颈；前部和下部由三条盂肱韧带加厚，上方由喙肱韧带加强；最薄弱的是下部和肩袖间隙。正因为关节囊这么松，把肱骨头稳在关节盂里很大程度要靠肩袖。"
+   ]
+  }
+ ]
+}

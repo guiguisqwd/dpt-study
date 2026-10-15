@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-15",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-15T01:08:26+00:00",
+     "evidence": {
+      "kind": "supplement",
+      "week": 1,
+      "chapter": "shoulder",
+      "entries": [
+       [
+        "N-5",
+        [
+         "hando-2026-dry-needling"
+        ],
+        [
+         "F-5"
+        ]
+       ],
+       [
+        "O-3",
+        [
+         "Glenohumeral joint 盂肱关节：关节囊与韧带"
+        ],
+        [
+         "F-6"
+        ]
+       ]
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-15T01:39:59+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-15/content.json",
+      "figures": "daily/days/2026-10-15/figures.py",
+      "fingerprint": "9cc7648ac5206948"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-15T02:13:33+00:00",
+     "evidence": {
+      "svgs": [
+       "01-干针试验效应量.svg",
+       "02-盂肱关节囊与韧带外侧面观.svg",
+       "03-盂肱关节囊与韧带-看图标注.svg",
+       "04-盂肱关节囊前面观.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-15T02:13:33+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-15T02:13:33+00:00",
+     "evidence": {
+      "date": "2026-10-15",
+      "out": "2026-10-15-第1周-干针试验精读与盂肱关节囊韧带",
+      "chapters": 2,
+      "figure_occurrences": 4,
+      "figures": [
+       "01",
+       "02",
+       "04",
+       "03"
+      ],
+      "model_links": [
+       "acromion",
+       "deltoid",
+       "greater-tubercle",
+       "humeral-head",
+       "humerus",
+       "infraspinatus",
+       "intertubercular-groove",
+       "lesser-tubercle",
+       "scapula",
+       "subscapularis",
+       "supraspinatus",
+       "teres-minor"
+      ],
+      "html_bytes": 215939
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-15T02:13:41+00:00",
+     "evidence": {
+      "figures": 4,
+      "say_buttons": 28,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 24
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-15T02:14:20+00:00",
+     "evidence": {
+      "viewed": 24,
+      "notes": "Read all 24 screenshots. Top and mobile: title, brand line, three study-plan boxes (four tables named) fit; sidebar lists both chapters. Ch 01: key terms all carry respelling and IPA; paper card, eight-step table (middle column 'What the record says', steps 7-8 marked 'Our reading'), figure 01 squares and intervals sit at the printed values on both axes (-7.51 between -10 and -5; +34 between +30 and +40), favours labels under each axis, four notes and footer do not overlap; the asymmetry check a",
+      "fixed": [
+       "Fig 02/03: ligament wedges trimmed so they no longer overlap the cuff bands; capsule (J) anchor moved off the axillary pouch and right-side label rows re-spaced",
+       "Fig 04 footer reworded: ligaments are thickenings of the front and lower capsule and are not drawn",
+       "Fig 01: notes moved below both panels so they no longer overlap the right axis",
+       "Ch 01: steps 7 and 8 marked as our reading, not the authors'; patient wording no longer overstates the secondary result",
+       "Ch 02: rotator interval described as a gap with no cuff tendon (roof reinforced by CHL, SGHL inside), not 'no ligament'; CHL 'reinforces the roof' attributed to Radiopaedia; CAL Chinese 肱骨头上方",
+       "Ch 02: movement table shows Kenhub's two range sets and StatPearls separately; 'arm by the side' flagged as our addition; rotator-interval source difference added; unsupported nerve-supply bullet removed",
+       "Ch 02: study plan says four tables; quiz 10 answer and figure 02 caption Chinese corrected",
+       "Ch 02 take-home: 'roofed by the CHL' changed to 'reinforced above by the CHL', and the cuff link now rests on the loose capsule rather than on the weak spots"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-15T02:14:20+00:00",
+     "evidence": {
+      "entries": 7,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-15/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-15T02:14:20+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-15": 12
+     }
+    }
+   },
+   "started": "2026-10-15T01:08:26+00:00",
+   "fingerprint": "58058526026f0d73"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-15T01:08:26+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:08:26+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-15T01:39:59+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:39:59+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:39:59+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:39:59+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:40:07+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T01:40:07+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-15T02:12:44+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:12:44+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:12:44+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:12:52+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:12:52+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-15T02:13:33+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:13:33+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:13:33+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:13:41+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:13:41+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-15T02:14:20+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:14:20+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-15T02:14:20+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "out": "2026-10-15-第1周-干针试验精读与盂肱关节囊韧带"
+}

@@ -1,0 +1,42 @@
+{
+ "reviewer": "claude",
+ "verdict": "pass",
+ "viewed": [
+  "top.png",
+  "chapter-new-paper-dry-needling-1.png",
+  "chapter-new-paper-dry-needling-2.png",
+  "chapter-new-paper-dry-needling-3.png",
+  "chapter-new-paper-dry-needling-4.png",
+  "chapter-new-paper-dry-needling-5.png",
+  "chapter-new-paper-dry-needling-6.png",
+  "chapter-new-paper-dry-needling-7.png",
+  "chapter-new-paper-dry-needling-8.png",
+  "chapter-consolidate-gh-joint-1.png",
+  "chapter-consolidate-gh-joint-2.png",
+  "chapter-consolidate-gh-joint-3.png",
+  "chapter-consolidate-gh-joint-4.png",
+  "chapter-consolidate-gh-joint-5.png",
+  "chapter-consolidate-gh-joint-6.png",
+  "chapter-consolidate-gh-joint-7.png",
+  "chapter-consolidate-gh-joint-8.png",
+  "chapter-consolidate-gh-joint-9.png",
+  "chapter-consolidate-gh-joint-10.png",
+  "mobile-top.png",
+  "figure-01.png",
+  "figure-02.png",
+  "figure-04.png",
+  "figure-03.png"
+ ],
+ "notes": "Read all 24 screenshots. Top and mobile: title, brand line, three study-plan boxes (four tables named) fit; sidebar lists both chapters. Ch 01: key terms all carry respelling and IPA; paper card, eight-step table (middle column 'What the record says', steps 7-8 marked 'Our reading'), figure 01 squares and intervals sit at the printed values on both axes (-7.51 between -10 and -5; +34 between +30 and +40), favours labels under each axis, four notes and footer do not overlap; the asymmetry check and patient wording are marked as our reading; six check questions and take-home render. Ch 02: 15 key terms with pronunciation; joint, ligament, movement (Kenhub two sets plus StatPearls) and position tables readable with sources; figure 02 leaders land on the right structure (SGHL, MGHL, IGHL bands, CHL, rotator interval, pouch, cut cuff tendons), no label covers a structure; figure 04 shows the see-through capsule, anatomical neck, pouch, the dashed biceps course inside the joint and the THL over the groove; footer says the GH ligaments are not drawn; figure 03 letters A-K match the figure 02 positions and the answer key; source-difference list, clinical note, 15 quiz items, sources and take-home render; English first throughout, nothing cut off.",
+ "fixed": [
+  "Fig 02/03: ligament wedges trimmed so they no longer overlap the cuff bands; capsule (J) anchor moved off the axillary pouch and right-side label rows re-spaced",
+  "Fig 04 footer reworded: ligaments are thickenings of the front and lower capsule and are not drawn",
+  "Fig 01: notes moved below both panels so they no longer overlap the right axis",
+  "Ch 01: steps 7 and 8 marked as our reading, not the authors'; patient wording no longer overstates the secondary result",
+  "Ch 02: rotator interval described as a gap with no cuff tendon (roof reinforced by CHL, SGHL inside), not 'no ligament'; CHL 'reinforces the roof' attributed to Radiopaedia; CAL Chinese 肱骨头上方",
+  "Ch 02: movement table shows Kenhub's two range sets and StatPearls separately; 'arm by the side' flagged as our addition; rotator-interval source difference added; unsupported nerve-supply bullet removed",
+  "Ch 02: study plan says four tables; quiz 10 answer and figure 02 caption Chinese corrected",
+  "Ch 02 take-home: 'roofed by the CHL' changed to 'reinforced above by the CHL', and the cuff link now rests on the loose capsule rather than on the weak spots"
+ ],
+ "page_sha": "e34df103c8327219"
+}
