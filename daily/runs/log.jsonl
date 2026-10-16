@@ -167,3 +167,24 @@
 {"date": "2026-10-15", "at": "2026-10-15T02:14:20+00:00", "phase": "evening", "step": "site", "status": "done"}
 {"date": "2026-10-15", "at": "2026-10-15T02:14:20+00:00", "phase": "evening", "step": "cards", "status": "done"}
 {"date": "2026-10-15", "at": "2026-10-15T02:14:24+00:00", "phase": "evening", "step": "publish", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:08:32+00:00", "phase": "evening", "step": "plan", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:08:32+00:00", "phase": "evening", "step": "author", "status": "waiting"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:10+00:00", "phase": "evening", "step": "author", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:10+00:00", "phase": "evening", "step": "figures", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:10+00:00", "phase": "evening", "step": "validate", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:10+00:00", "phase": "evening", "step": "build", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:18+00:00", "phase": "evening", "step": "qa", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T01:52:18+00:00", "phase": "evening", "step": "visual_review", "status": "waiting", "error": "['no visual-review.json newer than qa.json']"}
+{"date": "2026-10-16", "at": "2026-10-16T02:06:29+00:00", "phase": "evening", "step": "figures", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:06:29+00:00", "phase": "evening", "step": "validate", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:06:29+00:00", "phase": "evening", "step": "build", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:06:38+00:00", "phase": "evening", "step": "qa", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:06:38+00:00", "phase": "evening", "step": "visual_review", "status": "waiting", "error": "['no visual-review.json newer than qa.json']"}
+{"date": "2026-10-16", "at": "2026-10-16T02:07:44+00:00", "phase": "evening", "step": "figures", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:07:44+00:00", "phase": "evening", "step": "validate", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:07:44+00:00", "phase": "evening", "step": "build", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:07:53+00:00", "phase": "evening", "step": "qa", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:07:53+00:00", "phase": "evening", "step": "visual_review", "status": "waiting", "error": "['no visual-review.json newer than qa.json']"}
+{"date": "2026-10-16", "at": "2026-10-16T02:09:53+00:00", "phase": "evening", "step": "visual_review", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:09:53+00:00", "phase": "evening", "step": "site", "status": "done"}
+{"date": "2026-10-16", "at": "2026-10-16T02:09:53+00:00", "phase": "evening", "step": "cards", "status": "done"}

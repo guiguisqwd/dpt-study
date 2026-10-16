@@ -2,6 +2,43 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
+   "date": "2026-10-16",
+   "day": null,
+   "week": 1,
+   "chapter": "shoulder",
+   "kind": "supplement",
+   "out": "2026-10-16-第1周-肩袖特殊检查与力偶口述",
+   "title": {
+    "zh": "七项肩袖检查怎么做、能信几分 · 力偶与肩肱节律口述",
+    "en": "Seven rotator cuff tests: how to do them and how far to trust them · force couples and scapulohumeral rhythm, said aloud"
+   },
+   "acupoints": [],
+   "muscles": [],
+   "tags": {
+    "vertical": [
+     "检查评估/肩/特殊检查",
+     "检查评估/肩/肩袖肌力检查",
+     "循证方法学/诊断准确性",
+     "病理学/肩/肩袖撕裂",
+     "病理学/肩/肩峰下疼痛综合征",
+     "运动学/生物力学/肩/力偶",
+     "运动学/生物力学/肩/肩肱节律",
+     "解剖学/上肢/肩带/肩袖"
+    ],
+    "horizontal": [
+     "特殊检查",
+     "敏感度与特异度",
+     "体位示意图",
+     "口述练习",
+     "结构→检查链",
+     "来源不一致"
+    ]
+   },
+   "figures": 7,
+   "path": "daily/2026-10-16/index.html",
+   "md": "daily/2026-10-16/2026-10-16-第1周-肩袖特殊检查与力偶口述.md"
+  },
+  {
    "date": "2026-10-15",
    "day": null,
    "week": 1,

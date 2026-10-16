@@ -1,0 +1,292 @@
+{
+ "date": "2026-10-16",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-16T01:08:32+00:00",
+     "evidence": {
+      "kind": "supplement",
+      "week": 1,
+      "chapter": "shoulder",
+      "entries": [
+       [
+        "N-7",
+        [
+         "Empty can test",
+         "Full can test",
+         "Hawkins-Kennedy test",
+         "Neer test",
+         "Hornblower sign",
+         "External rotation lag sign",
+         "Belly-press test"
+        ],
+        [
+         "F-1"
+        ]
+       ],
+       [
+        "O-6",
+        [
+         "Scapulohumeral rhythm 肩肱节律",
+         "Force couples 力偶"
+        ],
+        [
+         "F-12"
+        ]
+       ]
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-16T01:52:10+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-16/content.json",
+      "figures": "daily/days/2026-10-16/figures.py",
+      "fingerprint": "775e7951f7daee61"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-16T02:07:44+00:00",
+     "evidence": {
+      "svgs": [
+       "01-空罐与满罐试验.svg",
+       "02-Neer与Hawkins-Kennedy试验.svg",
+       "03-外旋滞后征与Hornblower征.svg",
+       "04-腹压试验.svg",
+       "05-检查准确性对比.svg",
+       "06-两组力偶.svg",
+       "07-肩肱节律.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-16T02:07:44+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-16T02:07:44+00:00",
+     "evidence": {
+      "date": "2026-10-16",
+      "out": "2026-10-16-第1周-肩袖特殊检查与力偶口述",
+      "chapters": 2,
+      "figure_occurrences": 7,
+      "figures": [
+       "01",
+       "02",
+       "03",
+       "04",
+       "05",
+       "06",
+       "07"
+      ],
+      "model_links": [
+       "acromion",
+       "clavicle",
+       "deltoid",
+       "humeral-head",
+       "humerus",
+       "infraspinatus",
+       "lower-trapezius",
+       "scapula",
+       "serratus-anterior",
+       "subscapularis",
+       "supraspinatus",
+       "teres-minor",
+       "trapezius",
+       "upper-trapezius"
+      ],
+      "html_bytes": 302460
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-16T02:07:53+00:00",
+     "evidence": {
+      "figures": 7,
+      "say_buttons": 28,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 28
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-16T02:09:53+00:00",
+     "evidence": {
+      "viewed": 28,
+      "notes": "Read every screenshot of this run (page top, both chapters, mobile top, figures 01-07). Text renders in full, English before Chinese, no overlaps or cut-off labels in figures 01-06. Figure 01: thumbs down / thumbs up and the scapular-plane inset read clearly. Figure 02: Neer sign side view and Hawkins-Kennedy front view; injection note sits below the drawing. Figure 03: lag sign from above with start, lag and let-go positions; hornblower start position visible beside the examiner's hand; source ",
+      "fixed": [
+       "Neer panel relabelled 'Neer sign'; the injection note moved below the drawing and the figure made taller",
+       "Hornblower start position made visible (examiner hand moved, forearm stub lengthened)",
+       "Unsupported hand-to-mouth drawing removed from figure 03",
+       "Figure 03 notes now give the two sources' wording of a positive hornblower sign",
+       "Figure 04 wording matched to Tokish 2003 (wrist bends to keep pressing)",
+       "Figure 05 notes and caption say which rows share a study",
+       "Figure 06 axis note attributed to the chapter's figure 11"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-16T02:09:53+00:00",
+     "evidence": {
+      "entries": 8,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-16/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-16T02:09:53+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-16": 0
+     }
+    }
+   },
+   "started": "2026-10-16T01:08:32+00:00",
+   "fingerprint": "0efa4bd940f263e7"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-16T01:08:32+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:08:32+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-16T01:52:10+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:52:10+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:52:10+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:52:10+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:52:18+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T01:52:18+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-16T02:06:29+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:06:29+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:06:29+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:06:38+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:06:38+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-16T02:07:44+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:07:44+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:07:44+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:07:53+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:07:53+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-16T02:09:53+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:09:53+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-16T02:09:53+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "out": "2026-10-16-第1周-肩袖特殊检查与力偶口述"
+}

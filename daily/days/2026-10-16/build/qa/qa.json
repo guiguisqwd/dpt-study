@@ -1,0 +1,30 @@
+{
+  "file": "/home/claude/dpt-study/daily/days/2026-10-16/build/2026-10-16-第1周-肩袖特殊检查与力偶口述.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "new-cuff-special-tests",
+    "consolidate-force-couples"
+  ],
+  "figures": 7,
+  "say_buttons": 28,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/top.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/chapter-new-cuff-special-tests.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/chapter-consolidate-force-couples.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-01.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-02.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-03.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-04.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-05.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-06.png",
+    "/home/claude/dpt-study/daily/days/2026-10-16/build/qa/figure-07.png"
+  ],
+  "flashcards": 0
+}
