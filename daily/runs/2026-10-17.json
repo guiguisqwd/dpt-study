@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-17",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-17T01:08:28+00:00",
+     "evidence": {
+      "kind": "supplement",
+      "week": 1,
+      "chapter": "shoulder",
+      "entries": [
+       [
+        "quiz",
+        [
+         "本周新旧混合小测"
+        ],
+        [
+         "F-6"
+        ]
+       ],
+       [
+        "review",
+        [
+         "跨周间隔复习"
+        ],
+        [
+         "F-10"
+        ]
+       ]
+      ]
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-17T01:20:00+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-17/content.json",
+      "figures": "daily/days/2026-10-17/figures.py",
+      "fingerprint": "a225e6a84b5e8dcb"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-17T01:43:05+00:00",
+     "evidence": {
+      "svgs": [
+       "01-肩胛骨与肱骨-编号自测.svg",
+       "02-盂肱关节囊与韧带-字母自测.svg"
+      ]
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-17T01:43:05+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-17T01:43:05+00:00",
+     "evidence": {
+      "date": "2026-10-17",
+      "out": "2026-10-17-第1周-本周小测与间隔复习",
+      "chapters": 2,
+      "figure_occurrences": 2,
+      "figures": [
+       "01",
+       "02"
+      ],
+      "model_links": [
+       "acromion",
+       "biceps-brachii",
+       "deltoid",
+       "greater-tubercle",
+       "humerus",
+       "infraspinatus",
+       "intertubercular-groove",
+       "lesser-tubercle",
+       "lower-trapezius",
+       "pectoralis-major",
+       "pectoralis-minor",
+       "scapula",
+       "serratus-anterior",
+       "subclavius",
+       "subscapularis",
+       "supraspinatus",
+       "teres-major",
+       "teres-minor",
+       "trapezius"
+      ],
+      "html_bytes": 149406
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-17T01:43:09+00:00",
+     "evidence": {
+      "figures": 2,
+      "say_buttons": 24,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 14
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-17T01:43:38+00:00",
+     "evidence": {
+      "viewed": 14,
+      "notes": "Viewed all 14 screenshots after the last rebuild. Top and mobile: title, week line, 28-question count and the three study-plan blocks read correctly; English before Chinese throughout. Chapter 1: goals and 18 key terms with pronunciation; Parts 1-4 (8 choice, 8 fill-in, 10 labelling, 2 case) render as closed self-test cards with Show answer; fill-in blanks visible; Ms Grant case paragraph matches Wednesday's case. Figure 01: numbers 1-14 sit on Tuesday's bones, leaders point at the right landmar",
+      "fixed": [
+       "Chapter 2 key-terms box was empty; added six terms with pronunciations",
+       "Table used a nonexistent class; switched to the shared summary-table style",
+       "Figure 01 footer said 'pathway and layers are simplified' on a bones-only drawing; now says bone outlines are simplified",
+       "Figure 01 subtitle and caption now say Tuesday's figure was lettered and is renumbered, number 6 is new; figure 02 caption names Thursday's figure 03",
+       "Answer checks (13 fixes): belly-press answer adds the Barth caveat; scapular-couple fill-in grammar; rotator-interval question asks for two contents plus the roof ligament; Ms Grant onset made gradual; number 6 attribution to Monday; consolidation mentioned in intro and goal; chapter 2 wording says earlier cards; take-home lines rewritten"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-17T01:43:38+00:00",
+     "evidence": {
+      "entries": 9,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-17/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-17T01:43:38+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-17": 0
+     }
+    }
+   },
+   "started": "2026-10-17T01:08:28+00:00",
+   "fingerprint": "8bda5ad1539103c7"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-17T01:08:28+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:08:28+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-17T01:20:00+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:20:00+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:20:00+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:20:00+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:20:05+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:20:05+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-17T01:42:19+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:42:19+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:42:19+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:42:23+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:42:23+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-17T01:43:05+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:05+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:05+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:09+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:09+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-17T01:43:38+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:38+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-17T01:43:38+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "out": "2026-10-17-第1周-本周小测与间隔复习"
+}

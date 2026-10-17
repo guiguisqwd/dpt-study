@@ -1,0 +1,29 @@
+{
+ "reviewer": "claude",
+ "verdict": "pass",
+ "viewed": [
+  "top.png",
+  "chapter-quiz-week1-1.png",
+  "chapter-quiz-week1-2.png",
+  "chapter-quiz-week1-3.png",
+  "chapter-quiz-week1-4.png",
+  "chapter-quiz-week1-5.png",
+  "chapter-quiz-week1-6.png",
+  "chapter-quiz-week1-7.png",
+  "chapter-quiz-week1-8.png",
+  "chapter-review-spaced-1.png",
+  "chapter-review-spaced-2.png",
+  "mobile-top.png",
+  "figure-01.png",
+  "figure-02.png"
+ ],
+ "notes": "Viewed all 14 screenshots after the last rebuild. Top and mobile: title, week line, 28-question count and the three study-plan blocks read correctly; English before Chinese throughout. Chapter 1: goals and 18 key terms with pronunciation; Parts 1-4 (8 choice, 8 fill-in, 10 labelling, 2 case) render as closed self-test cards with Show answer; fill-in blanks visible; Ms Grant case paragraph matches Wednesday's case. Figure 01: numbers 1-14 sit on Tuesday's bones, leaders point at the right landmarks (6 at the superior angle, 4 at the spinoglenoid notch, 5 at the suprascapular notch, 11 coracoid, 13 lesser tubercle, 14 intertubercular groove), no marker covers a structure, subtitle and footnotes fit. Figure 02: Thursday's glenoid face, letters A-K on the right structures, unlettered labels readable, orientation note correct (front on the right). Chapter 2: key terms filled, empty due-card notice, five-row upcoming table (37 cards Mon-Thu, plus 10-26), review-center note, sources and take-home all visible; nothing cut off.",
+ "fixed": [
+  "Chapter 2 key-terms box was empty; added six terms with pronunciations",
+  "Table used a nonexistent class; switched to the shared summary-table style",
+  "Figure 01 footer said 'pathway and layers are simplified' on a bones-only drawing; now says bone outlines are simplified",
+  "Figure 01 subtitle and caption now say Tuesday's figure was lettered and is renumbered, number 6 is new; figure 02 caption names Thursday's figure 03",
+  "Answer checks (13 fixes): belly-press answer adds the Barth caveat; scapular-couple fill-in grammar; rotator-interval question asks for two contents plus the roof ligament; Ms Grant onset made gradual; number 6 attribution to Monday; consolidation mentioned in intro and goal; chapter 2 wording says earlier cards; take-home lines rewritten"
+ ],
+ "page_sha": "911ba1e4c699ca94"
+}

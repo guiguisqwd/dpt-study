@@ -1,0 +1,677 @@
+{
+ "schema": "dpt-daily-pack/2",
+ "date": "2026-10-17",
+ "kind": "supplement",
+ "week": 1,
+ "chapter": "shoulder",
+ "chapter_name": "肩袖 Rotator cuff",
+ "slug_zh": "本周小测与间隔复习",
+ "title": {
+  "zh": "第 1 周小测：新旧混合 · 跨周间隔复习",
+  "en": "Week 1 quiz: the new and the old mixed · spaced review across weeks"
+ },
+ "description": "DPT 每日包 · 第 1 周周六（10-17）。本周小测 28 题：选择、填空、看图标注和一个案例，把周一到周五的新内容（穴位、肩峰下疼痛流程、教学案例、干针试验、肩袖特殊检查）、周四的关节囊与韧带，和章节里的肌肉、骨性标志、神经、力偶混在一起；每题答案注明回看哪一天。间隔复习：今天没有到期的旧卡，列出下周的到期安排。",
+ "brand_sub": "第 1 周周六 · 10/17",
+ "today_line": "本周小测 28 题（选择 8 · 填空 8 · 看图标注 10 · 案例 2）· 间隔复习：今天没有到期的旧卡",
+ "study_plan": [
+  [
+   "小测（35 分钟）",
+   "01 章：每题先说出或写下答案，再展开对照；答错的题记下答案后面写的日子"
+  ],
+  [
+   "回看（15 分钟）",
+   "按记下的日子回看那一天的包，只看答错的部分"
+  ],
+  [
+   "间隔复习（5 分钟）",
+   "02 章：看下周哪几天有卡到期；复习中心里还没作答的卡也可以今天做"
+  ]
+ ],
+ "footer": "DPT 每日包 · 第 1 周周六（10-17）· 本周章节：肩袖 Rotator cuff（知识库 library/shoulder）· 小测答案取自本周各包和章节，来源列在页末；学习材料，不代替临床判断。",
+ "tags": {
+  "vertical": [
+   "解剖学/上肢/肩带/肩袖",
+   "解剖学/上肢/肩带/骨性标志",
+   "解剖学/上肢/肩带/关节囊与韧带",
+   "解剖学/上肢/肩带/四边孔",
+   "神经科学/周围神经/肩胛上神经",
+   "神经科学/周围神经/腋神经",
+   "检查评估/肩/特殊检查",
+   "检查评估/鉴别诊断与红旗征",
+   "循证方法学/诊断准确性",
+   "循证方法学/效应量与置信区间",
+   "运动学/生物力学/肩/力偶",
+   "运动学/生物力学/肩/肩肱节律",
+   "康复干预/肩/运动疗法与宣教",
+   "中医针灸对照/经络/手太阳小肠经",
+   "中医针灸对照/经络/手少阳三焦经",
+   "中医针灸对照/经络/手阳明大肠经"
+  ],
+  "horizontal": [
+   "看图标注",
+   "每周章节",
+   "结构→检查链",
+   "敏感度与特异度",
+   "效应量与置信区间",
+   "教学案例(SOAP)",
+   "记忆法"
+  ]
+ },
+ "figures": {
+  "01": "肩胛骨与肱骨-编号自测",
+  "02": "盂肱关节囊与韧带-字母自测"
+ },
+ "pronunciation": {
+  "Axillary pouch": [
+   "/ˈæksəˌlɛri paʊtʃ/",
+   "AK-suh-lair-ee POWCH",
+   "https://www.merriam-webster.com/medical/axillary"
+  ],
+  "Rotator interval": [
+   "/ˈroʊˌteɪtər ˈɪntərvəl/",
+   "ROH-tay-ter IN-ter-vuhl",
+   "https://www.merriam-webster.com/dictionary/interval"
+  ],
+  "Coracoacromial ligament": [
+   "/ˌkɔrəkoʊəˈkroʊmiəl ˈlɪɡəmənt/",
+   "kor-uh-koh-uh-KROH-mee-uhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/acromial"
+  ],
+  "Inferior glenohumeral ligament": [
+   "/ɪnˈfɪriər ˌɡlɛnoʊˈhjumərəl ˈlɪɡəmənt/",
+   "in-FEER-ee-er glen-oh-HYOO-muh-ruhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/glenohumeral"
+  ],
+  "Close-packed position": [
+   "/ˈkloʊs ˌpækt pəˈzɪʃən/",
+   "KLOHS-pakt puh-ZISH-uhn",
+   "https://www.merriam-webster.com/dictionary/close"
+  ],
+  "Capsular pattern": [
+   "/ˈkæpsələr ˈpætərn/",
+   "KAP-suh-ler PAT-ern",
+   "https://www.merriam-webster.com/medical/capsular"
+  ],
+  "Sensitivity": [
+   "/ˌsɛnsəˈtɪvəti/",
+   "sen-suh-TIV-uh-tee",
+   "https://www.merriam-webster.com/dictionary/sensitivity"
+  ],
+  "Specificity": [
+   "/ˌspɛsəˈfɪsəti/",
+   "spes-uh-FIS-uh-tee",
+   "https://www.merriam-webster.com/dictionary/specificity"
+  ],
+  "Confidence interval": [
+   "/ˈkɑnfədəns ˈɪntərvəl/",
+   "KAHN-fuh-duhns IN-ter-vuhl",
+   "https://www.merriam-webster.com/dictionary/interval"
+  ],
+  "Superior angle": [
+   "/səˈpɪriər ˈæŋɡəl/",
+   "suh-PEER-ee-er ANG-guhl",
+   "https://www.merriam-webster.com/dictionary/superior"
+  ]
+ },
+ "sources": [
+  [
+   "https://zynj.shutcm.edu.cn/_upload/article/files/66/b4/b34a95604d04b0bf686251b2d317/368ea8b0-187c-48a7-a402-ffdf1e11bb99.pdf",
+   "GB/T 12346-2021 经穴名称与定位"
+  ],
+  [
+   "https://medbox.org/dl/627a4de115110145a1723f64",
+   "WHO Standard Acupuncture Point Locations (2008)"
+  ],
+  [
+   "https://www.gmzyjx.com/books/zjs/zjs-zjs3.1.4-6-0.0.3.3.14/",
+   "《针灸学》肩外俞"
+  ],
+  [
+   "https://www.gmzyjx.com/books/zjs/zjs-zjs3.1.4-6-0.0.3.3.15/",
+   "《针灸学》肩中俞"
+  ],
+  [
+   "https://www.gmzyjx.com/books/zjs/zjs-zjs3.1.9-12-0.0.2.3.15/",
+   "《针灸学》天髎"
+  ],
+  [
+   "https://www.gmzyjx.com/books/zjs/zjs-zjs3.1.1-3-0.1.2.3.14/",
+   "《针灸学》臂臑"
+  ],
+  [
+   "https://www.ncbi.nlm.nih.gov/books/NBK513324/",
+   "StatPearls: Teres minor"
+  ],
+  [
+   "https://www.ncbi.nlm.nih.gov/books/NBK557880/",
+   "StatPearls: Suprascapular nerve"
+  ],
+  [
+   "https://bess.ac.uk/download/1463/subacromial-shoulder-pain/30248/subacromial-shoulder-pain-2025-2.pdf",
+   "Pandey RA, Singh HP. BESS Patient Care Pathway: Subacromial Pain. Shoulder Elbow 2025;17(6):713-724"
+  ],
+  [
+   "https://www.boa.ac.uk/asset/CAD0336B-9051-48A7-9E4DF7072C5C7E47",
+   "BESS/BOA/RCS Commissioning Guide: Subacromial Shoulder Pain, 2014 (referral signals, primary care algorithm)"
+  ],
+  [
+   "https://www.aafp.org/pubs/afp/issues/2008/0215/p453.html",
+   "Burbank KM et al. Chronic shoulder pain: Part I. Evaluation and diagnosis. Am Fam Physician 2008;77(4):453-460"
+  ],
+  [
+   "https://journals.sagepub.com/doi/10.1177/1758573215576456",
+   "Kulkarni R et al. BESS/BOA Patient Care Pathways: Subacromial shoulder pain. Shoulder Elbow 2015;7(2):135-143"
+  ],
+  [
+   "https://bess.ac.uk/wp-content/uploads/2020/06/Glenohumeral-osteoarthritis.pdf",
+   "Thomas M et al. BESS/BOA Patient Care Pathways: Glenohumeral osteoarthritis. Shoulder Elbow 2016;8(3):203-214"
+  ],
+  [
+   "https://www.bmj.com/content/bmj/344/bmj.e787.full.pdf",
+   "Holmgren T et al. Effect of specific exercise strategy on need for surgery in subacromial impingement syndrome: RCT. BMJ 2012;344:e787"
+  ],
+  [
+   "https://teachmeanatomy.info/upper-limb/nerves/axillary-nerve/",
+   "TeachMeAnatomy. The axillary nerve (the badge area: skin over the inferior portion of the deltoid; a source of this week's chapter)"
+  ],
+  [
+   "https://pubmed.ncbi.nlm.nih.gov/41476428/",
+   "Hando BR et al. Dry Needling Plus Manual Therapy and Exercise for Subacromial Pain Syndrome: A Sham-Controlled Randomized Clinical Trial. JOSPT 2026;56(1):50–63 (results abstract, via the paper record checked 2026-10-06)"
+  ],
+  [
+   "https://www.rbf-bjpt.org.br/en-download-pdf-S1413355518307871",
+   "Hando BR et al. Study protocol. Braz J Phys Ther 2019;23:355–363. DOI 10.1016/j.bjpt.2018.10.010 (pp. 355, 358, 361 checked)"
+  ],
+  [
+   "https://teachmeanatomy.info/upper-limb/joints/shoulder/",
+   "TeachMeAnatomy. The shoulder (glenohumeral) joint"
+  ],
+  [
+   "https://www.kenhub.com/en/library/anatomy/the-shoulder-joint",
+   "Kenhub. Shoulder joint (a source of this week's chapter)"
+  ],
+  [
+   "https://radiopaedia.org/articles/1996",
+   "Radiopaedia. Rotator cuff interval"
+  ],
+  [
+   "https://doi.org/10.2522/ptj.20050391",
+   "Lin HT, Hsu AT et al. Determining the resting position of the glenohumeral joint in subjects who are healthy. Phys Ther 2007;87(12):1669-1682"
+  ],
+  [
+   "https://ard.bmj.com/content/59/1/44.full.pdf",
+   "Calis M et al. Diagnostic values of clinical diagnostic tests in subacromial impingement syndrome. Ann Rheum Dis 2000;59(1):44-47"
+  ],
+  [
+   "https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007427.pub2/information",
+   "Hanchard NCA et al. Physical tests for shoulder impingements and local lesions of bursa, tendon or labrum that may accompany impingement. Cochrane Database Syst Rev 2013;CD007427.pub2 (Table 1: descriptions of the Neer, Hawkins-Kennedy and Hertel tests)"
+  ],
+  [
+   "https://link.springer.com/article/10.1007/s11999-015-4392-9",
+   "Collin P et al. What is the best clinical test for assessment of the teres minor in massive rotator cuff tears? Clin Orthop Relat Res 2015;473(9):2959-2966"
+  ],
+  [
+   "https://iris.unito.it/handle/2318/136490",
+   "Castoldi F, Blonna D, Hertel R. External rotation lag sign revisited: accuracy for diagnosis of full thickness supraspinatus tear. J Shoulder Elbow Surg 2009;18(4):529-534 (abstract)"
+  ],
+  [
+   "https://www.academia.edu/118856437/The_Bear_Hug_Test_A_New_and_Sensitive_Test_for_Diagnosing_a_Subscapularis_Tear",
+   "Barth JR, Burkhart SS, De Beer JF. The bear-hug test: a new and sensitive test for diagnosing a subscapularis tear. Arthroscopy 2006;22(10):1076-1084"
+  ],
+  [
+   "https://www.physio-pedia.com/Scapulohumeral_Rhythm",
+   "Physiopedia. Scapulohumeral rhythm (the chapter's source for figure 12; the chapter cites Inman 1944 and Bagg & Forrest 1988)"
+  ]
+ ],
+ "chapters": [
+  {
+   "num": 1,
+   "id": "quiz-week1",
+   "content": "quiz",
+   "items": [
+    "本周新旧混合小测"
+   ],
+   "forms": [
+    "F-6"
+   ],
+   "title": [
+    "Week 1 quiz: the new and the old mixed",
+    "第 1 周小测：新旧混合"
+   ],
+   "toc": [
+    "Week 1 quiz",
+    "第 1 周小测"
+   ],
+   "goals": [
+    [
+     "Answer, without looking, questions that mix this week's new material with what you consolidated.",
+     "不看资料，回答把本周新内容和夯实内容混在一起的题目。"
+    ],
+    [
+     "Name the numbered landmarks and lettered ligaments, and link each one to its muscle, nerve, test or acupoint.",
+     "说出编号的骨性标志和字母标的韧带，并把每一个和对应的肌肉、神经、检查或穴位连起来。"
+    ],
+    [
+     "Read a test result or a trial result against its numbers: sensitivity, specificity and the confidence interval.",
+     "对照数字读懂检查结果和试验结果：敏感度、特异度和置信区间。"
+    ],
+    [
+     "Find, for every answer you missed, which day's pack to reread.",
+     "每道答错的题，都找到该回看哪一天的包。"
+    ]
+   ],
+   "terms": [
+    [
+     "Supraspinous fossa",
+     "冈上窝"
+    ],
+    [
+     "Spinoglenoid notch",
+     "冈盂切迹"
+    ],
+    [
+     "Suprascapular notch",
+     "肩胛上切迹"
+    ],
+    [
+     "Superior angle",
+     "上角"
+    ],
+    [
+     "Surgical neck",
+     "外科颈"
+    ],
+    [
+     "Quadrangular space",
+     "四边孔"
+    ],
+    [
+     "Intertubercular groove",
+     "结节间沟"
+    ],
+    [
+     "Axillary pouch",
+     "腋囊"
+    ],
+    [
+     "Rotator interval",
+     "肩袖间隙"
+    ],
+    [
+     "Coracoacromial ligament",
+     "喙肩韧带"
+    ],
+    [
+     "Inferior glenohumeral ligament",
+     "盂肱下韧带"
+    ],
+    [
+     "Belly-press test",
+     "腹压试验"
+    ],
+    [
+     "External rotation lag sign",
+     "外旋滞后征"
+    ],
+    [
+     "Close-packed position",
+     "紧张位"
+    ],
+    [
+     "Capsular pattern",
+     "关节囊模式"
+    ],
+    [
+     "Sensitivity",
+     "敏感度"
+    ],
+    [
+     "Specificity",
+     "特异度"
+    ],
+    [
+     "Confidence interval",
+     "置信区间"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "This quiz mixes the new material and the consolidation of the Monday to Friday packs with facts from this week's chapter. Say or write each answer before you open it. The day in brackets after each answer tells you which pack to reread; “chapter” means the rotator cuff chapter in the library.",
+     "zh": "这份小测把周一到周五各包的新内容、夯实内容和本周章节的事实混在一起。每道题先说出或写下答案，再展开对照。答案后括号里的日子告诉你回看哪一天的包；“章节”指知识库里的肩袖章节。"
+    },
+    {
+     "t": "h3",
+     "en": "Part 1 · Choose one answer",
+     "zh": "第 1 部分 · 单项选择"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Choose one: which nerve supplies teres minor? (a) suprascapular nerve (b) axillary nerve (c) lower subscapular nerve (d) long thoracic nerve",
+       "单选：小圆肌由哪条神经支配？（a）肩胛上神经（b）腋神经（c）下肩胛下神经（d）胸长神经",
+       "(b) The axillary nerve (mainly C5–C6), through its posterior branch. Infraspinatus, the other external rotator in the cuff, is supplied by the suprascapular nerve. (Monday; chapter)",
+       "（b）腋神经（主要为 C5–C6），经它的后支。肩袖里另一块外旋肌冈下肌由肩胛上神经支配。（周一；章节）"
+      ],
+      [
+       "Choose one: with the hand on the belly and the arm turned fully in, the patient cannot hold the position and the elbow drops back behind the trunk. Which muscle does this point to? (a) supraspinatus (b) infraspinatus (c) teres minor (d) subscapularis",
+       "单选：手放在腹部、手臂充分内旋，病人保持不住，肘部向后落到躯干后方。这提示哪块肌肉？（a）冈上肌（b）冈下肌（c）小圆肌（d）肩胛下肌",
+       "(d) Subscapularis: a positive belly-press test. In Barth 2006, with arthroscopy as the reference, the test was 40% sensitive and 97.9% specific. Barth also counted weakness against the other side, or pressing by extending the elbow or shoulder, as positive, so these numbers are not for the elbow drop alone. Still, a positive result says much more than a negative one, which does not rule a tear out. (Friday)",
+       "（d）肩胛下肌：腹压试验阳性。Barth 2006 以关节镜为参考标准，敏感度 40%，特异度 97.9%；Barth 的阳性标准还包括与对侧相比无力，或靠伸肘、伸肩按压腹部，所以这组数字不是只按“肘部后落”判读的。阳性结果的分量仍远大于阴性结果，阴性不能排除撕裂。（周五）"
+      ],
+      [
+       "Choose one: Calis 2000 found the Hawkins-Kennedy test 92.1% sensitive and 25.0% specific. Which statement is right? (a) A positive result confirms subacromial pain. (b) A negative result lowers the probability somewhat but does not rule it out. (c) The result means nothing either way. (d) A specificity of 25% means that a quarter of positive results are true.",
+       "单选：Calis 2000 发现 Hawkins-Kennedy 试验敏感度 92.1%、特异度 25.0%。哪一句对？（a）阳性结果可以确诊肩峰下疼痛。（b）阴性结果能让可能性降低一些，但不能排除。（c）结果无论阴阳都没有意义。（d）特异度 25% 表示四分之一的阳性结果是真的。",
+       "(b). High sensitivity means few people with the condition test negative, so a negative result lowers the probability; but in the same study 44% of the shoulders with a negative Hawkins test still had a positive injection test. Low specificity means many people without the condition test positive, so a positive result adds little. Option (d) confuses specificity with the share of positive results that are true. (Friday)",
+       "（b）。敏感度高，说明有病的人很少测成阴性，所以阴性结果能降低可能性；但同一研究里，Hawkins 阴性的肩膀仍有 44% 注射试验阳性。特异度低，说明没病的人很多也测成阳性，所以阳性结果帮助不大。（d）把特异度和“阳性结果中真阳性所占的比例”混为一谈。（周五）"
+      ],
+      [
+       "Choose one: passive external rotation with the arm by the side is as limited as active external rotation. Which pair should come to mind first? (a) subacromial pain syndrome and supraspinatus tendinopathy (b) frozen shoulder and glenohumeral osteoarthritis (c) a full-thickness cuff tear and suprascapular nerve compression (d) acromioclavicular joint pain and pain from the neck",
+       "单选：手臂垂在体侧时，被动外旋和主动外旋一样受限。首先应该想到哪一组？（a）肩峰下疼痛综合征和冈上肌腱病（b）冻结肩和盂肱关节骨关节炎（c）肩袖全层撕裂和肩胛上神经卡压（d）肩锁关节疼痛和颈部来源的疼痛",
+       "(b). Plain X-rays are essential to confirm osteoarthritis; in frozen shoulder they should be normal. Subacromial pain usually comes with full passive range, and in rotator cuff pathology active range is often lost while passive range is relatively preserved. (Tuesday)",
+       "（b）。确认骨关节炎必须拍 X 线平片；冻结肩的 X 线应当正常。肩峰下疼痛通常被动活动度完整；肩袖病变常常是主动活动度丢失，而被动活动度相对保留。（周二）"
+      ],
+      [
+       "Choose one: in Hando 2026, the 1-year SPADI difference for PT plus dry needling against PT alone was −7.51 (95% CI −16.57 to 1.54). The best reading is: (a) dry needling works (b) dry needling does not work (c) no statistically significant difference was shown, and the interval still includes differences that favour dry needling (d) the two treatments are equivalent",
+       "单选：Hando 2026 中，1 年时 PT 加干针与单纯 PT 的 SPADI 差值是 −7.51（95% CI −16.57 至 1.54）。最恰当的解读是：（a）干针有效（b）干针无效（c）没有显示出统计学显著差异，而区间里仍包含有利于干针的差值（d）两种治疗等效",
+       "(c). The interval includes 0, so no statistically significant difference was shown; it also includes differences that favour dry needling. It neither proves that there is no effect nor establishes equivalence. (Thursday)",
+       "（c）。区间包含 0，所以没有显示出统计学显著差异；区间里也包含有利于干针的差值。它既不能证明没有效果，也不能确立等效。（周四）"
+      ],
+      [
+       "Choose one: the close-packed position of the glenohumeral joint is (a) about 40–50° of abduction with about 30° of horizontal adduction (b) abduction with external rotation (c) adduction with internal rotation (d) full flexion",
+       "单选：盂肱关节的紧张位是（a）外展约 40–50°，加水平内收约 30°（b）外展加外旋（c）内收加内旋（d）完全屈曲",
+       "(b) Abduction with external rotation. Option (a) is the loose-packed (resting) position as Kenhub gives it; Lin 2007 found different means depending on the method. (Thursday)",
+       "（b）外展加外旋。（a）是 Kenhub 给出的松弛位（休息位）；Lin 2007 按测量方法不同，得到不同的平均值。（周四）"
+      ],
+      [
+       "Choose one: using the chapter's 2:1 teaching approximation, how much of 90° of arm elevation happens at the glenohumeral joint? (a) 30° (b) 45° (c) 60° (d) 90°",
+       "单选：按章节里 2∶1 这个教学概括，手臂上举 90° 中有多少发生在盂肱关节？（a）30°（b）45°（c）60°（d）90°",
+       "(c) About 60° glenohumeral and 30° scapular. The chapter calls 2:1 a teaching approximation, not a fixed ratio at every angle: scapular motion varies with the task, the plane of elevation and the individual. (Friday; chapter)",
+       "（c）约盂肱 60°、肩胛 30°。章节说明 2∶1 只是教学概括，并不是每个角度都恒定不变的比例：肩胛骨运动会随任务、上举平面与个体而变化。（周五；章节）"
+      ],
+      [
+       "Choose one: LI14 Binao belongs to which meridian, and which border marks it? (a) hand yangming large intestine; the anterior border of the deltoid near its lower end (b) hand taiyang small intestine; the posterior border of the deltoid (c) hand shaoyang triple energizer; the lateral border of biceps brachii (d) hand yangming large intestine; the lateral head of triceps",
+       "单选：臂臑（LI14）属于哪条经脉？以哪条边缘为标志？（a）手阳明大肠经；三角肌下端前缘（b）手太阳小肠经；三角肌后缘（c）手少阳三焦经；肱二头肌外侧缘（d）手阳明大肠经；肱三头肌外侧头",
+       "(a). It lies on the line from LI11 to LI15, at the anterior border of the deltoid near its lower end, 7 cun above LI11 (WHO 2008; textbook). Resisted abduction makes that border stand out. (Monday)",
+       "（a）。它在曲池（LI11）与肩髃（LI15）的连线上、三角肌下端前缘处，曲池上 7 寸（WHO 2008；教材）。手臂抗阻外展时，这条边缘会鼓起来。（周一）"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Part 2 · Fill in the blanks",
+     "zh": "第 2 部分 · 填空"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Fill in: the supraspinatus originates from the ______ fossa of the scapula, passes laterally beneath the ______ as a tendon, and inserts onto the ______ facet of the greater tubercle of the humerus.",
+       "填空：冈上肌起自肩胛骨 ______ 窝，以肌腱向外侧经 ______ 下方走行，止于肱骨大结节 ______ 小面。",
+       "Supraspinous; acromion; superior. (Monday; chapter)",
+       "冈上；肩峰；上。（周一；章节）"
+      ],
+      [
+       "Fill in: SI14 Jianwaishu lies below the spinous process of the ______ thoracic vertebra, ______ cun lateral to the posterior midline; SI15 Jianzhongshu lies below the spinous process of the ______ cervical vertebra, ______ cun lateral to it (GB/T 12346-2021).",
+       "填空：肩外俞在第 ______ 胸椎棘突下，后正中线旁开 ______ 寸；肩中俞在第 ______ 颈椎棘突下，旁开 ______ 寸（GB/T 12346-2021）。",
+       "First (T1), 3; seventh (C7), 2. C7 is the most prominent spinous process when the head is bent forward; T1 is the next one down. (Monday)",
+       "1，3；7，2。低头时最突出的棘突是 C7，往下一个就是 T1。（周一）"
+      ],
+      [
+       "Fill in: external rotation lag sign. The elbow is bent to ______°, the shoulder is raised ______° in the scapular plane and turned out to ______° short of full external rotation. The examiner lets go of the ______ but keeps supporting the elbow; the sign is positive if the forearm drifts back inward.",
+       "填空：外旋滞后征。肘屈 ______°，肩在肩胛平面抬起 ______°，外旋到比最大外旋少 ______° 的位置。检查者松开 ______，但仍托住肘部；前臂向内回落为阳性。",
+       "90; 20; 5; wrist. The 5° allows for the elastic recoil of the tissues (Collin 2015). (Friday)",
+       "90；20；5；手腕。少留 5° 是为了抵消组织的弹性回弹（Collin 2015）。（周五）"
+      ],
+      [
+       "Fill in: the exercise rule from Holmgren 2012, used in Wednesday's plan: pain while exercising may reach ______ on a 0–10 scale and must settle back to its usual level before ______; otherwise the load is lowered.",
+       "填空：Holmgren 2012 的运动规则（周三的方案也用它）：运动时疼痛最多到 0–10 分的 ______ 分，并且要在 ______ 之前回到平时的水平；否则就降低负荷。",
+       "5; the next session. Other sources set the limit differently. (Tuesday; Wednesday)",
+       "5；下一次训练。其他来源设定的上限不同。（周二；周三）"
+      ],
+      [
+       "Fill in: the axillary nerve passes through the ______ space with the posterior circumflex humeral artery, winds around the ______ neck of the humerus deep to the deltoid, supplies the deltoid and ______, and its sensation is tested over the ______ area.",
+       "填空：腋神经与旋肱后动脉一起穿过 ______ 孔，在三角肌深面绕过肱骨 ______ 颈，支配三角肌和 ______，感觉检查看 ______ 区。",
+       "Quadrangular; surgical; teres minor; regimental badge (the skin over the lower part of the deltoid). (Wednesday; chapter)",
+       "四边；外科；小圆肌；徽章（三角肌下部表面的皮肤）。（周三；章节）"
+      ],
+      [
+       "Fill in: the capsular pattern of the shoulder, from most to least limited: ______ > ______ > ______ > flexion.",
+       "填空：肩关节的关节囊模式，按受限程度从多到少：______ > ______ > ______ > 屈。",
+       "External rotation > abduction > internal rotation > flexion. Link it to the frozen shoulder row of Tuesday's pathway. (Thursday)",
+       "外旋 > 外展 > 内旋 > 屈。可以联系周二流程里冻结肩那一行。（周四）"
+      ],
+      [
+       "Fill in: in the scapular upward-rotation couple, the upper and lower trapezius (both supplied by the ______ nerve) work with the lower part of ______, which pulls the inferior angle laterally and anteriorly and is supplied by the ______ nerve.",
+       "填空：肩胛骨上旋力偶中，上斜方肌和下斜方肌（都由 ______ 神经支配）与 ______ 下部协同；后者由 ______ 神经支配，把肩胛下角向外、向前拉。",
+       "Accessory (cranial nerve XI); serratus anterior; long thoracic. (Friday; chapter)",
+       "副（第十一对脑神经）；前锯肌；胸长。（周五；章节）"
+      ],
+      [
+       "Fill in: Hando 2026 compared PT plus dry needling with two control groups, PT alone and PT plus ______ dry needling. The comparison with PT alone estimates the ______ effect of including dry needling in the programme.",
+       "填空：Hando 2026 把 PT 加干针与两个对照组比较：单纯 PT，以及 PT 加 ______ 干针。与单纯 PT 的比较估计在治疗方案中加入干针的 ______ 效果。",
+       "Sham; added. The sham comparison also accounts for aspects of receiving a needling procedure, so the two comparisons answer different questions. (Thursday)",
+       "假；额外。与假干针的比较还考虑了接受针刺程序所涉及的部分因素，所以两项比较回答的问题不同。（周四）"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Part 3 · Label the figures",
+     "zh": "第 3 部分 · 看图标注"
+    },
+    {
+     "t": "fig",
+     "n": "01",
+     "en": "Self-test: Tuesday's lettered figure of the right scapula and humerus, renumbered 1 to 14. A few of Tuesday's landmarks are left out, and number 6, the superior angle (Monday, TE15), is new. Posterior view on the left, anterior view on the right; the humerus is drawn a little away from the scapula.",
+     "zh": "自测：周二那张用字母标注的右侧肩胛骨与肱骨图，改用编号 1 到 14；去掉了周二的几个标志，6 号上角（周一天髎）是新加的。左边后面观，右边前面观；肱骨画得离肩胛骨稍远。"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Label: name structures 1 to 14 in figure 01.",
+       "看图标注：说出图 01 中 1 到 14 各是什么结构。",
+       "1 acromion · 2 supraspinous fossa · 3 infraspinous fossa · 4 spinoglenoid notch · 5 suprascapular notch · 6 superior angle · 7 lateral border of the scapula · 8 inferior angle · 9 greater tubercle · 10 surgical neck · 11 coracoid process · 12 subscapular fossa · 13 lesser tubercle · 14 intertubercular groove. (Tuesday; 6, the superior angle: Monday)",
+       "1 肩峰 · 2 冈上窝 · 3 冈下窝 · 4 冈盂切迹 · 5 肩胛上切迹 · 6 上角 · 7 肩胛骨外侧缘 · 8 下角 · 9 大结节 · 10 外科颈 · 11 喙突 · 12 肩胛下窝 · 13 小结节 · 14 结节间沟。（周二；6 号上角：周一）"
+      ],
+      [
+       "Figure 01: give the numbers for the origin and the insertion of supraspinatus, and for the bony roof its tendon passes under. Which two tests from Friday are aimed at this muscle?",
+       "图 01：冈上肌的起点、止点各是几号？它的肌腱从几号结构下方经过？周五的哪两项检查针对这块肌肉？",
+       "Origin 2 (supraspinous fossa), insertion 9 (the superior facet of the greater tubercle), roof 1 (acromion). The empty can and full can tests. (Monday; Tuesday; Friday)",
+       "起点 2（冈上窝），止点 9（大结节上小面），从 1（肩峰）下方经过。空罐试验和满罐试验。（周一；周二；周五）"
+      ],
+      [
+       "Figure 01: the suprascapular nerve passes 5 and then 4. Compression at which number spares supraspinatus, and which muscle wastes then?",
+       "图 01：肩胛上神经先经过 5 号，再经过 4 号。在几号受压时冈上肌不受影响？这时哪块肌肉萎缩？",
+       "4, the spinoglenoid notch: the nerve has already supplied supraspinatus, so only infraspinatus wastes. Compression at 5, the suprascapular notch, can affect both muscles. (Tuesday; Wednesday; chapter)",
+       "4 号冈盂切迹：神经在此之前已经支配了冈上肌，所以只有冈下肌萎缩。在 5 号肩胛上切迹受压，两块肌肉都可能受累。（周二；周三；章节）"
+      ],
+      [
+       "Figure 01: which number does the axillary nerve wind around, and which number is the origin of the muscle that forms the lower border of the space the nerve passes through?",
+       "图 01：腋神经绕过几号结构？它穿过的那个孔，下界由一块肌肉构成；这块肌肉起自几号？",
+       "10, the surgical neck, which is also the lateral border of the quadrangular space. 8, the inferior angle: teres major originates from its posterior surface and forms the lower border of the space. (Tuesday; Wednesday; chapter)",
+       "10 号外科颈，它也是四边孔的外侧界。8 号下角：大圆肌起自下角后面，构成四边孔的下界。（周二；周三；章节）"
+      ],
+      [
+       "Figure 01: subscapularis runs from which number to which? Which test from Friday checks it, and what movement does the muscle produce?",
+       "图 01：肩胛下肌从几号走到几号？周五哪项检查查它？这块肌肉产生什么运动？",
+       "From 12 (subscapular fossa) to 13 (lesser tubercle), passing in front of the glenohumeral joint. The belly-press test; it internally rotates the humerus. (Monday; Friday; chapter)",
+       "从 12（肩胛下窝）到 13（小结节），经盂肱关节前方。腹压试验；它使肱骨内旋。（周一；周五；章节）"
+      ],
+      [
+       "Figure 01: TE15 Tianliao lies in the depression at which number? Which muscle lies deep to trapezius there, and which meridian does the point belong to?",
+       "图 01：天髎（TE15）在几号结构处的凹陷中？那里斜方肌深面是哪块肌肉？这个穴位属于哪条经？",
+       "6, the superior angle of the scapula (GB/T 12346-2021: in the depression at the superior angle of the scapula). Supraspinatus lies deep to trapezius; the point belongs to the hand shaoyang triple energizer meridian. (Monday)",
+       "6 号肩胛骨上角（GB/T 12346-2021：肩胛骨上角骨际凹陷中）。斜方肌深面是冈上肌；穴位属手少阳三焦经。（周一）"
+      ]
+     ]
+    },
+    {
+     "t": "fig",
+     "n": "02",
+     "en": "Self-test: Thursday's lettered view into the right glenoid from the side (its figure 03), humerus removed. Front of the body on the right, top of the shoulder at the top.",
+     "zh": "自测：周四那张用字母标注、从外侧看进右侧关节盂的图（周四图 03，肱骨已移除）。身体前方在右边，肩顶在上方。"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Figure 02: which letter is the weakest part of the capsule, and what happens to it with the arm by the side and in abduction?",
+       "图 02：哪个字母是关节囊最薄弱的部分？手臂垂在体侧和外展时，它各是什么状态？",
+       "D, the axillary pouch (inferior capsule). With the arm by the side it is slack and forms a fold; in abduction it is stretched. No cuff tendon lies below it. (Thursday)",
+       "D，腋囊（关节囊下部）。手臂垂在体侧时松弛，形成皱襞；外展时被拉紧。它下方没有肩袖肌腱。（周四）"
+      ],
+      [
+       "Figure 02: letters C and E are the two bands of one ligament. Name it, and say which rotation each band limits.",
+       "图 02：C 和 E 是同一条韧带的两束。说出韧带名称，以及每一束限制哪个方向的旋转。",
+       "The inferior glenohumeral ligament, the strongest of the three and the main stabiliser of the abducted shoulder. C, the anterior band, limits external rotation; E, the posterior band, limits internal rotation. (Thursday)",
+       "盂肱下韧带，三条盂肱韧带中最强，是外展位肩关节的主要稳定结构。C 前束限制外旋；E 后束限制内旋。（周四）"
+      ],
+      [
+       "Figure 02: which lettered ligament does not cross the joint, and what does it form instead?",
+       "图 02：哪个字母标的韧带不跨过关节？它形成什么？",
+       "G, the coracoacromial ligament. It joins two parts of the scapula, the coracoid process and the acromion, and forms a roof over the joint. (Thursday)",
+       "G，喙肩韧带。它连接肩胛骨的两个部分，喙突和肩峰，在关节上方形成一个顶。（周四）"
+      ],
+      [
+       "Figure 02: which letter is the gap between the supraspinatus and subscapularis tendons? Which two lettered structures lie inside it, and which lettered ligament reinforces its roof?",
+       "图 02：哪个字母是冈上肌腱和肩胛下肌腱之间的间隙？里面有哪两个字母标的结构？哪个字母标的韧带加强它的顶？",
+       "K, the rotator interval. It contains H, the long head of biceps tendon, and A, the superior glenohumeral ligament; its roof is reinforced by F, the coracohumeral ligament. (Thursday)",
+       "K，肩袖间隙。里面有 H 肱二头肌长头腱和 A 盂肱上韧带，顶由 F 喙肱韧带加强。（周四）"
+      ]
+     ]
+    },
+    {
+     "t": "h3",
+     "en": "Part 4 · One patient, the whole week",
+     "zh": "第 4 部分 · 一个病人串起一周"
+    },
+    {
+     "t": "p",
+     "en": "Wednesday's teaching case: Ms Grant, 48, stacks supermarket shelves. Her right shoulder pain came on gradually three weeks ago, after a week of restocking high shelves; there was no fall or injury. She has a painful arc between about 70° and 100° and full, pain-free passive range. Resisted abduction and external rotation are painful but as strong as on the left. There is no external rotation lag sign, and deltoid strength and badge-area sensation are normal.",
+     "zh": "周三的教学案例：Grant 女士，48 岁，在超市理货。补了一周高层货架之后，右肩慢慢开始痛，已经三周，没有摔倒或外伤。约 70° 到 100° 之间有疼痛弧，被动活动度完整、不痛。抗阻外展和抗阻外旋会痛，但力量与左侧相同。外旋滞后征阴性，三角肌力量和徽章区感觉正常。"
+    },
+    {
+     "t": "quiz",
+     "items": [
+      [
+       "Her external rotation lag sign is negative. Castoldi 2009 found the sign 56% sensitive and 98% specific for an isolated full-thickness supraspinatus tear. How much does the negative result reassure you on its own, and what makes a full-thickness tear unlikely in her case?",
+       "她的外旋滞后征阴性。Castoldi 2009 发现这项体征对单纯冈上肌全层撕裂的敏感度 56%、特异度 98%。单凭这个阴性结果能让你放心多少？她的哪些表现让全层撕裂不太可能？",
+       "Not much on its own: with 56% sensitivity, nearly half of the people who have such a tear still test negative. What argues against a full-thickness tear is the whole picture: normal strength on resisted testing, no lag sign and no sudden loss of active elevation. (Wednesday; Friday)",
+       "单凭它放心不了多少：敏感度 56%，有这种撕裂的人将近一半仍测成阴性。让全层撕裂不太可能的是整体表现：抗阻测试力量正常、没有滞后征、没有突然失去主动上举能力。（周三；周五）"
+      ],
+      [
+       "Why can her care start without imaging, and which two findings would have needed same-day referral instead?",
+       "为什么她可以不做影像检查就开始治疗？哪两种表现则需要当天转诊？",
+       "Subacromial pain syndrome is a clinical diagnosis, no imaging is needed to start, and most symptoms respond within three months (BESS 2025). Same-day referral: an acutely painful, red, warm joint (possible infection), or trauma followed by loss of rotation and an abnormal shape (an unreduced dislocation) (BESS/BOA 2014). (Tuesday; Wednesday)",
+       "肩峰下疼痛综合征是临床诊断，开始治疗不需要影像，多数症状在三个月内好转（BESS 2025）。需要当天转诊的是：急性疼痛、红、热的关节（可能感染），或外伤后旋转丧失、外形异常（未复位的脱位）（BESS/BOA 2014）。（周二；周三）"
+      ]
+     ]
+    },
+    {
+     "t": "chapter_link"
+    }
+   ],
+   "take": [
+    "The week's pieces connect: each landmark carries a muscle, each muscle has a nerve and a test, and each test or trial has numbers that say how far to trust it. For every answer you missed, reread the day or the chapter named in brackets at the end of that answer.",
+    "本周的内容是连在一起的：每个骨性标志上附着肌肉，每块肌肉有它的神经和检查，每项检查或试验都有数字说明能信几分。哪道题答错，就回看答案后面写的那一天。"
+   ],
+   "bridge": [
+    "review-spaced",
+    "Next: which earlier cards are due today, and which come due next week. 下一章：今天有哪些旧卡到期，下周又有哪些。",
+    "02 Spaced review"
+   ]
+  },
+  {
+   "num": 2,
+   "id": "review-spaced",
+   "content": "review",
+   "items": [
+    "跨周间隔复习"
+   ],
+   "forms": [
+    "F-10"
+   ],
+   "title": [
+    "Spaced review across weeks",
+    "跨周间隔复习"
+   ],
+   "toc": [
+    "Spaced review",
+    "间隔复习"
+   ],
+   "goals": [
+    [
+     "Check which earlier cards fall due today on the 1, 3, 7, 14 and 30-day schedule.",
+     "查看按第 1、3、7、14、30 天的间隔，今天有哪些旧卡到期。"
+    ],
+    [
+     "Know which earlier cards come due next week, so the reviews fit around the new chapter.",
+     "知道下周哪几天有哪些旧卡到期，好把复习排进新一章的学习里。"
+    ]
+   ],
+   "terms": [
+    [
+     "Rotator cuff",
+     "肩袖"
+    ],
+    [
+     "Pectoralis major",
+     "胸大肌"
+    ],
+    [
+     "Pectoralis minor",
+     "胸小肌"
+    ],
+    [
+     "Subclavius",
+     "锁骨下肌"
+    ],
+    [
+     "Serratus anterior",
+     "前锯肌"
+    ],
+    [
+     "Trapezius",
+     "斜方肌"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Spaced review brings each card back 1, 3, 7, 14 and 30 days after the day it was first learned, and it runs across weeks. The cards are the acupoints and muscles of earlier packs; this week only Monday added new cards: SI14, SI15, TE15 and LI14.",
+     "zh": "间隔复习让每张卡在初次学习后第 1、3、7、14、30 天再出现，并且跨周进行。卡片是之前各包里的穴位和肌肉；本周只有周一加了新卡：肩外俞、肩中俞、天髎、臂臑。"
+    },
+    {
+     "t": "due_cards"
+    },
+    {
+     "t": "h3",
+     "en": "Earlier cards that come due next",
+     "zh": "接下来到期的旧卡"
+    },
+    {
+     "t": "html",
+     "html": "<div class=\"table-scroll\"><table class=\"summary-table\"><thead><tr><th>Date<span class=\"translation\" lang=\"zh-Hans\">日期</span></th><th>Cards<span class=\"translation\" lang=\"zh-Hans\">卡片</span></th><th>First learned<span class=\"translation\" lang=\"zh-Hans\">初学日期</span></th></tr></thead><tbody><tr><td>10-19</td><td><span lang=\"en\">4 acupoints: SI14, SI15, TE15, LI14 (day 7)</span><span class=\"translation\" lang=\"zh-Hans\">4 个穴位：肩外俞、肩中俞、天髎、臂臑（第 7 天）</span></td><td>10-12</td></tr><tr><td>10-20</td><td><span lang=\"en\">16 cards: 12 acupoints and the 4 rotator cuff muscles (day 14)</span><span class=\"translation\" lang=\"zh-Hans\">16 张：12 个穴位和肩袖四肌（第 14 天）</span></td><td>10-06</td></tr><tr><td>10-21</td><td><span lang=\"en\">9 cards: 6 lung meridian points from LU1 to LU6, pectoralis major, pectoralis minor, subclavius (day 14)</span><span class=\"translation\" lang=\"zh-Hans\">9 张：肺经中府到孔最 6 个穴位，胸大肌、胸小肌、锁骨下肌（第 14 天）</span></td><td>10-07</td></tr><tr><td>10-22</td><td><span lang=\"en\">8 cards: LU7 to LU11, LI1, serratus anterior, trapezius (day 14)</span><span class=\"translation\" lang=\"zh-Hans\">8 张：列缺到少商、商阳，前锯肌、斜方肌（第 14 天）</span></td><td>10-08</td></tr><tr><td>10-26</td><td><span lang=\"en\">The 4 acupoints from 10-12 again (day 14)</span><span class=\"translation\" lang=\"zh-Hans\">10-12 的 4 个穴位再次到期（第 14 天）</span></td><td>10-12</td></tr></tbody></table></div>",
+     "md": "| Date 日期 | Cards 卡片 | First learned 初学日期 |\n|---|---|---|\n| 10-19 | 4 acupoints: SI14, SI15, TE15, LI14 (day 7)<br>4 个穴位：肩外俞、肩中俞、天髎、臂臑（第 7 天） | 10-12 |\n| 10-20 | 16 cards: 12 acupoints and the 4 rotator cuff muscles (day 14)<br>16 张：12 个穴位和肩袖四肌（第 14 天） | 10-06 |\n| 10-21 | 9 cards: 6 lung meridian points from LU1 to LU6, pectoralis major, pectoralis minor, subclavius (day 14)<br>9 张：肺经中府到孔最 6 个穴位，胸大肌、胸小肌、锁骨下肌（第 14 天） | 10-07 |\n| 10-22 | 8 cards: LU7 to LU11, LI1, serratus anterior, trapezius (day 14)<br>8 张：列缺到少商、商阳，前锯肌、斜方肌（第 14 天） | 10-08 |\n| 10-26 | The 4 acupoints from 10-12 again (day 14)<br>10-12 的 4 个穴位再次到期（第 14 天） | 10-12 |\n"
+    },
+    {
+     "t": "p",
+     "en": "The review center keeps its own record: a card you have not answered there yet stays due until you answer it, and each answer sets the next date.",
+     "zh": "复习中心有自己的记录：还没在那里作答的卡会一直显示到期，直到你作答；每次作答都会定下下一次复习的日期。"
+    },
+    {
+     "t": "sources",
+     "end": true,
+     "note": "01 章每道题的答案都取自本周周一到周五的每日包和知识库肩袖章节，没有加入新事实；各包实际打开核对的来源列在各自页末，下面列出答案直接依据的主要来源。图 01 把周二的字母版骨性标志图改用编号（另加周一讲到的肩胛骨上角），图 02 就是周四图 03 的字母版关节盂外侧面观，画法都没有改动。02 章的到期日期按之前各包的复习卡片和第 1、3、7、14、30 天的间隔算出。"
+    }
+   ],
+   "take": [
+    "No earlier card falls due today. From Monday to Thursday next week, 37 earlier cards come due, on top of any cards that next week's packs add; this Monday's four acupoints (10-12) come back once more on 10-26.",
+    "今天没有到期的旧卡。下周一到周四共有 37 张旧卡到期，下周各包新学的卡另算；本周一（10-12）学的 4 个穴位在 10-26 还会再来一次。"
+   ]
+  }
+ ]
+}

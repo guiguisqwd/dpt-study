@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-17",
+  "out": "2026-10-17-第1周-本周小测与间隔复习",
+  "chapters": 2,
+  "figure_occurrences": 2,
+  "figures": [
+    "01",
+    "02"
+  ],
+  "model_links": [
+    "acromion",
+    "biceps-brachii",
+    "deltoid",
+    "greater-tubercle",
+    "humerus",
+    "infraspinatus",
+    "intertubercular-groove",
+    "lesser-tubercle",
+    "lower-trapezius",
+    "pectoralis-major",
+    "pectoralis-minor",
+    "scapula",
+    "serratus-anterior",
+    "subclavius",
+    "subscapularis",
+    "supraspinatus",
+    "teres-major",
+    "teres-minor",
+    "trapezius"
+  ],
+  "html_bytes": 149406
+}

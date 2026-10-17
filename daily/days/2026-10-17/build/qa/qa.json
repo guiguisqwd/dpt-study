@@ -1,0 +1,25 @@
+{
+  "file": "/home/claude/dpt-study/daily/days/2026-10-17/build/2026-10-17-第1周-本周小测与间隔复习.html",
+  "errors": [],
+  "overlaps": [],
+  "outside": [],
+  "chapters": [
+    "quiz-week1",
+    "review-spaced"
+  ],
+  "figures": 2,
+  "say_buttons": 24,
+  "terms_without_pron": [],
+  "mobile_scroll_width": 390,
+  "screenshots": [
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/top.png",
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/chapter-quiz-week1.png",
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/chapter-review-spaced.png",
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/mobile-top.png"
+  ],
+  "figure_shots": [
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/figure-01.png",
+    "/home/claude/dpt-study/daily/days/2026-10-17/build/qa/figure-02.png"
+  ],
+  "flashcards": 0
+}
