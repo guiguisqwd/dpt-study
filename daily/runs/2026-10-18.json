@@ -1,0 +1,196 @@
+{
+ "date": "2026-10-18",
+ "phases": {
+  "evening": {
+   "steps": {
+    "plan": {
+     "status": "done",
+     "at": "2026-10-18T01:08:46+00:00",
+     "evidence": {
+      "kind": "chapter_day",
+      "week": 2,
+      "chapter": "hip",
+      "entries": []
+     }
+    },
+    "author": {
+     "status": "done",
+     "at": "2026-10-18T01:08:46+00:00",
+     "evidence": {
+      "content": "daily/days/2026-10-18/content.json",
+      "figures": "daily/days/2026-10-18/figures.py",
+      "fingerprint": "a4528ad7c6bb23ee"
+     }
+    },
+    "figures": {
+     "status": "done",
+     "at": "2026-10-18T01:11:06+00:00",
+     "evidence": {
+      "svgs": []
+     }
+    },
+    "validate": {
+     "status": "done",
+     "at": "2026-10-18T01:11:06+00:00",
+     "evidence": "schema dpt-daily-pack/2: 0 problems"
+    },
+    "build": {
+     "status": "done",
+     "at": "2026-10-18T01:11:06+00:00",
+     "evidence": {
+      "date": "2026-10-18",
+      "out": "2026-10-18-第2周-章节日-髋关节",
+      "chapters": 1,
+      "figure_occurrences": 0,
+      "figures": [],
+      "model_links": [],
+      "html_bytes": 44841
+     }
+    },
+    "qa": {
+     "status": "done",
+     "at": "2026-10-18T01:11:08+00:00",
+     "evidence": {
+      "figures": 0,
+      "say_buttons": 12,
+      "mobile_scroll_width": 390,
+      "flashcards": 0,
+      "views": 3
+     }
+    },
+    "visual_review": {
+     "status": "done",
+     "at": "2026-10-18T01:11:21+00:00",
+     "evidence": {
+      "viewed": 3,
+      "notes": "Viewed all 3 screenshots after the last rebuild. Top and mobile: week 2 Sunday, chapter 髋关节 Hip joint, five-part line matches the chapter's five sections (anatomy, innervation, movement, clinical, review), study-plan blocks read correctly, nothing cut off. Chapter: two goals, 12 key terms with pronunciations taken from library/hip/pronunciation.json, chapter link, and the This week note now says plainly that Monday to Saturday are not in the plan yet. English before Chinese throughout.",
+      "fixed": [
+       "Key terms box was empty; added 12 core terms from the hip chapter's structure list, pronunciations from its pronunciation table",
+       "Study plan pointed to a week table that does not exist (week 2 days are not planned); it now says the days are not planned yet",
+       "This week note was Chinese-only and named an internal file; replaced with a bilingual sentence",
+       "Goal 2 promised what each day will add; replaced with naming the key structures aloud"
+      ]
+     }
+    },
+    "site": {
+     "status": "done",
+     "at": "2026-10-18T01:11:21+00:00",
+     "evidence": {
+      "entries": 10,
+      "learned_acupoints": 16,
+      "learned_muscles": 13,
+      "page": "site/public/daily/2026-10-18/index.html"
+     }
+    },
+    "cards": {
+     "status": "done",
+     "at": "2026-10-18T01:11:21+00:00",
+     "evidence": {
+      "cards": 37,
+      "acupoints": 28,
+      "muscles": 9,
+      "due_on_2026-10-18": 0
+     }
+    }
+   },
+   "started": "2026-10-18T01:08:46+00:00",
+   "fingerprint": "b352e8b7a4a81b70"
+  }
+ },
+ "history": [
+  {
+   "at": "2026-10-18T01:08:46+00:00",
+   "phase": "evening",
+   "step": "plan",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:46+00:00",
+   "phase": "evening",
+   "step": "author",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:46+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:46+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:46+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:51+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:08:51+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-18T01:11:06+00:00",
+   "phase": "evening",
+   "step": "figures",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:06+00:00",
+   "phase": "evening",
+   "step": "validate",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:06+00:00",
+   "phase": "evening",
+   "step": "build",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:08+00:00",
+   "phase": "evening",
+   "step": "qa",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:08+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "waiting"
+  },
+  {
+   "at": "2026-10-18T01:11:21+00:00",
+   "phase": "evening",
+   "step": "visual_review",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:21+00:00",
+   "phase": "evening",
+   "step": "site",
+   "status": "done"
+  },
+  {
+   "at": "2026-10-18T01:11:21+00:00",
+   "phase": "evening",
+   "step": "cards",
+   "status": "done"
+  }
+ ],
+ "kind": "chapter_day",
+ "week": 2,
+ "chapter": "hip",
+ "out": "2026-10-18-第2周-章节日-髋关节"
+}

@@ -2,6 +2,31 @@
  "schema": "dpt-daily-catalog/1",
  "entries": [
   {
+   "date": "2026-10-18",
+   "day": null,
+   "week": 2,
+   "chapter": "hip",
+   "kind": "chapter_day",
+   "out": "2026-10-18-第2周-章节日-髋关节",
+   "title": {
+    "zh": "本周章节：髋关节",
+    "en": "This week's chapter: Hip joint"
+   },
+   "acupoints": [],
+   "muscles": [],
+   "tags": {
+    "vertical": [
+     "解剖学"
+    ],
+    "horizontal": [
+     "每周章节"
+    ]
+   },
+   "figures": 0,
+   "path": "daily/2026-10-18/index.html",
+   "md": "daily/2026-10-18/2026-10-18-第2周-章节日-髋关节.md"
+  },
+  {
    "date": "2026-10-17",
    "day": null,
    "week": 1,

@@ -1,0 +1,133 @@
+{
+ "schema": "dpt-daily-pack/2",
+ "date": "2026-10-18",
+ "kind": "chapter_day",
+ "week": 2,
+ "chapter": "hip",
+ "chapter_name": "髋关节 Hip joint",
+ "slug_zh": "章节日-髋关节",
+ "title": {
+  "zh": "本周章节：髋关节",
+  "en": "This week's chapter: Hip joint"
+ },
+ "description": "DPT 基础 · 第 2 周章节日：先学完髋关节这一章，周一到周六每日推送补全。",
+ "today_line": "今天学完本周章节「髋关节」（五部分：解剖、神经、动作、临床解剖、复习）；周一到周六每天补新内容并夯实旧内容。",
+ "study_plan": [
+  [
+   "读章节",
+   "解剖 → 神经 → 动作 → 临床解剖 → 复习，五部分一次读完"
+  ],
+  [
+   "做章末自测",
+   "复习部分的问答先说再展开"
+  ],
+  [
+   "看本周安排",
+   "周一到周六每天的条目还没排进学习计划"
+  ]
+ ],
+ "tags": {
+  "vertical": [
+   "解剖学"
+  ],
+  "horizontal": [
+   "每周章节"
+  ]
+ },
+ "figures": {},
+ "sources": [],
+ "chapters": [
+  {
+   "num": 1,
+   "id": "chapter",
+   "title": [
+    "This week's chapter",
+    "本周章节"
+   ],
+   "toc": [
+    "Chapter",
+    "本周章节"
+   ],
+   "goals": [
+    [
+     "Read all five parts of the chapter and answer its review questions.",
+     "读完本章五部分，答完复习部分的问题。"
+    ],
+    [
+     "Name the chapter's key structures and say each English name aloud.",
+     "说出本章的关键结构，并把每个英文名读出来。"
+    ]
+   ],
+   "terms": [
+    [
+     "Hip joint",
+     "髋关节"
+    ],
+    [
+     "Acetabulum",
+     "髋臼"
+    ],
+    [
+     "Femoral head",
+     "股骨头"
+    ],
+    [
+     "Iliofemoral ligament",
+     "髂股韧带"
+    ],
+    [
+     "Greater trochanter",
+     "大转子"
+    ],
+    [
+     "Gluteus maximus",
+     "臀大肌"
+    ],
+    [
+     "Gluteus medius",
+     "臀中肌"
+    ],
+    [
+     "Psoas major",
+     "腰大肌"
+    ],
+    [
+     "Femoral nerve",
+     "股神经"
+    ],
+    [
+     "Obturator nerve",
+     "闭孔神经"
+    ],
+    [
+     "Superior gluteal nerve",
+     "臀上神经"
+    ],
+    [
+     "Sciatic nerve",
+     "坐骨神经"
+    ]
+   ],
+   "blocks": [
+    {
+     "t": "p",
+     "en": "Sunday is chapter day: the whole week builds on this one chapter.",
+     "zh": "周日是章节日：这一周的每日推送都围绕这一章。"
+    },
+    {
+     "t": "chapter_link"
+    },
+    {
+     "t": "h3",
+     "en": "This week",
+     "zh": "本周安排"
+    },
+    {
+     "t": "p",
+     "en": "The items for Monday to Saturday are not in the study plan yet.",
+     "zh": "周一到周六每天的条目还没排进学习计划。"
+    }
+   ]
+  }
+ ]
+}

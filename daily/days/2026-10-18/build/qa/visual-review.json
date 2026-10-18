@@ -1,0 +1,17 @@
+{
+ "reviewer": "claude",
+ "verdict": "pass",
+ "viewed": [
+  "top.png",
+  "chapter-chapter.png",
+  "mobile-top.png"
+ ],
+ "notes": "Viewed all 3 screenshots after the last rebuild. Top and mobile: week 2 Sunday, chapter 髋关节 Hip joint, five-part line matches the chapter's five sections (anatomy, innervation, movement, clinical, review), study-plan blocks read correctly, nothing cut off. Chapter: two goals, 12 key terms with pronunciations taken from library/hip/pronunciation.json, chapter link, and the This week note now says plainly that Monday to Saturday are not in the plan yet. English before Chinese throughout.",
+ "fixed": [
+  "Key terms box was empty; added 12 core terms from the hip chapter's structure list, pronunciations from its pronunciation table",
+  "Study plan pointed to a week table that does not exist (week 2 days are not planned); it now says the days are not planned yet",
+  "This week note was Chinese-only and named an internal file; replaced with a bilingual sentence",
+  "Goal 2 promised what each day will add; replaced with naming the key structures aloud"
+ ],
+ "page_sha": "8203360f140c69d9"
+}
