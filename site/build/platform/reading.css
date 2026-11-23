@@ -89,3 +89,12 @@ h3>.translation,h4>.translation{font-size:.8em;line-height:1.6}
 .method-terms dd{margin:4px 0 0}
 .pronunciation .chapter-number{font-family:Georgia,serif}
 @media print{.say{display:none}}
+
+/* Language switch: "EN" hides every Chinese element (lang="zh-Hans" / "zh-CN", incl. SVG labels); pinyin (zh-Latn) stays. */
+.lang-switch{display:inline-flex;margin:8px 14px 4px;border:1px solid var(--rule);border-radius:999px;background:#f4f2ea;padding:2px;align-self:flex-start}
+.lang-switch button{font:600 12px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;border:0;background:none;color:#5d655f;padding:4px 12px;border-radius:999px;cursor:pointer}
+.lang-switch button[aria-pressed=true]{background:var(--accent);color:#fff}
+html.en-only [lang="zh-Hans"],html.en-only [lang="zh-CN"]{display:none!important}
+@media(max-width:820px){.lang-switch{position:absolute;right:12px;top:6px;margin:0}html.en-only .figure-scroll:after{content:'Scroll sideways to see the whole figure'}}
+@media print{.lang-switch{display:none}}
+.en-only-inline{display:none}html.en-only .en-only-inline{display:inline}
