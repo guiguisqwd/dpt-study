@@ -42,6 +42,11 @@ def pair_spans(value, tag='span'):
     return en + zh
 
 
+def en_zh(en, zh):
+    """Short UI label: English, then " · 中文" in a Chinese-tagged span so the English-only view hides both."""
+    return f'{en}<span lang="zh-Hans"> · {zh}</span>'
+
+
 def pair_div(value):
     return '<div class="bilingual-pair">' + pair_spans(value, 'p') + '</div>'
 
@@ -61,6 +66,26 @@ def cell_html(cell):
 def cell_md(cell):
     text = cell if isinstance(cell, str) else '<br>'.join(v for v in [cell.get('en', ''), cell.get('zh', '')] if v)
     return text.replace('|', '\\|').replace('\n', ' ')
+
+
+CJK = re.compile(r'[\u3400-\u9fff\uff01-\uff5e]')
+
+
+def tag_svg_chinese(markup):
+    """Give every Chinese SVG label lang="zh-CN" so the English-only view can hide it.
+    Labels already tagged Chinese are left alone; "English · 中文" in one text run keeps its English part."""
+    def run(match):
+        open_tag, text, close = match.groups()
+        if 'lang="zh' in open_tag or not CJK.search(text): return match.group(0)
+        first = CJK.search(text).start()
+        cut = text.rfind('·', 0, first)
+        cut = cut if cut >= 0 and text[:cut].strip() else (0 if not text[:first].strip() else first)
+        while cut > 0 and text[cut - 1] == ' ': cut -= 1
+        if cut == 0:  # all Chinese (some source SVGs mislabel it lang="en")
+            tag = re.sub(r'\slang="[^"]*"', '', open_tag)
+            return tag[:-1] + ' lang="zh-CN">' + text + close
+        return open_tag + text[:cut] + '<tspan lang="zh-CN">' + text[cut:] + '</tspan>' + close
+    return re.sub(r'(<(?:text|tspan)\b[^>]*>)([^<]+)(</(?:text|tspan)>)', run, markup)
 
 
 class Chapter:
@@ -156,6 +181,7 @@ class Chapter:
                     break
             return raw
         markup = re.sub(r'<text\b[^>]*>.*?</text>', label, markup, flags=re.S)
+        markup = tag_svg_chinese(markup)
         attr = f' data-figure="{number.group(1)}"' if number else f' data-figure="{esc(diagram_id)}"'
         return re.sub(r'<svg\b', '<svg' + attr, markup, count=1)
 
@@ -275,7 +301,7 @@ def block_html(ch, b):
     if t == 'text':  # original standard block: heading + body + optional 3D terms
         out = f'<h3>{pair_spans(b["heading"])}</h3>' + pair_div(b['body'])
         for term in b.get('termIds', []):
-            out += f'<p class="model-link-row"><a href="{esc(ch.model_url(term))}" target="_blank" rel="noreferrer">Explore in 3D · 三维查看 ↗</a></p>'
+            out += f'<p class="model-link-row"><a href="{esc(ch.model_url(term))}" target="_blank" rel="noreferrer">{en_zh("Explore in 3D", "三维查看")} ↗</a></p>'
         return out
     if t == 'heading':
         anchor = f' id="{esc(b["id"])}"' if b.get('id') else ''
@@ -313,14 +339,14 @@ def block_html(ch, b):
         items = ''.join(f'<li><b>{pair_spans(i["heading"])}</b>{pair_div(i["text"])}</li>' for i in b['items'])
         return f'<ol class="palpation">{items}</ol>'
     if t == 'mnemonic':
-        return pair_div(b['text']) + f'<p class="mnemonic-original"><b><span lang="en">Chinese mnemonic</span> · <span lang="zh-Hans">中文口诀：</span></b><span lang="zh-Hans">{esc(b["original"])}</span></p>'
+        return pair_div(b['text']) + f'<p class="mnemonic-original"><b><span lang="en">Chinese mnemonic</span><span lang="zh-Hans"> · 中文口诀：</span></b><span lang="zh-Hans">{esc(b["original"])}</span></p>'
     if t == 'quiz': return ''.join(quiz_html(ch.review[i]) for i in b['ids'])
     if t == 'paper': return paper_html(ch, ch.papers[b['id']], b.get('open', True))
     if t == 'details':
         inner = ''.join(block_html(ch, x) for x in b['blocks'])
         return f'<details class="reference"{" open" if b.get("open") else ""}><summary>{pair_spans(b["summary"])}</summary>{inner}</details>'
     if t == 'sources':
-        label = f'<span lang="en">{inline(b["label"]["en"])}</span> · <span lang="zh-Hans">{inline(b["label"]["zh"])}</span>：' if b.get('label') else ''
+        label = f'<span lang="en">{inline(b["label"]["en"])}</span><span lang="zh-Hans"> · {inline(b["label"]["zh"])}：</span><span class="en-only-inline">: </span>' if b.get('label') else ''
         note = f' <span lang="en">{inline(b["note"]["en"])}</span> <span lang="zh-Hans">{inline(b["note"]["zh"])}</span>' if b.get('note') else ''
         return '<p class="source">' + label + ch.source_links(b['ids']) + note + '</p>'
     if t == 'nerveNotation': return block_html(ch, notation_note(ch))
@@ -334,7 +360,7 @@ def unique_sources(records):
 def record_sources(ch, records):
     """One "Sources" line under a table of records (landmarks, acupoints), so every row's evidence is visible."""
     ids = unique_sources(records)
-    return f'<p class="source"><span lang="en">Sources</span> · <span lang="zh-Hans">来源</span>：{ch.source_links(ids)}</p>' if ids else ''
+    return f'<p class="source"><span lang="en">Sources</span><span lang="zh-Hans"> · 来源：</span><span class="en-only-inline">: </span>{ch.source_links(ids)}</p>' if ids else ''
 
 
 def notation_note(ch):
@@ -348,14 +374,14 @@ def card_body(c, heading_tag):
     out += ''.join(pair_div(p) for p in c.get('paragraphs', []))
     if c.get('items'): out += '<ul>' + ''.join('<li>' + pair_spans(i) + '</li>' for i in c['items']) + '</ul>'
     if c.get('definitions'):
-        out += '<div class="level-key">' + ''.join(f'<div><b>{inline(d["en"])}</b><span class="translation">{inline(d["zh"])}</span></div>' for d in c['definitions']) + '</div>'
+        out += '<div class="level-key">' + ''.join(f'<div><b>{inline(d["en"])}</b><span class="translation" lang="zh-Hans">{inline(d["zh"])}</span></div>' for d in c['definitions']) + '</div>'
     return out
 
 
 def model_row(ch, record, source_label):
     parts = []
     if record.get('modelTermId'):
-        parts.append(f'<a href="{esc(ch.model_url(record["modelTermId"]))}" target="_blank" rel="noreferrer">Explore in 3D · 三维查看 ↗</a>')
+        parts.append(f'<a href="{esc(ch.model_url(record["modelTermId"]))}" target="_blank" rel="noreferrer">{en_zh("Explore in 3D", "三维查看")} ↗</a>')
     elif record.get('modelUnavailableReason'):
         parts.append(pair_spans(record['modelUnavailableReason']))
     ids = record.get('sources', [])
@@ -368,7 +394,7 @@ def model_row(ch, record, source_label):
 
 
 def muscle_facts(m, fields):
-    labels = {'origin': 'Origin · 起点', 'insertion': 'Insertion · 止点', 'innervation': 'Innervation · 神经支配'}
+    labels = {'origin': en_zh('Origin', '起点'), 'insertion': en_zh('Insertion', '止点'), 'innervation': en_zh('Innervation', '神经支配')}
     return '<dl class="attachment-facts">' + ''.join(f'<dt>{labels[k]}</dt><dd>{pair_spans(m[k])}</dd>' for k in fields) + '</dl>'
 
 
@@ -381,13 +407,13 @@ def muscle_card(ch, m):
            + (f' <small class="stress" lang="en">{esc(stress)}</small>' if stress else '') + '</div></div>')
     out += ''.join(f'<div class="attachment-diagram">{ch.svg(d)}</div>' for d in m['diagramIds'][:1])
     out += muscle_facts(m, ['origin', 'insertion', 'innervation']) + pair_div(m['course']) + pair_div(m['actions'])
-    return out + model_row(ch, m, 'Anatomy source · 解剖依据') + '</article>'
+    return out + model_row(ch, m, en_zh('Anatomy source', '解剖依据')) + '</article>'
 
 
 def muscle_compact(ch, m):
     out = f'<article class="note-card" id="muscle-{esc(m["id"])}"><h4>{pair_spans(m["name"])}</h4>'
     out += muscle_facts(m, ['origin', 'insertion', 'innervation']) + pair_div(m['course']) + pair_div(m['actions'])
-    return out + model_row(ch, m, 'Anatomy source · 解剖依据') + '</article>'
+    return out + model_row(ch, m, en_zh('Anatomy source', '解剖依据')) + '</article>'
 
 
 ACU_COLUMNS = [('location', {'en': 'Location', 'zh': '定位'}), ('howToFind', {'en': 'How to find', 'zh': '怎么找'}), ('layers', {'en': 'Layers: superficial → deep', 'zh': '层次：浅 → 深'}),
@@ -411,7 +437,7 @@ def acupoint_table(ch, ids):
 
 def quiz_html(q):
     out = (f'<details class="quiz"><summary><span class="question-pair">{pair_spans(q["question"])}</span>'
-           '<span class="quiz-toggle">Answer · 答案</span></summary>' + pair_div(q['answer']))
+           f'<span class="quiz-toggle">{en_zh("Answer", "答案")}</span></summary>' + pair_div(q['answer']))
     if q.get('mnemonic'): out += '<p class="mnemonic">' + pair_spans(q['mnemonic']) + '</p>'
     return out + '</details>'
 
@@ -543,8 +569,8 @@ def pronunciation_html(ch):
         rows += (f'<tr><th scope="row">{say_button(ch, term, "en-US")} <span lang="en">{esc(term)}</span>'
                  + (f'<span class="translation" lang="zh-Hans">{esc(names[term])}</span>' if names.get(term) else '')
                  + f'</th><td class="stress" lang="en">{stress_html}</td><td class="ipa">{esc(ipa)}</td>'
-                 f'<td><a href="{esc(url)}" target="_blank" rel="noreferrer">Dictionary · 词典</a>'
-                 + ('<br><small><span lang="en">Not confirmed in a dictionary</span> · <span lang="zh-Hans">未在词典中核实</span></small>' if term in ch.pron.get('unverified', []) else '')
+                 f'<td><a href="{esc(url)}" target="_blank" rel="noreferrer">{en_zh("Dictionary", "词典")}</a>'
+                 + ('<br><small><span lang="en">Not confirmed in a dictionary</span><span lang="zh-Hans"> · 未在词典中核实</span></small>' if term in ch.pron.get('unverified', []) else '')
                  + '</td></tr>')
     acu = {p['name']['en']: p for p in ch.content.get('acupoints', [])}
     pinyin_rows = ''
@@ -584,12 +610,28 @@ def pronunciation_md(ch):
 
 
 # ---------------------------------------------------------------------- page
+# Language switch (EN / 中英). HEAD_SCRIPT runs before paint so an English-only reader never sees Chinese flash;
+# the choice comes from ?lang=en|both, else the reader's last choice in localStorage.
+LANG_KEY = 'dpt-reading-lang'
+HEAD_SCRIPT = ('<script>(function(){var q=new URLSearchParams(location.search).get("lang"),s=null;'
+               f'try{{s=localStorage.getItem("{LANG_KEY}")}}catch(e){{}}'
+               'if((q==="en"||q==="both"?q:s)==="en")document.documentElement.classList.add("en-only")})()</script>')
+LANG_SWITCH = ('<div class="lang-switch" role="group" aria-label="Language · 语言">'
+               '<button type="button" data-lang="en" aria-pressed="false">EN</button>'
+               '<button type="button" data-lang="both" aria-pressed="true">中英</button></div>')
+
 SCRIPT = ('<script>const chapters=[...document.querySelectorAll(".chapter")];const links=[...document.querySelectorAll(".toc a")];let queued=false;'
           'function update(){const offset=innerWidth<=820?110:130;let current=chapters[0];for(const chapter of chapters){if(chapter.getBoundingClientRect().top<=offset)current=chapter;}'
           'for(const link of links){if(link.hash==="#"+current.id)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current");}queued=false;}'
           'addEventListener("scroll",()=>{if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});addEventListener("resize",update);update();'
           'const closed=[];addEventListener("beforeprint",()=>{for(const el of document.querySelectorAll("details:not([open])")){closed.push(el);el.open=true;}});'
           'addEventListener("afterprint",()=>{for(const el of closed)el.open=false;closed.length=0;});'
+          'const root=document.documentElement,fullTitle=document.title;'
+          'function setLang(en,save){root.classList.toggle("en-only",en);document.title=en?root.dataset.enTitle:fullTitle;'
+          'for(const b of document.querySelectorAll(".lang-switch button"))b.setAttribute("aria-pressed",String((b.dataset.lang==="en")===en));'
+          f'if(save){{try{{localStorage.setItem("{LANG_KEY}",en?"en":"both")}}catch(e){{}}const u=new URL(location.href);if(en)u.searchParams.set("lang","en");else u.searchParams.delete("lang");history.replaceState(null,"",u);}}update();}}'
+          'setLang(root.classList.contains("en-only"),false);'
+          'document.addEventListener("click",e=>{const b=e.target.closest(".lang-switch button");if(b)setLang(b.dataset.lang==="en",true);});'
           'document.addEventListener("click",e=>{const b=e.target.closest(".say");if(!b)return;if(b.dataset.audio){new Audio(b.dataset.audio).play();return;}'
           'if(!("speechSynthesis" in window))return;const u=new SpeechSynthesisUtterance(b.dataset.say);u.lang=b.dataset.lang||"en-US";u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u);});</script>')
 
@@ -613,10 +655,10 @@ def render_page(ch):
         nxt = sections[index] if index < len(sections) else None
         if nxt:
             label = nxt.get('navTitle') or nxt['title']
-            end = f'<div class="bridge"><a href="#{esc(section_anchor(nxt))}"><span lang="en">{esc(label["en"])}</span> · <span lang="zh-Hans">{esc(label["zh"])}</span> →</a></div>'
+            end = f'<div class="bridge"><a href="#{esc(section_anchor(nxt))}"><span lang="en">{esc(label["en"])}</span><span lang="zh-Hans"> · {esc(label["zh"])}</span> →</a></div>'
         else:
             first = sections[0].get('navTitle') or sections[0]['title']
-            end = f'<div class="end-note"><a href="#{esc(section_anchor(sections[0]))}"><span lang="en">{esc(first["en"])}</span> · <span lang="zh-Hans">{esc(first["zh"])}</span> ↑</a></div>'
+            end = f'<div class="end-note"><a href="#{esc(section_anchor(sections[0]))}"><span lang="en">{esc(first["en"])}</span><span lang="zh-Hans"> · {esc(first["zh"])}</span> ↑</a></div>'
         chapters_html.append(f'<section id="{esc(anchor)}" class="chapter" aria-labelledby="{esc(anchor)}-heading"><header class="chapter-head"><span class="chapter-number">{index:02d}</span><div>'
                              f'<h2 id="{esc(anchor)}-heading">{pair_spans(section["title"])}</h2></div></header>{intro}{body}{end}</section>')
         md = [f'## {index:02d} {section["title"]["en"]}｜{section["title"]["zh"]}']
@@ -626,12 +668,12 @@ def render_page(ch):
     pron_html, pron_md = pronunciation_html(ch), pronunciation_md(ch)
     nav = [(section_anchor(s), s.get('navTitle') or s['title'], f'{i:02d}') for i, s in enumerate(sections, 1)]
     if pron_html: nav.append(('pronunciation', PRON_HEADING, 'Aa'))
-    toc = ''.join(f'<a href="#{esc(a)}"><span>{n}</span><b class="toc-title">{esc(t["en"])}<small>{esc(t["zh"])}</small></b></a>' for a, t, n in nav)
+    toc = ''.join(f'<a href="#{esc(a)}"><span>{n}</span><b class="toc-title">{esc(t["en"])}<small lang="zh-Hans">{esc(t["zh"])}</small></b></a>' for a, t, n in nav)
     css = (PLATFORM / 'reading.css').read_text(encoding='utf-8')
     subtitle = page.get('subtitle', {})
     eyebrow = page.get('eyebrow', {})
     header = ('<header class="page-header">'
-              + (f'<div class="eyebrow"><span>{esc(eyebrow.get("en", ""))}</span><span>{esc(eyebrow.get("zh", ""))}</span></div>' if eyebrow else '')
+              + (f'<div class="eyebrow"><span lang="en">{esc(eyebrow.get("en", ""))}</span><span lang="zh-Hans">{esc(eyebrow.get("zh", ""))}</span></div>' if eyebrow else '')
               + f'<h1>{esc(title["en"])}<span lang="zh-Hans">{esc(title["zh"])}</span></h1>'
               + (f'<p class="subtitle">{pair_spans(subtitle)}</p>' if subtitle else '')
               + (f'<p class="orientation-line">{pair_spans(page["lead"])}</p>' if page.get('lead') else '') + '</header>')
@@ -640,10 +682,10 @@ def render_page(ch):
     description = esc(plain(page.get('description', manifest['summary'])['en']) + ' ' + plain(page.get('description', manifest['summary'])['zh']))
     first = section_anchor(sections[0])
     body = ''.join(chapters_html) + pron_html
-    document = ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-                f'<title>{esc(title["en"])} · {esc(title["zh"])}</title><meta name="description" content="{description}"><style>\n{css}\n</style></head><body>'
-                f'<a class="skip" href="#{esc(first)}">Skip to the chapters · 跳到正文</a><div class="layout"><aside class="sidebar"><a class="home-link" href="{esc(ch.model_base)}study.html">← Study home · 学习首页</a><div class="brand">{esc(title["en"])}<small>{esc(title["zh"])}</small></div>'
-                f'<div class="nav-label">Reading order · 阅读顺序</div><nav class="toc" aria-label="Chapters · 章节目录">{toc}</nav>{sidebar_note}</aside>'
+    document = (f'<!doctype html>\n<html lang="en" data-en-title="{esc(title["en"])}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+                f'<title>{esc(title["en"])} · {esc(title["zh"])}</title><meta name="description" content="{description}">{HEAD_SCRIPT}<style>\n{css}\n</style></head><body>'
+                f'<a class="skip" href="#{esc(first)}">Skip to the chapters<span lang="zh-Hans"> · 跳到正文</span></a><div class="layout"><aside class="sidebar"><a class="home-link" href="{esc(ch.model_base)}study.html">← Study home<span lang="zh-Hans"> · 学习首页</span></a>{LANG_SWITCH}<div class="brand">{esc(title["en"])}<small lang="zh-Hans">{esc(title["zh"])}</small></div>'
+                f'<div class="nav-label">Reading order<span lang="zh-Hans"> · 阅读顺序</span></div><nav class="toc" aria-label="Chapters · 章节目录">{toc}</nav>{sidebar_note}</aside>'
                 f'<main class="main">{header}{ch.link_text(body)}{footer}</main></div>{SCRIPT}</body></html>\n')
     md_head = f'# {title["en"]}｜{title["zh"]}'
     if subtitle: md_head += f'\n\n{md_inline_pair(subtitle)}'
