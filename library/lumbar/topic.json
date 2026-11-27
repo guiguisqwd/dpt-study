@@ -1,0 +1,1131 @@
+{
+  "schemaVersion": 1,
+  "id": "lumbar",
+  "title": {
+    "en": "Back and lumbar spine",
+    "zh": "背部与腰椎"
+  },
+  "summary": {
+    "en": "The lumbar spine and lower back: lumbar vertebrae, discs, facet joints and ligaments, the erector spinae, transversospinalis and segmental muscles, quadratus lumborum and psoas major, with nerves, movement, clinical anatomy and review.",
+    "zh": "腰椎与下背部：腰椎、椎间盘、关节突关节和韧带，竖脊肌、横突棘肌和节段小肌、腰方肌与腰大肌，以及神经、动作、临床解剖与复习。"
+  },
+  "region": {
+    "en": "Lower back and lumbosacral region",
+    "zh": "下背部与腰骶部"
+  },
+  "status": "draft",
+  "adapter": "standard",
+  "viewer": {
+    "enabled": true,
+    "defaultTerm": "vertebra-l4",
+    "terms": [
+      {
+        "id": "vertebra-t12",
+        "name": {
+          "en": "Vertebra T12",
+          "zh": "第 12 胸椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-t12",
+          "left": "skeleton-vertebra-t12"
+        }
+      },
+      {
+        "id": "vertebra-l1",
+        "name": {
+          "en": "Vertebra L1",
+          "zh": "第 1 腰椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-l1",
+          "left": "skeleton-vertebra-l1"
+        }
+      },
+      {
+        "id": "vertebra-l2",
+        "name": {
+          "en": "Vertebra L2",
+          "zh": "第 2 腰椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-l2",
+          "left": "skeleton-vertebra-l2"
+        }
+      },
+      {
+        "id": "vertebra-l3",
+        "name": {
+          "en": "Vertebra L3",
+          "zh": "第 3 腰椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-l3",
+          "left": "skeleton-vertebra-l3"
+        }
+      },
+      {
+        "id": "vertebra-l4",
+        "name": {
+          "en": "Vertebra L4",
+          "zh": "第 4 腰椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-l4",
+          "left": "skeleton-vertebra-l4"
+        }
+      },
+      {
+        "id": "vertebra-l5",
+        "name": {
+          "en": "Vertebra L5",
+          "zh": "第 5 腰椎"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-vertebra-l5",
+          "left": "skeleton-vertebra-l5"
+        }
+      },
+      {
+        "id": "sacrum",
+        "name": {
+          "en": "Sacrum",
+          "zh": "骶骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-sacrum",
+          "left": "skeleton-sacrum"
+        }
+      },
+      {
+        "id": "coccyx",
+        "name": {
+          "en": "Coccyx",
+          "zh": "尾骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-coccyx",
+          "left": "skeleton-coccyx"
+        }
+      },
+      {
+        "id": "hip-bone",
+        "name": {
+          "en": "Hip bone",
+          "zh": "髋骨"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-hip-bone-right",
+          "left": "skeleton-hip-bone-left"
+        }
+      },
+      {
+        "id": "twelfth-rib",
+        "name": {
+          "en": "Twelfth rib",
+          "zh": "第 12 肋"
+        },
+        "kind": "bone",
+        "structures": {
+          "right": "skeleton-twelfth-rib-right",
+          "left": "skeleton-twelfth-rib-left"
+        }
+      },
+      {
+        "id": "quadratus-lumborum",
+        "name": {
+          "en": "Quadratus lumborum",
+          "zh": "腰方肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "quadratus-lumborum-quadratus-lumborum-muscle-right",
+          "left": "quadratus-lumborum-quadratus-lumborum-muscle-left"
+        }
+      }
+    ],
+    "landmarks": []
+  },
+  "structures": [
+    {
+      "id": "iliocostalis-lumborum",
+      "kind": "muscle",
+      "name": {
+        "en": "Iliocostalis lumborum",
+        "zh": "腰髂肋肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "longissimus-thoracis",
+      "kind": "muscle",
+      "name": {
+        "en": "Longissimus thoracis",
+        "zh": "胸最长肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "spinalis-thoracis",
+      "kind": "muscle",
+      "name": {
+        "en": "Spinalis thoracis",
+        "zh": "胸棘肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "multifidus",
+      "kind": "muscle",
+      "name": {
+        "en": "Multifidus",
+        "zh": "多裂肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "lumbar multifidus"
+      ]
+    },
+    {
+      "id": "rotatores",
+      "kind": "muscle",
+      "name": {
+        "en": "Rotatores",
+        "zh": "回旋肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "interspinales",
+      "kind": "muscle",
+      "name": {
+        "en": "Interspinales",
+        "zh": "棘间肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "intertransversarii",
+      "kind": "muscle",
+      "name": {
+        "en": "Intertransversarii",
+        "zh": "横突间肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "quadratus-lumborum",
+      "kind": "muscle",
+      "name": {
+        "en": "Quadratus lumborum",
+        "zh": "腰方肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "quadratus-lumborum"
+    },
+    {
+      "id": "psoas-major",
+      "kind": "muscle",
+      "name": {
+        "en": "Psoas major",
+        "zh": "腰大肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "serratus-posterior-inferior",
+      "kind": "muscle",
+      "name": {
+        "en": "Serratus posterior inferior",
+        "zh": "下后锯肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "t12-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "T12 vertebra",
+        "zh": "第 12 胸椎"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "vertebra-t12"
+    },
+    {
+      "id": "l1-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "L1 vertebra",
+        "zh": "第 1 腰椎"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": "vertebra-l1"
+    },
+    {
+      "id": "l2-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "L2 vertebra",
+        "zh": "第 2 腰椎"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": "vertebra-l2"
+    },
+    {
+      "id": "l3-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "L3 vertebra",
+        "zh": "第 3 腰椎"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "vertebra-l3"
+    },
+    {
+      "id": "l4-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "L4 vertebra",
+        "zh": "第 4 腰椎"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": "vertebra-l4"
+    },
+    {
+      "id": "l5-vertebra",
+      "kind": "bone",
+      "name": {
+        "en": "L5 vertebra",
+        "zh": "第 5 腰椎"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": "vertebra-l5"
+    },
+    {
+      "id": "sacrum",
+      "kind": "bone",
+      "name": {
+        "en": "Sacrum",
+        "zh": "骶骨"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": "sacrum"
+    },
+    {
+      "id": "coccyx",
+      "kind": "bone",
+      "name": {
+        "en": "Coccyx",
+        "zh": "尾骨"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "coccyx"
+    },
+    {
+      "id": "hip-bone",
+      "kind": "bone",
+      "name": {
+        "en": "Hip bone",
+        "zh": "髋骨"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "hip-bone"
+    },
+    {
+      "id": "twelfth-rib",
+      "kind": "bone",
+      "name": {
+        "en": "Twelfth rib",
+        "zh": "第 12 肋"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": "twelfth-rib",
+      "aliases": [
+        "12th rib"
+      ]
+    },
+    {
+      "id": "vertebral-body",
+      "kind": "landmark",
+      "name": {
+        "en": "Vertebral body",
+        "zh": "椎体"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "pedicle",
+      "kind": "landmark",
+      "name": {
+        "en": "Pedicle",
+        "zh": "椎弓根"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lamina",
+      "kind": "landmark",
+      "name": {
+        "en": "Lamina",
+        "zh": "椎板"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "spinous-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Spinous process",
+        "zh": "棘突"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "transverse-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Transverse process",
+        "zh": "横突"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "superior-articular-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Superior articular process",
+        "zh": "上关节突"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "inferior-articular-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Inferior articular process",
+        "zh": "下关节突"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mammillary-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Mammillary process",
+        "zh": "乳突"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "accessory-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Accessory process",
+        "zh": "副突"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "pars-interarticularis",
+      "kind": "landmark",
+      "name": {
+        "en": "Pars interarticularis",
+        "zh": "椎弓峡部"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "vertebral-canal",
+      "kind": "landmark",
+      "name": {
+        "en": "Vertebral canal",
+        "zh": "椎管"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "intervertebral-foramen",
+      "kind": "landmark",
+      "name": {
+        "en": "Intervertebral foramen",
+        "zh": "椎间孔"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "iliac-crest",
+      "kind": "landmark",
+      "name": {
+        "en": "Iliac crest",
+        "zh": "髂嵴"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "posterior-superior-iliac-spine",
+      "kind": "landmark",
+      "name": {
+        "en": "Posterior superior iliac spine",
+        "zh": "髂后上棘"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "PSIS"
+      ]
+    },
+    {
+      "id": "sacral-promontory",
+      "kind": "landmark",
+      "name": {
+        "en": "Sacral promontory",
+        "zh": "骶骨岬"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "median-sacral-crest",
+      "kind": "landmark",
+      "name": {
+        "en": "Median sacral crest",
+        "zh": "骶正中嵴"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "posterior-sacral-foramina",
+      "kind": "landmark",
+      "name": {
+        "en": "Posterior sacral foramina",
+        "zh": "骶后孔"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "intervertebral-disc",
+      "kind": "joint",
+      "name": {
+        "en": "Intervertebral disc",
+        "zh": "椎间盘"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "annulus-fibrosus",
+      "kind": "joint",
+      "name": {
+        "en": "Annulus fibrosus",
+        "zh": "纤维环"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "nucleus-pulposus",
+      "kind": "joint",
+      "name": {
+        "en": "Nucleus pulposus",
+        "zh": "髓核"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "zygapophyseal-joint",
+      "kind": "joint",
+      "name": {
+        "en": "Zygapophyseal joint",
+        "zh": "关节突关节"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "facet joint"
+      ]
+    },
+    {
+      "id": "lumbosacral-joint",
+      "kind": "joint",
+      "name": {
+        "en": "Lumbosacral joint",
+        "zh": "腰骶关节"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "sacroiliac-joint",
+      "kind": "joint",
+      "name": {
+        "en": "Sacroiliac joint",
+        "zh": "骶髂关节"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "anterior-longitudinal-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Anterior longitudinal ligament",
+        "zh": "前纵韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "posterior-longitudinal-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Posterior longitudinal ligament",
+        "zh": "后纵韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "ligamentum-flavum",
+      "kind": "joint",
+      "name": {
+        "en": "Ligamentum flavum",
+        "zh": "黄韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "interspinous-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Interspinous ligament",
+        "zh": "棘间韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "supraspinous-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Supraspinous ligament",
+        "zh": "棘上韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "intertransverse-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Intertransverse ligament",
+        "zh": "横突间韧带"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "iliolumbar-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Iliolumbar ligament",
+        "zh": "髂腰韧带"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "conus-medullaris",
+      "kind": "nerve",
+      "name": {
+        "en": "Conus medullaris",
+        "zh": "脊髓圆锥"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "cauda-equina",
+      "kind": "nerve",
+      "name": {
+        "en": "Cauda equina",
+        "zh": "马尾"
+      },
+      "chapters": [
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lumbar-spinal-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Lumbar spinal nerve",
+        "zh": "腰神经"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "dorsal-root-ganglion",
+      "kind": "nerve",
+      "name": {
+        "en": "Dorsal root ganglion",
+        "zh": "背根神经节"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "dorsal-ramus",
+      "kind": "nerve",
+      "name": {
+        "en": "Dorsal ramus",
+        "zh": "后支"
+      },
+      "chapters": [
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "dorsal rami"
+      ]
+    },
+    {
+      "id": "ventral-ramus",
+      "kind": "nerve",
+      "name": {
+        "en": "Ventral ramus",
+        "zh": "前支"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "ventral rami"
+      ]
+    },
+    {
+      "id": "medial-branch",
+      "kind": "nerve",
+      "name": {
+        "en": "Medial branch",
+        "zh": "内侧支"
+      },
+      "chapters": [
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lateral-branch",
+      "kind": "nerve",
+      "name": {
+        "en": "Lateral branch",
+        "zh": "外侧支"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "sinuvertebral-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Sinuvertebral nerve",
+        "zh": "窦椎神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lumbar-plexus",
+      "kind": "nerve",
+      "name": {
+        "en": "Lumbar plexus",
+        "zh": "腰丛"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "superior-cluneal-nerves",
+      "kind": "nerve",
+      "name": {
+        "en": "Superior cluneal nerves",
+        "zh": "臀上皮神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "sciatic-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Sciatic nerve",
+        "zh": "坐骨神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "femoral-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Femoral nerve",
+        "zh": "股神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "gv4",
+      "kind": "acupoint",
+      "name": {
+        "en": "Mingmen",
+        "zh": "命门"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "GV4"
+      ]
+    },
+    {
+      "id": "gv3",
+      "kind": "acupoint",
+      "name": {
+        "en": "Yaoyangguan",
+        "zh": "腰阳关"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "GV3"
+      ]
+    },
+    {
+      "id": "bl23",
+      "kind": "acupoint",
+      "name": {
+        "en": "Shenshu",
+        "zh": "肾俞"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "BL23"
+      ]
+    },
+    {
+      "id": "bl24",
+      "kind": "acupoint",
+      "name": {
+        "en": "Qihaishu",
+        "zh": "气海俞"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "BL24"
+      ]
+    },
+    {
+      "id": "bl25",
+      "kind": "acupoint",
+      "name": {
+        "en": "Dachangshu",
+        "zh": "大肠俞"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "BL25"
+      ]
+    },
+    {
+      "id": "bl26",
+      "kind": "acupoint",
+      "name": {
+        "en": "Guanyuanshu",
+        "zh": "关元俞"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "BL26"
+      ]
+    },
+    {
+      "id": "bl52",
+      "kind": "acupoint",
+      "name": {
+        "en": "Zhishi",
+        "zh": "志室"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "BL52"
+      ]
+    },
+    {
+      "id": "ex-b2",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jiaji",
+        "zh": "夹脊"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "EX-B2"
+      ]
+    }
+  ]
+}

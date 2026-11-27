@@ -337,8 +337,171 @@
       "sunday": "2026-11-29",
       "chapter": "lumbar",
       "chapterName": "背部与腰椎 Back and lumbar spine",
-      "chapterStatus": "not-started",
-      "days": "按 weekTemplate 排；条目在本章 ST-1 结构清单定好后填写"
+      "chapterStatus": "draft",
+      "days": {
+        "2026-11-30": {
+          "new": [
+            {
+              "type": "N-1",
+              "items": [
+                "GV5 悬枢 · 督脉",
+                "BL22 三焦俞 · 足太阳膀胱经",
+                "BL51 肓门 · 足太阳膀胱经",
+                "EX-B7 腰眼 · 经外奇穴"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-1",
+              "items": [
+                "Iliocostalis lumborum",
+                "Longissimus thoracis",
+                "Multifidus",
+                "Quadratus lumborum"
+              ],
+              "forms": [
+                "F-6",
+                "F-7"
+              ]
+            }
+          ]
+        },
+        "2026-12-01": {
+          "new": [
+            {
+              "type": "N-2",
+              "items": [
+                "Lumbar radiculopathy 腰椎神经根病：检测到治疗"
+              ],
+              "forms": [
+                "F-2",
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-2",
+              "items": [
+                "Lumbar vertebra 腰椎骨性标志",
+                "Sacrum and pelvis 骶骨与骨盆标志"
+              ],
+              "forms": [
+                "F-6",
+                "F-9"
+              ]
+            }
+          ]
+        },
+        "2026-12-02": {
+          "new": [
+            {
+              "type": "N-4",
+              "items": [
+                "L4–L5 disc herniation with L5 radiculopathy 腰椎间盘突出致 L5 神经根病案例"
+              ],
+              "forms": [
+                "F-3",
+                "F-4"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-4",
+              "items": [
+                "Lumbar spinal nerve",
+                "Dorsal ramus"
+              ],
+              "forms": [
+                "F-8",
+                "F-11"
+              ]
+            }
+          ]
+        },
+        "2026-12-03": {
+          "new": [
+            {
+              "type": "N-5",
+              "items": [
+                "multifidi-dry-needling-cadaver"
+              ],
+              "forms": [
+                "F-5"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-3",
+              "items": [
+                "Intervertebral disc and zygapophyseal joint 椎间盘与关节突关节：韧带与运动"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            }
+          ]
+        },
+        "2026-12-04": {
+          "new": [
+            {
+              "type": "N-7",
+              "items": [
+                "Straight leg raise test",
+                "Crossed straight leg raise test",
+                "Slump test",
+                "Femoral nerve tension test",
+                "Prone instability test",
+                "Stork test"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-6",
+              "items": [
+                "Lumbopelvic rhythm 腰椎-骨盆节律",
+                "Feedforward activation 前馈激活"
+              ],
+              "forms": [
+                "F-12"
+              ]
+            }
+          ]
+        },
+        "2026-12-05": {
+          "new": [],
+          "consolidate": [
+            {
+              "type": "quiz",
+              "items": [
+                "本周新旧混合小测"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            },
+            {
+              "type": "review",
+              "items": [
+                "跨周间隔复习"
+              ],
+              "forms": [
+                "F-10"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "week": 9,

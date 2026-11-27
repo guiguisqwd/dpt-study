@@ -1,0 +1,663 @@
+{
+ "01": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "L1 vertebra",
+    "zh": "第 1 腰椎"
+   },
+   {
+    "en": "L2 vertebra",
+    "zh": "第 2 腰椎"
+   },
+   {
+    "en": "L3 vertebra",
+    "zh": "第 3 腰椎"
+   },
+   {
+    "en": "L4 vertebra",
+    "zh": "第 4 腰椎"
+   },
+   {
+    "en": "L5 vertebra",
+    "zh": "第 5 腰椎"
+   },
+   {
+    "en": "T12 vertebra",
+    "zh": "第 12 胸椎"
+   },
+   {
+    "en": "Twelfth rib",
+    "zh": "第 12 肋"
+   },
+   {
+    "en": "Spinous process",
+    "zh": "棘突"
+   },
+   {
+    "en": "Transverse process",
+    "zh": "横突"
+   },
+   {
+    "en": "Iliac crest",
+    "zh": "髂嵴"
+   },
+   {
+    "en": "Posterior superior iliac spine (PSIS)",
+    "zh": "髂后上棘"
+   },
+   {
+    "en": "Posterior sacral foramina",
+    "zh": "骶后孔"
+   },
+   {
+    "en": "Median sacral crest",
+    "zh": "骶正中嵴"
+   },
+   {
+    "en": "Coccyx",
+    "zh": "尾骨"
+   },
+   {
+    "en": "Sacrum",
+    "zh": "骶骨"
+   },
+   {
+    "en": "Vertebral body",
+    "zh": "椎体"
+   },
+   {
+    "en": "Intervertebral foramen",
+    "zh": "椎间孔"
+   },
+   {
+    "en": "Intervertebral disc space",
+    "zh": "椎间盘间隙"
+   },
+   {
+    "en": "Pedicle",
+    "zh": "椎弓根"
+   },
+   {
+    "en": "Zygapophyseal (facet) joint",
+    "zh": "关节突关节"
+   },
+   {
+    "en": "Sacral promontory",
+    "zh": "骶骨岬"
+   },
+   {
+    "en": "Lumbosacral joint (L5–S1)",
+    "zh": "腰骶关节（L5–S1）"
+   }
+  ]
+ },
+ "02": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Vertebral body",
+    "zh": "椎体"
+   },
+   {
+    "en": "Spinous process",
+    "zh": "棘突"
+   },
+   {
+    "en": "Transverse process",
+    "zh": "横突"
+   },
+   {
+    "en": "Pedicle",
+    "zh": "椎弓根"
+   },
+   {
+    "en": "Lamina",
+    "zh": "椎板"
+   },
+   {
+    "en": "Superior articular process",
+    "zh": "上关节突"
+   },
+   {
+    "en": "Mammillary process",
+    "zh": "乳突"
+   },
+   {
+    "en": "Accessory process",
+    "zh": "副突"
+   },
+   {
+    "en": "Vertebral canal (vertebral foramen)",
+    "zh": "椎管（椎孔）"
+   },
+   {
+    "en": "Pars interarticularis",
+    "zh": "椎弓峡部"
+   },
+   {
+    "en": "Facet joint (L4 inferior + L5 superior articular process)",
+    "zh": "关节突关节（L4 下关节突 + L5 上关节突）"
+   },
+   {
+    "en": "Intervertebral foramen",
+    "zh": "椎间孔"
+   },
+   {
+    "en": "Disc space (L4–L5)",
+    "zh": "椎间盘间隙（L4–L5）"
+   }
+  ]
+ },
+ "03": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Anterior longitudinal ligament",
+    "zh": "前纵韧带"
+   },
+   {
+    "en": "Nucleus pulposus",
+    "zh": "髓核"
+   },
+   {
+    "en": "Annulus fibrosus",
+    "zh": "纤维环"
+   },
+   {
+    "en": "Vertebral body (endplates above and below the disc)",
+    "zh": "椎体（椎间盘上下为终板）"
+   },
+   {
+    "en": "Lumbosacral junction (L5–S1)",
+    "zh": "腰骶连接（L5–S1）"
+   },
+   {
+    "en": "Supraspinous ligament",
+    "zh": "棘上韧带"
+   },
+   {
+    "en": "Interspinous ligament",
+    "zh": "棘间韧带"
+   },
+   {
+    "en": "Ligamentum flavum",
+    "zh": "黄韧带"
+   },
+   {
+    "en": "Spinous process",
+    "zh": "棘突"
+   },
+   {
+    "en": "Vertebral canal",
+    "zh": "椎管"
+   },
+   {
+    "en": "Posterior longitudinal ligament",
+    "zh": "后纵韧带"
+   },
+   {
+    "en": "Annulus fibrosus (concentric lamellae)",
+    "zh": "纤维环（同心板层）"
+   },
+   {
+    "en": "Iliolumbar ligament (L5 transverse process → iliac crest)",
+    "zh": "髂腰韧带（L5 横突 → 髂嵴）"
+   },
+   {
+    "en": "Intertransverse ligament",
+    "zh": "横突间韧带"
+   }
+  ]
+ },
+ "04": {
+  "oi": [
+   {
+    "muscleId": "iliocostalis-lumborum",
+    "originEn": "sacrum, iliac crest and thoracolumbar fascia",
+    "originZh": "骶骨、髂嵴和胸腰筋膜",
+    "insertionEn": "lower rib angles and L1–L4 transverse processes",
+    "insertionZh": "下部肋角和 L1–L4 横突"
+   },
+   {
+    "muscleId": "longissimus-thoracis",
+    "originEn": "sacrum, iliac crest and lumbar processes",
+    "originZh": "骶骨、髂嵴和腰椎突起",
+    "insertionEn": "thoracic transverse processes and lower ribs",
+    "insertionZh": "胸椎横突和下部肋骨"
+   },
+   {
+    "muscleId": "spinalis-thoracis",
+    "originEn": "spinous processes T11–L2",
+    "originZh": "T11–L2 棘突",
+    "insertionEn": "spinous processes T2–T8",
+    "insertionZh": "T2–T8 棘突"
+   }
+  ],
+  "labels": []
+ },
+ "05": {
+  "oi": [
+   {
+    "muscleId": "multifidus",
+    "originEn": "mammillary processes, sacrum and PSIS",
+    "originZh": "乳突、骶骨和髂后上棘",
+    "insertionEn": "spinous processes 2–5 levels above",
+    "insertionZh": "上方 2–5 个节段的棘突"
+   },
+   {
+    "muscleId": "rotatores",
+    "originEn": "transverse process",
+    "originZh": "横突",
+    "insertionEn": "lamina of the vertebra above",
+    "insertionZh": "上一位椎骨的椎弓板"
+   }
+  ],
+  "labels": []
+ },
+ "06": {
+  "oi": [
+   {
+    "muscleId": "serratus-posterior-inferior",
+    "originEn": "spinous processes T11–L2",
+    "originZh": "T11–L2 棘突",
+    "insertionEn": "inferior borders of ribs 9–12",
+    "insertionZh": "第 9–12 肋下缘"
+   },
+   {
+    "muscleId": "interspinales",
+    "originEn": "spinous process below",
+    "originZh": "下位棘突",
+    "insertionEn": "spinous process above",
+    "insertionZh": "上位棘突"
+   },
+   {
+    "muscleId": "intertransversarii",
+    "originEn": "transverse process above (L1–L4)",
+    "originZh": "上位横突（L1–L4）",
+    "insertionEn": "transverse process below (L2–L5)",
+    "insertionZh": "下位横突（L2–L5）"
+   }
+  ],
+  "labels": []
+ },
+ "07": {
+  "oi": [
+   {
+    "muscleId": "psoas-major",
+    "originEn": "bodies and discs T12–L4, transverse processes L1–L5",
+    "originZh": "T12–L4 椎体和椎间盘、L1–L5 横突",
+    "insertionEn": "lesser trochanter of the femur",
+    "insertionZh": "股骨小转子"
+   },
+   {
+    "muscleId": "quadratus-lumborum",
+    "originEn": "iliac crest and iliolumbar ligament",
+    "originZh": "髂嵴和髂腰韧带",
+    "insertionEn": "12th rib and L1–L4 transverse processes",
+    "insertionZh": "第 12 肋和 L1–L4 横突"
+   }
+  ],
+  "labels": []
+ },
+ "08": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Vertebral body",
+    "zh": "椎体"
+   },
+   {
+    "en": "Psoas major",
+    "zh": "腰大肌"
+   },
+   {
+    "en": "Quadratus lumborum",
+    "zh": "腰方肌"
+   },
+   {
+    "en": "Transverse process",
+    "zh": "横突"
+   },
+   {
+    "en": "Iliocostalis lumborum",
+    "zh": "腰髂肋肌"
+   },
+   {
+    "en": "Longissimus thoracis",
+    "zh": "胸最长肌"
+   },
+   {
+    "en": "Multifidus",
+    "zh": "多裂肌"
+   },
+   {
+    "en": "Spinous process",
+    "zh": "棘突"
+   },
+   {
+    "en": "Anterior layer",
+    "zh": "前层"
+   },
+   {
+    "en": "Abdominal wall muscles (cut)",
+    "zh": "腹壁肌（切断）"
+   },
+   {
+    "en": "Middle layer",
+    "zh": "中层"
+   },
+   {
+    "en": "Lateral raphe",
+    "zh": "外侧缝"
+   },
+   {
+    "en": "Posterior layer",
+    "zh": "后层"
+   }
+  ]
+ },
+ "09": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Spinal cord",
+    "zh": "脊髓"
+   },
+   {
+    "en": "Conus medullaris (≈ L1–L2 vertebrae)",
+    "zh": "脊髓圆锥（约第 1–2 腰椎）"
+   },
+   {
+    "en": "Lumbar plexus (in psoas major)",
+    "zh": "腰丛（在腰大肌内）"
+   },
+   {
+    "en": "Cauda equina",
+    "zh": "马尾"
+   },
+   {
+    "en": "Dural sac",
+    "zh": "硬脊膜囊"
+   },
+   {
+    "en": "Femoral nerve (L2–L4)",
+    "zh": "股神经（L2–L4）"
+   },
+   {
+    "en": "Dorsal root ganglion (L4)",
+    "zh": "背根神经节（L4）"
+   },
+   {
+    "en": "Dorsal ramus",
+    "zh": "后支"
+   },
+   {
+    "en": "Ventral ramus (dashed: in front of the bone)",
+    "zh": "前支（虚线：在骨前方）"
+   },
+   {
+    "en": "Sciatic nerve (L4–S3)",
+    "zh": "坐骨神经（L4–S3）"
+   }
+  ]
+ },
+ "10": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Ventral ramus (into psoas major)",
+    "zh": "前支（进入腰大肌）"
+   },
+   {
+    "en": "Sinuvertebral nerve",
+    "zh": "窦椎神经"
+   },
+   {
+    "en": "Dorsal root ganglion",
+    "zh": "背根神经节"
+   },
+   {
+    "en": "Dorsal ramus",
+    "zh": "后支"
+   },
+   {
+    "en": "Zygapophyseal joint",
+    "zh": "关节突关节"
+   },
+   {
+    "en": "Medial branch",
+    "zh": "内侧支"
+   },
+   {
+    "en": "Intermediate branch (variable)",
+    "zh": "中间支（不恒定）"
+   },
+   {
+    "en": "Lateral branch",
+    "zh": "外侧支"
+   },
+   {
+    "en": "Posterior longitudinal ligament and back of the disc",
+    "zh": "后纵韧带与椎间盘后部"
+   },
+   {
+    "en": "L3 medial branch",
+    "zh": "L3 内侧支"
+   },
+   {
+    "en": "L4 medial branch",
+    "zh": "L4 内侧支"
+   },
+   {
+    "en": "L5 dorsal ramus",
+    "zh": "L5 后支"
+   },
+   {
+    "en": "L3 lateral branch",
+    "zh": "L3 外侧支"
+   },
+   {
+    "en": "L3–L4 zygapophyseal joint",
+    "zh": "L3–L4 关节突关节"
+   },
+   {
+    "en": "L4–L5 joint: L3 + L4 medial branches",
+    "zh": "L4–L5 关节：L3 和 L4 内侧支"
+   },
+   {
+    "en": "L5–S1 joint: L4 + L5 medial branches",
+    "zh": "L5–S1 关节：L4 和 L5 内侧支"
+   }
+  ]
+ },
+ "11": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Paracentral herniation: traversing L5 root",
+    "zh": "旁中央型突出：压到 L5 走行根"
+   },
+   {
+    "en": "Far-lateral herniation: exiting L4 root",
+    "zh": "极外侧型突出：压到 L4 出口根"
+   },
+   {
+    "en": "L4 root leaves at L4–L5",
+    "zh": "L4 神经根从 L4–L5 出孔"
+   },
+   {
+    "en": "L5 root crosses the L4–L5 disc",
+    "zh": "L5 神经根越过 L4–L5 椎间盘"
+   },
+   {
+    "en": "L4–L5 disc (in front of the dural sac)",
+    "zh": "L4–L5 椎间盘（在硬脊膜囊前方）"
+   },
+   {
+    "en": "Nucleus pulposus",
+    "zh": "髓核"
+   },
+   {
+    "en": "Annulus fibrosus",
+    "zh": "纤维环"
+   },
+   {
+    "en": "Exiting L4 root",
+    "zh": "L4 出口根"
+   },
+   {
+    "en": "Traversing L5 root",
+    "zh": "L5 走行根"
+   },
+   {
+    "en": "Dural sac",
+    "zh": "硬脊膜囊"
+   }
+  ]
+ },
+ "12": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Erector spinae",
+    "zh": "竖脊肌"
+   },
+   {
+    "en": "Multifidus",
+    "zh": "多裂肌"
+   },
+   {
+    "en": "Psoas major",
+    "zh": "腰大肌"
+   },
+   {
+    "en": "Axis (schematic, near the disc)",
+    "zh": "运动轴（示意，靠近椎间盘）"
+   },
+   {
+    "en": "Quadratus lumborum: bends the trunk to its own side",
+    "zh": "腰方肌：使躯干向同侧屈"
+   },
+   {
+    "en": "Intertransversarii",
+    "zh": "横突间肌"
+   },
+   {
+    "en": "Superior articular process of L4",
+    "zh": "L4 上关节突"
+   },
+   {
+    "en": "Inferior articular process of L3 (dashed)",
+    "zh": "L3 下关节突（虚线）"
+   }
+  ]
+ },
+ "13": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Erector spinae",
+    "zh": "竖脊肌"
+   },
+   {
+    "en": "Hip flexors (iliopsoas)",
+    "zh": "屈髋肌（髂腰肌）"
+   },
+   {
+    "en": "Hip joint: the pivot",
+    "zh": "髋关节：转动中心"
+   },
+   {
+    "en": "Rectus abdominis",
+    "zh": "腹直肌"
+   },
+   {
+    "en": "Gluteus maximus",
+    "zh": "臀大肌"
+   },
+   {
+    "en": "Hamstrings (unverified)",
+    "zh": "腘绳肌（未核实）"
+   }
+  ]
+ },
+ "15": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "L2: anteromedial thigh, halfway down",
+    "zh": "L2：大腿前内侧中点"
+   },
+   {
+    "en": "L3: medial femoral condyle",
+    "zh": "L3：股骨内侧髁"
+   },
+   {
+    "en": "L4: medial malleolus",
+    "zh": "L4：内踝"
+   },
+   {
+    "en": "L5: dorsum of foot, 3rd MTP joint",
+    "zh": "L5：足背第 3 跖趾关节处"
+   },
+   {
+    "en": "S1: lateral heel",
+    "zh": "S1：足跟外侧"
+   },
+   {
+    "en": "Patellar reflex: mainly L4 (L3–L4)",
+    "zh": "膝反射：主要 L4（L3–L4）"
+   },
+   {
+    "en": "Medial hamstring reflex: L5",
+    "zh": "内侧腘绳肌反射：L5"
+   },
+   {
+    "en": "Achilles reflex: S1",
+    "zh": "跟腱反射：S1"
+   }
+  ]
+ },
+ "16": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "GV4 Mingmen",
+    "zh": "GV4 命门"
+   },
+   {
+    "en": "GV3 Yaoyangguan",
+    "zh": "GV3 腰阳关"
+   },
+   {
+    "en": "BL23 Shenshu",
+    "zh": "BL23 肾俞"
+   },
+   {
+    "en": "BL24 Qihaishu",
+    "zh": "BL24 气海俞"
+   },
+   {
+    "en": "BL25 Dachangshu",
+    "zh": "BL25 大肠俞"
+   },
+   {
+    "en": "BL26 Guanyuanshu",
+    "zh": "BL26 关元俞"
+   },
+   {
+    "en": "BL52 Zhishi",
+    "zh": "BL52 志室"
+   },
+   {
+    "en": "EX-B2 Jiaji",
+    "zh": "EX-B2 夹脊"
+   },
+   {
+    "en": "Kidney (deep, about T12–L3)",
+    "zh": "肾（深部，约 T12–L3）"
+   }
+  ]
+ }
+}

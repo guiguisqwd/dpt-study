@@ -1,0 +1,390 @@
+{
+  "_note": "AN-07: American English IPA and a respelling with the stressed syllable in capitals, each checked against the linked dictionary page. Acupoint names carry tone-marked Hanyu Pinyin. Lumbar terms checked 2026-11-27; terms shared with the hip chapter are copied from library/hip/pronunciation.json.",
+  "terms": {
+    "Iliocostalis lumborum": [
+      "/ˌɪlioʊkɑˈsteɪləs ˌlʌmˈbɔrəm/",
+      "il-ee-oh-kahs-TAY-luhs lum-BOR-uhm",
+      "https://www.merriam-webster.com/medical/iliocostalis%20lumborum"
+    ],
+    "Longissimus thoracis": [
+      "/lɑnˈdʒɪsɪməs θəˈreɪsəs/",
+      "lahn-JIS-ih-muhs thuh-RAY-suhs",
+      "https://www.merriam-webster.com/medical/longissimus%20thoracis"
+    ],
+    "Spinalis thoracis": [
+      "/spaɪˈneɪləs θəˈreɪsəs/",
+      "spy-NAY-luhs thuh-RAY-suhs",
+      "https://www.merriam-webster.com/medical/spinalis%20thoracis"
+    ],
+    "Multifidus": [
+      "/ˌmʌlˈtɪfədəs/",
+      "mul-TIF-uh-duhs",
+      "https://www.merriam-webster.com/medical/multifidus"
+    ],
+    "Rotatores": [
+      "/ˌroʊtəˈtɔriz/",
+      "roh-tuh-TOR-eez",
+      "https://www.merriam-webster.com/medical/rotator"
+    ],
+    "Interspinales": [
+      "/ˌɪntərˌspaɪˈneɪliz/",
+      "in-ter-spy-NAY-leez",
+      "https://www.merriam-webster.com/medical/interspinalis"
+    ],
+    "Intertransversarii": [
+      "/ˌɪntərˌtrænsvərˈsɛriˌaɪ/",
+      "in-ter-trans-ver-SAIR-ee-eye",
+      "https://www.merriam-webster.com/medical/intertransversarii"
+    ],
+    "Quadratus lumborum": [
+      "/kwɑˈdreɪtəs lʌmˈbɔrəm/",
+      "kwah-DRAY-tuhs lum-BOR-uhm",
+      "https://www.merriam-webster.com/medical/quadratus%20lumborum"
+    ],
+    "Serratus posterior inferior": [
+      "/sɛˈreɪtəs poʊˈstɪriər ɪnˈfɪriər/",
+      "seh-RAY-tuhs poh-STEER-ee-er in-FEER-ee-er",
+      "https://www.merriam-webster.com/medical/serratus"
+    ],
+    "T12 vertebra": [
+      "/ˌti ˈtwɛlv ˈvɝtəbrə/",
+      "tee TWELV VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "L1 vertebra": [
+      "/ˌɛl ˈwʌn ˈvɝtəbrə/",
+      "el WUN VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "L2 vertebra": [
+      "/ˌɛl ˈtu ˈvɝtəbrə/",
+      "el TOO VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "L3 vertebra": [
+      "/ˌɛl ˈθri ˈvɝtəbrə/",
+      "el THREE VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "L4 vertebra": [
+      "/ˌɛl ˈfɔr ˈvɝtəbrə/",
+      "el FOR VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "L5 vertebra": [
+      "/ˌɛl ˈfaɪv ˈvɝtəbrə/",
+      "el FYVE VUR-tuh-bruh",
+      "https://www.merriam-webster.com/medical/vertebra"
+    ],
+    "Coccyx": [
+      "/ˈkɑksɪks/",
+      "KAHK-siks",
+      "https://www.merriam-webster.com/medical/coccyx"
+    ],
+    "Twelfth rib": [
+      "/ˈtwɛlfθ ˈrɪb/",
+      "TWELFTH RIB",
+      "https://www.merriam-webster.com/medical/rib"
+    ],
+    "Vertebral body": [
+      "/ˌvɝˈtibrəl ˈbɑdi/",
+      "vur-TEE-bruhl BAH-dee",
+      "https://www.merriam-webster.com/medical/vertebral"
+    ],
+    "Pedicle": [
+      "/ˈpɛdɪkəl/",
+      "PED-ih-kuhl",
+      "https://www.merriam-webster.com/medical/pedicle"
+    ],
+    "Lamina": [
+      "/ˈlæmənə/",
+      "LAM-uh-nuh",
+      "https://www.merriam-webster.com/medical/lamina"
+    ],
+    "Spinous process": [
+      "/ˈspaɪnəs ˈprɑsɛs/",
+      "SPY-nuhs PRAH-ses",
+      "https://www.merriam-webster.com/medical/spinous"
+    ],
+    "Transverse process": [
+      "/trænsˈvɝs ˈprɑsɛs/",
+      "trans-VURS PRAH-ses",
+      "https://www.merriam-webster.com/medical/transverse"
+    ],
+    "Superior articular process": [
+      "/səˈpɪriər ɑrˈtɪkjələr ˈprɑsɛs/",
+      "suh-PEER-ee-er ar-TIK-yuh-ler PRAH-ses",
+      "https://www.merriam-webster.com/medical/articular"
+    ],
+    "Inferior articular process": [
+      "/ɪnˈfɪriər ɑrˈtɪkjələr ˈprɑsɛs/",
+      "in-FEER-ee-er ar-TIK-yuh-ler PRAH-ses",
+      "https://www.merriam-webster.com/medical/articular"
+    ],
+    "Mammillary process": [
+      "/ˈmæməˌlɛri ˈprɑsɛs/",
+      "MAM-uh-lair-ee PRAH-ses",
+      "https://www.merriam-webster.com/medical/mammillary"
+    ],
+    "Accessory process": [
+      "/ɪkˈsɛsəri ˈprɑsɛs/",
+      "ik-SES-uh-ree PRAH-ses",
+      "https://www.merriam-webster.com/medical/accessory"
+    ],
+    "Pars interarticularis": [
+      "/ˈpɑrs ˌɪntərɑrˌtɪkjəˈlɛrəs/",
+      "PARS in-ter-ar-tik-yuh-LAIR-uhs",
+      "https://www.merriam-webster.com/medical/pars"
+    ],
+    "Vertebral canal": [
+      "/ˌvɝˈtibrəl kəˈnæl/",
+      "vur-TEE-bruhl kuh-NAL",
+      "https://www.merriam-webster.com/medical/vertebral"
+    ],
+    "Intervertebral foramen": [
+      "/ˌɪntərˈvɝtəbrəl fəˈreɪmən/",
+      "in-ter-VUR-tuh-bruhl fuh-RAY-muhn",
+      "https://www.merriam-webster.com/medical/intervertebral"
+    ],
+    "Sacral promontory": [
+      "/ˈsækrəl ˈprɑmənˌtɔri/",
+      "SAK-ruhl PRAH-muhn-tor-ee",
+      "https://www.merriam-webster.com/medical/promontory"
+    ],
+    "Median sacral crest": [
+      "/ˈmidiən ˈsækrəl ˈkrɛst/",
+      "MEE-dee-uhn SAK-ruhl KREST",
+      "https://www.merriam-webster.com/medical/sacral"
+    ],
+    "Posterior sacral foramina": [
+      "/poʊˈstɪriər ˈsækrəl fəˈræmənə/",
+      "poh-STEER-ee-er SAK-ruhl fuh-RAM-uh-nuh",
+      "https://www.merriam-webster.com/medical/foramen"
+    ],
+    "Intervertebral disc": [
+      "/ˌɪntərˈvɝtəbrəl ˈdɪsk/",
+      "in-ter-VUR-tuh-bruhl DISK",
+      "https://www.merriam-webster.com/medical/intervertebral"
+    ],
+    "Annulus fibrosus": [
+      "/ˈænjələs faɪˈbroʊsəs/",
+      "AN-yuh-luhs fy-BROH-suhs",
+      "https://www.merriam-webster.com/medical/anulus%20fibrosus"
+    ],
+    "Nucleus pulposus": [
+      "/ˈnukliəs ˌpʌlˈpoʊsəs/",
+      "NOO-klee-uhs pul-POH-suhs",
+      "https://www.merriam-webster.com/medical/nucleus%20pulposus"
+    ],
+    "Zygapophyseal joint": [
+      "/ˌzaɪɡəˌpɑfəˈsiəl ˈdʒɔɪnt/",
+      "zy-guh-pah-fuh-SEE-uhl JOYNT",
+      "https://www.merriam-webster.com/medical/zygapophysis"
+    ],
+    "Lumbosacral joint": [
+      "/ˌlʌmboʊˈsækrəl ˈdʒɔɪnt/",
+      "lum-boh-SAK-ruhl JOYNT",
+      "https://www.merriam-webster.com/medical/lumbosacral"
+    ],
+    "Sacroiliac joint": [
+      "/ˌsækroʊˈɪliˌæk ˈdʒɔɪnt/",
+      "sak-roh-IL-ee-ak JOYNT",
+      "https://www.merriam-webster.com/medical/sacroiliac"
+    ],
+    "Anterior longitudinal ligament": [
+      "/ænˈtɪriər ˌlɑndʒəˈtudnəl ˈlɪɡəmənt/",
+      "an-TEER-ee-er lahn-juh-TOOD-nuhl LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/longitudinal"
+    ],
+    "Posterior longitudinal ligament": [
+      "/poʊˈstɪriər ˌlɑndʒəˈtudnəl ˈlɪɡəmənt/",
+      "poh-STEER-ee-er lahn-juh-TOOD-nuhl LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/longitudinal"
+    ],
+    "Ligamentum flavum": [
+      "/ˌlɪɡəˈmɛntəm ˈfleɪvəm/",
+      "lig-uh-MEN-tuhm FLAY-vuhm",
+      "https://www.merriam-webster.com/medical/ligamentum%20flavum"
+    ],
+    "Interspinous ligament": [
+      "/ˌɪntərˈspaɪnəs ˈlɪɡəmənt/",
+      "in-ter-SPY-nuhs LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/interspinous"
+    ],
+    "Supraspinous ligament": [
+      "/ˌsuprəˈspaɪnəs ˈlɪɡəmənt/",
+      "soo-pruh-SPY-nuhs LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/supraspinous"
+    ],
+    "Intertransverse ligament": [
+      "/ˌɪntərtrænsˈvɝs ˈlɪɡəmənt/",
+      "in-ter-trans-VURS LIG-uh-muhnt",
+      "https://kaikki.org/dictionary/English/meaning/i/in/intertransverse.html"
+    ],
+    "Iliolumbar ligament": [
+      "/ˌɪlioʊˈlʌmbər ˈlɪɡəmənt/",
+      "il-ee-oh-LUM-ber LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/iliolumbar"
+    ],
+    "Conus medullaris": [
+      "/ˈkoʊnəs ˌmɛdəlˈɛrəs/",
+      "KOH-nuhs med-uhl-AIR-uhs",
+      "https://www.merriam-webster.com/medical/conus%20medullaris"
+    ],
+    "Cauda equina": [
+      "/ˈkaʊdə ɛkˈwinə/",
+      "KOW-duh ek-WEE-nuh",
+      "https://www.merriam-webster.com/medical/cauda%20equina"
+    ],
+    "Lumbar spinal nerve": [
+      "/ˈlʌmbər ˈspaɪnəl ˈnɝv/",
+      "LUM-ber SPY-nuhl NURV",
+      "https://www.merriam-webster.com/medical/lumbar"
+    ],
+    "Dorsal root ganglion": [
+      "/ˈdɔrsəl ˈrut ˈɡæŋɡliən/",
+      "DOR-suhl ROOT GANG-glee-uhn",
+      "https://www.merriam-webster.com/medical/ganglion"
+    ],
+    "Dorsal ramus": [
+      "/ˈdɔrsəl ˈreɪməs/",
+      "DOR-suhl RAY-muhs",
+      "https://www.merriam-webster.com/medical/ramus"
+    ],
+    "Ventral ramus": [
+      "/ˈvɛntrəl ˈreɪməs/",
+      "VEN-truhl RAY-muhs",
+      "https://www.merriam-webster.com/medical/ramus"
+    ],
+    "Medial branch": [
+      "/ˈmidiəl ˈbræntʃ/",
+      "MEE-dee-uhl BRANCH",
+      "https://www.merriam-webster.com/medical/medial"
+    ],
+    "Lateral branch": [
+      "/ˈlætərəl ˈbræntʃ/",
+      "LAT-er-uhl BRANCH",
+      "https://www.merriam-webster.com/medical/lateral"
+    ],
+    "Sinuvertebral nerve": [
+      "/ˌsaɪnjuˈvɝtəbrəl ˈnɝv/",
+      "sy-nyoo-VUR-tuh-bruhl NURV",
+      "https://kaikki.org/dictionary/English/meaning/s/si/sinuvertebral.html"
+    ],
+    "Superior cluneal nerves": [
+      "/səˈpɪriər ˈkluniəl ˈnɝvz/",
+      "suh-PEER-ee-er KLOO-nee-uhl NURVZ",
+      "https://kaikki.org/dictionary/English/meaning/c/cl/cluneal.html"
+    ],
+    "Erector spinae": [
+      "/ɪˈrɛktər ˈspini/",
+      "ih-REK-ter SPEE-nee",
+      "https://www.merriam-webster.com/medical/erector%20spinae"
+    ],
+    "Thoracolumbar fascia": [
+      "/ˌθɔrəkoʊˈlʌmbər ˈfæʃiə/",
+      "thor-uh-koh-LUM-ber FASH-ee-uh",
+      "https://www.merriam-webster.com/medical/thoracolumbar"
+    ],
+    "Transversospinalis": [
+      "/trænsˌvɝsoʊspaɪˈneɪləs/",
+      "trans-vur-soh-spy-NAY-luhs",
+      "https://kaikki.org/dictionary/English/meaning/t/tr/transversospinalis.html"
+    ],
+    "Transversus abdominis": [
+      "/trænsˈvɝsəs əbˈdɑmənəs/",
+      "trans-VUR-suhs uhb-DAH-muh-nuhs",
+      "https://www.merriam-webster.com/medical/transversus%20abdominis"
+    ],
+    "Lordosis": [
+      "/lɔrˈdoʊsəs/",
+      "lor-DOH-suhs",
+      "https://www.merriam-webster.com/medical/lordosis"
+    ],
+    "Spondylolysis": [
+      "/ˌspɑndəˈlɑləsəs/",
+      "spahn-duh-LAH-luh-suhs",
+      "https://www.merriam-webster.com/medical/spondylolysis"
+    ],
+    "Spondylolisthesis": [
+      "/ˌspɑndəloʊlɪsˈθisəs/",
+      "spahn-duh-loh-lis-THEE-suhs",
+      "https://www.merriam-webster.com/medical/spondylolisthesis"
+    ],
+    "Radiculopathy": [
+      "/rəˌdɪkjəˈlɑpəθi/",
+      "ruh-dik-yuh-LAH-puh-thee",
+      "https://www.merriam-webster.com/medical/radiculopathy"
+    ],
+    "Lasègue sign": [
+      "/ləˈsɛɡ ˈsaɪn/",
+      "luh-SEG SYNE",
+      "https://www.dictionary.com/browse/lasegue-s-sign"
+    ],
+    "Neurogenic claudication": [
+      "/ˌnʊrəˈdʒɛnɪk ˌklɔdəˈkeɪʃən/",
+      "noor-uh-JEN-ik klaw-duh-KAY-shuhn",
+      "https://www.merriam-webster.com/medical/claudication"
+    ],
+    "Dermatome": [
+      "/ˈdɝməˌtoʊm/",
+      "DUR-muh-tohm",
+      "https://www.merriam-webster.com/medical/dermatome"
+    ],
+    "Myotome": [
+      "/ˈmaɪəˌtoʊm/",
+      "MY-uh-tohm",
+      "https://www.merriam-webster.com/medical/myotome"
+    ],
+    "Psoas major": [
+      "/ˈsoʊəs ˈmeɪdʒər/",
+      "SOH-uhs MAY-jer",
+      "https://www.merriam-webster.com/medical/psoas"
+    ],
+    "Sacrum": [
+      "/ˈsækrəm/",
+      "SAK-ruhm",
+      "https://www.merriam-webster.com/medical/sacrum"
+    ],
+    "Hip bone": [
+      "/ˈhɪp ˌboʊn/",
+      "HIP-bohn",
+      "https://www.merriam-webster.com/medical/hipbone"
+    ],
+    "Iliac crest": [
+      "/ˈɪliˌæk krɛst/",
+      "IL-ee-ak KREST",
+      "https://www.merriam-webster.com/medical/iliac"
+    ],
+    "Posterior superior iliac spine": [
+      "/poʊˈstɪriər səˈpɪriər ˈɪliˌæk spaɪn/",
+      "poh-STEER-ee-er suh-PEER-ee-er IL-ee-ak SPYNE",
+      "https://www.merriam-webster.com/medical/iliac"
+    ],
+    "Lumbar plexus": [
+      "/ˈlʌmbər ˈplɛksəs/",
+      "LUM-ber PLEK-suhs",
+      "https://www.merriam-webster.com/medical/lumbar"
+    ],
+    "Sciatic nerve": [
+      "/saɪˈætɪk nɝv/",
+      "sy-AT-ik NURV",
+      "https://www.merriam-webster.com/medical/sciatic"
+    ],
+    "Femoral nerve": [
+      "/ˈfɛmərəl nɝv/",
+      "FEM-uh-ruhl NURV",
+      "https://www.merriam-webster.com/medical/femoral"
+    ]
+  },
+  "pinyin": {
+    "Mingmen": "Mìngmén",
+    "Yaoyangguan": "Yāoyángguān",
+    "Shenshu": "Shènshù",
+    "Qihaishu": "Qìhǎishù",
+    "Dachangshu": "Dàchángshù",
+    "Guanyuanshu": "Guānyuánshù",
+    "Zhishi": "Zhìshì",
+    "Jiaji": "Jiājǐ"
+  }
+}
