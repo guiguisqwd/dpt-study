@@ -221,10 +221,10 @@
    },
    {
     "muscleId": "longissimus-thoracis",
-    "originEn": "sacrum, iliac crest and lumbar processes",
-    "originZh": "骶骨、髂嵴和腰椎突起",
-    "insertionEn": "thoracic transverse processes and lower ribs",
-    "insertionZh": "胸椎横突和下部肋骨"
+    "originEn": "sacrum, iliac crest and lumbar spinous processes",
+    "originZh": "骶骨、髂嵴和腰椎棘突",
+    "insertionEn": "thoracic and lumbar transverse processes, lower ribs",
+    "insertionZh": "胸椎和腰椎横突、下部肋骨"
    },
    {
     "muscleId": "spinalis-thoracis",

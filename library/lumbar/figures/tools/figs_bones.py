@@ -2,7 +2,7 @@
 from lumbarfig import *  # noqa: F401,F403
 
 # Fixes to computed points (midline structures)
-LM['sacral-promontory'] = [0.0, 0.979, -0.016]
+LM['sacral-promontory'] = [0.0, 0.948, -0.005]
 LM['post-sacral-foramen'] = [-0.017, 0.944, -0.082]
 LM['sacral-hiatus'] = [0.0, 0.868, -0.086]
 
@@ -16,24 +16,24 @@ def register(fig):
         K = 2500
         p = Stage(f, 'post', 0.0, -1.0, 560, 660, K)
         low = p.P2(0, -0.862)[1]
-        clip_begin(f, 0, 0, 1000, low); p.bones(('hip-bone', 'hip-bone-left')); f.end()
         p.bones(('rib11', 'rib11-left', 'rib12', 'rib12-left', 'coccyx'))
         p.spine(('t12', 'l1', 'l2', 'l3', 'l4', 'l5'))
+        clip_begin(f, 0, 0, 1000, low); p.bones(('hip-bone', 'hip-bone-left')); f.end()
         # Supracristal (Tuffier's) line across the tops of the iliac crests
         a, b = p.at('iliac-crest-top'), p.P(mirror(LM['iliac-crest-top']))
         f.path(f'M{a[0] - 30:.1f},{a[1]:.1f} L{b[0] + 30:.1f},{b[1]:.1f}', '#8c2f39', 1.8, dash='9 6', rough=False)
-        f.bi(a[0] + 40, a[1] + 4, 'Supracristal line ≈ L4 spinous process', '嵴上线 ≈ 第 4 腰椎棘突', 14, '#8c2f39', 'start', '700')
+        f.bi(a[0] + 105, a[1] + 4, 'Supracristal line ≈ L4 spinous process', '嵴上线 ≈ 第 4 腰椎棘突', 14, '#8c2f39', 'start', '700')
         f.bi(560, 150, 'Posterior view', '后面观', 18, INK, 'middle', '700')
         for i in range(1, 6):
             q = p.at(f'l{i}-sp')
             label(f, 120, q[1] + 6, f'L{i} vertebra', f'第 {i} 腰椎', INK, 'start', 14, to=(q[0] - 4, q[1]))
         q = p.at('t12-sp'); label(f, 120, q[1] + 4, 'T12 vertebra', '第 12 胸椎', INK, 'start', 14, to=(q[0] - 4, q[1]))
-        label(f, 860, 300, 'Twelfth rib', '第 12 肋', GREY, 'start', 14, to=p.P([-0.07, 1.075, -0.05]))
-        label(f, 860, 420, 'Spinous process', '棘突', GREY, 'start', 14, to=p.at('l2-sp'))
-        label(f, 860, 490, 'Transverse process', '横突', GREY, 'start', 14, to=p.at('l3-tp'))
+        label(f, 860, 420, 'Twelfth rib', '第 12 肋', GREY, 'start', 14, to=p.P([-0.07, 1.075, -0.05]))
+        label(f, 860, 300, 'Spinous process', '棘突', GREY, 'start', 14, to=p.at('l2-sp'))
+        label(f, 872, 490, 'Transverse process', '横突', GREY, 'start', 14, to=p.at('l3-tp'))
         label(f, 860, 560, 'Iliac crest', '髂嵴', GREY, 'start', 14, to=p.P([-0.085, 1.0, -0.05]))
-        label(f, 860, 760, 'Posterior superior iliac spine (PSIS)', '髂后上棘', GREY, 'start', 14, to=p.at('psis'))
-        label(f, 860, 840, 'Posterior sacral foramina', '骶后孔', GREY, 'start', 14, to=p.at('post-sacral-foramen'))
+        label(f, 905, 760, 'Posterior superior iliac spine (PSIS)', '髂后上棘', GREY, 'start', 14, to=p.at('psis'))
+        label(f, 905, 840, 'Posterior sacral foramina', '骶后孔', GREY, 'start', 14, to=p.P([-0.0172, 0.908, -0.09]))
         label(f, 120, 880, 'Median sacral crest', '骶正中嵴', GREY, 'start', 14, to=p.at('median-sacral-crest'))
         label(f, 120, 1000, 'Coccyx', '尾骨', GREY, 'start', 14, to=p.at('coccyx-tip', dy=0.012))
         label(f, 120, 800, 'Sacrum', '骶骨', GREY, 'start', 14, to=p.P([0.02, 0.93, -0.08]))
@@ -52,9 +52,9 @@ def register(fig):
         fj = mid('l4-iap', 'l5-sap')
         label(f, 1040, 565, 'Zygapophyseal (facet) joint', '关节突关节', GREY, 'start', 14, to=l.P(fj))
         label(f, 1520, 760, 'Sacral promontory', '骶骨岬', GREY, 'start', 14, to=l.at('sacral-promontory'))
-        label(f, 1520, 680, 'Lumbosacral joint (L5–S1)', '腰骶关节（L5–S1）', GREY, 'start', 14, to=l.P([0, 0.987, 0.0]))
+        label(f, 1520, 680, 'Lumbosacral joint (L5–S1)', '腰骶关节（L5–S1）', GREY, 'start', 14, to=l.P([0, 0.956, -0.007]))
         # Lordosis arc (anterior convexity)
-        pts = [l.at(f'{lv}-body-ant', dz=0.012) for lv in ['l1', 'l2', 'l3', 'l4', 'l5']]
+        pts = [l.at(f'{lv}-body-ant', dz=0.005) for lv in ['l1', 'l2', 'l3', 'l4', 'l5']]
         d = 'M' + ' L'.join('%.1f,%.1f' % q for q in pts)
         f.raw(f'<path d="{d}" fill="none" stroke="{TEAL}" stroke-width="2.4" stroke-dasharray="3 6" stroke-linecap="round"/>')
         f.bi(1530, 595, 'Lumbar lordosis', '腰椎前凸', 15, TEAL, 'start', '700')
@@ -78,12 +78,12 @@ def register_02(fig):
         sp = lambda x, z: s.P([x, 1.02, z])
         label(f, 760, 250, 'Vertebral body', '椎体', GREY, 'start', 14, to=sp(0.0, -0.002))
         label(f, 760, 900, 'Spinous process', '棘突', GREY, 'start', 14, to=sp(0.0, -0.062))
-        label(f, 60, 400, 'Transverse process', '横突', GREY, 'start', 14, to=sp(0.040, -0.033))
+        label(f, 60, 580, 'Transverse process', '横突', GREY, 'start', 14, to=sp(0.040, -0.033))
         label(f, 60, 250, 'Pedicle', '椎弓根', GREY, 'start', 14, to=sp(0.016, -0.019))
         label(f, 760, 640, 'Lamina', '椎板', GREY, 'start', 14, to=sp(-0.011, -0.045))
         label(f, 60, 520, 'Superior articular process', '上关节突', GREY, 'start', 14, to=sp(0.021, -0.036))
-        label(f, 60, 640, 'Mammillary process', '乳突', GREY, 'start', 14, to=sp(0.024, -0.045))
-        label(f, 60, 760, 'Accessory process', '副突', GREY, 'start', 14, to=sp(0.031, -0.037))
+        label(f, 60, 760, 'Mammillary process', '乳突', GREY, 'start', 14, to=sp(0.024, -0.045))
+        label(f, 60, 640, 'Accessory process', '副突', GREY, 'start', 14, to=sp(0.028, -0.032))
         label(f, 760, 420, 'Vertebral canal (vertebral foramen)', '椎管（椎孔）', GREY, 'start', 14, to=sp(0.0, -0.030))
         note(f, 60, 960, ['Lumbar superior facets face posteromedially: they limit axial rotation and resist translation.'],
              ['腰椎上关节面朝向后内侧：限制轴向旋转并抵抗平移。'])
@@ -92,7 +92,7 @@ def register_02(fig):
         for lv in ('l4', 'l5'): l.shape(VERT[lv], BONE_E, BONE, 1.8)
         l.shape(VERT['l5'], BONE_E, '#fffaf0', 1.6, layer='lat-2')
         f.bi(1320, 150, 'L4–L5 from the right (anterior to the right)', 'L4–L5 右侧观（前方在右）', 18, INK, 'middle', '700')
-        pars = l.P([-0.018, 1.008, -0.038])
+        pars = l.P([-0.0165, 1.015, -0.0365])
         f.raw(f'<ellipse cx="{pars[0]:.1f}" cy="{pars[1]:.1f}" rx="22" ry="34" fill="#b94334" fill-opacity=".18" stroke="#b94334" stroke-width="2.2" stroke-dasharray="5 4"/>')
         label(f, 1000, 330, 'Pars interarticularis', '椎弓峡部', '#b94334', 'start', 14, to=(pars[0] - 18, pars[1] - 20))
         mid = lambda a, b: [(x + y) / 2 for x, y in zip(LM[a], LM[b])]
@@ -100,9 +100,9 @@ def register_02(fig):
               to=l.P(mid('l4-iap', 'l5-sap')))
         ivf = mid('l4-pedicle', 'l5-pedicle'); ivf[2] -= 0.003
         label(f, 1500, 330, 'Intervertebral foramen', '椎间孔', GREY, 'start', 14, to=l.P(ivf))
-        label(f, 1500, 470, 'Disc space (L4–L5)', '椎间盘间隙（L4–L5）', GREY, 'start', 14, to=l.P(mid('l4-body-ant', 'l5-body-ant')))
+        label(f, 1525, 600, 'Disc space (L4–L5)', '椎间盘间隙（L4–L5）', GREY, 'start', 14, to=l.P(mid('l4-body-ant', 'l5-body-ant')))
         label(f, 1000, 220, 'Superior articular process', '上关节突', GREY, 'start', 14, to=l.at('l4-sap'))
-        label(f, 1000, 940, 'Spinous process', '棘突', GREY, 'start', 14, to=l.at('l5-sp'))
+        label(f, 1000, 760, 'Spinous process', '棘突', GREY, 'start', 14, to=l.at('l5-sp'))
         label(f, 1500, 700, 'Pedicle', '椎弓根', GREY, 'start', 14, to=l.at('l5-pedicle'))
         f.save('典型腰椎与运动节段')
 
@@ -162,19 +162,19 @@ def register_03(fig):
             f.path('M' + ' L'.join('%.1f,%.1f' % p for p in q) + 'Z', LIG['isl'], 1.2, '#d6dfc0', op=0.9)
         ssl = [sag_pt(st, SAG[lv]['arch'][i], dz=-0.0018) for lv in levels[:3] for i in (3, 2)]
         band(ssl, LIG['ssl'], 6)
-        band([ssl[-1], sag_pt(st, SAG['l5']['arch'][3], dz=-0.0018)], LIG['ssl'], 4, dash='4 6')
+        band([ssl[-1], sag_pt(st, SAG['l5']['arch'][3], dz=-0.0018), sag_pt(st, SAG['l5']['arch'][2], dz=-0.0018)], LIG['ssl'], 4, dash='4 6')
         mid = lambda a, b: ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
         A = lambda lv, i, part='body': sag_pt(st, SAG[lv][part][i])
-        label(f, 900, 300, 'Anterior longitudinal ligament', '前纵韧带', LIG['all'], 'start', 14, to=ant[3])
-        label(f, 900, 400, 'Nucleus pulposus', '髓核', '#3f6d86', 'start', 14, to=mid(A('l3', 1), A('l4', 2)))
-        label(f, 900, 500, 'Annulus fibrosus', '纤维环', '#3f6d86', 'start', 14, to=mid(A('l3', 1), A('l4', 0)))
-        label(f, 900, 600, 'Vertebral body (endplates above and below the disc)', '椎体（椎间盘上下为终板）', GREY, 'start', 14, to=mid(A('l4', 0), A('l4', 1)))
+        label(f, 900, 300, 'Anterior longitudinal ligament', '前纵韧带', LIG['all'], 'start', 14, to=mid(ant[0], ant[1]))
+        label(f, 900, 400, 'Nucleus pulposus', '髓核', '#3f6d86', 'start', 14, to=mid(A('l3', 1), A('l4', 3)))
+        label(f, 900, 500, 'Annulus fibrosus', '纤维环', '#3f6d86', 'start', 14, to=mid(mid(A('l3', 1), A('l4', 0)), mid(A('l3', 1), A('l4', 3))))
+        label(f, 900, 600, 'Vertebral body (endplates above and below the disc)', '椎体（椎间盘上下为终板）', GREY, 'start', 14, to=mid(mid(A('l4', 0), A('l4', 1)), mid(A('l4', 0), A('l4', 2))))
         label(f, 900, 760, 'Lumbosacral junction (L5–S1)', '腰骶连接（L5–S1）', GREY, 'start', 14, to=mid(A('l5', 1), s1[0]))
-        label(f, 60, 250, 'Supraspinous ligament', '棘上韧带', LIG['ssl'], 'start', 14, to=ssl[1])
+        label(f, 60, 250, 'Supraspinous ligament', '棘上韧带', LIG['ssl'], 'start', 14, to=mid(ssl[0], ssl[1]))
         label(f, 60, 360, 'Interspinous ligament', '棘间韧带', LIG['isl'], 'start', 14, to=mid(A('l2', 2, 'arch'), A('l3', 3, 'arch')))
         label(f, 60, 470, 'Ligamentum flavum', '黄韧带', '#9a7b12', 'start', 14, to=mid(A('l3', 1, 'arch'), A('l4', 0, 'arch')))
         label(f, 60, 580, 'Spinous process', '棘突', GREY, 'start', 14, to=mid(A('l4', 2, 'arch'), A('l4', 3, 'arch')))
-        label(f, 60, 700, 'Vertebral canal', '椎管', GREY, 'start', 14, to=mid(A('l4', 3), A('l4', 0, 'arch')))
+        label(f, 400, 250, 'Vertebral canal', '椎管', GREY, 'start', 14, to=mid(A('l4', 3), A('l4', 0, 'arch')))
         label(f, 60, 930, 'Posterior longitudinal ligament', '后纵韧带', LIG['pll'], 'start', 14, to=post[7])
         note(f, 60, 995, ['Sources differ on where the supraspinous ligament ends.', 'Some give about L3–L4; others, the sacrum (dashed).'], ['各资料对棘上韧带的下端说法不一。', '有的写约在 L3–L4，有的写延伸至骶骨（虚线）。'])
 
@@ -184,9 +184,8 @@ def register_03(fig):
         for k in range(6):
             f.raw(f'<ellipse cx="{cx}" cy="{cy}" rx="{190 - k * 16}" ry="{120 - k * 10}" fill="{LIG["disc"] if k == 0 else "none"}" stroke="#5d7d92" stroke-width="{1.8 if k == 0 else 1.1}"/>')
         f.raw(f'<ellipse cx="{cx}" cy="{cy + 14}" rx="78" ry="46" fill="{LIG["nucleus"]}" stroke="#5d7d92" stroke-width="1.6"/>')
-        f.path(f'M{cx - 110},{cy + 120} Q{cx},{cy + 60} {cx + 110},{cy + 120}', BONE_E, 1.4, dash='4 4', rough=False)
         label(f, 1690, 520, 'Annulus fibrosus (concentric lamellae)', '纤维环（同心板层）', '#3f6d86', 'end', 14, to=(cx + 150, cy - 40))
-        label(f, 1180, 520, 'Nucleus pulposus', '髓核', '#3f6d86', 'start', 14, to=(cx - 20, cy + 14))
+        label(f, 1250, 230, 'Nucleus pulposus', '髓核', '#3f6d86', 'end', 14, to=(cx - 20, cy + 14))
         f.bi(cx, cy - 140, 'Anterior', '前', 13, GREY, 'middle', '600')
         f.bi(cx, cy + 150, 'Posterior (towards the canal)', '后（朝向椎管）', 13, GREY, 'middle', '600')
 
@@ -195,8 +194,8 @@ def register_03(fig):
         f.bi(1390, 640, 'Iliolumbar and intertransverse ligaments (posterior view)', '髂腰韧带与横突间韧带（后面观）', 15, INK, 'middle', '700')
         top = p.P2(0, -1.05)[1]
         clip_begin(f, 1080, top, 620, 1100 - top)
-        p.bones(('hip-bone', 'hip-bone-left'))
         p.spine(('l3', 'l4', 'l5'), w=1.3)
+        p.bones(('hip-bone', 'hip-bone-left'))
         f.end()
         for side in (lambda q: q, mirror):
             a = p.P(side(LM['l5-tp'])); b = p.P(side([-0.075, 1.0, -0.045]))

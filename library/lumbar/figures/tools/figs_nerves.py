@@ -18,6 +18,8 @@ def root_path(st, side, i, name):
     sacral = name.startswith('S')
     pts = [[side * 0.0012, CONUS_Y + 0.004 - 0.0015 * i, -0.02], [side * x_in, CONUS_Y - 0.006 - 0.002 * i, -0.02]]
     pts += [[side * x_in, y_e + 0.016, -0.02], [side * (0.011 if not sacral else 0.010), y_e + 0.004, -0.02]]
+    if i == 0:  # L1 exits level with the conus tip: it leaves the side of the cord above it, so the root never runs upwards
+        pts = [[side * 0.0042, CONUS_Y + 0.017, -0.02], [side * 0.0072, y_e + 0.009, -0.02], pts[-1]]
     pts += [[side * (0.020 if not sacral else 0.017), y_e - 0.001, -0.02]]
     return [st.P(p) for p in pts]
 
@@ -48,7 +50,7 @@ def register(fig):
                 pts = root_path(st, side, i, nm)
                 y_e = EXIT[nm]
                 sacral = nm.startswith('S')
-                nerve(f, pts, 2.6 if not sacral else 2.2, dash='5 4' if sacral else None, smooth=True)
+                nerve(f, pts, 2.6 if not sacral else 2.2, smooth=True)
                 if not sacral:
                     gx, gy = st.P([side * 0.0225, y_e - 0.0015, -0.02])
                     f.raw(f'<ellipse cx="{gx:.1f}" cy="{gy:.1f}" rx="9" ry="12" fill="#e7b730" stroke="#8a6a10" stroke-width="1.4"/>')
@@ -68,6 +70,8 @@ def register(fig):
         lst = st.P([-0.045, 0.955, 0.0])
         for nm in ('L4', 'L5'):
             nerve(f, [st.P([-0.033, EXIT[nm] - 0.008, -0.02]), st.P([-0.042, (EXIT[nm] + 0.955) / 2 - 0.01, -0.01]), lst], 2.4, dash='6 4')
+        for nm, j in (('S1', [-0.0498, 0.9417, 0.0]), ('S2', [-0.0582, 0.9197, 0.0])):  # S1 and S2 ventral rami join it too
+            nerve(f, [st.P([-0.017, EXIT[nm] - 0.001, -0.02]), st.P(j)], 2.2, dash='6 4')
         sci_end = st.P([-0.066, 0.9, 0.0])
         nerve(f, [lst, st.P([-0.052, 0.935, 0.0]), sci_end], 4.2, dash='6 4')
         f.end()
@@ -77,7 +81,7 @@ def register(fig):
             f.text(x + (0 if lvl != 't12' else -8), y + 5, lvl.upper(), 14, GREY, 'start', '700')
         x, y = st.P([-0.066, 0.94, -0.02]); f.text(x, y + 5, 'Sacrum', 14, GREY, 'start', '700')
         # numbered course 1 → 6
-        marks = [(st.P([0.009, CONUS_Y + 0.004, -0.02]), 1), (st.P([0.0, EXIT['L4'] + 0.02, -0.02]), 2),
+        marks = [(st.P([0.009, CONUS_Y + 0.022, -0.02]), 1), (st.P([0.0, EXIT['L4'] + 0.02, -0.02]), 2),
                  (st.P([-0.016, y4 + 0.011, -0.02]), 3), (st.P([-0.03, y4 + 0.004, -0.02]), 4),
                  (st.P([-0.03, y4 - 0.02, -0.02]), 5), (st.P([0.058, EXIT['L3'] - 0.045, 0.0]), 6)]
         for (x, y), n in marks: f.step(x - 11, y - 11, n, GOLD)
@@ -85,13 +89,13 @@ def register(fig):
         label(f, 40, 230, 'Spinal cord', '脊髓', '#8a6a10', 'start', 14, to=st.P([0.003, 1.14, -0.02]))
         label(f, 40, 330, 'Conus medullaris (≈ L1–L2 vertebrae)', '脊髓圆锥（约第 1–2 腰椎）', '#8a6a10', 'start', 14, to=st.P([0.002, CONUS_Y + 0.006, -0.02]))
         label(f, 40, 430, 'Lumbar plexus (in psoas major)', '腰丛（在腰大肌内）', '#8a6a10', 'start', 14, to=plex)
-        label(f, 40, 770, 'Cauda equina', '马尾', '#8a6a10', 'start', 14, to=st.P([0.004, EXIT['L4'] + 0.03, -0.02]))
+        label(f, 40, 770, 'Cauda equina', '马尾', '#8a6a10', 'start', 14, to=st.P([0.004, EXIT['L4'] + 0.015, -0.02]))
         label(f, 40, 870, 'Dural sac', '硬脊膜囊', DURA, 'start', 14, to=st.P([0.0088, 0.97, -0.02]))
         label(f, 40, 1080, 'Femoral nerve (L2–L4)', '股神经（L2–L4）', '#8a6a10', 'start', 14, to=fem_end)
         # labels: person's right side (image right)
         label(f, 955, 590, 'Dorsal root ganglion (L4)', '背根神经节（L4）', '#8a6a10', 'start', 14, to=st.P([-0.0225, y4 - 0.0015, -0.02]))
         label(f, 955, 700, 'Dorsal ramus', '后支', '#8a6a10', 'start', 14, to=st.P([-0.034, y4 - 0.026, -0.04]))
-        label(f, 955, 860, 'Ventral ramus (dashed: in front of the bone)', '前支（虚线：在骨前方）', '#8a6a10', 'start', 14, to=st.P([-0.04, EXIT['L4'] - 0.02, -0.01]))
+        label(f, 955, 925, 'Ventral ramus (dashed: in front of the bone)', '前支（虚线：在骨前方）', '#8a6a10', 'start', 14, to=st.P([-0.0405, EXIT['L4'] - 0.0315, -0.01]))
         label(f, 955, 1100, 'Sciatic nerve (L4–S3)', '坐骨神经（L4–S3）', '#8a6a10', 'start', 14, to=sci_end)
         f.bi(40, 1200, 'Ventral rami and their nerves lie in front of the vertebrae; they are drawn dashed through the bone.',
              '前支及其神经在椎骨前方，透过骨画成虚线。', 13, GREY, 'start', '400')
@@ -149,7 +153,7 @@ def register(fig):
         label(f, 40, 500, 'Dorsal root ganglion', '背根神经节', '#8a6a10', 'start', 14, to=(gx, gy))
         label(f, 40, 590, 'Dorsal ramus', '后支', '#8a6a10', 'start', 14, to=L(0.031, -0.03))
         label(f, 40, 690, 'Zygapophyseal joint', '关节突关节', GREY, 'start', 14, to=L(0.021, -0.039))
-        label(f, 40, 985, 'Medial branch', '内侧支', '#8a6a10', 'start', 14, to=L(0.02, -0.05))
+        label(f, 180, 985, 'Medial branch', '内侧支', '#8a6a10', 'start', 14, to=L(0.02, -0.05))
         label(f, 40, 900, 'Intermediate branch (variable)', '中间支（不恒定）', '#8a6a10', 'start', 14, to=L(0.034, -0.054))
         label(f, 40, 785, 'Lateral branch', '外侧支', '#8a6a10', 'start', 14, to=L(0.05, -0.05))
         label(f, 560, 230, 'Posterior longitudinal ligament and back of the disc', '后纵韧带与椎间盘后部', '#6f7d8c', 'middle', 13, to=L(-0.004, -0.0172))
@@ -179,6 +183,7 @@ def register(fig):
         nerve(f, [h4, R(0.022, 0.999)], 2.0); nerve(f, [R(0.021, 0.982), R(0.022, 0.971)], 2.0)
         l5 = [R(0.036, 0.975), R(0.03, 0.97), R(0.025, 0.963), R(0.018, 0.952)]   # L5 dorsal ramus over the sacral ala
         nerve(f, l5, 2.6, smooth=True)
+        nerve(f, [R(0.0275, 0.9665), R(0.0233, 0.9675)], 2.0)                    # L5 medial branch twig to the L5–S1 joint
         lat = [a3, R(0.05, 1.02), R(0.066, 0.998), R(0.08, 0.975)]               # L3 lateral branch heading over the iliac crest
         nerve(f, lat, 2.2, smooth=True)
         label(f, 1480, 490, 'L3 medial branch', 'L3 内侧支', '#8a6a10', 'start', 14, to=R(0.03, 1.029))

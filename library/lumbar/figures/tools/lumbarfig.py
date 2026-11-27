@@ -237,7 +237,7 @@ def key_oi(f, x, y):
     f.bi(x + 410, y + 4, 'Origin → insertion', '起点 → 止点', 13, INK, 'start', '600')
 
 
-def note(f, x, y, lines_en, lines_zh, col=GREY, size=13):
+def note(f, x, y, lines_en, lines_zh, col=ZH, size=13):
     for k, (en, zh) in enumerate(zip(lines_en, lines_zh)):
         f.bi(x, y + k * (2 * size + 12), en, zh, size, col, 'start', '400')
 

@@ -1,0 +1,327 @@
+{
+  "chapter": "lumbar",
+  "built": "2026-11-27",
+  "config": "library/lumbar/3d/atlas-addon.json",
+  "source": {
+    "repository": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+    "commit": "bb293be456f6d2245191f37752d14ec76894740d",
+    "zipSha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "blendSha256": "9f08a17ea0115fed80b2a73ecdf0a1bc2ab2f6956f37c593ce23d513ea35afcd",
+    "license": "CC BY-SA 4.0 (Z-Anatomy; derived from BodyParts3D, CC BY-SA 2.1 JP)"
+  },
+  "exporter": {
+    "upstream": "https://github.com/vixotic/Vanatome/blob/8185b3fa46a1dbefdd907390918c57954fd9b816/tools/anatomy/blender/export_batch.py",
+    "sha256": "bee6407e659a3da8b1abe66ef14914295f729d891533201f2eee2fb96ca09783",
+    "license": "MIT (Vanatome contributors); vendored unchanged"
+  },
+  "blenderVersion": "5.2.0 LTS",
+  "glbSha256": "d22ff1c4f491fff1d33b78c2946a4c22d87c77a457c0682c54c95761cf568533",
+  "glbBytes": 1135900,
+  "objectCount": 20,
+  "meshes": {
+    "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-left": {
+      "source": "Iliocostalis lumborum muscle.l",
+      "minMetres": [
+        0.01,
+        0.8836,
+        -0.095
+      ],
+      "maxMetres": [
+        0.1046,
+        1.2739,
+        -0.0474
+      ]
+    },
+    "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-right": {
+      "source": "Iliocostalis lumborum muscle.r",
+      "minMetres": [
+        -0.1046,
+        0.8836,
+        -0.095
+      ],
+      "maxMetres": [
+        -0.01,
+        1.2739,
+        -0.0474
+      ]
+    },
+    "interspinales-lumborum-muscles-interspinales-lumborum-muscles-left": {
+      "source": "Interspinales lumborum muscles.l",
+      "minMetres": [
+        -0.0012,
+        0.9873,
+        -0.0817
+      ],
+      "maxMetres": [
+        0.0075,
+        1.1476,
+        -0.057
+      ]
+    },
+    "interspinales-lumborum-muscles-interspinales-lumborum-muscles-right": {
+      "source": "Interspinales lumborum muscles.r",
+      "minMetres": [
+        -0.0075,
+        0.9873,
+        -0.0817
+      ],
+      "maxMetres": [
+        0.0012,
+        1.1476,
+        -0.057
+      ]
+    },
+    "lateral-intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-left": {
+      "source": "Dorsal parts of lateral intertransversarii lumborum muscles.l",
+      "minMetres": [
+        0.0201,
+        0.9964,
+        -0.0566
+      ],
+      "maxMetres": [
+        0.0486,
+        1.1466,
+        -0.0247
+      ]
+    },
+    "lateral-intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-right": {
+      "source": "Dorsal parts of lateral intertransversarii lumborum muscles.r",
+      "minMetres": [
+        -0.0486,
+        0.9964,
+        -0.0566
+      ],
+      "maxMetres": [
+        -0.0201,
+        1.1466,
+        -0.0247
+      ]
+    },
+    "lateral-intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-left": {
+      "source": "Ventral parts of lateral intertransversarii lumborum muscles.l",
+      "minMetres": [
+        0.0129,
+        0.9924,
+        -0.0346
+      ],
+      "maxMetres": [
+        0.0371,
+        1.1089,
+        -0.017
+      ]
+    },
+    "lateral-intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-right": {
+      "source": "Ventral parts of lateral intertransversarii lumborum muscles.r",
+      "minMetres": [
+        -0.0371,
+        0.9924,
+        -0.0346
+      ],
+      "maxMetres": [
+        -0.0129,
+        1.1089,
+        -0.017
+      ]
+    },
+    "longissimus-thoracis-muscles-longissimus-thoracis-muscle-left": {
+      "source": "Longissimus thoracis muscle.l",
+      "minMetres": [
+        -0.0015,
+        0.9012,
+        -0.1018
+      ],
+      "maxMetres": [
+        0.0705,
+        1.4488,
+        -0.028
+      ]
+    },
+    "longissimus-thoracis-muscles-longissimus-thoracis-muscle-right": {
+      "source": "Longissimus thoracis muscle.r",
+      "minMetres": [
+        -0.0705,
+        0.9012,
+        -0.1018
+      ],
+      "maxMetres": [
+        0.0015,
+        1.4488,
+        -0.028
+      ]
+    },
+    "lumbar-psoas-major-muscles-psoas-major-left": {
+      "source": "Psoas major.l",
+      "minMetres": [
+        0.0082,
+        0.7755,
+        -0.0409
+      ],
+      "maxMetres": [
+        0.108,
+        1.1555,
+        0.037
+      ]
+    },
+    "lumbar-psoas-major-muscles-psoas-major-right": {
+      "source": "Psoas major.r",
+      "minMetres": [
+        -0.108,
+        0.7755,
+        -0.0409
+      ],
+      "maxMetres": [
+        -0.0082,
+        1.1555,
+        0.037
+      ]
+    },
+    "multifidus-lumborum-muscles-multifidus-lumborum-muscle-left": {
+      "source": "Multifidus lumborum muscle.l",
+      "minMetres": [
+        0.0034,
+        0.993,
+        -0.0678
+      ],
+      "maxMetres": [
+        0.0461,
+        1.1545,
+        -0.0282
+      ]
+    },
+    "multifidus-lumborum-muscles-multifidus-lumborum-muscle-right": {
+      "source": "Multifidus lumborum muscle.r",
+      "minMetres": [
+        -0.0461,
+        0.993,
+        -0.0678
+      ],
+      "maxMetres": [
+        -0.0034,
+        1.1545,
+        -0.0282
+      ]
+    },
+    "rotatores-muscles-rotatores-left": {
+      "source": "Rotatores.l",
+      "minMetres": [
+        0.0004,
+        0.885,
+        -0.0954
+      ],
+      "maxMetres": [
+        0.0385,
+        1.5204,
+        -0.0292
+      ]
+    },
+    "rotatores-muscles-rotatores-right": {
+      "source": "Rotatores.r",
+      "minMetres": [
+        -0.0385,
+        0.885,
+        -0.0954
+      ],
+      "maxMetres": [
+        -0.0004,
+        1.5204,
+        -0.0292
+      ]
+    },
+    "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-left": {
+      "source": "Serratus posterior inferior muscle.l",
+      "minMetres": [
+        -0.0025,
+        1.0216,
+        -0.0948
+      ],
+      "maxMetres": [
+        0.1111,
+        1.2003,
+        -0.0576
+      ]
+    },
+    "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-right": {
+      "source": "Serratus posterior inferior muscle.r",
+      "minMetres": [
+        -0.1111,
+        1.0216,
+        -0.0948
+      ],
+      "maxMetres": [
+        0.0025,
+        1.2003,
+        -0.0576
+      ]
+    },
+    "spinalis-thoracis-muscles-spinalis-thoracis-muscle-left": {
+      "source": "Spinalis thoracis muscle.l",
+      "minMetres": [
+        -0.001,
+        1.0335,
+        -0.1028
+      ],
+      "maxMetres": [
+        0.0117,
+        1.411,
+        -0.0534
+      ]
+    },
+    "spinalis-thoracis-muscles-spinalis-thoracis-muscle-right": {
+      "source": "Spinalis thoracis muscle.r",
+      "minMetres": [
+        -0.0117,
+        1.0335,
+        -0.1028
+      ],
+      "maxMetres": [
+        0.001,
+        1.411,
+        -0.0534
+      ]
+    }
+  },
+  "mappingNotes": [
+    {
+      "structure": "multifidus-lumborum-muscles",
+      "showAs": "Multifidus (lumbar part)",
+      "zAnatomyName": "Multifidus lumborum muscle",
+      "why": "Z-Anatomy splits the multifidus into colli, thoracis and lumborum meshes; only the lumbar mesh is exported, as the chapter teaches the lumbar multifidus. Measured 2026-11-27: its lower end is about 1 cm above the top of the sacrum, so the sacral origin described in the text is not modelled."
+    },
+    {
+      "structure": "rotatores-muscles",
+      "showAs": "Rotatores",
+      "zAnatomyName": "Rotatores",
+      "why": "One mesh per side for the whole column (measured from sacrum level to above T1). The text says the rotatores are best developed in the thoracic region and that lumbar rotatores are often inconsistent; the mesh does not show that variation."
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles",
+      "showAs": "Intertransversarii (lateral lumbar group: dorsal and ventral parts)",
+      "zAnatomyName": "Dorsal parts of lateral intertransversarii lumborum muscles / Ventral parts of lateral intertransversarii lumborum muscles",
+      "why": "Two meshes per side in one group. Z-Anatomy has no mesh for the medial lumbar intertransversarii, so the medial group taught in the text is a model gap."
+    },
+    {
+      "structure": "interspinales-lumborum-muscles",
+      "showAs": "Interspinales (lumbar)",
+      "zAnatomyName": "Interspinales lumborum muscles",
+      "why": "Only the lumbar mesh is exported; Z-Anatomy also has colli and thoracis meshes."
+    },
+    {
+      "structure": "iliocostalis-lumborum-muscles / longissimus-thoracis-muscles / spinalis-thoracis-muscles",
+      "showAs": "Iliocostalis lumborum, Longissimus thoracis, Spinalis thoracis",
+      "zAnatomyName": "Iliocostalis lumborum muscle / Longissimus thoracis muscle / Spinalis thoracis muscle",
+      "why": "The three erector spinae parts the chapter teaches. Z-Anatomy's iliocostalis thoracis and the cervical and capitis parts are not exported."
+    },
+    {
+      "structure": "lumbar-psoas-major-muscles",
+      "showAs": "Psoas major",
+      "zAnatomyName": "Psoas major",
+      "why": "The same source mesh as the hip add-on's psoas major, exported again under a lumbar group id because a chapter can only use its own add-on (QC-09) and structure ids must stay unique across add-ons."
+    },
+    {
+      "structure": "*",
+      "showAs": "",
+      "zAnatomyName": "",
+      "why": "Hemispheres: every exported '.l' mesh lies at +x like the base skeleton's '.l' bones, so -left/-right ids match the skeleton. Measured 2026-11-27: every exported mesh except psoas major lies entirely at z < 0 (the posterior side of the model); psoas major spans z -0.041 to 0.037 and its lower end overlaps the femur."
+    }
+  ]
+}

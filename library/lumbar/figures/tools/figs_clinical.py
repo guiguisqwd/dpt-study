@@ -47,11 +47,11 @@ def register(fig):
         label(f, 600, 960, 'Paracentral herniation: traversing L5 root', '旁中央型突出：压到 L5 走行根', HERN, 'start', 14, to=hp)
         label(f, 40, 930, 'Far-lateral herniation: exiting L4 root', '极外侧型突出：压到 L4 出口根', HERN, 'start', 14, to=hl)
         label(f, 40, 230, 'L4 root leaves at L4–L5', 'L4 神经根从 L4–L5 出孔', '#8a6a10', 'start', 14, to=st.P([0.034, EXIT['L4'] - 0.009, -0.02]))
-        label(f, 640, 230, 'L5 root crosses the L4–L5 disc', 'L5 神经根越过 L4–L5 椎间盘', '#8a6a10', 'start', 14, to=st.P([-0.0085, yd + 0.012, -0.02]))
+        label(f, 620, 230, 'L5 root crosses the L4–L5 disc', 'L5 神经根越过 L4–L5 椎间盘', '#8a6a10', 'start', 14, to=st.P([-0.0105, yd + 0.0045, -0.02]))
         label(f, 40, 1010, 'L4–L5 disc (in front of the dural sac)', 'L4–L5 椎间盘（在硬脊膜囊前方）', DISC, 'start', 14, to=st.P([0.02, yd, 0]))
         # ---- panel B: the disc from above with the zones
         sb = Stage(f, 'sup', 0.0, 0.028, 1290, 580, 6200)
-        f.bi(1290, 140, 'B. L4–L5 disc from above: zones of herniation', 'B. 上面观 L4–L5 椎间盘：突出的分区', 16, INK, 'middle', '700')
+        f.bi(1290, 140, 'B. L4–L5 disc from above: zones of herniation', 'B. L4–L5 椎间盘上面观：突出的分区', 16, INK, 'middle', '700')
         sb.shape('skeleton-vertebra-l5', BONE_E, SHADE, 1.5)
         sb.shape('skeleton-vertebra-l5', BONE_E, BONE, 1.3, layer='sup-1')
         Q = lambda x, z: sb.P([x, 1, z])
@@ -76,7 +76,7 @@ def register(fig):
             f.bi(x, ty, en, zh, 13, HERN, 'middle', '700')
         label(f, 1560, 280, 'Nucleus pulposus', '髓核', '#4d6a8a', 'start', 14, to=Q(-0.006, -0.003))
         label(f, 1560, 360, 'Annulus fibrosus', '纤维环', DISC, 'start', 14, to=Q(-0.021, 0.004))
-        label(f, 1560, 600, 'Exiting L4 root', 'L4 出口根', '#8a6a10', 'start', 14, to=Q(-0.026, -0.021))
+        label(f, 1560, 480, 'Exiting L4 root', 'L4 出口根', '#8a6a10', 'start', 14, to=Q(-0.026, -0.021))
         label(f, 1560, 700, 'Traversing L5 root', 'L5 走行根', '#8a6a10', 'start', 14, to=Q(-0.0125, -0.025))
         label(f, 1290, 250, 'Dural sac', '硬脊膜囊', DURA, 'middle', 14, to=Q(0.0, -0.022))
         note(f, 1000, 1010, ['The same rule at other levels: a paracentral L5–S1 herniation usually meets the S1 root.'],
@@ -111,10 +111,10 @@ def register(fig):
             f.raw(f'<g stroke="{col}" stroke-width="3" fill="none" stroke-linecap="round"><path d="M{x + 14:.1f},{y - 14:.1f} L{x + 40:.1f},{y - 40:.1f}"/>'
                   f'<path d="M{x + 30:.1f},{y - 50:.1f} L{x + 50:.1f},{y - 30:.1f}" stroke-width="7"/></g>')
             f.circle(x, y, 6, col, '#fff', 2)
-        kx, ky = a.P([-0.075, 0.405, 0.06]); hammer(kx, ky, ROOT['L4'])
+        kx, ky = a.P([-0.075, 0.395, 0.06]); hammer(kx, ky, ROOT['L4'])
         hx, hy = p.P([-0.035, 0.5, -0.06]); hammer(hx, hy, ROOT['L5'])
-        ax_, ay = p.P([-0.06, 0.1, -0.06]); hammer(ax_, ay, ROOT['S1'])
-        label(f, 560, 360, 'Patellar reflex: mainly L4 (L3–L4)', '膝反射：主要 L4（L3–L4）', ROOT['L4'], 'start', 14, to=(kx, ky))
+        ax_, ay = p.P([-0.075, 0.1, -0.06]); hammer(ax_, ay, ROOT['S1'])
+        label(f, 40, 830, 'Patellar reflex: mainly L4 (L3–L4)', '膝反射：主要 L4（L3–L4）', ROOT['L4'], 'start', 14, to=(kx, ky))
         label(f, 1060, 420, 'Medial hamstring reflex: L5', '内侧腘绳肌反射：L5', ROOT['L5'], 'start', 14, to=(hx, hy))
         label(f, 1060, 860, 'Achilles reflex: S1', '跟腱反射：S1', ROOT['S1'], 'start', 14, to=(ax_, ay))
         # key muscles (myotomes), ISNCSCI
@@ -155,7 +155,8 @@ def register(fig):
         xy = {}
         for code, (c, y) in pts.items():
             xy[code] = st.P([c * CUN, y, -0.08])
-            point(f, *xy[code], code)
+            x_, y_ = xy[code]; f.circle(x_, y_, 7, '#c0392b', '#fff', 2)
+            f.raw(f'<text x="{x_:.1f}" y="{y_ - 12:.1f}" font-size="13" fill="#a3271a" text-anchor="middle" font-weight="700" stroke="#fcfaf4" stroke-width="4" stroke-linejoin="round" paint-order="stroke">{code}</text>')   # code on a paper-coloured halo so lines do not cut it
         for lvl in ('l1', 'l2', 'l3', 'l4', 'l5'):   # Jiaji points beside each lumbar spinous process (left side shown)
             x, y = st.P([0.5 * CUN, below(lvl), -0.08]); f.circle(x, y, 5, '#c0392b', '#fff', 1.6)
         xj, yj = st.P([0.5 * CUN, below('l3'), -0.08])
@@ -164,7 +165,7 @@ def register(fig):
         f.path(f'M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}', '#8c2f39', 1.6, dash='9 6', rough=False)
         f.bi(a[0] + 8, a[1] - 28, 'Iliac crests ≈ L4', '髂嵴连线 ≈ L4', 13, '#8c2f39', 'start', '700')
         for lvl in ('l2', 'l3', 'l4', 'l5'):
-            x, y = st.P([0.0, LM[f'{lvl}-sp'][1], -0.08]); f.bi(292, y - 2, f'{lvl.upper()} spinous process', f'第 {lvl[1]} 腰椎棘突', 12, GREY, 'end', '600')
+            x, y = st.P([0.0, LM[f'{lvl}-sp'][1], -0.08]); f.bi(292, y - 2, f'{lvl.upper()} spinous process', f'第 {lvl[1]} 腰椎棘突', 12, ZH, 'end', '600')
         rows = [('GV4', 'Mingmen', '命门', 'posterior midline, below the L2 spinous process', '后正中线上，第 2 腰椎棘突下'),
                 ('GV3', 'Yaoyangguan', '腰阳关', 'posterior midline, below the L4 spinous process', '后正中线上，第 4 腰椎棘突下'),
                 ('BL23', 'Shenshu', '肾俞', '1.5 cun lateral, level with the lower border of the L2 spinous process', '第 2 腰椎棘突下，旁开 1.5 寸'),
@@ -176,7 +177,7 @@ def register(fig):
         for i, (code, en, zh, loc_en, loc_zh) in enumerate(rows):
             y = 240 + i * 92
             label(f, 1130, y, f'{code} {en}', f'{code} {zh}', '#a3271a', 'start', 14)
-            f.bi(1130, y + 40, loc_en, loc_zh, 12, GREY, 'start', '400')
+            f.bi(1130, y + 40, loc_en, loc_zh, 12, ZH, 'start', '400')
         label(f, 40, 330, 'Kidney (deep, about T12–L3)', '肾（深部，约 T12–L3）', '#8c5a4a', 'start', 14, to=st.P([0.077, 1.09, 0.0]))
         f.text(xj - 12, yj + 22, 'EX-B2', 12, '#a3271a', 'end', '700')
         # line key

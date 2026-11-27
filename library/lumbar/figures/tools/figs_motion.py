@@ -64,11 +64,11 @@ def register(fig):
         f.end()
         q1, q2 = b.P([-0.075, 1.055, -0.04]), b.P([-0.058, 1.0, -0.04])
         arrow_line(f, q1, (q1[0] + 4, q1[1] + 70), COLOR['quadratus-lumborum'], 4)
-        it = [b.P([0.042, 1.075, -0.04]), b.P([0.042, 1.055, -0.04])]
+        it = [b.P([-0.042, 1.075, -0.04]), b.P([-0.042, 1.055, -0.04])]   # person's right: the same side as quadratus lumborum and the bend
         arrow_line(f, it[0], it[1], COLOR['intertransversarii'], 3)
         arc(f, 900, 610, 300, 255, 290, ACT, 3.4)
         label(f, 900, 1040, 'Quadratus lumborum: bends the trunk to its own side', '腰方肌：使躯干向同侧屈', COLOR['quadratus-lumborum'], 'middle', 14, to=q2)
-        label(f, 620, 300, 'Intertransversarii', '横突间肌', COLOR['intertransversarii'], 'start', 14, to=it[0])
+        label(f, 1060, 215, 'Intertransversarii', '横突间肌', COLOR['intertransversarii'], 'start', 14, to=it[0])
         # ---- C: superior view of the L3–L4 joints: rotation
         c = Stage(f, 'sup', 0.0, 0.03, 1470, 520, 4200)
         f.bi(1470, 150, 'C. From above: rotation is blocked by the joints', 'C. 上面观：关节突关节限制旋转', 16, INK, 'middle', '700')
@@ -81,10 +81,10 @@ def register(fig):
             iap = [Q(sg * 0.0105 + 0.004 * math.cos(t), -0.035 + 0.008 * math.sin(t)) for t in [k * math.pi / 6 for k in range(12)]]
             f.path(blob(iap), '#6f7d8c', 1.6, '#e8edf2', dash='5 3', rough=False)
         cx, cy = Q(0, -0.003)
-        arc(f, cx, cy, 100, 200, 330, ACT, 3.4)
+        arc(f, cx, cy, 100, 330, 200, ACT, 3.4, ccw=True)
         hit = Q(-0.014, -0.033); f.text(hit[0] + 20, hit[1] + 6, '×', 30, HERN if 'HERN' in globals() else '#b04a3a', 'middle', '700')
         label(f, 1290, 840, 'Superior articular process of L4', 'L4 上关节突', GREY, 'start', 13, to=Q(0.02, -0.04))
-        label(f, 1290, 920, 'Inferior articular process of L3 (dashed)', 'L3 下关节突（虚线）', '#6f7d8c', 'start', 13, to=Q(0.0105, -0.04))
+        label(f, 1290, 920, 'Inferior articular process of L3 (dashed)', 'L3 下关节突（虚线）', '#6f7d8c', 'start', 13, to=Q(-0.0105, -0.04))
         note(f, 1290, 1000, ['The joint surfaces face mostly sideways, so they', 'block rotation but let flexion and extension glide.'],
              ['关节面大多朝向侧方，', '所以挡住旋转，允许屈伸滑动。'])
         note(f, 40, 1150, ['A: erector spinae and, deep to them, multifidus lie behind the axis; both extend the lumbar spine. Psoas major runs close to the axis and mainly flexes the hip.'],
@@ -192,7 +192,7 @@ def register(fig):
             y = 300 + i * 130
             f.bi(x0, y - 20, en, zh, 13, col, 'start', '700')
             if dash:  # onset range only: it varied with movement direction, before or after the deltoid
-                f.path(f'M{zero - 80},{y + 30} L{zero + 80},{y + 30}', col, 16, dash=dash, rough=False, op=0.8)
+                f.path(f'M{zero - 80},{y + 30} L{zero + 80},{y + 30}', col, 6, dash='1 14', rough=False, op=0.9)
                 continue
             f.path(f'M{xs},{y + 30} L{x1},{y + 30}', col, 16, dash=dash, rough=False, op=0.8)
             f.circle(xs, y + 30, 7, col, '#fff', 2)

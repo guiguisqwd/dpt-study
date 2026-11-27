@@ -19,7 +19,7 @@ def register(fig):
             f.path('M' + ' L'.join('%.1f,%.1f' % p for p in sk), '#b7ab95', 1.6, rough=False)
             # abdominal wall muscles heading anterolaterally from the lateral raphe (cut short)
             for k, (col, d) in enumerate([('#8a7a5a', 0.0), ('#9a8a6a', 0.005), ('#aa9a7a', 0.010)]):
-                a, b, c = s(0.075 + d * 0.3, -0.042), s(0.082 + d, -0.02), s(0.080 + d, 0.008)
+                a, b, c = (s(0.088, -0.028) if k == 2 else s(0.075 + d * 0.3, -0.042)), s(0.082 + d, -0.02), s(0.080 + d, 0.008)
                 f.path(f'M{a[0]:.1f},{a[1]:.1f} Q{b[0]:.1f},{b[1]:.1f} {c[0]:.1f},{c[1]:.1f}', col, 5 - k, rough=False)
             f.path(blob(ell(st, (1 if s is lft else -1) * 0.031, -0.004, 0.016, 0.019)), COLOR['psoas-major'], 1.6, tint(COLOR['psoas-major']))
             sg = 1 if s is lft else -1
@@ -45,7 +45,7 @@ def register(fig):
         # right column: muscles and bony parts of the person's right side
         label(f, 1180, 300, 'Psoas major', '腰大肌', COLOR['psoas-major'], 'start', 14, to=rgt(0.031, -0.004))
         label(f, 1180, 400, 'Quadratus lumborum', '腰方肌', COLOR['quadratus-lumborum'], 'start', 14, to=rgt(0.058, -0.027))
-        label(f, 1180, 500, 'Transverse process', '横突', GREY, 'start', 14, to=rgt(0.043, -0.032))
+        label(f, 1180, 548, 'Transverse process', '横突', GREY, 'start', 14, to=rgt(0.043, -0.032))
         label(f, 1180, 600, 'Iliocostalis lumborum', '腰髂肋肌', COLOR['iliocostalis-lumborum'], 'start', 14, to=rgt(0.054, -0.056))
         label(f, 1180, 700, 'Longissimus thoracis', '胸最长肌', COLOR['longissimus-thoracis'], 'start', 14, to=rgt(0.033, -0.060))
         label(f, 1180, 800, 'Multifidus', '多裂肌', COLOR['multifidus'], 'start', 14, to=rgt(0.013, -0.061))
@@ -57,7 +57,7 @@ def register(fig):
         label(f, 40, 580, 'Middle layer', '中层', TLF, 'start', 14, to=lft(0.06, -0.038))
         label(f, 40, 680, 'Lateral raphe', '外侧缝', TLF, 'start', 14, to=lft(0.075, -0.042))
         label(f, 40, 800, 'Posterior layer', '后层', TLF, 'start', 14, to=lft(0.045, -0.078))
-        note(f, 40, 975, ['Posterior layer: spinous processes to the lateral raphe, over the erector spinae and multifidus. Middle layer: transverse process tips to the lateral raphe.',
+        note(f, 40, 948, ['Posterior layer: spinous processes to the lateral raphe, over the erector spinae and multifidus. Middle layer: transverse process tips to the lateral raphe.',
                           'Anterior layer: over the front of quadratus lumborum. Transversus abdominis and internal oblique attach at the lateral raphe.'],
              ['后层：从棘突越过竖脊肌和多裂肌到外侧缝。中层：从横突尖到外侧缝。', '前层：覆盖腰方肌前面。腹横肌和腹内斜肌附着在外侧缝。'])
         f.save('下背部横断面与胸腰筋膜')

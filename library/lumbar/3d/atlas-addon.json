@@ -1,0 +1,446 @@
+{
+  "_note": {
+    "en": "Lumbar 3D add-on: the 9 lower-back muscles the bundled demo model lacks (gui agreed 2026-11-27, AN-43). Built by site/build/atlas/build-addon.py from the pinned Z-Anatomy source; checked by check-addon.py (CI). Ids come from the exporter (group id + source mesh name). Position checks below were written after measuring the exported meshes.",
+    "zh": "腰部 3D 附加模型：自带演示模型里没有的 9 块下背部肌肉（gui 2026-11-27 同意，AN-43）。由 site/build/atlas/build-addon.py 从固定的 Z-Anatomy 源文件导出，check-addon.py 检查（CI 也跑）。ID 由导出脚本生成（组 id + 源网格名）。下面的位置检查是导出后按实测范围写的。"
+  },
+  "output": {
+    "glb": "public/models/z-anatomy-1.4.0-lumbar-addon.glb",
+    "metadata": "public/models/lumbar-addon.metadata.json",
+    "provenance": "public/models/lumbar-addon.provenance.json"
+  },
+  "batch": {
+    "description": "Lower-back muscles missing from the bundled z-anatomy-1.4.0 demo model.",
+    "groups": [
+      {
+        "id": "iliocostalis-lumborum-muscles",
+        "name": "Iliocostalis Lumborum",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Iliocostalis lumborum muscle.l",
+          "Iliocostalis lumborum muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "longissimus-thoracis-muscles",
+        "name": "Longissimus Thoracis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Longissimus thoracis muscle.l",
+          "Longissimus thoracis muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "spinalis-thoracis-muscles",
+        "name": "Spinalis Thoracis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Spinalis thoracis muscle.l",
+          "Spinalis thoracis muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "multifidus-lumborum-muscles",
+        "name": "Multifidus Lumborum",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Multifidus lumborum muscle.l",
+          "Multifidus lumborum muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "rotatores-muscles",
+        "name": "Rotatores",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Rotatores.l",
+          "Rotatores.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "interspinales-lumborum-muscles",
+        "name": "Interspinales Lumborum",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Interspinales lumborum muscles.l",
+          "Interspinales lumborum muscles.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "lateral-intertransversarii-lumborum-muscles",
+        "name": "Lateral Intertransversarii Lumborum",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Dorsal parts of lateral intertransversarii lumborum muscles.l",
+          "Dorsal parts of lateral intertransversarii lumborum muscles.r",
+          "Ventral parts of lateral intertransversarii lumborum muscles.l",
+          "Ventral parts of lateral intertransversarii lumborum muscles.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "lumbar-psoas-major-muscles",
+        "name": "Psoas Major",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Psoas major.l",
+          "Psoas major.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "serratus-posterior-inferior-muscles",
+        "name": "Serratus Posterior Inferior",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Serratus posterior inferior muscle.l",
+          "Serratus posterior inferior muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      }
+    ]
+  },
+  "checks": [
+    {
+      "structure": "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-{side}",
+      "rule": "overlaps",
+      "bone": "Hip bone{side}",
+      "why": "arises from the iliac crest and the erector spinae aponeurosis",
+      "tolerance": 0.005
+    },
+    {
+      "structure": "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-{side}",
+      "rule": "topAbove",
+      "bone": "Twelfth rib{side}",
+      "why": "inserts on the lower ribs, above the 12th rib"
+    },
+    {
+      "structure": "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T6",
+      "why": "the lumbar part ends on the lower ribs, below the mid-thoracic spine"
+    },
+    {
+      "structure": "longissimus-thoracis-muscles-longissimus-thoracis-muscle-{side}",
+      "rule": "overlaps",
+      "bone": "Sacrum",
+      "why": "arises with the erector spinae aponeurosis from the sacrum",
+      "tolerance": 0.005
+    },
+    {
+      "structure": "longissimus-thoracis-muscles-longissimus-thoracis-muscle-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L5",
+      "why": "reaches down to the sacrum"
+    },
+    {
+      "structure": "longissimus-thoracis-muscles-longissimus-thoracis-muscle-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra T6",
+      "why": "reaches the upper thoracic transverse processes and ribs"
+    },
+    {
+      "structure": "spinalis-thoracis-muscles-spinalis-thoracis-muscle-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L1",
+      "why": "arises from the spinous processes of T11–L2"
+    },
+    {
+      "structure": "spinalis-thoracis-muscles-spinalis-thoracis-muscle-{side}",
+      "rule": "bottomAbove",
+      "bone": "Vertebra L4",
+      "why": "does not reach the lower lumbar spine"
+    },
+    {
+      "structure": "spinalis-thoracis-muscles-spinalis-thoracis-muscle-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra T6",
+      "why": "inserts on the upper thoracic spinous processes"
+    },
+    {
+      "structure": "multifidus-lumborum-muscles-multifidus-lumborum-muscle-{side}",
+      "rule": "overlaps",
+      "bone": "Vertebra L4",
+      "why": "lies on the laminae beside the lumbar spinous processes",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "multifidus-lumborum-muscles-multifidus-lumborum-muscle-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L3",
+      "why": "the lumbar part reaches the lower lumbar vertebrae"
+    },
+    {
+      "structure": "multifidus-lumborum-muscles-multifidus-lumborum-muscle-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra L2",
+      "why": "spans the lumbar spine"
+    },
+    {
+      "structure": "multifidus-lumborum-muscles-multifidus-lumborum-muscle-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T11",
+      "why": "the lumbar part ends at about the thoracolumbar junction"
+    },
+    {
+      "structure": "rotatores-muscles-rotatores-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L5",
+      "why": "one mesh for the whole column: its lower end is at the sacrum"
+    },
+    {
+      "structure": "rotatores-muscles-rotatores-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra T6",
+      "why": "one mesh for the whole column: it runs through the thoracic spine"
+    },
+    {
+      "structure": "rotatores-muscles-rotatores-{side}",
+      "rule": "overlaps",
+      "bone": "Vertebra L3",
+      "why": "lies deep, on the laminae",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "interspinales-lumborum-muscles-interspinales-lumborum-muscles-{side}",
+      "rule": "overlaps",
+      "bone": "Vertebra L3",
+      "why": "joins neighbouring lumbar spinous processes",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "interspinales-lumborum-muscles-interspinales-lumborum-muscles-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L3",
+      "why": "reaches the lower lumbar spinous processes"
+    },
+    {
+      "structure": "interspinales-lumborum-muscles-interspinales-lumborum-muscles-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra L1",
+      "why": "reaches the upper lumbar spinous processes"
+    },
+    {
+      "structure": "interspinales-lumborum-muscles-interspinales-lumborum-muscles-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T11",
+      "why": "the lumbar part stays at or below the thoracolumbar junction"
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "overlaps",
+      "bone": "Vertebra L3",
+      "why": "joins neighbouring lumbar transverse and accessory processes",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L3",
+      "why": "reaches the lower lumbar transverse processes"
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T11",
+      "why": "lumbar part only"
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "overlaps",
+      "bone": "Vertebra L3",
+      "why": "joins neighbouring lumbar transverse processes",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "bottomBelow",
+      "bone": "Vertebra L3",
+      "why": "reaches the lower lumbar transverse processes"
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T11",
+      "why": "lumbar part only"
+    },
+    {
+      "structure": "lumbar-psoas-major-muscles-psoas-major-{side}",
+      "rule": "topAbove",
+      "bone": "Vertebra L2",
+      "why": "arises from the T12–L4 vertebral bodies, so it reaches above the upper lumbar spine"
+    },
+    {
+      "structure": "lumbar-psoas-major-muscles-psoas-major-{side}",
+      "rule": "overlaps",
+      "bone": "Femur{side}",
+      "why": "inserts on the lesser trochanter",
+      "tolerance": 0.01
+    },
+    {
+      "structure": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-{side}",
+      "rule": "overlaps",
+      "bone": "Twelfth rib{side}",
+      "why": "inserts on the lower borders of ribs 9–12",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-{side}",
+      "rule": "overlaps",
+      "bone": "Ninth rib{side}",
+      "why": "inserts on the lower borders of ribs 9–12",
+      "tolerance": 0.0
+    },
+    {
+      "structure": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-{side}",
+      "rule": "topBelow",
+      "bone": "Vertebra T9",
+      "why": "arises from the T11–L2 spinous processes and stays below the mid-thoracic spine"
+    },
+    {
+      "structure": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-{side}",
+      "rule": "bottomAbove",
+      "bone": "Vertebra L4",
+      "why": "its origin does not reach the lower lumbar spine"
+    }
+  ],
+  "mappingNotes": [
+    {
+      "structure": "multifidus-lumborum-muscles",
+      "showAs": "Multifidus (lumbar part)",
+      "zAnatomyName": "Multifidus lumborum muscle",
+      "why": "Z-Anatomy splits the multifidus into colli, thoracis and lumborum meshes; only the lumbar mesh is exported, as the chapter teaches the lumbar multifidus. Measured 2026-11-27: its lower end is about 1 cm above the top of the sacrum, so the sacral origin described in the text is not modelled."
+    },
+    {
+      "structure": "rotatores-muscles",
+      "showAs": "Rotatores",
+      "zAnatomyName": "Rotatores",
+      "why": "One mesh per side for the whole column (measured from sacrum level to above T1). The text says the rotatores are best developed in the thoracic region and that lumbar rotatores are often inconsistent; the mesh does not show that variation."
+    },
+    {
+      "structure": "lateral-intertransversarii-lumborum-muscles",
+      "showAs": "Intertransversarii (lateral lumbar group: dorsal and ventral parts)",
+      "zAnatomyName": "Dorsal parts of lateral intertransversarii lumborum muscles / Ventral parts of lateral intertransversarii lumborum muscles",
+      "why": "Two meshes per side in one group. Z-Anatomy has no mesh for the medial lumbar intertransversarii, so the medial group taught in the text is a model gap."
+    },
+    {
+      "structure": "interspinales-lumborum-muscles",
+      "showAs": "Interspinales (lumbar)",
+      "zAnatomyName": "Interspinales lumborum muscles",
+      "why": "Only the lumbar mesh is exported; Z-Anatomy also has colli and thoracis meshes."
+    },
+    {
+      "structure": "iliocostalis-lumborum-muscles / longissimus-thoracis-muscles / spinalis-thoracis-muscles",
+      "showAs": "Iliocostalis lumborum, Longissimus thoracis, Spinalis thoracis",
+      "zAnatomyName": "Iliocostalis lumborum muscle / Longissimus thoracis muscle / Spinalis thoracis muscle",
+      "why": "The three erector spinae parts the chapter teaches. Z-Anatomy's iliocostalis thoracis and the cervical and capitis parts are not exported."
+    },
+    {
+      "structure": "lumbar-psoas-major-muscles",
+      "showAs": "Psoas major",
+      "zAnatomyName": "Psoas major",
+      "why": "The same source mesh as the hip add-on's psoas major, exported again under a lumbar group id because a chapter can only use its own add-on (QC-09) and structure ids must stay unique across add-ons."
+    },
+    {
+      "structure": "*",
+      "showAs": "",
+      "zAnatomyName": "",
+      "why": "Hemispheres: every exported '.l' mesh lies at +x like the base skeleton's '.l' bones, so -left/-right ids match the skeleton. Measured 2026-11-27: every exported mesh except psoas major lies entirely at z < 0 (the posterior side of the model); psoas major spans z -0.041 to 0.037 and its lower end overlaps the femur."
+    }
+  ]
+}
