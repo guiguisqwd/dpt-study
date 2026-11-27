@@ -1,0 +1,161 @@
+{
+  "schema": "dpt-daily-paper/1",
+  "id": "multifidi-dry-needling-cadaver",
+  "note": {
+    "en": "N-5 paper record for the lumbar chapter (week 8), based on the full text on PMC, with citation details and article type checked against the journal page.",
+    "zh": "腰椎章节第 8 周的 N-5 论文记录；阅读层级为 PMC 上的全文，引文信息和文章类型已在期刊页面核对。"
+  },
+  "chapter": "lumbar",
+  "paper": {
+    "id": "multifidi-dry-needling-cadaver",
+    "citation": "Williams CL, Falyar CR, McConnell RC, Lindsley S. Safety Considerations When Dry Needling the Multifidi in the Thoracolumbar Region: A Cadaveric Study. Int J Sports Phys Ther 2023;18(6):1356-1363.",
+    "doi": "10.26603/001c.89663",
+    "title": {
+      "en": "Safety Considerations When Dry Needling the Multifidi in the Thoracolumbar Region: A Cadaveric Study",
+      "zh": "胸腰段多裂肌干针操作的安全性考量：一项尸体研究"
+    },
+    "byline": "Williams CL et al. · IJSPT 2023;18(6):1356-1363",
+    "question": {
+      "en": "Can a dry needle penetrate the ligamentum flavum at the T12/L1 interspace and enter the spinal canal when it is inserted with a paramedian approach, under ultrasound guidance, in a fresh-frozen, lightly fixed cadaver in the prone position? The authors state that earlier studies of safety in the upper lumbar spine examined the kidneys and lungs, but none investigated the possibility of entering the spinal canal in this region. Dry needling of the multifidi has been considered safe because the vertebral lamina is thought to serve as a protective barrier for the spinal canal, and the study asks whether one documented technique at the thoracolumbar junction exposes a significant safety vulnerability. The Introduction shows how much published techniques vary: Table 1 lists 11 rows from 9 sources, with insertion points described as 1 to 4.0 cm lateral to the spinous process, on or near a tender point, or within 1 finger breadth of midline, and needle angles from 0° to 45°, directed medially or inferomedially. The question arose when physical therapy and certified registered nurse anesthetist (CRNA) faculty discussed how lumbar puncture differs from multifidus dry needling, a contrast set out in Table 2.",
+      "zh": "在一具俯卧、新鲜冷冻并经轻度固定的尸体上，经超声引导、采用旁正中入路进针时，干针能否在第 12 胸椎与第 1 腰椎之间的间隙（T12/L1）穿透黄韧带并进入椎管？作者指出，既往关于上腰段安全性的研究关注的是肾脏和肺，但没有研究探讨在这一区域进入椎管的可能。多裂肌干针一向被认为是安全的，理由是椎板可以作为椎管的保护屏障；本研究要回答的是，在胸腰段采用一种已有记载的技术，是否存在明显的安全隐患。引言显示已发表的技术差异很大：表 1 列出来自 9 篇文献的 11 行记录，进针点描述为棘突外侧 1 至 4.0 cm、压痛点上或其附近，或距中线 1 横指以内，进针角度从 0° 到 45°，朝内侧或内下方。这一问题源于物理治疗专业与认证注册麻醉护士（CRNA）专业教师的一次讨论，内容是腰椎穿刺与多裂肌干针有何不同，表 2 列出了这一对比。"
+    },
+    "design": {
+      "en": "A cadaveric study, Level of Evidence IV, carried out as an interprofessional collaboration between physical therapy faculty (Belmont University) and certified registered nurse anesthetist (CRNA) faculty (Middle Tennessee School of Anesthesia), as the Introduction and the author affiliations state. The journal files it under Original Research, although the Introduction refers to the paper as 'this commentary'. It examines one documented needling technique at one site (T12/L1); there is no comparison group and no alternative technique. Advarra IRB granted an exemption from Institutional Review Board approval (Pro00070509). This record is based on the full text on PMC: the Abstract, Introduction, Tables 1 and 2, Methods, Results, Conclusion, conflict-of-interest statement, supplementary material listing and the captions of Figures 1 to 3. Citation details and article type were checked against the journal page. The figure images, the supplemental video and the cited references were not viewed, so statements that come from other papers are reported only as the authors cite them.",
+      "zh": "这是一项尸体研究，证据等级 IV，由贝尔蒙特大学物理治疗专业教师与中田纳西麻醉学院的认证注册麻醉护士（CRNA）专业教师跨专业合作完成（据引言和作者单位）。期刊将其归入“原创研究”栏目，但引言称本文为“这篇评论”。研究只考察一个部位（T12/L1）的一种已有记载的进针技术，没有对照组，也没有比较其他技术。Advarra 伦理审查委员会（IRB）批准豁免审查，编号 Pro00070509。本记录依据 PMC 上的全文：摘要、引言、表 1 和表 2、方法、结果、结论、利益冲突声明、补充材料列表，以及图 1 至图 3 的图注；引文信息与文章类型已在期刊页面核对。未查看图片本身、补充视频和所引文献，因此文中来自其他论文的说法只按作者的引用转述。"
+    },
+    "population": {
+      "en": "One donor: an 88-year-old female, received through the Willed Body Program at The University of North Texas Health Science Center. The Methods describe a 'fresh/lightly embalmed' donor, whereas the Abstract and Introduction describe a 'fresh-frozen, lightly fixed' cadaver, and the paper does not explain the difference. The procedure was performed at Middle Tennessee School of Anesthesia. With a single specimen, the study cannot show how results vary between donors.",
+      "zh": "一具遗体：88 岁女性捐献者，来自北得克萨斯大学健康科学中心的遗体捐献项目。方法部分称其为“新鲜/轻度防腐”的遗体，摘要和引言则称“新鲜冷冻、轻度固定”的尸体，文中未说明两种说法为何不同。操作在中田纳西麻醉学院进行。只有一具标本，研究无法显示不同捐献者之间结果的差异。"
+    },
+    "methods": {
+      "en": "A certified registered nurse anesthetist with over 20 years of diagnostic ultrasound imaging experience and 15 years performing and teaching regional anesthesia performed the procedure. The cadaver was placed in a prone position, and the Methods do not mention a pillow. A Sonosite Edge II ultrasound system with an rC60xi 5-2 MHz curvilinear array transducer was placed in a parasagittal orientation with the orientation indicator facing cephalad. The sacrum, the L5–S1 interspace and the L5 spinous process were identified, and the transducer was slid cephalad until the interspace between T12 and L1 was identified. An AGUPUNT APS 0.30 x 50 mm dry needle (0.30 mm in diameter, 50 mm long) was inserted approximately 1.0 cm lateral to the spinous process of T12, directed medially at a 22-degree angle, and advanced under ultrasound guidance to determine whether it could penetrate the ligamentum flavum and enter the spinal canal. That is the only outcome the article describes: no other outcome is defined, the result was judged on ultrasound alone, and the article reports no dissection of this specimen to confirm the needle position. The side of insertion, the insertion depth and the number of needle passes are not reported.",
+      "zh": "操作者是一名认证注册麻醉护士（CRNA），有超过 20 年的诊断性超声成像经验，并有 15 年实施和教授区域麻醉的经验。尸体取俯卧位，方法部分未提到垫枕。使用 Sonosite Edge II 超声仪，配 rC60xi 5-2 MHz 凸阵探头，探头取旁矢状方向放置，方向标记朝向头侧。先辨认骶骨、第 5 腰椎与第 1 骶椎之间的间隙（L5–S1）和第 5 腰椎棘突，再将探头向头侧滑动，直至找到第 12 胸椎与第 1 腰椎之间的间隙。将一根 AGUPUNT APS 0.30 × 50 mm（直径 0.30 mm、长 50 mm）干针在第 12 胸椎棘突外侧约 1.0 cm 处刺入，向内侧呈 22° 角，并在超声引导下推进，以确定它能否穿透黄韧带进入椎管。这是文章描述的唯一结局：没有定义其他结局，结果只凭超声判断，文中也未提到解剖验证。进针侧别（左或右）、进针深度和进针次数均未报告。"
+    },
+    "results": {
+      "en": "The Results give one qualitative finding, citing Figures 3 and 4, followed by a sentence referring to Supplemental File 1 for video evidence. The finding reads: 'a 0.30 x 50 mm dry needle inserted approximately 1.0 cm lateral to the spinous process of T12 and directed medially at a 22-degree angle can pass between adjacent vertebral laminae and penetrate the ligamentum flavum to enter the spinal canal.' The Abstract states that, as determined via ultrasound, a dry needle can penetrate the ligamentum flavum and enter the spinal canal at the thoracolumbar junction using this technique. The evidence offered is ultrasound imaging and a supplemental video. Figure 3 is a parasagittal ultrasound image of the spine labelled with the spinous process (SP) and the posterior longitudinal ligament (PLL); the Results text does not say that the needle reached the posterior longitudinal ligament and does not mention the dura. No counts, percentages, depths or comparisons by level, side or technique are reported, so there are no effect sizes or confidence intervals to state.",
+      "zh": "结果部分只有一句定性结论（引用图 3 和图 4），随后一句请读者参看补充文件 1 的视频证据。结论原文为：“在第 12 胸椎棘突外侧约 1.0 cm 处刺入、向内侧呈 22° 角的 0.30 × 50 mm 干针，可以从相邻椎板之间穿过，穿透黄韧带，进入椎管。”摘要写道，经超声判断，采用这一技术时，干针可以在胸腰段穿透黄韧带并进入椎管。文中提供的证据是超声图像和一段补充视频。图 3 是脊柱旁矢状切面的超声图像，标注了棘突（SP）和后纵韧带（PLL）；结果部分没有说针到达了后纵韧带，也没有提到硬脊膜。文中没有报告任何计数、百分比或深度，也没有按节段、侧别或技术分组比较，因此没有效应量或置信区间可写。"
+    },
+    "limitations": {
+      "en": "The article has no Limitations section, so the limits below are this record's interpretation unless they are attributed to the authors. Interpretation: the finding rests on one 88-year-old donor, one site (T12/L1) and ultrasound judgment without dissection, so it shows that this needle path can reach the spinal canal, not how often that happens or how likely it is in practice. The needle was advanced deliberately under ultrasound guidance to test whether it could penetrate; a fresh-frozen or lightly embalmed specimen has no muscle tone and no protective response, its tissues may not resist a needle as living tissue does, and an 88-year-old spine may not represent younger patients. Reporting gaps in the paper itself: preservation is 'fresh-frozen, lightly fixed' in the Abstract and Introduction but 'fresh/lightly embalmed' in the Methods; the insertion point is '1.0 cm' in the Abstract but 'approximately 1.0 cm' in the Methods and Results; the Methods cite Figure 1 for the insertion point and Figure 2 for the angle, yet the Figure 1 caption describes the ~22-degree medial angle and the Figure 2 caption is the ultrasound guidance set-up; and the Results cite Figure 4, but no Figure 4 caption appears on the PMC page or the journal page. The technique is called 'documented', but the Methods do not cite its source, and no Table 1 row gives 1.0 cm lateral with a 22° medial angle; the closest T12–L1 row (Clark et al., 2021) gives 1 cm lateral to the spinous process, inferomedial, with no angle stated. The side, insertion depth and number of passes are not reported. The authors' only forward-looking statement recommends that future studies explore various needle lengths and positions, other regions of the spine and patient positions. The authors declare no conflicts of interest, and neither page shows a funding statement.",
+      "zh": "文章没有局限性一节，因此除注明出自作者的内容外，以下局限均为本记录的解读。解读：结论只依据一具 88 岁捐献者、一个部位（T12/L1）和未经解剖验证的超声判断，所以它说明这条进针路径能够到达椎管，但不能说明这种情况发生的频率，也不能说明它在实际操作中有多大可能发生。针是在超声引导下有意推进、用来检验能否穿透的；新鲜冷冻或轻度防腐的标本没有肌张力，也没有保护性反应，其组织对针的阻力可能与活体不同；88 岁的脊柱也未必代表较年轻的患者。论文本身的报告缺口：摘要和引言写“新鲜冷冻、轻度固定”，方法写“新鲜/轻度防腐”；摘要写进针点在棘突外侧“1.0 cm”，方法和结果写“约 1.0 cm”；方法在进针点之后引用图 1、在角度之后引用图 2，但图 1 的图注描述的是约 22° 的内侧倾角，图 2 的图注是超声引导的设置；结果引用了图 4，但 PMC 页面和期刊页面上都没有图 4 的图注。文中称该技术“已有记载”，但方法部分没有注明出处，表 1 中也没有哪一行同时写明外侧 1.0 cm 和向内 22°；最接近的 T12–L1 一行（Clark 等，2021）写的是棘突外侧 1 cm、朝内下方，未给出角度。进针侧别、进针深度和进针次数均未报告。作者唯一面向后续研究的表述，是建议今后探索不同的针长和进针位置，以及脊柱其他区域和不同的患者体位。作者声明无利益冲突，两个页面上都没有资助声明。"
+    },
+    "applicability": {
+      "en": "The authors conclude that a 0.30 x 50 mm dry needle is able to penetrate the ligamentum flavum and enter the spinal canal at T12/L1 using a dry needling technique described for the multifidus, and that either purposeful or inadvertent deviations in needle placement in this area of the spine have the potential to cause neurologic injury. They also conclude that the techniques described for dry needling the multifidus vary significantly with no clear consensus on which is most effective and safe, that many descriptions lack specific information on needle angulation, and that a thorough understanding of human anatomy together with available technology such as ultrasound may decrease the risk of adverse events when dry needling the multifidi at the thoracolumbar junction. They note that adverse effects from entering the spinal canal during dry needling are rare. Interpretation: for a DPT student, the paper is a reason not to treat the lamina as a guaranteed bony backstop, because in this specimen a medially angled paramedian path at T12/L1 passed between adjacent laminae. The study did not measure how often canal entry happens, did not test whether ultrasound lowers risk in patients, and recorded no patient outcomes, so it cannot be generalized to other spinal levels, needle lengths, patient positions or living patients. A cadaveric study does not calibrate clinical technique, and this record gives no needle depth, angle or insertion point as advice.",
+      "zh": "作者的结论是：采用一种已有描述的多裂肌干针技术，0.30 × 50 mm 的干针能够在 T12/L1 穿透黄韧带并进入椎管，因此在脊柱这一区域，无论有意还是无意偏离进针位置，都有可能造成神经损伤。作者还认为：已记载的多裂肌干针技术差异很大，对于哪种技术最有效、最安全没有明确共识；许多描述缺少具体的进针角度信息；充分理解人体解剖，并结合超声等现有技术，可能降低在胸腰段对多裂肌进行干针时发生不良事件的风险。作者也指出，干针操作中因进入椎管而引起的不良反应很少见。以下为本记录的解读：对 DPT 学生而言，这篇论文提醒不要把椎板当作必然存在的骨性屏障，因为在这具标本中，T12/L1 水平一条向内侧倾斜的旁正中路径从相邻椎板之间穿了过去。本研究没有测量进入椎管的发生频率，没有检验超声能否降低患者的风险，也没有记录任何患者结局，因此结果不能推广到其他脊柱节段、其他针长、其他患者体位或活体患者。尸体研究不能校准临床技术，本记录也不提供任何进针深度、角度或进针点作为操作建议。"
+    },
+    "terms": [
+      {
+        "term": {
+          "en": "Multifidus (multifidi)",
+          "zh": "多裂肌"
+        },
+        "explanation": {
+          "en": "The multifidus is a deep back muscle that lies beside the spinous processes, over the vertebral laminae; the paper uses the plural 'multifidi' for the muscle at several levels and on both sides. It is the target of every technique the paper discusses, and Table 1 includes one row that targets the T12–L1 multifidi.",
+          "zh": "多裂肌是位于棘突两旁、覆盖在椎板表面的深层背肌；原文用复数指多个节段、两侧的多裂肌。本文讨论的所有技术都以它为目标，表 1 中有一行的目标是 T12 至 L1 水平的多裂肌。"
+        }
+      },
+      {
+        "term": {
+          "en": "Ligamentum flavum",
+          "zh": "黄韧带"
+        },
+        "explanation": {
+          "en": "The ligamentum flavum joins the laminae of adjacent vertebrae and forms part of the posterior wall of the spinal canal. In this study the needle penetrated it to enter the spinal canal. It is also the ligament a lumbar puncture needle passes through, and Table 2 compares lumbar puncture with multifidus dry needling.",
+          "zh": "黄韧带连接相邻椎骨的椎板，构成椎管后壁的一部分。本研究中，干针穿透黄韧带进入了椎管。腰椎穿刺针也要穿过这条韧带，表 2 比较了腰椎穿刺与多裂肌干针。"
+        }
+      },
+      {
+        "term": {
+          "en": "Lamina and interlaminar space",
+          "zh": "椎板与椎板间隙"
+        },
+        "explanation": {
+          "en": "The lamina is the plate of the vertebral arch that runs from the pedicle to the spinous process. Adjacent laminae do not form a continuous bony wall: the interlaminar space between them is closed by the ligamentum flavum, not by bone. In the Results the needle passed between adjacent vertebral laminae.",
+          "zh": "椎板是椎弓上从椎弓根延伸到棘突的骨板。相邻椎板并不构成连续的骨壁，二者之间的椎板间隙由黄韧带封闭，而不是由骨封闭。结果部分显示，干针正是从相邻椎板之间穿过的。"
+        }
+      },
+      {
+        "term": {
+          "en": "Lamina as a bony backstop",
+          "zh": "椎板作为骨性屏障"
+        },
+        "explanation": {
+          "en": "Table 1 lists the insertion depth for most published techniques as 'To lamina', and for others as 'To multifidus' or 'Bony backdrop'. The Introduction says multifidus dry needling has been considered safe because the lamina can serve as a protective barrier for the spinal canal. This study shows that, at T12/L1 in one specimen, a medially angled needle passed between laminae instead of stopping on bone.",
+          "zh": "表 1 中大多数已发表技术的进针深度写作“到椎板”，其余写作“到多裂肌”或“以骨为底”。引言指出，多裂肌干针一向被认为安全，是因为椎板可以作为椎管的保护屏障。本研究显示，在这一具标本的 T12/L1 水平，向内侧倾斜的针从椎板之间穿了过去，而没有停在骨面上。"
+        }
+      },
+      {
+        "term": {
+          "en": "Spinal canal and dura mater",
+          "zh": "椎管与硬脊膜"
+        },
+        "explanation": {
+          "en": "The spinal canal is the passage formed by the vertebral foramina; it contains the spinal cord or the cauda equina and their coverings, of which the dura mater is the tough outer layer. The article reports entry into the spinal canal, but its Methods and Results never mention the dura (the Introduction names it only in 'post-dural puncture headache', an adverse event from other reports), so it does not show whether the dura was punctured.",
+          "zh": "椎管由各椎骨的椎孔连接而成，容纳脊髓或马尾及其被膜，硬脊膜是其中坚韧的最外层。文章报告针进入了椎管，但方法和结果部分从未提到硬脊膜（引言只在列举其他报告的不良事件“硬脊膜穿刺后头痛”时提到它），因此不能说明硬脊膜是否被刺破。"
+        }
+      },
+      {
+        "term": {
+          "en": "Paramedian approach",
+          "zh": "旁正中入路"
+        },
+        "explanation": {
+          "en": "A paramedian approach enters off midline and directs the needle medially, toward the midline structures. Table 2 notes that, in cases such as increased age and spinal deformity, anesthesia providers may place a lumbar puncture needle off midline and direct it medially and superiorly to avoid the interspinous space. The dry needle in this study followed a paramedian path from beside the T12 spinous process.",
+          "zh": "旁正中入路是在中线旁进针，并让针向内侧、朝中线结构方向走行。表 2 注明，在高龄和脊柱畸形等情况下，麻醉人员做腰椎穿刺时可能在中线旁进针，并让针向内侧和上方走行，以避开棘突间隙。本研究的干针沿第 12 胸椎棘突旁的旁正中路径进入。"
+        }
+      },
+      {
+        "term": {
+          "en": "Thoracolumbar junction",
+          "zh": "胸腰段"
+        },
+        "explanation": {
+          "en": "The thoracolumbar junction is the region where the thoracic spine meets the lumbar spine, around the T12 and L1 vertebrae. The authors call it a vulnerable area for dry needling, and the study's single test site, the T12/L1 interspace, lies here.",
+          "zh": "胸腰段是胸椎与腰椎相接的区域，大致在第 12 胸椎和第 1 腰椎一带。作者称这里是干针操作的易损区域，本研究唯一的测试部位，即第 12 胸椎与第 1 腰椎之间的间隙，就位于此处。"
+        }
+      },
+      {
+        "term": {
+          "en": "Ultrasound guidance in a parasagittal view",
+          "zh": "旁矢状切面超声引导"
+        },
+        "explanation": {
+          "en": "In a parasagittal view the transducer is placed lengthwise, parallel to and just beside the midline; in this study its orientation indicator faced cephalad. The operator counted levels up from the sacrum to find T12/L1 and followed the needle on ultrasound. The authors suggest that ultrasound may improve precision and reduce risk, but the study itself did not compare needling with and without ultrasound.",
+          "zh": "旁矢状切面是指探头纵向放置在中线旁、与中线平行；本研究中探头的方向标记朝向头侧。操作者从骶骨开始向上数节段，找到 T12/L1，并在超声下追踪进针。作者认为超声可能提高精确度、降低风险，但本研究本身并没有比较有无超声引导时的进针情况。"
+        }
+      },
+      {
+        "term": {
+          "en": "Cadaveric study and level of evidence",
+          "zh": "尸体研究与证据等级"
+        },
+        "explanation": {
+          "en": "A cadaveric study examines anatomy on donated bodies, and this one is rated Level of Evidence IV. Interpretation: it can show that a needle path is anatomically possible, but with one specimen it cannot estimate how often canal entry happens, and it cannot reproduce living tissue, muscle tone or a patient's response. A cadaveric study does not calibrate clinical needling depth or angle.",
+          "zh": "尸体研究是在捐献遗体上研究解剖问题，本研究的证据等级为 IV。以下为本记录的解读：它可以说明某条进针路径在解剖上可行，但只有一具标本，无法估计进入椎管的发生频率，也无法再现活体组织、肌张力或患者的反应。尸体研究不能用来校准临床进针深度或角度。"
+        }
+      }
+    ],
+    "sources": [
+      "williams-2023-pmc",
+      "williams-2023-journal",
+      "williams-2023-pubmed"
+    ]
+  },
+  "sources": [
+    {
+      "id": "williams-2023-pmc",
+      "title": "Williams et al. 2023: Full text on PMC · PMC 全文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10693480"
+    },
+    {
+      "id": "williams-2023-journal",
+      "title": "Williams et al. 2023: Article page, International Journal of Sports Physical Therapy · 期刊文章页面",
+      "url": "https://ijspt.scholasticahq.com/article/89663-safety-considerations-when-dry-needling-the-multifidi-in-the-thoracolumbar-region-a-cadaveric-study"
+    },
+    {
+      "id": "williams-2023-pubmed",
+      "title": "PubMed record · PubMed 记录",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38050548/"
+    }
+  ]
+}
