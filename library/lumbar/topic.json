@@ -150,6 +150,126 @@
           "right": "quadratus-lumborum-quadratus-lumborum-muscle-right",
           "left": "quadratus-lumborum-quadratus-lumborum-muscle-left"
         }
+      },
+      {
+        "id": "iliocostalis-lumborum",
+        "name": {
+          "en": "Iliocostalis lumborum",
+          "zh": "腰髂肋肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-right",
+          "left": "iliocostalis-lumborum-muscles-iliocostalis-lumborum-muscle-left"
+        }
+      },
+      {
+        "id": "longissimus-thoracis",
+        "name": {
+          "en": "Longissimus thoracis",
+          "zh": "胸最长肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "longissimus-thoracis-muscles-longissimus-thoracis-muscle-right",
+          "left": "longissimus-thoracis-muscles-longissimus-thoracis-muscle-left"
+        }
+      },
+      {
+        "id": "spinalis-thoracis",
+        "name": {
+          "en": "Spinalis thoracis",
+          "zh": "胸棘肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "spinalis-thoracis-muscles-spinalis-thoracis-muscle-right",
+          "left": "spinalis-thoracis-muscles-spinalis-thoracis-muscle-left"
+        }
+      },
+      {
+        "id": "multifidus",
+        "name": {
+          "en": "Multifidus",
+          "zh": "多裂肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "multifidus-lumborum-muscles-multifidus-muscle-right",
+          "left": "multifidus-lumborum-muscles-multifidus-muscle-left"
+        }
+      },
+      {
+        "id": "rotatores",
+        "name": {
+          "en": "Rotatores",
+          "zh": "回旋肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "rotatores-muscles-rotatores-right",
+          "left": "rotatores-muscles-rotatores-left"
+        }
+      },
+      {
+        "id": "interspinales",
+        "name": {
+          "en": "Interspinales",
+          "zh": "棘间肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "interspinales-lumborum-muscles-interspinales-muscle-right",
+          "left": "interspinales-lumborum-muscles-interspinales-muscle-left"
+        }
+      },
+      {
+        "id": "intertransversarii-lateral-dorsal",
+        "name": {
+          "en": "Dorsal parts of lateral intertransversarii lumborum muscles",
+          "zh": "腰横突间外侧肌背侧部"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-right",
+          "left": "intertransversarii-lumborum-muscles-dorsal-parts-of-lateral-intertransversarii-lumborum-muscles-left"
+        }
+      },
+      {
+        "id": "intertransversarii-lateral-ventral",
+        "name": {
+          "en": "Ventral parts of lateral intertransversarii lumborum muscles",
+          "zh": "腰横突间外侧肌腹侧部"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-right",
+          "left": "intertransversarii-lumborum-muscles-ventral-parts-of-lateral-intertransversarii-lumborum-muscles-left"
+        }
+      },
+      {
+        "id": "psoas-major",
+        "name": {
+          "en": "Psoas major",
+          "zh": "腰大肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "lumbar-psoas-major-muscles-psoas-major-right",
+          "left": "lumbar-psoas-major-muscles-psoas-major-left"
+        }
+      },
+      {
+        "id": "serratus-posterior-inferior",
+        "name": {
+          "en": "Serratus posterior inferior",
+          "zh": "下后锯肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-right",
+          "left": "serratus-posterior-inferior-muscles-serratus-posterior-inferior-muscle-left"
+        }
       }
     ],
     "landmarks": []
@@ -168,7 +288,7 @@
         "movement",
         "review"
       ],
-      "modelTermId": null
+      "modelTermId": "iliocostalis-lumborum"
     },
     {
       "id": "longissimus-thoracis",
@@ -183,7 +303,7 @@
         "movement",
         "review"
       ],
-      "modelTermId": null
+      "modelTermId": "longissimus-thoracis"
     },
     {
       "id": "spinalis-thoracis",
@@ -197,7 +317,7 @@
         "innervation",
         "review"
       ],
-      "modelTermId": null
+      "modelTermId": "spinalis-thoracis"
     },
     {
       "id": "multifidus",
@@ -213,7 +333,7 @@
         "clinical",
         "review"
       ],
-      "modelTermId": null,
+      "modelTermId": "multifidus",
       "aliases": [
         "lumbar multifidus"
       ]
@@ -230,7 +350,7 @@
         "innervation",
         "movement"
       ],
-      "modelTermId": null
+      "modelTermId": "rotatores"
     },
     {
       "id": "interspinales",
@@ -244,7 +364,7 @@
         "innervation",
         "movement"
       ],
-      "modelTermId": null
+      "modelTermId": "interspinales"
     },
     {
       "id": "intertransversarii",
@@ -290,7 +410,7 @@
         "clinical",
         "review"
       ],
-      "modelTermId": null
+      "modelTermId": "psoas-major"
     },
     {
       "id": "serratus-posterior-inferior",
@@ -303,7 +423,7 @@
         "anatomy",
         "innervation"
       ],
-      "modelTermId": null
+      "modelTermId": "serratus-posterior-inferior"
     },
     {
       "id": "t12-vertebra",
