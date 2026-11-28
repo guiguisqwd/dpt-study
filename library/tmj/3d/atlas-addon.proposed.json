@@ -1,0 +1,337 @@
+{
+  "_note": {
+    "en": "PROPOSED, not built. Head 3D add-on for the tmj chapter: the skull bones and the muscles the bundled demo model lacks. It needs gui's yes first (AN-43). The file is named atlas-addon.proposed.json so that the build and CI do not treat it as an active add-on; after approval rename it to atlas-addon.json, run site/build/atlas/build-addon.py tmj and correct the source object names against the exporter's report.",
+    "zh": "提议稿，尚未导出。头面部与颞下颌关节一章的 3D 附加模型：自带演示模型里没有的颅骨和肌肉。要先经 gui 同意（AN-43）。文件名用 atlas-addon.proposed.json，构建和 CI 不会把它当成已启用的附加模型；同意后改名为 atlas-addon.json，运行 site/build/atlas/build-addon.py tmj，并按导出报告核对源网格名。"
+  },
+  "output": {
+    "glb": "public/models/z-anatomy-1.4.0-tmj-addon.glb",
+    "metadata": "public/models/tmj-addon.metadata.json",
+    "provenance": "public/models/tmj-addon.provenance.json"
+  },
+  "batch": {
+    "description": "Skull bones around the jaw joint, the four muscles of mastication and occipitofrontalis, missing from the bundled z-anatomy-1.4.0 demo model.",
+    "groups": [
+      {
+        "id": "tmj-mandible",
+        "name": "Mandible",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Mandible"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-temporal-bones",
+        "name": "Temporal Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Temporal bone.l",
+          "Temporal bone.r"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-zygomatic-bones",
+        "name": "Zygomatic Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Zygomatic bone.l",
+          "Zygomatic bone.r"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-sphenoid-bone",
+        "name": "Sphenoid Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Sphenoid bone"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-maxillae",
+        "name": "Maxilla",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Maxilla.l",
+          "Maxilla.r"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-frontal-bone",
+        "name": "Frontal Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Frontal bone"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-parietal-bones",
+        "name": "Parietal Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Parietal bone.l",
+          "Parietal bone.r"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-occipital-bone",
+        "name": "Occipital Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Occipital bone"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-nasal-bones",
+        "name": "Nasal Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Nasal bone.l",
+          "Nasal bone.r"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "tmj-hyoid-bone",
+        "name": "Hyoid Bone",
+        "system": "skeletal",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Hyoid bone"
+        ],
+        "material": {
+          "color": [
+            0.86,
+            0.82,
+            0.72,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "masseter-muscles",
+        "name": "Masseter",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Superficial part of masseter.l",
+          "Superficial part of masseter.r",
+          "Deep part of masseter.l",
+          "Deep part of masseter.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "temporalis-muscles",
+        "name": "Temporalis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Temporalis muscle.l",
+          "Temporalis muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "medial-pterygoid-muscles",
+        "name": "Medial Pterygoid",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Medial pterygoid muscle.l",
+          "Medial pterygoid muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "lateral-pterygoid-muscles",
+        "name": "Lateral Pterygoid",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Superior head of lateral pterygoid muscle.l",
+          "Superior head of lateral pterygoid muscle.r",
+          "Inferior head of lateral pterygoid muscle.l",
+          "Inferior head of lateral pterygoid muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "occipitofrontalis-muscles",
+        "name": "Occipitofrontalis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Frontalis muscle.l",
+          "Frontalis muscle.r",
+          "Occipitalis muscle.l",
+          "Occipitalis muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "epicranial-aponeurosis",
+        "name": "Epicranial Aponeurosis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Epicranial aponeurosis.l",
+          "Epicranial aponeurosis.r"
+        ],
+        "material": {
+          "color": [
+            0.85,
+            0.84,
+            0.78,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      }
+    ]
+  }
+}

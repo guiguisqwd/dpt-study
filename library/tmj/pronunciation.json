@@ -1,0 +1,310 @@
+{
+  "_note": "IPA is General American; the respelling capitalises the stressed syllable. Links open a dictionary entry for the term or its head word (AN-07).",
+  "terms": {
+    "Masseter": [
+      "/məˈsiːtər/",
+      "muh-SEE-tuhr",
+      "https://www.merriam-webster.com/medical/masseter"
+    ],
+    "Temporalis": [
+      "/ˌtɛmpəˈreɪlɪs/",
+      "tem-puh-RAY-lis",
+      "https://www.merriam-webster.com/medical/temporalis"
+    ],
+    "Medial pterygoid": [
+      "/ˈmiːdiəl ˈtɛrɪɡɔɪd/",
+      "MEE-dee-uhl TER-ih-goyd",
+      "https://www.merriam-webster.com/medical/pterygoid"
+    ],
+    "Lateral pterygoid": [
+      "/ˈlætərəl ˈtɛrɪɡɔɪd/",
+      "LAT-uh-ruhl TER-ih-goyd",
+      "https://www.merriam-webster.com/medical/pterygoid"
+    ],
+    "Digastric": [
+      "/daɪˈɡæstrɪk/",
+      "dy-GAS-trik",
+      "https://www.merriam-webster.com/medical/digastric"
+    ],
+    "Mylohyoid": [
+      "/ˌmaɪloʊˈhaɪɔɪd/",
+      "my-loh-HY-oyd",
+      "https://www.merriam-webster.com/medical/mylohyoid"
+    ],
+    "Geniohyoid": [
+      "/ˌdʒiːnioʊˈhaɪɔɪd/",
+      "jee-nee-oh-HY-oyd",
+      "https://www.merriam-webster.com/medical/geniohyoid"
+    ],
+    "Stylohyoid": [
+      "/ˌstaɪloʊˈhaɪɔɪd/",
+      "sty-loh-HY-oyd",
+      "https://www.merriam-webster.com/medical/stylohyoid"
+    ],
+    "Occipitofrontalis": [
+      "/ɑkˌsɪpɪtoʊfrʌnˈteɪlɪs/",
+      "ahk-sip-ih-toh-fruhn-TAY-lis",
+      "https://www.merriam-webster.com/medical/occipitofrontalis"
+    ],
+    "Orbicularis oculi": [
+      "/ɔrˌbɪkjəˈlɛrɪs ˈɑkjəlaɪ/",
+      "or-bik-yuh-LAIR-is AHK-yuh-ly",
+      "https://www.merriam-webster.com/medical/orbicularis%20oculi"
+    ],
+    "Zygomaticus major": [
+      "/ˌzaɪɡəˈmætɪkəs ˈmeɪdʒər/",
+      "zy-guh-MAT-ih-kuhs MAY-juhr",
+      "https://www.merriam-webster.com/medical/zygomaticus"
+    ],
+    "Orbicularis oris": [
+      "/ɔrˌbɪkjəˈlɛrɪs ˈɔrɪs/",
+      "or-bik-yuh-LAIR-is OR-is",
+      "https://www.merriam-webster.com/medical/orbicularis%20oris"
+    ],
+    "Buccinator": [
+      "/ˈbʌksɪneɪtər/",
+      "BUK-sih-nay-tuhr",
+      "https://www.merriam-webster.com/medical/buccinator"
+    ],
+    "Platysma": [
+      "/pləˈtɪzmə/",
+      "pluh-TIZ-muh",
+      "https://www.merriam-webster.com/medical/platysma"
+    ],
+    "Mandibular fossa": [
+      "/mænˈdɪbjələr ˈfɑsə/",
+      "man-DIB-yuh-luhr FAH-suh",
+      "https://www.merriam-webster.com/medical/mandibular"
+    ],
+    "Articular tubercle": [
+      "/ɑrˈtɪkjələr ˈtuːbərkəl/",
+      "ar-TIK-yuh-luhr TOO-buhr-kuhl",
+      "https://www.merriam-webster.com/medical/tubercle"
+    ],
+    "Postglenoid tubercle": [
+      "/poʊstˈɡlɛnɔɪd ˈtuːbərkəl/",
+      "pohst-GLEN-oyd TOO-buhr-kuhl",
+      "https://www.merriam-webster.com/medical/glenoid"
+    ],
+    "Zygomatic arch": [
+      "/ˌzaɪɡəˈmætɪk ɑrtʃ/",
+      "zy-guh-MAT-ik ARCH",
+      "https://www.merriam-webster.com/medical/zygomatic%20arch"
+    ],
+    "Mastoid process": [
+      "/ˈmæstɔɪd ˈprɑsɛs/",
+      "MAS-toyd PRAH-ses",
+      "https://www.merriam-webster.com/medical/mastoid%20process"
+    ],
+    "Styloid process": [
+      "/ˈstaɪlɔɪd ˈprɑsɛs/",
+      "STY-loyd PRAH-ses",
+      "https://www.merriam-webster.com/medical/styloid%20process"
+    ],
+    "Condylar process": [
+      "/ˈkɑndələr ˈprɑsɛs/",
+      "KAHN-duh-luhr PRAH-ses",
+      "https://www.merriam-webster.com/medical/condylar"
+    ],
+    "Pterygoid fovea": [
+      "/ˈtɛrɪɡɔɪd ˈfoʊviə/",
+      "TER-ih-goyd FOH-vee-uh",
+      "https://www.merriam-webster.com/medical/fovea"
+    ],
+    "Coronoid process": [
+      "/ˈkɔrənɔɪd ˈprɑsɛs/",
+      "KOR-uh-noyd PRAH-ses",
+      "https://www.merriam-webster.com/medical/coronoid%20process"
+    ],
+    "Mandibular notch": [
+      "/mænˈdɪbjələr nɑtʃ/",
+      "man-DIB-yuh-luhr NAHCH",
+      "https://www.merriam-webster.com/medical/mandibular%20notch"
+    ],
+    "Ramus of the mandible": [
+      "/ˈreɪməs əv ðə ˈmændɪbəl/",
+      "RAY-muhs uhv thuh MAN-dih-buhl",
+      "https://www.merriam-webster.com/medical/ramus"
+    ],
+    "Angle of the mandible": [
+      "/ˈæŋɡəl əv ðə ˈmændɪbəl/",
+      "ANG-guhl uhv thuh MAN-dih-buhl",
+      "https://www.merriam-webster.com/medical/mandible"
+    ],
+    "Mandibular foramen": [
+      "/mænˈdɪbjələr fəˈreɪmən/",
+      "man-DIB-yuh-luhr fuh-RAY-muhn",
+      "https://www.merriam-webster.com/medical/mandibular%20foramen"
+    ],
+    "Mental foramen": [
+      "/ˈmɛntəl fəˈreɪmən/",
+      "MEN-tuhl fuh-RAY-muhn",
+      "https://www.merriam-webster.com/medical/mental%20foramen"
+    ],
+    "Mylohyoid line": [
+      "/ˌmaɪloʊˈhaɪɔɪd laɪn/",
+      "my-loh-HY-oyd LYN",
+      "https://www.merriam-webster.com/medical/mylohyoid%20line"
+    ],
+    "Digastric fossa": [
+      "/daɪˈɡæstrɪk ˈfɑsə/",
+      "dy-GAS-trik FAH-suh",
+      "https://www.merriam-webster.com/medical/digastric"
+    ],
+    "Mental spines": [
+      "/ˈmɛntəl spaɪnz/",
+      "MEN-tuhl SPYNZ",
+      "https://www.merriam-webster.com/medical/mental"
+    ],
+    "Lateral pterygoid plate": [
+      "/ˈlætərəl ˈtɛrɪɡɔɪd pleɪt/",
+      "LAT-uh-ruhl TER-ih-goyd PLAYT",
+      "https://www.merriam-webster.com/medical/pterygoid%20plate"
+    ],
+    "Foramen ovale": [
+      "/fəˈreɪmən oʊˈvæli/",
+      "fuh-RAY-muhn oh-VAL-ee",
+      "https://www.merriam-webster.com/medical/foramen%20ovale"
+    ],
+    "Temporal fossa": [
+      "/ˈtɛmpərəl ˈfɑsə/",
+      "TEM-puh-ruhl FAH-suh",
+      "https://www.merriam-webster.com/medical/temporal%20fossa"
+    ],
+    "Infratemporal fossa": [
+      "/ˌɪnfrəˈtɛmpərəl ˈfɑsə/",
+      "in-fruh-TEM-puh-ruhl FAH-suh",
+      "https://www.merriam-webster.com/medical/infratemporal"
+    ],
+    "Mandible": [
+      "/ˈmændɪbəl/",
+      "MAN-dih-buhl",
+      "https://www.merriam-webster.com/medical/mandible"
+    ],
+    "Temporal bone": [
+      "/ˈtɛmpərəl boʊn/",
+      "TEM-puh-ruhl BOHN",
+      "https://www.merriam-webster.com/medical/temporal%20bone"
+    ],
+    "Zygomatic bone": [
+      "/ˌzaɪɡəˈmætɪk boʊn/",
+      "zy-guh-MAT-ik BOHN",
+      "https://www.merriam-webster.com/medical/zygomatic%20bone"
+    ],
+    "Sphenoid bone": [
+      "/ˈsfiːnɔɪd boʊn/",
+      "SFEE-noyd BOHN",
+      "https://www.merriam-webster.com/medical/sphenoid%20bone"
+    ],
+    "Maxilla": [
+      "/mækˈsɪlə/",
+      "mak-SIL-uh",
+      "https://www.merriam-webster.com/medical/maxilla"
+    ],
+    "Hyoid bone": [
+      "/ˈhaɪɔɪd boʊn/",
+      "HY-oyd BOHN",
+      "https://www.merriam-webster.com/medical/hyoid%20bone"
+    ],
+    "Temporomandibular joint": [
+      "/ˌtɛmpəroʊmænˈdɪbjələr dʒɔɪnt/",
+      "tem-puh-roh-man-DIB-yuh-luhr JOYNT",
+      "https://www.merriam-webster.com/medical/temporomandibular%20joint"
+    ],
+    "Articular disc": [
+      "/ɑrˈtɪkjələr dɪsk/",
+      "ar-TIK-yuh-luhr DISK",
+      "https://www.merriam-webster.com/medical/articular%20disc"
+    ],
+    "Retrodiscal tissue": [
+      "/ˌrɛtroʊˈdɪskəl ˈtɪʃuː/",
+      "ret-roh-DIS-kuhl TISH-oo",
+      "https://www.merriam-webster.com/medical/tissue"
+    ],
+    "Lateral ligament": [
+      "/ˈlætərəl ˈlɪɡəmənt/",
+      "LAT-uh-ruhl LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/ligament"
+    ],
+    "Sphenomandibular ligament": [
+      "/ˌsfiːnoʊmænˈdɪbjələr ˈlɪɡəmənt/",
+      "sfee-noh-man-DIB-yuh-luhr LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/sphenomandibular%20ligament"
+    ],
+    "Stylomandibular ligament": [
+      "/ˌstaɪloʊmænˈdɪbjələr ˈlɪɡəmənt/",
+      "sty-loh-man-DIB-yuh-luhr LIG-uh-muhnt",
+      "https://www.merriam-webster.com/medical/stylomandibular%20ligament"
+    ],
+    "Trigeminal nerve": [
+      "/traɪˈdʒɛmɪnəl nɜrv/",
+      "try-JEM-ih-nuhl NURV",
+      "https://www.merriam-webster.com/medical/trigeminal%20nerve"
+    ],
+    "Ophthalmic nerve": [
+      "/ɑfˈθælmɪk nɜrv/",
+      "ahf-THAL-mik NURV",
+      "https://www.merriam-webster.com/medical/ophthalmic%20nerve"
+    ],
+    "Maxillary nerve": [
+      "/ˈmæksəlɛri nɜrv/",
+      "MAK-suh-lair-ee NURV",
+      "https://www.merriam-webster.com/medical/maxillary%20nerve"
+    ],
+    "Mandibular nerve": [
+      "/mænˈdɪbjələr nɜrv/",
+      "man-DIB-yuh-luhr NURV",
+      "https://www.merriam-webster.com/medical/mandibular%20nerve"
+    ],
+    "Facial nerve": [
+      "/ˈfeɪʃəl nɜrv/",
+      "FAY-shuhl NURV",
+      "https://www.merriam-webster.com/medical/facial%20nerve"
+    ],
+    "Auriculotemporal nerve": [
+      "/ɔˌrɪkjəloʊˈtɛmpərəl nɜrv/",
+      "aw-rik-yuh-loh-TEM-puh-ruhl NURV",
+      "https://www.merriam-webster.com/medical/auriculotemporal%20nerve"
+    ],
+    "Inferior alveolar nerve": [
+      "/ɪnˈfɪriər ælˈviːələr nɜrv/",
+      "in-FEER-ee-uhr al-VEE-uh-luhr NURV",
+      "https://www.merriam-webster.com/medical/inferior%20alveolar%20nerve"
+    ],
+    "Lingual nerve": [
+      "/ˈlɪŋɡwəl nɜrv/",
+      "LING-gwuhl NURV",
+      "https://www.merriam-webster.com/medical/lingual%20nerve"
+    ],
+    "Masseteric nerve": [
+      "/ˌmæsəˈtɛrɪk nɜrv/",
+      "mas-uh-TER-ik NURV",
+      "https://www.merriam-webster.com/medical/masseteric"
+    ],
+    "Buccal nerve": [
+      "/ˈbʌkəl nɜrv/",
+      "BUK-uhl NURV",
+      "https://www.merriam-webster.com/medical/buccal%20nerve"
+    ],
+    "Chorda tympani": [
+      "/ˈkɔrdə ˈtɪmpənaɪ/",
+      "KOR-duh TIM-puh-ny",
+      "https://www.merriam-webster.com/medical/chorda%20tympani"
+    ],
+    "Nerve to mylohyoid": [
+      "/nɜrv tə ˌmaɪloʊˈhaɪɔɪd/",
+      "NURV tuh my-loh-HY-oyd",
+      "https://www.merriam-webster.com/medical/mylohyoid"
+    ]
+  },
+  "pinyin": {
+    "Xiaguan": "Xiàguān",
+    "Jiache": "Jiáchē",
+    "Dicang": "Dìcāng",
+    "Quanliao": "Quánliáo",
+    "Tinggong": "Tīnggōng",
+    "Ermen": "Ěrmén",
+    "Tinghui": "Tīnghuì",
+    "Yifeng": "Yìfēng"
+  }
+}

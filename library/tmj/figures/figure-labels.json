@@ -1,0 +1,867 @@
+{
+ "01": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Parietal bone",
+    "zh": "顶骨"
+   },
+   {
+    "en": "Temporal fossa",
+    "zh": "颞窝"
+   },
+   {
+    "en": "Temporal bone",
+    "zh": "颞骨"
+   },
+   {
+    "en": "Occipital bone",
+    "zh": "枕骨"
+   },
+   {
+    "en": "External acoustic meatus",
+    "zh": "外耳道"
+   },
+   {
+    "en": "Mandibular fossa",
+    "zh": "下颌窝"
+   },
+   {
+    "en": "Mastoid process",
+    "zh": "乳突"
+   },
+   {
+    "en": "Styloid process",
+    "zh": "茎突"
+   },
+   {
+    "en": "Condylar process",
+    "zh": "髁突"
+   },
+   {
+    "en": "Ramus of the mandible",
+    "zh": "下颌支"
+   },
+   {
+    "en": "Angle of the mandible",
+    "zh": "下颌角"
+   },
+   {
+    "en": "Hyoid bone",
+    "zh": "舌骨"
+   },
+   {
+    "en": "Frontal bone",
+    "zh": "额骨"
+   },
+   {
+    "en": "Sphenoid bone (greater wing)",
+    "zh": "蝶骨（大翼）"
+   },
+   {
+    "en": "Nasal bone",
+    "zh": "鼻骨"
+   },
+   {
+    "en": "Zygomatic bone",
+    "zh": "颧骨"
+   },
+   {
+    "en": "Zygomatic arch",
+    "zh": "颧弓"
+   },
+   {
+    "en": "Articular tubercle",
+    "zh": "关节结节"
+   },
+   {
+    "en": "Maxilla",
+    "zh": "上颌骨"
+   },
+   {
+    "en": "Coronoid process (behind the zygomatic bone)",
+    "zh": "冠突（被颧骨挡住）"
+   },
+   {
+    "en": "Lateral pterygoid plate (through the notch)",
+    "zh": "翼突外侧板（透过下颌切迹可见）"
+   },
+   {
+    "en": "Infratemporal fossa (deep to the ramus)",
+    "zh": "颞下窝（下颌支深面）"
+   },
+   {
+    "en": "Mandible",
+    "zh": "下颌骨"
+   },
+   {
+    "en": "Mental foramen",
+    "zh": "颏孔"
+   }
+  ]
+ },
+ "02": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Head of the mandible (condyle)",
+    "zh": "下颌头（髁突头）"
+   },
+   {
+    "en": "Neck of the mandible",
+    "zh": "下颌颈"
+   },
+   {
+    "en": "Condylar process (head and neck)",
+    "zh": "髁突（头和颈）"
+   },
+   {
+    "en": "Ramus",
+    "zh": "下颌支"
+   },
+   {
+    "en": "Angle of the mandible",
+    "zh": "下颌角"
+   },
+   {
+    "en": "Mandibular notch",
+    "zh": "下颌切迹"
+   },
+   {
+    "en": "Coronoid process",
+    "zh": "冠突"
+   },
+   {
+    "en": "Body of the mandible",
+    "zh": "下颌体"
+   },
+   {
+    "en": "Mental foramen",
+    "zh": "颏孔"
+   },
+   {
+    "en": "Oblique line",
+    "zh": "斜线"
+   },
+   {
+    "en": "Head of the mandible",
+    "zh": "下颌头"
+   },
+   {
+    "en": "Pterygoid fovea",
+    "zh": "翼肌凹"
+   },
+   {
+    "en": "Mandibular foramen and lingula",
+    "zh": "下颌孔与下颌小舌"
+   },
+   {
+    "en": "Mylohyoid groove",
+    "zh": "下颌舌骨沟"
+   },
+   {
+    "en": "Mylohyoid line",
+    "zh": "下颌舌骨线"
+   },
+   {
+    "en": "Sublingual fossa",
+    "zh": "舌下腺凹"
+   },
+   {
+    "en": "Mental spines",
+    "zh": "颏棘"
+   },
+   {
+    "en": "Digastric fossa",
+    "zh": "二腹肌窝"
+   },
+   {
+    "en": "Submandibular fossa",
+    "zh": "下颌下腺凹"
+   }
+  ]
+ },
+ "03": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Mandibular fossa",
+    "zh": "下颌窝"
+   },
+   {
+    "en": "Upper joint compartment (gliding)",
+    "zh": "关节上腔（滑动）"
+   },
+   {
+    "en": "Postglenoid tubercle",
+    "zh": "关节后结节"
+   },
+   {
+    "en": "External acoustic meatus",
+    "zh": "外耳道"
+   },
+   {
+    "en": "Retrodiscal tissue",
+    "zh": "盘后组织"
+   },
+   {
+    "en": "Head of the mandible",
+    "zh": "下颌头"
+   },
+   {
+    "en": "Neck of the mandible",
+    "zh": "下颌颈"
+   },
+   {
+    "en": "Articular tubercle",
+    "zh": "关节结节"
+   },
+   {
+    "en": "Articular disc: posterior band",
+    "zh": "关节盘：后带"
+   },
+   {
+    "en": "Articular disc: anterior band",
+    "zh": "关节盘：前带"
+   },
+   {
+    "en": "Intermediate zone",
+    "zh": "中间带"
+   },
+   {
+    "en": "Lower joint compartment (hinge)",
+    "zh": "关节下腔（铰链）"
+   },
+   {
+    "en": "Lateral pterygoid, superior head",
+    "zh": "翼外肌上头"
+   },
+   {
+    "en": "Lateral pterygoid, inferior head",
+    "zh": "翼外肌下头"
+   },
+   {
+    "en": "Capsule",
+    "zh": "关节囊"
+   },
+   {
+    "en": "Lateral ligament",
+    "zh": "外侧韧带"
+   },
+   {
+    "en": "Stylomandibular ligament",
+    "zh": "茎突下颌韧带"
+   },
+   {
+    "en": "Sphenomandibular ligament (medial to the ramus, dashed)",
+    "zh": "蝶下颌韧带（在下颌支内侧，虚线）"
+   }
+  ]
+ },
+ "04": {
+  "oi": [
+   {
+    "muscleId": "temporalis",
+    "originEn": "temporal fossa below the inferior temporal line, and temporal fascia",
+    "originZh": "颞下线以下的颞窝和颞筋膜",
+    "insertionEn": "coronoid process and anterior border of the ramus",
+    "insertionZh": "冠突和下颌支前缘"
+   },
+   {
+    "muscleId": "masseter",
+    "originEn": "zygomatic bone and zygomatic arch",
+    "originZh": "颧骨和颧弓",
+    "insertionEn": "lateral surface of the ramus, the angle and the coronoid process",
+    "insertionZh": "下颌支外侧面、下颌角和冠突"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Posterior fibres run almost horizontally",
+    "zh": "后部纤维近水平"
+   },
+   {
+    "en": "Anterior fibres run vertically",
+    "zh": "前部纤维垂直"
+   },
+   {
+    "en": "Temporal fossa",
+    "zh": "颞窝"
+   },
+   {
+    "en": "Zygomatic arch (tendon passes deep to it)",
+    "zh": "颧弓（肌腱从其深面经过）"
+   },
+   {
+    "en": "Coronoid process",
+    "zh": "冠突"
+   },
+   {
+    "en": "Deep part (behind, fibres vertical)",
+    "zh": "深部（靠后，纤维垂直）"
+   },
+   {
+    "en": "Superficial part (fibres run down and back)",
+    "zh": "浅部（纤维向后下方）"
+   }
+  ]
+ },
+ "05": {
+  "oi": [
+   {
+    "muscleId": "lateral-pterygoid",
+    "originEn": "greater wing of the sphenoid (superior head); lateral surface of the lateral pterygoid plate (inferior head)",
+    "originZh": "蝶骨大翼（上头）；翼突外侧板外侧面（下头）",
+    "insertionEn": "pterygoid fovea on the neck of the mandible; joint capsule and disc",
+    "insertionZh": "下颌颈的翼肌凹；关节囊和关节盘"
+   },
+   {
+    "muscleId": "medial-pterygoid",
+    "originEn": "medial surface of the lateral pterygoid plate; tuberosity of the maxilla",
+    "originZh": "翼突外侧板内侧面；上颌结节",
+    "insertionEn": "medial surface of the ramus and angle of the mandible",
+    "insertionZh": "下颌支和下颌角内侧面"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Superior head",
+    "zh": "上头"
+   },
+   {
+    "en": "Head of the mandible and joint",
+    "zh": "下颌头与关节"
+   },
+   {
+    "en": "Lateral pterygoid plate",
+    "zh": "翼突外侧板"
+   },
+   {
+    "en": "Inferior head",
+    "zh": "下头"
+   },
+   {
+    "en": "Medial pterygoid (deep to the ramus)",
+    "zh": "翼内肌（在下颌支深面）"
+   },
+   {
+    "en": "Ramus of the mandible (outline)",
+    "zh": "下颌支（轮廓）"
+   },
+   {
+    "en": "Pterygoid process of the sphenoid",
+    "zh": "蝶骨翼突"
+   },
+   {
+    "en": "Medial surface of the ramus and angle",
+    "zh": "下颌支和下颌角内侧面"
+   },
+   {
+    "en": "Lateral pterygoid (behind)",
+    "zh": "翼外肌（在后方）"
+   }
+  ]
+ },
+ "06": {
+  "oi": [
+   {
+    "muscleId": "digastric",
+    "originEn": "digastric fossa of the mandible (anterior belly); mastoid notch of the temporal bone (posterior belly)",
+    "originZh": "下颌骨二腹肌窝（前腹）；颞骨乳突切迹（后腹）",
+    "insertionEn": "intermediate tendon, held to the hyoid bone by a fibrous sling",
+    "insertionZh": "中间腱，由纤维环系于舌骨"
+   },
+   {
+    "muscleId": "stylohyoid",
+    "originEn": "styloid process of the temporal bone",
+    "originZh": "颞骨茎突",
+    "insertionEn": "body of the hyoid bone near the greater horn",
+    "insertionZh": "舌骨体与大角交界处"
+   },
+   {
+    "muscleId": "mylohyoid",
+    "originEn": "mylohyoid line of the mandible",
+    "originZh": "下颌骨的下颌舌骨线",
+    "insertionEn": "mylohyoid raphe and body of the hyoid bone",
+    "insertionZh": "下颌舌骨肌缝和舌骨体"
+   },
+   {
+    "muscleId": "geniohyoid",
+    "originEn": "inferior mental spine of the mandible",
+    "originZh": "下颌骨下颏棘",
+    "insertionEn": "body of the hyoid bone",
+    "insertionZh": "舌骨体"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Mastoid process",
+    "zh": "乳突"
+   },
+   {
+    "en": "Styloid process",
+    "zh": "茎突"
+   },
+   {
+    "en": "Posterior belly of digastric",
+    "zh": "二腹肌后腹"
+   },
+   {
+    "en": "Stylohyoid",
+    "zh": "茎突舌骨肌"
+   },
+   {
+    "en": "Intermediate tendon and sling",
+    "zh": "中间腱与纤维环"
+   },
+   {
+    "en": "Hyoid bone",
+    "zh": "舌骨"
+   },
+   {
+    "en": "Anterior belly of digastric",
+    "zh": "二腹肌前腹"
+   },
+   {
+    "en": "Mylohyoid",
+    "zh": "下颌舌骨肌"
+   },
+   {
+    "en": "Geniohyoid (deep to mylohyoid, dashed)",
+    "zh": "颏舌骨肌（在下颌舌骨肌深面，虚线）"
+   },
+   {
+    "en": "Body of the mandible",
+    "zh": "下颌体"
+   },
+   {
+    "en": "Mylohyoid line",
+    "zh": "下颌舌骨线"
+   },
+   {
+    "en": "Mylohyoid raphe",
+    "zh": "下颌舌骨肌缝"
+   }
+  ]
+ },
+ "07": {
+  "oi": [
+   {
+    "muscleId": "occipitofrontalis",
+    "originEn": "skin of the eyebrow (frontal belly); superior nuchal line (occipital belly)",
+    "originZh": "眉部皮肤（额腹）；上项线（枕腹）",
+    "insertionEn": "epicranial aponeurosis",
+    "insertionZh": "帽状腱膜"
+   },
+   {
+    "muscleId": "orbicularis-oculi",
+    "originEn": "medial orbital margin and medial palpebral ligament",
+    "originZh": "眶内侧缘和睑内侧韧带",
+    "insertionEn": "skin around the orbit and the eyelids",
+    "insertionZh": "眶周皮肤和眼睑"
+   },
+   {
+    "muscleId": "zygomaticus-major",
+    "originEn": "lateral surface of the zygomatic bone",
+    "originZh": "颧骨外侧面",
+    "insertionEn": "angle of the mouth (modiolus)",
+    "insertionZh": "口角（蜗轴）"
+   },
+   {
+    "muscleId": "orbicularis-oris",
+    "originEn": "modiolus and the surrounding muscles",
+    "originZh": "蜗轴和周围的肌",
+    "insertionEn": "skin and mucous membrane of the lips",
+    "insertionZh": "唇的皮肤和黏膜"
+   },
+   {
+    "muscleId": "buccinator",
+    "originEn": "alveolar processes opposite the molar teeth and the pterygomandibular raphe",
+    "originZh": "磨牙对应处的牙槽突和翼突下颌缝",
+    "insertionEn": "modiolus, continuing into orbicularis oris",
+    "insertionZh": "口角的蜗轴，延续为口轮匝肌"
+   },
+   {
+    "muscleId": "platysma",
+    "originEn": "skin and fascia over the upper chest and shoulder",
+    "originZh": "胸上部和肩部表面的皮肤和筋膜",
+    "insertionEn": "lower border of the mandible and skin of the lower face",
+    "insertionZh": "下颌骨下缘和面下部皮肤"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Frontal belly of occipitofrontalis",
+    "zh": "枕额肌额腹"
+   },
+   {
+    "en": "Orbicularis oculi, orbital part",
+    "zh": "眼轮匝肌眶部"
+   },
+   {
+    "en": "Orbicularis oculi, palpebral part",
+    "zh": "眼轮匝肌睑部"
+   },
+   {
+    "en": "Zygomaticus major",
+    "zh": "颧大肌"
+   },
+   {
+    "en": "Buccinator",
+    "zh": "颊肌"
+   },
+   {
+    "en": "Platysma",
+    "zh": "颈阔肌"
+   },
+   {
+    "en": "Modiolus",
+    "zh": "蜗轴"
+   },
+   {
+    "en": "Orbicularis oris",
+    "zh": "口轮匝肌"
+   },
+   {
+    "en": "Epicranial aponeurosis",
+    "zh": "帽状腱膜"
+   },
+   {
+    "en": "Occipital belly of occipitofrontalis",
+    "zh": "枕额肌枕腹"
+   },
+   {
+    "en": "Frontal belly",
+    "zh": "额腹"
+   }
+  ]
+ },
+ "08": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "V1 Ophthalmic nerve: forehead and scalp to the vertex, upper eyelid, cornea, bridge and tip of the nose",
+    "zh": "V1 眼神经：前额和头皮至头顶、上睑、角膜、鼻背和鼻尖"
+   },
+   {
+    "en": "V2 Maxillary nerve: lower eyelid, side of the nose, cheek, upper lip",
+    "zh": "V2 上颌神经：下睑、鼻侧、面颊、上唇"
+   },
+   {
+    "en": "V3 Mandibular nerve: lower lip, chin, lower jaw, the area in front of the ear and the temple",
+    "zh": "V3 下颌神经：下唇、颏部、下颌、耳前区和颞部"
+   },
+   {
+    "en": "Skin over the angle of the mandible: C2–C3 (cervical plexus), not CN V",
+    "zh": "下颌角表面的皮肤：C2–C3（颈丛），不是 CN V"
+   },
+   {
+    "en": "Sensory root and motor root, from the pons",
+    "zh": "感觉根和运动根，自脑桥发出"
+   },
+   {
+    "en": "Trigeminal ganglion (in the trigeminal cave)",
+    "zh": "三叉神经节（位于三叉神经腔）"
+   },
+   {
+    "en": "V1: superior orbital fissure, to the orbit and forehead",
+    "zh": "V1：经眶上裂，至眶和前额"
+   },
+   {
+    "en": "V3: foramen ovale, to the infratemporal fossa; the motor root joins it",
+    "zh": "V3：经卵圆孔至颞下窝；运动根加入其中"
+   },
+   {
+    "en": "V2: foramen rotundum, to the cheek and upper teeth",
+    "zh": "V2：经圆孔，至面颊和上牙"
+   }
+  ]
+ },
+ "09": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Meningeal branch (back through the foramen spinosum)",
+    "zh": "脑膜支（经棘孔返回颅内）"
+   },
+   {
+    "en": "Mandibular nerve trunk",
+    "zh": "下颌神经主干"
+   },
+   {
+    "en": "Foramen ovale",
+    "zh": "卵圆孔"
+   },
+   {
+    "en": "Auriculotemporal nerve (behind the joint, then up)",
+    "zh": "耳颞神经（经关节后方，再沿耳前上行）"
+   },
+   {
+    "en": "Chorda tympani (CN VII) joins the lingual nerve",
+    "zh": "鼓索（CN VII）加入舌神经"
+   },
+   {
+    "en": "Nerve to lateral pterygoid",
+    "zh": "翼外肌神经"
+   },
+   {
+    "en": "Posterior division",
+    "zh": "后干"
+   },
+   {
+    "en": "Inferior alveolar nerve, entering the mandibular foramen",
+    "zh": "下牙槽神经，进入下颌孔"
+   },
+   {
+    "en": "Lingual nerve (anterior two-thirds of the tongue)",
+    "zh": "舌神经（舌前三分之二）"
+   },
+   {
+    "en": "Nerve to mylohyoid (mylohyoid, anterior belly of digastric)",
+    "zh": "下颌舌骨肌神经（下颌舌骨肌、二腹肌前腹）"
+   },
+   {
+    "en": "Deep temporal nerves (to temporalis)",
+    "zh": "颞深神经（至颞肌）"
+   },
+   {
+    "en": "Anterior division",
+    "zh": "前干"
+   },
+   {
+    "en": "Nerve to medial pterygoid (from the trunk)",
+    "zh": "翼内肌神经（发自主干）"
+   },
+   {
+    "en": "Masseteric nerve (through the mandibular notch)",
+    "zh": "咬肌神经（穿下颌切迹）"
+   },
+   {
+    "en": "Buccal nerve (sensory, to the cheek)",
+    "zh": "颊神经（感觉，至面颊）"
+   },
+   {
+    "en": "Inferior dental branches (lower teeth)",
+    "zh": "下牙支（下牙）"
+   },
+   {
+    "en": "Mental nerve, leaving the mental foramen",
+    "zh": "颏神经，出颏孔"
+   }
+  ]
+ },
+ "10": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Inside the temporal bone (dashed line): facial canal",
+    "zh": "颞骨内（虚线）：面神经管"
+   },
+   {
+    "en": "Posterior auricular nerve (occipital belly)",
+    "zh": "耳后神经（至枕腹）"
+   },
+   {
+    "en": "Stylomastoid foramen",
+    "zh": "茎乳孔"
+   },
+   {
+    "en": "Parotid gland (crossed, not supplied)",
+    "zh": "腮腺（穿过但不支配）"
+   },
+   {
+    "en": "Branches to the posterior belly of digastric and stylohyoid",
+    "zh": "至二腹肌后腹和茎突舌骨肌的分支"
+   },
+   {
+    "en": "Cervical branch → platysma",
+    "zh": "颈支 → 颈阔肌"
+   },
+   {
+    "en": "Temporal branches → frontal belly, upper orbicularis oculi",
+    "zh": "颞支 → 额腹、眼轮匝肌上部"
+   },
+   {
+    "en": "Zygomatic branches → lower orbicularis oculi",
+    "zh": "颧支 → 眼轮匝肌下部"
+   },
+   {
+    "en": "Buccal branches → buccinator, orbicularis oris, zygomaticus major",
+    "zh": "颊支 → 颊肌、口轮匝肌、颧大肌"
+   },
+   {
+    "en": "Marginal mandibular branch → lower lip and chin",
+    "zh": "下颌缘支 → 下唇和颏部"
+   }
+  ]
+ },
+ "11": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Mandibular fossa",
+    "zh": "下颌窝"
+   },
+   {
+    "en": "Articular disc",
+    "zh": "关节盘"
+   },
+   {
+    "en": "Head of the mandible",
+    "zh": "下颌头"
+   },
+   {
+    "en": "Articular tubercle",
+    "zh": "关节结节"
+   },
+   {
+    "en": "Lateral pterygoid",
+    "zh": "翼外肌"
+   },
+   {
+    "en": "Rotation in the lower compartment (hinge)",
+    "zh": "转动发生在关节下腔（铰链）"
+   },
+   {
+    "en": "Dashed outline: closed position",
+    "zh": "虚线轮廓：闭口位"
+   },
+   {
+    "en": "Translation in the upper compartment (glide)",
+    "zh": "滑动发生在关节上腔"
+   },
+   {
+    "en": "Retrodiscal tissue stretches",
+    "zh": "盘后组织被拉长"
+   }
+  ]
+ },
+ "12": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Temporalis, posterior fibres: pull back (retrusion)",
+    "zh": "颞肌后部纤维：向后拉（后缩）"
+   },
+   {
+    "en": "Lateral pterygoid: pulls the neck forward",
+    "zh": "翼外肌：把下颌颈向前拉"
+   },
+   {
+    "en": "Masseter: pulls up, on the outside of the ramus",
+    "zh": "咬肌：在下颌支外侧向上拉"
+   },
+   {
+    "en": "Medial pterygoid (deep, dashed): pulls up",
+    "zh": "翼内肌（深面，虚线）：向上拉"
+   },
+   {
+    "en": "Infrahyoid muscles hold the hyoid bone down",
+    "zh": "舌骨下肌把舌骨固定在下方"
+   },
+   {
+    "en": "Temporalis, anterior fibres: pull straight up",
+    "zh": "颞肌前部纤维：垂直向上提"
+   },
+   {
+    "en": "Coronoid process",
+    "zh": "冠突"
+   },
+   {
+    "en": "Suprahyoid muscles: pull the chin down and back",
+    "zh": "舌骨上肌：把颏部向后下方拉"
+   },
+   {
+    "en": "Hyoid bone",
+    "zh": "舌骨"
+   }
+  ]
+ },
+ "13": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Displaced disc",
+    "zh": "移位的关节盘"
+   },
+   {
+    "en": "Retrodiscal tissue under load",
+    "zh": "盘后组织受压"
+   },
+   {
+    "en": "Condyle",
+    "zh": "髁突"
+   },
+   {
+    "en": "Click",
+    "zh": "弹响"
+   }
+  ]
+ },
+ "14": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "The upper part receives fibres from both sides",
+    "zh": "核上部接受双侧皮质的纤维"
+   },
+   {
+    "en": "The lower part receives fibres from the opposite side only",
+    "zh": "核下部只接受对侧皮质的纤维"
+   }
+  ]
+ },
+ "15": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "TE21 Ermen: in front of the supratragic notch",
+    "zh": "TE21 耳门：耳屏上切迹前"
+   },
+   {
+    "en": "SI19 Tinggong: in front of the middle of the tragus",
+    "zh": "SI19 听宫：耳屏正中前"
+   },
+   {
+    "en": "GB2 Tinghui: in front of the intertragic notch",
+    "zh": "GB2 听会：耳屏间切迹前"
+   },
+   {
+    "en": "TE17 Yifeng: behind the ear lobe",
+    "zh": "TE17 翳风：耳垂后方"
+   },
+   {
+    "en": "Angle of the mandible",
+    "zh": "下颌角"
+   },
+   {
+    "en": "Zygomatic arch",
+    "zh": "颧弓"
+   },
+   {
+    "en": "ST7 Xiaguan: below the zygomatic arch, over the mandibular notch",
+    "zh": "ST7 下关：颧弓下缘与下颌切迹之间"
+   },
+   {
+    "en": "Mandibular notch",
+    "zh": "下颌切迹"
+   },
+   {
+    "en": "SI18 Quanliao: below the zygomatic bone, under the outer canthus",
+    "zh": "SI18 颧髎：颧骨下缘，目外眦直下"
+   },
+   {
+    "en": "Masseter",
+    "zh": "咬肌"
+   },
+   {
+    "en": "ST4 Dicang: beside the angle of the mouth",
+    "zh": "ST4 地仓：口角旁"
+   },
+   {
+    "en": "ST6 Jiache: on masseter, in front of and above the angle",
+    "zh": "ST6 颊车：咬肌上，下颌角前上方一横指"
+   }
+  ]
+ }
+}

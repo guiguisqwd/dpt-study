@@ -516,8 +516,171 @@
       "sunday": "2026-12-13",
       "chapter": "tmj",
       "chapterName": "头面部与颞下颌关节 Head, face and TMJ",
-      "chapterStatus": "not-started",
-      "days": "按 weekTemplate 排；条目在本章 ST-1 结构清单定好后填写"
+      "chapterStatus": "draft",
+      "days": {
+        "2026-12-14": {
+          "new": [
+            {
+              "type": "N-1",
+              "items": [
+                "ST5 大迎 · 足阳明胃经",
+                "GB3 上关 · 足少阳胆经",
+                "GB14 阳白 · 足少阳胆经",
+                "LI20 迎香 · 手阳明大肠经"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-1",
+              "items": [
+                "Masseter",
+                "Temporalis",
+                "Medial pterygoid",
+                "Lateral pterygoid"
+              ],
+              "forms": [
+                "F-6",
+                "F-7"
+              ]
+            }
+          ]
+        },
+        "2026-12-15": {
+          "new": [
+            {
+              "type": "N-2",
+              "items": [
+                "Temporomandibular disorder 颞下颌关节紊乱：检测到治疗"
+              ],
+              "forms": [
+                "F-2",
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-2",
+              "items": [
+                "Mandible 下颌骨骨性标志",
+                "Temporal bone and zygomatic arch 颞骨与颧弓标志"
+              ],
+              "forms": [
+                "F-6",
+                "F-9"
+              ]
+            }
+          ]
+        },
+        "2026-12-16": {
+          "new": [
+            {
+              "type": "N-4",
+              "items": [
+                "Disc displacement without reduction (closed lock) 不可复性关节盘移位（闭锁）案例"
+              ],
+              "forms": [
+                "F-3",
+                "F-4"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-4",
+              "items": [
+                "Mandibular nerve",
+                "Facial nerve"
+              ],
+              "forms": [
+                "F-8",
+                "F-11"
+              ]
+            }
+          ]
+        },
+        "2026-12-17": {
+          "new": [
+            {
+              "type": "N-5",
+              "items": [
+                "Schiffman 2014 DC/TMD 诊断标准（论文记录待建：原文只读到一部分）"
+              ],
+              "forms": [
+                "F-5"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-3",
+              "items": [
+                "Temporomandibular joint 颞下颌关节：关节盘、韧带与运动"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            }
+          ]
+        },
+        "2026-12-18": {
+          "new": [
+            {
+              "type": "N-7",
+              "items": [
+                "Mouth opening measurement",
+                "Opening path observation",
+                "Joint palpation through the ear",
+                "Masseter and temporalis palpation",
+                "Trigeminal nerve screen",
+                "Facial nerve screen"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-6",
+              "items": [
+                "Rotation then translation 张口先转动后滑动",
+                "Lateral excursion 侧方运动"
+              ],
+              "forms": [
+                "F-12"
+              ]
+            }
+          ]
+        },
+        "2026-12-19": {
+          "new": [],
+          "consolidate": [
+            {
+              "type": "quiz",
+              "items": [
+                "本周新旧混合小测"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            },
+            {
+              "type": "review",
+              "items": [
+                "跨周间隔复习"
+              ],
+              "forms": [
+                "F-10"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "week": 11,
