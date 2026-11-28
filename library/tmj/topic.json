@@ -1,0 +1,1102 @@
+{
+  "schemaVersion": 1,
+  "id": "tmj",
+  "title": {
+    "en": "Head, face and TMJ",
+    "zh": "头面部与颞下颌关节"
+  },
+  "summary": {
+    "en": "The temporomandibular joint and the face: the skull and mandible around the joint, the muscles of mastication, the suprahyoid muscles and the muscles of facial expression, the trigeminal and facial nerves, jaw movement, clinical anatomy and review.",
+    "zh": "颞下颌关节与面部：关节周围的颅骨和下颌骨、咀嚼肌、舌骨上肌和表情肌、三叉神经和面神经，以及下颌运动、临床解剖与复习。"
+  },
+  "region": {
+    "en": "Head, face and jaw",
+    "zh": "头面部与下颌"
+  },
+  "status": "draft",
+  "adapter": "standard",
+  "viewer": {
+    "enabled": true,
+    "defaultTerm": "mylohyoid",
+    "landmarks": [],
+    "terms": [
+      {
+        "id": "mylohyoid",
+        "name": {
+          "en": "Mylohyoid",
+          "zh": "下颌舌骨肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-mylohyoid-muscle-right",
+          "left": "neck-muscles-mylohyoid-muscle-left"
+        }
+      },
+      {
+        "id": "geniohyoid",
+        "name": {
+          "en": "Geniohyoid",
+          "zh": "颏舌骨肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-geniohyoid-muscle-right",
+          "left": "neck-muscles-geniohyoid-muscle-left"
+        }
+      },
+      {
+        "id": "stylohyoid",
+        "name": {
+          "en": "Stylohyoid",
+          "zh": "茎突舌骨肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-stylohyoid-muscle-right",
+          "left": "neck-muscles-stylohyoid-muscle-left"
+        }
+      },
+      {
+        "id": "digastric-anterior-belly",
+        "name": {
+          "en": "Anterior belly of digastric",
+          "zh": "二腹肌前腹"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-anterior-belly-of-digastric-muscle-right",
+          "left": "neck-muscles-anterior-belly-of-digastric-muscle-left"
+        }
+      },
+      {
+        "id": "digastric-posterior-belly",
+        "name": {
+          "en": "Posterior belly of digastric",
+          "zh": "二腹肌后腹"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-posterior-belly-of-digastric-muscle-right",
+          "left": "neck-muscles-posterior-belly-of-digastric-muscle-left"
+        }
+      },
+      {
+        "id": "zygomaticus-major",
+        "name": {
+          "en": "Zygomaticus major",
+          "zh": "颧大肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "facial-expression-muscles-zygomaticus-major-muscle-right",
+          "left": "facial-expression-muscles-zygomaticus-major-muscle-left"
+        }
+      },
+      {
+        "id": "orbicularis-oris",
+        "name": {
+          "en": "Orbicularis oris",
+          "zh": "口轮匝肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "facial-expression-muscles-orbicularis-oris-muscle-right",
+          "left": "facial-expression-muscles-orbicularis-oris-muscle-left"
+        }
+      },
+      {
+        "id": "orbicularis-oculi-orbital-part",
+        "name": {
+          "en": "Orbital part of orbicularis oculi",
+          "zh": "眼轮匝肌眶部"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "facial-expression-muscles-orbital-part-of-orbicularis-oculi-right",
+          "left": "facial-expression-muscles-orbital-part-of-orbicularis-oculi-left"
+        }
+      },
+      {
+        "id": "orbicularis-oculi-palpebral-part",
+        "name": {
+          "en": "Palpebral part of orbicularis oculi",
+          "zh": "眼轮匝肌睑部"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "facial-expression-muscles-palpebral-part-of-orbicularis-oculi-right",
+          "left": "facial-expression-muscles-palpebral-part-of-orbicularis-oculi-left"
+        }
+      },
+      {
+        "id": "bucinator",
+        "name": {
+          "en": "Bucinator",
+          "zh": "颊肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "facial-expression-muscles-bucinator-right",
+          "left": "facial-expression-muscles-bucinator-left"
+        }
+      },
+      {
+        "id": "platysma",
+        "name": {
+          "en": "Platysma",
+          "zh": "颈阔肌"
+        },
+        "kind": "muscle",
+        "structures": {
+          "right": "neck-muscles-platysma-right",
+          "left": "neck-muscles-platysma-left"
+        }
+      }
+    ]
+  },
+  "structures": [
+    {
+      "id": "masseter",
+      "kind": "muscle",
+      "name": {
+        "en": "Masseter",
+        "zh": "咬肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "temporalis",
+      "kind": "muscle",
+      "name": {
+        "en": "Temporalis",
+        "zh": "颞肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "medial-pterygoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Medial pterygoid",
+        "zh": "翼内肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lateral-pterygoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Lateral pterygoid",
+        "zh": "翼外肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "digastric",
+      "kind": "muscle",
+      "name": {
+        "en": "Digastric",
+        "zh": "二腹肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mylohyoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Mylohyoid",
+        "zh": "下颌舌骨肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "review"
+      ],
+      "modelTermId": "mylohyoid"
+    },
+    {
+      "id": "geniohyoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Geniohyoid",
+        "zh": "颏舌骨肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement"
+      ],
+      "modelTermId": "geniohyoid"
+    },
+    {
+      "id": "stylohyoid",
+      "kind": "muscle",
+      "name": {
+        "en": "Stylohyoid",
+        "zh": "茎突舌骨肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": "stylohyoid"
+    },
+    {
+      "id": "occipitofrontalis",
+      "kind": "muscle",
+      "name": {
+        "en": "Occipitofrontalis",
+        "zh": "枕额肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "orbicularis-oculi",
+      "kind": "muscle",
+      "name": {
+        "en": "Orbicularis oculi",
+        "zh": "眼轮匝肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "zygomaticus-major",
+      "kind": "muscle",
+      "name": {
+        "en": "Zygomaticus major",
+        "zh": "颧大肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": "zygomaticus-major"
+    },
+    {
+      "id": "orbicularis-oris",
+      "kind": "muscle",
+      "name": {
+        "en": "Orbicularis oris",
+        "zh": "口轮匝肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": "orbicularis-oris"
+    },
+    {
+      "id": "buccinator",
+      "kind": "muscle",
+      "name": {
+        "en": "Buccinator",
+        "zh": "颊肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "platysma",
+      "kind": "muscle",
+      "name": {
+        "en": "Platysma",
+        "zh": "颈阔肌"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": "platysma"
+    },
+    {
+      "id": "mandibular-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Mandibular fossa",
+        "zh": "下颌窝"
+      },
+      "chapters": [
+        "anatomy",
+        "movement"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "articular-tubercle",
+      "kind": "landmark",
+      "name": {
+        "en": "Articular tubercle",
+        "zh": "关节结节"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "postglenoid-tubercle",
+      "kind": "landmark",
+      "name": {
+        "en": "Postglenoid tubercle",
+        "zh": "关节后结节"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "zygomatic-arch",
+      "kind": "landmark",
+      "name": {
+        "en": "Zygomatic arch",
+        "zh": "颧弓"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mastoid-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Mastoid process",
+        "zh": "乳突"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "styloid-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Styloid process",
+        "zh": "茎突"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "condylar-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Condylar process",
+        "zh": "髁突"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "pterygoid-fovea",
+      "kind": "landmark",
+      "name": {
+        "en": "Pterygoid fovea",
+        "zh": "翼肌凹"
+      },
+      "chapters": [
+        "anatomy",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "coronoid-process",
+      "kind": "landmark",
+      "name": {
+        "en": "Coronoid process",
+        "zh": "冠突"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mandibular-notch",
+      "kind": "landmark",
+      "name": {
+        "en": "Mandibular notch",
+        "zh": "下颌切迹"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "ramus-of-mandible",
+      "kind": "landmark",
+      "name": {
+        "en": "Ramus of the mandible",
+        "zh": "下颌支"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "angle-of-mandible",
+      "kind": "landmark",
+      "name": {
+        "en": "Angle of the mandible",
+        "zh": "下颌角"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mandibular-foramen",
+      "kind": "landmark",
+      "name": {
+        "en": "Mandibular foramen",
+        "zh": "下颌孔"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mental-foramen",
+      "kind": "landmark",
+      "name": {
+        "en": "Mental foramen",
+        "zh": "颏孔"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mylohyoid-line",
+      "kind": "landmark",
+      "name": {
+        "en": "Mylohyoid line",
+        "zh": "下颌舌骨线"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "digastric-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Digastric fossa",
+        "zh": "二腹肌窝"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mental-spines",
+      "kind": "landmark",
+      "name": {
+        "en": "Mental spines",
+        "zh": "颏棘"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lateral-pterygoid-plate",
+      "kind": "landmark",
+      "name": {
+        "en": "Lateral pterygoid plate",
+        "zh": "翼突外侧板"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "foramen-ovale",
+      "kind": "landmark",
+      "name": {
+        "en": "Foramen ovale",
+        "zh": "卵圆孔"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "temporal-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Temporal fossa",
+        "zh": "颞窝"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "infratemporal-fossa",
+      "kind": "landmark",
+      "name": {
+        "en": "Infratemporal fossa",
+        "zh": "颞下窝"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mandible",
+      "kind": "bone",
+      "name": {
+        "en": "Mandible",
+        "zh": "下颌骨"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "temporal-bone",
+      "kind": "bone",
+      "name": {
+        "en": "Temporal bone",
+        "zh": "颞骨"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "zygomatic-bone",
+      "kind": "bone",
+      "name": {
+        "en": "Zygomatic bone",
+        "zh": "颧骨"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "sphenoid-bone",
+      "kind": "bone",
+      "name": {
+        "en": "Sphenoid bone",
+        "zh": "蝶骨"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "sphenoid"
+      ]
+    },
+    {
+      "id": "maxilla",
+      "kind": "bone",
+      "name": {
+        "en": "Maxilla",
+        "zh": "上颌骨"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "hyoid-bone",
+      "kind": "bone",
+      "name": {
+        "en": "Hyoid bone",
+        "zh": "舌骨"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "temporomandibular-joint",
+      "kind": "joint",
+      "name": {
+        "en": "Temporomandibular joint",
+        "zh": "颞下颌关节"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "articular-disc",
+      "kind": "joint",
+      "name": {
+        "en": "Articular disc",
+        "zh": "关节盘"
+      },
+      "chapters": [
+        "anatomy",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "retrodiscal-tissue",
+      "kind": "joint",
+      "name": {
+        "en": "Retrodiscal tissue",
+        "zh": "盘后组织"
+      },
+      "chapters": [
+        "anatomy",
+        "movement",
+        "clinical"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lateral-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Lateral ligament",
+        "zh": "外侧韧带"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "sphenomandibular-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Sphenomandibular ligament",
+        "zh": "蝶下颌韧带"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "stylomandibular-ligament",
+      "kind": "joint",
+      "name": {
+        "en": "Stylomandibular ligament",
+        "zh": "茎突下颌韧带"
+      },
+      "chapters": [
+        "anatomy"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "trigeminal-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Trigeminal nerve",
+        "zh": "三叉神经"
+      },
+      "chapters": [
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "ophthalmic-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Ophthalmic nerve",
+        "zh": "眼神经"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "maxillary-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Maxillary nerve",
+        "zh": "上颌神经"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "mandibular-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Mandibular nerve",
+        "zh": "下颌神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "facial-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Facial nerve",
+        "zh": "面神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "auriculotemporal-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Auriculotemporal nerve",
+        "zh": "耳颞神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "inferior-alveolar-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Inferior alveolar nerve",
+        "zh": "下牙槽神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "lingual-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Lingual nerve",
+        "zh": "舌神经"
+      },
+      "chapters": [
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "masseteric-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Masseteric nerve",
+        "zh": "咬肌神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "buccal-nerve",
+      "kind": "nerve",
+      "name": {
+        "en": "Buccal nerve",
+        "zh": "颊神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "chorda-tympani",
+      "kind": "nerve",
+      "name": {
+        "en": "Chorda tympani",
+        "zh": "鼓索"
+      },
+      "chapters": [
+        "innervation"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "nerve-to-mylohyoid",
+      "kind": "nerve",
+      "name": {
+        "en": "Nerve to mylohyoid",
+        "zh": "下颌舌骨肌神经"
+      },
+      "chapters": [
+        "anatomy",
+        "innervation",
+        "review"
+      ],
+      "modelTermId": null
+    },
+    {
+      "id": "st7",
+      "kind": "acupoint",
+      "name": {
+        "en": "Xiaguan",
+        "zh": "下关"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "ST7"
+      ]
+    },
+    {
+      "id": "st6",
+      "kind": "acupoint",
+      "name": {
+        "en": "Jiache",
+        "zh": "颊车"
+      },
+      "chapters": [
+        "anatomy",
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "ST6"
+      ]
+    },
+    {
+      "id": "st4",
+      "kind": "acupoint",
+      "name": {
+        "en": "Dicang",
+        "zh": "地仓"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "ST4"
+      ]
+    },
+    {
+      "id": "si18",
+      "kind": "acupoint",
+      "name": {
+        "en": "Quanliao",
+        "zh": "颧髎"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "SI18"
+      ]
+    },
+    {
+      "id": "si19",
+      "kind": "acupoint",
+      "name": {
+        "en": "Tinggong",
+        "zh": "听宫"
+      },
+      "chapters": [
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "SI19"
+      ]
+    },
+    {
+      "id": "te21",
+      "kind": "acupoint",
+      "name": {
+        "en": "Ermen",
+        "zh": "耳门"
+      },
+      "chapters": [
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "TE21"
+      ]
+    },
+    {
+      "id": "gb2",
+      "kind": "acupoint",
+      "name": {
+        "en": "Tinghui",
+        "zh": "听会"
+      },
+      "chapters": [
+        "clinical",
+        "review"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "GB2"
+      ]
+    },
+    {
+      "id": "te17",
+      "kind": "acupoint",
+      "name": {
+        "en": "Yifeng",
+        "zh": "翳风"
+      },
+      "chapters": [
+        "clinical"
+      ],
+      "modelTermId": null,
+      "aliases": [
+        "TE17"
+      ]
+    }
+  ]
+}
