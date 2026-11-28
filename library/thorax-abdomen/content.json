@@ -1,0 +1,5725 @@
+{
+ "schemaVersion": 1,
+ "page": {
+  "eyebrow": {
+   "en": "DPT study library · Thorax, abdomen and pelvic floor chapter",
+   "zh": "DPT 学习知识库 · 胸壁、腹壁与盆底章节"
+  },
+  "subtitle": {
+   "en": "The walls of the trunk: ribs, diaphragm, abdominal wall and pelvic floor",
+   "zh": "躯干的壁：肋骨、膈、腹壁与盆底"
+  },
+  "lead": {
+   "en": "Location → innervation → movement → clinic → review",
+   "zh": "位置 → 支配 → 动作 → 临床 → 复习"
+  },
+  "sidebarNote": {
+   "en": "Fourteen muscles from the intercostal spaces to the pelvic floor, the thoracic cage and its joints, the intercostal, phrenic and pudendal nerves, trunk wall tests and eight acupoints.",
+   "zh": "从肋间隙到盆底的 14 块肌、胸廓及其关节、肋间神经、膈神经和阴部神经、躯干壁检查和 8 个穴位。"
+  },
+  "footer": {
+   "en": "Week of 2026-12-06. Figures are drawn on bones projected from the Z-Anatomy 3D model (CC BY-SA 4.0).",
+   "zh": "2026-12-06 那一周的章节。配图画在由 Z-Anatomy 3D 模型（CC BY-SA 4.0）投影出的骨骼上。"
+  }
+ },
+ "sections": [
+  {
+   "id": "anatomy",
+   "title": {
+    "en": "Anatomy",
+    "zh": "解剖基础"
+   },
+   "overview": {
+    "en": "The thoracic cage and its joints, the three layers of the intercostal space, the diaphragm and its openings, the muscles and sheath of the abdominal wall, the inguinal canal, and the pelvic floor: fourteen muscles with origin, insertion, course, action and nerve.",
+    "zh": "胸廓及其关节、肋间隙的三层、膈及其裂孔、腹壁的肌与腹直肌鞘、腹股沟管，以及盆底：14 块肌的起点、止点、走行、作用和神经。"
+   },
+   "diagramIds": [],
+   "blocks": [
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "One cylinder, three walls",
+      "zh": "一个圆筒，三面壁"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The trunk works as one closed cylinder. The thoracic wall of ribs, sternum and intercostal muscles is its upper part; the diaphragm is the roof of the abdominal cavity; the abdominal wall muscles form the front and sides; and the pelvic floor is the floor. This chapter follows that order, from the ribs down to the pelvic floor, because breathing, trunk movement and continence all depend on these walls working together.",
+      "zh": "躯干像一个封闭的圆筒。由肋骨、胸骨和肋间肌组成的胸壁是它的上段；膈是腹腔的顶；腹壁肌构成前壁和侧壁；盆底是底。本章按这个顺序从肋骨写到盆底，因为呼吸、躯干运动和控便控尿都靠这几面壁一起工作。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "m-pp-core",
+      "b-ox-cage"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Thoracic cage: sternum, ribs and thoracic vertebrae",
+      "zh": "胸廓：胸骨、肋骨与胸椎"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The sternum has three parts from above down: the manubrium, the body of the sternum and the xiphoid process. The jugular notch is the dip on the upper border of the manubrium. The sternal angle is the ridge where the manubrium meets the body; the second costal cartilage attaches beside it, so rib counting starts here. The sternal angle lies at about the level of the T4–T5 vertebrae.",
+      "zh": "胸骨自上而下分三部分：胸骨柄、胸骨体和剑突。颈静脉切迹是胸骨柄上缘的凹陷。胸骨角是胸骨柄与胸骨体相接处的横嵴；第 2 肋软骨就附着在它旁边，所以数肋骨从这里开始。胸骨角约平第 4–5 胸椎。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "There are twelve pairs of ribs. Ribs 1–7 are true ribs: each reaches the sternum through its own costal cartilage. Ribs 8–12 are false ribs: the cartilages of ribs 8–10 join the cartilage above and form the costal margin, and ribs 11 and 12 are floating ribs that end in the abdominal wall muscles. The level of the tip of the xiphoid process is given as T10 by one source and T8–T9 by another.",
+      "zh": "肋骨共 12 对。第 1–7 肋是真肋：各自借肋软骨直接连到胸骨。第 8–12 肋是假肋：第 8–10 肋的肋软骨连到上一肋的肋软骨，共同形成肋弓；第 11、12 肋是浮肋，前端止于腹壁肌内。剑突尖的平面，一份资料写第 10 胸椎，另一份写第 8–9 胸椎。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-01"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Ribs 3–9 are typical ribs. Each has a wedge-shaped head with two facets, a neck, a tubercle that meets the transverse process, an angle where the rib turns forward, and a flat body with the costal groove on its lower inner border. Ribs 1, 2, 10, 11 and 12 are atypical. The first rib is short, wide and flat, has one facet on its head, and carries the scalene tubercle with grooves for the subclavian vessels. The second rib has a tuberosity for serratus anterior.",
+      "zh": "第 3–9 肋是典型肋。每根有楔形的肋头（两个关节面）、肋颈、与横突相接的肋结节、肋骨转向前方处的肋角，以及扁平的肋体，肋体下缘内面有肋沟。第 1、2、10、11、12 肋是非典型肋。第 1 肋短、宽而扁，肋头只有一个关节面，上面有斜角肌结节和锁骨下血管沟。第 2 肋有前锯肌粗隆。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The thoracic vertebrae are the only vertebrae that carry ribs. A typical thoracic vertebra has a heart-shaped body, demifacets on the sides of the body for the heads of two ribs, a costal facet on each transverse process for the tubercle of a rib, and a long spinous process that slopes downward. T1, T10, T11 and T12 are atypical.",
+      "zh": "胸椎是唯一与肋骨相连的椎骨。典型胸椎的椎体呈心形，椎体两侧有肋凹（半关节面）接两根肋的肋头，横突上有横突肋凹接肋结节，棘突长而向下倾斜。第 1、10、11、12 胸椎是非典型胸椎。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "b-tma-sternum",
+      "b-ox-cage",
+      "b-tma-ribs",
+      "b-kh-ribs",
+      "b-tma-tspine",
+      "b-kh-tv"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Joints of the thoracic cage",
+      "zh": "胸廓的关节"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Each rib moves on two joints behind and is held by cartilage in front. At the costovertebral joint the head of the rib meets the vertebral bodies; at the costotransverse joint the tubercle of the rib meets the transverse process. In front, the costochondral joint joins rib to costal cartilage, and the sternocostal joint joins cartilage to sternum. The two posterior joints of a rib set the axis about which that rib turns in breathing.",
+      "zh": "每根肋骨后方靠两个关节活动，前方由软骨固定。肋头关节（肋椎关节）是肋头与椎体相接处；肋横突关节是肋结节与横突相接处。前方，肋软骨结合（肋骨肋软骨连结）把肋骨接到肋软骨上，胸肋关节把肋软骨接到胸骨上。同一根肋的两个后方关节决定了它在呼吸时转动的轴。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-02"
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Joint",
+       "zh": "关节"
+      },
+      {
+       "en": "Surfaces and type",
+       "zh": "关节面与类型"
+      },
+      {
+       "en": "Ligaments and notes",
+       "zh": "韧带与要点"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "Costovertebral joint",
+        "zh": "肋头关节（肋椎关节）"
+       },
+       {
+        "en": "Head of the rib with the vertebral bodies; synovial plane joint. Ribs 2–9 meet two bodies and the disc between them; ribs 1, 10, 11 and 12 meet one body.",
+        "zh": "肋头与椎体；滑膜平面关节。第 2–9 肋接上下两个椎体和其间的椎间盘；第 1、10、11、12 肋只接一个椎体。"
+       },
+       {
+        "en": "Radiate ligament of the head of the rib; intra-articular ligament from the crest of the head to the disc.",
+        "zh": "肋头辐状韧带；肋头关节内韧带，从肋头嵴连到椎间盘。"
+       }
+      ],
+      [
+       {
+        "en": "Costotransverse joint",
+        "zh": "肋横突关节"
+       },
+       {
+        "en": "Tubercle of the rib with the transverse process of the same-numbered vertebra; present for ribs 1–10, absent for ribs 11 and 12.",
+        "zh": "肋结节与同序数椎骨的横突；见于第 1–10 肋，第 11、12 肋没有。"
+       },
+       {
+        "en": "Costotransverse, lateral costotransverse and superior costotransverse ligaments. The facets of ribs 1–6 are curved and allow rotation; those of ribs 7–10 are flat and allow gliding.",
+        "zh": "肋横突韧带、肋横突外侧韧带和肋横突上韧带。第 1–6 肋的关节面弯曲，可旋转；第 7–10 肋的关节面平坦，可滑动。"
+       }
+      ],
+      [
+       {
+        "en": "Sternocostal joint",
+        "zh": "胸肋关节"
+       },
+       {
+        "en": "Costal cartilages 1–7 with the sternum. The first is a synchondrosis; the second to seventh are synovial plane joints.",
+        "zh": "第 1–7 肋软骨与胸骨。第 1 胸肋关节是软骨结合；第 2–7 是滑膜平面关节。"
+       },
+       {
+        "en": "Radiate sternocostal ligaments.",
+        "zh": "胸肋辐状韧带。"
+       }
+      ],
+      [
+       {
+        "en": "Costochondral joint",
+        "zh": "肋软骨结合"
+       },
+       {
+        "en": "The front end of each rib with its costal cartilage.",
+        "zh": "每根肋骨前端与其肋软骨。"
+       },
+       {
+        "en": "This junction and the sternocostal joints are the sites that are tender in costochondritis.",
+        "zh": "肋软骨炎时有压痛的就是这里和胸肋关节。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "b-kh-cv",
+      "b-kh-sc",
+      "b-tma-ribs",
+      "b-kh-ribs",
+      "c-pp-costo"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Intercostal spaces and their three muscle layers",
+      "zh": "肋间隙与三层肋间肌"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The eleven intercostal spaces are each closed by three thin muscle layers. From outside in they are the external intercostals, the internal intercostals and an innermost layer. The innermost layer has three parts: transversus thoracis in front, the innermost intercostals at the side, and the subcostal muscles behind. The intercostal vein, artery and nerve run between the internal and innermost layers, in the costal groove, in that order from above down.",
+      "zh": "11 个肋间隙各由三层薄肌封闭。由外向内依次是肋间外肌、肋间内肌和最内层。最内层分三部分：前方是胸横肌，外侧是肋间最内肌，后方是肋下肌。肋间静脉、动脉和神经走在肋间内肌与最内层之间的肋沟里，自上而下按静脉、动脉、神经排列。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-03"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The fibre directions tell the layers apart. External intercostal fibres run downward and forward, and the muscle is replaced by a membrane near the sternum. Internal intercostal fibres run downward and backward, at right angles to the external layer, and are replaced by a membrane behind the angle of the rib. Deep to the muscles lie the endothoracic fascia and the parietal pleura.",
+      "zh": "看纤维方向就能区分各层。肋间外肌纤维向前下走，近胸骨处由膜代替。肋间内肌纤维向后下走，与外层垂直，在肋角以后由膜代替。肌层深面是胸内筋膜和壁层胸膜。"
+     }
+    },
+    {
+     "type": "muscles",
+     "layout": "compact",
+     "ids": [
+      "external-intercostals",
+      "internal-intercostals",
+      "innermost-intercostals",
+      "transversus-thoracis"
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "t-kh-ext",
+      "t-kh-int",
+      "t-kh-inn",
+      "t-kh-ic",
+      "t-kh-space",
+      "t-kh-tt",
+      "t-tma-thoracic",
+      "t-el-ext",
+      "t-el-int",
+      "t-el-inn"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Diaphragm",
+      "zh": "膈"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The diaphragm is a double-domed sheet of muscle that closes the lower opening of the thoracic cage. Its fibres arise all round that opening, from the xiphoid process, the lower six costal cartilages and ribs, and the upper lumbar vertebrae through the right and left crura, and they all insert into the central tendon. The right dome sits higher than the left because of the liver.",
+      "zh": "膈是一片双穹窿形的肌，封闭胸廓下口。肌纤维起自下口一周：剑突、下 6 对肋软骨和肋骨，以及借左右膈脚起自上部腰椎，全部止于中心腱。右侧穹窿因肝脏而高于左侧。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-04"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Three openings pierce the diaphragm at three vertebral levels. The caval opening lies in the central tendon at T8 and carries the inferior vena cava with branches of the right phrenic nerve. The oesophageal hiatus lies in the muscle of the right crus at T10 and carries the oesophagus and the vagal trunks. The aortic hiatus lies behind the median arcuate ligament at T12 and carries the aorta, the thoracic duct and the azygos vein.",
+      "zh": "膈上有三个裂孔，分别位于三个椎体平面。腔静脉孔在中心腱内，平第 8 胸椎，通过下腔静脉和右膈神经的分支。食管裂孔在右膈脚的肌纤维内，平第 10 胸椎，通过食管和迷走神经干。主动脉裂孔在正中弓状韧带后方，平第 12 胸椎，通过主动脉、胸导管和奇静脉。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Behind, the diaphragm bridges two muscles of the posterior abdominal wall. The medial arcuate ligament arches over psoas major and the lateral arcuate ligament arches over quadratus lumborum; diaphragm fibres arise from both ligaments.",
+      "zh": "在后方，膈跨过腹后壁的两块肌。内侧弓状韧带跨过腰大肌，外侧弓状韧带跨过腰方肌；膈的肌纤维也起自这两条韧带。"
+     }
+    },
+    {
+     "type": "muscles",
+     "layout": "compact",
+     "ids": [
+      "diaphragm"
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "d-kh",
+      "d-tma",
+      "d-el",
+      "d-rp"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Anterolateral abdominal wall",
+      "zh": "腹前外侧壁"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "From the surface inward, the anterolateral abdominal wall is made of skin, superficial fascia, three flat muscles, transversalis fascia, extraperitoneal fat and parietal peritoneum. Below the umbilicus the superficial fascia has a fatty layer (Camper's fascia) and a deeper membranous layer (Scarpa's fascia). The three flat muscles are the external abdominal oblique (external oblique), the internal abdominal oblique (internal oblique) and transversus abdominis.",
+      "zh": "腹前外侧壁由浅入深依次是：皮肤、浅筋膜、三层扁肌、腹横筋膜、腹膜外脂肪和壁层腹膜。脐以下的浅筋膜分为脂肪层（Camper 筋膜）和深面的膜性层（Scarpa 筋膜）。三层扁肌是腹外斜肌、腹内斜肌和腹横肌。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-05"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Fibre direction again separates the layers. External oblique fibres run downward and medially. Internal oblique fibres run upward and medially, at right angles to the external oblique. Transversus abdominis fibres run horizontally. In front, each flat muscle becomes an aponeurosis, and the aponeuroses of the two sides meet in the midline at the linea alba, which runs from the xiphoid process to the pubic symphysis.",
+      "zh": "各层同样靠纤维方向区分。腹外斜肌纤维向内下走。腹内斜肌纤维向内上走，与腹外斜肌垂直。腹横肌纤维水平走行。三层扁肌向前都移行为腱膜，两侧腱膜在正中线会合成白线；白线从剑突延伸到耻骨联合。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Two vertical muscles lie beside the linea alba. Rectus abdominis runs from the pubic symphysis and pubic crest up to the xiphoid process and costal cartilages 5–7, and is crossed by tendinous intersections. Pyramidalis is a small triangular muscle in front of the lower rectus abdominis, running from the pubic crest to the linea alba. The lateral edge of rectus abdominis is the linea semilunaris, from the tip of the ninth costal cartilage to the pubic tubercle.",
+      "zh": "白线两旁有两块纵行肌。腹直肌从耻骨联合和耻骨嵴向上到剑突和第 5–7 肋软骨，肌腹上有腱划横过。锥状肌是腹直肌下段前方的三角形小肌，从耻骨嵴到白线。腹直肌的外侧缘称半月线，从第 9 肋软骨尖到耻骨结节。"
+     }
+    },
+    {
+     "type": "muscles",
+     "layout": "compact",
+     "ids": [
+      "rectus-abdominis",
+      "pyramidalis",
+      "external-oblique",
+      "internal-oblique",
+      "transversus-abdominis"
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "a-tma-aw",
+      "a-kh-ra",
+      "a-kh-eo",
+      "a-kh-io",
+      "a-kh-ta",
+      "a-kh-ant",
+      "a-kh-wall",
+      "a-ox-11-4"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 4,
+     "text": {
+      "en": "Rectus sheath and the arcuate line",
+      "zh": "腹直肌鞘与弓状线"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The rectus sheath is made by the three aponeuroses and changes at the arcuate line. Above the line, the anterior layer is the external oblique aponeurosis plus half of the internal oblique aponeurosis, and the posterior layer is the other half of the internal oblique plus the transversus abdominis aponeurosis. Below the line all three aponeuroses pass in front, so rectus abdominis rests directly on the transversalis fascia.",
+      "zh": "腹直肌鞘由三层腱膜构成，以弓状线为界上下不同。弓状线以上，前层是腹外斜肌腱膜加腹内斜肌腱膜的一半，后层是腹内斜肌腱膜的另一半加腹横肌腱膜。弓状线以下，三层腱膜全部走到前面，腹直肌后面直接贴着腹横筋膜。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-06"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The arcuate line is placed about 2.5 cm below the umbilicus by one source and midway between the umbilicus and the pubic symphysis by another, and its level varies between people. The superior and inferior epigastric vessels run on the deep surface of rectus abdominis inside the sheath.",
+      "zh": "弓状线的位置，一份资料写脐下约 2.5 cm，另一份写脐与耻骨联合连线的中点，个体之间也有差异。腹壁上、下血管在鞘内走在腹直肌的深面。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "a-kh-wall",
+      "a-kh-ant",
+      "a-tma-aw",
+      "a-rp-wall",
+      "a-kh-ra"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 4,
+     "text": {
+      "en": "Inguinal ligament and inguinal canal",
+      "zh": "腹股沟韧带与腹股沟管"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The inguinal ligament is the rolled lower edge of the external oblique aponeurosis, stretched from the anterior superior iliac spine to the pubic tubercle. The inguinal canal is an oblique passage 3–5 cm long that lies above it. The canal begins at the deep inguinal ring, an opening in the transversalis fascia above the midpoint of the ligament, and ends at the superficial inguinal ring, an opening in the external oblique aponeurosis just above and lateral to the pubic tubercle.",
+      "zh": "腹股沟韧带是腹外斜肌腱膜下缘向内卷成的韧带，张于髂前上棘与耻骨结节之间。腹股沟管是位于它上方的斜行管道，长 3–5 cm。管的起点是腹股沟管深环，它是腹横筋膜上的开口，位于韧带中点上方；终点是腹股沟管浅环，它是腹外斜肌腱膜上的开口，位于耻骨结节的外上方。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The four walls of the canal are remembered as MALT. The roof is Muscles (internal oblique and transversus abdominis). The anterior wall is Aponeuroses (external oblique, with internal oblique laterally). The floor is Ligaments (inguinal and lacunar). The posterior wall is Transversalis fascia with the conjoint tendon medially. The canal carries the spermatic cord in males or the round ligament of the uterus in females, together with the ilioinguinal nerve.",
+      "zh": "腹股沟管的四壁可以用 MALT 来记。上壁是肌（Muscles：腹内斜肌和腹横肌）。前壁是腱膜（Aponeuroses：腹外斜肌腱膜，外侧部还有腹内斜肌）。下壁是韧带（Ligaments：腹股沟韧带和腔隙韧带）。后壁是腹横筋膜（Transversalis fascia），内侧部还有联合腱。管内男性通过精索，女性通过子宫圆韧带，另有髂腹股沟神经。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "c-kh-il",
+      "c-kh-canal",
+      "a-kh-eo"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Bony pelvis and the pelvic outlet",
+      "zh": "骨盆与骨盆下口"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The pelvic floor closes the pelvic outlet, so its attachments are the bones around that outlet. Each hip bone contributes the body of the pubis in front, the ischial spine at the side and the ischial tuberosity below. The sacrum and coccyx lie behind. The two pubic bones meet at the pubic symphysis, and the sacrum meets the coccyx at the sacrococcygeal joint.",
+      "zh": "盆底封闭骨盆下口，所以它的附着点就是下口周围的骨。每侧髋骨在前方提供耻骨体，侧方提供坐骨棘，下方提供坐骨结节。骶骨和尾骨在后方。两侧耻骨在耻骨联合相接，骶骨与尾骨在骶尾关节相接。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The outlet is bounded by the pubic arch in front, the ischial tuberosities and sacrotuberous ligaments at the sides, and the tip of the coccyx behind. The sacrospinous ligament runs from the sacrum to the ischial spine and turns the greater sciatic notch into the greater sciatic foramen; the sacrotuberous ligament completes the lesser sciatic foramen below it. The pudendal nerve uses both foramina.",
+      "zh": "骨盆下口前方以耻骨弓为界，两侧以坐骨结节和骶结节韧带为界，后方以尾骨尖为界。骶棘韧带从骶骨连到坐骨棘，把坐骨大切迹围成坐骨大孔；骶结节韧带在它下方围成坐骨小孔。阴部神经先后穿过这两个孔。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "b-tma-hip-bone",
+      "b-tma-girdle",
+      "p-tma-pf"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Pelvic floor muscles",
+      "zh": "盆底肌"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The pelvic floor is a funnel-shaped sheet made of levator ani and coccygeus. Levator ani has three parts from medial to lateral: puborectalis, pubococcygeus and iliococcygeus. They arise from the back of the pubis, the tendinous arch of levator ani on the obturator internus fascia, and the ischial spine, and they meet in the midline behind the organs at the anococcygeal ligament and the coccyx.",
+      "zh": "盆底是一片漏斗形的肌板，由肛提肌和尾骨肌组成。肛提肌由内向外分三部分：耻骨直肠肌、耻骨尾骨肌和髂骨尾骨肌。它们起自耻骨后面、闭孔内肌筋膜上的肛提肌腱弓和坐骨棘，在脏器后方的正中线会合，止于肛尾韧带和尾骨。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-07"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Puborectalis is a U-shaped sling with no bony insertion: it loops behind the anorectal junction and pulls it forward, which keeps the anorectal angle. In front, a gap between the two sides, the urogenital hiatus, lets the urethra and, in females, the vagina pass. The perineal body lies in the midline between this hiatus and the anal canal. Coccygeus lies behind levator ani on the sacrospinous ligament, from the ischial spine to the sacrum and coccyx.",
+      "zh": "耻骨直肠肌是 U 形的吊带，没有骨性止点：它绕到肛管直肠连接处的后方把它向前拉，从而维持肛直肠角。前方两侧肌之间的裂隙称尿生殖裂孔，尿道（女性还有阴道）由此通过。会阴体位于这个裂孔与肛管之间的正中线上。尾骨肌在肛提肌后方，贴在骶棘韧带上，从坐骨棘到骶骨和尾骨。"
+     }
+    },
+    {
+     "type": "muscles",
+     "layout": "compact",
+     "ids": [
+      "puborectalis",
+      "pubococcygeus",
+      "iliococcygeus",
+      "coccygeus"
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "p-kh-la",
+      "p-kh-pf",
+      "p-kh-cocc",
+      "p-tma-pf",
+      "p-pp-pfa",
+      "p-el-pd",
+      "p-el-ilio",
+      "p-el-cocc",
+      "p-el-pubo",
+      "p-wp-la",
+      "p-tma-perineum"
+     ]
+    },
+    {
+     "type": "details",
+     "open": false,
+     "summary": {
+      "en": "Landmarks · 22 entries",
+      "zh": "标志 · 22 个条目"
+     },
+     "blocks": [
+      {
+       "type": "landmarks",
+       "ids": [
+        "jugular-notch",
+        "sternal-angle",
+        "costal-cartilage",
+        "costal-margin",
+        "head-of-rib",
+        "tubercle-of-rib",
+        "angle-of-rib",
+        "costal-groove",
+        "central-tendon",
+        "linea-alba",
+        "rectus-sheath",
+        "arcuate-line",
+        "inguinal-ligament",
+        "inguinal-canal",
+        "anterior-superior-iliac-spine",
+        "pubic-tubercle",
+        "pubic-crest",
+        "ischial-spine",
+        "ischial-tuberosity",
+        "tendinous-arch-of-levator-ani",
+        "perineal-body",
+        "anococcygeal-ligament"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "innervation",
+   "title": {
+    "en": "Innervation and nerve course",
+    "zh": "神经支配与走行"
+   },
+   "overview": {
+    "en": "The nerves drawn on the trunk: the intercostal nerves in the costal groove, their continuation into the abdominal wall as the thoraco-abdominal and subcostal nerves, the two L1 nerves, the phrenic nerve to the diaphragm, and the pudendal nerve round the ischial spine.",
+    "zh": "画在躯干上的神经：走在肋沟里的肋间神经，它们延续到腹壁成为胸腹神经和肋下神经，两条 L1 神经，到膈的膈神经，以及绕过坐骨棘的阴部神经。"
+   },
+   "diagramIds": [],
+   "blocks": [
+    {
+     "type": "note",
+     "heading": {
+      "en": "Reading the levels in this chapter",
+      "zh": "本章的节段写法"
+     },
+     "paragraphs": [
+      {
+       "en": "C, T, L and S name spinal nerve levels: cervical, thoracic, lumbar and sacral. In this chapter the phrenic nerve is C3–C5, the intercostal nerves are T1–T11, the subcostal nerve is T12, the iliohypogastric and ilioinguinal nerves are L1, and the pudendal nerve is S2–S4.",
+       "zh": "C、T、L、S 表示脊神经节段：颈、胸、腰、骶。本章中膈神经是 C3–C5，肋间神经是 T1–T11，肋下神经是 T12，髂腹下神经和髂腹股沟神经是 L1，阴部神经是 S2–S4。"
+      },
+      {
+       "en": "A nerve level is not a vertebral level. \"T10 dermatome\" names the skin supplied by the tenth thoracic spinal nerve; \"the level of the T10 vertebra\" names a bone, as in the oesophageal hiatus.",
+       "zh": "神经节段不等于椎骨平面。“T10 皮节”指第 10 胸神经支配的皮肤；“平第 10 胸椎”指的是骨，例如食管裂孔的位置。"
+      }
+     ],
+     "className": "nerve-levels"
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Intercostal nerves: one nerve per space",
+      "zh": "肋间神经：每个肋间隙一条"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The intercostal nerves are the anterior rami of the T1–T11 spinal nerves; the anterior ramus of T12 runs below the twelfth rib and is called the subcostal nerve. Each intercostal nerve supplies the muscles of its own intercostal space and a band of skin round the trunk. Unlike the limb nerves, they do not form a plexus, which is why the trunk dermatomes are regular bands.",
+      "zh": "肋间神经是 T1–T11 脊神经的前支；T12 的前支走在第 12 肋下方，称为肋下神经。每条肋间神经支配本肋间隙的肌和环绕躯干的一条皮肤带。它们不像四肢的神经那样组成神经丛，所以躯干的皮节是规则的带状。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-08"
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "heading": {
+        "en": "Leaves the intervertebral foramen",
+        "zh": "出椎间孔"
+       },
+       "text": {
+        "en": "The spinal nerve divides; its anterior ramus turns laterally into the intercostal space and is joined to the sympathetic trunk by rami communicantes.",
+        "zh": "脊神经分支后，前支转向外侧进入肋间隙，并借交通支与交感干相连。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Runs on the pleura first",
+        "zh": "先贴着胸膜走"
+       },
+       "text": {
+        "en": "Near the spine the nerve lies between the internal intercostal membrane and the parietal pleura.",
+        "zh": "在脊柱附近，神经位于肋间内膜与壁层胸膜之间。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Enters the costal groove",
+        "zh": "进入肋沟"
+       },
+       "text": {
+        "en": "From about the angle of the rib it runs in the costal groove between the internal intercostals and the innermost intercostals, below the vein and artery.",
+        "zh": "大约从肋角起，它走在肋沟里，位于肋间内肌与肋间最内肌之间，在静脉和动脉的下方。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Gives the lateral cutaneous branch",
+        "zh": "发出外侧皮支"
+       },
+       "text": {
+        "en": "Near the midaxillary line a lateral cutaneous branch pierces the muscles to reach the skin of the side of the trunk. A collateral branch runs along the upper border of the rib below.",
+        "zh": "在腋中线附近，外侧皮支穿出肌层到躯干侧面的皮肤。另有侧副支沿下一肋的上缘走行。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Ends as the anterior cutaneous branch",
+        "zh": "终末为前皮支"
+       },
+       "text": {
+        "en": "Beside the sternum, or through the rectus sheath for the lower nerves, the nerve turns forward and ends in the skin near the midline.",
+        "zh": "在胸骨旁（下位神经则穿过腹直肌鞘），神经转向前方，终于正中线附近的皮肤。"
+       }
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "T3–T6 are the typical intercostal nerves and stay in the thoracic wall. T1 gives most of its fibres to the brachial plexus. The lateral cutaneous branch of T2 is the intercostobrachial nerve, which crosses the axilla to the skin of the medial arm.",
+      "zh": "T3–T6 是典型的肋间神经，全程都在胸壁内。T1 的大部分纤维加入臂丛。T2 的外侧皮支就是肋间臂神经，它穿过腋窝到上臂内侧的皮肤。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "n-kh-int-nerves",
+      "t-kh-space",
+      "t-kh-ic",
+      "b-kh-ribs"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "From the ribs to the abdominal wall: T7–L1",
+      "zh": "从肋骨到腹壁：T7–L1"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The abdominal wall is supplied by the continuation of the lower intercostal nerves. The T7–T11 nerves leave their intercostal spaces behind the costal margin and are then called thoraco-abdominal nerves. They and the subcostal nerve run forward in the plane between the internal oblique and transversus abdominis, supply the three flat muscles and rectus abdominis, enter the rectus sheath at its lateral edge, and end as anterior cutaneous branches.",
+      "zh": "腹壁由下位肋间神经的延续部分支配。T7–T11 神经在肋弓后方离开肋间隙，此后称为胸腹神经。它们和肋下神经一起在腹内斜肌与腹横肌之间的层面向前走，支配三层扁肌和腹直肌，从外侧缘进入腹直肌鞘，最后成为前皮支。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-09"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The subcostal nerve (T12) passes under the lateral arcuate ligament of the diaphragm, crosses the front of quadratus lumborum, and then pierces transversus abdominis to join the same plane. The iliohypogastric nerve and the ilioinguinal nerve are both L1 branches of the lumbar plexus. They cross quadratus lumborum toward the iliac crest, pierce transversus abdominis, and give motor branches to the lower internal oblique and transversus abdominis.",
+      "zh": "肋下神经（T12）从膈的外侧弓状韧带下方穿过，越过腰方肌前面，再穿腹横肌进入同一层面。髂腹下神经和髂腹股沟神经都是腰丛的 L1 分支。它们越过腰方肌走向髂嵴，穿过腹横肌，发运动支到腹内斜肌和腹横肌的下部。"
+     }
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Nerve",
+       "zh": "神经"
+      },
+      {
+       "en": "Level",
+       "zh": "节段"
+      },
+      {
+       "en": "Muscles",
+       "zh": "支配的肌"
+      },
+      {
+       "en": "Skin",
+       "zh": "皮肤"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "Intercostal nerves",
+        "zh": "肋间神经"
+       },
+       "T1–T11",
+       {
+        "en": "External intercostals, internal intercostals, innermost intercostals; transversus thoracis (T2–T6)",
+        "zh": "肋间外肌、肋间内肌、肋间最内肌；胸横肌（T2–T6）"
+       },
+       {
+        "en": "Bands round the chest; T4 at the nipple, T6 at the xiphoid process",
+        "zh": "环绕胸部的带状区；T4 平乳头，T6 平剑突"
+       }
+      ],
+      [
+       {
+        "en": "Thoraco-abdominal nerves",
+        "zh": "胸腹神经"
+       },
+       "T7–T11",
+       {
+        "en": "Rectus abdominis, external oblique, internal oblique, transversus abdominis",
+        "zh": "腹直肌、腹外斜肌、腹内斜肌、腹横肌"
+       },
+       {
+        "en": "Bands round the abdomen; T10 at the umbilicus",
+        "zh": "环绕腹部的带状区；T10 平脐"
+       }
+      ],
+      [
+       {
+        "en": "Subcostal nerve",
+        "zh": "肋下神经"
+       },
+       "T12",
+       {
+        "en": "The same abdominal muscles, and pyramidalis",
+        "zh": "同上各腹肌，另有锥状肌"
+       },
+       {
+        "en": "A band just above the inguinal ligament",
+        "zh": "腹股沟韧带稍上方的带状区"
+       }
+      ],
+      [
+       {
+        "en": "Iliohypogastric nerve",
+        "zh": "髂腹下神经"
+       },
+       "L1",
+       {
+        "en": "Lower internal oblique and transversus abdominis",
+        "zh": "腹内斜肌和腹横肌的下部"
+       },
+       {
+        "en": "Posterolateral gluteal skin and the skin above the pubis",
+        "zh": "臀部后外侧皮肤和耻骨上方皮肤"
+       }
+      ],
+      [
+       {
+        "en": "Ilioinguinal nerve",
+        "zh": "髂腹股沟神经"
+       },
+       "L1",
+       {
+        "en": "Lower internal oblique and transversus abdominis",
+        "zh": "腹内斜肌和腹横肌的下部"
+       },
+       {
+        "en": "Upper medial thigh; root of the penis and anterior scrotum, or mons pubis and labium majus. It leaves through the superficial inguinal ring.",
+        "zh": "大腿上内侧；阴茎根和阴囊前部，或阴阜和大阴唇。它经腹股沟管浅环穿出。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The dermatome landmarks worth memorising on the front of the trunk are T4 at the nipple, T6 at the xiphoid process, T10 at the umbilicus, T12 just above the inguinal ligament and L1 in the groin.",
+      "zh": "躯干前面值得记住的皮节标志是：T4 平乳头，T6 平剑突，T10 平脐，T12 在腹股沟韧带稍上方，L1 在腹股沟。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "n-kh-int-nerves",
+      "n-el-subcostal",
+      "n-tma-lumbar-plexus",
+      "c-pp-acnes",
+      "x-pp-derm",
+      "x-kh-derm",
+      "a-kh-ra",
+      "a-kh-io"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Phrenic nerve: the diaphragm is supplied from the neck",
+      "zh": "膈神经：膈的神经来自颈部"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The phrenic nerve comes from the C3–C5 anterior rami, mainly C4, and is the only motor supply to its half of the diaphragm. It descends on the front of the anterior scalene muscle, enters the thorax and runs down beside the heart to the diaphragm; the right nerve reaches the abdominal surface at the caval opening. It also carries sensation from the central part of the diaphragm, while the lower intercostal nerves supply the rim.",
+      "zh": "膈神经来自 C3–C5 前支，以 C4 为主，是同侧半个膈唯一的运动神经。它沿前斜角肌前面下降，进入胸腔，在心脏旁下行到膈；右膈神经在腔静脉孔处到达膈的腹面。它还传导膈中央部的感觉，膈周边部的感觉由下位肋间神经传导。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "When one phrenic nerve is paralysed, that half of the diaphragm moves paradoxically: it rises instead of descending during inspiration.",
+      "zh": "一侧膈神经麻痹时，该侧半个膈出现矛盾运动：吸气时不降反升。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "d-tma-phrenic",
+      "d-kh-phrenic",
+      "d-kh",
+      "d-tma"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Pudendal nerve and the nerves of the pelvic floor",
+      "zh": "阴部神经与盆底的神经"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The pudendal nerve (S2–S4) is the main nerve of the perineum. Its course is a loop out of the pelvis and back in again below the pelvic floor, with the ischial spine as the turning point.",
+      "zh": "阴部神经（S2–S4）是会阴的主要神经。它的走行是先出骨盆、再从盆底下方绕回来的一个弯，转弯处就是坐骨棘。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-10"
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "heading": {
+        "en": "Forms from S2–S4",
+        "zh": "由 S2–S4 组成"
+       },
+       "text": {
+        "en": "The anterior rami of S2, S3 and S4 join inside the pelvis to form the nerve.",
+        "zh": "S2、S3、S4 的前支在盆腔内汇合成这条神经。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Leaves through the greater sciatic foramen",
+        "zh": "出坐骨大孔"
+       },
+       "text": {
+        "en": "It leaves the pelvis below piriformis.",
+        "zh": "它在梨状肌下方出骨盆。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Hooks round the ischial spine",
+        "zh": "绕过坐骨棘"
+       },
+       "text": {
+        "en": "It crosses the sacrospinous ligament close to the ischial spine, between the sacrospinous and sacrotuberous ligaments.",
+        "zh": "它在坐骨棘附近越过骶棘韧带，夹在骶棘韧带与骶结节韧带之间。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Re-enters through the lesser sciatic foramen",
+        "zh": "经坐骨小孔返回"
+       },
+       "text": {
+        "en": "It enters the perineum below the pelvic floor.",
+        "zh": "它进入盆底下方的会阴。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Runs in the pudendal canal",
+        "zh": "走在阴部管内"
+       },
+       "text": {
+        "en": "The pudendal (Alcock) canal is a tunnel in the obturator internus fascia on the lateral wall of the ischioanal fossa.",
+        "zh": "阴部管（Alcock 管）是闭孔内肌筋膜内的管道，位于坐骨肛门窝的外侧壁。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Divides into three branches",
+        "zh": "分成三支"
+       },
+       "text": {
+        "en": "Inferior rectal nerve to the external anal sphincter and perianal skin; perineal nerve to the perineal muscles, the external urethral sphincter and the posterior scrotum or labia; dorsal nerve of the penis or clitoris.",
+        "zh": "肛（直肠下）神经到肛门外括约肌和肛周皮肤；会阴神经到会阴肌、尿道外括约肌以及阴囊或阴唇后部；阴茎（阴蒂）背神经。"
+       }
+      }
+     ]
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Levator ani is supplied from above by the nerve to levator ani, a direct branch of the sacral plexus given as S4 or S3–S4; sources disagree on how much the pudendal nerve adds, mainly to puborectalis. Coccygeus is supplied by the anterior rami of S4 and S5. The skin of the perineum and around the anus belongs to the S3–S5 dermatomes.",
+      "zh": "肛提肌由上方的肛提肌神经支配；它是骶丛的直接分支，节段写作 S4 或 S3–S4。阴部神经参与多少（主要是到耻骨直肠肌），各资料说法不一。尾骨肌由 S4 和 S5 的前支支配。会阴和肛周皮肤属于 S3–S5 皮节。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "n-kh-pud",
+      "n-tma-pud",
+      "n-el-pud",
+      "n-rp-pud",
+      "p-kh-la",
+      "p-wp-la",
+      "p-kh-cocc",
+      "x-pp-derm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "movement",
+   "title": {
+    "en": "Movement and coordination",
+    "zh": "动作与配合"
+   },
+   "overview": {
+    "en": "How the ribs turn on their joints, which muscles work in quiet and forced breathing, how the abdominal muscles flex, side-bend and rotate the trunk, and how the diaphragm, abdominal wall and pelvic floor share intra-abdominal pressure.",
+    "zh": "肋骨怎样绕关节转动，平静呼吸和用力呼吸各用哪些肌，腹肌怎样使躯干前屈、侧屈和旋转，以及膈、腹壁和盆底怎样共同承担腹内压。"
+   },
+   "diagramIds": [],
+   "blocks": [
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "How a rib moves: pump handle and bucket handle",
+      "zh": "肋骨怎么动：泵柄与桶柄"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "A rib does not slide; it turns about the axis through its costovertebral and costotransverse joints. In the upper ribs this axis runs nearly side to side, so the front ends of ribs 2–6 swing up and forward with the sternum, like a pump handle, and the front-to-back diameter of the chest increases. In ribs 7–10 the axis runs nearly front to back, so the middle of each rib swings up and outward, like a bucket handle, and the side-to-side diameter increases.",
+      "zh": "肋骨不是平移，而是绕着穿过肋头关节和肋横突关节的轴转动。上位肋的这条轴接近左右方向，所以第 2–6 肋的前端带着胸骨向前上方抬起，像泵柄，胸廓前后径增大。第 7–10 肋的轴接近前后方向，所以肋骨中段向外上方抬起，像桶柄，胸廓左右径增大。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-11"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The joint shapes fit the two movements: the curved costotransverse facets of ribs 1–6 allow the rotation needed for the pump-handle movement, and the flat facets of ribs 7–10 allow the gliding needed for the bucket-handle movement.",
+      "zh": "关节面的形状与这两种运动相符：第 1–6 肋的肋横突关节面弯曲，允许泵柄运动所需的旋转；第 7–10 肋的关节面平坦，允许桶柄运动所需的滑动。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "m-wp-pump",
+      "m-wp-bucket",
+      "m-msu-rib",
+      "b-kh-cv",
+      "m-kh-breath"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Breathing",
+      "zh": "呼吸"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Quiet inspiration is the work of the diaphragm and the external intercostals. The diaphragm contracts, flattens and descends like a piston, which increases the vertical diameter of the thorax; in restful breathing this accounts for most of the volume change. The external intercostals lift the ribs. Quiet expiration is passive: the muscles relax and the lungs and chest wall recoil.",
+      "zh": "平静吸气靠膈和肋间外肌。膈收缩、变平并像活塞一样下降，使胸腔上下径增大；平静呼吸时大部分容积变化来自这里。肋间外肌上提肋骨。平静呼气是被动的：肌放松，肺和胸壁弹性回缩。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-12"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The lower part of the diaphragm lies directly against the inside of the lower ribs. This zone of apposition makes up about half of the surface of the diaphragm in a person standing at rest, and it shortens as the diaphragm descends.",
+      "zh": "膈的下部直接贴在下位肋骨的内面。人站立、静息时，这个“对合区”约占膈表面的一半；膈下降时它随之缩短。"
+     }
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Phase",
+       "zh": "时相"
+      },
+      {
+       "en": "Muscles",
+       "zh": "肌"
+      },
+      {
+       "en": "What they do",
+       "zh": "作用"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "Quiet inspiration",
+        "zh": "平静吸气"
+       },
+       {
+        "en": "Diaphragm, external intercostals",
+        "zh": "膈、肋间外肌"
+       },
+       {
+        "en": "The diaphragm descends; the ribs are lifted.",
+        "zh": "膈下降；肋骨上提。"
+       }
+      ],
+      [
+       {
+        "en": "Quiet expiration",
+        "zh": "平静呼气"
+       },
+       {
+        "en": "None (passive recoil)",
+        "zh": "无（被动回缩）"
+       },
+       {
+        "en": "The diaphragm relaxes back into its dome.",
+        "zh": "膈放松，恢复穹窿形。"
+       }
+      ],
+      [
+       {
+        "en": "Forced inspiration",
+        "zh": "用力吸气"
+       },
+       {
+        "en": "Add the accessory muscles: sternocleidomastoid, the scalenes, pectoralis major and minor, serratus anterior",
+        "zh": "加上辅助吸气肌：胸锁乳突肌、斜角肌、胸大肌和胸小肌、前锯肌"
+       },
+       {
+        "en": "They lift the sternum and upper ribs further.",
+        "zh": "进一步上提胸骨和上位肋骨。"
+       }
+      ],
+      [
+       {
+        "en": "Forced expiration",
+        "zh": "用力呼气"
+       },
+       {
+        "en": "Internal intercostals and the abdominal muscles, chiefly transversus abdominis and the internal oblique",
+        "zh": "肋间内肌和腹肌，主要是腹横肌和腹内斜肌"
+       },
+       {
+        "en": "The ribs are pulled down; the abdominal muscles raise intra-abdominal pressure and push the diaphragm up.",
+        "zh": "肋骨被拉向下；腹肌升高腹内压，把膈向上推。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "m-kh-breath",
+      "m-dp-chest",
+      "m-ox-22-3",
+      "d-kh",
+      "t-kh-ext",
+      "t-kh-int"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Trunk movement by the abdominal muscles",
+      "zh": "腹肌产生的躯干运动"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Line of pull predicts action. Rectus abdominis runs vertically in front of the spine and flexes the trunk. The oblique muscles of one side acting together flex the trunk to that side. Rotation needs a diagonal pair: turning the trunk to the left uses the right external oblique and the left internal oblique, whose fibres lie along one continuous diagonal across the linea alba.",
+      "zh": "看肌的拉力线就能推出作用。腹直肌在脊柱前方纵行，使躯干前屈。同侧的腹斜肌一起收缩使躯干向该侧侧屈。旋转需要一对斜向配合的肌：躯干向左转用右侧腹外斜肌和左侧腹内斜肌，两者的纤维隔着白线连成一条斜线。"
+     }
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Movement",
+       "zh": "运动"
+      },
+      {
+       "en": "Main muscles",
+       "zh": "主要肌"
+      },
+      {
+       "en": "Note",
+       "zh": "说明"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "Trunk flexion",
+        "zh": "躯干前屈"
+       },
+       {
+        "en": "Rectus abdominis of both sides, helped by both pairs of obliques",
+        "zh": "两侧腹直肌，两侧腹斜肌协助"
+       },
+       {
+        "en": "Pyramidalis only tenses the linea alba.",
+        "zh": "锥状肌只是拉紧白线。"
+       }
+      ],
+      [
+       {
+        "en": "Lateral flexion",
+        "zh": "侧屈"
+       },
+       {
+        "en": "External oblique and internal oblique of the same side",
+        "zh": "同侧腹外斜肌和腹内斜肌"
+       },
+       {
+        "en": "Quadratus lumborum and the erector spinae of that side also take part (see the lumbar chapter).",
+        "zh": "同侧腰方肌和竖脊肌也参与（见腰椎章节）。"
+       }
+      ],
+      [
+       {
+        "en": "Rotation to the left",
+        "zh": "向左旋转"
+       },
+       {
+        "en": "Right external oblique with left internal oblique",
+        "zh": "右侧腹外斜肌配左侧腹内斜肌"
+       },
+       {
+        "en": "Rotation to the right uses the opposite pair.",
+        "zh": "向右旋转用相反的一对。"
+       }
+      ],
+      [
+       {
+        "en": "Compression of the abdomen",
+        "zh": "压缩腹腔"
+       },
+       {
+        "en": "Transversus abdominis, with the obliques",
+        "zh": "腹横肌，腹斜肌协助"
+       },
+       {
+        "en": "This raises intra-abdominal pressure for forced expiration, coughing and straining.",
+        "zh": "升高腹内压，用于用力呼气、咳嗽和屏气用力。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "m-pp-abs",
+      "a-kh-ra",
+      "a-kh-eo",
+      "a-kh-io",
+      "a-kh-ta",
+      "m-pp-lumbar-abd"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "The core cylinder and intra-abdominal pressure",
+      "zh": "核心圆筒与腹内压"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The deep trunk muscles form a pressure cylinder: the diaphragm is the roof, the pelvic floor is the floor, transversus abdominis and the other abdominal muscles are the front and sides, and the deep back muscles are the back. When they contract together, intra-abdominal pressure rises and the lumbar spine is stiffened. A Valsalva manoeuvre is the extreme case: a forced expiration against a closed glottis.",
+      "zh": "躯干深层肌组成一个压力圆筒：膈是顶，盆底是底，腹横肌和其他腹肌是前壁和侧壁，背部深层肌是后壁。它们一起收缩时腹内压升高，腰椎随之变得稳固。Valsalva 动作是极端的例子：声门关闭时用力呼气。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Timing matters as much as strength. In healthy people transversus abdominis and multifidus switch on just before a limb moves, a feedforward response, and the diaphragm takes part in the same anticipatory activity; in people with low back pain this activation is delayed. For the pelvic floor the practical point is that pressure from above must be met from below: the pelvic floor has to contract when the pressure rises in a cough or a lift.",
+      "zh": "时序和力量同样重要。健康人在肢体活动之前，腹横肌和多裂肌先一步收缩，这是前馈反应，膈也参与同样的预先活动；腰痛患者的这种激活会延迟。对盆底来说，实际意义是上面来的压力要有下面的力顶住：咳嗽或提重物使腹内压升高时，盆底必须同时收缩。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "m-pp-core",
+      "m-pp-dia-stab",
+      "m-pp-tra",
+      "c-pp-pfd"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Pelvic floor at work: support and continence",
+      "zh": "盆底的工作：支持与控便控尿"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The pelvic floor does three things: it supports the pelvic organs, it keeps the urethra and anal canal closed, and it relaxes to let them open. Puborectalis is the clearest example. At rest its sling holds the anorectal angle at about 90 degrees, which keeps stool in the rectum; to defecate, the sling relaxes, the angle straightens and the abdominal muscles and diaphragm raise the pressure from above.",
+      "zh": "盆底有三项工作：支持盆腔脏器，使尿道和肛管保持关闭，并在需要时放松让它们开放。耻骨直肠肌是最清楚的例子。静息时它的吊带把肛直肠角维持在约 90 度，使粪便留在直肠内；排便时吊带放松，角度变直，腹肌和膈从上方升高压力。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "p-kh-la",
+      "p-tma-pf",
+      "p-pp-pfa",
+      "p-wp-la"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinical",
+   "title": {
+    "en": "Clinical and regional anatomy",
+    "zh": "临床与局部解剖"
+   },
+   "overview": {
+    "en": "Bedside tests of the trunk wall, common problems of the chest wall, diaphragm, abdominal wall and pelvic floor with the structures involved, eight acupoints placed on the regional anatomy, and a palpation sequence.",
+    "zh": "躯干壁的床边检查，胸壁、膈、腹壁和盆底的常见问题及其涉及的结构，放在局部解剖上的 8 个穴位，以及触诊顺序。"
+   },
+   "diagramIds": [],
+   "blocks": [
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Tests and signs on the trunk wall",
+      "zh": "躯干壁的检查与体征"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Most bedside tests of the trunk wall ask one of two questions: is a nerve level working, or does the pain come from the wall itself rather than from an organ inside it. The table gives the procedure, the positive finding and what it points to.",
+      "zh": "躯干壁的床边检查大多在回答两个问题之一：某个神经节段是否正常，或者疼痛是来自壁本身还是来自里面的脏器。下表列出做法、阳性表现和提示的意义。"
+     }
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Test",
+       "zh": "检查"
+      },
+      {
+       "en": "How it is done",
+       "zh": "做法"
+      },
+      {
+       "en": "Positive finding",
+       "zh": "阳性表现"
+      },
+      {
+       "en": "What it suggests",
+       "zh": "提示"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "Beevor sign",
+        "zh": "Beevor 征"
+       },
+       {
+        "en": "The patient lies supine and lifts the head, as at the start of a sit-up.",
+        "zh": "患者仰卧，像仰卧起坐开始时那样抬头。"
+       },
+       {
+        "en": "The umbilicus moves upward.",
+        "zh": "脐向上移动。"
+       },
+       {
+        "en": "The lower rectus abdominis is weaker than the upper; a spinal cord lesion at about T10–T12, and also seen in facioscapulohumeral muscular dystrophy.",
+        "zh": "腹直肌下部比上部弱；提示约 T10–T12 的脊髓病变，也见于面肩肱型肌营养不良。"
+       }
+      ],
+      [
+       {
+        "en": "Carnett sign",
+        "zh": "Carnett 征"
+       },
+       {
+        "en": "Find the tender point, then ask the patient to tense the abdominal muscles by lifting the head or legs, and press again.",
+        "zh": "先找到压痛点，再让患者抬头或抬腿使腹肌绷紧，然后再按压。"
+       },
+       {
+        "en": "The pain stays the same or gets worse.",
+        "zh": "疼痛不变或加重。"
+       },
+       {
+        "en": "The pain comes from the abdominal wall; pain that eases suggests a visceral source.",
+        "zh": "疼痛来自腹壁；疼痛减轻则提示来自内脏。"
+       }
+      ],
+      [
+       {
+        "en": "Superficial abdominal reflex",
+        "zh": "腹壁浅反射"
+       },
+       {
+        "en": "Stroke the skin of each quadrant of the abdomen toward the umbilicus.",
+        "zh": "在腹部各象限向脐的方向轻划皮肤。"
+       },
+       {
+        "en": "Normally the umbilicus moves toward the stroked side; the sign is an absent response.",
+        "zh": "正常时脐向被划的一侧移动；反射消失为异常。"
+       },
+       {
+        "en": "An absent reflex may indicate a spinal cord lesion.",
+        "zh": "反射消失可提示脊髓病变。"
+       }
+      ],
+      [
+       {
+        "en": "Chest expansion",
+        "zh": "胸廓扩张度"
+       },
+       {
+        "en": "Place the hands on the posterolateral lower ribs with the thumbs near the midline and ask for a deep breath.",
+        "zh": "双手放在后外侧下位肋骨上，拇指靠近正中线，让患者深吸气。"
+       },
+       {
+        "en": "The thumbs move apart less than the usual 3–5 cm, or unequally.",
+        "zh": "两拇指分开的距离小于通常的 3–5 cm，或两侧不对称。"
+       },
+       {
+        "en": "Reduced bucket-handle movement of the lower ribs on that side.",
+        "zh": "该侧下位肋骨的桶柄运动减小。"
+       }
+      ],
+      [
+       {
+        "en": "Inter-rectus distance",
+        "zh": "腹直肌间距"
+       },
+       {
+        "en": "In crook lying the patient lifts the head; palpate the gap between the two rectus abdominis muscles above, at and below the umbilicus.",
+        "zh": "屈膝仰卧，患者抬头；在脐上、脐部和脐下触摸两侧腹直肌之间的间隙。"
+       },
+       {
+        "en": "A gap of about 2 cm or two fingertips or more; sources do not agree on one cut-off.",
+        "zh": "间隙约 2 cm 或两指尖以上；各资料没有统一的界值。"
+       },
+       {
+        "en": "Diastasis recti abdominis.",
+        "zh": "腹直肌分离。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "c-pp-beevor",
+      "c-pp-carnett",
+      "c-msd-reflex",
+      "c-pp-resp",
+      "c-pp-dra",
+      "c-wp-dra"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Chest wall problems",
+      "zh": "胸壁的常见问题"
+     }
+    },
+    {
+     "type": "cards",
+     "layout": "columns",
+     "cards": [
+      {
+       "heading": {
+        "en": "Costochondritis",
+        "zh": "肋软骨炎"
+       },
+       "paragraphs": [
+        {
+         "en": "Pain at the costochondral or sternocostal joints, most often of ribs 2–5, reproduced by pressing on them. There is no swelling; swelling at one joint suggests Tietze syndrome instead.",
+         "zh": "肋软骨结合或胸肋关节处疼痛，最常见于第 2–5 肋，按压可重现。局部没有肿胀；若单个关节肿胀，则提示 Tietze 综合征。"
+        }
+       ]
+      },
+      {
+       "heading": {
+        "en": "Rib fracture",
+        "zh": "肋骨骨折"
+       },
+       "paragraphs": [
+        {
+         "en": "Ribs 4–10 break most often, and a rib is weakest just in front of its angle. A flail chest means three or more neighbouring ribs each broken in two places, so that the loose segment moves paradoxically. Fractures of ribs 10–12 can injure the liver, spleen or kidney.",
+         "zh": "第 4–10 肋最常骨折，肋骨在肋角稍前方最薄弱。连枷胸指相邻三根或以上肋骨各有两处骨折，游离的一段出现矛盾运动。第 10–12 肋骨折可伤及肝、脾或肾。"
+        }
+       ]
+      },
+      {
+       "heading": {
+        "en": "Why needles follow the upper border of a rib",
+        "zh": "为什么针沿肋骨上缘走"
+       },
+       "paragraphs": [
+        {
+         "en": "The intercostal vein, artery and nerve lie in the costal groove under the lower border of each rib, so a chest drain is passed along the upper border of the rib below. The parietal pleura lies just deep to the innermost muscle layer.",
+         "zh": "肋间静脉、动脉和神经位于每根肋骨下缘的肋沟里，所以胸腔引流管沿下一肋的上缘进入。壁层胸膜就在最内层肌的深面。"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "c-pp-costo",
+      "c-pp-ribfx",
+      "b-kh-ribs",
+      "t-kh-space"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Diaphragm and phrenic nerve",
+      "zh": "膈与膈神经"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "A hiatus hernia is the passage of part of the stomach up through the oesophageal hiatus. Phrenic nerve palsy paralyses half of the diaphragm, which then rises on inspiration. Hiccups are involuntary contractions of the diaphragm.",
+      "zh": "食管裂孔疝是部分胃经食管裂孔向上进入胸腔。膈神经麻痹使半个膈瘫痪，吸气时该侧膈上升。呃逆是膈的不自主收缩。"
+     }
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "d-tma",
+      "d-kh",
+      "d-tma-phrenic"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Abdominal wall: hernia, diastasis and nerve entrapment",
+      "zh": "腹壁：疝、腹直肌分离与神经卡压"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-13"
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Inguinal hernias are sorted by their relation to the inferior epigastric vessels. An indirect hernia enters the deep inguinal ring lateral to the vessels and follows the inguinal canal; it is often congenital, through a processus vaginalis that stayed open. A direct hernia pushes straight through the posterior wall medial to the vessels, in the inguinal (Hesselbach) triangle, whose sides are the lateral border of rectus abdominis, the inferior epigastric vessels and the inguinal ligament.",
+      "zh": "腹股沟疝按它与腹壁下血管的位置关系分类。斜疝从血管外侧进入腹股沟管深环，沿腹股沟管下行；常为先天性，由未闭的鞘突形成。直疝在血管内侧直接顶出后壁，位置在腹股沟（Hesselbach）三角内；三角的三边是腹直肌外侧缘、腹壁下血管和腹股沟韧带。"
+     }
+    },
+    {
+     "type": "cards",
+     "layout": "columns",
+     "cards": [
+      {
+       "heading": {
+        "en": "Diastasis recti abdominis",
+        "zh": "腹直肌分离"
+       },
+       "paragraphs": [
+        {
+         "en": "The linea alba widens and thins, so the two rectus abdominis muscles move apart. It is common in pregnancy: about a third of women by the second trimester, about 60% at six weeks after birth and about a third at twelve months. Management aims to restore tension across the linea alba through activation of the deep abdominal muscles. Evidence linking it to pelvic floor dysfunction is mixed.",
+         "zh": "白线变宽变薄，两侧腹直肌因而分开。孕期常见：孕中期约三分之一，产后 6 周约 60%，产后 12 个月约三分之一。处理的目标是通过激活深层腹肌恢复白线上的张力。它与盆底功能障碍是否相关，证据并不一致。"
+        }
+       ]
+      },
+      {
+       "heading": {
+        "en": "Anterior cutaneous nerve entrapment (ACNES)",
+        "zh": "腹壁前皮神经卡压综合征（ACNES）"
+       },
+       "paragraphs": [
+        {
+         "en": "An anterior cutaneous branch of a T7–T12 nerve is trapped where it turns forward through the rectus sheath at the lateral border of rectus abdominis. The pain is sharp and fits under one fingertip, the Carnett sign is positive, and pinching the skin over the point is more painful than on the other side.",
+         "zh": "T7–T12 某条神经的前皮支在腹直肌外侧缘转向前方、穿过腹直肌鞘处受卡压。疼痛尖锐，范围不超过一个指尖，Carnett 征阳性，捏起该处皮肤比对侧更痛。"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "c-kh-canal",
+      "c-tma-tri",
+      "c-kh-il",
+      "c-pp-dra",
+      "c-wp-dra",
+      "c-pp-acnes"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Pelvic floor problems",
+      "zh": "盆底的常见问题"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Pelvic floor dysfunction comes in two directions. An underactive pelvic floor cannot contract enough when it is needed and gives stress urinary incontinence, which is leakage on effort, coughing or sneezing, and pelvic organ prolapse. An overactive pelvic floor cannot relax and gives pain and difficulty emptying. Pregnancy and vaginal birth, age, higher body mass, chronic cough and chronic straining raise the risk.",
+      "zh": "盆底功能障碍有两个方向。盆底活动不足时，需要收缩却收缩不够，出现压力性尿失禁（用力、咳嗽或打喷嚏时漏尿）和盆腔脏器脱垂。盆底过度活动时无法放松，出现疼痛和排空困难。妊娠和阴道分娩、年龄、体重指数较高、慢性咳嗽和长期屏气用力都会增加风险。"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Pelvic floor muscle training is the first-line treatment for stress urinary incontinence. Teaching it needs checking: many people first use other muscles instead, such as the gluteal muscles, the hip adductors or rectus abdominis, or hold their breath. Prolapse is named by the wall that descends: the anterior wall with the bladder, the posterior wall with the rectum, or the apex with the uterus.",
+      "zh": "盆底肌训练是压力性尿失禁的一线治疗。教的时候要检查动作：很多人一开始用的是别的肌，如臀肌、髋内收肌或腹直肌，或者憋气。脱垂按下降的壁来命名：前壁（膀胱）、后壁（直肠）或顶端（子宫）。"
+     }
+    },
+    {
+     "type": "cards",
+     "layout": "columns",
+     "cards": [
+      {
+       "heading": {
+        "en": "Pudendal neuralgia",
+        "zh": "阴部神经痛"
+       },
+       "paragraphs": [
+        {
+         "en": "Pain in the territory of the pudendal nerve that is worse on sitting, eased on a toilet seat, does not wake the patient at night, comes without objective sensory loss, and is relieved by a pudendal nerve block. The nerve can be trapped at the sciatic notch, between the sacrospinous and sacrotuberous ligaments at the ischial spine, in the pudendal canal, or in its end branches.",
+         "zh": "阴部神经分布区的疼痛：坐位加重，坐在马桶圈上减轻，夜间不会痛醒，没有客观的感觉缺失，阴部神经阻滞后缓解。神经可能受卡压的位置有：坐骨切迹处、坐骨棘处骶棘韧带与骶结节韧带之间、阴部管内，或终末分支处。"
+        }
+       ]
+      },
+      {
+       "heading": {
+        "en": "Coccydynia",
+        "zh": "尾骨痛"
+       },
+       "paragraphs": [
+        {
+         "en": "Pain at the coccyx on sitting, usually after a fall or childbirth and about five times more common in women. Levator ani, coccygeus and gluteus maximus attach to the coccyx, so their tension can pull on it. Seating cushions and manual therapy are the usual conservative measures.",
+         "zh": "坐位时尾骨处疼痛，多见于摔倒或分娩之后，女性约为男性的 5 倍。肛提肌、尾骨肌和臀大肌都附着在尾骨上，它们紧张时会牵拉尾骨。常用的保守措施是坐垫和手法治疗。"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "c-pp-pfd",
+      "c-pp-women",
+      "c-pp-fpelvis",
+      "c-wp-pfd",
+      "c-pp-pn",
+      "n-rp-pud",
+      "c-pp-cocc"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Acupoints on the regional anatomy",
+      "zh": "穴位与局部解剖"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "Eight points are placed on the structures of this chapter. On the front of the trunk, lengths are measured in proportional cun: 9 cun from the jugular notch to the tip of the xiphoid process (the standard gives this from the point Tiantu), 8 cun from the xiphoid tip to the centre of the umbilicus, 5 cun from the umbilicus to the upper border of the pubic symphysis, and 8 cun between the two nipples.",
+      "zh": "本章把 8 个穴位放到所学结构上。躯干前面用骨度分寸量取：天突到剑突尖 9 寸，剑突尖到脐中 8 寸，脐中到耻骨联合上缘 5 寸，两乳头之间 8 寸。"
+     }
+    },
+    {
+     "type": "figure",
+     "diagramId": "fig-14"
+    },
+    {
+     "type": "table",
+     "columns": [
+      {
+       "en": "Point",
+       "zh": "穴位"
+      },
+      {
+       "en": "Standard location",
+       "zh": "标准定位"
+      },
+      {
+       "en": "Anatomy under the point",
+       "zh": "穴下解剖"
+      }
+     ],
+     "rows": [
+      [
+       {
+        "en": "CV17 Danzhong",
+        "zh": "CV17 膻中"
+       },
+       {
+        "en": "Fourth intercostal space level, on the anterior median line.",
+        "zh": "横平第 4 肋间隙，前正中线上。"
+       },
+       {
+        "en": "Body of the sternum.",
+        "zh": "胸骨体。"
+       }
+      ],
+      [
+       {
+        "en": "LR14 Qimen",
+        "zh": "LR14 期门"
+       },
+       {
+        "en": "Sixth intercostal space, 4 cun lateral to the anterior median line.",
+        "zh": "第 6 肋间隙，前正中线旁开 4 寸。"
+       },
+       {
+        "en": "External and internal intercostals of the sixth space, with pleura deep to them.",
+        "zh": "第 6 肋间隙的肋间外肌和肋间内肌，深面是胸膜。"
+       }
+      ],
+      [
+       {
+        "en": "LR13 Zhangmen",
+        "zh": "LR13 章门"
+       },
+       {
+        "en": "Below the free end of the eleventh rib.",
+        "zh": "第 11 肋游离端的下际。"
+       },
+       {
+        "en": "External oblique, internal oblique and transversus abdominis.",
+        "zh": "腹外斜肌、腹内斜肌和腹横肌。"
+       }
+      ],
+      [
+       {
+        "en": "CV12 Zhongwan",
+        "zh": "CV12 中脘"
+       },
+       {
+        "en": "4 cun above the centre of the umbilicus, on the anterior median line.",
+        "zh": "脐中上 4 寸，前正中线上。"
+       },
+       {
+        "en": "Linea alba.",
+        "zh": "白线。"
+       }
+      ],
+      [
+       {
+        "en": "ST25 Tianshu",
+        "zh": "ST25 天枢"
+       },
+       {
+        "en": "2 cun lateral to the centre of the umbilicus.",
+        "zh": "脐中旁开 2 寸。"
+       },
+       {
+        "en": "Rectus sheath and rectus abdominis.",
+        "zh": "腹直肌鞘和腹直肌。"
+       }
+      ],
+      [
+       {
+        "en": "CV4 Guanyuan",
+        "zh": "CV4 关元"
+       },
+       {
+        "en": "3 cun below the centre of the umbilicus, on the anterior median line.",
+        "zh": "脐中下 3 寸，前正中线上。"
+       },
+       {
+        "en": "Linea alba, below the arcuate line.",
+        "zh": "白线，在弓状线以下。"
+       }
+      ],
+      [
+       {
+        "en": "CV1 Huiyin",
+        "zh": "CV1 会阴"
+       },
+       {
+        "en": "In the perineum, at the midpoint between the anus and the posterior border of the scrotum or the posterior labial commissure.",
+        "zh": "会阴区，肛门与阴囊根部（或大阴唇后联合）连线的中点。"
+       },
+       {
+        "en": "Perineal body.",
+        "zh": "会阴体。"
+       }
+      ],
+      [
+       {
+        "en": "GV1 Changqiang",
+        "zh": "GV1 长强"
+       },
+       {
+        "en": "Below the tip of the coccyx, midway between the tip of the coccyx and the anus.",
+        "zh": "尾骨下方，尾骨端与肛门连线的中点。"
+       },
+       {
+        "en": "Anococcygeal ligament.",
+        "zh": "肛尾韧带。"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The standard locations are from the Chinese national standard for acupoint locations; the full entry for each point, with how to find it and the safety note, is in the list below. On the chest wall the pleura lies only a few layers under the skin, so these positions are learning references and do not indicate needle depth, direction or path.",
+      "zh": "标准定位取自国家标准《经穴名称与定位》；每个穴位的完整条目（取穴方法和安全提示）见下面的列表。胸壁皮下只隔几层就是胸膜，所以这些位置只作学习参照，不表示进针深度、方向或路径。"
+     }
+    },
+    {
+     "type": "details",
+     "open": false,
+     "summary": {
+      "en": "Acupoints · 8 entries",
+      "zh": "穴位 · 8 个条目"
+     },
+     "blocks": [
+      {
+       "type": "acupoints",
+       "ids": [
+        "cv17",
+        "lr14",
+        "lr13",
+        "cv12",
+        "st25",
+        "cv4",
+        "cv1",
+        "gv1"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "x-gbt",
+      "x-who"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Palpation sequence",
+      "zh": "触诊顺序"
+     }
+    },
+    {
+     "type": "steps",
+     "items": [
+      {
+       "heading": {
+        "en": "Jugular notch and sternal angle",
+        "zh": "颈静脉切迹和胸骨角"
+       },
+       "text": {
+        "en": "Slide down from the jugular notch to the ridge of the sternal angle; the second rib is beside it.",
+        "zh": "从颈静脉切迹向下滑，摸到胸骨角的横嵴；它旁边就是第 2 肋。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Count the ribs and spaces",
+        "zh": "数肋骨和肋间隙"
+       },
+       "text": {
+        "en": "Below the second rib is the second intercostal space. Count down obliquely along the side of the sternum.",
+        "zh": "第 2 肋下方是第 2 肋间隙。沿胸骨旁斜向下数。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Xiphoid process and costal margin",
+        "zh": "剑突和肋弓"
+       },
+       "text": {
+        "en": "Follow the body of the sternum down to the xiphoid process, then follow the costal margin outward and down to the free ends of the eleventh and twelfth ribs.",
+        "zh": "沿胸骨体向下摸到剑突，再沿肋弓向外下方摸到第 11、12 肋的游离端。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Linea alba and rectus abdominis",
+        "zh": "白线和腹直肌"
+       },
+       "text": {
+        "en": "With the head lifted, the two rectus abdominis muscles stand out on each side of the linea alba; their lateral edge is the linea semilunaris.",
+        "zh": "抬头时两侧腹直肌在白线两旁隆起；外侧缘是半月线。"
+       }
+      },
+      {
+       "heading": {
+        "en": "ASIS, pubic tubercle and inguinal ligament",
+        "zh": "髂前上棘、耻骨结节和腹股沟韧带"
+       },
+       "text": {
+        "en": "Find the anterior superior iliac spine and the pubic tubercle; the inguinal ligament runs between them.",
+        "zh": "找到髂前上棘和耻骨结节；腹股沟韧带张于两者之间。"
+       }
+      },
+      {
+       "heading": {
+        "en": "Ischial tuberosity and coccyx",
+        "zh": "坐骨结节和尾骨"
+       },
+       "text": {
+        "en": "In side lying, the ischial tuberosity is the bone that takes weight in sitting; the tip of the coccyx lies in the midline above the anus.",
+        "zh": "侧卧位，坐骨结节是坐位时承重的骨；尾骨尖在肛门上方的正中线上。"
+       }
+      }
+     ]
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "b-tma-sternum",
+      "b-ox-cage",
+      "a-tma-aw",
+      "c-kh-il",
+      "b-tma-hip-bone"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": {
+    "en": "Review and complete answers",
+    "zh": "复习与完整答案"
+   },
+   "overview": {
+    "en": "Short memory cues, then questions with full answers, then what the week of daily pushes will add.",
+    "zh": "先是简短的记忆口诀，再是带完整答案的问题，最后是本周每日推送要补的内容。"
+   },
+   "diagramIds": [],
+   "blocks": [
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Memory cues",
+      "zh": "记忆口诀"
+     }
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "The three openings of the diaphragm lie at T8, T10 and T12: the caval opening for the inferior vena cava at T8, the oesophageal hiatus at T10 and the aortic hiatus at T12. The English cue is \"I 8 10 EGGS AT 12\".",
+      "zh": "膈的三个裂孔分别平第 8、10、12 胸椎：腔静脉孔（下腔静脉）平 T8，食管裂孔平 T10，主动脉裂孔平 T12。英文口诀是 I 8 10 EGGS AT 12。"
+     },
+     "original": "八腔、十食、十二主。"
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "In the costal groove the order from above down is vein, artery, nerve (VAN), so a needle or drain goes along the upper border of the rib below.",
+      "zh": "肋沟内自上而下依次是静脉、动脉、神经（VAN），所以针或引流管沿下一肋的上缘进入。"
+     },
+     "original": "肋沟里，静动神；进针走上缘。"
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "Ribs 2–6 move like a pump handle and increase the front-to-back diameter; ribs 7–10 move like a bucket handle and increase the side-to-side diameter.",
+      "zh": "第 2–6 肋像泵柄，增大前后径；第 7–10 肋像桶柄，增大左右径。"
+     },
+     "original": "上肋泵柄前后大，下肋桶柄左右宽。"
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "Dermatome landmarks on the front of the trunk: T4 at the nipple, T6 at the xiphoid process, T10 at the umbilicus, L1 in the groin.",
+      "zh": "躯干前面的皮节标志：T4 平乳头，T6 平剑突，T10 平脐，L1 在腹股沟。"
+     },
+     "original": "四乳、六剑、十脐、腰一沟。"
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "The phrenic nerve comes from C3, C4 and C5; the English cue is \"C3, 4, 5 keeps the diaphragm alive\". The pudendal nerve comes from S2, S3 and S4.",
+      "zh": "膈神经来自 C3、C4、C5；英文口诀是 C3, 4, 5 keeps the diaphragm alive。阴部神经来自 S2、S3、S4。"
+     },
+     "original": "颈三四五管膈，骶二三四管会阴。"
+    },
+    {
+     "type": "mnemonic",
+     "text": {
+      "en": "The walls of the inguinal canal spell MALT: Muscles for the roof, Aponeuroses for the anterior wall, Ligaments for the floor, Transversalis fascia and conjoint Tendon for the posterior wall.",
+      "zh": "腹股沟管四壁记作 MALT：上壁是肌（Muscles），前壁是腱膜（Aponeuroses），下壁是韧带（Ligaments），后壁是腹横筋膜和联合腱（Transversalis fascia、Tendon）。"
+     },
+     "original": "上肌、前腱膜、下韧带、后筋膜。"
+    },
+    {
+     "type": "sources",
+     "ids": [
+      "d-kh",
+      "d-tma",
+      "t-kh-space",
+      "m-wp-pump",
+      "m-wp-bucket",
+      "x-pp-derm",
+      "d-tma-phrenic",
+      "n-tma-pud",
+      "c-kh-canal"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "Questions with complete answers",
+      "zh": "问题与完整答案"
+     }
+    },
+    {
+     "type": "quiz",
+     "ids": [
+      "q-intercostal-space",
+      "q-diaphragm-openings",
+      "q-rectus-sheath",
+      "q-rotation",
+      "q-breathing",
+      "q-levator-ani",
+      "q-pudendal",
+      "q-hernia"
+     ]
+    },
+    {
+     "type": "heading",
+     "level": 3,
+     "text": {
+      "en": "What the week adds",
+      "zh": "本周每日学习补什么"
+     }
+    },
+    {
+     "type": "paragraph",
+     "text": {
+      "en": "The daily pushes of this week add what the chapter leaves out: four more acupoints of the abdomen and flank, an assessment-to-treatment flow for stress urinary incontinence, a case of postpartum diastasis recti with spoken practice, one paper, and the trunk wall tests in detail. Saturday is the weekly quiz with review across earlier weeks.",
+      "zh": "本周的每日推送补上章节没有展开的内容：腹部和侧腹部的另外 4 个穴位、压力性尿失禁从评估到治疗的流程、一个产后腹直肌分离的病例（含口语练习）、一篇论文，以及躯干壁检查的细节。周六是周测和跨周复习。"
+     }
+    }
+   ]
+  }
+ ],
+ "muscles": [
+  {
+   "id": "external-intercostals",
+   "name": {
+    "en": "External intercostals",
+    "zh": "肋间外肌"
+   },
+   "origin": {
+    "en": "Inferior border of each of ribs 1–11",
+    "zh": "第 1–11 肋各自的下缘"
+   },
+   "insertion": {
+    "en": "Superior border of the rib immediately below (ribs 2–12)",
+    "zh": "下一肋的上缘（第 2–12 肋）"
+   },
+   "course": {
+    "en": "The external intercostals originate from the inferior border of each of ribs 1–11, pass inferiorly and forward as the most superficial layer of the intercostal space, and insert onto the superior border of the rib below. They are innervated by the intercostal nerves (anterior rami of T1–T11) and contribute to elevation of the ribs during inspiration. The muscle runs from the tubercle of the rib to about the costochondral junction; in front of that point the external intercostal membrane takes its place.",
+    "zh": "肋间外肌起自第 1–11 肋各自的下缘，作为肋间隙最浅的一层向前下方走行，止于下一肋的上缘。它由肋间神经（T1–T11 前支）支配，参与吸气时上提肋骨。肌肉从肋结节延伸到大约肋骨肋软骨结合处；再往前由肋间外膜代替。"
+   },
+   "actions": {
+    "en": "They elevate the ribs in inspiration, mainly in deep or forced breathing, and the resting tension of the intercostal muscles supports the chest wall. One source lets the muscle reach the sternal ends of the spaces rather than stop at the costochondral junction.",
+    "zh": "吸气时上提肋骨，主要在深吸气或用力吸气时起作用；肋间肌的静息张力对胸壁起支撑作用。有一份资料认为肌肉可达肋间隙的胸骨端，而不是止于肋骨肋软骨结合处。"
+   },
+   "innervation": {
+    "en": "Intercostal nerves (anterior rami of T1–T11)",
+    "zh": "肋间神经（T1–T11 前支）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-03"
+   ],
+   "sources": [
+    "t-kh-ext",
+    "t-kh-ic",
+    "t-kh-space",
+    "t-el-ext",
+    "t-tma-thoracic"
+   ],
+   "color": "#a8423a",
+   "letter": "EI"
+  },
+  {
+   "id": "internal-intercostals",
+   "name": {
+    "en": "Internal intercostals",
+    "zh": "肋间内肌"
+   },
+   "origin": {
+    "en": "Costal groove (its outer lip) of each of ribs 1–11 and the adjacent costal cartilage",
+    "zh": "第 1–11 肋各自的肋沟（外侧唇）及邻近的肋软骨"
+   },
+   "insertion": {
+    "en": "Superior border of the rib and costal cartilage immediately below",
+    "zh": "下一肋及其肋软骨的上缘"
+   },
+   "course": {
+    "en": "The internal intercostals originate from the costal groove of each of ribs 1–11 and the adjacent costal cartilage, pass inferiorly and backward, at right angles to the external intercostals, as the middle layer of the intercostal space, and insert onto the superior border of the rib below. They are innervated by the intercostal nerves (anterior rami of T1–T11) and contribute to depression of the ribs during forced expiration. The muscle runs from the side of the sternum to the angle of the rib; behind the angle the internal intercostal membrane takes its place.",
+    "zh": "肋间内肌起自第 1–11 肋各自的肋沟及邻近的肋软骨，作为肋间隙的中间一层向后下方走行，与肋间外肌的方向垂直，止于下一肋的上缘。它由肋间神经（T1–T11 前支）支配，参与用力呼气时下降肋骨。肌肉从胸骨外侧缘延伸到肋角；肋角以后由肋间内膜代替。"
+   },
+   "actions": {
+    "en": "The part between the bony ribs depresses the ribs in forced expiration. The part between the costal cartilages next to the sternum (the parasternal intercostals) is described as inspiratory, raising the ribs together with the external intercostals. The lowest two muscles continue into the internal oblique.",
+    "zh": "位于骨性肋骨之间的部分在用力呼气时下降肋骨。胸骨旁、位于肋软骨之间的部分（胸骨旁肋间肌）被描述为吸气肌，与肋间外肌一起上提肋骨。最下两块肋间内肌向下延续为腹内斜肌。"
+   },
+   "innervation": {
+    "en": "Intercostal nerves (anterior rami of T1–T11)",
+    "zh": "肋间神经（T1–T11 前支）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-03"
+   ],
+   "sources": [
+    "t-kh-int",
+    "t-kh-ic",
+    "t-kh-space",
+    "t-el-int",
+    "t-tma-thoracic"
+   ],
+   "color": "#c96f3b",
+   "letter": "II"
+  },
+  {
+   "id": "innermost-intercostals",
+   "name": {
+    "en": "Innermost intercostals",
+    "zh": "肋间最内肌"
+   },
+   "origin": {
+    "en": "Inner surface of the costal groove (its inner lip) of each of ribs 1–11, deep to the internal intercostal",
+    "zh": "第 1–11 肋各自肋沟的内面（内侧唇），在肋间内肌深面"
+   },
+   "insertion": {
+    "en": "Superior border and inner surface of the rib immediately below",
+    "zh": "下一肋的上缘和内面"
+   },
+   "course": {
+    "en": "The innermost intercostals originate from the inner surface of the costal groove of each of ribs 1–11, pass inferiorly and backward, parallel to the internal intercostals, as the deepest layer of the intercostal space, and insert onto the superior border of the rib below. They are innervated by the intercostal nerves (anterior rami of T1–T11) and contribute to depression of the ribs during forced expiration, although their exact function has not been settled. They fill only the middle two quarters of each space and are better developed in the lower spaces.",
+    "zh": "肋间最内肌起自第 1–11 肋各自肋沟的内面，作为肋间隙最深的一层向后下方走行，与肋间内肌平行，止于下一肋的上缘。它由肋间神经（T1–T11 前支）支配，参与用力呼气时下降肋骨，但其确切功能尚未确定。它只占每个肋间隙中间的两个四分之一，在下部肋间隙更发达。"
+   },
+   "actions": {
+    "en": "Most sources group them with the internal intercostals as depressors of the ribs in forced expiration, one source says they elevate the ribs, and one states that the function is not yet determined. The intercostal vein, artery and nerve run between this layer and the internal intercostal; the endothoracic fascia and parietal pleura lie deep to it.",
+    "zh": "多数资料把它与肋间内肌归为一组，在用力呼气时下降肋骨；有一份资料写它上提肋骨，还有一份明确说功能尚未确定。肋间静脉、动脉和神经走在这一层与肋间内肌之间；其深面是胸内筋膜和壁胸膜。"
+   },
+   "innervation": {
+    "en": "Intercostal nerves (anterior rami of T1–T11)",
+    "zh": "肋间神经（T1–T11 前支）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-03"
+   ],
+   "sources": [
+    "t-kh-inn",
+    "t-kh-ic",
+    "t-kh-space",
+    "t-el-inn",
+    "t-tma-thoracic"
+   ],
+   "color": "#8c6239",
+   "letter": "IM"
+  },
+  {
+   "id": "transversus-thoracis",
+   "name": {
+    "en": "Transversus thoracis",
+    "zh": "胸横肌"
+   },
+   "origin": {
+    "en": "Posterior surface of the lower third of the body of the sternum and of the xiphoid process, and the sternal ends of costal cartilages 4–7",
+    "zh": "胸骨体下三分之一和剑突的后面，以及第 4–7 肋软骨的胸骨端"
+   },
+   "insertion": {
+    "en": "Inner surfaces of costal cartilages 2–6, by four or five slips on each side",
+    "zh": "第 2–6 肋软骨的内面，每侧分为 4–5 个肌齿"
+   },
+   "course": {
+    "en": "The transversus thoracis originates from the posterior surface of the lower sternum and xiphoid process, passes superolaterally on the inner surface of the anterior chest wall, in the same plane as the innermost intercostals, and inserts onto the inner surfaces of costal cartilages 2–6. It is innervated by the intercostal nerves (T2–T6) and contributes to depression of the ribs during forced expiration. Its lowest fibres are horizontal and continuous with the transversus abdominis, and its highest fibres are almost vertical.",
+    "zh": "胸横肌起自胸骨下部和剑突的后面，在前胸壁内面、与肋间最内肌同一层内向外上方走行，止于第 2–6 肋软骨的内面。它由肋间神经（T2–T6）支配，参与用力呼气时下降肋骨。最下方的肌纤维呈水平位并与腹横肌相续，最上方的肌纤维几乎垂直。"
+   },
+   "actions": {
+    "en": "It is a weak depressor of ribs 2–6 in forced expiration, reducing the anteroposterior diameter of the chest, and is also said to stiffen the anterior chest wall during inspiration.",
+    "zh": "用力呼气时较弱地下降第 2–6 肋，使胸廓前后径减小；资料还提到它在吸气时使前胸壁保持紧张。"
+   },
+   "innervation": {
+    "en": "Intercostal nerves (anterior rami of T2–T6)",
+    "zh": "肋间神经（T2–T6 前支）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-03"
+   ],
+   "sources": [
+    "t-kh-tt",
+    "t-kh-space",
+    "t-tma-thoracic"
+   ],
+   "color": "#7d8f2e",
+   "letter": "TT"
+  },
+  {
+   "id": "diaphragm",
+   "name": {
+    "en": "Diaphragm",
+    "zh": "膈"
+   },
+   "origin": {
+    "en": "Sternal part: posterior surface of the xiphoid process. Costal part: inner surfaces of the lower six costal cartilages and adjoining ribs (ribs 7–12). Lumbar part: right crus from the bodies of the L1–L3 vertebrae, left crus from L1–L2, and the medial and lateral arcuate ligaments",
+    "zh": "胸骨部：剑突后面。肋部：下 6 对肋软骨及相邻肋骨（第 7–12 肋）的内面。腰部：右膈脚起自第 1–3 腰椎椎体，左膈脚起自第 1–2 腰椎椎体，另有内侧和外侧弓状韧带"
+   },
+   "insertion": {
+    "en": "Central tendon of the diaphragm, a single aponeurosis that is fused with the fibrous pericardium above",
+    "zh": "膈的中心腱；它是一整片腱膜，上面与纤维心包融合"
+   },
+   "course": {
+    "en": "The diaphragm originates from the xiphoid process, the lower six costal cartilages and ribs, and the upper lumbar vertebrae through its two crura and the arcuate ligaments, passes upward and inward as a double dome between the thoracic and abdominal cavities, and inserts onto its own central tendon. It is innervated by the phrenic nerve (C3–C5) and contributes to inspiration by flattening and descending, which increases the vertical diameter of the thorax.",
+    "zh": "膈起自剑突、下 6 对肋软骨和肋骨，并通过左右膈脚和弓状韧带起自上部腰椎，向内上方走行，形成分隔胸腔和腹腔的双穹窿，止于自身的中心腱。它由膈神经（C3–C5）支配，收缩时变平并下降，使胸腔上下径增大，从而参与吸气。"
+   },
+   "actions": {
+    "en": "It is the main muscle of inspiration; quiet expiration is its passive relaxation back into the dome shape. Acting with the abdominal wall muscles it raises intra-abdominal pressure for straining, defecation, urination, vomiting and childbirth. The right dome is higher than the left because of the liver. Sources differ only on how the costal origin is worded (ribs 7–12, or costal cartilages 7–10 with ribs 11–12).",
+    "zh": "它是主要的吸气肌；平静呼气是膈被动放松、恢复穹窿形的过程。与腹壁肌共同收缩时升高腹内压，用于屏气用力、排便、排尿、呕吐和分娩。右侧穹窿因肝脏而高于左侧。各资料只在肋部起点的写法上略有出入（第 7–12 肋，或第 7–10 肋软骨加第 11–12 肋）。"
+   },
+   "innervation": {
+    "en": "Motor: phrenic nerve (C3–C5, mainly C4), the only motor supply of each half. Sensory: phrenic nerve for the central part; lower intercostal nerves (given as the 6th–11th, or the lower five or six) for the periphery",
+    "zh": "运动：膈神经（C3–C5，以 C4 为主），是每侧膈唯一的运动神经。感觉：中央部由膈神经支配；周边部由下位肋间神经支配（资料写第 6–11 肋间神经，或最下 5–6 对）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-04",
+    "fig-12"
+   ],
+   "sources": [
+    "d-kh",
+    "d-tma",
+    "d-el",
+    "d-rp",
+    "d-tma-phrenic"
+   ],
+   "color": "#9c3f6e",
+   "letter": "DI"
+  },
+  {
+   "id": "rectus-abdominis",
+   "name": {
+    "en": "Rectus abdominis",
+    "zh": "腹直肌"
+   },
+   "origin": {
+    "en": "Pubic symphysis and pubic crest",
+    "zh": "耻骨联合和耻骨嵴"
+   },
+   "insertion": {
+    "en": "Xiphoid process and costal cartilages 5–7",
+    "zh": "剑突和第 5–7 肋软骨"
+   },
+   "course": {
+    "en": "The rectus abdominis originates from the pubic symphysis and pubic crest, passes vertically upward beside the linea alba, enclosed in the rectus sheath and crossed by three tendinous intersections, and inserts onto the xiphoid process and costal cartilages 5–7. It is innervated by the thoraco-abdominal nerves (T7–T11) and the subcostal nerve (T12) and contributes to flexion of the trunk.",
+    "zh": "腹直肌起自耻骨联合和耻骨嵴，在腹直肌鞘内沿白线两侧垂直向上走行，中途有三条腱划横过，止于剑突和第 5–7 肋软骨。它由胸腹神经（T7–T11）和肋下神经（T12）支配，参与躯干前屈。"
+   },
+   "actions": {
+    "en": "It flexes the trunk, compresses the abdominal viscera and raises intra-abdominal pressure, assists forced expiration, and stabilises the pelvis and controls its tilt, countering an increase in lumbar lordosis. The three tendinous intersections lie at the level of the xiphoid process, at the umbilicus and midway between the two. One source starts the nerve supply at T6.",
+    "zh": "使躯干前屈，压迫腹腔脏器并升高腹内压，协助用力呼气，并稳定骨盆、控制骨盆倾斜，对抗腰椎前凸加大。三条腱划分别位于剑突平面、脐平面和两者中间。有一份资料把神经支配从 T6 算起。"
+   },
+   "innervation": {
+    "en": "Thoraco-abdominal nerves (anterior rami of T7–T11) and subcostal nerve (T12)",
+    "zh": "胸腹神经（T7–T11 前支）和肋下神经（T12）"
+   },
+   "modelTermId": "rectus-abdominis",
+   "modelUnavailableReason": null,
+   "diagramIds": [
+    "fig-05",
+    "fig-06"
+   ],
+   "sources": [
+    "a-kh-ra",
+    "a-kh-ant",
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-ox-11-4"
+   ],
+   "color": "#a33b52",
+   "letter": "RA"
+  },
+  {
+   "id": "external-oblique",
+   "name": {
+    "en": "External abdominal oblique",
+    "zh": "腹外斜肌"
+   },
+   "origin": {
+    "en": "External surfaces of ribs 5–12, interdigitating with serratus anterior and latissimus dorsi",
+    "zh": "第 5–12 肋的外面，与前锯肌和背阔肌的肌齿交错"
+   },
+   "insertion": {
+    "en": "Linea alba, pubic tubercle and the anterior half of the iliac crest",
+    "zh": "白线、耻骨结节和髂嵴前半"
+   },
+   "course": {
+    "en": "The external oblique originates from the external surfaces of ribs 5–12, passes inferomedially as the most superficial of the three flat abdominal muscles, and inserts onto the linea alba, the pubic tubercle and the anterior half of the iliac crest. It is innervated by the thoraco-abdominal nerves (T7–T11) and the subcostal nerve (T12) and contributes to rotation of the trunk to the opposite side and to flexion of the trunk.",
+    "zh": "腹外斜肌起自第 5–12 肋的外面，作为三层扁肌中最浅的一层向内下方走行，止于白线、耻骨结节和髂嵴前半。它由胸腹神经（T7–T11）和肋下神经（T12）支配，参与躯干向对侧旋转和躯干前屈。"
+   },
+   "actions": {
+    "en": "One side alone bends the trunk to the same side and rotates it to the opposite side, working with the internal oblique of the opposite side. Both sides together flex the trunk and raise intra-abdominal pressure for forced expiration, urination, defecation and labour. The free lower edge of its aponeurosis, between the anterior superior iliac spine and the pubic tubercle, forms the inguinal ligament. Two sources add the iliohypogastric nerve (L1) to the supply.",
+    "zh": "单侧收缩使躯干向同侧侧屈并向对侧旋转，与对侧腹内斜肌协同。两侧同时收缩使躯干前屈并升高腹内压，用于用力呼气、排尿、排便和分娩。其腱膜在髂前上棘与耻骨结节之间的游离下缘形成腹股沟韧带。有两份资料在神经支配中加上髂腹下神经（L1）。"
+   },
+   "innervation": {
+    "en": "Thoraco-abdominal nerves (T7–T11) and subcostal nerve (T12)",
+    "zh": "胸腹神经（T7–T11）和肋下神经（T12）"
+   },
+   "modelTermId": "external-oblique",
+   "modelUnavailableReason": null,
+   "diagramIds": [
+    "fig-05",
+    "fig-06"
+   ],
+   "sources": [
+    "a-kh-eo",
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-ox-11-4"
+   ],
+   "color": "#365e91",
+   "letter": "EO"
+  },
+  {
+   "id": "internal-oblique",
+   "name": {
+    "en": "Internal abdominal oblique",
+    "zh": "腹内斜肌"
+   },
+   "origin": {
+    "en": "Thoracolumbar fascia, anterior two thirds of the iliac crest, and the iliopectineal arch (classically described as the lateral part of the inguinal ligament)",
+    "zh": "胸腰筋膜、髂嵴前三分之二和髂耻弓（经典描述为腹股沟韧带外侧部）"
+   },
+   "insertion": {
+    "en": "Inferior borders of ribs 10–12, the linea alba, and the pubic crest and pectineal line through the conjoint tendon",
+    "zh": "第 10–12 肋下缘、白线，并经联合腱止于耻骨嵴和耻骨梳"
+   },
+   "course": {
+    "en": "The internal oblique originates from the thoracolumbar fascia, the anterior two thirds of the iliac crest and the iliopectineal arch, passes superomedially, at right angles to the external oblique, as the middle of the three flat abdominal muscles, and inserts onto the inferior borders of ribs 10–12, the linea alba and, through the conjoint tendon, the pubic crest. It is innervated by the thoraco-abdominal nerves (T7–T11), the subcostal nerve (T12) and the iliohypogastric and ilioinguinal nerves (L1) and contributes to rotation of the trunk to the same side and to flexion of the trunk.",
+    "zh": "腹内斜肌起自胸腰筋膜、髂嵴前三分之二和髂耻弓，作为三层扁肌的中间一层向内上方走行，与腹外斜肌的方向垂直，止于第 10–12 肋下缘和白线，并经联合腱止于耻骨嵴。它由胸腹神经（T7–T11）、肋下神经（T12）以及髂腹下神经和髂腹股沟神经（L1）支配，参与躯干向同侧旋转和躯干前屈。"
+   },
+   "actions": {
+    "en": "One side alone bends and rotates the trunk to the same side. Both sides together flex the trunk, compress the viscera and raise intra-abdominal pressure. Its lowest fibres join those of the transversus abdominis to form the conjoint tendon, and in males some continue onto the spermatic cord as the cremaster. The anterior origin is the point of difference: the older description is the inguinal ligament, the newer one the iliopectineal arch.",
+    "zh": "单侧收缩使躯干向同侧侧屈并向同侧旋转。两侧同时收缩使躯干前屈、压迫脏器并升高腹内压。其最下部的纤维与腹横肌的纤维合成联合腱；在男性，部分纤维延续到精索上成为提睾肌。前部起点是各资料的分歧所在：旧说为腹股沟韧带，新说为髂耻弓。"
+   },
+   "innervation": {
+    "en": "Thoraco-abdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)",
+    "zh": "胸腹神经（T7–T11）、肋下神经（T12）、髂腹下神经和髂腹股沟神经（L1）"
+   },
+   "modelTermId": "internal-oblique",
+   "modelUnavailableReason": null,
+   "diagramIds": [
+    "fig-05",
+    "fig-06"
+   ],
+   "sources": [
+    "a-kh-io",
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-ox-11-4"
+   ],
+   "color": "#2b6c7c",
+   "letter": "IO"
+  },
+  {
+   "id": "transversus-abdominis",
+   "name": {
+    "en": "Transversus abdominis",
+    "zh": "腹横肌"
+   },
+   "origin": {
+    "en": "Inner surfaces of costal cartilages 7–12, thoracolumbar fascia, anterior two thirds of the iliac crest, and the iliopectineal arch (classically the lateral third of the inguinal ligament)",
+    "zh": "第 7–12 肋软骨的内面、胸腰筋膜、髂嵴前三分之二和髂耻弓（经典描述为腹股沟韧带外侧三分之一）"
+   },
+   "insertion": {
+    "en": "Linea alba through a broad aponeurosis, and the pubic crest and pectineal line through the conjoint tendon",
+    "zh": "经宽阔的腱膜止于白线，并经联合腱止于耻骨嵴和耻骨梳"
+   },
+   "course": {
+    "en": "The transversus abdominis originates from the inner surfaces of costal cartilages 7–12, the thoracolumbar fascia and the iliac crest, passes horizontally forward around the abdomen as the deepest of the three flat abdominal muscles, and inserts through a broad aponeurosis onto the linea alba and, through the conjoint tendon, the pubic crest. It is innervated by the thoraco-abdominal nerves (T7–T11), the subcostal nerve (T12) and the iliohypogastric and ilioinguinal nerves (L1) and contributes to compression of the abdominal contents.",
+    "zh": "腹横肌起自第 7–12 肋软骨的内面、胸腰筋膜和髂嵴，作为三层扁肌中最深的一层水平向前环绕腹部，经宽阔的腱膜止于白线，并经联合腱止于耻骨嵴。它由胸腹神经（T7–T11）、肋下神经（T12）以及髂腹下神经和髂腹股沟神经（L1）支配，参与压迫腹腔内容物。"
+   },
+   "actions": {
+    "en": "It compresses the abdominal viscera and raises intra-abdominal pressure in forced expiration, coughing, urination, defecation and the final stage of childbirth, and it keeps tension in the abdominal wall. The transversalis fascia lies on its deep surface. One side alone is described as assisting rotation of the trunk to the same side.",
+    "zh": "压迫腹腔脏器并升高腹内压，用于用力呼气、咳嗽、排尿、排便和分娩末期，并维持腹壁张力。其深面为腹横筋膜。有资料提到单侧收缩可协助躯干向同侧旋转。"
+   },
+   "innervation": {
+    "en": "Thoraco-abdominal nerves (T7–T11), subcostal nerve (T12), iliohypogastric and ilioinguinal nerves (L1)",
+    "zh": "胸腹神经（T7–T11）、肋下神经（T12）、髂腹下神经和髂腹股沟神经（L1）"
+   },
+   "modelTermId": "transversus-abdominis",
+   "modelUnavailableReason": null,
+   "diagramIds": [
+    "fig-05",
+    "fig-06"
+   ],
+   "sources": [
+    "a-kh-ta",
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-ox-11-4",
+    "m-pp-tra"
+   ],
+   "color": "#4f8a4a",
+   "letter": "TA"
+  },
+  {
+   "id": "pyramidalis",
+   "name": {
+    "en": "Pyramidalis",
+    "zh": "锥状肌"
+   },
+   "origin": {
+    "en": "Pubic crest and pubic symphysis",
+    "zh": "耻骨嵴和耻骨联合"
+   },
+   "insertion": {
+    "en": "Linea alba, typically about midway between the pubis and the umbilicus",
+    "zh": "白线，通常在耻骨与脐连线的中点附近"
+   },
+   "course": {
+    "en": "The pyramidalis originates from the pubic crest and pubic symphysis, passes superomedially in front of the lowest part of the rectus abdominis, inside the rectus sheath, and inserts onto the linea alba. It is innervated by the subcostal nerve (T12) and contributes to tensing of the linea alba.",
+    "zh": "锥状肌起自耻骨嵴和耻骨联合，在腹直肌鞘内、腹直肌最下部的前方向内上方走行，止于白线。它由肋下神经（T12）支配，参与紧张白线。"
+   },
+   "actions": {
+    "en": "It tenses the linea alba. It is a small triangular muscle that is absent in about one person in five.",
+    "zh": "紧张白线。它是一块小的三角形肌，约五分之一的人缺如。"
+   },
+   "innervation": {
+    "en": "Subcostal nerve (T12)",
+    "zh": "肋下神经（T12）"
+   },
+   "modelTermId": "pyramidalis",
+   "modelUnavailableReason": null,
+   "diagramIds": [
+    "fig-05"
+   ],
+   "sources": [
+    "a-kh-ant",
+    "a-kh-wall",
+    "a-rp-wall"
+   ],
+   "color": "#5f6f80",
+   "letter": "PY"
+  },
+  {
+   "id": "puborectalis",
+   "name": {
+    "en": "Puborectalis",
+    "zh": "耻骨直肠肌"
+   },
+   "origin": {
+    "en": "Posterior surface of the body of the pubis",
+    "zh": "耻骨体后面"
+   },
+   "insertion": {
+    "en": "No bony insertion: the fibres of the two sides join behind the anorectal junction to form a U-shaped sling",
+    "zh": "没有骨性止点：两侧纤维在肛管直肠交界处后方相连，形成 U 形悬带"
+   },
+   "course": {
+    "en": "The puborectalis originates from the posterior surface of the body of the pubis, passes backward beside the urethra, the vagina in females, and the anorectal junction, and inserts onto the fibres of its opposite partner behind the rectum, forming a U-shaped sling. It is innervated by the nerve to levator ani (S4) with a contribution from branches of the pudendal nerve (S2–S4) and contributes to faecal continence by pulling the anorectal junction forward and keeping the anorectal angle.",
+    "zh": "耻骨直肠肌起自耻骨体后面，在尿道、女性的阴道和肛管直肠交界处的两侧向后走行，在直肠后方与对侧纤维相连，形成 U 形悬带。它由肛提肌神经（S4）支配，并有阴部神经（S2–S4）分支参与；它把肛管直肠交界处向前牵拉、维持肛直肠角，从而参与控便。"
+   },
+   "actions": {
+    "en": "Its resting tone bends the anal canal forward to an anorectal angle of about 90°; it relaxes to let the angle open during defecation. Fibres in front of the rectum help close the urethra when intra-abdominal pressure rises suddenly, as in a sneeze. It is the most medial part of the levator ani.",
+    "zh": "静息张力使肛管向前弯曲，形成约 90° 的肛直肠角；排便时放松，使该角度变大。直肠前方的纤维在打喷嚏等腹内压骤升时帮助关闭尿道。它是肛提肌最内侧的部分。"
+   },
+   "innervation": {
+    "en": "Nerve to levator ani (S4; some sources S3–S4) and branches of the pudendal nerve (S2–S4)",
+    "zh": "肛提肌神经（S4；有资料写 S3–S4）和阴部神经（S2–S4）的分支"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ],
+   "sources": [
+    "p-kh-la",
+    "p-kh-pf",
+    "p-tma-pf",
+    "p-pp-pfa",
+    "p-wp-la"
+   ],
+   "color": "#6a4fa3",
+   "letter": "PR"
+  },
+  {
+   "id": "pubococcygeus",
+   "name": {
+    "en": "Pubococcygeus",
+    "zh": "耻骨尾骨肌"
+   },
+   "origin": {
+    "en": "Posterior surface of the body of the pubis, lateral to the puborectalis, and the anterior part of the tendinous arch of levator ani",
+    "zh": "耻骨体后面（耻骨直肠肌外侧）和肛提肌腱弓前部"
+   },
+   "insertion": {
+    "en": "Anococcygeal ligament, coccyx and perineal body, with slips to the wall of the vagina or to the prostate",
+    "zh": "肛尾韧带、尾骨和会阴体，并有肌束到阴道壁或前列腺"
+   },
+   "course": {
+    "en": "The pubococcygeus originates from the posterior surface of the body of the pubis and the anterior part of the tendinous arch of levator ani, passes backward beside the pelvic organs, lateral to the puborectalis, and inserts onto the anococcygeal ligament, the coccyx and the perineal body. It is innervated by the nerve to levator ani (S3–S4) and branches of the pudendal nerve and contributes to support of the pelvic organs and to urinary and faecal continence.",
+    "zh": "耻骨尾骨肌起自耻骨体后面和肛提肌腱弓前部，在盆腔器官两侧、耻骨直肠肌外侧向后走行，止于肛尾韧带、尾骨和会阴体。它由肛提肌神经（S3–S4）和阴部神经分支支配，参与支持盆腔器官和控尿、控便。"
+   },
+   "actions": {
+    "en": "It supports the pelvic organs, lifts the pelvic floor, and is tonically active at rest, relaxing for urination and defecation. Its innermost slips are named for what they reach: pubovaginalis in females or puboprostaticus in males, puboperinealis and puboanalis. It is the main bulk of the levator ani.",
+    "zh": "支持盆腔器官、上提盆底，静息时持续收缩，排尿和排便时放松。其最内侧的肌束按所到之处命名：女性的耻骨阴道肌或男性的耻骨前列腺肌、耻骨会阴肌和耻骨肛门肌。它是肛提肌的主体。"
+   },
+   "innervation": {
+    "en": "Nerve to levator ani (S3–S4) and the inferior rectal and perineal branches of the pudendal nerve (S2–S4)",
+    "zh": "肛提肌神经（S3–S4）和阴部神经（S2–S4）的直肠下支、会阴支"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ],
+   "sources": [
+    "p-kh-la",
+    "p-kh-pf",
+    "p-tma-pf",
+    "p-pp-pfa",
+    "p-el-pubo",
+    "p-wp-la"
+   ],
+   "color": "#b0652a",
+   "letter": "PC"
+  },
+  {
+   "id": "iliococcygeus",
+   "name": {
+    "en": "Iliococcygeus",
+    "zh": "髂骨尾骨肌"
+   },
+   "origin": {
+    "en": "Tendinous arch of levator ani (a thickening of the obturator internus fascia) and the ischial spine",
+    "zh": "肛提肌腱弓（闭孔内肌筋膜的增厚部）和坐骨棘"
+   },
+   "insertion": {
+    "en": "Coccyx and anococcygeal ligament, meeting the opposite muscle in a midline raphe",
+    "zh": "尾骨和肛尾韧带，与对侧肌在正中缝相接"
+   },
+   "course": {
+    "en": "The iliococcygeus originates from the tendinous arch of levator ani and the ischial spine, passes medially and backward as a thin sheet, the most posterolateral part of the levator ani, and inserts onto the coccyx and the anococcygeal ligament. It is innervated by the nerve to levator ani (S3–S4) and contributes to support and elevation of the pelvic floor.",
+    "zh": "髂骨尾骨肌起自肛提肌腱弓和坐骨棘，呈薄片状向内后方走行，是肛提肌最靠后外侧的部分，止于尾骨和肛尾韧带。它由肛提肌神经（S3–S4）支配，参与支持和上提盆底。"
+   },
+   "actions": {
+    "en": "It supports the pelvic organs and lifts the pelvic floor, with tonic activity at rest. It is usually thin and may be partly replaced by fibrous tissue. Sources give its nerve segments as S4, S3–S4 or S4–S5.",
+    "zh": "支持盆腔器官并上提盆底，静息时持续收缩。它通常很薄，可部分被纤维组织代替。各资料给出的神经节段为 S4、S3–S4 或 S4–S5。"
+   },
+   "innervation": {
+    "en": "Nerve to levator ani (S3–S4; some sources add the inferior rectal nerve)",
+    "zh": "肛提肌神经（S3–S4；有资料加上直肠下神经）"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ],
+   "sources": [
+    "p-kh-la",
+    "p-kh-pf",
+    "p-tma-pf",
+    "p-pp-pfa",
+    "p-el-ilio",
+    "p-wp-la"
+   ],
+   "color": "#2f7f6f",
+   "letter": "IC"
+  },
+  {
+   "id": "coccygeus",
+   "name": {
+    "en": "Coccygeus",
+    "zh": "尾骨肌"
+   },
+   "origin": {
+    "en": "Ischial spine",
+    "zh": "坐骨棘"
+   },
+   "insertion": {
+    "en": "Lateral margin of the lower sacrum and of the coccyx",
+    "zh": "骶骨下部和尾骨的外侧缘"
+   },
+   "course": {
+    "en": "The coccygeus originates from the ischial spine, passes medially and backward as a flat triangle on the pelvic surface of the sacrospinous ligament, behind the levator ani, and inserts onto the lateral margin of the lower sacrum and coccyx. It is innervated by the anterior rami of S4 and S5 and contributes to support of the pelvic organs and to flexion of the coccyx.",
+    "zh": "尾骨肌起自坐骨棘，呈扁平三角形贴在骶棘韧带的盆面、肛提肌的后方向内后方走行，止于骶骨下部和尾骨的外侧缘。它由 S4 和 S5 前支支配，参与支持盆腔器官和使尾骨前屈。"
+   },
+   "actions": {
+    "en": "It supports the pelvic organs and pulls the coccyx forward again after it has been pushed back in defecation or childbirth. It completes the pelvic floor behind the levator ani but is not part of the levator ani; it is partly tendinous and blends with the sacrospinous ligament.",
+    "zh": "支持盆腔器官，并在排便或分娩把尾骨推向后方之后把它拉回前方。它在肛提肌后方补全盆底，但不属于肛提肌；部分为腱性，与骶棘韧带融合。"
+   },
+   "innervation": {
+    "en": "Anterior rami of S4 and S5",
+    "zh": "S4 和 S5 前支"
+   },
+   "modelTermId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model does not include this muscle yet (model gap).",
+    "zh": "3D 模型暂时没有这块肌肉（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ],
+   "sources": [
+    "p-kh-cocc",
+    "p-kh-pf",
+    "p-tma-pf",
+    "p-pp-pfa",
+    "p-el-cocc"
+   ],
+   "color": "#7a5a3a",
+   "letter": "CO"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "jugular-notch",
+   "name": {
+    "en": "Jugular notch",
+    "zh": "颈静脉切迹"
+   },
+   "description": {
+    "en": "The jugular (suprasternal) notch is the shallow, U-shaped depression on the upper border of the manubrium, felt between the medial ends of the two clavicles. It is the upper end of the anterior median line used for proportional measurement on the chest.",
+    "zh": "颈静脉切迹（胸骨上切迹）是胸骨柄上缘的浅 U 形凹陷，可在两侧锁骨内侧端之间摸到。它是胸部骨度分寸所用前正中线的上端。"
+   },
+   "sources": [
+    "b-tma-sternum",
+    "b-ox-cage",
+    "x-gbt"
+   ],
+   "modelTermId": "manubrium",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the manubrium.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开胸骨柄。"
+   },
+   "diagramIds": [
+    "fig-01"
+   ]
+  },
+  {
+   "id": "sternal-angle",
+   "name": {
+    "en": "Sternal angle",
+    "zh": "胸骨角"
+   },
+   "description": {
+    "en": "The sternal angle is the transverse ridge where the manubrium meets the body of the sternum. It marks the level of the second costal cartilage, so the second rib is found beside it and the other ribs are counted downward from there. It lies at about the level of the T4–T5 vertebrae.",
+    "zh": "胸骨角是胸骨柄与胸骨体相接处的横嵴。它标志第 2 肋软骨的平面，因此在它旁边可找到第 2 肋，其余肋骨由此向下计数。它大约平对第 4–5 胸椎。"
+   },
+   "sources": [
+    "b-tma-sternum",
+    "b-ox-cage",
+    "b-kh-tv"
+   ],
+   "modelTermId": "manubrium",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the manubrium.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开胸骨柄。"
+   },
+   "diagramIds": [
+    "fig-01"
+   ]
+  },
+  {
+   "id": "costal-cartilage",
+   "name": {
+    "en": "Costal cartilage",
+    "zh": "肋软骨"
+   },
+   "description": {
+    "en": "A costal cartilage is the bar of hyaline cartilage that continues each rib forward. The cartilages of ribs 1–7 reach the sternum directly, those of ribs 8–10 join the cartilage of the rib above, and those of ribs 11–12 end in the muscles of the abdominal wall.",
+    "zh": "肋软骨是每根肋骨向前延续的透明软骨条。第 1–7 肋的肋软骨直接连到胸骨，第 8–10 肋的肋软骨连到上一肋的肋软骨，第 11–12 肋的肋软骨终止于腹壁肌内。"
+   },
+   "sources": [
+    "b-ox-cage",
+    "b-kh-ribs",
+    "b-tma-ribs"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model shows the bony ribs without their costal cartilages; the link opens the seventh rib.",
+    "zh": "3D 模型只显示骨性肋骨，没有肋软骨；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-01"
+   ]
+  },
+  {
+   "id": "costal-margin",
+   "name": {
+    "en": "Costal margin",
+    "zh": "肋弓"
+   },
+   "description": {
+    "en": "The costal margin is the lower edge of the front of the thoracic cage, formed by the joined costal cartilages of ribs 7–10 running down and outward from the xiphisternal junction. The definition is the standard anatomical one; the pages opened for this chapter use the term (for example, the thoraco-abdominal nerves pass behind it) without defining it.",
+    "zh": "肋弓是胸廓前部的下缘，由第 7–10 肋的肋软骨相连而成，自剑胸结合向外下方走行。这是通行的解剖学定义；本章打开的网页只使用这个词（例如胸腹神经从它后方穿过），没有给出定义。"
+   },
+   "sources": [
+    "n-kh-int-nerves",
+    "b-ox-cage"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model shows the bony ribs without their costal cartilages; the link opens the seventh rib.",
+    "zh": "3D 模型只显示骨性肋骨，没有肋软骨；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-01"
+   ]
+  },
+  {
+   "id": "head-of-rib",
+   "name": {
+    "en": "Head of rib",
+    "zh": "肋头"
+   },
+   "description": {
+    "en": "The head of a typical rib is wedge-shaped and carries two facets separated by a crest: one for the body of the vertebra of the same number and one for the vertebra above. Ribs 1, 10, 11 and 12 have a single facet.",
+    "zh": "典型肋骨的肋头呈楔形，有两个关节面，中间隔以肋头嵴：一个与同序数椎骨的椎体相关节，另一个与上一位椎骨相关节。第 1、10、11、12 肋只有一个关节面。"
+   },
+   "sources": [
+    "b-tma-ribs",
+    "b-kh-ribs",
+    "b-kh-cv"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the seventh rib.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-02"
+   ]
+  },
+  {
+   "id": "tubercle-of-rib",
+   "name": {
+    "en": "Tubercle of rib",
+    "zh": "肋结节"
+   },
+   "description": {
+    "en": "The tubercle lies where the neck of the rib meets the body. Its articular part carries a facet for the transverse process of the vertebra of the same number, and its non-articular part gives attachment to the lateral costotransverse ligament. Ribs 11 and 12 have no tubercle.",
+    "zh": "肋结节位于肋颈与肋体的交界处。其关节部有关节面，与同序数椎骨的横突相关节；非关节部有肋横突外侧韧带附着。第 11、12 肋没有肋结节。"
+   },
+   "sources": [
+    "b-tma-ribs",
+    "b-kh-ribs",
+    "b-kh-cv"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the seventh rib.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-02"
+   ]
+  },
+  {
+   "id": "angle-of-rib",
+   "name": {
+    "en": "Angle of rib",
+    "zh": "肋角"
+   },
+   "description": {
+    "en": "The angle of the rib lies just lateral to the tubercle, where the body curves most sharply and turns forward. The deep back muscles attach here, the internal intercostal muscle ends here, and the rib is weakest just in front of it.",
+    "zh": "肋角位于肋结节稍外侧，是肋体弯曲最明显并转向前方之处。背深肌附着于此，肋间内肌的肌性部分到此为止，肋骨最薄弱的部位就在肋角稍前方。"
+   },
+   "sources": [
+    "b-ox-cage",
+    "b-kh-ribs",
+    "t-kh-int"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the seventh rib.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-02"
+   ]
+  },
+  {
+   "id": "costal-groove",
+   "name": {
+    "en": "Costal groove",
+    "zh": "肋沟"
+   },
+   "description": {
+    "en": "The costal groove runs along the inner surface of the lower border of the rib. It shelters the intercostal vein, artery and nerve, arranged in that order from above down, which is why a needle or chest drain is passed along the upper border of the rib below.",
+    "zh": "肋沟沿肋骨下缘的内面走行，容纳并保护肋间静脉、动脉和神经，三者自上而下依次排列；因此穿刺针或胸腔引流管要贴着下一肋的上缘进入。"
+   },
+   "sources": [
+    "b-tma-ribs",
+    "b-ox-cage",
+    "b-kh-ribs",
+    "t-kh-space"
+   ],
+   "modelTermId": "seventh-rib",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the seventh rib.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开第 7 肋。"
+   },
+   "diagramIds": [
+    "fig-03"
+   ]
+  },
+  {
+   "id": "central-tendon",
+   "name": {
+    "en": "Central tendon",
+    "zh": "中心腱"
+   },
+   "description": {
+    "en": "The central tendon is the thin but strong aponeurosis at the top of the diaphragm into which all its muscle fibres insert. It is fused with the fibrous pericardium above, and the caval opening passes through it at the level of the T8 vertebra.",
+    "zh": "中心腱是膈顶部薄而坚韧的腱膜，膈的全部肌纤维都止于它。它的上面与纤维心包融合，腔静脉孔在第 8 胸椎平面穿过它。"
+   },
+   "sources": [
+    "d-kh",
+    "d-tma",
+    "d-el",
+    "d-rp"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-04"
+   ]
+  },
+  {
+   "id": "linea-alba",
+   "name": {
+    "en": "Linea alba",
+    "zh": "白线"
+   },
+   "description": {
+    "en": "The linea alba is the midline band of connective tissue between the two rectus abdominis muscles, running from the xiphoid process to the pubic symphysis. It is formed where the aponeuroses of the three flat muscles of the two sides meet, and it has a poor blood supply.",
+    "zh": "白线是两侧腹直肌之间的正中结缔组织带，自剑突延伸到耻骨联合。它由两侧三层扁肌的腱膜在中线交织而成，血供较差。"
+   },
+   "sources": [
+    "a-tma-aw",
+    "a-kh-ra",
+    "a-ox-11-4"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "This is not a bone, so it has no bony landmark marker; the name in the text opens the structure itself in the 3D model.",
+    "zh": "它不是骨，所以没有骨性标志标记；正文中的名称直接打开 3D 模型里的这个结构。"
+   },
+   "diagramIds": [
+    "fig-05"
+   ]
+  },
+  {
+   "id": "rectus-sheath",
+   "name": {
+    "en": "Rectus sheath",
+    "zh": "腹直肌鞘"
+   },
+   "description": {
+    "en": "The rectus sheath is the envelope formed by the aponeuroses of the external oblique, internal oblique and transversus abdominis around the rectus abdominis and pyramidalis. Its posterior layer exists only in the upper three quarters of the muscle and ends at the arcuate line.",
+    "zh": "腹直肌鞘由腹外斜肌、腹内斜肌和腹横肌的腱膜包绕腹直肌和锥状肌而成。其后层只存在于腹直肌的上四分之三，下端止于弓状线。"
+   },
+   "sources": [
+    "a-kh-wall",
+    "a-kh-ant",
+    "a-tma-aw",
+    "a-rp-wall"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-06"
+   ]
+  },
+  {
+   "id": "arcuate-line",
+   "name": {
+    "en": "Arcuate line",
+    "zh": "弓状线"
+   },
+   "description": {
+    "en": "The arcuate line is the lower free edge of the posterior layer of the rectus sheath. Sources place it about 2.5 cm below the umbilicus or about midway between the umbilicus and the pubic symphysis, and note that its level varies. Below it all three aponeuroses pass in front of the rectus abdominis.",
+    "zh": "弓状线是腹直肌鞘后层的游离下缘。资料把它定在脐下约 2.5 cm，或脐与耻骨联合连线的中点附近，并指出其高度因人而异。在它以下，三层腱膜全部走到腹直肌前方。"
+   },
+   "sources": [
+    "a-kh-io",
+    "a-kh-ta",
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-rp-wall"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-06"
+   ]
+  },
+  {
+   "id": "inguinal-ligament",
+   "name": {
+    "en": "Inguinal ligament",
+    "zh": "腹股沟韧带"
+   },
+   "description": {
+    "en": "The inguinal ligament is the thickened, rolled-under lower edge of the external oblique aponeurosis, stretched from the anterior superior iliac spine to the pubic tubercle. It forms the floor of the inguinal canal and the upper boundary of the femoral triangle.",
+    "zh": "腹股沟韧带是腹外斜肌腱膜增厚并向后卷曲的下缘，张于髂前上棘与耻骨结节之间。它构成腹股沟管的下壁和股三角的上界。"
+   },
+   "sources": [
+    "c-kh-il",
+    "a-kh-eo",
+    "c-kh-canal"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "This is not a bone, so it has no bony landmark marker; the name in the text opens the structure itself in the 3D model.",
+    "zh": "它不是骨，所以没有骨性标志标记；正文中的名称直接打开 3D 模型里的这个结构。"
+   },
+   "diagramIds": [
+    "fig-13"
+   ]
+  },
+  {
+   "id": "inguinal-canal",
+   "name": {
+    "en": "Inguinal canal",
+    "zh": "腹股沟管"
+   },
+   "description": {
+    "en": "The inguinal canal is an oblique passage 3–5 cm long through the lower abdominal wall, with the inguinal ligament as its floor. It runs from the deep inguinal ring to the superficial inguinal ring and carries the spermatic cord in males or the round ligament of the uterus in females.",
+    "zh": "腹股沟管是穿过下腹壁的斜行通道，长 3–5 cm，以腹股沟韧带为下壁。它从腹股沟管深环通到浅环，男性有精索、女性有子宫圆韧带通过。"
+   },
+   "sources": [
+    "c-kh-canal",
+    "c-kh-il"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-13"
+   ]
+  },
+  {
+   "id": "anterior-superior-iliac-spine",
+   "name": {
+    "en": "Anterior superior iliac spine",
+    "zh": "髂前上棘"
+   },
+   "description": {
+    "en": "The anterior superior iliac spine (ASIS) is the front end of the iliac crest. The inguinal ligament runs from it to the pubic tubercle, and the midpoint of that ligament and the mid-inguinal point (halfway between the ASIS and the pubic symphysis) are both measured from it.",
+    "zh": "髂前上棘是髂嵴的前端。腹股沟韧带自此连到耻骨结节；腹股沟韧带中点和腹股沟中点（髂前上棘与耻骨联合连线的中点）都以它为起点测量。"
+   },
+   "sources": [
+    "b-tma-hip-bone",
+    "c-kh-il"
+   ],
+   "modelTermId": "hip-bone",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the hip bone.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开髋骨。"
+   },
+   "diagramIds": [
+    "fig-13"
+   ]
+  },
+  {
+   "id": "pubic-tubercle",
+   "name": {
+    "en": "Pubic tubercle",
+    "zh": "耻骨结节"
+   },
+   "description": {
+    "en": "The pubic tubercle is the small prominence at the lateral end of the pubic crest. The inguinal ligament attaches to it, and the superficial inguinal ring lies about 1 cm above and lateral to it.",
+    "zh": "耻骨结节是耻骨嵴外侧端的小隆起。腹股沟韧带附着于此，腹股沟管浅环位于它外上方约 1 cm 处。"
+   },
+   "sources": [
+    "b-tma-hip-bone",
+    "c-kh-il",
+    "c-kh-canal"
+   ],
+   "modelTermId": "hip-bone",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the hip bone.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开髋骨。"
+   },
+   "diagramIds": [
+    "fig-13"
+   ]
+  },
+  {
+   "id": "pubic-crest",
+   "name": {
+    "en": "Pubic crest",
+    "zh": "耻骨嵴"
+   },
+   "description": {
+    "en": "The pubic crest is the rounded thickening on the upper border of the body of the pubis, between the pubic symphysis and the pubic tubercle. The rectus abdominis and pyramidalis arise from it, and the conjoint tendon inserts onto it.",
+    "zh": "耻骨嵴是耻骨体上缘的圆钝增厚部，位于耻骨联合与耻骨结节之间。腹直肌和锥状肌起于此，联合腱止于此。"
+   },
+   "sources": [
+    "b-tma-hip-bone",
+    "a-kh-ra",
+    "a-kh-io"
+   ],
+   "modelTermId": "hip-bone",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the hip bone.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开髋骨。"
+   },
+   "diagramIds": [
+    "fig-13"
+   ]
+  },
+  {
+   "id": "ischial-spine",
+   "name": {
+    "en": "Ischial spine",
+    "zh": "坐骨棘"
+   },
+   "description": {
+    "en": "The ischial spine is the pointed projection on the posterior border of the ischium. The coccygeus, the back end of the tendinous arch of levator ani and the sacrospinous ligament attach to it, and the pudendal nerve hooks around it, which makes it the landmark for a pudendal nerve block.",
+    "zh": "坐骨棘是坐骨后缘的尖形突起。尾骨肌、肛提肌腱弓的后端和骶棘韧带都附着于此；阴部神经绕过它，因此它是阴部神经阻滞的定位标志。"
+   },
+   "sources": [
+    "b-tma-hip-bone",
+    "p-kh-cocc",
+    "p-kh-pf",
+    "n-tma-pud"
+   ],
+   "modelTermId": "hip-bone",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the hip bone.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开髋骨。"
+   },
+   "diagramIds": [
+    "fig-07",
+    "fig-10"
+   ]
+  },
+  {
+   "id": "ischial-tuberosity",
+   "name": {
+    "en": "Ischial tuberosity",
+    "zh": "坐骨结节"
+   },
+   "description": {
+    "en": "The ischial tuberosity is the thick posteroinferior part of the ischium that carries the body weight in sitting. The line joining the two tuberosities divides the perineum into the urogenital triangle in front and the anal triangle behind.",
+    "zh": "坐骨结节是坐骨后下部的粗大部分，坐位时承受体重。两侧坐骨结节的连线把会阴分为前方的尿生殖三角和后方的肛门三角。"
+   },
+   "sources": [
+    "b-tma-hip-bone",
+    "p-tma-perineum"
+   ],
+   "modelTermId": "hip-bone",
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no separate marker for this landmark; the link opens the hip bone.",
+    "zh": "3D 模型没有这个标志的单独标记；链接打开髋骨。"
+   },
+   "diagramIds": [
+    "fig-10"
+   ]
+  },
+  {
+   "id": "tendinous-arch-of-levator-ani",
+   "name": {
+    "en": "Tendinous arch of levator ani",
+    "zh": "肛提肌腱弓"
+   },
+   "description": {
+    "en": "The tendinous arch of levator ani is a thickened band of the fascia over the obturator internus on the side wall of the pelvis, running from the back of the pubis to the ischial spine. The iliococcygeus and part of the pubococcygeus arise from it. One physiotherapy source instead describes fascial arches running from the pubis to the sacrum.",
+    "zh": "肛提肌腱弓是骨盆侧壁上闭孔内肌筋膜的增厚带，自耻骨后面延伸到坐骨棘。髂骨尾骨肌和部分耻骨尾骨肌起于此。有一份物理治疗资料则描述为从耻骨到骶骨的筋膜弓。"
+   },
+   "sources": [
+    "p-kh-pf",
+    "p-pp-pfa",
+    "p-wp-la",
+    "p-el-ilio"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ]
+  },
+  {
+   "id": "perineal-body",
+   "name": {
+    "en": "Perineal body",
+    "zh": "会阴体"
+   },
+   "description": {
+    "en": "The perineal body is the fibromuscular node in the midline between the urogenital hiatus and the anal canal. The pubococcygeus, bulbospongiosus, the transverse perineal muscles and the external anal sphincter attach to it, so it ties the pelvic floor to the perineum.",
+    "zh": "会阴体是位于正中线上、尿生殖裂孔与肛管之间的纤维肌性结节。耻骨尾骨肌、球海绵体肌、会阴横肌和肛门外括约肌都附着于此，它把盆底与会阴连在一起。"
+   },
+   "sources": [
+    "p-tma-pf",
+    "p-pp-pfa",
+    "p-kh-la",
+    "p-tma-perineum"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ]
+  },
+  {
+   "id": "anococcygeal-ligament",
+   "name": {
+    "en": "Anococcygeal ligament",
+    "zh": "肛尾韧带"
+   },
+   "description": {
+    "en": "The anococcygeal ligament is the midline fibrous band between the anus and the coccyx. The pubococcygeus and iliococcygeus of the two sides insert into it, and the midline raphe of the iliococcygeus is continuous with it.",
+    "zh": "肛尾韧带是肛门与尾骨之间的正中纤维带。两侧的耻骨尾骨肌和髂骨尾骨肌止于此，髂骨尾骨肌的正中缝与它相续。"
+   },
+   "sources": [
+    "p-kh-la",
+    "p-kh-pf",
+    "p-el-ilio",
+    "p-wp-la"
+   ],
+   "modelTermId": null,
+   "viewerLandmarkId": null,
+   "modelUnavailableReason": {
+    "en": "The 3D model has no marker or mesh for this structure (model gap).",
+    "zh": "3D 模型没有这个结构的标记或网格（模型缺项）。"
+   },
+   "diagramIds": [
+    "fig-07"
+   ]
+  }
+ ],
+ "acupoints": [
+  {
+   "id": "cv17",
+   "code": "CV17",
+   "name": {
+    "en": "Danzhong",
+    "zh": "膻中"
+   },
+   "location": {
+    "en": "Conception Vessel. Translation of GB/T 12346-2021: On the anterior chest, at the level of the fourth intercostal space, on the anterior median line.",
+    "zh": "任脉。在前胸部，横平第 4 肋间隙，前正中线上。"
+   },
+   "layers": {
+    "en": "Skin and subcutaneous tissue, then the periosteum and bone of the body of the sternum. No muscle belly lies under the point; the anterior cutaneous branches of the intercostal nerves reach the skin beside the sternum.",
+    "zh": "皮肤和皮下组织，其下即胸骨体的骨膜和骨质。穴位下方没有肌腹；肋间神经的前皮支在胸骨旁到达皮肤。"
+   },
+   "target": {
+    "en": "No muscle or trigger-point target is given for this midline point in the sources used here. The nearest muscle attachments are those on the costal cartilages on each side.",
+    "zh": "本章所用资料没有给出这一正中线穴位对应的肌肉或触发点。最近的肌肉附着在两侧的肋软骨上。"
+   },
+   "howToFind": {
+    "en": "Find the sternal angle, the transverse ridge between the manubrium and the body of the sternum; the second costal cartilage lies beside it. Count down to the fourth intercostal space, between the fourth and fifth ribs, and carry that level to the midline of the sternum.",
+    "zh": "先找胸骨角，即胸骨柄与胸骨体之间的横嵴；它旁边是第 2 肋软骨。向下数到第 4 肋间隙（第 4、5 肋之间），把这一平面移到胸骨正中线上。"
+   },
+   "safety": {
+    "en": "The sternum lies directly under the skin here, with the mediastinum behind it. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "此处皮下即为胸骨，胸骨后方是纵隔。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "b-tma-sternum",
+    "b-ox-cage",
+    "n-kh-int-nerves"
+   ]
+  },
+  {
+   "id": "lr14",
+   "code": "LR14",
+   "name": {
+    "en": "Qimen",
+    "zh": "期门"
+   },
+   "location": {
+    "en": "Liver Meridian of Foot-Jueyin. Translation of GB/T 12346-2021: On the anterior chest, in the sixth intercostal space, 4 B-cun lateral to the anterior median line. Note: directly below the nipple, 2 cun lateral to ST19; in women, at the crossing of the midclavicular line and the sixth intercostal space.",
+    "zh": "足厥阴肝经。在前胸部，第 6 肋间隙，前正中线旁开 4 寸。注：在乳头直下，不容（ST19）旁开 2 寸处取穴。女性在锁骨中线与第 6 肋间隙交点处。"
+   },
+   "layers": {
+    "en": "Skin and subcutaneous tissue; the external oblique, which arises from ribs 5–12; the external intercostal muscle or, toward the sternum, its membrane; the internal intercostal muscle; the intercostal vessels and nerve along the lower border of the sixth rib; the thin innermost layer; the endothoracic fascia; and the parietal pleura.",
+    "zh": "皮肤和皮下组织；起自第 5–12 肋的腹外斜肌；肋间外肌，靠近胸骨处为肋间外膜；肋间内肌；沿第 6 肋下缘走行的肋间血管和神经；薄的最内层；胸内筋膜；壁胸膜。"
+   },
+   "target": {
+    "en": "The related muscles are the intercostal muscles of the sixth space and the upper slips of the external oblique. The sources used here do not assign a specific trigger point to this point.",
+    "zh": "相关肌肉为第 6 肋间隙的肋间肌和腹外斜肌的上部肌齿。本章所用资料没有把某个具体触发点对应到本穴。"
+   },
+   "howToFind": {
+    "en": "Count the ribs down from the second rib at the sternal angle to the sixth intercostal space, between the sixth and seventh ribs, and measure 4 cun from the anterior median line; the distance between the two nipples is 8 cun, so 4 cun is half of it.",
+    "zh": "从胸骨角旁的第 2 肋向下数到第 6 肋间隙（第 6、7 肋之间），自前正中线向外量 4 寸；两乳头之间为 8 寸，4 寸即其一半。"
+   },
+   "safety": {
+    "en": "The parietal pleura lies immediately deep to the intercostal muscles, and the costodiaphragmatic recess lies between the costal and diaphragmatic pleura in this region; the sources used here do not give the rib level of the lower border of the lung or pleura. The intercostal vein, artery and nerve run in the costal groove under the rib above. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "壁胸膜紧贴在肋间肌深面，肋膈隐窝位于这一带的肋胸膜与膈胸膜之间；本章所用资料没有给出肺和胸膜下界所在的肋骨平面。肋间静脉、动脉和神经走在上一肋下缘的肋沟内。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "t-kh-space",
+    "t-kh-ext",
+    "a-kh-eo",
+    "x-kh-pleura",
+    "x-tma-pleura",
+    "b-tma-ribs"
+   ]
+  },
+  {
+   "id": "lr13",
+   "code": "LR13",
+   "name": {
+    "en": "Zhangmen",
+    "zh": "章门"
+   },
+   "location": {
+    "en": "Liver Meridian of Foot-Jueyin. Translation of GB/T 12346-2021: On the lateral abdomen, below the free end of the eleventh rib. Note: lying on the side with the arm raised, first identify the free end of the twelfth rib, then palpate forward along the costal margin to the next floating rib, the free end of the eleventh rib; the point is below it.",
+    "zh": "足厥阴肝经。在侧腹部，在第 11 肋游离端的下际。注：侧卧举臂，屈上足伸下足，先确认第 12 肋游离端，再沿着肋弓缘向前触摸到的浮肋即第 11 肋骨游离端，在其下际取之。"
+   },
+   "layers": {
+    "en": "Skin and subcutaneous tissue; the external oblique; the internal oblique, whose upper fibres insert on ribs 10–12; the transversus abdominis; the transversalis fascia; extraperitoneal fat; and the parietal peritoneum. The lower thoraco-abdominal nerves run forward between the internal oblique and the transversus abdominis.",
+    "zh": "皮肤和皮下组织；腹外斜肌；腹内斜肌，其上部纤维止于第 10–12 肋；腹横肌；腹横筋膜；腹膜外脂肪；壁腹膜。下位胸腹神经在腹内斜肌与腹横肌之间向前走行。"
+   },
+   "target": {
+    "en": "The related muscles are the three flat abdominal muscles (external oblique, internal oblique and transversus abdominis). The sources used here do not assign a specific trigger point to this point.",
+    "zh": "相关肌肉为三层腹壁扁肌（腹外斜肌、腹内斜肌和腹横肌）。本章所用资料没有把某个具体触发点对应到本穴。"
+   },
+   "howToFind": {
+    "en": "Ribs 11 and 12 are floating ribs whose cartilages end in the abdominal wall muscles. With the person side-lying and the arm raised, find the free end of the twelfth rib first, then move forward to the free end of the eleventh rib.",
+    "zh": "第 11、12 肋是浮肋，其肋软骨终止于腹壁肌内。受检者侧卧举臂，先找到第 12 肋游离端，再向前找到第 11 肋游离端。"
+   },
+   "safety": {
+    "en": "The abdominal cavity lies deep to the three muscle layers; fractures of ribs 10–12 are associated with injury to the liver, spleen or kidney, which shows how close these organs are. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "三层肌的深面即腹腔；第 10–12 肋骨折可合并肝、脾或肾损伤，说明这些器官距此很近。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "a-kh-eo",
+    "a-kh-io",
+    "a-kh-ta",
+    "a-kh-wall",
+    "b-ox-cage",
+    "c-pp-ribfx",
+    "n-el-subcostal"
+   ]
+  },
+  {
+   "id": "cv12",
+   "code": "CV12",
+   "name": {
+    "en": "Zhongwan",
+    "zh": "中脘"
+   },
+   "location": {
+    "en": "Conception Vessel. Translation of GB/T 12346-2021: On the upper abdomen, 4 B-cun above the centre of the umbilicus, on the anterior median line. Note: at the midpoint of the line joining the xiphisternal junction and the centre of the umbilicus.",
+    "zh": "任脉。在上腹部，脐中上 4 寸，前正中线上。注：剑胸结合与脐中连线的中点处。"
+   },
+   "layers": {
+    "en": "Skin; superficial fascia, a single layer above the umbilicus; the linea alba, where the aponeuroses of the flat muscles of the two sides meet; the transversalis fascia; extraperitoneal fat; and the parietal peritoneum.",
+    "zh": "皮肤；浅筋膜（脐以上为单层）；白线，即两侧扁肌腱膜在中线的交织处；腹横筋膜；腹膜外脂肪；壁腹膜。"
+   },
+   "target": {
+    "en": "There is no muscle belly under this midline point; the rectus abdominis lies on each side of the linea alba. The inter-rectus distance used to assess diastasis recti is palpated along this same line.",
+    "zh": "这一正中线穴位下方没有肌腹；腹直肌位于白线两侧。评估腹直肌分离所用的腹直肌间距就沿这条线触诊。"
+   },
+   "howToFind": {
+    "en": "Measure along the anterior median line. GB/T 12346-2021 counts 8 cun from the tip of the xiphoid process to the centre of the umbilicus in its proportional table, while its note for this point uses the midpoint between the xiphisternal junction and the umbilicus.",
+    "zh": "沿前正中线量取。GB/T 12346-2021 的骨度分寸表规定剑突尖至脐中为 8 寸，而本穴的“注”用的是剑胸结合与脐中连线的中点。"
+   },
+   "safety": {
+    "en": "The linea alba is thin and poorly vascularised, and the peritoneal cavity lies directly behind it. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "白线薄且血供差，其后方即腹膜腔。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "a-kh-wall",
+    "a-tma-aw",
+    "c-pp-dra"
+   ]
+  },
+  {
+   "id": "st25",
+   "code": "ST25",
+   "name": {
+    "en": "Tianshu",
+    "zh": "天枢"
+   },
+   "location": {
+    "en": "Stomach Meridian of Foot-Yangming. WHO 2008: On the upper abdomen, 2 B-cun lateral to the centre of the umbilicus.",
+    "zh": "足阳明胃经。在上腹部，横平脐中，前正中线旁开 2 寸。"
+   },
+   "layers": {
+    "en": "Skin and superficial fascia; the anterior layer of the rectus sheath; the rectus abdominis, which has a tendinous intersection at the level of the umbilicus; the posterior layer of the rectus sheath, present here because the point is above the arcuate line; the transversalis fascia; extraperitoneal fat; and the parietal peritoneum. The epigastric vessels run on the deep surface of the rectus abdominis.",
+    "zh": "皮肤和浅筋膜；腹直肌鞘前层；腹直肌，其在脐平面有一条腱划；腹直肌鞘后层（本穴在弓状线以上，故有后层）；腹横筋膜；腹膜外脂肪；壁腹膜。腹壁上、下血管走在腹直肌深面。"
+   },
+   "target": {
+    "en": "The related muscle is the rectus abdominis. The sources used here do not assign a specific trigger point to this point.",
+    "zh": "相关肌肉为腹直肌。本章所用资料没有把某个具体触发点对应到本穴。"
+   },
+   "howToFind": {
+    "en": "Measure 2 cun laterally from the centre of the umbilicus. SP15 lies further out on the same level, 4 cun from the umbilicus.",
+    "zh": "自脐中向外量 2 寸。大横（SP15）在同一水平更外侧，距脐中 4 寸。"
+   },
+   "safety": {
+    "en": "The peritoneal cavity lies deep to the posterior layer of the rectus sheath. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "腹直肌鞘后层的深面即腹膜腔。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-who",
+    "x-gbt",
+    "a-kh-ra",
+    "a-kh-wall",
+    "a-kh-ant"
+   ]
+  },
+  {
+   "id": "cv4",
+   "code": "CV4",
+   "name": {
+    "en": "Guanyuan",
+    "zh": "关元"
+   },
+   "location": {
+    "en": "Conception Vessel. Translation of GB/T 12346-2021: On the lower abdomen, 3 B-cun below the centre of the umbilicus, on the anterior median line.",
+    "zh": "任脉。在下腹部，脐中下 3 寸，前正中线上。"
+   },
+   "layers": {
+    "en": "Skin; superficial fascia in two layers below the umbilicus, the fatty layer (Camper's fascia) and the membranous layer (Scarpa's fascia); the linea alba, into which the pyramidalis inserts about midway between the pubis and the umbilicus; the transversalis fascia; extraperitoneal fat; and the parietal peritoneum.",
+    "zh": "皮肤；浅筋膜，脐以下分两层，即脂肪层（Camper 筋膜）和膜性层（Scarpa 筋膜）；白线，锥状肌约在耻骨与脐连线的中点附近止于白线；腹横筋膜；腹膜外脂肪；壁腹膜。"
+   },
+   "target": {
+    "en": "There is no muscle belly under this midline point; the rectus abdominis and, lower down, the pyramidalis lie on each side of the linea alba.",
+    "zh": "这一正中线穴位下方没有肌腹；腹直肌以及更下方的锥状肌位于白线两侧。"
+   },
+   "howToFind": {
+    "en": "GB/T 12346-2021 counts 5 cun from the centre of the umbilicus to the upper border of the pubic symphysis; the point is three fifths of the way down this line.",
+    "zh": "GB/T 12346-2021 规定脐中至耻骨联合上缘为 5 寸；本穴在这条线自上而下的五分之三处。"
+   },
+   "safety": {
+    "en": "The peritoneal cavity and the pelvic organs lie behind the lower abdominal wall; the sources used here do not describe their exact relation to this point. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "下腹壁后方为腹膜腔和盆腔器官；本章所用资料没有描述它们与本穴的确切位置关系。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "a-kh-wall",
+    "a-kh-ant",
+    "a-tma-aw"
+   ]
+  },
+  {
+   "id": "cv1",
+   "code": "CV1",
+   "name": {
+    "en": "Huiyin",
+    "zh": "会阴"
+   },
+   "location": {
+    "en": "Conception Vessel. Translation of GB/T 12346-2021: In the perineal region; in males at the midpoint of the line joining the root of the scrotum and the anus, in females at the midpoint of the line joining the posterior commissure of the labia majora and the anus. Note: in the knee-chest or side-lying position, midway between the anterior and posterior openings.",
+    "zh": "任脉。在会阴部，男性在阴囊根部与肛门连线的中点，女性在大阴唇后联合与肛门连线的中点。注：胸膝位或侧卧位，在前后二阴中间。"
+   },
+   "layers": {
+    "en": "Skin and subcutaneous tissue, then the perineal body, the fibromuscular node to which the pubococcygeus, bulbospongiosus, the transverse perineal muscles and the external anal sphincter attach.",
+    "zh": "皮肤和皮下组织，其下为会阴体，即耻骨尾骨肌、球海绵体肌、会阴横肌和肛门外括约肌共同附着的纤维肌性结节。"
+   },
+   "target": {
+    "en": "The point lies over the perineal body, the central attachment of the pelvic floor and perineal muscles. The perineum is supplied by the pudendal nerve (S2–S4).",
+    "zh": "本穴位于会阴体表面，会阴体是盆底肌和会阴肌的中央附着点。会阴由阴部神经（S2–S4）支配。"
+   },
+   "howToFind": {
+    "en": "It lies on the line joining the two ischial tuberosities, which separates the urogenital triangle from the anal triangle. It is named here for anatomical orientation; it is not a point to be located on a classmate.",
+    "zh": "它位于两侧坐骨结节的连线上，这条线分开尿生殖三角与肛门三角。这里列出本穴是为了解剖定位，不在同学身上取穴。"
+   },
+   "safety": {
+    "en": "This is an intimate region next to the anal canal and the urogenital openings. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "此处为私密部位，紧邻肛管和尿生殖道开口。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "p-tma-perineum",
+    "p-tma-pf",
+    "p-pp-pfa",
+    "n-tma-pud"
+   ]
+  },
+  {
+   "id": "gv1",
+   "code": "GV1",
+   "name": {
+    "en": "Changqiang",
+    "zh": "长强"
+   },
+   "location": {
+    "en": "Governor Vessel. Translation of GB/T 12346-2021: In the perineal region, below the coccyx, at the midpoint of the line joining the tip of the coccyx and the anus.",
+    "zh": "督脉。在会阴部，尾骨下方，尾骨端与肛门连线的中点处。"
+   },
+   "layers": {
+    "en": "Skin and subcutaneous tissue, then the anococcygeal ligament, the midline band between the anus and the coccyx into which the pubococcygeus and iliococcygeus insert. The fat of the ischioanal fossa lies on each side.",
+    "zh": "皮肤和皮下组织，其下为肛尾韧带，即肛门与尾骨之间的正中纤维带，耻骨尾骨肌和髂骨尾骨肌止于此。两侧为坐骨肛门窝的脂肪。"
+   },
+   "target": {
+    "en": "The related muscles are the levator ani (pubococcygeus and iliococcygeus) and, at the side of the coccyx, the coccygeus. A physiotherapy source describes massage or stretching of the levator ani among the treatments for coccydynia.",
+    "zh": "相关肌肉为肛提肌（耻骨尾骨肌和髂骨尾骨肌）以及尾骨外侧的尾骨肌。有物理治疗资料把肛提肌的按摩或牵伸列为尾骨痛的治疗方法之一。"
+   },
+   "howToFind": {
+    "en": "Follow the median sacral region down to the tip of the coccyx; the point is halfway between the tip and the anus. It is named here for anatomical orientation; it is not a point to be located on a classmate.",
+    "zh": "沿骶骨正中向下摸到尾骨尖；本穴在尾骨尖与肛门连线的中点。这里列出本穴是为了解剖定位，不在同学身上取穴。"
+   },
+   "safety": {
+    "en": "The anal canal and rectum lie immediately in front of the point. This is a learning reference only and does not indicate needle depth, direction or path.",
+    "zh": "肛管和直肠就在本穴前方。此处仅作学习参照，不表示进针深度、方向或路径。"
+   },
+   "modelPointId": null,
+   "sources": [
+    "x-gbt",
+    "p-kh-la",
+    "p-kh-pf",
+    "p-tma-perineum",
+    "c-pp-cocc"
+   ]
+  }
+ ],
+ "diagrams": [
+  {
+   "id": "fig-01",
+   "file": "figures/01-胸廓前面观与侧面观.svg",
+   "alt": {
+    "en": "Thoracic cage: anterior and right lateral views",
+    "zh": "胸廓：前面观与右侧面观"
+   },
+   "caption": {
+    "en": "Thoracic cage: anterior and right lateral views",
+    "zh": "胸廓：前面观与右侧面观"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Jugular notch",
+      "zh": "颈静脉切迹"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Manubrium",
+      "zh": "胸骨柄"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternal angle (second costal cartilage)",
+      "zh": "胸骨角（平第 2 肋软骨）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Body of sternum",
+      "zh": "胸骨体"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Xiphoid process",
+      "zh": "剑突"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "First rib",
+      "zh": "第 1 肋"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal cartilage",
+      "zh": "肋软骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal margin (cartilages 7–10)",
+      "zh": "肋弓（第 7–10 肋软骨）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costochondral joint",
+      "zh": "肋软骨结合"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternocostal joint",
+      "zh": "胸肋关节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Floating ribs (11 and 12)",
+      "zh": "浮肋（第 11、12 肋）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "True ribs 1–7",
+      "zh": "真肋：第 1–7 肋"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "False ribs 8–12",
+      "zh": "假肋：第 8–12 肋"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternal angle",
+      "zh": "胸骨角"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T4–T5 level",
+      "zh": "约平第 4–5 胸椎"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Thoracic vertebrae T1–T12",
+      "zh": "第 1–12 胸椎"
+     }
+    }
+   ],
+   "sources": [
+    "b-tma-sternum",
+    "b-ox-cage",
+    "b-tma-ribs"
+   ]
+  },
+  {
+   "id": "fig-02",
+   "file": "figures/02-典型肋及其关节.svg",
+   "alt": {
+    "en": "A typical rib and its joints: seventh ribs with the T7 vertebra, seen from above",
+    "zh": "典型肋及其关节：第 7 肋与第 7 胸椎（上面观）"
+   },
+   "caption": {
+    "en": "A typical rib and its joints: seventh ribs with the T7 vertebra, seen from above",
+    "zh": "典型肋及其关节：第 7 肋与第 7 胸椎（上面观）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Head of the rib",
+      "zh": "肋头"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Tubercle of the rib",
+      "zh": "肋结节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Angle of the rib",
+      "zh": "肋角"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Body of the rib",
+      "zh": "肋体"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costochondral joint",
+      "zh": "肋软骨结合"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal cartilage",
+      "zh": "肋软骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternocostal joint",
+      "zh": "胸肋关节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Body of sternum",
+      "zh": "胸骨体"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costovertebral joint",
+      "zh": "肋头关节（肋椎关节）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costotransverse joint",
+      "zh": "肋横突关节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Vertebral body of T7",
+      "zh": "第 7 胸椎椎体"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Transverse process",
+      "zh": "横突"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Spinous process",
+      "zh": "棘突"
+     }
+    }
+   ],
+   "sources": [
+    "b-kh-cv",
+    "b-tma-ribs",
+    "b-kh-ribs"
+   ]
+  },
+  {
+   "id": "fig-03",
+   "file": "figures/03-肋间隙三层肌与血管神经束.svg",
+   "alt": {
+    "en": "Intercostal space: three muscle layers and the neurovascular bundle",
+    "zh": "肋间隙：三层肌与血管神经束"
+   },
+   "caption": {
+    "en": "Intercostal space: three muscle layers and the neurovascular bundle",
+    "zh": "肋间隙：三层肌与血管神经束"
+   },
+   "labels": [
+    {
+     "kind": "origin",
+     "muscleId": "external-intercostals",
+     "text": {
+      "en": "Origin: inferior border of the rib above",
+      "zh": "起点：上位肋下缘"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "external-intercostals",
+     "text": {
+      "en": "Insertion: superior border of the rib below",
+      "zh": "止点：下位肋上缘"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "internal-intercostals",
+     "text": {
+      "en": "Origin: costal groove of the rib above",
+      "zh": "起点：上位肋的肋沟"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "internal-intercostals",
+     "text": {
+      "en": "Insertion: superior border of the rib below, deep layer",
+      "zh": "止点：下位肋上缘（深层）"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "innermost-intercostals",
+     "text": {
+      "en": "Origin: inner lip of the costal groove above",
+      "zh": "起点：上位肋肋沟内唇"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "innermost-intercostals",
+     "text": {
+      "en": "Insertion: inner surface of the rib below",
+      "zh": "止点：下位肋内面"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "transversus-thoracis",
+     "text": {
+      "en": "Origin: back of the lower sternum and xiphoid",
+      "zh": "起点：胸骨体下部和剑突后面"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "transversus-thoracis",
+     "text": {
+      "en": "Insertion: inner surfaces of costal cartilages 2–6",
+      "zh": "止点：第 2–6 肋软骨内面"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal groove",
+      "zh": "肋沟"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Intercostal vein, artery, nerve (VAN, top to bottom)",
+      "zh": "肋间静脉、动脉、神经（自上而下）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Innermost intercostals",
+      "zh": "肋间最内肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Endothoracic fascia",
+      "zh": "胸内筋膜"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Parietal pleura",
+      "zh": "壁层胸膜"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Collateral branches",
+      "zh": "侧副支"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "External intercostals",
+      "zh": "肋间外肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Internal intercostals",
+      "zh": "肋间内肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal cartilage 2",
+      "zh": "第 2 肋软骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Xiphoid process",
+      "zh": "剑突"
+     }
+    }
+   ],
+   "sources": [
+    "t-kh-space",
+    "t-kh-ext",
+    "t-kh-int",
+    "t-kh-inn",
+    "t-kh-tt"
+   ]
+  },
+  {
+   "id": "fig-04",
+   "file": "figures/04-膈与三个裂孔.svg",
+   "alt": {
+    "en": "Diaphragm: domes, central tendon and the three openings (anterior view)",
+    "zh": "膈：穹窿、中心腱与三个裂孔（前面观）"
+   },
+   "caption": {
+    "en": "Diaphragm: domes, central tendon and the three openings (anterior view)",
+    "zh": "膈：穹窿、中心腱与三个裂孔（前面观）"
+   },
+   "labels": [
+    {
+     "kind": "origin",
+     "muscleId": "diaphragm",
+     "text": {
+      "en": "Origin: xiphoid process, lower six costal cartilages and ribs, L1–L3 vertebrae (crura)",
+      "zh": "起点：剑突、下 6 对肋软骨和肋骨、第 1–3 腰椎（膈脚）"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "diaphragm",
+     "text": {
+      "en": "Insertion: central tendon",
+      "zh": "止点：中心腱"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Caval opening, T8: inferior vena cava",
+      "zh": "腔静脉孔，平 T8：下腔静脉"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Oesophageal hiatus, T10: oesophagus, vagal trunks",
+      "zh": "食管裂孔，平 T10：食管、迷走神经干"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Aortic hiatus, T12: aorta, thoracic duct, azygos vein",
+      "zh": "主动脉裂孔，平 T12：主动脉、胸导管、奇静脉"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Right dome (higher, over the liver)",
+      "zh": "右穹窿（较高，下方是肝）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Left dome",
+      "zh": "左穹窿"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Central tendon",
+      "zh": "中心腱"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Costal part: from the lower six costal cartilages and ribs",
+      "zh": "肋部：起自下 6 对肋软骨和肋骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternal part: from the xiphoid process",
+      "zh": "胸骨部：起自剑突"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Right crus: L1–L3 vertebrae",
+      "zh": "右膈脚：第 1–3 腰椎"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Left crus: L1–L2 vertebrae",
+      "zh": "左膈脚：第 1–2 腰椎"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Medial arcuate ligament (over psoas major)",
+      "zh": "内侧弓状韧带（跨过腰大肌）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Lateral arcuate ligament (over quadratus lumborum)",
+      "zh": "外侧弓状韧带（跨过腰方肌）"
+     }
+    }
+   ],
+   "sources": [
+    "d-kh",
+    "d-tma",
+    "d-rp"
+   ]
+  },
+  {
+   "id": "fig-05",
+   "file": "figures/05-腹前外侧壁的肌.svg",
+   "alt": {
+    "en": "Muscles of the anterolateral abdominal wall (anterior view)",
+    "zh": "腹前外侧壁的肌（前面观）"
+   },
+   "caption": {
+    "en": "Muscles of the anterolateral abdominal wall (anterior view)",
+    "zh": "腹前外侧壁的肌（前面观）"
+   },
+   "labels": [
+    {
+     "kind": "origin",
+     "muscleId": "rectus-abdominis",
+     "text": {
+      "en": "Origin: pubic symphysis and pubic crest",
+      "zh": "起点：耻骨联合和耻骨嵴"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "rectus-abdominis",
+     "text": {
+      "en": "Insertion: xiphoid process and costal cartilages 5–7",
+      "zh": "止点：剑突和第 5–7 肋软骨"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "pyramidalis",
+     "text": {
+      "en": "Origin: pubic crest and pubic symphysis",
+      "zh": "起点：耻骨嵴和耻骨联合"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "pyramidalis",
+     "text": {
+      "en": "Insertion: linea alba",
+      "zh": "止点：白线"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "external-oblique",
+     "text": {
+      "en": "Origin: outer surfaces of ribs 5–12",
+      "zh": "起点：第 5–12 肋外面"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "external-oblique",
+     "text": {
+      "en": "Insertion: linea alba, pubic tubercle, anterior iliac crest",
+      "zh": "止点：白线、耻骨结节、髂嵴前部"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "internal-oblique",
+     "text": {
+      "en": "Origin: thoracolumbar fascia and iliac crest",
+      "zh": "起点：胸腰筋膜和髂嵴"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "internal-oblique",
+     "text": {
+      "en": "Insertion: ribs 10–12, linea alba, pubic crest",
+      "zh": "止点：第 10–12 肋、白线、耻骨嵴"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "transversus-abdominis",
+     "text": {
+      "en": "Origin: costal cartilages 7–12, thoracolumbar fascia, iliac crest",
+      "zh": "起点：第 7–12 肋软骨、胸腰筋膜、髂嵴"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "transversus-abdominis",
+     "text": {
+      "en": "Insertion: linea alba and pubic crest",
+      "zh": "止点：白线和耻骨嵴"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inguinal ligament",
+      "zh": "腹股沟韧带"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Linea alba",
+      "zh": "白线"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Tendinous intersections",
+      "zh": "腱划"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Linea semilunaris (lateral edge of rectus abdominis)",
+      "zh": "半月线（腹直肌外侧缘）"
+     }
+    }
+   ],
+   "sources": [
+    "a-kh-ra",
+    "a-kh-eo",
+    "a-kh-io",
+    "a-kh-ta",
+    "a-kh-ant"
+   ]
+  },
+  {
+   "id": "fig-06",
+   "file": "figures/06-弓状线上下的腹直肌鞘.svg",
+   "alt": {
+    "en": "Rectus sheath above and below the arcuate line (transverse sections)",
+    "zh": "弓状线上下的腹直肌鞘（横断面）"
+   },
+   "caption": {
+    "en": "Rectus sheath above and below the arcuate line (transverse sections)",
+    "zh": "弓状线上下的腹直肌鞘（横断面）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "External abdominal oblique",
+      "zh": "腹外斜肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Internal abdominal oblique",
+      "zh": "腹内斜肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Transversus abdominis",
+      "zh": "腹横肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Rectus abdominis",
+      "zh": "腹直肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Linea alba",
+      "zh": "白线"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anterior layer: external oblique + half of internal oblique",
+      "zh": "前层：腹外斜肌腱膜 + 腹内斜肌腱膜的一半"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Posterior layer: half of internal oblique + transversus abdominis",
+      "zh": "后层：腹内斜肌腱膜的一半 + 腹横肌腱膜"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anterior layer: all three aponeuroses",
+      "zh": "前层：三层腱膜全部在前"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "No posterior layer: rectus abdominis rests on the transversalis fascia",
+      "zh": "没有后层：腹直肌后面直接贴着腹横筋膜"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Transversalis fascia (dashed)",
+      "zh": "腹横筋膜（虚线）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Parietal peritoneum",
+      "zh": "壁层腹膜"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Arcuate line",
+      "zh": "弓状线"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Umbilicus (schematic position)",
+      "zh": "脐（示意位置）"
+     }
+    }
+   ],
+   "sources": [
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-rp-wall"
+   ]
+  },
+  {
+   "id": "fig-07",
+   "file": "figures/07-盆底肌上面观.svg",
+   "alt": {
+    "en": "Pelvic floor muscles seen from above",
+    "zh": "盆底肌（上面观）"
+   },
+   "caption": {
+    "en": "Pelvic floor muscles seen from above",
+    "zh": "盆底肌（上面观）"
+   },
+   "labels": [
+    {
+     "kind": "origin",
+     "muscleId": "puborectalis",
+     "text": {
+      "en": "Origin: back of the body of the pubis",
+      "zh": "起点：耻骨体后面"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "puborectalis",
+     "text": {
+      "en": "Insertion: sling behind the anorectal junction (no bone)",
+      "zh": "止点：肛管直肠连接处后方的吊带（无骨性止点）"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "pubococcygeus",
+     "text": {
+      "en": "Origin: back of the pubis, front of the tendinous arch",
+      "zh": "起点：耻骨后面、腱弓前部"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "pubococcygeus",
+     "text": {
+      "en": "Insertion: anococcygeal ligament, coccyx, perineal body",
+      "zh": "止点：肛尾韧带、尾骨、会阴体"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "iliococcygeus",
+     "text": {
+      "en": "Origin: tendinous arch of levator ani, ischial spine",
+      "zh": "起点：肛提肌腱弓、坐骨棘"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "iliococcygeus",
+     "text": {
+      "en": "Insertion: coccyx and anococcygeal ligament",
+      "zh": "止点：尾骨和肛尾韧带"
+     }
+    },
+    {
+     "kind": "origin",
+     "muscleId": "coccygeus",
+     "text": {
+      "en": "Origin: ischial spine",
+      "zh": "起点：坐骨棘"
+     }
+    },
+    {
+     "kind": "insertion",
+     "muscleId": "coccygeus",
+     "text": {
+      "en": "Insertion: lateral margin of the lower sacrum and coccyx",
+      "zh": "止点：骶骨下部和尾骨的外侧缘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Puborectalis (U-shaped sling)",
+      "zh": "耻骨直肠肌（U 形吊带）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Pubococcygeus",
+      "zh": "耻骨尾骨肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Iliococcygeus",
+      "zh": "髂骨尾骨肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Coccygeus (on the sacrospinous ligament)",
+      "zh": "尾骨肌（贴在骶棘韧带上）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Tendinous arch of levator ani",
+      "zh": "肛提肌腱弓"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Ischial spine",
+      "zh": "坐骨棘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Pubic symphysis",
+      "zh": "耻骨联合"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Urethra",
+      "zh": "尿道"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Vagina (female)",
+      "zh": "阴道（女性）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Perineal body",
+      "zh": "会阴体"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anal canal and rectum",
+      "zh": "肛管与直肠"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anococcygeal ligament",
+      "zh": "肛尾韧带"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Coccyx",
+      "zh": "尾骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Urogenital hiatus (gap between the two sides)",
+      "zh": "尿生殖裂孔（两侧肌之间的裂隙）"
+     }
+    }
+   ],
+   "sources": [
+    "p-kh-la",
+    "p-kh-pf",
+    "p-kh-cocc",
+    "p-tma-pf"
+   ]
+  },
+  {
+   "id": "fig-08",
+   "file": "figures/08-肋间神经的走行.svg",
+   "alt": {
+    "en": "Course of an intercostal nerve: section at the seventh rib, seen from above",
+    "zh": "肋间神经的走行：第 7 肋平面的断面（上面观）"
+   },
+   "caption": {
+    "en": "Course of an intercostal nerve: section at the seventh rib, seen from above",
+    "zh": "肋间神经的走行：第 7 肋平面的断面（上面观）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Spinal cord",
+      "zh": "脊髓"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sympathetic ganglion and rami communicantes",
+      "zh": "交感神经节与交通支"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Posterior ramus (to the back muscles and skin)",
+      "zh": "后支（到背部肌和皮肤）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Lateral cutaneous branch",
+      "zh": "外侧皮支"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anterior cutaneous branch",
+      "zh": "前皮支"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sternum",
+      "zh": "胸骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Seventh rib",
+      "zh": "第 7 肋"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T7 vertebra",
+      "zh": "第 7 胸椎"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Skin",
+      "zh": "皮肤"
+     }
+    }
+   ],
+   "sources": [
+    "n-kh-int-nerves",
+    "t-kh-space"
+   ]
+  },
+  {
+   "id": "fig-09",
+   "file": "figures/09-躯干壁的神经与皮节标志.svg",
+   "alt": {
+    "en": "Nerves of the trunk wall (T7–L1) and dermatome landmarks (anterior view)",
+    "zh": "躯干壁的神经（T7–L1）与皮节标志（前面观）"
+   },
+   "caption": {
+    "en": "Nerves of the trunk wall (T7–L1) and dermatome landmarks (anterior view)",
+    "zh": "躯干壁的神经（T7–L1）与皮节标志（前面观）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Intercostal nerves (in the costal groove)",
+      "zh": "肋间神经（走在肋沟内）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Thoraco-abdominal nerves T7–T11",
+      "zh": "胸腹神经 T7–T11"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "They pass behind the costal margin",
+      "zh": "在肋弓后方离开肋间隙"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Subcostal nerve T12",
+      "zh": "肋下神经 T12"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Iliohypogastric nerve L1",
+      "zh": "髂腹下神经 L1"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Ilioinguinal nerve L1",
+      "zh": "髂腹股沟神经 L1"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anterior cutaneous branches (through the rectus sheath)",
+      "zh": "前皮支（穿过腹直肌鞘）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Rectus abdominis (faint)",
+      "zh": "腹直肌（淡色）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T4: nipple",
+      "zh": "T4：乳头平面"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T6: xiphoid process",
+      "zh": "T6：剑突平面"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T10: umbilicus",
+      "zh": "T10：脐平面"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "T12: just above the inguinal ligament",
+      "zh": "T12：腹股沟韧带稍上方"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "L1: groin",
+      "zh": "L1：腹股沟"
+     }
+    }
+   ],
+   "sources": [
+    "n-kh-int-nerves",
+    "n-el-subcostal",
+    "n-tma-lumbar-plexus",
+    "x-pp-derm"
+   ]
+  },
+  {
+   "id": "fig-10",
+   "file": "figures/10-阴部神经的走行.svg",
+   "alt": {
+    "en": "Pudendal nerve (S2–S4): out of the pelvis and back in round the ischial spine (posterior view)",
+    "zh": "阴部神经（S2–S4）：出骨盆后绕坐骨棘返回（后面观）"
+   },
+   "caption": {
+    "en": "Pudendal nerve (S2–S4): out of the pelvis and back in round the ischial spine (posterior view)",
+    "zh": "阴部神经（S2–S4）：出骨盆后绕坐骨棘返回（后面观）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sacrum",
+      "zh": "骶骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Greater sciatic foramen",
+      "zh": "坐骨大孔"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sacrospinous ligament",
+      "zh": "骶棘韧带"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Ischial spine",
+      "zh": "坐骨棘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Lesser sciatic foramen",
+      "zh": "坐骨小孔"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Sacrotuberous ligament",
+      "zh": "骶结节韧带"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Ischial tuberosity",
+      "zh": "坐骨结节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Coccyx",
+      "zh": "尾骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Piriformis (the nerve leaves below it)",
+      "zh": "梨状肌（神经从它下方穿出）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inferior rectal nerve",
+      "zh": "肛（直肠下）神经"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Perineal nerve",
+      "zh": "会阴神经"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Dorsal nerve of the penis or clitoris (dashed, runs forward)",
+      "zh": "阴茎（阴蒂）背神经（虚线，向前走）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anus",
+      "zh": "肛门"
+     }
+    }
+   ],
+   "sources": [
+    "n-kh-pud",
+    "n-tma-pud",
+    "n-el-pud"
+   ]
+  },
+  {
+   "id": "fig-11",
+   "file": "figures/11-泵柄与桶柄运动.svg",
+   "alt": {
+    "en": "Rib movements in inspiration: pump handle and bucket handle",
+    "zh": "吸气时肋骨的运动：泵柄与桶柄"
+   },
+   "caption": {
+    "en": "Rib movements in inspiration: pump handle and bucket handle",
+    "zh": "吸气时肋骨的运动：泵柄与桶柄"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Axis: nearly side to side, through the two posterior joints",
+      "zh": "轴：接近左右方向，穿过后方两个关节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Front ends and sternum move up and forward",
+      "zh": "肋骨前端和胸骨向前上方抬起"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Dashed lines = axis: nearly front to back, from the spine to the front of the rib",
+      "zh": "虚线 = 轴：接近前后方向，从脊柱到肋骨前端"
+     }
+    }
+   ],
+   "sources": [
+    "m-wp-pump",
+    "m-wp-bucket",
+    "m-msu-rib"
+   ]
+  },
+  {
+   "id": "fig-12",
+   "file": "figures/12-呼吸与核心圆筒.svg",
+   "alt": {
+    "en": "Breathing and the core cylinder",
+    "zh": "呼吸与核心圆筒"
+   },
+   "caption": {
+    "en": "Breathing and the core cylinder",
+    "zh": "呼吸与核心圆筒"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Phrenic nerve (C3–C5)",
+      "zh": "膈神经（C3–C5）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "End of expiration (dashed)",
+      "zh": "呼气末的膈（虚线）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inspiration: flatter and lower",
+      "zh": "吸气时的膈：变平并下降"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Lower ribs move up and out",
+      "zh": "下位肋骨向外上方抬起"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "External intercostals lift the ribs",
+      "zh": "肋间外肌上提肋骨"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Roof: diaphragm",
+      "zh": "顶：膈"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Floor: pelvic floor",
+      "zh": "底：盆底（肛提肌）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Front and sides: abdominal wall",
+      "zh": "前壁和侧壁：腹横肌等腹肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Back: deep back muscles",
+      "zh": "后壁：多裂肌等背部深层肌"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Lumbar spine",
+      "zh": "腰椎"
+     }
+    }
+   ],
+   "sources": [
+    "m-kh-breath",
+    "m-pp-core",
+    "m-ox-22-3"
+   ]
+  },
+  {
+   "id": "fig-13",
+   "file": "figures/13-腹股沟管与腹股沟三角.svg",
+   "alt": {
+    "en": "Right inguinal canal and the inguinal (Hesselbach) triangle (anterior view)",
+    "zh": "右侧腹股沟管与腹股沟（Hesselbach）三角（前面观）"
+   },
+   "caption": {
+    "en": "Right inguinal canal and the inguinal (Hesselbach) triangle (anterior view)",
+    "zh": "右侧腹股沟管与腹股沟（Hesselbach）三角（前面观）"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Indirect hernia: enters the deep ring, lateral to the vessels",
+      "zh": "斜疝：从血管外侧进入深环"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Direct hernia: through the triangle, medial to the vessels",
+      "zh": "直疝：在血管内侧穿过三角"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inferior epigastric vessels",
+      "zh": "腹壁下血管"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Rectus abdominis (lateral border)",
+      "zh": "腹直肌（外侧缘）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inguinal (Hesselbach) triangle",
+      "zh": "腹股沟（Hesselbach）三角"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Deep inguinal ring (in the transversalis fascia)",
+      "zh": "腹股沟管深环（在腹横筋膜上）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inguinal canal (3–5 cm)",
+      "zh": "腹股沟管（长 3–5 cm）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Superficial inguinal ring (in the external oblique aponeurosis)",
+      "zh": "腹股沟管浅环（在腹外斜肌腱膜上）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Pubic tubercle",
+      "zh": "耻骨结节"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Pubic symphysis",
+      "zh": "耻骨联合"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anterior superior iliac spine (ASIS)",
+      "zh": "髂前上棘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Inguinal ligament",
+      "zh": "腹股沟韧带"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Pubic crest",
+      "zh": "耻骨嵴"
+     }
+    }
+   ],
+   "sources": [
+    "c-kh-canal",
+    "c-tma-tri",
+    "c-kh-il"
+   ]
+  },
+  {
+   "id": "fig-14",
+   "file": "figures/14-躯干壁的穴位.svg",
+   "alt": {
+    "en": "Eight acupoints on the trunk wall",
+    "zh": "躯干壁上的 8 个穴位"
+   },
+   "caption": {
+    "en": "Eight acupoints on the trunk wall",
+    "zh": "躯干壁上的 8 个穴位"
+   },
+   "labels": [
+    {
+     "kind": "structure",
+     "text": {
+      "en": "CV17 Danzhong",
+      "zh": "膻中：横平第 4 肋间隙，前正中线上"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "LR14 Qimen",
+      "zh": "期门：第 6 肋间隙，前正中线旁开 4 寸"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "CV12 Zhongwan",
+      "zh": "中脘：脐中上 4 寸，前正中线上"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "LR13 Zhangmen",
+      "zh": "章门：第 11 肋游离端的下际"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "ST25 Tianshu",
+      "zh": "天枢：横平脐中，前正中线旁开 2 寸"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "CV4 Guanyuan",
+      "zh": "关元：脐中下 3 寸，前正中线上"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Jugular notch (Tiantu)",
+      "zh": "颈静脉切迹（天突）"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Tip of the xiphoid process",
+      "zh": "剑突尖"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Centre of the umbilicus",
+      "zh": "脐中"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Upper border of the pubic symphysis",
+      "zh": "耻骨联合上缘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "CV1 Huiyin",
+      "zh": "会阴：前后二阴连线的中点"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "GV1 Changqiang",
+      "zh": "长强：尾骨端与肛门连线的中点"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Posterior border of the genitals",
+      "zh": "外生殖器后缘"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Anus",
+      "zh": "肛门"
+     }
+    },
+    {
+     "kind": "structure",
+     "text": {
+      "en": "Tip of the coccyx",
+      "zh": "尾骨尖"
+     }
+    }
+   ],
+   "sources": [
+    "x-gbt",
+    "x-who"
+   ]
+  }
+ ],
+ "review": [
+  {
+   "id": "q-intercostal-space",
+   "question": {
+    "en": "Name the three muscle layers of an intercostal space from outside in, and say where the intercostal vein, artery and nerve run.",
+    "zh": "由外向内说出肋间隙的三层肌，并说明肋间静脉、动脉和神经走在哪里。"
+   },
+   "answer": {
+    "en": "From outside in, the layers are the external intercostals, the internal intercostals and the innermost layer, which is transversus thoracis in front, the innermost intercostals at the side and the subcostal muscles behind. The intercostal vein, artery and nerve run between the internal and innermost layers in the costal groove under the lower border of the rib, in that order from above down. For this reason a chest drain is passed along the upper border of the rib below.",
+    "zh": "由外向内依次是肋间外肌、肋间内肌和最内层；最内层在前方是胸横肌，外侧是肋间最内肌，后方是肋下肌。肋间静脉、动脉和神经走在肋间内肌与最内层之间、肋骨下缘的肋沟里，自上而下按静脉、动脉、神经排列。因此胸腔引流管沿下一肋的上缘进入。"
+   },
+   "sources": [
+    "t-kh-space",
+    "t-kh-ic",
+    "b-kh-ribs"
+   ]
+  },
+  {
+   "id": "q-diaphragm-openings",
+   "question": {
+    "en": "Give the vertebral level and the contents of the three openings of the diaphragm.",
+    "zh": "说出膈的三个裂孔所在的椎体平面和通过的结构。"
+   },
+   "answer": {
+    "en": "The caval opening lies in the central tendon at the level of the T8 vertebra and carries the inferior vena cava with branches of the right phrenic nerve. The oesophageal hiatus lies in the right crus at T10 and carries the oesophagus and the vagal trunks. The aortic hiatus lies behind the median arcuate ligament at T12 and carries the aorta, the thoracic duct and the azygos vein.",
+    "zh": "腔静脉孔在中心腱内，平第 8 胸椎，通过下腔静脉和右膈神经的分支。食管裂孔在右膈脚内，平第 10 胸椎，通过食管和迷走神经干。主动脉裂孔在正中弓状韧带后方，平第 12 胸椎，通过主动脉、胸导管和奇静脉。"
+   },
+   "sources": [
+    "d-kh",
+    "d-tma",
+    "d-rp"
+   ]
+  },
+  {
+   "id": "q-rectus-sheath",
+   "question": {
+    "en": "Describe the rectus sheath above and below the arcuate line.",
+    "zh": "描述弓状线以上和以下的腹直肌鞘。"
+   },
+   "answer": {
+    "en": "Above the arcuate line the anterior layer of the rectus sheath is the external oblique aponeurosis plus half of the internal oblique aponeurosis, and the posterior layer is the other half of the internal oblique aponeurosis plus the transversus abdominis aponeurosis. Below the arcuate line all three aponeuroses pass in front of rectus abdominis, so the muscle rests on the transversalis fascia. The line lies between the umbilicus and the pubic symphysis, and its exact level varies.",
+    "zh": "弓状线以上，腹直肌鞘前层是腹外斜肌腱膜加腹内斜肌腱膜的一半，后层是腹内斜肌腱膜的另一半加腹横肌腱膜。弓状线以下，三层腱膜全部走在腹直肌前面，肌的后面贴着腹横筋膜。弓状线位于脐与耻骨联合之间，具体高度因人而异。"
+   },
+   "sources": [
+    "a-kh-wall",
+    "a-tma-aw",
+    "a-rp-wall"
+   ]
+  },
+  {
+   "id": "q-rotation",
+   "question": {
+    "en": "Which abdominal muscles rotate the trunk to the left, and why do they work as a pair?",
+    "zh": "哪些腹肌使躯干向左旋转？它们为什么成对工作？"
+   },
+   "answer": {
+    "en": "Rotation of the trunk to the left uses the right external oblique and the left internal oblique. The fibres of the external oblique run downward and medially and those of the internal oblique run upward and medially, so the right external oblique and the left internal oblique lie along one diagonal line across the linea alba and pull the right side of the rib cage toward the left side of the pelvis.",
+    "zh": "躯干向左旋转用右侧腹外斜肌和左侧腹内斜肌。腹外斜肌纤维向内下走，腹内斜肌纤维向内上走，所以右侧腹外斜肌与左侧腹内斜肌隔着白线连成一条斜线，把右侧胸廓拉向左侧骨盆。"
+   },
+   "sources": [
+    "m-pp-abs",
+    "a-kh-eo",
+    "a-kh-io"
+   ]
+  },
+  {
+   "id": "q-breathing",
+   "question": {
+    "en": "Which muscles work in quiet inspiration, quiet expiration and forced expiration?",
+    "zh": "平静吸气、平静呼气和用力呼气分别用哪些肌？"
+   },
+   "answer": {
+    "en": "Quiet inspiration uses the diaphragm, which flattens and descends, and the external intercostals, which lift the ribs. Quiet expiration uses no muscle: it is passive recoil of the lungs and chest wall as the diaphragm relaxes. Forced expiration adds the internal intercostals, which pull the ribs down, and the abdominal muscles, chiefly transversus abdominis and the internal oblique, which raise intra-abdominal pressure and push the diaphragm upward.",
+    "zh": "平静吸气用膈（变平并下降）和肋间外肌（上提肋骨）。平静呼气不用肌：膈放松，肺和胸壁被动回缩。用力呼气加上肋间内肌（把肋骨拉向下）和腹肌，主要是腹横肌和腹内斜肌，它们升高腹内压，把膈向上推。"
+   },
+   "sources": [
+    "m-kh-breath",
+    "m-ox-22-3"
+   ]
+  },
+  {
+   "id": "q-levator-ani",
+   "question": {
+    "en": "Name the parts of levator ani and explain what puborectalis does.",
+    "zh": "说出肛提肌的组成，并解释耻骨直肠肌的作用。"
+   },
+   "answer": {
+    "en": "Levator ani has three parts from medial to lateral: puborectalis, pubococcygeus and iliococcygeus; together with coccygeus they form the pelvic floor. Puborectalis arises from the back of the body of the pubis and has no bony insertion: the two sides join behind the anorectal junction as a U-shaped sling. At rest the sling pulls the junction forward and keeps the anorectal angle at about 90 degrees, which maintains faecal continence; it relaxes during defecation.",
+    "zh": "肛提肌由内向外分三部分：耻骨直肠肌、耻骨尾骨肌和髂骨尾骨肌；它们与尾骨肌一起组成盆底。耻骨直肠肌起自耻骨体后面，没有骨性止点：两侧在肛管直肠连接处后方会合成 U 形吊带。静息时吊带把连接处向前拉，使肛直肠角保持约 90 度，从而控便；排便时它放松。"
+   },
+   "sources": [
+    "p-kh-la",
+    "p-tma-pf",
+    "p-wp-la"
+   ]
+  },
+  {
+   "id": "q-pudendal",
+   "question": {
+    "en": "Trace the pudendal nerve from its roots to its branches.",
+    "zh": "从神经根到分支，说出阴部神经的走行。"
+   },
+   "answer": {
+    "en": "The pudendal nerve arises from the anterior rami of S2–S4. It leaves the pelvis through the greater sciatic foramen below piriformis, hooks round the sacrospinous ligament at the ischial spine, and re-enters through the lesser sciatic foramen. It then runs in the pudendal canal in the obturator internus fascia on the lateral wall of the ischioanal fossa and divides into the inferior rectal nerve, the perineal nerve and the dorsal nerve of the penis or clitoris.",
+    "zh": "阴部神经起自 S2–S4 前支。它经坐骨大孔在梨状肌下方出骨盆，在坐骨棘处绕过骶棘韧带，再经坐骨小孔返回。随后走在坐骨肛门窝外侧壁闭孔内肌筋膜内的阴部管里，分为肛（直肠下）神经、会阴神经和阴茎（阴蒂）背神经。"
+   },
+   "sources": [
+    "n-kh-pud",
+    "n-tma-pud",
+    "n-el-pud"
+   ]
+  },
+  {
+   "id": "q-hernia",
+   "question": {
+    "en": "How do a direct and an indirect inguinal hernia differ anatomically?",
+    "zh": "腹股沟直疝和斜疝在解剖上有什么不同？"
+   },
+   "answer": {
+    "en": "The dividing structure is the inferior epigastric vessels. An indirect inguinal hernia enters the deep inguinal ring lateral to these vessels and travels along the inguinal canal; it is often congenital. A direct inguinal hernia bulges through the posterior wall of the canal medial to the vessels, inside the inguinal triangle bounded by the lateral border of rectus abdominis, the inferior epigastric vessels and the inguinal ligament.",
+    "zh": "分界结构是腹壁下血管。斜疝从这些血管的外侧进入腹股沟管深环，沿腹股沟管走行，常为先天性。直疝在血管内侧从腹股沟管后壁顶出，位于腹股沟三角内；三角由腹直肌外侧缘、腹壁下血管和腹股沟韧带围成。"
+   },
+   "sources": [
+    "c-kh-canal",
+    "c-tma-tri"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "b-tma-ribs",
+   "title": "The Ribs - Rib Cage - Articulations - Fracture - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/bones/ribcage/"
+  },
+  {
+   "id": "b-tma-tspine",
+   "title": "The Thoracic Spine - Features - Joints - Ligaments - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/bones/thoracic-spine/"
+  },
+  {
+   "id": "b-tma-sternum",
+   "title": "The Sternum - Body - Manubrium - Xiphoid - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/bones/sternum/"
+  },
+  {
+   "id": "b-kh-cv",
+   "title": "Costovertebral and costotransverse joints: Anatomy | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/costovertebral-joints"
+  },
+  {
+   "id": "b-kh-sc",
+   "title": "Sternocostal joints: Bones, ligaments, movements | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternocostal-joints"
+  },
+  {
+   "id": "b-kh-tv",
+   "title": "Thoracic vertebrae: Anatomy, function and definition | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/thoracic-vertebrae"
+  },
+  {
+   "id": "b-ox-cage",
+   "title": "7.4 The Thoracic Cage - Anatomy and Physiology | OpenStax",
+   "url": "https://openstax.org/books/anatomy-and-physiology/pages/7-4-the-thoracic-cage"
+  },
+  {
+   "id": "b-tma-hip-bone",
+   "title": "The Hip Bone - Ilium - Ischium - Pubis - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/pelvis/bones/hip-bone/"
+  },
+  {
+   "id": "b-tma-girdle",
+   "title": "The Pelvic Girdle - Structure - Function - Assessment - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/pelvis/bones/pelvic-girdle/"
+  },
+  {
+   "id": "t-kh-ext",
+   "title": "External intercostals: Origin, insertion, supply, actions | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/external-intercostal-muscles"
+  },
+  {
+   "id": "t-kh-int",
+   "title": "Internal intercostal muscles: Attachments,supply, action | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/internal-intercostal-muscles"
+  },
+  {
+   "id": "t-kh-inn",
+   "title": "Innermost intercostals: Origin, insertion, innervation | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/innermost-intercostal-muscles"
+  },
+  {
+   "id": "t-kh-ic",
+   "title": "Intercostal muscles: Attachments, innervation, functions | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/intercostal-muscles"
+  },
+  {
+   "id": "t-kh-space",
+   "title": "Intercostal spaces: Anatomy, contents and boundaries | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/intercostal-spaces"
+  },
+  {
+   "id": "t-el-ext",
+   "title": "External Intercostal Muscles | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/external-intercostal-muscles/24385"
+  },
+  {
+   "id": "t-el-int",
+   "title": "Internal Intercostal Muscles | Complete Anatomy",
+   "url": "https://elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/internal-intercostal-muscles/20787"
+  },
+  {
+   "id": "t-el-inn",
+   "title": "Innermost Intercostal Muscles | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/innermost-intercostal-muscles/18950"
+  },
+  {
+   "id": "t-tma-thoracic",
+   "title": "Thoracic Muscles - Attachments - Actions - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/muscles/thoracic-cage/"
+  },
+  {
+   "id": "t-kh-tt",
+   "title": "Transversus thoracis: Origin, insertion, function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/transversus-thoracis-muscle"
+  },
+  {
+   "id": "d-kh",
+   "title": "Diaphragm: Location, anatomy, innervation and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/diaphragm"
+  },
+  {
+   "id": "d-tma",
+   "title": "The Diaphragm - Actions - Innervation - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/muscles/diaphragm/"
+  },
+  {
+   "id": "d-el",
+   "title": "Diaphragm | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/diaphragm/19316"
+  },
+  {
+   "id": "d-rp",
+   "title": "Diaphragm | Radiopaedia",
+   "url": "https://radiopaedia.org/articles/diaphragm?lang=gb"
+  },
+  {
+   "id": "d-tma-phrenic",
+   "title": "The Phrenic Nerve - Anatomical Course - Functions - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/neck/nerves/phrenic/"
+  },
+  {
+   "id": "d-kh-phrenic",
+   "title": "Phrenic nerve: origin, course and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/phrenic-nerve"
+  },
+  {
+   "id": "a-tma-aw",
+   "title": "The Anterolateral Abdominal Wall - Muscles - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/"
+  },
+  {
+   "id": "a-kh-ra",
+   "title": "Rectus abdominis: Origin, insertion, innervation,function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle"
+  },
+  {
+   "id": "a-kh-eo",
+   "title": "External abdominal oblique: Anatomy, innervation,function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle"
+  },
+  {
+   "id": "a-kh-io",
+   "title": "Internal abdominal oblique: Origin, insertion and action | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle"
+  },
+  {
+   "id": "a-kh-ta",
+   "title": "Transversus abdominis: Origin, insertion and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle"
+  },
+  {
+   "id": "a-kh-ant",
+   "title": "Anterior abdominal muscles: Anatomy and functions | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-abdominal-muscles"
+  },
+  {
+   "id": "a-kh-wall",
+   "title": "Abdominal wall: Layers, muscles and fascia | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-abdominal-wall"
+  },
+  {
+   "id": "a-ox-11-4",
+   "title": "11.4 Axial Muscles of the Abdominal Wall, and Thorax - Anatomy and Physiology 2e | OpenStax",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+  },
+  {
+   "id": "a-rp-wall",
+   "title": "Anterior abdominal wall | Radiopaedia",
+   "url": "https://radiopaedia.org/articles/anterior-abdominal-wall"
+  },
+  {
+   "id": "c-kh-il",
+   "title": "Inguinal ligament: Attachments, function and relations | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/inguinal-ligament"
+  },
+  {
+   "id": "c-kh-canal",
+   "title": "Inguinal canal: Anatomy, contents and hernias | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/inguinal-canal"
+  },
+  {
+   "id": "c-tma-tri",
+   "title": "Inguinal (Hesselbach's) Triangle - Borders - Direct Hernia - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/abdomen/areas/inguinal-triangle/"
+  },
+  {
+   "id": "c-pp-dra",
+   "title": "Diastasis Recti Abdominis and Pelvic Floor Dysfunction - Physiopedia",
+   "url": "https://www.physio-pedia.com/Diastasis_Recti_Abdominis_and_Pelvic_Floor_Dysfunction"
+  },
+  {
+   "id": "c-wp-dra",
+   "title": "Diastasis recti - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Diastasis_recti"
+  },
+  {
+   "id": "c-pp-beevor",
+   "title": "Beevor Sign - Physiopedia",
+   "url": "https://www.physio-pedia.com/Beevor_Sign"
+  },
+  {
+   "id": "c-pp-carnett",
+   "title": "Carnett Sign - Physiopedia",
+   "url": "https://www.physio-pedia.com/Carnett_Sign"
+  },
+  {
+   "id": "c-pp-acnes",
+   "title": "Anterior Cutaneous Nerve Entrapment Syndrome - Physiopedia",
+   "url": "https://www.physio-pedia.com/Anterior_Cutaneous_Nerve_Entrapment_Syndrome"
+  },
+  {
+   "id": "c-msd-reflex",
+   "title": "How To Assess Reflexes - Neurology - MSD Manual Professional Edition",
+   "url": "https://www.msdmanuals.com/professional/neurologic-disorders/neurologic-examination/how-to-assess-reflexes"
+  },
+  {
+   "id": "p-kh-la",
+   "title": "Levator ani: puborectalis, pubococcygeus, iliococcygeus | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/levator-ani"
+  },
+  {
+   "id": "p-kh-pf",
+   "title": "Muscles of the pelvic floor: Anatomy and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/muscles-of-the-pelvic-floor"
+  },
+  {
+   "id": "p-kh-cocc",
+   "title": "Coccygeus: Origin, insertion, innervation and action | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/coccygeus-muscle"
+  },
+  {
+   "id": "p-tma-pf",
+   "title": "The Pelvic Floor - Structure - Function - Muscles - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/pelvis/muscles/pelvic-floor/"
+  },
+  {
+   "id": "p-pp-pfa",
+   "title": "Pelvic Floor Anatomy - Physiopedia",
+   "url": "https://www.physio-pedia.com/Pelvic_Floor_Anatomy"
+  },
+  {
+   "id": "p-el-pd",
+   "title": "Pelvic Diaphragm | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/pelvic-diaphragm/pelvic-diaphragm/17701"
+  },
+  {
+   "id": "p-el-ilio",
+   "title": "Iliococcygeus Muscle | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/pelvic-diaphragm/iliococcygeus-muscle/18212"
+  },
+  {
+   "id": "p-wp-la",
+   "title": "Levator ani - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Levator_ani"
+  },
+  {
+   "id": "p-tma-perineum",
+   "title": "The Perineum - Boundaries - Contents - Innervation - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/pelvis/areas/perineum/"
+  },
+  {
+   "id": "n-kh-int-nerves",
+   "title": "Intercostal nerves: origin, course and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/intercostal-nerves"
+  },
+  {
+   "id": "n-el-subcostal",
+   "title": "Subcostal Nerve | Complete Anatomy",
+   "url": "https://elsevier.com/resources/anatomy/nervous-system/peripheral-nervous-system/subcostal-nerve/17708"
+  },
+  {
+   "id": "n-uro",
+   "title": "Abdominal Cavity Anatomy: Nervous System",
+   "url": "https://www.urology-textbook.com/abdominal-cavity-anatomy-nerves.html"
+  },
+  {
+   "id": "n-kh-pud",
+   "title": "Pudendal nerve: origin, course and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/pudendal-nerve"
+  },
+  {
+   "id": "n-tma-pud",
+   "title": "The Pudendal Nerve - Anatomical Course - Functions - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/pelvis/other/pudendal-nerve/"
+  },
+  {
+   "id": "n-el-pud",
+   "title": "Pudendal Nerve | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/nervous-system/peripheral-nervous-system/pudendal-nerve/21979"
+  },
+  {
+   "id": "n-rp-pud",
+   "title": "Pudendal nerve | Radiopaedia",
+   "url": "https://radiopaedia.org/articles/39968"
+  },
+  {
+   "id": "n-tma-lumbar-plexus",
+   "title": "The Lumbar Plexus - Spinal Nerves - Branches - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/lumbar-plexus/"
+  },
+  {
+   "id": "m-kh-breath",
+   "title": "Anatomy of breathing: Process and muscles of respiration | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/anatomy-of-breathing"
+  },
+  {
+   "id": "m-wp-pump",
+   "title": "Pump handle movement - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pump_handle_movement"
+  },
+  {
+   "id": "m-wp-bucket",
+   "title": "Bucket handle movement - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bucket_handle_movement"
+  },
+  {
+   "id": "m-dp-chest",
+   "title": "Roles of the chest wall and diaphragm in respiratory mechanics | Deranged Physiology",
+   "url": "https://derangedphysiology.com/main/cicm-primary-exam/respiratory-system/Chapter-014/roles-chest-wall-and-diaphragm-respiratory-mechanics"
+  },
+  {
+   "id": "m-msu-rib",
+   "title": "Rib cage biomechanics | Michigan State University",
+   "url": "https://hal.bim.msu.edu/CMEonLine/RibCage/Biomechanics/page_1_text.html"
+  },
+  {
+   "id": "m-pp-core",
+   "title": "Core Stability - Physiopedia",
+   "url": "https://www.physio-pedia.com/Core_Stability"
+  },
+  {
+   "id": "m-pp-dia-stab",
+   "title": "The Role of the Diaphragm in Trunk Stability - Physiopedia",
+   "url": "https://www.physio-pedia.com/The_Role_of_the_Diaphragm_in_Trunk_Stability"
+  },
+  {
+   "id": "m-pp-tra",
+   "title": "Transversus Abdominis - Physiopedia",
+   "url": "https://www.physio-pedia.com/Transversus_Abdominis"
+  },
+  {
+   "id": "m-pp-abs",
+   "title": "Abdominal Muscles - Physiopedia",
+   "url": "https://www.physio-pedia.com/Abdominal_Muscles"
+  },
+  {
+   "id": "m-pp-lumbar-abd",
+   "title": "Functional Anatomy of the Lumbar Spine and Abdominal Wall - Physiopedia",
+   "url": "https://www.physio-pedia.com/Functional_Anatomy_of_the_Lumbar_Spine_and_Abdominal_Wall"
+  },
+  {
+   "id": "m-ox-22-3",
+   "title": "22.3 The Process of Breathing - Anatomy and Physiology 2e | OpenStax",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+  },
+  {
+   "id": "c-pp-pfd",
+   "title": "Pelvic Floor Dysfunction - Physiopedia",
+   "url": "https://www.physio-pedia.com/Pelvic_Floor_Dysfunction"
+  },
+  {
+   "id": "c-pp-pn",
+   "title": "Pudendal Neuralgia - Physiopedia",
+   "url": "https://www.physio-pedia.com/Pudendal_Neuralgia"
+  },
+  {
+   "id": "c-pp-women",
+   "title": "Common Women's Pelvic Health Conditions - Physiopedia",
+   "url": "https://www.physio-pedia.com/Common_Women's_Pelvic_Health_Conditions"
+  },
+  {
+   "id": "c-pp-fpelvis",
+   "title": "Functional Anatomy of the Pelvis - Physiopedia",
+   "url": "https://www.physio-pedia.com/Functional_Anatomy_of_the_Pelvis"
+  },
+  {
+   "id": "c-wp-pfd",
+   "title": "Pelvic floor dysfunction - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pelvic_floor_dysfunction"
+  },
+  {
+   "id": "c-pp-cocc",
+   "title": "Coccygodynia (Coccydynia, Coccalgia, Tailbone Pain) - Physiopedia",
+   "url": "https://www.physio-pedia.com/Coccygodynia_(Coccydynia,_Coccalgia,_Tailbone_Pain)"
+  },
+  {
+   "id": "x-gbt",
+   "title": "经穴名称与定位 GB/T 12346—2021",
+   "url": "https://zynj.shutcm.edu.cn/_upload/article/files/66/b4/b34a95604d04b0bf686251b2d317/368ea8b0-187c-48a7-a402-ffdf1e11bb99.pdf"
+  },
+  {
+   "id": "x-who",
+   "title": "WHO Standard Acupuncture Point Locations in the Western Pacific Region",
+   "url": "https://www.medbox.org/index.php/dl/627a4de115110145a1723f64"
+  },
+  {
+   "id": "c-pp-costo",
+   "title": "Costochondritis - Physiopedia",
+   "url": "https://www.physio-pedia.com/Costochondritis"
+  },
+  {
+   "id": "c-pp-ribfx",
+   "title": "Rib Fracture - Physiopedia",
+   "url": "https://www.physio-pedia.com/Rib_Fracture"
+  },
+  {
+   "id": "c-pp-resp",
+   "title": "Respiratory Assessment - Physiopedia",
+   "url": "https://www.physio-pedia.com/Respiratory_Assessment"
+  },
+  {
+   "id": "x-kh-derm",
+   "title": "Dermatomes: Anatomy and dermatome map | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/dermatomes"
+  },
+  {
+   "id": "x-pp-derm",
+   "title": "Dermatomes - Physiopedia",
+   "url": "https://www.physio-pedia.com/Dermatomes"
+  },
+  {
+   "id": "b-kh-ribs",
+   "title": "Ribs: Anatomy, ligaments and clinical notes | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-ribs"
+  },
+  {
+   "id": "p-el-cocc",
+   "title": "Coccygeus Muscle | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/pelvic-diaphragm/coccygeus-muscle/24562"
+  },
+  {
+   "id": "p-el-pubo",
+   "title": "Pubococcygeus Muscle | Complete Anatomy",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/pelvic-diaphragm/pubococcygeus-muscle/16678"
+  },
+  {
+   "id": "x-kh-pleura",
+   "title": "Pleura: Anatomy, parts and function | Kenhub",
+   "url": "https://www.kenhub.com/en/library/anatomy/pleura"
+  },
+  {
+   "id": "x-tma-pleura",
+   "title": "The Pleurae - Visceral - Parietal - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/organs/pleurae/"
+  },
+  {
+   "id": "x-tma-lungs",
+   "title": "Lung Anatomy | Structure, Vasculature & Nerve Supply - TeachMeAnatomy",
+   "url": "https://teachmeanatomy.info/thorax/organs/lungs/"
+  }
+ ],
+ "modelLinks": [
+  {
+   "en": "linea alba",
+   "term": "linea-alba"
+  },
+  {
+   "en": "inguinal ligament",
+   "term": "inguinal-ligament"
+  },
+  {
+   "en": "body of the sternum",
+   "term": "body-of-sternum"
+  },
+  {
+   "en": "external oblique",
+   "term": "external-oblique"
+  },
+  {
+   "en": "internal oblique",
+   "term": "internal-oblique"
+  },
+  {
+   "en": "manubrium",
+   "term": "manubrium"
+  }
+ ],
+ "nerveNotation": {
+  "cervical": {
+   "en": "C denotes cervical levels.",
+   "zh": "C 表示颈部节段。"
+  },
+  "thoracic": {
+   "en": "T denotes thoracic levels.",
+   "zh": "T 表示胸部节段。"
+  },
+  "lumbar": {
+   "en": "L denotes lumbar levels.",
+   "zh": "L 表示腰部节段。"
+  },
+  "sacral": {
+   "en": "S denotes sacral levels.",
+   "zh": "S 表示骶部节段。"
+  },
+  "spinalNerveVsVertebra": {
+   "en": "A spinal nerve level identifies a nerve, whereas a vertebral level identifies a bone. Specify which is being described.",
+   "zh": "脊神经节段表示神经，椎骨节段表示骨骼；描述时应明确区分。"
+  }
+ },
+ "qa": {
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "checks": {
+   "medicalSources": false,
+   "bilingual": false,
+   "originInsertionLabels": false,
+   "modelLinks": false,
+   "layoutDesktop": false,
+   "layoutMobile": false,
+   "fullAnswers": false
+  }
+ }
+}

@@ -508,8 +508,170 @@
       "sunday": "2026-12-06",
       "chapter": "thorax-abdomen",
       "chapterName": "胸壁、腹壁与盆底 Thorax, abdomen and pelvic floor",
-      "chapterStatus": "not-started",
-      "days": "按 weekTemplate 排；条目在本章 ST-1 结构清单定好后填写"
+      "chapterStatus": "draft",
+      "days": {
+        "2026-12-07": {
+          "new": [
+            {
+              "type": "N-1",
+              "items": [
+                "CV6 气海 · 任脉",
+                "CV3 中极 · 任脉",
+                "SP15 大横 · 足太阴脾经",
+                "GB25 京门 · 足少阳胆经"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-1",
+              "items": [
+                "Diaphragm",
+                "Rectus abdominis",
+                "External abdominal oblique",
+                "Transversus abdominis"
+              ],
+              "forms": [
+                "F-6",
+                "F-7"
+              ]
+            }
+          ]
+        },
+        "2026-12-08": {
+          "new": [
+            {
+              "type": "N-2",
+              "items": [
+                "Stress urinary incontinence 压力性尿失禁：检测到治疗"
+              ],
+              "forms": [
+                "F-2",
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-2",
+              "items": [
+                "Thoracic cage 胸廓骨性标志（胸骨角、肋弓、肋沟）",
+                "Pelvic outlet 骨盆下口标志（坐骨棘、坐骨结节、尾骨）"
+              ],
+              "forms": [
+                "F-6",
+                "F-9"
+              ]
+            }
+          ]
+        },
+        "2026-12-09": {
+          "new": [
+            {
+              "type": "N-4",
+              "items": [
+                "Postpartum diastasis recti abdominis 产后腹直肌分离案例"
+              ],
+              "forms": [
+                "F-3",
+                "F-4"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-4",
+              "items": [
+                "Intercostal nerves",
+                "Pudendal nerve"
+              ],
+              "forms": [
+                "F-8",
+                "F-11"
+              ]
+            }
+          ]
+        },
+        "2026-12-10": {
+          "new": [
+            {
+              "type": "N-5",
+              "items": [
+                "待定：本周论文记录还没做（需从打开的原文制作，放 daily/papers/）"
+              ],
+              "forms": [
+                "F-5"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-3",
+              "items": [
+                "Costovertebral and costotransverse joints 肋头关节与肋横突关节：韧带与运动"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            }
+          ]
+        },
+        "2026-12-11": {
+          "new": [
+            {
+              "type": "N-7",
+              "items": [
+                "Beevor sign",
+                "Carnett sign",
+                "Superficial abdominal reflex",
+                "Chest expansion measurement",
+                "Inter-rectus distance palpation"
+              ],
+              "forms": [
+                "F-1"
+              ]
+            }
+          ],
+          "consolidate": [
+            {
+              "type": "O-6",
+              "items": [
+                "Pump-handle and bucket-handle movement 泵柄与桶柄运动",
+                "Core cylinder and intra-abdominal pressure 核心圆筒与腹内压"
+              ],
+              "forms": [
+                "F-12"
+              ]
+            }
+          ]
+        },
+        "2026-12-12": {
+          "new": [],
+          "consolidate": [
+            {
+              "type": "quiz",
+              "items": [
+                "本周新旧混合小测"
+              ],
+              "forms": [
+                "F-6"
+              ]
+            },
+            {
+              "type": "review",
+              "items": [
+                "跨周间隔复习"
+              ],
+              "forms": [
+                "F-10"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "week": 10,

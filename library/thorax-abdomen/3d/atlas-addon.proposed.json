@@ -1,0 +1,175 @@
+{
+  "_note": {
+    "en": "PROPOSED, not exported. Thorax-abdomen 3D add-on: the muscles of this chapter that the bundled demo model lacks. Waiting for gui's yes (AN-43). The file is not named atlas-addon.json on purpose: CI treats that name as an exported add-on and checks its GLB. Source object names were read from the pinned Z-Anatomy Startup.blend on 2026-11-28. The source has no separate puborectalis mesh, so puborectalis stays a model gap. After approval: rename to atlas-addon.json, run site/build/atlas/build-addon.py thorax-abdomen, then write the position checks from the measured meshes and map the muscles in topic.json.",
+    "zh": "这是待确认的清单，还没有导出。胸壁、腹壁与盆底的 3D 附加模型：本章里自带演示模型没有的肌肉，等 gui 同意（AN-43）。文件名故意不叫 atlas-addon.json：CI 会把那个名字当成已导出的附加模型并检查它的 GLB。源对象名是 2026-11-28 从固定版本的 Z-Anatomy Startup.blend 里读出来的。源文件里没有单独的耻骨直肠肌网格，所以耻骨直肠肌仍是模型缺项。同意后：改名为 atlas-addon.json，运行 site/build/atlas/build-addon.py thorax-abdomen，再按实测网格写位置检查，并在 topic.json 里接上映射。"
+  },
+  "output": {
+    "glb": "public/models/z-anatomy-1.4.0-thorax-abdomen-addon.glb",
+    "metadata": "public/models/thorax-abdomen-addon.metadata.json",
+    "provenance": "public/models/thorax-abdomen-addon.provenance.json"
+  },
+  "batch": {
+    "description": "Trunk wall muscles missing from the bundled z-anatomy-1.4.0 demo model.",
+    "groups": [
+      {
+        "id": "diaphragm",
+        "name": "Diaphragm",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Diaphragm"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "external-intercostal-muscles",
+        "name": "External Intercostals",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "External intercostal muscles.l",
+          "External intercostal muscles.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "internal-intercostal-muscles",
+        "name": "Internal Intercostals",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Internal intercostal muscles.l",
+          "Internal intercostal muscles.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "innermost-intercostal-muscles",
+        "name": "Innermost Intercostals",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Innermost intercostal muscles.l",
+          "Innermost intercostal muscles.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "transversus-thoracis-muscles",
+        "name": "Transversus Thoracis",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Transversus thoracis muscle.l",
+          "Transversus thoracis muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "pubococcygeus-muscles",
+        "name": "Pubococcygeus",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Pubococcygeus muscle.l",
+          "Pubococcygeus muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "iliococcygeus-muscles",
+        "name": "Iliococcygeus",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Iliococcygeus muscle.l",
+          "Iliococcygeus muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      },
+      {
+        "id": "coccygeus-muscles",
+        "name": "Coccygeus",
+        "system": "muscular",
+        "expandSourceParts": true,
+        "sourceObjects": [
+          "Coccygeus muscle.l",
+          "Coccygeus muscle.r"
+        ],
+        "material": {
+          "color": [
+            0.62,
+            0.22,
+            0.24,
+            1.0
+          ],
+          "roughness": 0.48
+        },
+        "decimate": 0.7
+      }
+    ]
+  }
+}

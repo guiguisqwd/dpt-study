@@ -1,0 +1,806 @@
+{
+ "01": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Jugular notch",
+    "zh": "颈静脉切迹"
+   },
+   {
+    "en": "Manubrium",
+    "zh": "胸骨柄"
+   },
+   {
+    "en": "Sternal angle (second costal cartilage)",
+    "zh": "胸骨角（平第 2 肋软骨）"
+   },
+   {
+    "en": "Body of sternum",
+    "zh": "胸骨体"
+   },
+   {
+    "en": "Xiphoid process",
+    "zh": "剑突"
+   },
+   {
+    "en": "First rib",
+    "zh": "第 1 肋"
+   },
+   {
+    "en": "Costal cartilage",
+    "zh": "肋软骨"
+   },
+   {
+    "en": "Costal margin (cartilages 7–10)",
+    "zh": "肋弓（第 7–10 肋软骨）"
+   },
+   {
+    "en": "Costochondral joint",
+    "zh": "肋软骨结合"
+   },
+   {
+    "en": "Sternocostal joint",
+    "zh": "胸肋关节"
+   },
+   {
+    "en": "Floating ribs (11 and 12)",
+    "zh": "浮肋（第 11、12 肋）"
+   },
+   {
+    "en": "True ribs 1–7",
+    "zh": "真肋：第 1–7 肋"
+   },
+   {
+    "en": "False ribs 8–12",
+    "zh": "假肋：第 8–12 肋"
+   },
+   {
+    "en": "Sternal angle",
+    "zh": "胸骨角"
+   },
+   {
+    "en": "T4–T5 level",
+    "zh": "约平第 4–5 胸椎"
+   },
+   {
+    "en": "Thoracic vertebrae T1–T12",
+    "zh": "第 1–12 胸椎"
+   }
+  ]
+ },
+ "02": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Head of the rib",
+    "zh": "肋头"
+   },
+   {
+    "en": "Tubercle of the rib",
+    "zh": "肋结节"
+   },
+   {
+    "en": "Angle of the rib",
+    "zh": "肋角"
+   },
+   {
+    "en": "Body of the rib",
+    "zh": "肋体"
+   },
+   {
+    "en": "Costochondral joint",
+    "zh": "肋软骨结合"
+   },
+   {
+    "en": "Costal cartilage",
+    "zh": "肋软骨"
+   },
+   {
+    "en": "Sternocostal joint",
+    "zh": "胸肋关节"
+   },
+   {
+    "en": "Body of sternum",
+    "zh": "胸骨体"
+   },
+   {
+    "en": "Costovertebral joint",
+    "zh": "肋头关节（肋椎关节）"
+   },
+   {
+    "en": "Costotransverse joint",
+    "zh": "肋横突关节"
+   },
+   {
+    "en": "Vertebral body of T7",
+    "zh": "第 7 胸椎椎体"
+   },
+   {
+    "en": "Transverse process",
+    "zh": "横突"
+   },
+   {
+    "en": "Spinous process",
+    "zh": "棘突"
+   }
+  ]
+ },
+ "03": {
+  "oi": [
+   {
+    "muscleId": "external-intercostals",
+    "originEn": "inferior border of the rib above",
+    "originZh": "上位肋下缘",
+    "insertionEn": "superior border of the rib below",
+    "insertionZh": "下位肋上缘"
+   },
+   {
+    "muscleId": "internal-intercostals",
+    "originEn": "costal groove of the rib above",
+    "originZh": "上位肋的肋沟",
+    "insertionEn": "superior border of the rib below, deep layer",
+    "insertionZh": "下位肋上缘（深层）"
+   },
+   {
+    "muscleId": "innermost-intercostals",
+    "originEn": "inner lip of the costal groove above",
+    "originZh": "上位肋肋沟内唇",
+    "insertionEn": "inner surface of the rib below",
+    "insertionZh": "下位肋内面"
+   },
+   {
+    "muscleId": "transversus-thoracis",
+    "originEn": "back of the lower sternum and xiphoid",
+    "originZh": "胸骨体下部和剑突后面",
+    "insertionEn": "inner surfaces of costal cartilages 2–6",
+    "insertionZh": "第 2–6 肋软骨内面"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Costal groove",
+    "zh": "肋沟"
+   },
+   {
+    "en": "Intercostal vein, artery, nerve (VAN, top to bottom)",
+    "zh": "肋间静脉、动脉、神经（自上而下）"
+   },
+   {
+    "en": "Innermost intercostals",
+    "zh": "肋间最内肌"
+   },
+   {
+    "en": "Endothoracic fascia",
+    "zh": "胸内筋膜"
+   },
+   {
+    "en": "Parietal pleura",
+    "zh": "壁层胸膜"
+   },
+   {
+    "en": "Collateral branches",
+    "zh": "侧副支"
+   },
+   {
+    "en": "External intercostals",
+    "zh": "肋间外肌"
+   },
+   {
+    "en": "Internal intercostals",
+    "zh": "肋间内肌"
+   },
+   {
+    "en": "Costal cartilage 2",
+    "zh": "第 2 肋软骨"
+   },
+   {
+    "en": "Xiphoid process",
+    "zh": "剑突"
+   }
+  ]
+ },
+ "04": {
+  "oi": [
+   {
+    "muscleId": "diaphragm",
+    "originEn": "xiphoid process, lower six costal cartilages and ribs, L1–L3 vertebrae (crura)",
+    "originZh": "剑突、下 6 对肋软骨和肋骨、第 1–3 腰椎（膈脚）",
+    "insertionEn": "central tendon",
+    "insertionZh": "中心腱"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Caval opening, T8: inferior vena cava",
+    "zh": "腔静脉孔，平 T8：下腔静脉"
+   },
+   {
+    "en": "Oesophageal hiatus, T10: oesophagus, vagal trunks",
+    "zh": "食管裂孔，平 T10：食管、迷走神经干"
+   },
+   {
+    "en": "Aortic hiatus, T12: aorta, thoracic duct, azygos vein",
+    "zh": "主动脉裂孔，平 T12：主动脉、胸导管、奇静脉"
+   },
+   {
+    "en": "Right dome (higher, over the liver)",
+    "zh": "右穹窿（较高，下方是肝）"
+   },
+   {
+    "en": "Left dome",
+    "zh": "左穹窿"
+   },
+   {
+    "en": "Central tendon",
+    "zh": "中心腱"
+   },
+   {
+    "en": "Costal part: from the lower six costal cartilages and ribs",
+    "zh": "肋部：起自下 6 对肋软骨和肋骨"
+   },
+   {
+    "en": "Sternal part: from the xiphoid process",
+    "zh": "胸骨部：起自剑突"
+   },
+   {
+    "en": "Right crus: L1–L3 vertebrae",
+    "zh": "右膈脚：第 1–3 腰椎"
+   },
+   {
+    "en": "Left crus: L1–L2 vertebrae",
+    "zh": "左膈脚：第 1–2 腰椎"
+   },
+   {
+    "en": "Medial arcuate ligament (over psoas major)",
+    "zh": "内侧弓状韧带（跨过腰大肌）"
+   },
+   {
+    "en": "Lateral arcuate ligament (over quadratus lumborum)",
+    "zh": "外侧弓状韧带（跨过腰方肌）"
+   }
+  ]
+ },
+ "05": {
+  "oi": [
+   {
+    "muscleId": "rectus-abdominis",
+    "originEn": "pubic symphysis and pubic crest",
+    "originZh": "耻骨联合和耻骨嵴",
+    "insertionEn": "xiphoid process and costal cartilages 5–7",
+    "insertionZh": "剑突和第 5–7 肋软骨"
+   },
+   {
+    "muscleId": "pyramidalis",
+    "originEn": "pubic crest and pubic symphysis",
+    "originZh": "耻骨嵴和耻骨联合",
+    "insertionEn": "linea alba",
+    "insertionZh": "白线"
+   },
+   {
+    "muscleId": "external-oblique",
+    "originEn": "outer surfaces of ribs 5–12",
+    "originZh": "第 5–12 肋外面",
+    "insertionEn": "linea alba, pubic tubercle, anterior iliac crest",
+    "insertionZh": "白线、耻骨结节、髂嵴前部"
+   },
+   {
+    "muscleId": "internal-oblique",
+    "originEn": "thoracolumbar fascia and iliac crest",
+    "originZh": "胸腰筋膜和髂嵴",
+    "insertionEn": "ribs 10–12, linea alba, pubic crest",
+    "insertionZh": "第 10–12 肋、白线、耻骨嵴"
+   },
+   {
+    "muscleId": "transversus-abdominis",
+    "originEn": "costal cartilages 7–12, thoracolumbar fascia, iliac crest",
+    "originZh": "第 7–12 肋软骨、胸腰筋膜、髂嵴",
+    "insertionEn": "linea alba and pubic crest",
+    "insertionZh": "白线和耻骨嵴"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Inguinal ligament",
+    "zh": "腹股沟韧带"
+   },
+   {
+    "en": "Linea alba",
+    "zh": "白线"
+   },
+   {
+    "en": "Tendinous intersections",
+    "zh": "腱划"
+   },
+   {
+    "en": "Linea semilunaris (lateral edge of rectus abdominis)",
+    "zh": "半月线（腹直肌外侧缘）"
+   }
+  ]
+ },
+ "06": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "External abdominal oblique",
+    "zh": "腹外斜肌"
+   },
+   {
+    "en": "Internal abdominal oblique",
+    "zh": "腹内斜肌"
+   },
+   {
+    "en": "Transversus abdominis",
+    "zh": "腹横肌"
+   },
+   {
+    "en": "Rectus abdominis",
+    "zh": "腹直肌"
+   },
+   {
+    "en": "Linea alba",
+    "zh": "白线"
+   },
+   {
+    "en": "Anterior layer: external oblique + half of internal oblique",
+    "zh": "前层：腹外斜肌腱膜 + 腹内斜肌腱膜的一半"
+   },
+   {
+    "en": "Posterior layer: half of internal oblique + transversus abdominis",
+    "zh": "后层：腹内斜肌腱膜的一半 + 腹横肌腱膜"
+   },
+   {
+    "en": "Anterior layer: all three aponeuroses",
+    "zh": "前层：三层腱膜全部在前"
+   },
+   {
+    "en": "No posterior layer: rectus abdominis rests on the transversalis fascia",
+    "zh": "没有后层：腹直肌后面直接贴着腹横筋膜"
+   },
+   {
+    "en": "Transversalis fascia (dashed)",
+    "zh": "腹横筋膜（虚线）"
+   },
+   {
+    "en": "Parietal peritoneum",
+    "zh": "壁层腹膜"
+   },
+   {
+    "en": "Arcuate line",
+    "zh": "弓状线"
+   },
+   {
+    "en": "Umbilicus (schematic position)",
+    "zh": "脐（示意位置）"
+   }
+  ]
+ },
+ "07": {
+  "oi": [
+   {
+    "muscleId": "puborectalis",
+    "originEn": "back of the body of the pubis",
+    "originZh": "耻骨体后面",
+    "insertionEn": "sling behind the anorectal junction (no bone)",
+    "insertionZh": "肛管直肠连接处后方的吊带（无骨性止点）"
+   },
+   {
+    "muscleId": "pubococcygeus",
+    "originEn": "back of the pubis, front of the tendinous arch",
+    "originZh": "耻骨后面、腱弓前部",
+    "insertionEn": "anococcygeal ligament, coccyx, perineal body",
+    "insertionZh": "肛尾韧带、尾骨、会阴体"
+   },
+   {
+    "muscleId": "iliococcygeus",
+    "originEn": "tendinous arch of levator ani, ischial spine",
+    "originZh": "肛提肌腱弓、坐骨棘",
+    "insertionEn": "coccyx and anococcygeal ligament",
+    "insertionZh": "尾骨和肛尾韧带"
+   },
+   {
+    "muscleId": "coccygeus",
+    "originEn": "ischial spine",
+    "originZh": "坐骨棘",
+    "insertionEn": "lateral margin of the lower sacrum and coccyx",
+    "insertionZh": "骶骨下部和尾骨的外侧缘"
+   }
+  ],
+  "labels": [
+   {
+    "en": "Puborectalis (U-shaped sling)",
+    "zh": "耻骨直肠肌（U 形吊带）"
+   },
+   {
+    "en": "Pubococcygeus",
+    "zh": "耻骨尾骨肌"
+   },
+   {
+    "en": "Iliococcygeus",
+    "zh": "髂骨尾骨肌"
+   },
+   {
+    "en": "Coccygeus (on the sacrospinous ligament)",
+    "zh": "尾骨肌（贴在骶棘韧带上）"
+   },
+   {
+    "en": "Tendinous arch of levator ani",
+    "zh": "肛提肌腱弓"
+   },
+   {
+    "en": "Ischial spine",
+    "zh": "坐骨棘"
+   },
+   {
+    "en": "Pubic symphysis",
+    "zh": "耻骨联合"
+   },
+   {
+    "en": "Urethra",
+    "zh": "尿道"
+   },
+   {
+    "en": "Vagina (female)",
+    "zh": "阴道（女性）"
+   },
+   {
+    "en": "Perineal body",
+    "zh": "会阴体"
+   },
+   {
+    "en": "Anal canal and rectum",
+    "zh": "肛管与直肠"
+   },
+   {
+    "en": "Anococcygeal ligament",
+    "zh": "肛尾韧带"
+   },
+   {
+    "en": "Coccyx",
+    "zh": "尾骨"
+   },
+   {
+    "en": "Urogenital hiatus (gap between the two sides)",
+    "zh": "尿生殖裂孔（两侧肌之间的裂隙）"
+   }
+  ]
+ },
+ "08": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Spinal cord",
+    "zh": "脊髓"
+   },
+   {
+    "en": "Sympathetic ganglion and rami communicantes",
+    "zh": "交感神经节与交通支"
+   },
+   {
+    "en": "Posterior ramus (to the back muscles and skin)",
+    "zh": "后支（到背部肌和皮肤）"
+   },
+   {
+    "en": "Lateral cutaneous branch",
+    "zh": "外侧皮支"
+   },
+   {
+    "en": "Anterior cutaneous branch",
+    "zh": "前皮支"
+   },
+   {
+    "en": "Sternum",
+    "zh": "胸骨"
+   },
+   {
+    "en": "Seventh rib",
+    "zh": "第 7 肋"
+   },
+   {
+    "en": "T7 vertebra",
+    "zh": "第 7 胸椎"
+   },
+   {
+    "en": "Skin",
+    "zh": "皮肤"
+   }
+  ]
+ },
+ "09": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Intercostal nerves (in the costal groove)",
+    "zh": "肋间神经（走在肋沟内）"
+   },
+   {
+    "en": "Thoraco-abdominal nerves T7–T11",
+    "zh": "胸腹神经 T7–T11"
+   },
+   {
+    "en": "They pass behind the costal margin",
+    "zh": "在肋弓后方离开肋间隙"
+   },
+   {
+    "en": "Subcostal nerve T12",
+    "zh": "肋下神经 T12"
+   },
+   {
+    "en": "Iliohypogastric nerve L1",
+    "zh": "髂腹下神经 L1"
+   },
+   {
+    "en": "Ilioinguinal nerve L1",
+    "zh": "髂腹股沟神经 L1"
+   },
+   {
+    "en": "Anterior cutaneous branches (through the rectus sheath)",
+    "zh": "前皮支（穿过腹直肌鞘）"
+   },
+   {
+    "en": "Rectus abdominis (faint)",
+    "zh": "腹直肌（淡色）"
+   },
+   {
+    "en": "T4: nipple",
+    "zh": "T4：乳头平面"
+   },
+   {
+    "en": "T6: xiphoid process",
+    "zh": "T6：剑突平面"
+   },
+   {
+    "en": "T10: umbilicus",
+    "zh": "T10：脐平面"
+   },
+   {
+    "en": "T12: just above the inguinal ligament",
+    "zh": "T12：腹股沟韧带稍上方"
+   },
+   {
+    "en": "L1: groin",
+    "zh": "L1：腹股沟"
+   }
+  ]
+ },
+ "10": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Sacrum",
+    "zh": "骶骨"
+   },
+   {
+    "en": "Greater sciatic foramen",
+    "zh": "坐骨大孔"
+   },
+   {
+    "en": "Sacrospinous ligament",
+    "zh": "骶棘韧带"
+   },
+   {
+    "en": "Ischial spine",
+    "zh": "坐骨棘"
+   },
+   {
+    "en": "Lesser sciatic foramen",
+    "zh": "坐骨小孔"
+   },
+   {
+    "en": "Sacrotuberous ligament",
+    "zh": "骶结节韧带"
+   },
+   {
+    "en": "Ischial tuberosity",
+    "zh": "坐骨结节"
+   },
+   {
+    "en": "Coccyx",
+    "zh": "尾骨"
+   },
+   {
+    "en": "Piriformis (the nerve leaves below it)",
+    "zh": "梨状肌（神经从它下方穿出）"
+   },
+   {
+    "en": "Inferior rectal nerve",
+    "zh": "肛（直肠下）神经"
+   },
+   {
+    "en": "Perineal nerve",
+    "zh": "会阴神经"
+   },
+   {
+    "en": "Dorsal nerve of the penis or clitoris (dashed, runs forward)",
+    "zh": "阴茎（阴蒂）背神经（虚线，向前走）"
+   },
+   {
+    "en": "Anus",
+    "zh": "肛门"
+   }
+  ]
+ },
+ "11": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Axis: nearly side to side, through the two posterior joints",
+    "zh": "轴：接近左右方向，穿过后方两个关节"
+   },
+   {
+    "en": "Front ends and sternum move up and forward",
+    "zh": "肋骨前端和胸骨向前上方抬起"
+   },
+   {
+    "en": "Dashed lines = axis: nearly front to back, from the spine to the front of the rib",
+    "zh": "虚线 = 轴：接近前后方向，从脊柱到肋骨前端"
+   }
+  ]
+ },
+ "12": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Phrenic nerve (C3–C5)",
+    "zh": "膈神经（C3–C5）"
+   },
+   {
+    "en": "End of expiration (dashed)",
+    "zh": "呼气末的膈（虚线）"
+   },
+   {
+    "en": "Inspiration: flatter and lower",
+    "zh": "吸气时的膈：变平并下降"
+   },
+   {
+    "en": "Lower ribs move up and out",
+    "zh": "下位肋骨向外上方抬起"
+   },
+   {
+    "en": "External intercostals lift the ribs",
+    "zh": "肋间外肌上提肋骨"
+   },
+   {
+    "en": "Roof: diaphragm",
+    "zh": "顶：膈"
+   },
+   {
+    "en": "Floor: pelvic floor",
+    "zh": "底：盆底（肛提肌）"
+   },
+   {
+    "en": "Front and sides: abdominal wall",
+    "zh": "前壁和侧壁：腹横肌等腹肌"
+   },
+   {
+    "en": "Back: deep back muscles",
+    "zh": "后壁：多裂肌等背部深层肌"
+   },
+   {
+    "en": "Lumbar spine",
+    "zh": "腰椎"
+   }
+  ]
+ },
+ "13": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "Indirect hernia: enters the deep ring, lateral to the vessels",
+    "zh": "斜疝：从血管外侧进入深环"
+   },
+   {
+    "en": "Direct hernia: through the triangle, medial to the vessels",
+    "zh": "直疝：在血管内侧穿过三角"
+   },
+   {
+    "en": "Inferior epigastric vessels",
+    "zh": "腹壁下血管"
+   },
+   {
+    "en": "Rectus abdominis (lateral border)",
+    "zh": "腹直肌（外侧缘）"
+   },
+   {
+    "en": "Inguinal (Hesselbach) triangle",
+    "zh": "腹股沟（Hesselbach）三角"
+   },
+   {
+    "en": "Deep inguinal ring (in the transversalis fascia)",
+    "zh": "腹股沟管深环（在腹横筋膜上）"
+   },
+   {
+    "en": "Inguinal canal (3–5 cm)",
+    "zh": "腹股沟管（长 3–5 cm）"
+   },
+   {
+    "en": "Superficial inguinal ring (in the external oblique aponeurosis)",
+    "zh": "腹股沟管浅环（在腹外斜肌腱膜上）"
+   },
+   {
+    "en": "Pubic tubercle",
+    "zh": "耻骨结节"
+   },
+   {
+    "en": "Pubic symphysis",
+    "zh": "耻骨联合"
+   },
+   {
+    "en": "Anterior superior iliac spine (ASIS)",
+    "zh": "髂前上棘"
+   },
+   {
+    "en": "Inguinal ligament",
+    "zh": "腹股沟韧带"
+   },
+   {
+    "en": "Pubic crest",
+    "zh": "耻骨嵴"
+   }
+  ]
+ },
+ "14": {
+  "oi": [],
+  "labels": [
+   {
+    "en": "CV17 Danzhong",
+    "zh": "膻中：横平第 4 肋间隙，前正中线上"
+   },
+   {
+    "en": "LR14 Qimen",
+    "zh": "期门：第 6 肋间隙，前正中线旁开 4 寸"
+   },
+   {
+    "en": "CV12 Zhongwan",
+    "zh": "中脘：脐中上 4 寸，前正中线上"
+   },
+   {
+    "en": "LR13 Zhangmen",
+    "zh": "章门：第 11 肋游离端的下际"
+   },
+   {
+    "en": "ST25 Tianshu",
+    "zh": "天枢：横平脐中，前正中线旁开 2 寸"
+   },
+   {
+    "en": "CV4 Guanyuan",
+    "zh": "关元：脐中下 3 寸，前正中线上"
+   },
+   {
+    "en": "Jugular notch (Tiantu)",
+    "zh": "颈静脉切迹（天突）"
+   },
+   {
+    "en": "Tip of the xiphoid process",
+    "zh": "剑突尖"
+   },
+   {
+    "en": "Centre of the umbilicus",
+    "zh": "脐中"
+   },
+   {
+    "en": "Upper border of the pubic symphysis",
+    "zh": "耻骨联合上缘"
+   },
+   {
+    "en": "CV1 Huiyin",
+    "zh": "会阴：前后二阴连线的中点"
+   },
+   {
+    "en": "GV1 Changqiang",
+    "zh": "长强：尾骨端与肛门连线的中点"
+   },
+   {
+    "en": "Posterior border of the genitals",
+    "zh": "外生殖器后缘"
+   },
+   {
+    "en": "Anus",
+    "zh": "肛门"
+   },
+   {
+    "en": "Tip of the coccyx",
+    "zh": "尾骨尖"
+   }
+  ]
+ }
+}

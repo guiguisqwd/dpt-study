@@ -1,0 +1,1446 @@
+{
+ "schemaVersion": 1,
+ "id": "thorax-abdomen",
+ "title": {
+  "en": "Thorax, abdomen and pelvic floor",
+  "zh": "胸壁、腹壁与盆底"
+ },
+ "summary": {
+  "en": "The walls of the trunk: the thoracic cage and intercostal muscles, the diaphragm, the abdominal wall with the rectus sheath and inguinal canal, and the pelvic floor, with nerves, breathing and trunk movement, clinical anatomy and review.",
+  "zh": "躯干的壁：胸廓与肋间肌、膈、腹壁（含腹直肌鞘和腹股沟管）以及盆底，包括神经、呼吸与躯干运动、临床解剖与复习。"
+ },
+ "region": {
+  "en": "Thoracic wall, abdominal wall and pelvic floor",
+  "zh": "胸壁、腹壁与盆底"
+ },
+ "status": "draft",
+ "adapter": "standard",
+ "viewer": {
+  "enabled": true,
+  "defaultTerm": "seventh-rib",
+  "terms": [
+   {
+    "id": "manubrium",
+    "name": {
+     "en": "Manubrium of sternum",
+     "zh": "胸骨柄"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-manubrium-of-sternum",
+     "left": "skeleton-manubrium-of-sternum"
+    }
+   },
+   {
+    "id": "body-of-sternum",
+    "name": {
+     "en": "Body of sternum",
+     "zh": "胸骨体"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-body-of-sternum",
+     "left": "skeleton-body-of-sternum"
+    }
+   },
+   {
+    "id": "xiphoid-process",
+    "name": {
+     "en": "Xiphoid process",
+     "zh": "剑突"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-xiphoid-process",
+     "left": "skeleton-xiphoid-process"
+    }
+   },
+   {
+    "id": "first-rib",
+    "name": {
+     "en": "First rib",
+     "zh": "第 1 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-first-rib-right",
+     "left": "skeleton-first-rib-left"
+    }
+   },
+   {
+    "id": "second-rib",
+    "name": {
+     "en": "Second rib",
+     "zh": "第 2 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-second-rib-right",
+     "left": "skeleton-second-rib-left"
+    }
+   },
+   {
+    "id": "third-rib",
+    "name": {
+     "en": "Third rib",
+     "zh": "第 3 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-third-rib-right",
+     "left": "skeleton-third-rib-left"
+    }
+   },
+   {
+    "id": "fourth-rib",
+    "name": {
+     "en": "Fourth rib",
+     "zh": "第 4 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-fourth-rib-right",
+     "left": "skeleton-fourth-rib-left"
+    }
+   },
+   {
+    "id": "fifth-rib",
+    "name": {
+     "en": "Fifth rib",
+     "zh": "第 5 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-fifth-rib-right",
+     "left": "skeleton-fifth-rib-left"
+    }
+   },
+   {
+    "id": "sixth-rib",
+    "name": {
+     "en": "Sixth rib",
+     "zh": "第 6 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-sixth-rib-right",
+     "left": "skeleton-sixth-rib-left"
+    }
+   },
+   {
+    "id": "seventh-rib",
+    "name": {
+     "en": "Seventh rib",
+     "zh": "第 7 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-seventh-rib-right",
+     "left": "skeleton-seventh-rib-left"
+    }
+   },
+   {
+    "id": "eighth-rib",
+    "name": {
+     "en": "Eighth rib",
+     "zh": "第 8 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-eighth-rib-right",
+     "left": "skeleton-eighth-rib-left"
+    }
+   },
+   {
+    "id": "ninth-rib",
+    "name": {
+     "en": "Ninth rib",
+     "zh": "第 9 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-ninth-rib-right",
+     "left": "skeleton-ninth-rib-left"
+    }
+   },
+   {
+    "id": "tenth-rib",
+    "name": {
+     "en": "Tenth rib",
+     "zh": "第 10 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-tenth-rib-right",
+     "left": "skeleton-tenth-rib-left"
+    }
+   },
+   {
+    "id": "eleventh-rib",
+    "name": {
+     "en": "Eleventh rib",
+     "zh": "第 11 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-eleventh-rib-right",
+     "left": "skeleton-eleventh-rib-left"
+    }
+   },
+   {
+    "id": "twelfth-rib",
+    "name": {
+     "en": "Twelfth rib",
+     "zh": "第 12 肋"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-twelfth-rib-right",
+     "left": "skeleton-twelfth-rib-left"
+    }
+   },
+   {
+    "id": "vertebra-t1",
+    "name": {
+     "en": "Vertebra T1",
+     "zh": "第 1 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t1",
+     "left": "skeleton-vertebra-t1"
+    }
+   },
+   {
+    "id": "vertebra-t2",
+    "name": {
+     "en": "Vertebra T2",
+     "zh": "第 2 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t2",
+     "left": "skeleton-vertebra-t2"
+    }
+   },
+   {
+    "id": "vertebra-t3",
+    "name": {
+     "en": "Vertebra T3",
+     "zh": "第 3 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t3",
+     "left": "skeleton-vertebra-t3"
+    }
+   },
+   {
+    "id": "vertebra-t4",
+    "name": {
+     "en": "Vertebra T4",
+     "zh": "第 4 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t4",
+     "left": "skeleton-vertebra-t4"
+    }
+   },
+   {
+    "id": "vertebra-t5",
+    "name": {
+     "en": "Vertebra T5",
+     "zh": "第 5 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t5",
+     "left": "skeleton-vertebra-t5"
+    }
+   },
+   {
+    "id": "vertebra-t6",
+    "name": {
+     "en": "Vertebra T6",
+     "zh": "第 6 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t6",
+     "left": "skeleton-vertebra-t6"
+    }
+   },
+   {
+    "id": "vertebra-t7",
+    "name": {
+     "en": "Vertebra T7",
+     "zh": "第 7 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t7",
+     "left": "skeleton-vertebra-t7"
+    }
+   },
+   {
+    "id": "vertebra-t8",
+    "name": {
+     "en": "Vertebra T8",
+     "zh": "第 8 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t8",
+     "left": "skeleton-vertebra-t8"
+    }
+   },
+   {
+    "id": "vertebra-t9",
+    "name": {
+     "en": "Vertebra T9",
+     "zh": "第 9 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t9",
+     "left": "skeleton-vertebra-t9"
+    }
+   },
+   {
+    "id": "vertebra-t10",
+    "name": {
+     "en": "Vertebra T10",
+     "zh": "第 10 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t10",
+     "left": "skeleton-vertebra-t10"
+    }
+   },
+   {
+    "id": "vertebra-t11",
+    "name": {
+     "en": "Vertebra T11",
+     "zh": "第 11 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t11",
+     "left": "skeleton-vertebra-t11"
+    }
+   },
+   {
+    "id": "vertebra-t12",
+    "name": {
+     "en": "Vertebra T12",
+     "zh": "第 12 胸椎"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-vertebra-t12",
+     "left": "skeleton-vertebra-t12"
+    }
+   },
+   {
+    "id": "hip-bone",
+    "name": {
+     "en": "Hip bone",
+     "zh": "髋骨"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-hip-bone-right",
+     "left": "skeleton-hip-bone-left"
+    }
+   },
+   {
+    "id": "sacrum",
+    "name": {
+     "en": "Sacrum",
+     "zh": "骶骨"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-sacrum",
+     "left": "skeleton-sacrum"
+    }
+   },
+   {
+    "id": "coccyx",
+    "name": {
+     "en": "Coccyx",
+     "zh": "尾骨"
+    },
+    "kind": "bone",
+    "structures": {
+     "right": "skeleton-coccyx",
+     "left": "skeleton-coccyx"
+    }
+   },
+   {
+    "id": "rectus-abdominis",
+    "name": {
+     "en": "Rectus abdominis",
+     "zh": "腹直肌"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "rectus-abdominis-rectus-abdominis-muscle-right",
+     "left": "rectus-abdominis-rectus-abdominis-muscle-left"
+    }
+   },
+   {
+    "id": "external-oblique",
+    "name": {
+     "en": "External abdominal oblique",
+     "zh": "腹外斜肌"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "external-abdominal-obliques-external-abdominal-oblique-muscle-right",
+     "left": "external-abdominal-obliques-external-abdominal-oblique-muscle-left"
+    }
+   },
+   {
+    "id": "internal-oblique",
+    "name": {
+     "en": "Internal abdominal oblique",
+     "zh": "腹内斜肌"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "internal-abdominal-obliques-internal-abdominal-oblique-muscle-right",
+     "left": "internal-abdominal-obliques-internal-abdominal-oblique-muscle-left"
+    }
+   },
+   {
+    "id": "transversus-abdominis",
+    "name": {
+     "en": "Transversus abdominis",
+     "zh": "腹横肌"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "transversus-abdominis-transversus-abdominis-muscle-right",
+     "left": "transversus-abdominis-transversus-abdominis-muscle-left"
+    }
+   },
+   {
+    "id": "pyramidalis",
+    "name": {
+     "en": "Pyramidalis",
+     "zh": "锥状肌"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "pyramidalis-muscles-pyramidalis-muscle-right",
+     "left": "pyramidalis-muscles-pyramidalis-muscle-left"
+    }
+   },
+   {
+    "id": "inguinal-ligament",
+    "name": {
+     "en": "Inguinal ligament",
+     "zh": "腹股沟韧带"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "inguinal-ligaments-inguinal-ligament-right",
+     "left": "inguinal-ligaments-inguinal-ligament-left"
+    }
+   },
+   {
+    "id": "linea-alba",
+    "name": {
+     "en": "Linea alba",
+     "zh": "白线"
+    },
+    "kind": "muscle",
+    "structures": {
+     "right": "linea-alba",
+     "left": "linea-alba"
+    }
+   }
+  ]
+ },
+ "structures": [
+  {
+   "id": "sternum",
+   "kind": "bone",
+   "name": {
+    "en": "Sternum",
+    "zh": "胸骨"
+   },
+   "chapters": [
+    "anatomy",
+    "movement",
+    "clinical"
+   ],
+   "modelTermId": "body-of-sternum"
+  },
+  {
+   "id": "manubrium",
+   "kind": "bone",
+   "name": {
+    "en": "Manubrium",
+    "zh": "胸骨柄"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "manubrium"
+  },
+  {
+   "id": "xiphoid-process",
+   "kind": "bone",
+   "name": {
+    "en": "Xiphoid process",
+    "zh": "剑突"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical"
+   ],
+   "modelTermId": "xiphoid-process"
+  },
+  {
+   "id": "ribs",
+   "kind": "bone",
+   "name": {
+    "en": "Ribs",
+    "zh": "肋骨"
+   },
+   "chapters": [
+    "anatomy",
+    "movement",
+    "clinical"
+   ],
+   "modelTermId": "seventh-rib"
+  },
+  {
+   "id": "first-rib",
+   "kind": "bone",
+   "name": {
+    "en": "First rib",
+    "zh": "第 1 肋"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "first-rib"
+  },
+  {
+   "id": "twelfth-rib",
+   "kind": "bone",
+   "name": {
+    "en": "Twelfth rib",
+    "zh": "第 12 肋"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": "twelfth-rib"
+  },
+  {
+   "id": "thoracic-vertebrae",
+   "kind": "bone",
+   "name": {
+    "en": "Thoracic vertebrae",
+    "zh": "胸椎"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "vertebra-t7"
+  },
+  {
+   "id": "hip-bone",
+   "kind": "bone",
+   "name": {
+    "en": "Hip bone",
+    "zh": "髋骨"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "sacrum",
+   "kind": "bone",
+   "name": {
+    "en": "Sacrum",
+    "zh": "骶骨"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "sacrum"
+  },
+  {
+   "id": "coccyx",
+   "kind": "bone",
+   "name": {
+    "en": "Coccyx",
+    "zh": "尾骨"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "coccyx"
+  },
+  {
+   "id": "costovertebral-joint",
+   "kind": "joint",
+   "name": {
+    "en": "Costovertebral joint",
+    "zh": "肋头关节（肋椎关节）"
+   },
+   "chapters": [
+    "anatomy",
+    "movement"
+   ],
+   "modelTermId": null,
+   "aliases": [
+    "costovertebral"
+   ]
+  },
+  {
+   "id": "costotransverse-joint",
+   "kind": "joint",
+   "name": {
+    "en": "Costotransverse joint",
+    "zh": "肋横突关节"
+   },
+   "chapters": [
+    "anatomy",
+    "movement"
+   ],
+   "modelTermId": null,
+   "aliases": [
+    "costotransverse"
+   ]
+  },
+  {
+   "id": "sternocostal-joint",
+   "kind": "joint",
+   "name": {
+    "en": "Sternocostal joint",
+    "zh": "胸肋关节"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": null,
+   "aliases": [
+    "sternocostal"
+   ]
+  },
+  {
+   "id": "costochondral-joint",
+   "kind": "joint",
+   "name": {
+    "en": "Costochondral joint",
+    "zh": "肋软骨结合"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": null,
+   "aliases": [
+    "costochondral"
+   ]
+  },
+  {
+   "id": "pubic-symphysis",
+   "kind": "joint",
+   "name": {
+    "en": "Pubic symphysis",
+    "zh": "耻骨联合"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "sacrococcygeal-joint",
+   "kind": "joint",
+   "name": {
+    "en": "Sacrococcygeal joint",
+    "zh": "骶尾关节"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "jugular-notch",
+   "kind": "landmark",
+   "name": {
+    "en": "Jugular notch",
+    "zh": "颈静脉切迹"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "manubrium"
+  },
+  {
+   "id": "sternal-angle",
+   "kind": "landmark",
+   "name": {
+    "en": "Sternal angle",
+    "zh": "胸骨角"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "manubrium"
+  },
+  {
+   "id": "costal-cartilage",
+   "kind": "landmark",
+   "name": {
+    "en": "Costal cartilage",
+    "zh": "肋软骨"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "costal-margin",
+   "kind": "landmark",
+   "name": {
+    "en": "Costal margin",
+    "zh": "肋弓"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "head-of-rib",
+   "kind": "landmark",
+   "name": {
+    "en": "Head of the rib",
+    "zh": "肋头"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "seventh-rib"
+  },
+  {
+   "id": "tubercle-of-rib",
+   "kind": "landmark",
+   "name": {
+    "en": "Tubercle of the rib",
+    "zh": "肋结节"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "seventh-rib"
+  },
+  {
+   "id": "angle-of-rib",
+   "kind": "landmark",
+   "name": {
+    "en": "Angle of the rib",
+    "zh": "肋角"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation"
+   ],
+   "modelTermId": "seventh-rib"
+  },
+  {
+   "id": "costal-groove",
+   "kind": "landmark",
+   "name": {
+    "en": "Costal groove",
+    "zh": "肋沟"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "seventh-rib"
+  },
+  {
+   "id": "central-tendon",
+   "kind": "landmark",
+   "name": {
+    "en": "Central tendon",
+    "zh": "中心腱"
+   },
+   "chapters": [
+    "anatomy",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "linea-alba",
+   "kind": "landmark",
+   "name": {
+    "en": "Linea alba",
+    "zh": "白线"
+   },
+   "chapters": [
+    "anatomy",
+    "movement",
+    "clinical"
+   ],
+   "modelTermId": "linea-alba"
+  },
+  {
+   "id": "rectus-sheath",
+   "kind": "landmark",
+   "name": {
+    "en": "Rectus sheath",
+    "zh": "腹直肌鞘"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "arcuate-line",
+   "kind": "landmark",
+   "name": {
+    "en": "Arcuate line",
+    "zh": "弓状线"
+   },
+   "chapters": [
+    "anatomy",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "inguinal-ligament",
+   "kind": "landmark",
+   "name": {
+    "en": "Inguinal ligament",
+    "zh": "腹股沟韧带"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical"
+   ],
+   "modelTermId": "inguinal-ligament"
+  },
+  {
+   "id": "inguinal-canal",
+   "kind": "landmark",
+   "name": {
+    "en": "Inguinal canal",
+    "zh": "腹股沟管"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "anterior-superior-iliac-spine",
+   "kind": "landmark",
+   "name": {
+    "en": "Anterior superior iliac spine",
+    "zh": "髂前上棘"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "pubic-tubercle",
+   "kind": "landmark",
+   "name": {
+    "en": "Pubic tubercle",
+    "zh": "耻骨结节"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "pubic-crest",
+   "kind": "landmark",
+   "name": {
+    "en": "Pubic crest",
+    "zh": "耻骨嵴"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "ischial-spine",
+   "kind": "landmark",
+   "name": {
+    "en": "Ischial spine",
+    "zh": "坐骨棘"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "ischial-tuberosity",
+   "kind": "landmark",
+   "name": {
+    "en": "Ischial tuberosity",
+    "zh": "坐骨结节"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": "hip-bone"
+  },
+  {
+   "id": "tendinous-arch-of-levator-ani",
+   "kind": "landmark",
+   "name": {
+    "en": "Tendinous arch of levator ani",
+    "zh": "肛提肌腱弓"
+   },
+   "chapters": [
+    "anatomy"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "perineal-body",
+   "kind": "landmark",
+   "name": {
+    "en": "Perineal body",
+    "zh": "会阴体"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "anococcygeal-ligament",
+   "kind": "landmark",
+   "name": {
+    "en": "Anococcygeal ligament",
+    "zh": "肛尾韧带"
+   },
+   "chapters": [
+    "anatomy",
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "external-intercostals",
+   "kind": "muscle",
+   "name": {
+    "en": "External intercostals",
+    "zh": "肋间外肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "internal-intercostals",
+   "kind": "muscle",
+   "name": {
+    "en": "Internal intercostals",
+    "zh": "肋间内肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "innermost-intercostals",
+   "kind": "muscle",
+   "name": {
+    "en": "Innermost intercostals",
+    "zh": "肋间最内肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "transversus-thoracis",
+   "kind": "muscle",
+   "name": {
+    "en": "Transversus thoracis",
+    "zh": "胸横肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "diaphragm",
+   "kind": "muscle",
+   "name": {
+    "en": "Diaphragm",
+    "zh": "膈"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "rectus-abdominis",
+   "kind": "muscle",
+   "name": {
+    "en": "Rectus abdominis",
+    "zh": "腹直肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "rectus-abdominis"
+  },
+  {
+   "id": "external-oblique",
+   "kind": "muscle",
+   "name": {
+    "en": "External abdominal oblique",
+    "zh": "腹外斜肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "external-oblique",
+   "aliases": [
+    "external oblique"
+   ]
+  },
+  {
+   "id": "internal-oblique",
+   "kind": "muscle",
+   "name": {
+    "en": "Internal abdominal oblique",
+    "zh": "腹内斜肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "internal-oblique",
+   "aliases": [
+    "internal oblique"
+   ]
+  },
+  {
+   "id": "transversus-abdominis",
+   "kind": "muscle",
+   "name": {
+    "en": "Transversus abdominis",
+    "zh": "腹横肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": "transversus-abdominis"
+  },
+  {
+   "id": "pyramidalis",
+   "kind": "muscle",
+   "name": {
+    "en": "Pyramidalis",
+    "zh": "锥状肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement"
+   ],
+   "modelTermId": "pyramidalis"
+  },
+  {
+   "id": "levator-ani",
+   "kind": "muscle",
+   "name": {
+    "en": "Levator ani",
+    "zh": "肛提肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "puborectalis",
+   "kind": "muscle",
+   "name": {
+    "en": "Puborectalis",
+    "zh": "耻骨直肠肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "movement",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "pubococcygeus",
+   "kind": "muscle",
+   "name": {
+    "en": "Pubococcygeus",
+    "zh": "耻骨尾骨肌"
+   },
+   "chapters": [
+    "anatomy",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "iliococcygeus",
+   "kind": "muscle",
+   "name": {
+    "en": "Iliococcygeus",
+    "zh": "髂骨尾骨肌"
+   },
+   "chapters": [
+    "anatomy",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "coccygeus",
+   "kind": "muscle",
+   "name": {
+    "en": "Coccygeus",
+    "zh": "尾骨肌"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "intercostal-nerves",
+   "kind": "nerve",
+   "name": {
+    "en": "Intercostal nerves",
+    "zh": "肋间神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null,
+   "aliases": [
+    "intercostal nerve"
+   ]
+  },
+  {
+   "id": "intercostobrachial-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Intercostobrachial nerve",
+    "zh": "肋间臂神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "thoraco-abdominal-nerves",
+   "kind": "nerve",
+   "name": {
+    "en": "Thoraco-abdominal nerves",
+    "zh": "胸腹神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "subcostal-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Subcostal nerve",
+    "zh": "肋下神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "iliohypogastric-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Iliohypogastric nerve",
+    "zh": "髂腹下神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "ilioinguinal-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Ilioinguinal nerve",
+    "zh": "髂腹股沟神经"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "phrenic-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Phrenic nerve",
+    "zh": "膈神经"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "pudendal-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Pudendal nerve",
+    "zh": "阴部神经"
+   },
+   "chapters": [
+    "anatomy",
+    "innervation",
+    "clinical",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "nerve-to-levator-ani",
+   "kind": "nerve",
+   "name": {
+    "en": "Nerve to levator ani",
+    "zh": "肛提肌神经"
+   },
+   "chapters": [
+    "innervation"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "inferior-rectal-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Inferior rectal nerve",
+    "zh": "肛（直肠下）神经"
+   },
+   "chapters": [
+    "innervation",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "perineal-nerve",
+   "kind": "nerve",
+   "name": {
+    "en": "Perineal nerve",
+    "zh": "会阴神经"
+   },
+   "chapters": [
+    "innervation",
+    "review"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "cv17",
+   "kind": "acupoint",
+   "name": {
+    "en": "Danzhong",
+    "zh": "膻中"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "lr14",
+   "kind": "acupoint",
+   "name": {
+    "en": "Qimen",
+    "zh": "期门"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "lr13",
+   "kind": "acupoint",
+   "name": {
+    "en": "Zhangmen",
+    "zh": "章门"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "cv12",
+   "kind": "acupoint",
+   "name": {
+    "en": "Zhongwan",
+    "zh": "中脘"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "st25",
+   "kind": "acupoint",
+   "name": {
+    "en": "Tianshu",
+    "zh": "天枢"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "cv4",
+   "kind": "acupoint",
+   "name": {
+    "en": "Guanyuan",
+    "zh": "关元"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "cv1",
+   "kind": "acupoint",
+   "name": {
+    "en": "Huiyin",
+    "zh": "会阴"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  },
+  {
+   "id": "gv1",
+   "kind": "acupoint",
+   "name": {
+    "en": "Changqiang",
+    "zh": "长强"
+   },
+   "chapters": [
+    "clinical"
+   ],
+   "modelTermId": null
+  }
+ ]
+}
