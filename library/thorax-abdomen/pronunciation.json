@@ -1,0 +1,393 @@
+{
+ "_note": "AN-07: American English IPA and a respelling with the stressed syllable in capitals. Terms shared with earlier chapters (8) are copied from their pronunciation.json, where they were checked against the linked dictionary page. The 56 terms new to this chapter were written on 2026-11-28 and are NOT yet checked against the linked dictionary page: the dictionary site could not be opened from the authoring environment; multi-word entries link to a search-style page that may not exist. Acupoint names carry tone-marked Hanyu Pinyin.",
+ "unchecked": [
+  "Sternum",
+  "Manubrium",
+  "Xiphoid process",
+  "Ribs",
+  "First rib",
+  "Thoracic vertebrae",
+  "Costovertebral joint",
+  "Costotransverse joint",
+  "Sternocostal joint",
+  "Costochondral joint",
+  "Pubic symphysis",
+  "Sacrococcygeal joint",
+  "Jugular notch",
+  "Sternal angle",
+  "Costal cartilage",
+  "Costal margin",
+  "Head of the rib",
+  "Tubercle of the rib",
+  "Angle of the rib",
+  "Costal groove",
+  "Central tendon",
+  "Linea alba",
+  "Rectus sheath",
+  "Arcuate line",
+  "Inguinal ligament",
+  "Inguinal canal",
+  "Pubic crest",
+  "Ischial spine",
+  "Tendinous arch of levator ani",
+  "Perineal body",
+  "Anococcygeal ligament",
+  "External intercostals",
+  "Internal intercostals",
+  "Innermost intercostals",
+  "Transversus thoracis",
+  "Diaphragm",
+  "Rectus abdominis",
+  "External abdominal oblique",
+  "Internal abdominal oblique",
+  "Pyramidalis",
+  "Levator ani",
+  "Puborectalis",
+  "Pubococcygeus",
+  "Iliococcygeus",
+  "Coccygeus",
+  "Intercostal nerves",
+  "Intercostobrachial nerve",
+  "Thoraco-abdominal nerves",
+  "Subcostal nerve",
+  "Iliohypogastric nerve",
+  "Ilioinguinal nerve",
+  "Phrenic nerve",
+  "Pudendal nerve",
+  "Nerve to levator ani",
+  "Inferior rectal nerve",
+  "Perineal nerve"
+ ],
+ "terms": {
+  "Sternum": [
+   "/ˈstɝnəm/",
+   "STUR-nuhm",
+   "https://www.merriam-webster.com/medical/sternum"
+  ],
+  "Manubrium": [
+   "/məˈnubriəm/",
+   "muh-NOO-bree-uhm",
+   "https://www.merriam-webster.com/medical/manubrium"
+  ],
+  "Xiphoid process": [
+   "/ˈzɪfɔɪd ˈprɑsɛs/",
+   "ZIF-oyd PRAH-ses",
+   "https://www.merriam-webster.com/medical/xiphoid%20process"
+  ],
+  "Ribs": [
+   "/rɪbz/",
+   "RIBZ",
+   "https://www.merriam-webster.com/medical/ribs"
+  ],
+  "First rib": [
+   "/fɝst rɪb/",
+   "FURST rib",
+   "https://www.merriam-webster.com/medical/first%20rib"
+  ],
+  "Twelfth rib": [
+   "/ˈtwɛlfθ ˈrɪb/",
+   "TWELFTH RIB",
+   "https://www.merriam-webster.com/medical/rib"
+  ],
+  "Thoracic vertebrae": [
+   "/θəˈræsɪk ˈvɝtəbri/",
+   "thuh-RAS-ik VUR-tuh-bree",
+   "https://www.merriam-webster.com/medical/thoracic%20vertebrae"
+  ],
+  "Hip bone": [
+   "/ˈhɪp ˌboʊn/",
+   "HIP-bohn",
+   "https://www.merriam-webster.com/medical/hipbone"
+  ],
+  "Sacrum": [
+   "/ˈsækrəm/",
+   "SAK-ruhm",
+   "https://www.merriam-webster.com/medical/sacrum"
+  ],
+  "Coccyx": [
+   "/ˈkɑksɪks/",
+   "KAHK-siks",
+   "https://www.merriam-webster.com/medical/coccyx"
+  ],
+  "Costovertebral joint": [
+   "/ˌkɑstoʊˈvɝtəbrəl dʒɔɪnt/",
+   "kahs-toh-VUR-tuh-bruhl joynt",
+   "https://www.merriam-webster.com/medical/costovertebral%20joint"
+  ],
+  "Costotransverse joint": [
+   "/ˌkɑstoʊtrænsˈvɝs dʒɔɪnt/",
+   "kahs-toh-trans-VURS joynt",
+   "https://www.merriam-webster.com/medical/costotransverse%20joint"
+  ],
+  "Sternocostal joint": [
+   "/ˌstɝnoʊˈkɑstəl dʒɔɪnt/",
+   "stur-noh-KAHS-tuhl joynt",
+   "https://www.merriam-webster.com/medical/sternocostal%20joint"
+  ],
+  "Costochondral joint": [
+   "/ˌkɑstoʊˈkɑndrəl dʒɔɪnt/",
+   "kahs-toh-KAHN-druhl joynt",
+   "https://www.merriam-webster.com/medical/costochondral%20joint"
+  ],
+  "Pubic symphysis": [
+   "/ˈpjubɪk ˈsɪmfəsɪs/",
+   "PYOO-bik SIM-fuh-sis",
+   "https://www.merriam-webster.com/medical/pubic%20symphysis"
+  ],
+  "Sacrococcygeal joint": [
+   "/ˌseɪkroʊkɑkˈsɪdʒiəl dʒɔɪnt/",
+   "say-kroh-kahk-SIJ-ee-uhl joynt",
+   "https://www.merriam-webster.com/medical/sacrococcygeal%20joint"
+  ],
+  "Jugular notch": [
+   "/ˈdʒʌɡjələr nɑtʃ/",
+   "JUG-yuh-ler nahch",
+   "https://www.merriam-webster.com/medical/jugular%20notch"
+  ],
+  "Sternal angle": [
+   "/ˈstɝnəl ˈæŋɡəl/",
+   "STUR-nuhl ANG-guhl",
+   "https://www.merriam-webster.com/medical/sternal%20angle"
+  ],
+  "Costal cartilage": [
+   "/ˈkɑstəl ˈkɑrtəlɪdʒ/",
+   "KAHS-tuhl KAR-tuh-lij",
+   "https://www.merriam-webster.com/medical/costal%20cartilage"
+  ],
+  "Costal margin": [
+   "/ˈkɑstəl ˈmɑrdʒɪn/",
+   "KAHS-tuhl MAR-jin",
+   "https://www.merriam-webster.com/medical/costal%20margin"
+  ],
+  "Head of the rib": [
+   "/hɛd əv ðə rɪb/",
+   "HED uhv thuh rib",
+   "https://www.merriam-webster.com/medical/head%20of%20the%20rib"
+  ],
+  "Tubercle of the rib": [
+   "/ˈtubərkəl əv ðə rɪb/",
+   "TOO-ber-kuhl uhv thuh rib",
+   "https://www.merriam-webster.com/medical/tubercle%20of%20the%20rib"
+  ],
+  "Angle of the rib": [
+   "/ˈæŋɡəl əv ðə rɪb/",
+   "ANG-guhl uhv thuh rib",
+   "https://www.merriam-webster.com/medical/angle%20of%20the%20rib"
+  ],
+  "Costal groove": [
+   "/ˈkɑstəl ɡruv/",
+   "KAHS-tuhl groov",
+   "https://www.merriam-webster.com/medical/costal%20groove"
+  ],
+  "Central tendon": [
+   "/ˈsɛntrəl ˈtɛndən/",
+   "SEN-truhl TEN-duhn",
+   "https://www.merriam-webster.com/medical/central%20tendon"
+  ],
+  "Linea alba": [
+   "/ˈlɪniə ˈælbə/",
+   "LIN-ee-uh AL-buh",
+   "https://www.merriam-webster.com/medical/linea%20alba"
+  ],
+  "Rectus sheath": [
+   "/ˈrɛktəs ʃiθ/",
+   "REK-tuhs sheeth",
+   "https://www.merriam-webster.com/medical/rectus%20sheath"
+  ],
+  "Arcuate line": [
+   "/ˈɑrkjuət laɪn/",
+   "AR-kyoo-uht lyn",
+   "https://www.merriam-webster.com/medical/arcuate%20line"
+  ],
+  "Inguinal ligament": [
+   "/ˈɪŋɡwənəl ˈlɪɡəmənt/",
+   "ING-gwuh-nuhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/inguinal%20ligament"
+  ],
+  "Inguinal canal": [
+   "/ˈɪŋɡwənəl kəˈnæl/",
+   "ING-gwuh-nuhl kuh-NAL",
+   "https://www.merriam-webster.com/medical/inguinal%20canal"
+  ],
+  "Anterior superior iliac spine": [
+   "/ænˈtɪriər səˈpɪriər ˈɪliˌæk spaɪn/",
+   "an-TEER-ee-er suh-PEER-ee-er IL-ee-ak SPYNE",
+   "https://www.merriam-webster.com/medical/iliac"
+  ],
+  "Pubic tubercle": [
+   "/ˈpjubɪk ˈtubərkəl/",
+   "PYOO-bik TOO-ber-kuhl",
+   "https://www.merriam-webster.com/medical/pubic"
+  ],
+  "Pubic crest": [
+   "/ˈpjubɪk krɛst/",
+   "PYOO-bik krest",
+   "https://www.merriam-webster.com/medical/pubic%20crest"
+  ],
+  "Ischial spine": [
+   "/ˈɪskiəl spaɪn/",
+   "IS-kee-uhl spyn",
+   "https://www.merriam-webster.com/medical/ischial%20spine"
+  ],
+  "Ischial tuberosity": [
+   "/ˈɪskiəl ˌtubəˈrɑsəti/",
+   "IS-kee-uhl too-buh-RAH-suh-tee",
+   "https://www.merriam-webster.com/medical/ischium"
+  ],
+  "Tendinous arch of levator ani": [
+   "/ˈtɛndənəs ɑrtʃ əv ləˈveɪtər ˈeɪnaɪ/",
+   "TEN-duh-nuhs arch uhv luh-VAY-ter AY-ny",
+   "https://www.merriam-webster.com/medical/tendinous%20arch%20of%20levator%20ani"
+  ],
+  "Perineal body": [
+   "/ˌpɛrəˈniəl ˈbɑdi/",
+   "pair-uh-NEE-uhl BAH-dee",
+   "https://www.merriam-webster.com/medical/perineal%20body"
+  ],
+  "Anococcygeal ligament": [
+   "/ˌeɪnoʊkɑkˈsɪdʒiəl ˈlɪɡəmənt/",
+   "ay-noh-kahk-SIJ-ee-uhl LIG-uh-muhnt",
+   "https://www.merriam-webster.com/medical/anococcygeal%20ligament"
+  ],
+  "External intercostals": [
+   "/ɪkˈstɝnəl ˌɪntərˈkɑstəlz/",
+   "ik-STUR-nuhl in-ter-KAHS-tuhlz",
+   "https://www.merriam-webster.com/medical/external%20intercostals"
+  ],
+  "Internal intercostals": [
+   "/ɪnˈtɝnəl ˌɪntərˈkɑstəlz/",
+   "in-TUR-nuhl in-ter-KAHS-tuhlz",
+   "https://www.merriam-webster.com/medical/internal%20intercostals"
+  ],
+  "Innermost intercostals": [
+   "/ˈɪnərmoʊst ˌɪntərˈkɑstəlz/",
+   "IN-er-mohst in-ter-KAHS-tuhlz",
+   "https://www.merriam-webster.com/medical/innermost%20intercostals"
+  ],
+  "Transversus thoracis": [
+   "/trænsˈvɝsəs θəˈreɪsɪs/",
+   "trans-VUR-suhs thuh-RAY-sis",
+   "https://www.merriam-webster.com/medical/transversus%20thoracis"
+  ],
+  "Diaphragm": [
+   "/ˈdaɪəˌfræm/",
+   "DY-uh-fram",
+   "https://www.merriam-webster.com/medical/diaphragm"
+  ],
+  "Rectus abdominis": [
+   "/ˈrɛktəs æbˈdɑmənɪs/",
+   "REK-tuhs ab-DAH-muh-nis",
+   "https://www.merriam-webster.com/medical/rectus%20abdominis"
+  ],
+  "External abdominal oblique": [
+   "/ɪkˈstɝnəl æbˈdɑmənəl oʊˈblik/",
+   "ik-STUR-nuhl ab-DAH-muh-nuhl oh-BLEEK",
+   "https://www.merriam-webster.com/medical/external%20abdominal%20oblique"
+  ],
+  "Internal abdominal oblique": [
+   "/ɪnˈtɝnəl æbˈdɑmənəl oʊˈblik/",
+   "in-TUR-nuhl ab-DAH-muh-nuhl oh-BLEEK",
+   "https://www.merriam-webster.com/medical/internal%20abdominal%20oblique"
+  ],
+  "Transversus abdominis": [
+   "/trænsˈvɝsəs əbˈdɑmənəs/",
+   "trans-VUR-suhs uhb-DAH-muh-nuhs",
+   "https://www.merriam-webster.com/medical/transversus%20abdominis"
+  ],
+  "Pyramidalis": [
+   "/pɪˌræməˈdeɪlɪs/",
+   "pih-ram-uh-DAY-lis",
+   "https://www.merriam-webster.com/medical/pyramidalis"
+  ],
+  "Levator ani": [
+   "/ləˈveɪtər ˈeɪnaɪ/",
+   "luh-VAY-ter AY-ny",
+   "https://www.merriam-webster.com/medical/levator%20ani"
+  ],
+  "Puborectalis": [
+   "/ˌpjuboʊrɛkˈteɪlɪs/",
+   "pyoo-boh-rek-TAY-lis",
+   "https://www.merriam-webster.com/medical/puborectalis"
+  ],
+  "Pubococcygeus": [
+   "/ˌpjuboʊkɑkˈsɪdʒiəs/",
+   "pyoo-boh-kahk-SIJ-ee-uhs",
+   "https://www.merriam-webster.com/medical/pubococcygeus"
+  ],
+  "Iliococcygeus": [
+   "/ˌɪlioʊkɑkˈsɪdʒiəs/",
+   "il-ee-oh-kahk-SIJ-ee-uhs",
+   "https://www.merriam-webster.com/medical/iliococcygeus"
+  ],
+  "Coccygeus": [
+   "/kɑkˈsɪdʒiəs/",
+   "kahk-SIJ-ee-uhs",
+   "https://www.merriam-webster.com/medical/coccygeus"
+  ],
+  "Intercostal nerves": [
+   "/ˌɪntərˈkɑstəl nɝvz/",
+   "in-ter-KAHS-tuhl nurvz",
+   "https://www.merriam-webster.com/medical/intercostal%20nerves"
+  ],
+  "Intercostobrachial nerve": [
+   "/ˌɪntərˌkɑstoʊˈbreɪkiəl nɝv/",
+   "in-ter-kahs-toh-BRAY-kee-uhl nurv",
+   "https://www.merriam-webster.com/medical/intercostobrachial%20nerve"
+  ],
+  "Thoraco-abdominal nerves": [
+   "/ˌθɔrəkoʊæbˈdɑmənəl nɝvz/",
+   "thor-uh-koh-ab-DAH-muh-nuhl nurvz",
+   "https://www.merriam-webster.com/medical/thoraco-abdominal%20nerves"
+  ],
+  "Subcostal nerve": [
+   "/sʌbˈkɑstəl nɝv/",
+   "sub-KAHS-tuhl nurv",
+   "https://www.merriam-webster.com/medical/subcostal%20nerve"
+  ],
+  "Iliohypogastric nerve": [
+   "/ˌɪlioʊˌhaɪpəˈɡæstrɪk nɝv/",
+   "il-ee-oh-hy-puh-GAS-trik nurv",
+   "https://www.merriam-webster.com/medical/iliohypogastric%20nerve"
+  ],
+  "Ilioinguinal nerve": [
+   "/ˌɪlioʊˈɪŋɡwənəl nɝv/",
+   "il-ee-oh-ING-gwuh-nuhl nurv",
+   "https://www.merriam-webster.com/medical/ilioinguinal%20nerve"
+  ],
+  "Phrenic nerve": [
+   "/ˈfrɛnɪk nɝv/",
+   "FREN-ik nurv",
+   "https://www.merriam-webster.com/medical/phrenic%20nerve"
+  ],
+  "Pudendal nerve": [
+   "/pjuˈdɛndəl nɝv/",
+   "pyoo-DEN-duhl nurv",
+   "https://www.merriam-webster.com/medical/pudendal%20nerve"
+  ],
+  "Nerve to levator ani": [
+   "/nɝv tu ləˈveɪtər ˈeɪnaɪ/",
+   "nurv too luh-VAY-ter AY-ny",
+   "https://www.merriam-webster.com/medical/nerve%20to%20levator%20ani"
+  ],
+  "Inferior rectal nerve": [
+   "/ɪnˈfɪriər ˈrɛktəl nɝv/",
+   "in-FEER-ee-er REK-tuhl nurv",
+   "https://www.merriam-webster.com/medical/inferior%20rectal%20nerve"
+  ],
+  "Perineal nerve": [
+   "/ˌpɛrəˈniəl nɝv/",
+   "pair-uh-NEE-uhl nurv",
+   "https://www.merriam-webster.com/medical/perineal%20nerve"
+  ]
+ },
+ "pinyin": {
+  "Danzhong": "Dànzhōng",
+  "Qimen": "Qīmén",
+  "Zhangmen": "Zhāngmén",
+  "Zhongwan": "Zhōngwǎn",
+  "Tianshu": "Tiānshū",
+  "Guanyuan": "Guānyuán",
+  "Huiyin": "Huìyīn",
+  "Changqiang": "Chángqiáng"
+ }
+}
